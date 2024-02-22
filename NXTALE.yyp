@@ -313,6 +313,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Drawing","folderPath":"folders/Scripts/Drawing.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Control","folderPath":"folders/Scripts/Common/Control.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Item","folderPath":"folders/Scripts/Item.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Init","folderPath":"folders/Scripts/Common/Init.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Info","folderPath":"folders/Scripts/Common/Info.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"credits.txt","CopyToMask":-1,"filePath":"datafiles",},
