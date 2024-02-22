@@ -310,13 +310,13 @@ if (menu == 3)
             scr_shop_draw_talktitle(2, 0, scr_gettext("shop3_talk3c_title"))
             draw_set_color(c_white)
         }
-        if (FL_MettatonConvoCounter == 0)
+        if (FL_AlphysConvoCounter == 0)
             scr_shop_draw_talktitle(3, 0, scr_gettext("shop3_talk4a_title"))
-        if (FL_MettatonConvoCounter == 1)
+        if (FL_AlphysConvoCounter == 1)
             scr_shop_draw_talktitle(3, 1, scr_gettext("shop3_talk4b_title"))
-        if (FL_MettatonConvoCounter == 2)
+        if (FL_AlphysConvoCounter == 2)
             scr_shop_draw_talktitle(3, 1, scr_gettext("shop3_talk4c_title"))
-        if (FL_MettatonConvoCounter == 3)
+        if (FL_AlphysConvoCounter == 3)
         {
             draw_set_color(c_white)
             scr_shop_draw_talktitle(3, 0, scr_gettext("shop3_talk4d_title"))
@@ -552,7 +552,7 @@ if (menu == 4)
         {
             if (FL_TruePacifist == 0)
             {
-                if (FL_MettatonConvoCounter == 0)
+                if (FL_AlphysConvoCounter == 0)
                 {
                     global.msg[0] = scr_gettext("obj_shop3_859")
                     global.msg[1] = scr_gettext("obj_shop3_860")
@@ -562,13 +562,13 @@ if (menu == 4)
                     event_user(3)
                     con = 50
                 }
-                if (FL_MettatonConvoCounter == 1)
+                if (FL_AlphysConvoCounter == 1)
                 {
                     global.msg[0] = scr_gettext("obj_shop3_870")
                     event_user(2)
                     con = 60
                 }
-                if (FL_MettatonConvoCounter == 2 || FL_MettatonConvoCounter == 3)
+                if (FL_AlphysConvoCounter == 2 || FL_AlphysConvoCounter == 3)
                 {
                     global.msg[0] = scr_gettext("obj_shop3_879")
                     global.msg[1] = scr_gettext("obj_shop3_880")
@@ -582,12 +582,12 @@ if (menu == 4)
                     event_user(3)
                     con = 999
                 }
-                if (FL_MettatonConvoCounter == 2)
-                    FL_MettatonConvoCounter = 3
-                if (FL_MettatonConvoCounter == 1)
-                    FL_MettatonConvoCounter = 2
-                if (FL_MettatonConvoCounter == 0)
-                    FL_MettatonConvoCounter = 1
+                if (FL_AlphysConvoCounter == 2)
+                    FL_AlphysConvoCounter = 3
+                if (FL_AlphysConvoCounter == 1)
+                    FL_AlphysConvoCounter = 2
+                if (FL_AlphysConvoCounter == 0)
+                    FL_AlphysConvoCounter = 1
             }
             else
             {
