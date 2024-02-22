@@ -5,7 +5,7 @@
   "isCompatibility": true,
   "isDnD": false,
   "parent": {
-    "name": "Common",
-    "path": "folders/Scripts/Common.yy",
+    "name": "Extension",
+    "path": "folders/Scripts/Common/Extension.yy",
   },
 }

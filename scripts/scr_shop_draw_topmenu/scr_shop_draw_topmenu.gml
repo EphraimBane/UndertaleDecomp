@@ -1,6 +1,8 @@
-function scr_shop_draw_topmenu()
+/// @func scr_shop_draw_topmenu(murder)
+/// @arg	{bool}	murder
+function scr_shop_draw_topmenu(_murder)
 {
-	var murder = argument0
+	var murder = _murder
 	var menu_x = (scr_shop_divider_pos() + 15)
 	var text_x = (menu_x + 15)
 	if murder

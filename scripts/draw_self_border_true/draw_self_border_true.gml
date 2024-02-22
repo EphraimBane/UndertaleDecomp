@@ -1,11 +1,14 @@
-function draw_self_border_true()
+/// @func draw_self_border_true(xOffset, yOffset)
+/// @arg	{Real}	xOffset		The X Offset to draw the current sprite
+/// @arg	{Real}	xOffset		The Y Offsetto draw the current sprite
+function draw_self_border_true(_xOffset, _yOffset)
 {
 	l = 0
 	t = 0
 	w = sprite_width
 	h = sprite_height
-	offx = argument0
-	offy = argument1
+	offx = _xOffset
+	offy = _yOffset
 	ll = (((obj_lborder.x - x) + 1) - offx)
 	tt = (((global.idealborder[2] - y) + 1) - offy)
 	ww = (((x + w) - obj_rborder.x) - 1)
