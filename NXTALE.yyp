@@ -310,6 +310,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Ruins","folderPath":"folders/Tile Sets/Ruins.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Drawing","folderPath":"folders/Scripts/Drawing.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Control","folderPath":"folders/Scripts/Common/Control.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Item","folderPath":"folders/Scripts/Item.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"credits.txt","CopyToMask":-1,"filePath":"datafiles",},
