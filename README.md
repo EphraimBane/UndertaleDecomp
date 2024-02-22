@@ -1,4 +1,6 @@
 # Undertale-DC
+- PLEASE NOT THIS IS STILL A WORK IN PROGRESS! -<br>
+
 A decompilation of the latest version of UNDERTALE for the Nintendo Switch ported to the latest Gamemaker Studio 2<br>
 (If you are toby fox please hmu I'd love to talk :3)
 ### Main Contributors
@@ -11,7 +13,7 @@ I specifically emailed the fangamer UNDERTALE contact for permission, and was ex
 (If you represent Toby Fox, or any assets in this repository and need to contact me, please do so at vultumast@gmail.com)
 
 ## How do I use this?
-Clone the repo, and open ``UndertaleDC.yyp`` inside of Gamemaker Studio 2 (latest!)
+Clone the repo, and open ``NXTale.yyp`` inside of Gamemaker Studio 2 (latest!)
 
 ## Special Thanks
 [TaiAurori](https://devkats.club) - Android Port Testing<br>
