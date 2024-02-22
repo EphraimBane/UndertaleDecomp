@@ -13,7 +13,7 @@ I specifically emailed the fangamer UNDERTALE contact for permission, and was ex
 (If you represent Toby Fox, or any assets in this repository and need to contact me, please do so at vultumast@gmail.com)
 
 ## How do I use this?
-Clone the repo, and open ``UndertaleDC.yyp`` inside of Gamemaker Studio 2 (latest!)
+Clone the repo, and open ``NXTale.yyp`` inside of Gamemaker Studio 2 (latest!)
 
 ## Special Thanks
 [TaiAurori](https://devkats.club) - Android Port Testing<br>
