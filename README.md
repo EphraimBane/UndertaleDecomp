@@ -1,4 +1,6 @@
 # Undertale-DC
+- PLEASE NOT THIS IS STILL A WORK IN PROGRESS! -<br>
+
 A decompilation of the latest version of UNDERTALE for the Nintendo Switch ported to the latest Gamemaker Studio 2<br>
 (If you are toby fox please hmu I'd love to talk :3)
 ### Main Contributors
