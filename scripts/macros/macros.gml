@@ -331,7 +331,7 @@
 // 446 - 449 Unused
 #macro FL_EarlyStoryProgressCounter global.flag[450]
 // 451 - Unused
-#macro FL_HaveCastleKey1 global.flag[453]
+#macro FL_HaveCastleKey1 global.flag[452]
 #macro FL_HaveCastleKey2 global.flag[453]
 #macro FL_UnlockedNewHomeLatch global.flag[454]
 #macro FL_EarlyStoryParam1 global.flag[455]
