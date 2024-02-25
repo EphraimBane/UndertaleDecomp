@@ -108,6 +108,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Legacy","folderPath":"folders/Scripts/Common/Legacy.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Playstation","folderPath":"folders/Scripts/Common/Playstation.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Decomp","folderPath":"folders/Scripts/Decomp.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Console","folderPath":"folders/Scripts/Decomp/Console.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Commands","folderPath":"folders/Scripts/Decomp/Console/Commands.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Drawing","folderPath":"folders/Scripts/Drawing.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Effect","folderPath":"folders/Scripts/Drawing/Effect.yy",},
@@ -318,7 +319,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Ruins","folderPath":"folders/Tile Sets/Ruins.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Console","folderPath":"folders/Scripts/Decomp/Console.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"credits.txt","CopyToMask":-1,"filePath":"datafiles",},
@@ -4806,6 +4806,7 @@
     {"id":{"name":"spr_sugarholder_break","path":"sprites/spr_sugarholder_break/spr_sugarholder_break.yy",},},
     {"id":{"name":"spr_soda_break","path":"sprites/spr_soda_break/spr_soda_break.yy",},},
     {"id":{"name":"spr_undynehouse_normal","path":"sprites/spr_undynehouse_normal/spr_undynehouse_normal.yy",},},
+    {"id":{"name":"cmd_sv_cheats","path":"scripts/cmd_sv_cheats/cmd_sv_cheats.yy",},},
     {"id":{"name":"spr_undynehouse_fire","path":"sprites/spr_undynehouse_fire/spr_undynehouse_fire.yy",},},
     {"id":{"name":"spr_undteacup","path":"sprites/spr_undteacup/spr_undteacup.yy",},},
     {"id":{"name":"spr_undteapot","path":"sprites/spr_undteapot/spr_undteapot.yy",},},

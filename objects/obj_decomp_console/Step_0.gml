@@ -1,3 +1,9 @@
+if (!global.DevConsoleEnabled)
+{
+	active = false;
+	return;
+}
+
 if (keyboard_check_pressed(vk_tab))
 {
 	if (active)
