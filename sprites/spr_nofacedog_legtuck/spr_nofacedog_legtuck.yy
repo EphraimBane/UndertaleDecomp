@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Endogeny",
+    "path": "folders/Sprites/Battle/Bullets/Endogeny.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

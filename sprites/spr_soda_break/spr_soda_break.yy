@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "!please sort!",
-    "path": "folders/Sprites/Overworld/!please sort!.yy",
+    "name": "Undynes House",
+    "path": "folders/Sprites/Overworld/Waterfall/Undynes House.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

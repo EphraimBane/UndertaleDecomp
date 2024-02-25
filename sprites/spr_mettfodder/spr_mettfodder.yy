@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "i love him",
-    "path": "folders/Sprites/i love him.yy",
+    "name": "Unused",
+    "path": "folders/Sprites/Battle/Bullets/Unused.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

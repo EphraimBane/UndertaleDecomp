@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "!please sort!",
-    "path": "folders/Sprites/Overworld/!please sort!.yy",
+    "name": "Common",
+    "path": "folders/Sprites/Overworld/Common.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

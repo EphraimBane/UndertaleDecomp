@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "!please sort!",
-    "path": "folders/Sprites/Overworld/!please sort!.yy",
+    "name": "Hotland",
+    "path": "folders/Sprites/Overworld/Hotland.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Ruins",
+    "path": "folders/Sprites/Tilesets/Ruins.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

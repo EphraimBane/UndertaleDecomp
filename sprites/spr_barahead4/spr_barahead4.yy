@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Unused",
+    "path": "folders/Sprites/Battle/Characters/Royal Guards/Unused.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

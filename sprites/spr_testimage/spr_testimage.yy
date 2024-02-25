@@ -33,8 +33,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Doge B",
+    "path": "folders/Sprites/Battle/Characters/Unused/Doge B.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

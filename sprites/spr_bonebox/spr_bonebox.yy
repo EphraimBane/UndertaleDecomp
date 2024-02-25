@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "!please sort!",
-    "path": "folders/Sprites/Overworld/!please sort!.yy",
+    "name": "Papyrus House",
+    "path": "folders/Sprites/Overworld/Snowdin/Rooms/Papyrus House.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

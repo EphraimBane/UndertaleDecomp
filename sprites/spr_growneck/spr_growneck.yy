@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Reaper Bird",
+    "path": "folders/Sprites/Battle/Bullets/Reaper Bird.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

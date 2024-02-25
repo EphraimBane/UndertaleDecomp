@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Castle",
+    "path": "folders/Sprites/Tilesets/Castle.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 1,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Mettaton",
+    "path": "folders/Sprites/Overworld/NPC/Mettaton.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
