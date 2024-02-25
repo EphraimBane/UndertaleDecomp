@@ -76,7 +76,17 @@ if (!paused)
     time += 1
 
 if (obj_decomp_console.active)
+{
+	j_fu = false;
+	j_fd = false;
+	j_fl = false;
+	j_fr = false;
+	up = false;
+	left = false;
+	down = false;
+	right = false;
 	return; // Vultu: AFAIK, this is all controller check code after
+}
 	
 if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
 {

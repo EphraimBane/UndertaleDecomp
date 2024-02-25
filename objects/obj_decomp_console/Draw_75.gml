@@ -105,6 +105,22 @@ else
 */
 #endregion
 
+#region Room name
+
+var room_name = room_get_name(room);
+var name_width = string_width(room_name);
+var name_height = string_height(room_name);
+
+var name_x = view_get_xport(0);
+var name_y = (view_get_yport(0) + view_get_hport(0)) - name_height;
+
+draw_set_color(c_black);
+draw_rectangle(name_x, name_y, name_x + name_width, name_y + name_height, false);
+draw_set_color(c_white);
+draw_text(name_x, name_y, room_name);
+
+#endregion
+
 draw_set_font(prev_font);
 draw_set_color(prev_color);
 draw_set_alpha(prev_alpha);

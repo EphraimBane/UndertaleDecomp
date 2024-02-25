@@ -5,7 +5,7 @@
   "isCompatibility": true,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Omega Flowey",
+    "path": "folders/Scripts/Battle/Omega Flowey.yy",
   },
 }

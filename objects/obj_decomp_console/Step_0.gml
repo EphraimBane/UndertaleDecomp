@@ -43,7 +43,7 @@ if (keyboard_check_pressed(vk_enter))
 		var commandDef = commands[getCommandDefIndex(command_name)];
 		command_writeline(input_text);
 		script_execute(commandDef.functionRef, arg_array);
-		trace($"Attempting to execute command: \"{commandDef.displayName}\" with arguments: \"{arg_array}\"")
+		trace($"Attempting to execute command: \"{commandDef.displayName}\" with arguments: \"{arg_array}\"");
 		
 		keyboard_string = "";
 		input_text = "";

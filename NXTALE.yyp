@@ -319,6 +319,11 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Ruins","folderPath":"folders/Tile Sets/Ruins.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Battle","folderPath":"folders/Scripts/Battle.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Mew Mew","folderPath":"folders/Scripts/Battle/Mew Mew.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Save","folderPath":"folders/Scripts/Common/Save.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Omega Flowey","folderPath":"folders/Scripts/Battle/Omega Flowey.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Unsorted","folderPath":"folders/Scripts/Common/Unsorted.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"credits.txt","CopyToMask":-1,"filePath":"datafiles",},

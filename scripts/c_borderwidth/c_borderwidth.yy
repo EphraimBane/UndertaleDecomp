@@ -5,7 +5,7 @@
   "isCompatibility": true,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Unsorted",
+    "path": "folders/Scripts/Common/Unsorted.yy",
   },
 }
