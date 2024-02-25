@@ -23,7 +23,7 @@ var bounds_rect = {
 // Vultu: Draw the box
 draw_set_color(c_black);
 draw_set_alpha(1.0);
-draw_rectangle(bounds_rect.x, bounds_rect.y, bounds_rect.right, bounds_rect.bottom, false);
+ossafe_fill_rectangle(bounds_rect.x, bounds_rect.y, bounds_rect.right, bounds_rect.bottom);
 draw_set_color(c_white);
 draw_set_alpha(1.0);
 
@@ -39,10 +39,10 @@ var input_box_y = (bounds_rect.bottom - char_height) - 4;
 
 
 #region Outline
-draw_rectangle(bounds_rect.x, input_box_y, bounds_rect.right, bounds_rect.bottom, false);
+ossafe_fill_rectangle(bounds_rect.x, input_box_y, bounds_rect.right, bounds_rect.bottom);
 draw_set_color(c_black);
 draw_set_alpha(1.0);
-draw_rectangle(bounds_rect.x + 3, input_box_y + 3, bounds_rect.right - 4, bounds_rect.bottom - 3, false);
+ossafe_fill_rectangle(bounds_rect.x + 3, input_box_y + 3, bounds_rect.right - 4, bounds_rect.bottom - 3);
 draw_set_color(c_white);
 draw_set_alpha(1.0);
 #endregion
@@ -105,6 +105,26 @@ else
 */
 #endregion
 
+<<<<<<< Updated upstream
+=======
+#region Room name
+
+var room_name = room_get_name(room);
+var name_width = string_width(room_name);
+var name_height = string_height(room_name);
+
+var name_x = view_get_xport(0);
+var name_y = (view_get_yport(0) + view_get_hport(0)) - name_height;
+
+draw_set_color(c_black);
+ossafe_fill_rectangle(name_x, name_y, name_x + name_width, name_y + name_height);
+draw_set_color(c_white);
+draw_text(name_x, name_y, room_name);
+
+#endregion
+
+
+>>>>>>> Stashed changes
 draw_set_font(prev_font);
 draw_set_color(prev_color);
 draw_set_alpha(prev_alpha);

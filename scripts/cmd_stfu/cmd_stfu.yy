@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "init",
+  "name": "cmd_stfu",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Decomp",
-    "path": "folders/Scripts/Decomp.yy",
+    "name": "Commands",
+    "path": "folders/Scripts/Decomp/Console/Commands.yy",
   },
 }

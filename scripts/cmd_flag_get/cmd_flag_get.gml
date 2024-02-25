@@ -8,5 +8,5 @@ function cmd_flag_get(_args)
 	
 	var flag = string_digits(_args[0]);
 	
-	command_writeline($"Flag Value: {global.flag[flag]}")
+	command_writeline($"Flag Value: {global.flag[flag]}");
 }

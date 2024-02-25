@@ -60,5 +60,11 @@ if (naming == 3)
         version += "-V"
     draw_set_color(c_gray)
     scr_setfont(fnt_small)
-    scr_drawtext_centered(160, 232, (("UNDERTALE v" + version) + " (C) Toby Fox 2015-2018"))
+    //scr_drawtext_centered(160, 232, (("UNDERTALE v" + version) + " (C) Toby Fox 2015-2018"))
+	
+	draw_set_halign(fa_center);
+	draw_text(160, 1, "Press [C] to view Decomp Settings");
+	draw_text(160, 224, "Decomp by Vultumast and Daniela");
+	draw_text(160, 232, (("UNDERTALE v" + version) + " (C) Toby Fox 2015-2018"));
+	draw_set_halign(fa_left);
 }

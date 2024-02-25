@@ -170,4 +170,6 @@ function SCR_GAMESTART()
 	global.typer = 5
 	global.msc = 0
 	global.hardmode = 0
+	
+	decomp_gamestart();
 }

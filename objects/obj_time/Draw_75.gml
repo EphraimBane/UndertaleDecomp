@@ -17,7 +17,7 @@ if (global.osflavor >= OS_FLAVOR_CONSOLE)
 
 /// DECOMP CODE PAST THIS POINT
 
-if (global.DevConsoleEnabled)
+if (global.decomp_vars.DevConsoleEnabled)
 {
 	var con_active = obj_decomp_console.active;
 	if (con_active && !paused && !global.disable_os_pause)
