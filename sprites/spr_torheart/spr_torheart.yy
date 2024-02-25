@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Souls",
-    "path": "folders/Sprites/Souls.yy",
+    "name": "Toriel",
+    "path": "folders/Sprites/Battle/Characters/Toriel.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

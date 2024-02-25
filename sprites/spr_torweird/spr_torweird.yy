@@ -29,8 +29,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Toriel",
+    "path": "folders/Sprites/Battle/Characters/Toriel.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

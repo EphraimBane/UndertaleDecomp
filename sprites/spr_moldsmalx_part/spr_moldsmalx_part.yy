@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Moldbygg",
+    "path": "folders/Sprites/Battle/Characters/Moldbygg.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

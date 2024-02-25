@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Bones",
+    "path": "folders/Sprites/Battle/Bullets/Bones.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

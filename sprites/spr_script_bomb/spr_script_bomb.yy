@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Bombs",
+    "path": "folders/Sprites/Overworld/Hotland/Bombs.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

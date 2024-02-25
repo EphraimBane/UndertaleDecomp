@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Muffet",
+    "path": "folders/Sprites/Battle/Bullets/Muffet.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

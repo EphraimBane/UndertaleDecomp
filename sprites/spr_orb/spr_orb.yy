@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Snowdin",
+    "path": "folders/Sprites/Overworld/Snowdin.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

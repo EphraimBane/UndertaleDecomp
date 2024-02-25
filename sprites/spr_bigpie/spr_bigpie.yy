@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "!please sort!",
-    "path": "folders/Sprites/Overworld/!please sort!.yy",
+    "name": "Rooms",
+    "path": "folders/Sprites/Overworld/Ruins/Rooms.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

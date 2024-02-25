@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Madjick",
+    "path": "folders/Sprites/Battle/Characters/Madjick.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

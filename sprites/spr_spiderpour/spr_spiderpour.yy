@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 1,
   "parent": {
-    "name": "!please sort!",
-    "path": "folders/Sprites/Overworld/!please sort!.yy",
+    "name": "Muffet",
+    "path": "folders/Sprites/Battle/Characters/Muffet.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

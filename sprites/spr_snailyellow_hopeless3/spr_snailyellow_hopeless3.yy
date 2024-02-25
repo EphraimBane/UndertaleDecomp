@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 3,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "NPC",
+    "path": "folders/Sprites/Overworld/NPC.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

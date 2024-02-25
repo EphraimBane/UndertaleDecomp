@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Doggo",
+    "path": "folders/Sprites/Battle/Characters/Doggo.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

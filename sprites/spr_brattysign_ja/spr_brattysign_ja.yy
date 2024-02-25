@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Bratty and Catty",
+    "path": "folders/Sprites/Shops/Bratty and Catty.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

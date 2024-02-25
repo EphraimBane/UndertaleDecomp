@@ -32,8 +32,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Reaperbird",
-    "path": "folders/Sprites/Battle/Characters/Reaperbird.yy",
+    "name": "Reaper Bird",
+    "path": "folders/Sprites/Battle/Characters/Reaper Bird.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

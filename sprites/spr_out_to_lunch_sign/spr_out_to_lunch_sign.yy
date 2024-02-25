@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Intro",
+    "path": "folders/Sprites/UI/Intro.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

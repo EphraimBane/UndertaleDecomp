@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Tsunderplane",
+    "path": "folders/Sprites/Battle/Characters/Tsunderplane.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

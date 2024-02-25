@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Memoryhead",
+    "path": "folders/Sprites/Battle/Characters/Memoryhead.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
