@@ -74,6 +74,10 @@ if (started <= 0)
 }
 if (!paused)
     time += 1
+
+if (obj_decomp_console.active)
+	return; // Vultu: AFAIK, this is all controller check code after
+	
 if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
 {
     if (jt == 0)

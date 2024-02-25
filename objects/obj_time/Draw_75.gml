@@ -13,3 +13,19 @@ if (global.osflavor >= OS_FLAVOR_CONSOLE)
         paused = false
     }
 }
+
+
+/// DECOMP CODE PAST THIS POINT
+
+if (global.DevConsoleEnabled)
+{
+	var con_active = obj_decomp_console.active;
+	if (con_active && !paused && !global.disable_os_pause)
+	{
+		paused = true;
+	}
+	else if (!con_active && paused)
+	{
+		paused = false;
+	}
+}
