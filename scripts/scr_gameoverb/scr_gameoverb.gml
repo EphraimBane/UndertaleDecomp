@@ -16,9 +16,12 @@ function scr_gameoverb()
 	ossafe_ini_open("undertale.ini")
 	g_o = ini_read_real("General", "Gameover", 0)
 	ossafe_ini_close()
+	if (global.decomp_vars.DemoHeartFracture)
+		sleep(500);
+		
 	audio_stop_all()
-	caster_stop(-3)
-	caster_free(-3)
+	caster_stop(all)
+	caster_free(all)
 	if instance_exists(obj_heart)
 	{
 	    global.myxb = obj_heart.x
@@ -29,5 +32,6 @@ function scr_gameoverb()
 	    global.myxb = obj_fakeheart.x
 	    global.myyb = obj_fakeheart.y
 	}
+	
 	room_goto(room_gameover)
 }

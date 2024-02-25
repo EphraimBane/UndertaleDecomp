@@ -10,7 +10,7 @@ function cmd_sv_cheats(_args)
 	
 	if (value == 0)
 	{
-		global.DevConsoleEnabled = false;
+		global.decomp_vars.DevConsoleEnabled = false;
 		obj_decomp_console.active = false;
 	}
 	else

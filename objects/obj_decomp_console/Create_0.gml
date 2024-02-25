@@ -18,6 +18,8 @@ array_push(commands, new command_def("flag_set", "Sets a specific flag's value",
 array_push(commands, new command_def("flag_get", "Gets the value for a specific flag", cmd_flag_get, [ "flagID" ]));
 array_push(commands, new command_def("fun_set", "Sets the Fun value", cmd_fun_set, [ "value" ]));
 array_push(commands, new command_def("fun_get", "Gets the Fun value", cmd_fun_get, [ ]));
+array_push(commands, new command_def("hp_set", "Sets your hp", cmd_hp_set, [ "value" ]));
+array_push(commands, new command_def("stfu", "Stops all Audio", cmd_stfu, [ ]));
 
 function activate() 
 {

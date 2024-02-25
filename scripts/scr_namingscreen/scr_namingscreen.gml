@@ -611,7 +611,7 @@ function scr_namingscreen()
 	        }
 	        if (action == 1)
 	        {
-	            caster_free(-3)
+	            caster_free(all)
 	            room_goto(room_settings)
 	        }
 	    }

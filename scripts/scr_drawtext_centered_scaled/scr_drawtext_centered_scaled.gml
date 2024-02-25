@@ -1,10 +1,11 @@
-function scr_drawtext_centered_scaled()
+
+function scr_drawtext_centered_scaled(_x, _y, _text, _xscale, _yscale)
 {
-	var xx = argument0
-	var yy = argument1
-	var text = argument2
-	var xscale = argument3
-	var yscale = argument4
+	var xx = _x
+	var yy = _y
+	var text = _text
+	var xscale = _xscale
+	var yscale = _yscale
 	var display_scale = (surface_get_width(application_surface) / __view_get(2, view_current))
 	var lineheight = round((string_height(string_hash_to_newline(" ")) * yscale))
 	var eol = string_pos("#", text)

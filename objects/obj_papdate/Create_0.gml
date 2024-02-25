@@ -25,6 +25,6 @@ blcon = 5475834
 present = 0
 graph = 4384134
 friendgraph = instance_create(256, -64, obj_friendgraph)
-if (global.osflavor == OS_FLAVOR_PLAYSTATION || global.osflavor == OS_FLAVOR_SWITCH || global.AllowConsoleContent)
+if (global.osflavor == OS_FLAVOR_PLAYSTATION || global.osflavor == OS_FLAVOR_SWITCH || global.decomp_vars.AllowConsoleContent)
     FL_PapyrusSinkEventOccured = 1
 textskip = 1

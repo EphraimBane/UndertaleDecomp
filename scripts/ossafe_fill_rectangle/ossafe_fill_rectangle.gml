@@ -1,9 +1,9 @@
-function ossafe_fill_rectangle()
+function ossafe_fill_rectangle(_x1, _y1, _x2, _y2)
 {
-	var x1 = argument0
-	var y1 = argument1
-	var x2 = argument2
-	var y2 = argument3
+	var x1 = _x1
+	var y1 = _y1
+	var x2 = _x2
+	var y2 = _y2 
 	if (x1 > x2)
 	{
 	    var temp = x1
