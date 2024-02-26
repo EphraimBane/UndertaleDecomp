@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 10.492,
+  "duration": 10.492517,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Battle",
+    "path": "folders/Sounds/Music/Battle.yy",
   },
   "preload": true,
   "sampleRate": 44100,

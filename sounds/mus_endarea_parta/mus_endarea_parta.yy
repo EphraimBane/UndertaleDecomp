@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 180.011,
+  "duration": 180.004,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Castle",
+    "path": "folders/Sounds/Music/Castle.yy",
   },
   "preload": true,
   "sampleRate": 44100,

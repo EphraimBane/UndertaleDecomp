@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 1.5899999,
+  "duration": 1.590567,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Hotland",
+    "path": "folders/Sounds/Music/Hotland.yy",
   },
   "preload": true,
   "sampleRate": 44100,

@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 5.93415,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "SoundFX",
+    "path": "folders/Sounds/SoundFX.yy",
   },
   "preload": false,
   "sampleRate": 44100,

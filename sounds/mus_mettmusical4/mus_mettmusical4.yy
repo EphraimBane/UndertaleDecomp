@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 20.011,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Hotland",
+    "path": "folders/Sounds/Music/Hotland.yy",
   },
   "preload": true,
   "sampleRate": 44100,

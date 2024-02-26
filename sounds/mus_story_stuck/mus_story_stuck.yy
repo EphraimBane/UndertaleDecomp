@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.069,
+  "duration": 0.06966,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Intro",
+    "path": "folders/Sounds/Music/Intro.yy",
   },
   "preload": true,
   "sampleRate": 44100,

@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.7279999,
+  "duration": 1.728435,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "SoundFX",
+    "path": "folders/Sounds/SoundFX.yy",
   },
   "preload": true,
   "sampleRate": 44100,
