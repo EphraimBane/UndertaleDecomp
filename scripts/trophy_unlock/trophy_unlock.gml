@@ -10,6 +10,9 @@ function trophy_unlock(_trophy_id)
 	    psn_unlock_trophy((obj_time.j_ch - 1), real(sysid))
 	else if (global.decomp_vars.EnablePS4Trophies && !global.decomp_vars.VanillaMode)
 	{
+		if (trophy_get_state(trophy_id))
+			return;
+			
 		with (instance_create_depth(3, 3, 10000, obj_faketrophy))
 		{
 			var info = trophy_get_info(trophy_id);
@@ -18,4 +21,8 @@ function trophy_unlock(_trophy_id)
 		}
 	}
 	ds_map_set(global.trophy_state, trophy_id, 1)
+	
+	if (!global.decomp_vars.VanillaMode && global.decomp_vars.EnablePS4Trophies && global.osflavor != OS_FLAVOR_PLAYSTATION)
+		save_trophies();
+	
 }

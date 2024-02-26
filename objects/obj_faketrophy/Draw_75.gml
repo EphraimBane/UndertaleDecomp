@@ -32,15 +32,15 @@ draw_set_alpha(fader / 100);
 draw_set_color(c_white);
 ossafe_fill_rectangle(x, y, x + trophy_width, y + trophy_height);
 draw_set_color(c_black);
-ossafe_fill_rectangle(x + padding, y + padding, x + trophy_width - (padding * 2), y + trophy_height - (padding * 2));
+ossafe_fill_rectangle(x + padding, y + padding, x + trophy_width - (padding * 2) + 1, y + trophy_height - (padding * 2) + 1);
 
 draw_set_color(c_white);
-draw_sprite_stretched(trophy_icon, trophy_icon_index, x + (padding * 3), y + (padding * 3), stretched_icon_size, stretched_icon_size);
+draw_sprite_stretched(trophy_icon, trophy_icon_index, x + (padding * 2), y + (padding * 2), stretched_icon_size, stretched_icon_size);
 
 draw_set_font(fnt_main);
 draw_text(x + (padding * 4) + stretched_icon_size, y + (padding * 2), title);
-draw_set_font(fnt_main);
-draw_text(x + (padding * 4) + stretched_icon_size, y + (padding * 5) + text_height, text);
+draw_set_font(fnt_maintext);
+draw_text((x + (padding * 4) + stretched_icon_size), (y + trophy_height - (padding * 3)) - (text_height), text);
 
 draw_load_state(saved_draw_state);
 delete saved_draw_state;

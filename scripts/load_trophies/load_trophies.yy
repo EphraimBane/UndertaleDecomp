@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "save_decomp_vars",
+  "name": "load_trophies",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
