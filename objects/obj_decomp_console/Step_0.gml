@@ -1,12 +1,9 @@
-<<<<<<< Updated upstream
-=======
 if (!global.decomp_vars.DevConsoleEnabled)
 {
 	active = false;
 	return;
 }
 
->>>>>>> Stashed changes
 if (keyboard_check_pressed(vk_tab))
 {
 	if (active)

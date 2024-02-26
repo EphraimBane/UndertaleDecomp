@@ -105,8 +105,6 @@ else
 */
 #endregion
 
-<<<<<<< Updated upstream
-=======
 #region Room name
 
 var room_name = room_get_name(room);
@@ -123,8 +121,6 @@ draw_text(name_x, name_y, room_name);
 
 #endregion
 
-
->>>>>>> Stashed changes
 draw_set_font(prev_font);
 draw_set_color(prev_color);
 draw_set_alpha(prev_alpha);

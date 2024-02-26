@@ -26,7 +26,12 @@ array_push(categories, new menu_category("Audio", "Settings for adjusting audio"
 	[
 		new menu_slider_option("Master", "MasterVolume", "Master Mixing Volume", global.decomp_vars.MasterVolume, 0, 100)
 	]));
-
+	
+array_push(categories, new menu_category("Battle", "General Battle Settings", 
+	[
+		new menu_checkbox_option("Demo Heart Fracture Delay", "DemoHeartFracture", "Restores the 500ms delay when the heart fractures", global.decomp_vars.DemoHeartFracture)
+	]));
+	
 function draw_checkbox(_x, _y, _option, _catbox_bounds, _text_color) 
 {
 	draw_set_color(_text_color);
