@@ -4,7 +4,6 @@ function decomp_gamestart()
     {
         if (obj_time.trophy_ts < 0)
             obj_time.trophy_ts = current_time;
-        return;
     }
 	
 	load_decomp_vars();

@@ -32,7 +32,7 @@ draw_set_alpha(fader / 100);
 draw_set_color(c_white);
 ossafe_fill_rectangle(x, y, x + trophy_width, y + trophy_height);
 draw_set_color(c_black);
-ossafe_fill_rectangle(x + padding, y + padding, x + trophy_width - (padding * 2) + 1, y + trophy_height - (padding * 2) + 1);
+ossafe_fill_rectangle(x + padding, y + padding, x + trophy_width - (padding * 2) + 2, y + trophy_height - (padding * 2) + 2);
 
 draw_set_color(c_white);
 draw_sprite_stretched(trophy_icon, trophy_icon_index, x + (padding * 2), y + (padding * 2), stretched_icon_size, stretched_icon_size);
