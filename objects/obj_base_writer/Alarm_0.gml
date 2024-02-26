@@ -39,10 +39,10 @@ while (stringpos < string_length(originalstring) && advance > 0)
                 sound_enable = abc_123_a
             else
             {
-                var sfx = -4
+                var sfx = noone
                 if (sfxtype == "p")
                     sfx = snd_phone
-                if (sfx != -4)
+                if (sfx != noone)
                     snd_play(sfx)
             }
         }

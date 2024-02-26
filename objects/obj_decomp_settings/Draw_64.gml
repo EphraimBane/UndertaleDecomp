@@ -78,7 +78,33 @@ draw_set_color(c_black);
 ossafe_fill_rectangle(cat_box_x + menu_pad, cat_box_y + menu_pad, cat_box_x + (cat_box_w - menu_pad) - 1, cat_box_y + (cat_box_h - menu_pad) - 1);
 draw_set_color(c_white);
 
-if (hover_category != -1)
+if (hover_category == -1)
+{
+		var __x = cat_box_x + (menu_pad * 2);
+		var __y = (cat_box_y + (menu_pad * 2)) + (i * str_height);
+		var daniela_quote = "";
+		
+		if (season != 0)
+		{
+			switch (season)
+			{
+				case 1:
+					daniela_quote = daniela_winter_quote;
+					break;
+				case 2:
+					daniela_quote = daniela_spring_quote;
+					break;
+				case 3:
+					daniela_quote = daniela_summer_quote;
+					break;
+				case 4:
+					daniela_quote = daniela_fall_quote;
+					break;
+			}
+			draw_text(__x, __y, $"Daniela Says:\n{daniela_quote}");
+		}
+}
+else
 {
 	var cat = categories[hover_category];
 	

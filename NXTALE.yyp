@@ -349,6 +349,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Ruins","folderPath":"folders/Tile Sets/Ruins.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Decomp","folderPath":"folders/Sprites/Decomp.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"credits.txt","CopyToMask":-1,"filePath":"datafiles",},
@@ -5925,6 +5926,7 @@
     {"id":{"name":"bg_waterfalltex","path":"sprites/bg_waterfalltex/bg_waterfalltex.yy",},},
     {"id":{"name":"bg_waterfall_right","path":"sprites/bg_waterfall_right/bg_waterfall_right.yy",},},
     {"id":{"name":"bg_waterfall_left","path":"sprites/bg_waterfall_left/bg_waterfall_left.yy",},},
+    {"id":{"name":"spr_daniela","path":"sprites/spr_daniela/spr_daniela.yy",},},
     {"id":{"name":"bg_temshopdoor","path":"sprites/bg_temshopdoor/bg_temshopdoor.yy",},},
     {"id":{"name":"bg_temstatue","path":"sprites/bg_temstatue/bg_temstatue.yy",},},
     {"id":{"name":"bg_historyoftem","path":"sprites/bg_historyoftem/bg_historyoftem.yy",},},
@@ -6017,6 +6019,7 @@
     {"id":{"name":"bg_shrinemockup","path":"sprites/bg_shrinemockup/bg_shrinemockup.yy",},},
     {"id":{"name":"bg_elevtop","path":"sprites/bg_elevtop/bg_elevtop.yy",},},
     {"id":{"name":"bg_elevarmR","path":"sprites/bg_elevarmR/bg_elevarmR.yy",},},
+    {"id":{"name":"obj_settings_daniela","path":"objects/obj_settings_daniela/obj_settings_daniela.yy",},},
     {"id":{"name":"bg_elevarmL","path":"sprites/bg_elevarmL/bg_elevarmL.yy",},},
     {"id":{"name":"bg_elevleg","path":"sprites/bg_elevleg/bg_elevleg.yy",},},
     {"id":{"name":"bg_elevbelow","path":"sprites/bg_elevbelow/bg_elevbelow.yy",},},

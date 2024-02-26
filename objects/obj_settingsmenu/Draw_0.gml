@@ -170,9 +170,9 @@ if (global.osflavor >= OS_FLAVOR_PLAYSTATION)
     {
         if (menu == (i + 2) && buffer < 0)
         {
-            var button = -4
+            var button = noone
             var b = 0
-            while (button_list[b] != -4)
+            while (button_list[b] != noone)
             {
                 if gamepad_button_check((obj_time.j_ch - 1), button_list[b])
                 {
@@ -185,7 +185,7 @@ if (global.osflavor >= OS_FLAVOR_PLAYSTATION)
                     continue
                 }
             }
-            if (button != -4)
+            if (button != noone)
             {
                 if (menu == 2)
                 {
