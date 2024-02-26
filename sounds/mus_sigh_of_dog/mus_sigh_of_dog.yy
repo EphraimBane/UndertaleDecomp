@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 29.692,
+  "duration": 29.692516,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Common",
+    "path": "folders/Sounds/Music/Common.yy",
   },
   "preload": true,
   "sampleRate": 44100,

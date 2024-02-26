@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 37.566,
+  "duration": 37.566982,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Waterfall",
+    "path": "folders/Sounds/Music/Waterfall.yy",
   },
   "preload": true,
   "sampleRate": 44100,

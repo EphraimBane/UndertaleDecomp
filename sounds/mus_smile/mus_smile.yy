@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 79.126,
+  "duration": 79.12635,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Secret",
+    "path": "folders/Sounds/Music/Secret.yy",
   },
   "preload": true,
   "sampleRate": 44100,

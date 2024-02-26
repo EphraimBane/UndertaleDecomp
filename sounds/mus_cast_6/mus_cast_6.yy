@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 21.819,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Ending",
+    "path": "folders/Sounds/Music/Ending.yy",
   },
   "preload": true,
   "sampleRate": 44100,

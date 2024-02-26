@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 11.762,
+  "duration": 11.762358,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Snowdin",
+    "path": "folders/Sounds/Music/Snowdin.yy",
   },
   "preload": true,
   "sampleRate": 44100,

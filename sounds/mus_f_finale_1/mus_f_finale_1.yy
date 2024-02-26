@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 11.385,
+  "duration": 11.385034,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Flowey Boss",
+    "path": "folders/Sounds/Music/Battle/Flowey Boss.yy",
   },
   "preload": true,
   "sampleRate": 44100,

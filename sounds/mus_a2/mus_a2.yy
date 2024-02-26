@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 14.222222,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Asriel",
+    "path": "folders/Sounds/Music/Battle/Asriel.yy",
   },
   "preload": false,
   "sampleRate": 44100,

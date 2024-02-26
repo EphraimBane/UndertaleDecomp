@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 1.731,
+  "duration": 1.731338,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Sound Test",
+    "path": "folders/Sounds/Music/Sound Test.yy",
   },
   "preload": true,
   "sampleRate": 44100,

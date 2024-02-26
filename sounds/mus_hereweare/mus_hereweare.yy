@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 124.959,
+  "duration": 124.95964,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "True Lab",
+    "path": "folders/Sounds/Music/True Lab.yy",
   },
   "preload": true,
   "sampleRate": 44100,

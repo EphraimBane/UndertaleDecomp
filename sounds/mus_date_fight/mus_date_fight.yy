@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 34.287,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Date",
+    "path": "folders/Sounds/Music/Battle/Date.yy",
   },
   "preload": true,
   "sampleRate": 44100,
