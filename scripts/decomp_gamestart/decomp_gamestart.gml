@@ -4,5 +4,8 @@ function decomp_gamestart()
 		load_decomp_vars();
 		
 	save_decomp_vars();
-
+	
+	
+	
+	audio_falloff_set_model(audio_falloff_none);
 }

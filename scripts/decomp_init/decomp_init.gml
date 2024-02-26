@@ -1,9 +1,18 @@
 global.decomp_vars = {
-	AllowConsoleContent : true,
+	VanillaMode : false,
+	EnablePSDogShrine : true,
+	EnableSwitchDogShrine : true,
+	//EnableXboxDogShrine : true,
+	EnablePS4Trophies : false,
+	EnableCustomAchievements : false,
 	DevConsoleEnabled : true,
 	DemoHeartFracture : true,
+	DemoHeartFractureDelay : 500,
 	MasterVolume : 100.0,
-	VanillaMode : false
+	MusicVolume : 100.0,
+	SoundFXVolume : 100.0,
+	RestoreSFXPan : true,
 }
 
 #macro trace show_debug_message
+#macro waaah show_message

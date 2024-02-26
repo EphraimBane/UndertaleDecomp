@@ -1,9 +1,6 @@
 if (!active)
 	return;
-	
-var prev_alpha = draw_get_alpha()
-var prev_color = draw_get_color()
-var prev_font = draw_get_font()
+var saved_draw_state = new draw_state();
 
 draw_set_font(fnt_maintext);
 
@@ -121,8 +118,7 @@ draw_text(name_x, name_y, room_name);
 
 #endregion
 
-draw_set_font(prev_font);
-draw_set_color(prev_color);
-draw_set_alpha(prev_alpha);
+draw_load_state(saved_draw_state);
 
+delete saved_draw_state;
 delete bounds_rect;

@@ -22,6 +22,8 @@ daniela_spring_quote = "funny spring easter egg:\npress x five times on the titl
 
 season = 0;
 
+slider_hold_timer = 0;
+
 switch (current_month)
 {
 	case 12:
@@ -46,24 +48,17 @@ switch (current_month)
 		break;
 		
 }
-		
-array_push(categories, new menu_category("General", "General decomp settings", 
-	[
-		new menu_checkbox_option("Vanilla Mode", "VanillaMode", "Disables Everything if enabled", global.decomp_vars.VanillaMode),
-		new menu_checkbox_option("Enable Command Console", "DevConsoleEnabled", "Toggles the Command Console (bound to TAB)", global.decomp_vars.DevConsoleEnabled),
-		new menu_checkbox_option("Enable Exclusive Console Content", "AllowConsoleContent", "Allow Switch/PS4 Content?", global.decomp_vars.AllowConsoleContent)
-	]));
+
+#region CallbackFunctions
+function masterVolumeSet(_value)
+{
+	audio_set_master_gain(0, _value.value / 100.0);
+}
 	
-array_push(categories, new menu_category("Audio", "Settings for adjusting audio", 
-	[
-		new menu_slider_option("Master", "MasterVolume", "Master Mixing Volume", global.decomp_vars.MasterVolume, 0, 100)
-	]));
-	
-array_push(categories, new menu_category("Battle", "General Battle Settings", 
-	[
-		new menu_checkbox_option("Demo Heart Fracture Delay", "DemoHeartFracture", "Restores the 500ms delay when the heart fractures", global.decomp_vars.DemoHeartFracture)
-	]));
-	
+#endregion
+
+event_user(1);
+
 function draw_checkbox(_x, _y, _option, _catbox_bounds, _text_color) 
 {
 	draw_set_color(_text_color);
@@ -96,8 +91,20 @@ function draw_slider(_x, _y, _option, _catbox_bounds, _text_color)
 	draw_line(bar_start_x, _y + text_height / 2, bar_end_x, _y + text_height / 2);
 	draw_line(bar_end_x, _y + (text_height * 0.25), bar_end_x, _y + (text_height * 0.75));
 	
-	var temp_value = abs(_option.minValue) + (_option.value);
-	var temp_max = abs(_option.minValue) + _option.maxValue;
+	var slider_min_abs = abs(_option.minValue);
+	var temp_value = 0;
+	var temp_max = 0;
+	
+	if (sign(_option.minValue) == 1)
+	{
+		temp_value = (_option.value) - slider_min_abs;
+		temp_max = _option.maxValue - slider_min_abs;
+	}
+	else
+	{
+		temp_value = (_option.value) + slider_min_abs;
+		temp_max = _option.maxValue + slider_min_abs;
+	}
 	
 	var normalized_value = temp_value / temp_max;
 	var slider_x = bar_start_x + ((bar_end_x - bar_start_x) * normalized_value);

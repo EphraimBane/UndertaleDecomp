@@ -10,6 +10,7 @@ control_clear(2);
 
 if (hover_category == -1)
 {
+	slider_hold_timer = 0;
 	if (dir_y == -1)
 		hover_category = 0;
 	
@@ -24,6 +25,7 @@ if (hover_category == -1)
 
 if (selected_category == -1)
 {
+	slider_hold_timer = 0;
 	if (dir_x != prev_dir_x && ((hover_category + dir_x) < array_length(categories)))
 		hover_category += dir_x;
 	
@@ -39,25 +41,56 @@ if (selected_category == -1)
 }
 else
 {
-	if (dir_y != prev_dir_y && ((hover_option - dir_y) > -1) && ((hover_option - dir_y) < array_length(categories[selected_category].options)))
+	if (dir_y != prev_dir_y && dir_y != 0 && ((hover_option - dir_y) > -1) && ((hover_option - dir_y) < array_length(categories[selected_category].options)))
+	{
+		slider_hold_timer = 0;
 		hover_option -= dir_y;
-		
-	var hover_op = categories[selected_category].options[hover_option];
+	}
+	var cat = categories[selected_category];
+	var hover_op = cat.options[hover_option];
 	if (dir_x != 0)
 	{
 		if (hover_op.type == MenuOptionTypes.Slider)
 		{
 			if (hover_op.value + dir_x >= hover_op.minValue && hover_op.value + dir_x <= hover_op.maxValue)
-				categories[selected_category].options[hover_option].value += dir_x;
+			{
+				if (sign(slider_hold_timer) != sign(dir_x))
+					slider_hold_timer = 0;
+					
+				var dir_x_multiplier = hover_op.baseSpeed;
+				
+				if (abs(slider_hold_timer) >= 1000)
+				{
+					slider_hold_timer = sign(slider_hold_timer) * 1000; // Vultu: Clamp just in case
+					dir_x_multiplier = hover_op.fastSpeed;
+				}
+				else
+					slider_hold_timer += (sign(dir_x) * room_speed);
+				
+				hover_op.value += (dir_x * dir_x_multiplier);
+				
+				hover_op.value = clamp(hover_op.value, hover_op.minValue, hover_op.maxValue);
+				
+				if (hover_op.callbackFunction != noone)
+					script_execute(hover_op.callbackFunction, hover_op);
+			}
+			else
+				slider_hold_timer = 0;
 		}
 	}
+	else
+		slider_hold_timer = 0;
 	
 	if (btn_0 && !prev_button_0)
 	{
 		switch (hover_op.type)
 		{
 			case MenuOptionTypes.CheckBox:
-				categories[selected_category].options[hover_option].value = !categories[selected_category].options[hover_option].value;
+				var cat = categories[selected_category];
+				var hover_op = cat.options[hover_option];
+				hover_op.value = !hover_op.value;
+				if (hover_op.callbackFunction != noone)
+					script_execute(hover_op.callbackFunction, hover_op);
 				break;
 			case MenuOptionTypes.Slider:
 				break;
@@ -68,7 +101,12 @@ else
 	{
 		selected_category = -1;
 		hover_option = -1;
+		slider_hold_timer = 0;
 	}
+	
+	if (btn_2 && !prev_button_2)
+		hover_op.value = hover_op.defaultValue;
+	
 }
 
 

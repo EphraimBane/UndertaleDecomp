@@ -25,6 +25,17 @@ blcon = 5475834
 present = 0
 graph = 4384134
 friendgraph = instance_create(256, -64, obj_friendgraph)
-if (global.osflavor == OS_FLAVOR_PLAYSTATION || global.osflavor == OS_FLAVOR_SWITCH || global.decomp_vars.AllowConsoleContent)
-    FL_PapyrusSinkEventOccured = 1
+if (global.decomp_vars.VanillaMode)
+{
+	if (global.osflavor == OS_FLAVOR_PLAYSTATION || global.osflavor == OS_FLAVOR_SWITCH)
+		FL_PapyrusSinkEventOccured = 1
+}
+else
+{
+	var platformMatch = (global.osflavor == OS_FLAVOR_PLAYSTATION || global.osflavor == OS_FLAVOR_SWITCH);
+	var settingsMatch = global.decomp_vars.EnablePSDogShrine || global.decomp_vars.EnableSwitchDogShrine;
+	
+	if (platformMatch || settingsMatch)
+		FL_PapyrusSinkEventOccured = 1
+}
 textskip = 1

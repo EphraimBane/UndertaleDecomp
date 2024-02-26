@@ -1,6 +1,6 @@
 function load_decomp_vars()
 {
-	if (!ossafe_file_exists("decomp-vars.ini"))
+	if (!ossafe_file_exists("decomp_vars.ini"))
 		return;
 	
 	var handle = ossafe_ini_open("decomp_vars.ini");

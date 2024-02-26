@@ -38,8 +38,19 @@ else
 {
     sq = instance_create((blcon.x + 15), (blcon.y + 10), obj_insanesq)
     dd = floor(random(6))
-    dnoise = caster_loop(ds[dd], 0.3, (0.9 + random(0.2)))
-    caster_set_panning(dnoise, (0.1 + random(0.8)))
+	
+	if (!global.decomp_vars.RestoreSFXPan || global.decomp_vars.VanillaMode)
+	{
+		dnoise = caster_loop(ds[dd], 0.3, (0.9 + random(0.2)))
+		caster_set_panning(dnoise, (0.1 + random(0.8)))
+	}
+	else
+	{
+		audio_emitter_position(audio_emitter, 0, 0, 0);
+		dnoise = audio_play_sound_at(ds[dd], 0 - (0.1 + random(0.8)), 0, 0, 1, 1, 0, true, 60);
+		audio_sound_pitch(dnoise, 0.9 + random(0.2));
+		audio_sound_gain(dnoise, 0.3, 0);
+	}
 }
 global.border = 5
 obj_heart.x = (round(((global.idealborder[0] + global.idealborder[1]) / 2)) - 8)

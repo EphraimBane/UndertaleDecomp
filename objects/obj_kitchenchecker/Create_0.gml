@@ -7,7 +7,7 @@ block[3] = instance_create(280, 77, obj_solidthin)
 block[4] = instance_create(83, 90, obj_solidlong)
 block[5] = instance_create(180, 60, obj_solidsmall)
 block[6] = instance_create(180, 80, obj_solidsmall)
-if (global.osflavor == OS_FLAVOR_PLAYSTATION || global.osflavor == OS_FLAVOR_SWITCH || global.decomp_vars.AllowConsoleContent)
+if (global.osflavor == OS_FLAVOR_PLAYSTATION || global.osflavor == OS_FLAVOR_SWITCH)
     dogdoor = instance_create(212, 57, obj_doorXmusicfade)
 else
     dogdoor = noone

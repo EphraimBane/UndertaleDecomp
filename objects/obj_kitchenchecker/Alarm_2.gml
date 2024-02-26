@@ -10,7 +10,9 @@ if (obj_mainchara.bbox_top < 134)
         block[5] = instance_create(180, 60, obj_solidsmall)
         block[6] = instance_create(180, 80, obj_solidsmall)
 		// Vultu: This controls if the dog shrine door is active
-        if ((global.osflavor == OS_FLAVOR_PLAYSTATION || global.osflavor == OS_FLAVOR_SWITCH || global.decomp_vars.AllowConsoleContent) && FL_PapyrusSinkEventOccured == 1)
+		var enabledConsoleContent = (global.decomp_vars.EnableSwitchDogShrine || global.decomp_vars.EnablePSDogShrine);
+		
+        if ((global.osflavor == OS_FLAVOR_PLAYSTATION || global.osflavor == OS_FLAVOR_SWITCH || (enabledConsoleContent && !global.decomp_vars.VanillaMode)) && FL_PapyrusSinkEventOccured == 1)
             dogdoor = instance_create(212, 57, obj_doorXmusicfade)
         else
             dogdoor = noone
