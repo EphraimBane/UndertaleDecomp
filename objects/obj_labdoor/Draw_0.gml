@@ -34,7 +34,7 @@ if (open == 0)
     if (ox < 0)
     {
         ox = 0
-        if (s_sound == abc_123_a)
+        if (s_sound == 0)
         {
             snd_play(snd_elecdoor_shutheavy)
             s_sound = snd_sparkle1

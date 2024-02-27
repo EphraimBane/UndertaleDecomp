@@ -7,32 +7,38 @@ alarm[0] = 15;
 input_text = "";
 
 history = array_create(0);
-
 commands = array_create(0);
-command_name = "";
 
-array_push(commands, new command_def("help", "Gets help", cmd_help, [ "[commandName]" ]));
-array_push(commands, new command_def("sv_cheats", "Hax", cmd_sv_cheats, [ "value" ]));
-array_push(commands, new command_def("room_goto", "Goes to a specified room", cmd_room_goto, [ "room" ]));
-array_push(commands, new command_def("flag_set", "Sets a specific flag's value", cmd_flag_set, [ "flagID", "value" ]));
-array_push(commands, new command_def("flag_get", "Gets the value for a specific flag", cmd_flag_get, [ "flagID" ]));
-array_push(commands, new command_def("fun_set", "Sets the Fun value", cmd_fun_set, [ "value" ]));
-array_push(commands, new command_def("fun_get", "Gets the Fun value", cmd_fun_get, [ ]));
-array_push(commands, new command_def("hp_set", "Sets your hp", cmd_hp_set, [ "value" ]));
-array_push(commands, new command_def("stfu", "Stops all Audio", cmd_stfu, [ ]));
-array_push(commands, new command_def("create_fake_trophy", "Creates a fake trophy (for debug)", cmd_create_fake_trophy, [ "icon_index", "text" ]));
-array_push(commands, new command_def("gold_set", "Sets your gold", cmd_gold_set, [ "value" ]));
+commands_history = array_create(0);
+commands_history_index = 0;
+
+scroll_offset = 0;
+
+command_name = "";
+prev_dir_x = 0;
+prev_dir_y = 0;
 
 function activate() 
 {
 	trace("Activating Console");
 	active = true;
-	input_text = "";
-	keyboard_string = "";
+	reset_input();
 }
 
 function deactivate() 
 {
 	trace("Deactivating Console");
 	active = false;
+	reset_input();
 }
+
+function reset_input()
+{
+	commands_history = array_create(0);
+	keyboard_string = "";
+	input_text = "";
+	command_name = "";
+	scroll_offset = 0;
+}
+
+event_user(0);

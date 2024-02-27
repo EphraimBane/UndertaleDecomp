@@ -26,12 +26,9 @@ draw_set_color(c_white);
 draw_set_alpha(1.0);
 
 
-
-
-
 #region Input
 
-var input_text_x = bounds_rect.x + char_width + 9;
+var input_text_x = bounds_rect.x + char_width + 10;
 var input_text_y = (bounds_rect.bottom - char_height) - 2;
 var input_box_y = (bounds_rect.bottom - char_height) - 4;
 
@@ -46,10 +43,30 @@ draw_set_alpha(1.0);
 #endregion
 
 #region History
-for (var i = 0; i < array_length(history); i++)
+
+var history_len = array_length(history);
+for (var i = 0; i < history_len; i++)
 {
-	draw_text(bounds_rect.x, input_box_y - ((array_length(history) - i)* char_height), history[i])
+	draw_text(bounds_rect.x + 2, input_box_y - ((history_len - i) * char_height), history[i]);
 }
+
+if (history_len != 0)
+{
+	var scroll_x = bounds_rect.right - 9;
+	var scroll_y = bounds_rect.y + 3;
+	
+	var scroll_width = 5;
+	var scroll_height = (input_box_y - 4) - scroll_y;
+	
+	draw_set_color(c_gray);
+	ossafe_fill_rectangle(scroll_x, scroll_y, scroll_x + scroll_width, scroll_y + scroll_height);
+	
+	draw_set_color(c_white);
+	var scroll_size = scroll_height / history_len;
+	
+	ossafe_fill_rectangle(scroll_x, scroll_y + (scroll_offset * scroll_size), scroll_x + scroll_width, scroll_y + (scroll_height * scroll_size));
+}
+	
 #endregion
 
 #region Input

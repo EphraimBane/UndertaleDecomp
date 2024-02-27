@@ -2,7 +2,7 @@ if instance_exists(obj_waterboardpuzzle1)
 {
     if (myinteract == 1 && using == 0 && obj_waterboardpuzzle1.waterboard == 0)
     {
-        if (snd_isplaying(snd_movemenu) == abc_123_a)
+        if (snd_isplaying(snd_movemenu) == 0)
             snd_play(snd_movemenu)
         using = 1
         obj_waterboardpuzzle1.waterboard = 1
@@ -50,9 +50,9 @@ if (using == 1)
                 j = instance_position((obj_mainchara.x + 10), (obj_mainchara.y + 40), obj_npc_marker)
                 h = instance_position((obj_mainchara.x + 10), (obj_mainchara.y + 40), obj_waterboard)
                 g = instance_position((obj_mainchara.x + 10), (obj_mainchara.y + 40), obj_waterspot)
-                if (h == -4 && j == -4)
+                if (h == noone && j == noone)
                 {
-                    if (g != -4)
+                    if (g != noone)
                     {
                         y = (obj_mainchara.y + 30)
                         move_snap(20, 20)
@@ -64,7 +64,7 @@ if (using == 1)
             if (global.facing == Direction.Up)
             {
                 g = instance_position((obj_mainchara.x + 10), obj_mainchara.y, obj_waterspot)
-                if (g != -4)
+                if (g != noone)
                 {
                     if (!(collision_point((obj_mainchara.x + 10), obj_mainchara.y, obj_waterboard, 0, 1)))
                     {
@@ -80,11 +80,11 @@ if (using == 1)
                 j = instance_position((obj_mainchara.x + 30), (obj_mainchara.y + 20), obj_npc_marker)
                 h = instance_position((obj_mainchara.x + 30), (obj_mainchara.y + 20), obj_waterboard)
                 g = instance_position((obj_mainchara.x + 30), (obj_mainchara.y + 20), obj_waterspot)
-                if (j == -4)
+                if (j == noone)
                 {
-                    if (h == -4)
+                    if (h == noone)
                     {
-                        if (g != -4)
+                        if (g != noone)
                         {
                             y = (obj_mainchara.y + 10)
                             x = (obj_mainchara.x + 20)
@@ -100,11 +100,11 @@ if (using == 1)
                 j = instance_position((obj_mainchara.x - 10), (obj_mainchara.y + 20), obj_npc_marker)
                 h = instance_position((obj_mainchara.x - 10), (obj_mainchara.y + 20), obj_waterboard)
                 g = instance_position((obj_mainchara.x - 10), (obj_mainchara.y + 20), obj_waterspot)
-                if (j == -4)
+                if (j == noone)
                 {
-                    if (h == -4)
+                    if (h == noone)
                     {
-                        if (g != -4)
+                        if (g != noone)
                         {
                             y = (obj_mainchara.y + 10)
                             x = (obj_mainchara.x - 20)
@@ -126,41 +126,41 @@ if (using == 2)
     if (dir == 2)
     {
         y -= 2
-        if (instance_position((x + 10), (y - 2), obj_npc_marker) != -4)
+        if (instance_position((x + 10), (y - 2), obj_npc_marker) != noone)
             using = 3
-        if (instance_position((x + 10), (y - 2), obj_waterstop) != -4)
+        if (instance_position((x + 10), (y - 2), obj_waterstop) != noone)
             using = 3
-        if (instance_position((x + 10), (y - 2), obj_waterboard) != -4)
+        if (instance_position((x + 10), (y - 2), obj_waterboard) != noone)
             using = 3
     }
     if (dir == 1)
     {
         x += 2
-        if (instance_position((x + 20), (y + 10), obj_npc_marker) != -4)
+        if (instance_position((x + 20), (y + 10), obj_npc_marker) != noone)
             using = 3
-        if (instance_position((x + 20), (y + 10), obj_waterstop) != -4)
+        if (instance_position((x + 20), (y + 10), obj_waterstop) != noone)
             using = 3
-        if (instance_position((x + 20), (y + 10), obj_waterboard) != -4)
+        if (instance_position((x + 20), (y + 10), obj_waterboard) != noone)
             using = 3
     }
     if (dir == 0)
     {
         y += 2
-        if (instance_position((x + 10), (y + 22), obj_npc_marker) != -4)
+        if (instance_position((x + 10), (y + 22), obj_npc_marker) != noone)
             using = 3
-        if (instance_position((x + 10), (y + 22), obj_waterstop) != -4)
+        if (instance_position((x + 10), (y + 22), obj_waterstop) != noone)
             using = 3
-        if (instance_position((x + 10), (y + 22), obj_waterboard) != -4)
+        if (instance_position((x + 10), (y + 22), obj_waterboard) != noone)
             using = 3
     }
     if (dir == 3)
     {
         x -= 2
-        if (instance_position((x - 2), (y + 10), obj_npc_marker) != -4)
+        if (instance_position((x - 2), (y + 10), obj_npc_marker) != noone)
             using = 3
-        if (instance_position((x - 2), (y + 10), obj_waterstop) != -4)
+        if (instance_position((x - 2), (y + 10), obj_waterstop) != noone)
             using = 3
-        if (instance_position((x - 2), (y + 10), obj_waterboard) != -4)
+        if (instance_position((x - 2), (y + 10), obj_waterboard) != noone)
             using = 3
     }
     if (using == 3)

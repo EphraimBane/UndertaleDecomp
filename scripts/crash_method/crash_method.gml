@@ -20,18 +20,22 @@ function crash_method(_ex)
 	ossafe_file_text_writeln(crashFileHandle);
 	ossafe_file_text_write_string(crashFileHandle, $"Time: {date_current_datetime()}");
 	ossafe_file_text_writeln(crashFileHandle);
-	ossafe_file_text_write_string(crashFileHandle, $"Line {_ex} in script: \"{ex.script}\"");
+	ossafe_file_text_write_string(crashFileHandle, $"Line {_ex.line} in script: \"{_ex.script}\"");
 	ossafe_file_text_writeln(crashFileHandle);
 	ossafe_file_text_write_string(crashFileHandle, $"--------------------------------------------------------------");
+	ossafe_file_text_writeln(crashFileHandle);
+	ossafe_file_text_write_string(crashFileHandle, _ex.message);
 	ossafe_file_text_writeln(crashFileHandle);
 	ossafe_file_text_write_string(crashFileHandle, $"StackTrace:");
 	ossafe_file_text_writeln(crashFileHandle);
 
-	for (var i = 0; i < array_length(ex.stacktrace); i++)
+	for (var i = 0; i < array_length(_ex.stacktrace); i++)
 	{
-		ossafe_file_text_write_string(crashFileHandle, ex.stacktrace[i]);
+		ossafe_file_text_write_string(crashFileHandle, _ex.stacktrace[i]);
 		ossafe_file_text_writeln(crashFileHandle);
 	}
 	
 	ossafe_file_text_close(crashFileHandle);
+	
+	show_message("An unhandled exception has occured! A copy of it has been saved to your save directory.");
 }

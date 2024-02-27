@@ -1,5 +1,5 @@
 buffer -= 1
-if (fun == true && harp == abc_123_a)
+if (fun == true && harp == 0)
 {
     harp = caster_load("music/harpnoise.ogg")
     if (weather == 1)

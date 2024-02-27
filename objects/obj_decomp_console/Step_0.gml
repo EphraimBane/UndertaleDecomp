@@ -1,3 +1,6 @@
+var dir_x = obj_time.right - obj_time.left;
+var dir_y = obj_time.up - obj_time.down;
+
 if (!global.decomp_vars.DevConsoleEnabled)
 {
 	active = false;
@@ -15,6 +18,17 @@ if (keyboard_check_pressed(vk_tab))
 
 if (!active)
 	return;
+	
+
+if (prev_dir_y != dir_y && dir_y != 0)
+{
+	if (dir_y == -1 && array_length(commands_history) > 0 && array_length(commands_history) > commands_history_index)
+		keyboard_string = commands_history[commands_history_index++];
+	else
+	{
+		
+	}
+}
 
 input_text = keyboard_string;
 
@@ -42,19 +56,13 @@ if (keyboard_check_pressed(vk_enter))
 		
 		var commandDef = commands[getCommandDefIndex(command_name)];
 		command_writeline(input_text);
-		script_execute(commandDef.functionRef, arg_array);
+		script_execute(asset_get_index(commandDef.functionRef), arg_array);
 		trace($"Attempting to execute command: \"{commandDef.displayName}\" with arguments: \"{arg_array}\"")
-		
-		keyboard_string = "";
-		input_text = "";
-		command_name = "";
 	}
 	else
-	{
 		command_writeline($"Unknown Command: \"{command_name}\"");
-		keyboard_string = "";
-		input_text = "";
-		command_name = "";
-	}
+	
+	command_push_function(input_text);
+	reset_input();
 }
 	
