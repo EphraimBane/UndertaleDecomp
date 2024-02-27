@@ -1,6 +1,10 @@
-function scr_getsprite()
+/// @func	scr_getsprite(spriteHandle)
+/// @desc	Gets a localized version of a sprite
+/// @arg	{Asset.GMSprite OR Real}	spriteHandle
+/// @return	{Asset.GMSprite}
+function scr_getsprite(_spriteHandle)
 {
-	var sprite_id = argument[0]
+	var sprite_id = _spriteHandle
 	if (global.language == "ja")
 	{
 	    if (sprite_id == spr_actbt_center)

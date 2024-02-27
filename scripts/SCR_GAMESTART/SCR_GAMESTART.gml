@@ -47,7 +47,7 @@ function SCR_GAMESTART()
 	global.charname = "CHARA"
 	for (i = 0; i < 8; i += 1)
 	{
-	    global.item[i] = 0
+	    global.item[i] = Items.Null;
 	    global.spell[i] = 1
 	    global.bulletvariable[i] = 0
 	    global.menuno = -1
@@ -62,11 +62,11 @@ function SCR_GAMESTART()
 	global.area = 0
 	for (i = 0; i < 512; i += 1)
 	    global.flag[i] = 0
-	FL_DimensionalBoxAItem1 = 14
-	FL_DimensionalBoxAItem2 = 0
-	FL_DimensionalBoxAItem3 = 0
-	FL_DimensionalBoxAItem4 = 0
-	FL_DimensionalBoxAItem5 = 0
+	FL_DimensionalBoxAItem1 = Items.ToughGlove;
+	FL_DimensionalBoxAItem2 = Items.Null;
+	FL_DimensionalBoxAItem3 = Items.Null;
+	FL_DimensionalBoxAItem4 = Items.Null;
+	FL_DimensionalBoxAItem5 = Items.Null;
 	global.flag[512] = 0
 	global.idealborder[0] = 0
 	global.idealborder[1] = 0
@@ -133,17 +133,17 @@ function SCR_GAMESTART()
 	global.faceemotion = 0
 	global.seriousbattle = 0
 	global.mercy = 0
-	global.item[0] = 0
-	global.item[1] = 0
-	global.item[2] = 0
-	global.item[3] = 0
-	global.item[4] = 0
-	global.item[5] = 0
-	global.item[6] = 0
-	global.item[7] = 0
-	global.item[8] = 0
-	global.weapon = 3
-	global.armor = 4
+	global.item[0] = Items.Null
+	global.item[1] = Items.Null
+	global.item[2] = Items.Null
+	global.item[3] = Items.Null
+	global.item[4] = Items.Null
+	global.item[5] = Items.Null
+	global.item[6] = Items.Null
+	global.item[7] = Items.Null
+	global.item[8] = Items.Null
+	global.weapon = Items.Stick
+	global.armor = Items.Bandage;
 	global.phone[0] = 0
 	global.phone[1] = 0
 	global.phone[2] = 0

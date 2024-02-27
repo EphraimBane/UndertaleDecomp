@@ -1,6 +1,6 @@
 function scr_runaway()
 {
-	if (FL_Hardmode == 0)
+	if (FL_Hardmode == false)
 	    runvalue = (random(100) + (10 * global.turn))
 	else
 	{
@@ -13,7 +13,7 @@ function scr_runaway()
 	    runvalue = 100
 	if (FL_Hardmode == 0)
 	{
-	    if (global.armor == 4)
+	    if (global.armor == Items.Bandage)
 	        runvalue = 100
 	}
 	if (runvalue > 50)
@@ -28,11 +28,11 @@ function scr_runaway()
 	    global.gold += global.goldreward[3]
 	    tlvl = global.lv
 	    script_execute(scr_levelup)
-	    if (levelup == 1)
+	    if (levelup == true)
 	        snd_play(snd_levelup)
 	    global.msc = 14
 	    instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
-	    FL_EscapedLast = 1
+	    FL_EscapedLast = true
 	    FL_EscapedCount += 1
 	}
 }
