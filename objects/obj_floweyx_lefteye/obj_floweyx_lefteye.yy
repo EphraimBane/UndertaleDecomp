@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Common",
+    "path": "folders/Objects/Battle/Omega Flowey/Common.yy",
   },
   "parentObjectId": {
     "name": "obj_floweybodyparent",

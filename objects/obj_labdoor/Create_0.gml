@@ -1,8 +1,8 @@
 type = 2
 s_buffer = 10
-o_sound = abc_123_a
-c_sound = abc_123_a
-s_sound = abc_123_a
+o_sound = 0
+c_sound = 0
+s_sound = 0
 open = -1
 ox = 0
 anim = 0

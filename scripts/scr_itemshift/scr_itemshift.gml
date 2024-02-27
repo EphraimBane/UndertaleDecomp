@@ -1,8 +1,12 @@
-function scr_itemshift()
+/// @func	scr_itemshift(itemIndex, hpRecovered)
+/// @desc	Shifts the items down starting from the specified index
+/// @arg	itemIndex
+/// @arg	hpRecovered
+function scr_itemshift(_itemIndex, _hpRecovered)
 {
-	global.item[8] = argument1
-	for (i = argument0; i < 8; i += 1)
+	global.item[8] = _hpRecovered
+	for (i = _itemIndex; i < 8; i += 1)
 	    global.item[i] = global.item[(i + 1)]
-	script_execute(scr_itemnameb)
-	script_execute(scr_itemname)
+	scr_itemnameb()
+	scr_itemname()
 }

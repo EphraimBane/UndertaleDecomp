@@ -1,31 +1,35 @@
-function scr_itemuseb()
+/// @func	scr_itemuseb(itemIndex, itemToUse)
+/// @desc	Uses an item in battle
+/// @arg	{real}	itemIndex	The position of the item
+/// @arg	{real}	itemToUse	The item to use
+function scr_itemuseb(_itemIndex, _itemToUse)
 {
-	global.msg[0] = scr_gettext(("item_use_" + string(argument1)))
-	switch argument1
+	global.msg[0] = scr_gettext(("item_use_" + string(_itemToUse)))
+	switch _itemToUse
 	{
-	    case 0:
+	    case Items.Null:
 	        break
-	    case 1:
-	        if (global.seriousbattle == 0)
+	    case Items.MonsterCandy:
+	        if (global.seriousbattle == false)
 	        {
 	            randomtext = round(random(15))
 	            if (randomtext <= 2)
-	                global.msg[0] += scr_gettext("item_use_1a")
+	                global.msg[0] += scr_gettext("item_use_1a") // &* Very un-licorice-like.
 	            if (randomtext == 15)
-	                global.msg[0] += scr_gettext("item_use_1b")
+	                global.msg[0] += scr_gettext("item_use_1b") // &* ... tastes like licorice.
 	        }
-	        script_execute(scr_recoitem, 10)
+	        scr_recoitem(10)
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_itemshift(_itemIndex, 0)
 	        break
-	    case 2:
-	        if (global.seriousbattle == 1)
-	            global.msg[0] = scr_gettext("item_use_2_serious")
+	    case Items.CroquetRoll:
+	        if (global.seriousbattle == true)
+	            global.msg[0] = scr_gettext("item_use_2_serious") //* You ate the Croquet Roll.
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 15)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(15)
+	        scr_itemshift(_itemIndex, 0)
 	        break
-	    case 3:
+	    case Items.Stick:
 	        if instance_exists(obj_dogeparent)
 	        {
 	            if instance_exists(obj_lesserdoge)
@@ -39,17 +43,17 @@ function scr_itemuseb()
 	            {
 	                if (scr_monstersum() == 1)
 	                {
-	                    script_execute(scr_writetext, 0, scr_gettext("item_use_3_doge1"), 0, 0)
+	                    scr_writetext(0, scr_gettext("item_use_3_doge1"), 0, 0) //* You threw the stick^1.&* But nothing happened./%
 	                    obj_dogeparent.mercymod = -9999
 	                }
 	                else
-	                    script_execute(scr_writetext, 0, scr_gettext("item_use_3_doge2"), 0, 0)
+	                    scr_writetext(0, scr_gettext("item_use_3_doge2"), 0, 0) //* You threw the stick and&  the dogs ran to get it^1.&* You played fetch for a while./%
 	            }
 	            else
 	            {
 	                if instance_exists(obj_greatdog)
 	                    obj_dogeparent.mercymod = 250
-	                script_execute(scr_writetext, 0, scr_gettext("item_use_3_greatdog"), 0, 0)
+	                scr_writetext(0, scr_gettext("item_use_3_greatdog"), 0, 0) //* You threw the stick and&  the dog ran to get it^1.&* You played fetch for a while./%
 	            }
 	            if instance_exists(obj_endogeny)
 	                obj_endogeny.mercymod = 999999
@@ -57,10 +61,10 @@ function scr_itemuseb()
 	        else if (instance_exists(obj_papyrusboss) || instance_exists(obj_wizard) || instance_exists(obj_mettatonex))
 	        {
 	            if instance_exists(obj_papyrusboss)
-	                script_execute(scr_writetext, 0, scr_gettext("item_use_3_papyrus"), 0, 0)
+	                scr_writetext(0, scr_gettext("item_use_3_papyrus"), 0, 0) //* You throw the stick.&* Papyrus brings it back&  in his mouth./%
 	            if instance_exists(obj_wizard)
 	            {
-	                script_execute(scr_writetext, 0, scr_gettext("item_use_3_madjick"), 0, 0)
+	               scr_writetext(0, scr_gettext("item_use_3_madjick"), 0, 0) //* You raise the stick.&* Madjick mistakes it for&  a magic wand./%
 	                obj_wizard.mercymod = 300
 	            }
 	            if instance_exists(obj_mettatonex)
@@ -70,37 +74,37 @@ function scr_itemuseb()
 	                    curtype = 7
 	                    event_user(0)
 	                }
-	                script_execute(scr_writetext, 0, scr_gettext("item_use_3_mettaton"), 0, 0)
+	                scr_writetext(0, scr_gettext("item_use_3_mettaton"), 0, 0) //* You throw the stick.&* Mettaton catches it in his&  mouth and winks./%
 	            }
 	        }
 	        else
-	            script_execute(scr_writetext, 0, scr_gettext("item_use_3"), 0, 0)
+	           scr_writetext(0, scr_gettext("item_use_3"), 0, 0) //* You threw the stick away^1.&* Then picked it back up./%
 	        break
-	    case 4:
+	    case Items.Bandage:
 	        snd_play(snd_power)
 	        if (global.seriousbattle == 0)
-	            global.msg[0] += scr_gettext("item_use_4a")
-	        script_execute(scr_recoitem, 10)
-	        script_execute(scr_itemshift, argument0, 0)
+	            global.msg[0] += scr_gettext("item_use_4a") //&* Still kind of gooey.
+	        scr_recoitem(10)
+	        scr_itemshift(_itemIndex, 0)
 	        break
-	    case 5:
-	        script_execute(scr_recoitem, 1)
+	    case Items.RockCandy:
+	        scr_recoitem(1)
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_itemshift(_itemIndex, 0)
 	        break
-	    case 6:
+	    case Items.PumpkinRings:
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 8)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(8)
+	        scr_itemshift(_itemIndex, 0)
 	        break
-	    case 7:
+	    case Items.SpiderDonut:
 	        if (global.seriousbattle == 0)
 	        {
 	            if (global.inbattle == 1)
 	            {
 	                randomtext = ceil(random(10))
 	                if (randomtext > 9)
-	                    global.msg[0] = scr_gettext("item_use_7a")
+	                    global.msg[0] = scr_gettext("item_use_7a") //* Don't worry^1, Spider didn't.
 	            }
 	        }
 	        if instance_exists(obj_spiderb)
@@ -109,41 +113,41 @@ function scr_itemuseb()
 	                event_user(6)
 	        }
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 12)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(12)
+	        scr_itemshift(_itemIndex, 0)
 	        break
-	    case 8:
+	    case Items.StoicOnion:
 	        if (global.seriousbattle == 0)
 	        {
 	            randomtext = round(random(10))
 	            if (randomtext > 8)
-	                global.msg[0] += scr_gettext("item_use_8a")
+	                global.msg[0] += scr_gettext("item_use_8a") //&* You didn't cry...
 	        }
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 5)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(5)
+	        scr_itemshift(_itemIndex, 0)
 	        break
-	    case 9:
+	    case Items.GhostFruit:
 	        foodsounder = instance_create(0, 0, obj_foodsound)
 	        if (global.seriousbattle == 0)
 	        {
 	            with (foodsounder)
 	                soundtype = 2
 	        }
-	        script_execute(scr_recoitem, 16)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(16)
+	        scr_itemshift(_itemIndex, 0)
 	        break
-	    case 10:
+	    case Items.SpiderCider:
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 24)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(24)
+	        scr_itemshift(_itemIndex, 0)
 	        if instance_exists(obj_spiderb)
 	        {
 	            with (obj_spiderb)
 	                event_user(6)
 	        }
 	        break
-	    case 11:
+	    case Items.ButterscotchPie:
 	        instance_create(0, 0, obj_foodsound)
 	        spec_p = 0
 	        if (global.hp < global.maxhp)
@@ -151,8 +155,8 @@ function scr_itemuseb()
 	        if instance_exists(obj_asgoreb)
 	        {
 	            spec_p = 1
-	            global.msg[1] = scr_gettext("item_use_11_asgore1")
-	            global.msg[2] = scr_gettext("item_use_11_asgore2")
+	            global.msg[1] = scr_gettext("item_use_11_asgore1") //* The smell reminded ASGORE of&  something.../
+	            global.msg[2] = scr_gettext("item_use_11_asgore2") //* ASGORE's ATTACK down^1!&* ASGORE's DEFENSE down!/%%
 	            with (obj_asgoreb)
 	            {
 	                global.monsteratk[myself] -= 1
@@ -162,115 +166,115 @@ function scr_itemuseb()
 	        if instance_exists(obj_ripoff_toriel)
 	        {
 	            spec_p = 1
-	            global.msg[1] = scr_gettext("item_use_11_toriel")
+	            global.msg[1] = scr_gettext("item_use_11_toriel") //* The smell reminded the Lost&  Souls of something...!/%%
 	            with (obj_monsterparent)
 	                totalmercy += 3
 	        }
 	        if (spec_p == 0)
-	            script_execute(scr_writetext, 0, (scr_gettext("item_use_11") + "%"), 0, 0)
+	            scr_writetext(0, (scr_gettext("item_use_11") + "%"), 0, 0) //* You ate the Butterscotch Pie.&* Your HP was maxed out./
 	        if (spec_p == 1)
-	            script_execute(scr_writetext, 0, scr_gettext("item_use_11"), 0, 0)
-	        script_execute(scr_itemshift, argument0, 0)
+	            scr_writetext(0, scr_gettext("item_use_11"), 0, 0) //* You ate the Butterscotch Pie.&* Your HP was maxed out./
+	        scr_itemshift(_itemIndex, 0)
 	        break
-	    case 12:
-	        scr_armoreq(argument0, argument1)
+	    case Items.FadedRibbon:
+	        scr_armoreq(_itemIndex, _itemToUse)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+			scr_writetext(0, "x", 0, 0)
 	        break
-	    case 13:
-	        scr_weaponeq(argument0, argument1)
+	    case Items.ToyKnife:
+	        scr_weaponeq(_itemIndex, _itemToUse)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
-	    case 14:
-	        scr_weaponeq(argument0, argument1)
+	    case Items.ToughGlove:
+	        scr_weaponeq(_itemIndex, _itemToUse)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
-	    case 15:
-	        scr_armoreq(argument0, argument1)
+	    case Items.ManlyBandanna:
+	        scr_armoreq(_itemIndex, _itemToUse)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
-	    case 16:
+	    case Items.SnowmanPiece:
 	        if (room == room_tundra6A)
 	            FL_SnowmanStatus = SnowmanStatus.WitnessedPlayerUse
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 45)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(45)
+	        scr_itemshift(_itemIndex, 0)
 	        break
-	    case 17:
+	    case Items.NiceCream:
 	        randomtext = floor(random(8))
 	        if (randomtext == 0)
-	            global.msg[0] = scr_gettext("item_use_17a")
+	            global.msg[0] = scr_gettext("item_use_17a") //* You're just great!
 	        if (randomtext == 1)
-	            global.msg[0] = scr_gettext("item_use_17b")
+	            global.msg[0] = scr_gettext("item_use_17b") //* You look nice today!
 	        if (randomtext == 2)
-	            global.msg[0] = scr_gettext("item_use_17c")
+	            global.msg[0] = scr_gettext("item_use_17c") //* Are those claws natural?
 	        if (randomtext == 3)
-	            global.msg[0] = scr_gettext("item_use_17d")
+	            global.msg[0] = scr_gettext("item_use_17d") //* You're super spiffy!
 	        if (randomtext == 4)
-	            global.msg[0] = scr_gettext("item_use_17e")
+	            global.msg[0] = scr_gettext("item_use_17e") //* Have a wonderful day!
 	        if (randomtext == 5)
-	            global.msg[0] = scr_gettext("item_use_17f")
+	            global.msg[0] = scr_gettext("item_use_17f") //* Is this as sweet as you?
 	        if (randomtext == 6)
-	            global.msg[0] = scr_gettext("item_use_17g")
+	            global.msg[0] = scr_gettext("item_use_17g") //* (An illustration of a hug.)
 	        if (randomtext == 7)
-	            global.msg[0] = scr_gettext("item_use_17h")
+	            global.msg[0] = scr_gettext("item_use_17h") //* Love yourself! I love you!
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 15)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(15)
+	        scr_itemshift(_itemIndex, 0)
 	        break
-	    case 18:
+	    case Items.PuppydoughIceCream:
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 28)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(28)
+	        scr_itemshift(_itemIndex, 0)
 	        break
-	    case 19:
+	    case Items.Bisicle:
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 11)
-	        global.item[argument0] = 20
+	        scr_recoitem(11)
+	        global.item[_itemIndex] = Items.Unisicle
 	        break
-	    case 20:
+	    case Items.Unisicle:
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 11)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(11)
+	        scr_itemshift(_itemIndex, 0)
 	        break
-	    case 21:
+	    case Items.CinnamonBun:
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 22)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(22)
+	        scr_itemshift(_itemIndex, 0)
 	        break
-	    case 22:
+	    case Items.TemmieFlakes:
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 2)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(2)
+	        scr_itemshift(_itemIndex, 0)
 	        break
-	    case 23:
+	    case Items.AbandonedQuiche:
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 34)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(34)
+	        scr_itemshift(_itemIndex, 0)
 	        break
-	    case 24:
-	        scr_armoreq(argument0, argument1)
+	    case Items.OldTutu:
+	        scr_armoreq(_itemIndex, _itemToUse)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
-	    case 25:
-	        scr_weaponeq(argument0, argument1)
+	    case Items.BalletShoes:
+	        scr_weaponeq(_itemIndex, _itemToUse)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
-	    case 26:
-	        if (global.inbattle == 0)
+	    case Items.PunchCard:
+	        if (global.inbattle == false)
 	        {
 	            d = instance_create(x, y, obj_imageview)
 	            d.sprite_index = scr_getsprite(spr_punchcard)
-	            global.interact = 1
+	            global.interact = true
 	        }
 	        else
 	        {
-	            if (global.weapon == 14)
+	            if (global.weapon == Items.ToughGlove)
 	            {
 	                snd_play(snd_tearcard)
 	                add = 6
@@ -284,7 +288,7 @@ function scr_itemuseb()
 	                    add = 2
 	                global.at += add
 	                global.msg[1] = scr_gettext("item_use_26a", string(add))
-	                FL_StrongToughGlove = 1
+	                FL_StrongToughGlove = true
 	            }
 	            else
 	                global.msg[1] = scr_gettext("item_use_26b")

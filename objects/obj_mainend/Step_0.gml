@@ -9,58 +9,58 @@ if (con == 1)
     global.typer = 5
     global.facechoice = 0
     global.msc = 0
-    global.msg[0] = scr_gettext("obj_mainend_158")
+    global.msg[0] = scr_gettext("obj_mainend_158") // * (Ring^1, ring...)
     scr_sansface(1, 0)
-    global.msg[2] = scr_gettext("obj_mainend_160")
-    global.msg[3] = scr_gettext("obj_mainend_161")
-    global.msg[4] = scr_gettext("obj_mainend_162")
-    scr_itemcheck(16)
-    if (haveit == true && FL_PapyrusStatus != 1)
+    global.msg[2] = scr_gettext("obj_mainend_160") // * heya.
+    global.msg[3] = scr_gettext("obj_mainend_161") // * is anyone there...?
+    global.msg[4] = scr_gettext("obj_mainend_162") // * well^1, i'll just leave&  a message...
+    scr_itemcheck(Items.SnowmanPiece)
+    if (haveit == true && FL_PapyrusStatus != PapyrusStatus.Spared)
     {
-        global.msg[3] = scr_gettext("obj_mainend_169")
-        global.msg[4] = scr_gettext("obj_mainend_170")
-        global.msg[5] = scr_gettext("obj_mainend_171")
-        global.msg[6] = scr_gettext("obj_mainend_172")
+        global.msg[3] = scr_gettext("obj_mainend_169") // * is anyone there...?
+        global.msg[4] = scr_gettext("obj_mainend_170") // * well..^1. just calling&  to say.
+        global.msg[5] = scr_gettext("obj_mainend_171") // * you made a snowman&  really happy.
+        global.msg[6] = scr_gettext("obj_mainend_172") // * ... guess i should&  say something else^1,&  too.
     }
-    if (ossafe_file_exists("file0") == 0 && FL_PapyrusStatus != 1)
+    if (ossafe_file_exists("file0") == false && FL_PapyrusStatus != PapyrusStatus.Spared)
     {
-        global.msg[2] = scr_gettext("obj_mainend_177")
-        global.msg[4] = scr_gettext("obj_mainend_178")
-        global.msg[5] = scr_gettext("obj_mainend_179")
-        global.msg[6] = scr_gettext("obj_mainend_180")
+        global.msg[2] = scr_gettext("obj_mainend_177") // * heya.
+        global.msg[4] = scr_gettext("obj_mainend_178") // * well..^1. just calling&  to say.
+        global.msg[5] = scr_gettext("obj_mainend_179") // * it's been a while^1.&* shouldn't you SAVE?
+        global.msg[6] = scr_gettext("obj_mainend_180") // * ... guess i should&  say something else^1,&  too.
     }
-    if (global.armor == 4 && FL_PapyrusStatus != 1)
+    if (global.armor == Items.Bandage && FL_PapyrusStatus != PapyrusStatus.Spared)
     {
-        global.msg[3] = scr_gettext("obj_mainend_186")
-        global.msg[4] = scr_gettext("obj_mainend_187")
-        global.msg[5] = scr_gettext("obj_mainend_188")
-        global.msg[6] = scr_gettext("obj_mainend_189")
+        global.msg[3] = scr_gettext("obj_mainend_186") // * is anyone there...?
+        global.msg[4] = scr_gettext("obj_mainend_187") // * well..^1. just calling&  to ask.
+        global.msg[5] = scr_gettext("obj_mainend_188") // * did you ever take&  off that gross&  bandage...?
+        global.msg[6] = scr_gettext("obj_mainend_189") // * ... guess i should&  say something else^1,&  too.
     }
-    if (FL_UsedRecoveryItem == 0 && FL_PapyrusStatus != 1)
+    if (FL_UsedRecoveryItem == false && FL_PapyrusStatus != PapyrusStatus.Spared)
     {
-        global.msg[3] = scr_gettext("obj_mainend_195")
-        global.msg[4] = scr_gettext("obj_mainend_196")
-        global.msg[5] = scr_gettext("obj_mainend_197")
-        global.msg[6] = scr_gettext("obj_mainend_198")
+        global.msg[3] = scr_gettext("obj_mainend_195") // * is anyone there...?
+        global.msg[4] = scr_gettext("obj_mainend_196") // * well..^1. just calling&  to ask.
+        global.msg[5] = scr_gettext("obj_mainend_197") // * did you ever get&  something to eat?
+        global.msg[6] = scr_gettext("obj_mainend_198") // * ... guess i should&  say something else^1,&  too.
     }
-    if (FL_UsedRecoveryItem == 0 && global.lv == 1 && global.armor == 4 && FL_PapyrusStatus != 1)
+    if (FL_UsedRecoveryItem == false && global.lv == 1 && global.armor == Items.Bandage && FL_PapyrusStatus != PapyrusStatus.Spared)
     {
-        global.msg[3] = scr_gettext("obj_mainend_204")
-        global.msg[4] = scr_gettext("obj_mainend_205")
-        global.msg[5] = scr_gettext("obj_mainend_206")
-        global.msg[6] = scr_gettext("obj_mainend_207")
-        global.msg[7] = scr_gettext("obj_mainend_208")
-        global.msg[8] = scr_gettext("obj_mainend_209")
+        global.msg[3] = scr_gettext("obj_mainend_204") // * is anyone there...?
+        global.msg[4] = scr_gettext("obj_mainend_205") // * well..^1. just calling&  to ask.
+        global.msg[5] = scr_gettext("obj_mainend_206") // * you really like to&  challenge yourself^1,&  huh...?
+        global.msg[6] = scr_gettext("obj_mainend_207") // * well..^1. good job^1.
+        global.msg[7] = scr_gettext("obj_mainend_208") // * just promise not to&  brag about it^1,&  okay?
+        global.msg[8] = scr_gettext("obj_mainend_209") // * ... guess i should&  say something else^1,&  too.
     }
     if (q == 7)
     {
-        global.msg[2] = scr_gettext("obj_mainend_214")
-        global.msg[3] = scr_gettext("obj_mainend_215")
+        global.msg[2] = scr_gettext("obj_mainend_214") // * ...
+        global.msg[3] = scr_gettext("obj_mainend_215") // * alright^1, i've got the&  number.
     }
     instance_create(0, 0, obj_dialoguer)
     con = 2
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     if (q != 3 && q != 7)
         caster_loop(global.currentsong, 1, 1)

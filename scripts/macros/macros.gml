@@ -211,7 +211,12 @@
 #macro FL_SMSConvoParameters global.flag[287]
 #macro FL_FailedBombDefusing global.flag[288]
 #macro FL_SteppedOnGreenTile global.flag[289]
-// 290 - 299 Unused
+// 290 - 291 Unused
+#macro FL_DogShrineGDeposited global.flag[292]
+#macro FL_DogShrineGoldNeeded global.flag[293]
+#macro FL_DogShrineLevel global.flag[294]
+#macro FL_DogShrineUnknown global.flag[295] //TODO: THIS
+// 296 - 299 Unused
 #macro FL_DimensionalBoxAItem1 global.flag[300]
 #macro FL_DimensionalBoxAItem2 global.flag[301]
 #macro FL_DimensionalBoxAItem3 global.flag[302]

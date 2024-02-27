@@ -1,6 +1,6 @@
 function scr_weaponeq()
 {
-	if (global.weapon == Items.ToughGlove && global.inbattle == 1 && FL_StrongToughGlove == 1)
+	if (global.weapon == Items.ToughGlove && global.inbattle == true && FL_StrongToughGlove == true)
 	    global.at = (8 + (global.lv * 2))
 	if (argument0 >= 0)
 	    global.item[argument0] = global.weapon

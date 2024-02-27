@@ -1,6 +1,6 @@
 if (myinteract == 453748)
 {
-    if (snd_isplaying(snd_movemenu) == abc_123_a)
+    if (snd_isplaying(snd_movemenu) == 0)
         snd_play(snd_movemenu)
     if (image_index == 0)
     {

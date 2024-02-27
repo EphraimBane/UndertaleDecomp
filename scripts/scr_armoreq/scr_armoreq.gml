@@ -1,38 +1,41 @@
-function scr_armoreq()
+/// @func	scr_armoreq(itemIndex, armorItem)
+/// @arg	{Real}	itemIndex	The index of the inventory to put the current armor into
+/// @arg	{Real}	armorItem	The item to equip
+function scr_armoreq(_itemIndex, _armorItem)
 {
-	if (global.armor == 48)
+	if (global.armor == Items.CowboyHat)
 	    global.wstrength -= 5
-	if (global.armor == 64)
+	if (global.armor == Items.TemyArmor)
 	    global.wstrength -= 10
-	if (argument0 >= 0)
-	    global.item[argument0] = global.armor
-	global.armor = argument1
-	if (global.armor == 4)
+	if (_itemIndex >= 0)
+	    global.item[_itemIndex] = global.armor
+	global.armor = _armorItem
+	if (global.armor == Items.Bandage)
 	    global.adef = 0
-	if (global.armor == 12)
+	if (global.armor == Items.FadedRibbon)
 	    global.adef = 3
-	if (global.armor == 15)
+	if (global.armor == Items.ManlyBandanna)
 	    global.adef = 7
-	if (global.armor == 24)
+	if (global.armor == Items.OldTutu)
 	    global.adef = 10
-	if (global.armor == 44)
+	if (global.armor == Items.ButtyGlasses)
 	    global.adef = 5
-	if (global.armor == 46)
+	if (global.armor == Items.StainedApron)
 	    global.adef = 11
-	if (global.armor == 48)
+	if (global.armor == Items.CowboyHat)
 	{
 	    global.adef = 12
 	    global.wstrength += 5
 	}
-	if (global.armor == 50)
+	if (global.armor == Items.HeartLocket)
 	    global.adef = 15
-	if (global.armor == 53)
+	if (global.armor == Items.TheLocket)
 	    global.adef = 99
-	if (global.armor == 64)
+	if (global.armor == Items.TemyArmor)
 	{
 	    global.adef = 20
 	    global.wstrength += 10
 	}
-	script_execute(scr_itemnameb)
-	script_execute(scr_itemname)
+	scr_itemnameb()
+	scr_itemname()
 }

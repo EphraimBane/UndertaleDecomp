@@ -4,8 +4,8 @@
 A decompilation of the latest version of UNDERTALE for the Nintendo Switch ported to the latest Gamemaker Studio 2 with many added toggleable enhancements<br>
 (If you are toby fox please hmu I'd love to talk :3)
 ### Main Contributors
-Vultumast - Code Cleanup, Bug Fixing, Some Sorting<br>
-[Daniela](https://lethallava.land/@daniela) - Code Cleanup, Bug Fixing, Most Sorting
+Vultumast - Project Lead - Code Cleanup, Bug Fixing, Some Sorting<br>
+[Daniela](https://lethallava.land/@daniela) - Main Project assistant - Code Cleanup, Bug Fixing, Most Sorting, Most Testing
 
 ## Do you have permission to share this?
 I specifically emailed the fangamer UNDERTALE contact for permission, and was extremely specific that this was a DECOMP, and I was told explicitly:<br>
@@ -16,6 +16,8 @@ I specifically emailed the fangamer UNDERTALE contact for permission, and was ex
 Clone the repo, and open ``NXTale.yyp`` inside of Gamemaker Studio 2 (latest!)
 
 ## Special Thanks
+MrPorkchop - Made the Icon<br>
+[Ally](https://twitter.com/chromadeline) - Made the Decomp Menu Music<br>
 [TaiAurori](https://devkats.club) - Android Port Testing<br>
 [Invoxiplaygames](https://ipg.pw/) - MacOS Port Testing<br>
 [Clovercorp](https://twitter.com/silverparasoul) - Came up with the Name 

@@ -1,5 +1,6 @@
 if (!active)
 	return;
+
 var saved_draw_state = new draw_state();
 
 draw_set_font(fnt_maintext);
@@ -25,12 +26,9 @@ draw_set_color(c_white);
 draw_set_alpha(1.0);
 
 
-
-
-
 #region Input
 
-var input_text_x = bounds_rect.x + char_width + 9;
+var input_text_x = bounds_rect.x + char_width + 10;
 var input_text_y = (bounds_rect.bottom - char_height) - 2;
 var input_box_y = (bounds_rect.bottom - char_height) - 4;
 
@@ -45,10 +43,38 @@ draw_set_alpha(1.0);
 #endregion
 
 #region History
-for (var i = 0; i < array_length(history); i++)
+
+var history_len = array_length(history);
+for (var i = 0; i < history_len; i++)
 {
-	draw_text(bounds_rect.x, input_box_y - ((array_length(history) - i)* char_height), history[i])
+	draw_text(bounds_rect.x + 2, input_box_y - ((history_len - i) * char_height), history[i]);
 }
+
+if (history_len != 0)
+{
+	var scroll_x = bounds_rect.right - 9;
+	var scroll_y = bounds_rect.y + 3;
+	
+	var scroll_width = 5;
+	var scroll_height = (input_box_y - 4) - scroll_y;
+	
+	draw_set_color(c_gray);
+	ossafe_fill_rectangle(scroll_x, scroll_y, scroll_x + scroll_width, scroll_y + scroll_height);
+	
+	draw_set_color(c_white);
+	var scroll_size = scroll_height - (history_len / scroll_height);
+	
+	var bar_x = scroll_x;
+	var bar_y = (scroll_y + scroll_height) - (scroll_offset * scroll_size);
+	var bar_right =  scroll_x + scroll_width;
+	var bar_bottom = (scroll_y + scroll_height) - (scroll_height * scroll_size);
+	
+	if (bar_x >= mouse_x && mouse_x <= bar_right && bar_y >= mouse_ y && mouse_y <= bar_bottom)
+		draw_set_color(c_yellow);
+	
+	ossafe_fill_rectangle(bar_x, bar_y, bar_right, bar_bottom);
+}
+draw_set_color(c_white);
 #endregion
 
 #region Input

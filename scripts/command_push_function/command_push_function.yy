@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "command_write_output",
+  "name": "command_push_function",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

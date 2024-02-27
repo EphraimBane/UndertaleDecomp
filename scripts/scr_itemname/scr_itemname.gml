@@ -1,3 +1,5 @@
+/// @func	scr_itemname()
+/// @desc	Updates the item name table (for Overworld)
 function scr_itemname()
 {
 	for (i = 0; i < 8; i += 1)

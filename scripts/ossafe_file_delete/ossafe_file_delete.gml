@@ -1,3 +1,7 @@
+/// @func		ossafe_file_delete(filepath)
+/// @desc		Safely deletes a file
+/// @param		{string}	filepath	The filepath of the file to delete
+/// @returns	{bool}
 function ossafe_file_delete(_filepath)
 {
 	if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)

@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "DogShrine",
+    "path": "folders/Objects/Console Specific/DogShrine.yy",
   },
   "parentObjectId": null,
   "persistent": false,

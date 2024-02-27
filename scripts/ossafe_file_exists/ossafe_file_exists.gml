@@ -1,3 +1,7 @@
+/// @func		ossafe_file_exists(filepath)
+/// @desc		Safely checks if a file exists
+/// @param		{string}	filepath	The filepath of the file to check
+/// @returns	{bool}
 function ossafe_file_exists(_filepath)
 {
 	if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)

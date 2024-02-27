@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 39.587643,
+  "duration": 26.12245,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Decomp/Music.yy",

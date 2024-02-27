@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "True Lab",
+    "path": "folders/Objects/Overworld/True Lab.yy",
   },
   "parentObjectId": {
     "name": "obj_readable",

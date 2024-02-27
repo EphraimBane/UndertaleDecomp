@@ -1,2 +1,2 @@
-if (snd == abc_123_a)
+if (snd == 0)
     snd_play(snd_breakc)

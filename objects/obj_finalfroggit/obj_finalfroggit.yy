@@ -15,8 +15,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Core",
+    "path": "folders/Objects/Overworld/Hotlands/Core.yy",
   },
   "parentObjectId": {
     "name": "obj_monsterparent",
