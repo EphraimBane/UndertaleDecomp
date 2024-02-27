@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Undynes House",
-    "path": "folders/Sprites/Overworld/Waterfall/Undynes House.yy",
+    "name": "Waterfall",
+    "path": "folders/Sprites/Tilesets/Waterfall.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

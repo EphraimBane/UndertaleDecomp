@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Waterfall",
-    "path": "folders/Sprites/Overworld/Waterfall.yy",
+    "path": "folders/Sprites/Tilesets/Waterfall.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

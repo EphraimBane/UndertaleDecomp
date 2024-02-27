@@ -3004,6 +3004,7 @@
     {"id":{"name":"mus_dogshrine_1","path":"sounds/mus_dogshrine_1/mus_dogshrine_1.yy",},},
     {"id":{"name":"mus_dogshrine_2","path":"sounds/mus_dogshrine_2/mus_dogshrine_2.yy",},},
     {"id":{"name":"mus_dogsong","path":"sounds/mus_dogsong/mus_dogsong.yy",},},
+    {"id":{"name":"ts_fences","path":"tilesets/ts_fences/ts_fences.yy",},},
     {"id":{"name":"mus_papyrusboss","path":"sounds/mus_papyrusboss/mus_papyrusboss.yy",},},
     {"id":{"name":"mus_shop","path":"sounds/mus_shop/mus_shop.yy",},},
     {"id":{"name":"mus_town","path":"sounds/mus_town/mus_town.yy",},},
