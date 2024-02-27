@@ -1,3 +1,6 @@
+/// @func	trophy_unlock(trophy_id)
+/// @desc	Unlocks a specified trophy
+/// @arg	{string}	trophy_id	The trophy to unlock
 function trophy_unlock(_trophy_id)
 {
 	var trophy_id = _trophy_id

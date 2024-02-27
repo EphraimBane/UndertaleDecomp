@@ -21,6 +21,7 @@ array_push(commands, new command_def("fun_get", "Gets the Fun value", cmd_fun_ge
 array_push(commands, new command_def("hp_set", "Sets your hp", cmd_hp_set, [ "value" ]));
 array_push(commands, new command_def("stfu", "Stops all Audio", cmd_stfu, [ ]));
 array_push(commands, new command_def("create_fake_trophy", "Creates a fake trophy (for debug)", cmd_create_fake_trophy, [ "icon_index", "text" ]));
+array_push(commands, new command_def("gold_set", "Sets your gold", cmd_gold_set, [ "value" ]));
 
 function activate() 
 {

@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Playstation",
-    "path": "folders/Scripts/Common/Playstation.yy",
+    "path": "folders/Scripts/Console/Playstation.yy",
   },
 }

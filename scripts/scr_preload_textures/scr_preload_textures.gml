@@ -1,5 +1,8 @@
+/// @func	scr_preload_textures()
+/// @desc	Preloads textures based on your room
 function scr_preload_textures()
 {
+	// Vultu: this is an awful way to prefetch textures! We should redo this (TODO)
 	if (room == room_castle_throneroom || room == room_castle_barrier || (room == room_battle && (instance_exists(obj_asgore_finalintro) || instance_exists(obj_asgoreb))))
 	    sprite_prefetch(spr_torheart_again)
 	if (room == room_asrielappears || (room == room_battle && (instance_exists(obj_asrielb) || instance_exists(obj_asrielfinal))))

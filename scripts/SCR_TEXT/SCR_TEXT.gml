@@ -5373,34 +5373,34 @@ function SCR_TEXT()
 	        global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5913")
 	        global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5914")
 	        global.msg[2] = " "
-	        if (global.flag[295] >= 1)
-	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5919", string(global.flag[292]), string(global.flag[293]))
-	        if (global.flag[295] == 2 && global.flag[294] == 1)
+	        if (FL_DogShrineUnknown >= 1)
+	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5919", string(FL_DogShrineGDeposited), string(FL_DogShrineGoldNeeded))
+	        if (FL_DogShrineUnknown == 2 && FL_DogShrineLevel == 1)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5924")
 	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5925")
-	            global.msg[2] = scr_gettext("SCR_TEXT_dogshrine_5919", string(global.flag[292]), string(global.flag[293]))
+	            global.msg[2] = scr_gettext("SCR_TEXT_dogshrine_5919", string(FL_DogShrineGDeposited), string(FL_DogShrineGoldNeeded))
 	            global.msg[3] = " "
-	            global.flag[295] = 3
+	            FL_DogShrineUnknown = 3
 	        }
-	        if (global.flag[295] == 3 && global.flag[294] == 5)
+	        if (FL_DogShrineUnknown == 3 && FL_DogShrineLevel == 5)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5933")
-	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5919", string(global.flag[292]), string(global.flag[293]))
+	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5919", string(FL_DogShrineGDeposited), string(FL_DogShrineGoldNeeded))
 	            global.msg[2] = " "
-	            global.flag[295] = 4
+	            FL_DogShrineUnknown = 4
 	        }
-	        if (global.flag[295] == 4 && global.flag[294] == 10)
+	        if (FL_DogShrineUnknown == 4 && FL_DogShrineLevel == 10)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5941")
 	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5942")
 	            global.msg[2] = scr_gettext("SCR_TEXT_dogshrine_5943")
 	            global.msg[3] = scr_gettext("SCR_TEXT_dogshrine_5944")
-	            global.msg[4] = scr_gettext("SCR_TEXT_dogshrine_5919", string(global.flag[292]), string(global.flag[293]))
+	            global.msg[4] = scr_gettext("SCR_TEXT_dogshrine_5919", string(FL_DogShrineGDeposited), string(FL_DogShrineGoldNeeded))
 	            global.msg[5] = " "
-	            global.flag[295] = 5
+	            FL_DogShrineUnknown = 5
 	        }
-	        if (global.flag[295] >= 6)
+	        if (FL_DogShrineUnknown >= 6)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5954")
 	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5955")
@@ -5417,37 +5417,37 @@ function SCR_TEXT()
 	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5970")
 	            if (global.choice == 0)
 	            {
-	                if (global.flag[292] >= global.flag[293])
+	                if (FL_DogShrineGDeposited >= FL_DogShrineGoldNeeded)
 	                    global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5977")
 	                if (global.gold <= 0)
 	                {
 	                    global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5982")
 	                    global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5983")
 	                }
-	                if (global.flag[292] < global.flag[293])
+	                if (FL_DogShrineGDeposited < FL_DogShrineGoldNeeded)
 	                {
 	                    if (global.gold >= 1)
 	                    {
 	                        snd_play(snd_item)
 	                        global.gold -= 1
-	                        global.flag[292] += 1
+	                        FL_DogShrineGDeposited += 1
 	                        global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5993")
-	                        if (global.flag[295] == 0)
+	                        if (FL_DogShrineUnknown == 0)
 	                        {
 	                            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5997")
 	                            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5998")
 	                        }
-	                        if (global.flag[292] >= global.flag[293])
+	                        if (FL_DogShrineGDeposited >= FL_DogShrineGoldNeeded)
 	                        {
 	                            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6003")
 	                            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_6004")
-	                            global.flag[294] += 1
-	                            trophy_unlock(("donate_" + string(global.flag[294])))
+	                            FL_DogShrineLevel += 1
+	                            trophy_unlock(("donate_" + string(FL_DogShrineLevel)))
 	                        }
 	                    }
 	                }
-	                if (global.flag[295] == 0)
-	                    global.flag[295] = 1
+	                if (FL_DogShrineUnknown == 0)
+	                    FL_DogShrineUnknown = 1
 	            }
 	            if (global.choice == 1)
 	                global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6015")
@@ -5497,7 +5497,7 @@ function SCR_TEXT()
 	        }
 	        break
 	    case 960:
-	        global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6076", string(global.flag[292]))
+	        global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6076", string(FL_DogShrineGDeposited))
 	        global.msg[1] = " "
 	        break
 	    case 961:
@@ -5505,41 +5505,41 @@ function SCR_TEXT()
 	        {
 	            if (global.choice == 0)
 	            {
-	                if (global.flag[292] < 350)
+	                if (FL_DogShrineGDeposited < 350)
 	                {
 	                    if (global.gold >= 1)
 	                    {
 	                        global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6095")
-	                        global.flag[292] += 1
-	                        if (global.flag[292] >= 2)
+	                        FL_DogShrineGDeposited += 1
+	                        if (FL_DogShrineGDeposited >= 2)
 	                            trophy_unlock("donate_1")
-	                        if (global.flag[292] >= 6)
+	                        if (FL_DogShrineGDeposited >= 6)
 	                            trophy_unlock("donate_2")
-	                        if (global.flag[292] >= 12)
+	                        if (FL_DogShrineGDeposited >= 12)
 	                            trophy_unlock("donate_3")
-	                        if (global.flag[292] >= 20)
+	                        if (FL_DogShrineGDeposited >= 20)
 	                            trophy_unlock("donate_4")
-	                        if (global.flag[292] >= 30)
+	                        if (FL_DogShrineGDeposited >= 30)
 	                            trophy_unlock("donate_5")
-	                        if (global.flag[292] >= 43)
+	                        if (FL_DogShrineGDeposited >= 43)
 	                            trophy_unlock("donate_6")
-	                        if (global.flag[292] >= 59)
+	                        if (FL_DogShrineGDeposited >= 59)
 	                            trophy_unlock("donate_7")
-	                        if (global.flag[292] >= 78)
+	                        if (FL_DogShrineGDeposited >= 78)
 	                            trophy_unlock("donate_8")
-	                        if (global.flag[292] >= 100)
+	                        if (FL_DogShrineGDeposited >= 100)
 	                            trophy_unlock("donate_9")
-	                        if (global.flag[292] >= 125)
+	                        if (FL_DogShrineGDeposited >= 125)
 	                            trophy_unlock("donate_10")
-	                        if (global.flag[292] >= 155)
+	                        if (FL_DogShrineGDeposited >= 155)
 	                            trophy_unlock("donate_11")
-	                        if (global.flag[292] >= 190)
+	                        if (FL_DogShrineGDeposited >= 190)
 	                            trophy_unlock("donate_12")
-	                        if (global.flag[292] >= 230)
+	                        if (FL_DogShrineGDeposited >= 230)
 	                            trophy_unlock("donate_13")
-	                        if (global.flag[292] >= 280)
+	                        if (FL_DogShrineGDeposited >= 280)
 	                            trophy_unlock("donate_14")
-	                        if (global.flag[292] >= 350)
+	                        if (FL_DogShrineGDeposited >= 350)
 	                            trophy_unlock("donate_15")
 	                        global.gold -= 1
 	                    }

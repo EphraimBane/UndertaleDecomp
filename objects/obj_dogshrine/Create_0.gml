@@ -1,12 +1,15 @@
-if (global.osflavor != OS_FLAVOR_PLAYSTATION && global.osflavor != OS_FLAVOR_SWITCH)
-    room_goto(room_of_dog)
+if (global.decomp_vars.VanillaMode)
+{
+	if (global.osflavor != OS_FLAVOR_PLAYSTATION && global.osflavor != OS_FLAVOR_SWITCH)
+		room_goto(room_of_dog)	
+}
 dogtimer = 0
 image_speed = 0.1
 x = 146
 y = 49
 if (caster_is_playing(global.currentsong) != 1)
 {
-    if (global.flag[294] >= 6)
+    if (FL_DogShrineLevel >= 6)
     {
         global.currentsong = mus_dogshrine_2
         caster_loop(global.currentsong, 1, 1)
@@ -17,45 +20,45 @@ if (caster_is_playing(global.currentsong) != 1)
         caster_loop(global.currentsong, 1, 1)
     }
 }
-doglevel = global.flag[294]
-if (doglevel == 1 && global.flag[295] == 1)
-    global.flag[295] = 2
+doglevel = FL_DogShrineLevel
+if (doglevel == 1 && FL_DogShrineUnknown == 1)
+    FL_DogShrineUnknown = 2
 if (doglevel == 15)
-    global.flag[295] = 6
-if (global.flag[292] >= global.flag[293])
-    global.flag[292] = 0
-if (global.flag[294] == 0)
-    global.flag[293] = 2
-if (global.flag[294] == 1)
-    global.flag[293] = 4
-if (global.flag[294] == 2)
-    global.flag[293] = 6
-if (global.flag[294] == 3)
-    global.flag[293] = 8
-if (global.flag[294] == 4)
-    global.flag[293] = 10
-if (global.flag[294] == 5)
-    global.flag[293] = 13
-if (global.flag[294] == 6)
-    global.flag[293] = 16
-if (global.flag[294] == 7)
-    global.flag[293] = 19
-if (global.flag[294] == 8)
-    global.flag[293] = 22
-if (global.flag[294] == 9)
-    global.flag[293] = 25
-if (global.flag[294] == 10)
-    global.flag[293] = 30
-if (global.flag[294] == 11)
-    global.flag[293] = 35
-if (global.flag[294] == 12)
-    global.flag[293] = 40
-if (global.flag[294] == 13)
-    global.flag[293] = 50
-if (global.flag[294] == 14)
-    global.flag[293] = 70
-if (global.flag[294] == 15)
-    global.flag[293] = 0
+    FL_DogShrineUnknown = 6
+if (FL_DogShrineGDeposited >= FL_DogShrineGoldNeeded)
+    FL_DogShrineGDeposited = 0
+if (FL_DogShrineLevel == 0)
+    FL_DogShrineGoldNeeded = 2
+if (FL_DogShrineLevel == 1)
+    FL_DogShrineGoldNeeded = 4
+if (FL_DogShrineLevel == 2)
+    FL_DogShrineGoldNeeded = 6
+if (FL_DogShrineLevel == 3)
+    FL_DogShrineGoldNeeded = 8
+if (FL_DogShrineLevel == 4)
+    FL_DogShrineGoldNeeded = 10
+if (FL_DogShrineLevel == 5)
+    FL_DogShrineGoldNeeded = 13
+if (FL_DogShrineLevel == 6)
+    FL_DogShrineGoldNeeded = 16
+if (FL_DogShrineLevel == 7)
+    FL_DogShrineGoldNeeded = 19
+if (FL_DogShrineLevel == 8)
+    FL_DogShrineGoldNeeded = 22
+if (FL_DogShrineLevel == 9)
+    FL_DogShrineGoldNeeded = 25
+if (FL_DogShrineLevel == 10)
+    FL_DogShrineGoldNeeded = 30
+if (FL_DogShrineLevel == 11)
+    FL_DogShrineGoldNeeded = 35
+if (FL_DogShrineLevel == 12)
+    FL_DogShrineGoldNeeded = 40
+if (FL_DogShrineLevel == 13)
+    FL_DogShrineGoldNeeded = 50
+if (FL_DogShrineLevel == 14)
+    FL_DogShrineGoldNeeded = 70
+if (FL_DogShrineLevel == 15)
+    FL_DogShrineGoldNeeded = 0
 dogshrine = scr_marker(0, 0, spr_dogshrine)
 with (dogshrine)
     depth = 900000

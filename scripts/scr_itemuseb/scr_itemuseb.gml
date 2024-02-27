@@ -288,7 +288,7 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	                    add = 2
 	                global.at += add
 	                global.msg[1] = scr_gettext("item_use_26a", string(add))
-	                FL_StrongToughGlove = 1
+	                FL_StrongToughGlove = true
 	            }
 	            else
 	                global.msg[1] = scr_gettext("item_use_26b")

@@ -1,3 +1,5 @@
+/// @func	scr_steps()
+/// @desc	Unsure?? Need to look into this is a TODO
 function scr_steps()
 {
 	FL_AreaKillsPointer = argument3

@@ -45,10 +45,28 @@ if (room == room_dogshrine)
     room_goto(room_tundra_sanshouse)
 if (room == room_tundra_sanshouse)
 {
-     if (global.osflavor == OS_FLAVOR_PLAYSTATION)
-        room_goto(room_dogshrine)
-    else
-        room_goto(room_dogshrine_ruined)
+	if (global.decomp_vars.VanillaMode)
+	{
+		if (global.osflavor == OS_FLAVOR_PLAYSTATION)
+			room_goto(room_dogshrine)
+		else
+			room_goto(room_dogshrine_ruined)
+	}	
+	else
+	{
+		var psContent = global.decomp_vars.EnablePSDogShrine;
+		var swContent = global.decomp_vars.EnableSwitchDogShrine;
+		
+		if (psContent && !swContent)
+			room_goto(room_dogshrine);
+		else if (swContent && !psContent)
+			room_goto(room_dogshrine_ruined);
+		else
+		{
+			trace("TODO: MAKE THIS GO FROM PS4 TO SWITCH STUFF!!");
+		}
+	}
+	
 	
 }
 if (room == room_dogshrine_ruined)
