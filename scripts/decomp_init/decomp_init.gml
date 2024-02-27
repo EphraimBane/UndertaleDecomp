@@ -12,6 +12,8 @@ global.decomp_vars = {
 	MusicVolume : 100.0,
 	SoundFXVolume : 100.0,
 	RestoreSFXPan : true,
+	RemoveBattleIconRandomness : false,
+	BattleIconRandomOverride : 0
 }
 
 #macro trace show_debug_message

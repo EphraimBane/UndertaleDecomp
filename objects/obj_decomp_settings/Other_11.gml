@@ -20,8 +20,10 @@ array_push(categories, new menu_category("Audio", "Settings for adjusting audio"
 	
 array_push(categories, new menu_category("Battle", "General Battle Settings", 
 	[
+		new menu_checkbox_option("Remove Battle Icon Randomness", "RemoveBattleIconRandomness", "Removes/Overrides the random timer when a battle icon appears", global.decomp_vars.RemoveBattleIconRandomness, false),
+		new menu_slider_option("B. Icon Timer Override", "BattleIconRandomOverride", "Forces a consistent time for battles (in frames)", global.decomp_vars.BattleIconRandomOverride, 17, 15, 20, 1, 1),
 		new menu_checkbox_option("Demo Heart Fracture Delay", "DemoHeartFracture", "Restores the 500ms delay when the heart fractures", global.decomp_vars.DemoHeartFracture, true),
-		new menu_slider_option("Heart Fracture Delay", "DemoHeartFractureDelay", "Master Mixing Volume", global.decomp_vars.DemoHeartFractureDelay, 500, 250, 1000, 1, 10)
+		new menu_slider_option("Heart Fracture Delay", "DemoHeartFractureDelay", "Delay amount (in ms) for the heart fracture", global.decomp_vars.DemoHeartFractureDelay, 500, 250, 1000, 1, 10)
 	]));
 
 

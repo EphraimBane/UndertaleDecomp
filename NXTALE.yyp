@@ -1113,6 +1113,7 @@
     {"id":{"name":"obj_bulletgen1","path":"objects/obj_bulletgen1/obj_bulletgen1.yy",},},
     {"id":{"name":"obj_crygen1","path":"objects/obj_crygen1/obj_crygen1.yy",},},
     {"id":{"name":"obj_crygen2","path":"objects/obj_crygen2/obj_crygen2.yy",},},
+    {"id":{"name":"cmd_monitor_plot","path":"scripts/cmd_monitor_plot/cmd_monitor_plot.yy",},},
     {"id":{"name":"obj_crygen3","path":"objects/obj_crygen3/obj_crygen3.yy",},},
     {"id":{"name":"obj_sadmsggen","path":"objects/obj_sadmsggen/obj_sadmsggen.yy",},},
     {"id":{"name":"obj_allaroundgen","path":"objects/obj_allaroundgen/obj_allaroundgen.yy",},},

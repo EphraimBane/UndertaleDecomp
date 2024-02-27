@@ -106,6 +106,9 @@ function draw_slider(_x, _y, _option, _catbox_bounds, _text_color)
 		temp_max = _option.maxValue + slider_min_abs;
 	}
 	
+	_option.value = clamp(_option.value, _option.minValue, _option.maxValue);
+		
+	
 	var normalized_value = temp_value / temp_max;
 	var slider_x = bar_start_x + ((bar_end_x - bar_start_x) * normalized_value);
 	
