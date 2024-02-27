@@ -69,7 +69,7 @@ if (history_len != 0)
 	var bar_right =  scroll_x + scroll_width;
 	var bar_bottom = (scroll_y + scroll_height) - (scroll_height * scroll_size);
 	
-	if (bar_x >= mouse_x && mouse_x <= bar_right && bar_y >= mouse_x && mouse_x <= bar_bottom)
+	if (bar_x >= mouse_x && mouse_x <= bar_right && bar_y >= mouse_ y && mouse_y <= bar_bottom)
 		draw_set_color(c_yellow);
 	
 	ossafe_fill_rectangle(bar_x, bar_y, bar_right, bar_bottom);

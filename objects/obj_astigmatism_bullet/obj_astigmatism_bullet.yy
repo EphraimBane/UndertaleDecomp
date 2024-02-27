@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Astigmatism",
+    "path": "folders/Objects/Battle/Astigmatism.yy",
   },
   "parentObjectId": {
     "name": "blt_parent_noborder",

@@ -18,3 +18,5 @@ global.decomp_vars = {
 #macro waaah show_message
 
 exception_unhandled_handler(crash_method);
+
+global.monitorPlotVariable = false;
