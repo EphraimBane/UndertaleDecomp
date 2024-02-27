@@ -1,3 +1,6 @@
+/// @func	ossafe_ini_open(filepath)
+/// @desc	Opens a new ini file safely
+/// @param	{string}	filepath	The filepath of the ini to open/create
 function ossafe_ini_open()
 {
 	if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)

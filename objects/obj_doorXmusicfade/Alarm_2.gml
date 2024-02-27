@@ -63,8 +63,12 @@ if (room == room_tundra_sanshouse)
 			room_goto(room_dogshrine_ruined);
 		else
 		{
-			trace("TODO: MAKE THIS GO FROM PS4 TO SWITCH STUFF!!");
+			if (FL_DogShrineLevel == 15)
+				room_goto(room_dogshrine_ruined);
+			else
+				room_goto(room_dogshrine);
 		}
+		
 	}
 	
 	

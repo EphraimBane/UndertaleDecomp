@@ -1,4 +1,4 @@
-function cmd_hp_set(_args)
+function cmd_gold_set(_args)
 {
 	if (array_length(_args) < 1)
 	{

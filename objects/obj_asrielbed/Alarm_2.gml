@@ -31,9 +31,9 @@ if (instance_exists(obj_dialoguer) == 0)
 {
     jump = 6
     __background_set(0, 1, c_black)
-    __background_set(0, 0, 0x000001)
+    __background_set(0, 0, spr_introlast)
     if (global.plot < 20)
-        __background_set(0, 2, 0x000001)
+        __background_set(0, 2, spr_introlast)
     global.facing = Direction.Left
     obj_mainchara.x = 200
     obj_mainchara.y = 104

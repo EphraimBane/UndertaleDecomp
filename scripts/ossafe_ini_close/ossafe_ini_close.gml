@@ -1,3 +1,6 @@
+/// @func		ossafe_ini_close()
+/// @desc		Safely closes an ini file
+/// @returns	{string}
 function ossafe_ini_close()
 {
 	if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)

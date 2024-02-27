@@ -1,3 +1,7 @@
+/// @func		ossafe_file_text_open_write(filepath)
+/// @desc		Safely opens a new text file for writing
+/// @param		{string}	filepath	The filepath of the text file to write to
+/// @returns	{Id.TextFile}
 function ossafe_file_text_open_write(_filepath)
 {
 	if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)

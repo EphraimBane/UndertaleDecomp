@@ -20,7 +20,9 @@ repeat (40)
     star = instance_create(rr, 2, obj_waterstar_bg)
     star.size = (0.4 + random(0.3))
 }
-__background_set(3, 4, 0x0000C8)
+//__background_set(3, 4, 0x0000C8) Vultu: Moldsmal..?
+__background_set(3, 4, spr_moldsmal)
+
 if instance_exists(obj_mainchara)
 {
     with (obj_mainchara)
