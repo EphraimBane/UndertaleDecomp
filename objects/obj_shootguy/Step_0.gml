@@ -67,7 +67,7 @@ if (myinteract == 1 && win == 0)
     global.facing = Direction.Up
     active = true
 }
-snd = abc_123_a
+snd = 0
 if (win == 1 && active == true)
 {
     wintimer += 1

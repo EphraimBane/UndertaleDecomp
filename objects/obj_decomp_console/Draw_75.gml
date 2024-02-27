@@ -62,11 +62,19 @@ if (history_len != 0)
 	ossafe_fill_rectangle(scroll_x, scroll_y, scroll_x + scroll_width, scroll_y + scroll_height);
 	
 	draw_set_color(c_white);
-	var scroll_size = scroll_height / history_len;
+	var scroll_size = scroll_height - (history_len / scroll_height);
 	
-	ossafe_fill_rectangle(scroll_x, scroll_y + (scroll_offset * scroll_size), scroll_x + scroll_width, scroll_y + (scroll_height * scroll_size));
+	var bar_x = scroll_x;
+	var bar_y = (scroll_y + scroll_height) - (scroll_offset * scroll_size);
+	var bar_right =  scroll_x + scroll_width;
+	var bar_bottom = (scroll_y + scroll_height) - (scroll_height * scroll_size);
+	
+	if (bar_x >= mouse_x && mouse_x <= bar_right && bar_y >= mouse_x && mouse_x <= bar_bottom)
+		draw_set_color(c_yellow);
+	
+	ossafe_fill_rectangle(bar_x, bar_y, bar_right, bar_bottom);
 }
-	
+draw_set_color(c_white);
 #endregion
 
 #region Input

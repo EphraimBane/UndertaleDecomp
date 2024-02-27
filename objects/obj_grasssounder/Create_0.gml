@@ -1,2 +1,2 @@
-sound = abc_123_a
+sound = 0
 soundtimer = 0

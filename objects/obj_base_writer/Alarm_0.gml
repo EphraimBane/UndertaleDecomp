@@ -7,7 +7,7 @@ if (txtsound == snd_mtt1)
     advance += 2
 else if (txtsound == snd_tem)
     advance += 1
-var dosound = abc_123_a
+var dosound = 0
 var delay = textspeed
 while (stringpos < string_length(originalstring) && advance > 0)
 {
@@ -36,7 +36,7 @@ while (stringpos < string_length(originalstring) && advance > 0)
             if (sfxtype == "+")
                 sound_enable = snd_sparkle1
             else if (sfxtype == "-")
-                sound_enable = abc_123_a
+                sound_enable = 0
             else
             {
                 var sfx = noone

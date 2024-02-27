@@ -1,7 +1,7 @@
 if (fun == true)
 {
-    if (harp != abc_123_a)
+    if (harp != 0)
         caster_free(harp)
-    if (weathermusic != abc_123_a)
+    if (weathermusic != 0)
         caster_free(weathermusic)
 }

@@ -13,8 +13,8 @@ if (open == 1)
     if (ox < 20)
     {
         ox += 2
-        c_sound = abc_123_a
-        s_sound = abc_123_a
+        c_sound = 0
+        s_sound = 0
     }
     if (ox >= 20)
         ox = 30
@@ -29,7 +29,7 @@ if (open == 0)
     if (ox > 0)
     {
         ox -= 2
-        o_sound = abc_123_a
+        o_sound = 0
     }
     if (ox < 0)
     {
