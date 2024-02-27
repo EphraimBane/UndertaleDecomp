@@ -1,5 +1,6 @@
 if (!active)
 	return;
+
 var saved_draw_state = new draw_state();
 
 draw_set_font(fnt_maintext);
