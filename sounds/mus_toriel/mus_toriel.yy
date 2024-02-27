@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 36.302,
+  "duration": 36.295692,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Ruins",
+    "path": "folders/Sounds/Music/Ruins.yy",
   },
   "preload": true,
   "sampleRate": 44100,

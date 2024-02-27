@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 101.658,
+  "duration": 101.65842,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Ending",
+    "path": "folders/Sounds/Music/Ending.yy",
   },
   "preload": true,
   "sampleRate": 44100,

@@ -171,3 +171,5 @@ if (!variable_global_exists("trophy_init_complete"))
     global.trophy_init_complete = 0
     trophy_ts = -1
 }
+
+decomp_gamestart();

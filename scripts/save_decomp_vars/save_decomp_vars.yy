@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Decomp",
-    "path": "folders/Scripts/Decomp.yy",
+    "name": "Save",
+    "path": "folders/Scripts/Decomp/Save.yy",
   },
 }

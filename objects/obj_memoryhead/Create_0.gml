@@ -24,3 +24,12 @@ ds[4] = caster_load("music/dialup/dialup_4.ogg")
 ds[5] = caster_load("music/dialup/dialup_5.ogg")
 ht = 100
 wd = 100
+
+/// VULTU: Decomp code
+audio_emitter = noone;
+
+if (global.decomp_vars.RestoreSFXPan)
+{
+	audio_emitter = audio_emitter_create();
+	
+}

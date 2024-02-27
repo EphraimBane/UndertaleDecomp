@@ -16,8 +16,8 @@ function scr_gameoverb()
 	ossafe_ini_open("undertale.ini")
 	g_o = ini_read_real("General", "Gameover", 0)
 	ossafe_ini_close()
-	if (global.decomp_vars.DemoHeartFracture)
-		sleep(500);
+	if (global.decomp_vars.DemoHeartFracture && !global.decomp_vars.VanillaMode)
+		sleep(global.decomp_vars.DemoHeartFractureDelay);
 		
 	audio_stop_all()
 	caster_stop(all)

@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 80.64,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Waterfall",
+    "path": "folders/Sounds/Music/Waterfall.yy",
   },
   "preload": true,
   "sampleRate": 44100,

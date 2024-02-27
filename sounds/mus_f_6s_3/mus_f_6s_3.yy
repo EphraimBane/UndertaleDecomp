@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 15.164,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Flowey Boss",
+    "path": "folders/Sounds/Music/Battle/Flowey Boss.yy",
   },
   "preload": true,
   "sampleRate": 44100,

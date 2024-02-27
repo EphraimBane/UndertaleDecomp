@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 34.001,
+  "duration": 34.00127,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Options",
+    "path": "folders/Sounds/Music/Menu/Options.yy",
   },
   "preload": true,
   "sampleRate": 44100,

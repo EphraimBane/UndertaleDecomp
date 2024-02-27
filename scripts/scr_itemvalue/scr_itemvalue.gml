@@ -1,3 +1,5 @@
+// Script used in Tem Shop to check how much Gold you get from selling a specific Item.
+
 function scr_itemvalue()
 {
 	for (i = 0; i < 8; i += 1)
@@ -6,196 +8,196 @@ function scr_itemvalue()
 	    value[i] = 0
 	    switch itemid
 	    {
-	        case 1:
+	        case Items.MonsterCandy:
 	            value[i] = 25
 	            break
-	        case 2:
+	        case Items.CroquetRoll:
 	            value[i] = 10
 	            break
-	        case 3:
+	        case Items.Stick:
 	            value[i] = 150
 	            break
-	        case 4:
+	        case Items.Bandage:
 	            value[i] = 150
 	            break
-	        case 5:
+	        case Items.RockCandy:
 	            value[i] = 3
 	            break
-	        case 6:
+	        case Items.PumpkinRings:
 	            value[i] = 3
 	            break
-	        case 7:
+	        case Items.SpiderDonut:
 	            value[i] = 30
 	            break
-	        case 8:
+	        case Items.StoicOnion:
 	            value[i] = 10
 	            break
-	        case 9:
+	        case Items.GhostFruit:
 	            value[i] = 10
 	            break
-	        case 10:
+	        case Items.SpiderCider:
 	            value[i] = 60
 	            break
-	        case 11:
+	        case Items.ButterscotchPie:
 	            value[i] = 180
 	            break
-	        case 12:
+	        case Items.FadedRibbon:
 	            value[i] = 100
 	            break
-	        case 13:
+	        case Items.ToyKnife:
 	            value[i] = 100
 	            break
-	        case 14:
+	        case Items.ToughGlove:
 	            value[i] = 50
 	            break
-	        case 15:
+	        case Items.ManlyBandanna:
 	            value[i] = 50
 	            break
-	        case 16:
+	        case Items.SnowmanPiece:
 	            value[i] = 40
 	            break
-	        case 17:
+	        case Items.NiceCream:
 	            value[i] = 2
 	            break
-	        case 18:
+	        case Items.PuppydoughIceCream:
 	            value[i] = 2
 	            break
-	        case 19:
+	        case Items.Bisicle:
 	            value[i] = 5
 	            break
-	        case 20:
+	        case Items.Unisicle:
 	            value[i] = 2
 	            break
-	        case 21:
+	        case Items.CinnamonBun:
 	            value[i] = 8
 	            break
-	        case 22:
+	        case Items.TemmieFlakes:
 	            value[i] = 2
 	            break
-	        case 23:
+	        case Items.AbandonedQuiche:
 	            value[i] = 76
 	            break
-	        case 24:
+	        case Items.OldTutu:
 	            value[i] = 80
 	            break
-	        case 25:
+	        case Items.BalletShoes:
 	            value[i] = 80
 	            break
-	        case 26:
+	        case Items.PunchCard:
 	            value[i] = 15
 	            break
-	        case 27:
+	        case Items.AnnoyingDog:
 	            value[i] = 999
 	            break
-	        case 28:
+	        case Items.DogSalad:
 	            value[i] = 8
 	            break
-	        case 29:
+	        case Items.DogResidue29:
 	            value[i] = 3
 	            break
-	        case 30:
+	        case Items.DogResidue30:
 	            value[i] = 2
 	            break
-	        case 31:
+	        case Items.DogResidue31:
 	            value[i] = 4
 	            break
-	        case 32:
+	        case Items.DogResidue32:
 	            value[i] = 1
 	            break
-	        case 33:
+	        case Items.DogResidue33:
 	            value[i] = 4
 	            break
-	        case 34:
+	        case Items.DogResidue34:
 	            value[i] = 3
 	            break
-	        case 35:
+	        case Items.AstronautFood:
 	            value[i] = 25
 	            break
-	        case 36:
+	        case Items.InstantNoodles:
 	            value[i] = 50
 	            break
-	        case 37:
+	        case Items.CrabApple:
 	            value[i] = 5
 	            break
-	        case 38:
+	        case Items.HotDog:
 	            value[i] = 10
 	            break
-	        case 39:
+	        case Items.HotCat:
 	            value[i] = 11
 	            break
-	        case 40:
+	        case Items.Glamburger:
 	            value[i] = 15
 	            break
-	        case 41:
+	        case Items.SeaTea:
 	            value[i] = 5
 	            break
-	        case 42:
+	        case Items.Starfait:
 	            value[i] = 10
 	            break
-	        case 43:
+	        case Items.LegendaryHero:
 	            value[i] = 40
 	            break
-	        case 44:
+	        case Items.ButtyGlasses:
 	            value[i] = 50
 	            break
-	        case 45:
+	        case Items.TornNotebook:
 	            value[i] = 50
 	            break
-	        case 46:
+	        case Items.StainedApron:
 	            value[i] = 100
 	            break
-	        case 47:
+	        case Items.BurntPan:
 	            value[i] = 100
 	            break
-	        case 48:
+	        case Items.CowboyHat:
 	            value[i] = 100
 	            break
-	        case 49:
+	        case Items.EmptyGun:
 	            value[i] = 100
 	            break
-	        case 50:
+	        case Items.HeartLocket:
 	            value[i] = 250
 	            break
-	        case 51:
+	        case Items.WornDagger:
 	            value[i] = 250
 	            break
-	        case 52:
+	        case Items.RealKnife:
 	            value[i] = 500
 	            break
-	        case 53:
+	        case Items.TheLocket:
 	            value[i] = 500
 	            break
-	        case 54:
+	        case Items.BadMemory:
 	            value[i] = 300
 	            break
-	        case 55:
+	        case Items.Dream:
 	            value[i] = 250
 	            break
-	        case 56:
+	        case Items.UndynesLetter:
 	            value[i] = -1
 	            break
-	        case 57:
+	        case Items.UndynesLetterEX:
 	            value[i] = -1
 	            break
-	        case 58:
+	        case Items.PopatoChisps:
 	            value[i] = 35
 	            break
-	        case 59:
+	        case Items.JunkFood:
 	            value[i] = 1
 	            break
-	        case 60:
+	        case Items.MysteryKey:
 	            value[i] = -1
 	            break
-	        case 61:
+	        case Items.FaceSteak:
 	            value[i] = 14
 	            break
-	        case 62:
+	        case Items.HushPuppy:
 	            value[i] = 150
 	            break
-	        case 63:
+	        case Items.SnailPie:
 	            value[i] = 350
 	            break
-	        case 64:
+	        case Items.TemyArmor:
 	            value[i] = 500
 	            break
 	    }

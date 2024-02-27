@@ -1,10 +1,4 @@
-#region Save State
-var start_color = draw_get_color();
-var start_alpha = draw_get_alpha();
-var start_h_align = draw_get_halign();
-var start_v_align = draw_get_valign();
-var start_font = draw_get_font();
-#endregion
+var saved_draw_state = new draw_state();
 
 var viewp_x = view_get_xport(view_current);
 var viewp_y = view_get_yport(view_current);
@@ -80,29 +74,34 @@ draw_set_color(c_white);
 
 if (hover_category == -1)
 {
-		var __x = cat_box_x + (menu_pad * 2);
-		var __y = (cat_box_y + (menu_pad * 2)) + (i * str_height);
-		var daniela_quote = "";
-		
-		if (season != 0)
+	var __x = cat_box_x + (menu_pad * 2);
+	var __y = (cat_box_y + (menu_pad * 2)) + (i * str_height);
+	var daniela_quote = "";
+	
+	if (season != 0)
+	{
+		switch (season)
 		{
-			switch (season)
-			{
-				case 1:
-					daniela_quote = daniela_winter_quote;
-					break;
-				case 2:
-					daniela_quote = daniela_spring_quote;
-					break;
-				case 3:
-					daniela_quote = daniela_summer_quote;
-					break;
-				case 4:
-					daniela_quote = daniela_fall_quote;
-					break;
-			}
-			draw_text(__x, __y, $"Daniela Says:\n{daniela_quote}");
+			case 1:
+				daniela_quote = daniela_winter_quote;
+				break;
+			case 2:
+				daniela_quote = daniela_spring_quote;
+				break;
+			case 3:
+				daniela_quote = daniela_summer_quote;
+				break;
+			case 4:
+				daniela_quote = daniela_fall_quote;
+				break;
 		}
+		draw_text(__x, __y, $"Daniela Says:\n{daniela_quote}");
+	}
+	
+	with (obj_settings_daniela)
+	{
+		draw_self();
+	}
 }
 else
 {
@@ -142,10 +141,5 @@ else
 
 #endregion
 
-#region Reload Start state
-draw_set_color(start_color);
-draw_set_alpha(start_alpha);
-draw_set_halign(start_h_align);
-draw_set_valign(start_v_align);
-draw_set_font(start_font);
-#endregion
+draw_load_state(saved_draw_state)
+delete saved_draw_state;
