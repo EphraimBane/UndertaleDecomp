@@ -47,7 +47,12 @@ else
     if (gm >= 25)
         itemcost[3] = 750
     if (gm >= 30)
-        itemcost[4] = 500
+	{
+        if (global.decomp_vars.VanillaMode)
+			itemcost[4] = 500;
+		else
+			itemcost[3] = 500;
+	}
     if (itemcost[3] < 500)
         itemcost[3] = 500
 }
