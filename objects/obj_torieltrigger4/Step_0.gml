@@ -30,7 +30,7 @@ if (conversation == 4 && instance_exists(obj_dialoguer) == 0)
     instance_create(0, 0, obj_tordogcall)
     with (tor)
         path_start(path_walkright, 3, path_action_stop, 0)
-    script_execute(scr_tempsave)
+    scr_tempsave()
     global.interact = 0
     instance_destroy()
 }

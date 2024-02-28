@@ -19,7 +19,7 @@ function SCR_TEXT()
 	        if (global.monster[0] == true)
 	        {
 	            with (global.monsterinstance[0])
-	                script_execute(scr_mercystandard)
+	                scr_mercystandard()
 	            adder = "\\W"
 	            if (global.monsterinstance[0].mercy < 0)
 	            {
@@ -37,7 +37,7 @@ function SCR_TEXT()
 	        if (global.monster[1] == true)
 	        {
 	            with (global.monsterinstance[1])
-	                script_execute(scr_mercystandard)
+	                scr_mercystandard()
 	            if (global.monsterinstance[1].mercy < 0 && FL_NameColor == NameColors.Yellow)
 	                global.msg[0] += "\\Y"
 	            if (global.monsterinstance[1].mercy < 0 && FL_NameColor == 2)
@@ -50,7 +50,7 @@ function SCR_TEXT()
 	        if (global.monster[2] == true)
 	        {
 	            with (global.monsterinstance[2])
-	                script_execute(scr_mercystandard)
+	                scr_mercystandard()
 	            if (global.monsterinstance[2].mercy < 0 && FL_NameColor == NameColors.Yellow)
 	                global.msg[0] += "\\Y"
 	            if (global.monsterinstance[2].mercy < 0 && FL_NameColor == 2)
@@ -68,7 +68,7 @@ function SCR_TEXT()
 	            if (global.monster[i] == true)
 	            {
 	                with (global.monsterinstance[i])
-	                    script_execute(scr_mercystandard)
+	                    scr_mercystandard()
 	                if (global.monsterinstance[i].mercy < 0 && FL_NameColor == NameColors.Yellow)
 	                    global.msg[0] = "\\Y"
 	                if (global.monsterinstance[i].mercy < 0 && FL_NameColor == 2)
@@ -255,7 +255,7 @@ function SCR_TEXT()
 	        break
 	    case 16:
 	        i = round(random(14))
-	        script_execute(scr_itemname)
+	        scr_itemname()
 	        if (i <= 12)
 	            global.msg[0] = scr_gettext("item_box_store1", global.itemname[global.menucoord[6]])
 	        if (i > 12)
@@ -266,7 +266,7 @@ function SCR_TEXT()
 	        break
 	    case 17:
 	        i = round(random(14))
-	        script_execute(scr_storagename, 300)
+	        scr_storagename(300)
 	        if (i <= 12)
 	            global.msg[0] = scr_gettext("item_box_take1", global.itemname[global.menucoord[6]])
 	        if (i > 12)
@@ -646,7 +646,7 @@ function SCR_TEXT()
 	        }
 	        break
 	    case 231:
-	        script_execute(scr_cost, 15)
+	        scr_cost(15)
 	        if (global.choice == 0)
 	        {
 	            if (afford == 1)
@@ -654,7 +654,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    script_execute(scr_itemget, 17)
+	                    scr_itemget(17)
 	                    if (noroom == 0)
 	                    {
 	                        global.gold -= 15
@@ -731,9 +731,9 @@ function SCR_TEXT()
 	        if (itemcount < 3)
 	        {
 	            if (FL_HaveUmbrella == 0)
-	                script_execute(scr_cost, 25)
+	                scr_cost(25)
 	            if (FL_HaveUmbrella == 1)
-	                script_execute(scr_cost, 15)
+	                scr_cost(15)
 	            if (global.choice == 0)
 	            {
 	                if (afford == 1)
@@ -741,7 +741,7 @@ function SCR_TEXT()
 	                    if (doak == 0)
 	                    {
 	                        doak = 1
-	                        script_execute(scr_itemget, 17)
+	                        scr_itemget(17)
 	                        if (noroom == 0)
 	                        {
 	                            if (FL_HaveUmbrella == 0)
@@ -1008,7 +1008,7 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                script_execute(scr_itemget, 23)
+	                scr_itemget(23)
 	            }
 	            if (noroom == 0)
 	            {
@@ -1041,7 +1041,7 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                script_execute(scr_itemget, 24)
+	                scr_itemget(24)
 	            }
 	            if (noroom == 0)
 	            {
@@ -1080,7 +1080,7 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                script_execute(scr_itemget, 26)
+	                scr_itemget(26)
 	            }
 	            if (noroom == 0)
 	            {
@@ -1118,7 +1118,7 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                script_execute(scr_itemget, 25)
+	                scr_itemget(25)
 	            }
 	            if (noroom == 0)
 	            {
@@ -1168,7 +1168,7 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                script_execute(scr_itemget, 0)
+	                scr_itemget(0)
 	                for (i = 0; i < 8; i += 1)
 	                {
 	                    if (global.item[i] == 27)
@@ -1205,7 +1205,7 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                script_execute(scr_itemget, 36)
+	                scr_itemget(36)
 	            }
 	            if (noroom == 0)
 	            {
@@ -1235,7 +1235,7 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                script_execute(scr_itemget, 47)
+	                scr_itemget(47)
 	            }
 	            if (noroom == 0)
 	            {
@@ -1265,7 +1265,7 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                script_execute(scr_itemget, 46)
+	                scr_itemget(46)
 	            }
 	            if (noroom == 0)
 	            {
@@ -1295,7 +1295,7 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                script_execute(scr_itemget, 40)
+	                scr_itemget(40)
 	            }
 	            if (noroom == 0)
 	            {
@@ -1353,7 +1353,7 @@ function SCR_TEXT()
 	                if (scr_murderlv() >= 16)
 	                    scr_itemget(52)
 	                else
-	                    script_execute(scr_itemget, 51)
+	                    scr_itemget(51)
 	            }
 	            if (noroom == 0)
 	            {
@@ -1386,9 +1386,9 @@ function SCR_TEXT()
 	                noroom = -1
 	                doak = 1
 	                if (scr_murderlv() < 16)
-	                    script_execute(scr_itemget, 50)
+	                    scr_itemget(50)
 	                else
-	                    script_execute(scr_itemget, 53)
+	                    scr_itemget(53)
 	            }
 	            if (noroom == 0)
 	            {
@@ -1425,7 +1425,7 @@ function SCR_TEXT()
 	        }
 	        break
 	    case 274:
-	        script_execute(scr_cost, 12)
+	        scr_cost(12)
 	        if (global.choice == 0)
 	        {
 	            if (afford == 1)
@@ -1433,7 +1433,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    script_execute(scr_itemget, 17)
+	                    scr_itemget(17)
 	                    if (noroom == 0)
 	                    {
 	                        global.gold -= 12
@@ -1539,7 +1539,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    script_execute(scr_itemget, 1)
+	                    scr_itemget(1)
 	                    if (noroom == 0)
 	                        FL_RuinsCandyTaken += 1
 	                }
@@ -1588,7 +1588,7 @@ function SCR_TEXT()
 	        global.msg[1] = scr_gettext("SCR_TEXT_1676")
 	        break
 	    case 513:
-	        script_execute(scr_itemcheck, 5)
+	        scr_itemcheck(5)
 	        if (global.choice == 0)
 	        {
 	            if (haveit == false)
@@ -1596,7 +1596,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    script_execute(scr_itemget, 5)
+	                    scr_itemget(5)
 	                }
 	            }
 	        }
@@ -1616,7 +1616,7 @@ function SCR_TEXT()
 	        global.msg[1] = scr_gettext("SCR_TEXT_1706")
 	        break
 	    case 515:
-	        script_execute(scr_cost, 7)
+	        scr_cost(7)
 	        if (global.choice == 0)
 	        {
 	            if (afford == 1)
@@ -1624,7 +1624,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    script_execute(scr_itemget, 7)
+	                    scr_itemget(7)
 	                    if (noroom == 0)
 	                    {
 	                        global.gold -= 7
@@ -1651,7 +1651,7 @@ function SCR_TEXT()
 	        global.msg[1] = scr_gettext("SCR_TEXT_1737")
 	        break
 	    case 517:
-	        script_execute(scr_cost, 18)
+	        scr_cost(18)
 	        if (global.choice == 0)
 	        {
 	            if (afford == 1)
@@ -1659,7 +1659,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    script_execute(scr_itemget, 10)
+	                    scr_itemget(10)
 	                    if (noroom == 0)
 	                    {
 	                        global.gold -= 18
@@ -1682,7 +1682,7 @@ function SCR_TEXT()
 	    case 518:
 	        if (doak == 0)
 	        {
-	            script_execute(scr_itemget, 12)
+	            scr_itemget(12)
 	            if (noroom == 0)
 	                FL_GotRibbon = 1
 	            doak = 1
@@ -1747,7 +1747,7 @@ function SCR_TEXT()
 	    case 523:
 	        if (doak == 0)
 	        {
-	            script_execute(scr_itemget, 13)
+	            scr_itemget(13)
 	            if (noroom == 0)
 	                FL_GotToyKnife = 1
 	            doak = 1
@@ -1778,7 +1778,7 @@ function SCR_TEXT()
 	        {
 	            if (doak == 0)
 	            {
-	                script_execute(scr_itemget, 11)
+	                scr_itemget(11)
 	                if (noroom == 0)
 	                    FL_GotBScotchPie = 2
 	                doak = 1
@@ -1791,7 +1791,7 @@ function SCR_TEXT()
 	        {
 	            if (doak == 0)
 	            {
-	                script_execute(scr_itemget, 63)
+	                scr_itemget(63)
 	                if (noroom == 0)
 	                    FL_GotBScotchPie = 2
 	                doak = 1
@@ -2612,7 +2612,7 @@ function SCR_TEXT()
 	            {
 	                noroom = 0
 	                doak = 1
-	                script_execute(scr_itemget, 35)
+	                scr_itemget(35)
 	                if (noroom == 0)
 	                    FL_GotSpacefood += 1
 	            }
@@ -3417,7 +3417,7 @@ function SCR_TEXT()
 	        }
 	        break
 	    case 686:
-	        script_execute(scr_cost, 30)
+	        scr_cost(30)
 	        if (global.choice == 0)
 	        {
 	            if (afford == 1)
@@ -3426,9 +3426,9 @@ function SCR_TEXT()
 	                {
 	                    doak = 1
 	                    if (FL_HotDogConvoCounter != 1)
-	                        script_execute(scr_itemget, 38)
+	                        scr_itemget(38)
 	                    if (FL_HotDogConvoCounter == 1)
-	                        script_execute(scr_itemget, 39)
+	                        scr_itemget(39)
 	                    if (noroom == 0)
 	                    {
 	                        global.gold -= 30
@@ -4068,7 +4068,7 @@ function SCR_TEXT()
 	        global.msg[1] = scr_gettext("SCR_TEXT_4416")
 	        break
 	    case 745:
-	        script_execute(scr_cost, 9999)
+	        scr_cost(9999)
 	        if (global.choice == 0)
 	        {
 	            if (afford == 1)
@@ -4076,7 +4076,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    script_execute(scr_itemget, 10)
+	                    scr_itemget(10)
 	                    if (noroom == 0)
 	                    {
 	                        global.gold -= 9999
@@ -4104,7 +4104,7 @@ function SCR_TEXT()
 	        global.msg[1] = scr_gettext("SCR_TEXT_4448")
 	        break
 	    case 747:
-	        script_execute(scr_cost, 9999)
+	        scr_cost(9999)
 	        if (global.choice == 0)
 	        {
 	            if (afford == 1)
@@ -4112,7 +4112,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    script_execute(scr_itemget, 7)
+	                    scr_itemget(7)
 	                    if (noroom == 0)
 	                    {
 	                        global.gold -= 9999
@@ -4811,7 +4811,7 @@ function SCR_TEXT()
 	        }
 	        break
 	    case 830:
-	        script_execute(scr_cost, 25)
+	        scr_cost(25)
 	        if (global.choice == 0)
 	        {
 	            if (afford == 1)
@@ -4819,7 +4819,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    script_execute(scr_itemget, 58)
+	                    scr_itemget(58)
 	                    if (noroom == 0)
 	                    {
 	                        global.gold -= 25

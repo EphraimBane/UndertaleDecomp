@@ -1,9 +1,9 @@
-script_execute(scr_monsterdefeat, 0, 0, 0, 0, 0)
+scr_monsterdefeat(0, 0, 0, 0, 0)
 global.monster[0] = true
 with (obj_battlecontroller)
     visible = false
 global.xp += 150
-script_execute(scr_levelup)
+scr_levelup()
 global.border = 0
 SCR_BORDERSETUP()
 with (obj_hpname)

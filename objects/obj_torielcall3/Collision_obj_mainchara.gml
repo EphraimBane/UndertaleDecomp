@@ -17,6 +17,6 @@ if (global.interact == 0)
     global.msg[7] = scr_gettext("obj_torielcall3_96")
     global.msg[8] = scr_gettext("obj_torielcall3_97")
     global.msg[9] = scr_gettext("obj_torielcall3_98")
-    script_execute(scr_writetext, 0, "x", 0, 0)
+    scr_writetext(0, "x", 0, 0)
     global.interact = 1
 }

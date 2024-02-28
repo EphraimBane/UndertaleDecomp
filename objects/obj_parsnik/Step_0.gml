@@ -128,7 +128,7 @@ if (global.mnfight == 2)
 }
 if (whatiheard == 1 && instance_exists(OBJ_WRITER) == 0)
 {
-    script_execute(scr_mercystandard)
+    scr_mercystandard()
     if (mercy < 8)
     {
         killed = 0
@@ -159,13 +159,13 @@ if (global.myfight == 2)
             if (whatiheard == 1)
             {
                 global.msc = 0
-                script_execute(scr_mercystandard)
+                scr_mercystandard()
                 global.msg[0] = scr_gettext("obj_parsnik_495")
                 if (mercy < 8)
                 {
                     global.msg[0] = scr_gettext("obj_parsnik_498")
                     instance_create(0, 0, obj_foodsound)
-                    script_execute(scr_recover, 5)
+                    scr_recover(5)
                     mypart1.pause = 1
                 }
                 OBJ_WRITER.halt = 3
@@ -191,14 +191,14 @@ if (global.myfight == 4)
 {
     if (global.mercyuse == 0)
     {
-        script_execute(scr_mercystandard)
+        scr_mercystandard()
         if (mercy < 0)
             instance_destroy()
     }
 }
 if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
 {
-    script_execute(scr_mercystandard)
+    scr_mercystandard()
     if (mercy < 0)
         instance_destroy()
 }

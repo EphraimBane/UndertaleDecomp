@@ -12,7 +12,7 @@ if (global.interact == 0 && uncan == 0)
                     with (interactedobject)
                         facing = Direction.Left
                     with (interactedobject)
-                        script_execute(scr_interact)
+                        scr_interact()
                 }
             }
         }
@@ -26,7 +26,7 @@ if (global.interact == 0 && uncan == 0)
                     with (interactedobject)
                         facing = Direction.Right
                     with (interactedobject)
-                        script_execute(scr_interact)
+                        scr_interact()
                 }
             }
         }
@@ -40,7 +40,7 @@ if (global.interact == 0 && uncan == 0)
                     with (interactedobject)
                         facing = Direction.Up
                     with (interactedobject)
-                        script_execute(scr_interact)
+                        scr_interact()
                 }
             }
         }
@@ -54,7 +54,7 @@ if (global.interact == 0 && uncan == 0)
                     with (interactedobject)
                         facing = Direction.Down
                     with (interactedobject)
-                        script_execute(scr_interact)
+                        scr_interact()
                 }
             }
         }

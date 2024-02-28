@@ -47,4 +47,4 @@ if obj_time.down
     }
 }
 if (global.hp < 1)
-    script_execute(scr_gameoverb)
+    scr_gameoverb()

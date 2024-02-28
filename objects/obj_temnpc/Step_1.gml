@@ -1,2 +1,2 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
-script_execute(scr_npcdir, 1)
+scr_depth(0, 0, 0, 0, 0)
+scr_npcdir(1)

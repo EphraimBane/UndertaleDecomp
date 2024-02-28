@@ -1,4 +1,4 @@
-script_execute(scr_monstersetup, 0, 0, 0, 0, 0)
+scr_monstersetup(0, 0, 0, 0, 0)
 tt = 0
 hurtanim = 0
 hurtsound = snd_damage

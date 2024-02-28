@@ -7,4 +7,4 @@ global.border = 3
 conversation = 0
 alarm[0] = 10
 global.faceemotion = 0
-script_execute(SCR_BORDERSETUP, 0, 0, 0, 0, 0)
+SCR_BORDERSETUP(0, 0, 0, 0, 0)

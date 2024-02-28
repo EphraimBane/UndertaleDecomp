@@ -127,7 +127,7 @@ if (whatiheard == 3 && flex == 3 && instance_exists(OBJ_WRITER))
 }
 if (whatiheard == 3 && flex == 3 && instance_exists(OBJ_WRITER) == 0)
 {
-    script_execute(scr_mercystandard)
+    scr_mercystandard()
     if (mercy < 0)
         instance_destroy()
 }
@@ -137,14 +137,14 @@ if (global.myfight == 4)
 {
     if (global.mercyuse == 0)
     {
-        script_execute(scr_mercystandard)
+        scr_mercystandard()
         if (mercy < 0)
             instance_destroy()
     }
 }
 if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
 {
-    script_execute(scr_mercystandard)
+    scr_mercystandard()
     if (mercy < 0)
         instance_destroy()
 }

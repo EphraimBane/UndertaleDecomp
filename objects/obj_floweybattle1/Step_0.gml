@@ -1,4 +1,4 @@
-script_execute(SCR_BORDERSETUP, 0, 0, 0, 0, 0)
+SCR_BORDERSETUP(0, 0, 0, 0, 0)
 if instance_exists(OBJ_WRITER)
 {
     if (OBJ_WRITER.halt != false)

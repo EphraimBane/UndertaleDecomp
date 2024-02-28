@@ -39,17 +39,17 @@ if (global.facechange == 1)
         if (global.facechoice == 1)
         {
             if ((!instance_exists(obj_face_torieltalk)) && (!instance_exists(obj_face_torielblink)))
-                script_execute(scr_facechoice)
+                scr_facechoice()
         }
         if (global.facechoice == 2)
         {
             if (!instance_exists(obj_face_floweytalk))
-                script_execute(scr_facechoice)
+                scr_facechoice()
         }
         if (global.facechoice == 3)
         {
             if (!instance_exists(obj_face_sans))
-                script_execute(scr_facechoice)
+                scr_facechoice()
         }
         if (global.facechoice == 4)
         {
@@ -60,32 +60,32 @@ if (global.facechange == 1)
                 writer.writingxend = (writer.writingxend_base - 38)
             }
             if (!instance_exists(obj_face_papyrus))
-                script_execute(scr_facechoice)
+                scr_facechoice()
         }
         if (global.facechoice == 5)
         {
             if (!instance_exists(obj_face_undyne))
-                script_execute(scr_facechoice)
+                scr_facechoice()
         }
         if (global.facechoice == 6)
         {
             if (!instance_exists(obj_face_alphys))
-                script_execute(scr_facechoice)
+                scr_facechoice()
         }
         if (global.facechoice == 7)
         {
             if (!instance_exists(obj_face_asgore))
-                script_execute(scr_facechoice)
+                scr_facechoice()
         }
         if (global.facechoice == 8)
         {
             if (!instance_exists(obj_face_mettaton))
-                script_execute(scr_facechoice)
+                scr_facechoice()
         }
         if (global.facechoice == 9)
         {
             if (!instance_exists(obj_face_asriel))
-                script_execute(scr_facechoice)
+                scr_facechoice()
         }
         global.facechange = 2
     }

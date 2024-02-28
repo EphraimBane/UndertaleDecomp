@@ -292,18 +292,18 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	            }
 	            else
 	                global.msg[1] = scr_gettext("item_use_26b")
-	            script_execute(scr_writetext, 0, "x", 0, 0)
-	            script_execute(scr_itemshift, argument0, 0)
+	            scr_writetext(0, "x", 0, 0)
+	            scr_itemshift(argument0, 0)
 	        }
 	        break
 	    case 27:
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        if instance_exists(obj_rarependant)
 	        {
 	            with (obj_rarependant)
 	                con = 1
 	        }
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 28:
 	        healamt = 1
@@ -335,8 +335,8 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        if (global.seriousbattle == 1)
 	            grt.sound2 = snd_heal_c
 	        grt.alarm[1] = 10
-	        script_execute(scr_recoitem, healamt)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(healamt)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 29:
 	        if (global.item[7] == 0)
@@ -348,8 +348,8 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        grt = instance_create(0, 0, obj_soundcombo)
 	        grt.sound1 = snd_item
 	        grt.sound2 = snd_dogresidue
-	        script_execute(scr_writetext, 0, "x", 0, 0)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_writetext(0, "x", 0, 0)
+	        scr_itemshift(argument0, 0)
 	        for (i = 0; i < 8; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
@@ -367,8 +367,8 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        grt = instance_create(0, 0, obj_soundcombo)
 	        grt.sound1 = snd_item
 	        grt.sound2 = snd_dogresidue
-	        script_execute(scr_writetext, 0, "x", 0, 0)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_writetext(0, "x", 0, 0)
+	        scr_itemshift(argument0, 0)
 	        for (i = 0; i < 8; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
@@ -386,8 +386,8 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        grt = instance_create(0, 0, obj_soundcombo)
 	        grt.sound1 = snd_item
 	        grt.sound2 = snd_dogresidue
-	        script_execute(scr_writetext, 0, "x", 0, 0)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_writetext(0, "x", 0, 0)
+	        scr_itemshift(argument0, 0)
 	        for (i = 0; i < 8; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
@@ -405,8 +405,8 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        grt = instance_create(0, 0, obj_soundcombo)
 	        grt.sound1 = snd_item
 	        grt.sound2 = snd_dogresidue
-	        script_execute(scr_writetext, 0, "x", 0, 0)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_writetext(0, "x", 0, 0)
+	        scr_itemshift(argument0, 0)
 	        for (i = 0; i < 8; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
@@ -424,8 +424,8 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        grt = instance_create(0, 0, obj_soundcombo)
 	        grt.sound1 = snd_item
 	        grt.sound2 = snd_dogresidue
-	        script_execute(scr_writetext, 0, "x", 0, 0)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_writetext(0, "x", 0, 0)
+	        scr_itemshift(argument0, 0)
 	        for (i = 0; i < 8; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
@@ -443,8 +443,8 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        grt = instance_create(0, 0, obj_soundcombo)
 	        grt.sound1 = snd_item
 	        grt.sound2 = snd_dogresidue
-	        script_execute(scr_writetext, 0, "x", 0, 0)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_writetext(0, "x", 0, 0)
+	        scr_itemshift(argument0, 0)
 	        for (i = 0; i < 8; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
@@ -454,14 +454,14 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        break
 	    case 35:
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 21)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(21)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 36:
 	        if (global.inbattle == 0)
 	        {
 	            instance_create(0, 0, obj_foodsound)
-	            script_execute(scr_recoitem, 15)
+	            scr_recoitem(15)
 	        }
 	        if (global.inbattle == 1)
 	        {
@@ -469,17 +469,17 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	            {
 	                global.msg[0] = scr_gettext("item_use_36a")
 	                instance_create(0, 0, obj_foodsound)
-	                script_execute(scr_recoitem, 90)
+	                scr_recoitem(90)
 	            }
 	            else
 	                nood = instance_create(0, 0, obj_instantnoodleitem)
 	        }
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 37:
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 18)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(18)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 38:
 	        grt = instance_create(0, 0, obj_soundcombo)
@@ -489,8 +489,8 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        if (global.seriousbattle == 1)
 	            grt.sound2 = snd_heal_c
 	        grt.alarm[1] = 10
-	        script_execute(scr_recoitem, 20)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(20)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 39:
 	        if (global.seriousbattle == 0)
@@ -505,8 +505,8 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        }
 	        else
 	            grt = instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 21)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(21)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 40:
 	        grt = instance_create(0, 0, obj_soundcombo)
@@ -522,8 +522,8 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	                event_user(0)
 	            }
 	        }
-	        script_execute(scr_recoitem, 27)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(27)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 41:
 	        if (global.inbattle == 1)
@@ -541,8 +541,8 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        grt.sound1 = snd_swallow
 	        grt.sound2 = snd_speedup
 	        grt.alarm[1] = 10
-	        script_execute(scr_recoitem, 10)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(10)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 42:
 	        if instance_exists(obj_ratingsmaster)
@@ -556,8 +556,8 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        }
 	        grt = instance_create(0, 0, obj_foodsound)
 	        grt.alarm[1] = 10
-	        script_execute(scr_recoitem, 14)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(14)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 43:
 	        if (global.seriousbattle == 0)
@@ -583,58 +583,58 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	                event_user(0)
 	            }
 	        }
-	        script_execute(scr_recoitem, 40)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(40)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 44:
 	        scr_armoreq(argument0, argument1)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
 	    case 45:
 	        scr_weaponeq(argument0, argument1)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
 	    case 46:
 	        scr_armoreq(argument0, argument1)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
 	    case 47:
 	        scr_weaponeq(argument0, argument1)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
 	    case 48:
 	        scr_armoreq(argument0, argument1)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
 	    case 49:
 	        scr_weaponeq(argument0, argument1)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
 	    case 50:
 	        scr_armoreq(argument0, argument1)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
 	    case 51:
 	        scr_weaponeq(argument0, argument1)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
 	    case 52:
 	        scr_weaponeq(argument0, argument1)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
 	    case 53:
 	        scr_armoreq(argument0, argument1)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
 	    case 54:
 	        global.hp -= 1
@@ -648,16 +648,16 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	            global.hp = global.maxhp
 	            global.msg[0] = scr_gettext("item_use_54_heal")
 	        }
-	        script_execute(scr_writetext, 0, "x", 0, 0)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_writetext(0, "x", 0, 0)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 55:
 	        if (FL_DreamedAsrielFight == 1)
 	            global.msg[0] = scr_gettext("item_use_55_short")
 	        FL_DreamedAsrielFight = 1
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 17)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(17)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 56:
 	        if (!instance_exists(obj_undyne_friendc))
@@ -666,13 +666,13 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	            global.msg[1] = scr_gettext("item_use_56a")
 	            if (room == room_fire_prelab)
 	                global.msg[0] = scr_gettext("item_use_56_prelab")
-	            script_execute(scr_writetext, 0, "x", 0, 0)
+	            scr_writetext(0, "x", 0, 0)
 	        }
 	        else
 	        {
 	            global.faceemotion = 1
 	            global.msg[0] = scr_gettext("item_use_56_undyne")
-	            script_execute(scr_writetext, 0, "x", 5, 37)
+	            scr_writetext(0, "x", 5, 37)
 	        }
 	        break
 	    case 57:
@@ -682,19 +682,19 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	            global.msg[1] = scr_gettext("item_use_56a")
 	            if (room == room_fire_prelab)
 	                global.msg[0] = scr_gettext("item_use_56_prelab")
-	            script_execute(scr_writetext, 0, "x", 0, 0)
+	            scr_writetext(0, "x", 0, 0)
 	        }
 	        else
 	        {
 	            global.faceemotion = 1
 	            global.msg[0] = scr_gettext("item_use_56_undyne")
-	            script_execute(scr_writetext, 0, "x", 5, 37)
+	            scr_writetext(0, "x", 5, 37)
 	        }
 	        break
 	    case 58:
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 13)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(13)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 59:
 	        if instance_exists(obj_ratingsmaster)
@@ -707,8 +707,8 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	            }
 	        }
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 17)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(17)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 60:
 	        if (room == room_icecave1)
@@ -727,9 +727,9 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	            snd_play(snd_item)
 	            with (obj_blookhouses)
 	                event_user(1)
-	            script_execute(scr_itemshift, argument0, 0)
+	            scr_itemshift(argument0, 0)
 	        }
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
 	    case 61:
 	        if instance_exists(obj_ratingsmaster)
@@ -743,8 +743,8 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        }
 	        grt = instance_create(0, 0, obj_foodsound)
 	        grt.alarm[1] = 10
-	        script_execute(scr_recoitem, 60)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(60)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 62:
 	        if (global.seriousbattle == 0)
@@ -752,8 +752,8 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        if instance_exists(obj_endogeny)
 	            obj_endogeny.mercymod = 999999
 	        instance_create(0, 0, obj_foodsound)
-	        script_execute(scr_recoitem, 65)
-	        script_execute(scr_itemshift, argument0, 0)
+	        scr_recoitem(65)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 63:
 	        instance_create(0, 0, obj_foodsound)
@@ -779,15 +779,15 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	                totalmercy += 3
 	        }
 	        if (spec_p == 0)
-	            script_execute(scr_writetext, 0, (scr_gettext("item_use_63") + "%"), 0, 0)
+	            scr_writetext(0, (scr_gettext("item_use_63") + "%"), 0, 0)
 	        if (spec_p == 1)
-	            script_execute(scr_writetext, 0, scr_gettext("item_use_63"), 0, 0)
-	        script_execute(scr_itemshift, argument0, 0)
+	            scr_writetext(0, scr_gettext("item_use_63"), 0, 0)
+	        scr_itemshift(argument0, 0)
 	        break
 	    case 64:
 	        scr_armoreq(argument0, argument1)
 	        snd_play(snd_item)
-	        script_execute(scr_writetext, 0, "x", 0, 0)
+	        scr_writetext(0, "x", 0, 0)
 	        break
 	    case 201:
 	        if (FL_WaitedOnTorielCall == 1)
@@ -797,18 +797,18 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	            if (global.plot > 18 && room == room_torhouse2)
 	            {
 	                snd_play(snd_phone)
-	                script_execute(scr_writetext, 1507, "x", 0, 0)
+	                scr_writetext(1507, "x", 0, 0)
 	            }
 	            else
 	            {
 	                snd_play(snd_phone)
-	                script_execute(scr_writetext, 1501, "x", 0, 0)
+	                scr_writetext(1501, "x", 0, 0)
 	            }
 	        }
 	        else
 	        {
 	            snd_play(snd_phone)
-	            script_execute(scr_writetext, 1506, "x", 0, 0)
+	            scr_writetext(1506, "x", 0, 0)
 	        }
 	        break
 	    case 202:
@@ -819,19 +819,19 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	            if (global.plot > 18 && room == room_torhouse2)
 	            {
 	                snd_play(snd_phone)
-	                script_execute(scr_writetext, 1507, "x", 0, 0)
+	                scr_writetext(1507, "x", 0, 0)
 	            }
 	            else
 	            {
 	                snd_play(snd_phone)
-	                script_execute(scr_writetext, 1502, "x", 0, 0)
-	                script_execute(scr_phoneshift, argument0, 0)
+	                scr_writetext(1502, "x", 0, 0)
+	                scr_phoneshift(argument0, 0)
 	            }
 	        }
 	        else
 	        {
 	            snd_play(snd_phone)
-	            script_execute(scr_writetext, 1506, "x", 0, 0)
+	            scr_writetext(1506, "x", 0, 0)
 	        }
 	        break
 	    case 203:
@@ -842,19 +842,19 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	            if (global.plot > 18 && room == room_torhouse2)
 	            {
 	                snd_play(snd_phone)
-	                script_execute(scr_writetext, 1507, "x", 0, 0)
+	                scr_writetext(1507, "x", 0, 0)
 	            }
 	            else
 	            {
 	                snd_play(snd_phone)
-	                script_execute(scr_writetext, 1503, "x", 0, 0)
-	                script_execute(scr_phoneshift, argument0, 0)
+	                scr_writetext(1503, "x", 0, 0)
+	                scr_phoneshift(argument0, 0)
 	            }
 	        }
 	        else
 	        {
 	            snd_play(snd_phone)
-	            script_execute(scr_writetext, 1506, "x", 0, 0)
+	            scr_writetext(1506, "x", 0, 0)
 	        }
 	        break
 	    case 204:
@@ -865,19 +865,19 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	            if (global.plot > 18 && room == room_torhouse2)
 	            {
 	                snd_play(snd_phone)
-	                script_execute(scr_writetext, 1507, "x", 0, 0)
+	                scr_writetext(1507, "x", 0, 0)
 	            }
 	            else
 	            {
 	                snd_play(snd_phone)
-	                script_execute(scr_writetext, 1504, "x", 0, 0)
-	                script_execute(scr_phoneshift, argument0, 0)
+	                scr_writetext(1504, "x", 0, 0)
+	                scr_phoneshift(argument0, 0)
 	            }
 	        }
 	        else
 	        {
 	            snd_play(snd_phone)
-	            script_execute(scr_writetext, 1506, "x", 0, 0)
+	            scr_writetext(1506, "x", 0, 0)
 	        }
 	        break
 	    case 205:
@@ -888,33 +888,33 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	            if (global.plot > 18 && room == room_torhouse2)
 	            {
 	                snd_play(snd_phone)
-	                script_execute(scr_writetext, 1507, "x", 0, 0)
+	                scr_writetext(1507, "x", 0, 0)
 	            }
 	            else
 	            {
 	                snd_play(snd_phone)
 	                if (FL_TorielFlirtedCount == 1)
-	                    script_execute(scr_phoneshift, argument0, 0)
-	                script_execute(scr_writetext, 1505, "x", 0, 0)
+	                    scr_phoneshift(argument0, 0)
+	                scr_writetext(1505, "x", 0, 0)
 	            }
 	        }
 	        else
 	        {
 	            snd_play(snd_phone)
-	            script_execute(scr_writetext, 1506, "x", 0, 0)
+	            scr_writetext(1506, "x", 0, 0)
 	        }
 	        break
 	    case 206:
 	        scr_phone_moveup(argument0, argument1)
 	        snd_play(snd_phone)
 	        if (FL_TruePacifist == 0)
-	            script_execute(scr_writetext, 1506, "x", 0, 0)
+	            scr_writetext(1506, "x", 0, 0)
 	        if (FL_TruePacifist == 1)
-	            script_execute(scr_writetext, 1515, "x", 0, 0)
+	            scr_writetext(1515, "x", 0, 0)
 	        break
 	    case 210:
 	        scr_phone_moveup(argument0, argument1)
-	        script_execute(scr_writetext, 1510, "x", 0, 0)
+	        scr_writetext(1510, "x", 0, 0)
 	        break
 	    case 220:
 	        if (room != room_water_dogroom)
@@ -926,7 +926,7 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	            ii.boxtype = 0
 	        }
 	        else
-	            script_execute(scr_writetext, 1520, "x", 0, 0)
+	            scr_writetext(1520, "x", 0, 0)
 	        break
 	    case 221:
 	        if (room != room_water_dogroom)
@@ -938,7 +938,7 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	            ii.boxtype = 1
 	        }
 	        else
-	            script_execute(scr_writetext, 1520, "x", 0, 0)
+	            scr_writetext(1520, "x", 0, 0)
 	        break
 	    default:
 	

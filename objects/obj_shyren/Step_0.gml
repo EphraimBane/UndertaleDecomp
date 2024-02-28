@@ -246,21 +246,21 @@ if (encourage == 7 && global.turntimer <= 2)
         instance_destroy()
     global.typer = 1
     obj_heart.visible = false
-    script_execute(scr_mercystandard)
+    scr_mercystandard()
     instance_destroy()
 }
 if (global.myfight == 4)
 {
     if (global.mercyuse == 0)
     {
-        script_execute(scr_mercystandard)
+        scr_mercystandard()
         if (mercy < 0)
             instance_destroy()
     }
 }
 if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
 {
-    script_execute(scr_mercystandard)
+    scr_mercystandard()
     if (mercy < 0)
         instance_destroy()
 }

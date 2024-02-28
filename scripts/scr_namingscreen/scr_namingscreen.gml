@@ -503,7 +503,7 @@ function scr_namingscreen()
 	            if (ossafe_file_exists("file0") == 0)
 	                room_goto_next()
 	            else
-	                script_execute(scr_load)
+	                scr_load()
 	        }
 	        if (action == 1)
 	        {

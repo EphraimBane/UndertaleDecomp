@@ -1,5 +1,5 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
-script_execute(scr_npcdir, 2)
+scr_depth(0, 0, 0, 0, 0)
+scr_npcdir(2)
 if (s_click == 1 && instance_exists(OBJ_WRITER))
 {
     if (OBJ_WRITER.stringno == 8)

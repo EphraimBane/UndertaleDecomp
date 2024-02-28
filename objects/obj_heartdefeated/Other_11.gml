@@ -19,7 +19,7 @@ while 1
     }
 }
 dingus = 1
-script_execute(SCR_TEXTTYPE, global.typer)
+SCR_TEXTTYPE(global.typer)
 global.msc = 0
 var xx = 100
 if (global.language == "ja")

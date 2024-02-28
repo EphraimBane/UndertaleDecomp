@@ -89,7 +89,7 @@ if (global.mnfight == 2)
 }
 if (whatiheard == 1 && instance_exists(OBJ_WRITER) == 0)
 {
-    script_execute(scr_mercystandard)
+    scr_mercystandard()
     if (mercy < 0)
     {
         killed = 1
@@ -130,7 +130,7 @@ if (global.myfight == 4)
 {
     if (global.mercyuse == 0)
     {
-        script_execute(scr_mercystandard)
+        scr_mercystandard()
         if (mercy < 0)
             instance_destroy()
     }

@@ -50,7 +50,7 @@ if (naming == 3)
         draw_sprite(spr_mkid_d_dark, 0, 262, 162)
     }
 }
-script_execute(scr_namingscreen)
+scr_namingscreen()
 if (naming == 3)
 {
     var version = "1.11"

@@ -157,9 +157,9 @@ global.endsong_loaded = 0
 control_init()
 scr_kanatype_init()
 if (!variable_global_exists("text_data_en"))
-    script_execute(textdata_en)
+    textdata_en()
 if (!variable_global_exists("text_data_ja"))
-    script_execute(textdata_ja)
+    textdata_ja()
 if (os_type == os_switch)
     global.language = substr(switch_language_get_desired_language(), 1, 2)
 else

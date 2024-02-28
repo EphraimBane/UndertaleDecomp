@@ -433,5 +433,5 @@ if (con == 103 && instance_exists(OBJ_WRITER) == 0)
 if (global.myfight == 4)
 {
     if (global.mercyuse == 0)
-        script_execute(scr_mercystandard)
+        scr_mercystandard()
 }

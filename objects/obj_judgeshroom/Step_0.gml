@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 buffer -= 1
 if (myinteract == 1 && buffer >= 0)
     myinteract = 0

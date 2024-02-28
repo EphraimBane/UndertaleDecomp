@@ -11,6 +11,6 @@ if (room == room_water5 && FL_WaterfallBattleProgressCounter1 == 0 && global.ent
     factor = 20
     desto = 1
 }
-script_execute(scr_steps, factor, 30, 18, 204)
+scr_steps(factor, 30, 18, 204)
 if (FL_WaterfallKillsCounter == 0 && global.plot > 121)
     instance_destroy()

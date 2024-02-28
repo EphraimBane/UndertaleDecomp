@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 if (FL_RuinsCandyTaken > 3 && candymade == 0)
 {
     candy = scr_marker(x, (y + 2), spr_candydish2)

@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 if (con == 2)
 {
     if collision_line((x + (sprite_width / 2)), ((y + sprite_height) - 5), (x + (sprite_width / 2)), ((y + sprite_height) + 20), obj_mainchara, false, true)

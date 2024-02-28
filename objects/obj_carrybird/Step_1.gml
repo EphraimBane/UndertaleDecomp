@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 if (carry == 1 && instance_exists(OBJ_WRITER) == 0)
 {
     if (FL_TruePacifist == 0)

@@ -4,9 +4,9 @@ if (global.encounter > steps)
     {
         if (global.interact == 0)
         {
-            script_execute(scr_steps, 140, 210, 20, 202)
+            scr_steps(140, 210, 20, 202)
             if (FL_Hardmode == 1)
-                script_execute(scr_steps, 120, 120, 20, 202)
+                scr_steps(120, 120, 20, 202)
             global.encounter = 0
             battlegroup = random(15)
             if (battlegroup <= 2)

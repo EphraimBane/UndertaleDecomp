@@ -91,13 +91,13 @@ if (buffer > 3)
     {
         if (column == 0)
         {
-            script_execute(scr_storageget, global.item[c0y], boxno)
+            scr_storageget(global.item[c0y], boxno)
             if (noroom == 0)
-                script_execute(scr_itemshift, c0y, 0)
+                scr_itemshift(c0y, 0)
         }
         if (column == 1)
         {
-            script_execute(scr_itemget, global.flag[(c1y + boxno)])
+            scr_itemget(global.flag[(c1y + boxno)])
             if (noroom == 0)
                 scr_storageshift(c1y, 0, boxno)
         }

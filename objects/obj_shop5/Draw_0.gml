@@ -234,7 +234,7 @@ if (menu == 1 || menu == 2)
                 }
                 else if (afford == 1)
                 {
-                    script_execute(scr_itemget, item[menuc[1]])
+                    scr_itemget(item[menuc[1]])
                     if (noroom == 0)
                     {
                         global.gold -= itemcost[menuc[1]]

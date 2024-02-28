@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 if (spec == 0)
     scr_npc_anim()
 if (spec == 1 && instance_exists(OBJ_WRITER))
