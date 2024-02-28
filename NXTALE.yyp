@@ -1284,6 +1284,7 @@
     {"id":{"name":"obj_torinteractable3","path":"objects/obj_torinteractable3/obj_torinteractable3.yy",},},
     {"id":{"name":"obj_torinteractable4","path":"objects/obj_torinteractable4/obj_torinteractable4.yy",},},
     {"id":{"name":"obj_torinteractable5","path":"objects/obj_torinteractable5/obj_torinteractable5.yy",},},
+    {"id":{"name":"cmd_room_speed","path":"scripts/cmd_room_speed/cmd_room_speed.yy",},},
     {"id":{"name":"obj_torinteractable6","path":"objects/obj_torinteractable6/obj_torinteractable6.yy",},},
     {"id":{"name":"obj_floweytalker1","path":"objects/obj_floweytalker1/obj_floweytalker1.yy",},},
     {"id":{"name":"obj_pbflame","path":"objects/obj_pbflame/obj_pbflame.yy",},},
