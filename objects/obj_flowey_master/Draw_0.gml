@@ -548,7 +548,7 @@ if (dcon > 0)
             siner += (1 + random(0.5))
             md = 1
             image_blend = make_color_hsv((abs(sin((siner / 30))) * 512), 255, 255)
-            blend2 = make_color_hsv((abs(sin((siner / 30))) * 512), 255, 255)
+            blend2 = make_color_hsv(((abs(sin((siner / 30))) * 512) % 255), 255, 255)
             flash = -1
             x = ((xstart + random(15)) - random(15))
             y = ((ystart + random(15)) - random(15))

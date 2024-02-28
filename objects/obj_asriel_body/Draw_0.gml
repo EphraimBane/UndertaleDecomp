@@ -456,7 +456,7 @@ if (specialnormal == 0 && global.mnfight == 0 && global.myfight == 0)
             textx = 104
         for (i = 0; i < len; i += 1)
         {
-            tcolor = make_color_hsv(((siner * 8) + (i * 8)), 140, 255)
+            tcolor = make_color_hsv((((siner * 8) + (i * 8)) % 255), 140, 255)
             draw_set_color(tcolor)
             letter = string_char_at(fullphrase, i)
             draw_text_transformed((textx + (sin(((siner + i) / 5)) * 8)), (270 + (cos(((siner + i) / 5)) * 4)), string_hash_to_newline(letter), 1, 1, 0)
