@@ -208,6 +208,6 @@ if (room == room_water_temvillage)
 if (room == room_water_trashzone1)
 {
     sprite_index = spr_ds_donationbox_trash
-    if ((global.osflavor != OSFlavors.Playstation && global.osflavor != OS_FLAVOR_SWITCH) || scr_murderlv() < 9)
+    if ((global.osflavor != OSFlavors.Playstation && global.osflavor != OSFlavors.Switch) || scr_murderlv() < 9)
         instance_destroy()
 }
