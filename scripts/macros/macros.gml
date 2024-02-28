@@ -59,7 +59,7 @@ enum OSFlavors
 #macro FL_DisobeyedToriel global.flag[44]
 #macro FL_TorielStatus global.flag[45]
 #macro FL_ChoiceFlavor global.flag[46]
-#macro FL_TundraCreepyStatus global.flag[46]
+#macro FL_TundraCreepyStatus global.flag[47]
 // 48 - 49 Unused
 #macro FL_KnowWaterSausage global.flag[50]
 #macro FL_WrongSwitchesPressedCount global.flag[51]
