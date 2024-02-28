@@ -4,7 +4,7 @@
 
 enum OSFlavors
 {
-	Unknown
+	Unknown,
 	PC,
 	Mac,
 	Console,
@@ -13,6 +13,7 @@ enum OSFlavors
 }
 
 // Vultu: Taken from https://tomat.dev/undertale/flags
+// Vultu: Anything not in that list was added by or Daniela
 // If any of this is wrong or misleading, please feel free to push a PR <3
 #region Flags
 
