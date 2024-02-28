@@ -19,3 +19,5 @@ command_register("gold_set", "Sets your gold", [ "value" ]);
 command_register("crash_game", "Crashes the game");
 
 command_register("clear", "Clears the output");
+command_register("monitor_plot", "Toggles the plot monitor");
+command_register("unlock_cam", "Creates an unlocked camera");

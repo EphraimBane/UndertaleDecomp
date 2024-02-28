@@ -1,3 +1,22 @@
+// DECOMP CODE
+
+if (view_get_visible(7))
+{
+	var dir_x = obj_time.right - obj_time.left;
+	var dir_y = obj_time.up - obj_time.down;
+	
+	var cam = view_get_camera(7);
+	var cam_x = camera_get_view_x(cam);
+	var cam_y = camera_get_view_y(cam);
+	
+	camera_set_view_pos(cam, cam_x + dir_x, cam_y - dir_y);
+	return;
+}
+
+
+//
+
+
 if (obj_time.left == 0)
 {
     if (obj_time.right == 0)

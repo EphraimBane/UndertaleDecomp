@@ -1,10 +1,34 @@
-if (!active)
-	return;
+
+
 
 var saved_draw_state = new draw_state();
 
 draw_set_font(fnt_maintext);
 
+#region Plot Variable
+
+if (global.monitorPlotVariable)
+{
+	var plot_example = "Plot: 999";
+	var plot_width = string_width(plot_example);
+	var plot_height = string_height(plot_example);
+	
+	var plot_x = (view_get_xport(0) + view_get_wport(0)) - plot_width;
+	var plot_y = (view_get_yport(0) + view_get_hport(0)) - plot_height;
+	
+	draw_set_color(c_black);
+	ossafe_fill_rectangle(plot_x, plot_y, plot_x + plot_width, plot_y + plot_height);
+	draw_set_color(c_white);
+	draw_text(plot_x, plot_y, $"Plot: {global.plot}");
+}
+#endregion
+
+if (!active)
+{
+	draw_load_state(saved_draw_state);
+	delete saved_draw_state;
+	return;
+}
 var char_height = string_height(" ");
 var char_width = string_width(" ");
 
@@ -69,7 +93,7 @@ if (history_len != 0)
 	var bar_right =  scroll_x + scroll_width;
 	var bar_bottom = (scroll_y + scroll_height) - (scroll_height * scroll_size);
 	
-	if (bar_x >= mouse_x && mouse_x <= bar_right && bar_y >= mouse_ y && mouse_y <= bar_bottom)
+	if (bar_x >= mouse_x && mouse_x <= bar_right && bar_y >= mouse_y && mouse_y <= bar_bottom)
 		draw_set_color(c_yellow);
 	
 	ossafe_fill_rectangle(bar_x, bar_y, bar_right, bar_bottom);
@@ -143,6 +167,7 @@ draw_set_color(c_white);
 draw_text(name_x, name_y, room_name);
 
 #endregion
+
 
 draw_load_state(saved_draw_state);
 

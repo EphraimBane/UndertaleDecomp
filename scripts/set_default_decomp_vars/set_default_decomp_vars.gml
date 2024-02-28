@@ -13,4 +13,6 @@ function set_default_decomp_vars()
 	global.decomp_vars.MusicVolume = 100.0;
 	global.decomp_vars.SoundFXVolume = 100.0;
 	global.decomp_vars.RestoreSFXPan = true;
+	global.decomp_vars.RemoveBattleIconRandomness = false;
+	global.decomp_vars.BattleIconRandomOverride = 17;
 }
