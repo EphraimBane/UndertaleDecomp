@@ -2,13 +2,6 @@
 // This file does exist in the actual undertale source, but we don't know
 // what it looks like, so we are going to make our own
 
-
-#macro OSFlavors.Mac 2
-
-#macro OSFlavors.Console 3
-#macro OS_FLAVOR_PLAYSTATION 4
-#macro OS_FLAVOR_SWITCH 5
-
 enum OSFlavors
 {
 	Unknown
