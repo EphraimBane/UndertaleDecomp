@@ -31,10 +31,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_sans_bface",
-    "path": "sprites/spr_sans_bface/spr_sans_bface.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
