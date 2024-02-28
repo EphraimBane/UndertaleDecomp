@@ -2,7 +2,7 @@ slide_con = 0
 locked = true
 if (global.plot >= 190)
     locked = false
-open = 0
+open = false
 door1x = 0
 door2x = 0
 rattle = 0
@@ -13,11 +13,11 @@ interacter.locked = locked
 block = instance_create(136, 42, obj_solidsmall)
 block.image_xscale = 6
 door = instance_create(150, 34, obj_doorAmusicfade)
-if (global.flag[157] >= 1)
+if (FL_MadMewMewStatus >= MadMewMewStatus.DoorOpened)
 {
     door1x = -20
     door2x = 20
-    open = 1
+    open = true
     with (block)
         instance_destroy()
     with (interacter)

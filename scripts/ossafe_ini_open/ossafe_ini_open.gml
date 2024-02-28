@@ -3,7 +3,7 @@
 /// @param	{string}	filepath	The filepath of the ini to open/create
 function ossafe_ini_open()
 {
-	if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+	if (global.osflavor <= OSFlavors.Mac)
 	    ini_open(argument0)
 	else
 	{

@@ -47,7 +47,7 @@ if (room == room_tundra_sanshouse)
 {
 	if (global.decomp_vars.VanillaMode)
 	{
-		if (global.osflavor == OS_FLAVOR_PLAYSTATION)
+		if (global.osflavor == OSFlavors.Playstation)
 			room_goto(room_dogshrine)
 		else
 			room_goto(room_dogshrine_ruined)

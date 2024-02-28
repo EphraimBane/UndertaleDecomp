@@ -1,11 +1,11 @@
 gameshake *= -0.8
 gameshake = floor(gameshake)
-if (global.osflavor == OS_FLAVOR_PC)
+if (global.osflavor == OSFlavors.PC)
     window_set_position((wx + gameshake), wy)
 alarm[0] = 8
 if (abs(gameshake) < 3)
 {
-    if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+    if (global.osflavor <= OSFlavors.Mac)
         game_end()
     else
     {

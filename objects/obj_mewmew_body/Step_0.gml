@@ -144,7 +144,7 @@ if (hitcon == 16)
     whiteval += 0.03
     if (whiteval >= 4)
     {
-        global.flag[157] = 3
+        FL_MadMewMewStatus = MadMewMewStatus.Killed
         ossafe_ini_open("undertale.ini")
         ini_write_real("Alphys", "M", 3)
         ossafe_ini_close()

@@ -42,9 +42,9 @@ if (slide_con == 1)
     if (done == 2)
     {
         open = 1
-        if (global.flag[157] < 1)
-            global.flag[157] = 1
-        global.flag[158] = choose(0, 0, 0, 0, 1, 1, 1, 2, 2)
+        if (FL_MadMewMewStatus < MadMewMewStatus.DoorOpened)
+            FL_MadMewMewStatus = MadMewMewStatus.DoorOpened
+        FL_MadMewMewImageIndex = choose(0, 0, 0, 0, 1, 1, 1, 2, 2)
         with (block)
             instance_destroy()
         with (interacter)

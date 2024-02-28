@@ -112,10 +112,10 @@ if (number == 6)
         xx = 32
     var xx2 = 190
     yy = 30
-    if (global.osflavor >= OS_FLAVOR_PLAYSTATION && global.language != "ja")
+    if (global.osflavor >= OSFlavors.Playstation && global.language != "ja")
         yy = 22
     draw_set_color(c_yellow)
-    if (global.osflavor == OS_FLAVOR_PLAYSTATION)
+    if (global.osflavor == OSFlavors.Playstation)
     {
         draw_text(xx, yy, string_hash_to_newline(scr_gettext("credits_short_loc1_1_ps")))
         if (global.language == "ja")
@@ -123,7 +123,7 @@ if (number == 6)
         else
             yy += 36
     }
-    else if (global.osflavor == OS_FLAVOR_SWITCH)
+    else if (global.osflavor == OSFlavors.Switch)
     {
         draw_text(xx, yy, string_hash_to_newline(scr_gettext("credits_short_loc1_1_switch")))
         yy += 36

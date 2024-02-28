@@ -1,7 +1,7 @@
 global.interact = 1
 if keyboard_check(vk_escape)
 {
-    if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+    if (global.osflavor <= OSFlavors.Mac)
         game_end()
 }
 window_set_caption(" ")
@@ -43,7 +43,7 @@ if (con == 5 && instance_exists(OBJ_WRITER) == 0)
     caster_free(-3)
     instance_create(0, 0, obj_whitefader)
     con = 6
-    if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+    if (global.osflavor <= OSFlavors.Mac)
         alarm[4] = 20
     else
         alarm[4] = 180

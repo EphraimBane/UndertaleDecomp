@@ -110,7 +110,7 @@ function scr_torcall()
 	if (FL_TorielSMSConvoCounter == 15)
 	{
 	    global.msg[0] = scr_gettext("scr_torcall_128")
-	    if (global.osflavor >= OS_FLAVOR_PLAYSTATION)
+	    if (global.osflavor >= OSFlavors.Playstation)
 	    {
 	        global.msg[1] = scr_gettext("scr_torcall_129_console")
 	        global.msg[2] = scr_gettext("scr_torcall_130_console")

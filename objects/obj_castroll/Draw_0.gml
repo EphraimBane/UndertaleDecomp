@@ -321,12 +321,12 @@ if (active == true)
             scr_drawtext_centered_scaled(col2_x, ((mon.y + 110) + info_yofs), scr_gettext("castroll_yellow_temmie"), infoscale, infoscale)
         }
         draw_set_color(c_white)
-        if (global.flag[157] < 2)
+        if (FL_MadMewMewStatus < MadMewMewStatus.Spared)
         {
             mon = maddummy
             scr_drawtext_centered_scaled(col1_x, (mon.y - 70), scr_gettext("castroll_name_maddummy"), namescale, namescale)
             scr_drawtext_centered_scaled(col1_x, (mon.y - 30), scr_gettext("castroll_by_toby"), 1, 1)
-            if (FL_SparedMaddummy == 0)
+            if (FL_SparedMaddummy == false)
             {
                 draw_set_color(c_white)
                 scr_drawtext_centered_scaled(col1_x, ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_maddummy"), infoscale, infoscale)
@@ -342,7 +342,7 @@ if (active == true)
             mon = mewmew
             scr_drawtext_centered_scaled(col1_x, (mon.y - 70), scr_gettext("castroll_name_mewmew"), namescale, namescale)
             scr_drawtext_centered_scaled(col1_x, (mon.y - 30), scr_gettext("castroll_by_gigi_and_temmie_and_toby"), 1, 1)
-            if (global.flag[157] >= 3)
+            if (FL_MadMewMewStatus >=  MadMewMewStatus.Spared)
             {
                 draw_set_color(c_white)
                 scr_drawtext_centered_scaled(col1_x, ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_mewmew"), infoscale, infoscale)

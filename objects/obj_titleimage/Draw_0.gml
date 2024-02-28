@@ -3,7 +3,7 @@ if (d == 1)
 {
     draw_set_color(c_gray)
     scr_setfont(fnt_small)
-    if (global.osflavor >= OS_FLAVOR_PLAYSTATION)
+    if (global.osflavor >= OSFlavors.Playstation)
     {
         var scale = 1
         if (os_type == os_psvita)
@@ -13,7 +13,7 @@ if (d == 1)
     else
         draw_text(120, 180, string_hash_to_newline(scr_gettext("title_press_button_pc")))
 }
-if (global.osflavor >= OS_FLAVOR_PLAYSTATION)
+if (global.osflavor >= OSFlavors.Playstation)
     proceed = gamepad_button_check_any((obj_time.j_ch - 1))
 else
     proceed = control_check_pressed(0)

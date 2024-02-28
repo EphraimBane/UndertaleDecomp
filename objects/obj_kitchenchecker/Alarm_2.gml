@@ -12,7 +12,7 @@ if (obj_mainchara.bbox_top < 134)
 		// Vultu: This controls if the dog shrine door is active
 		var enabledConsoleContent = (global.decomp_vars.EnableSwitchDogShrine || global.decomp_vars.EnablePSDogShrine);
 		
-        if ((global.osflavor == OS_FLAVOR_PLAYSTATION || global.osflavor == OS_FLAVOR_SWITCH || (enabledConsoleContent && !global.decomp_vars.VanillaMode)) && FL_PapyrusSinkEventOccured == 1)
+        if ((global.osflavor == OSFlavors.Playstation || global.osflavor == OSFlavors.Switch || (enabledConsoleContent && !global.decomp_vars.VanillaMode)) && FL_PapyrusSinkEventOccured == 1)
             dogdoor = instance_create(212, 57, obj_doorXmusicfade)
         else
             dogdoor = noone

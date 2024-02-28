@@ -1,6 +1,6 @@
 if (global.decomp_vars.VanillaMode)
 {
-	if (global.osflavor != OS_FLAVOR_PLAYSTATION && global.osflavor != OS_FLAVOR_SWITCH)
+	if (global.osflavor != OSFlavors.Playstation && global.osflavor != OS_FLAVOR_SWITCH)
 		room_goto(room_of_dog)	
 }
 dogtimer = 0

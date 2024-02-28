@@ -10,5 +10,5 @@ yy = global.idealborder[2]
 factor = 0
 dmg = 0
 draedmode = true
-if (global.osflavor >= OS_FLAVOR_CONSOLE)
+if (global.osflavor >= OSFlavors.Console)
     draedmode = true

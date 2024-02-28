@@ -1,5 +1,5 @@
 draw_self()
-if (global.osflavor >= OS_FLAVOR_PLAYSTATION)
+if (global.osflavor >= OSFlavors.Playstation)
 {
     var button = scr_getbuttonsprite("Z", 0)
     if (button != -4)

@@ -50,7 +50,7 @@ if (room == room_ruins17)
 if (room == room_ruins13 && x > 300 && x < 400)
 {
     global.msc = 0
-    if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+    if (global.osflavor <= OSFlavors.Mac)
     {
         global.msg[0] = scr_gettext("obj_smallfrog_117")
         global.msg[1] = scr_gettext("obj_smallfrog_118")

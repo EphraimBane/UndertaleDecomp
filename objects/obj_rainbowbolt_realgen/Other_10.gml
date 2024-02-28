@@ -24,7 +24,7 @@ if (l_buffer <= 0)
     audio_sound_gain(jr[lh], 0.44, 0)
     with (obj_rainbowbolt_realgen)
         l_buffer = 1
-    if (global.osflavor != OS_FLAVOR_PC)
+    if (global.osflavor != OSFlavors.PC)
     {
         with (obj_rainbowbolt_realgen)
             l_buffer = 2

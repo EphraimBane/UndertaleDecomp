@@ -93,7 +93,7 @@ if (type == 16)
 if (type == 17)
 {
     emotion = 0
-    if (FL_ShyrenStatus == 2)
+    if (FL_ShyrenStatus == ShyrenStatus.Encouraged)
         emotion = 1
     part1 = obj_shyrenbody
     mypart1 = instance_create(x, y, part1)

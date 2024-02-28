@@ -32,8 +32,8 @@ if (started <= 0)
     if (jd_i >= 0)
         global.joy_dir = jd_i
     ossafe_ini_close()
-    scr_enable_screen_border(global.osflavor >= OS_FLAVOR_PLAYSTATION)
-    if (global.osflavor >= OS_FLAVOR_PLAYSTATION)
+    scr_enable_screen_border(global.osflavor >= OSFlavors.Playstation)
+    if (global.osflavor >= OSFlavors.Playstation)
     {
         global.analog_sense = 0.15
         if (os_type == os_psvita)
@@ -88,7 +88,7 @@ if (obj_decomp_console.active)
 	return; // Vultu: AFAIK, this is all controller check code after
 }
 	
-if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+if (global.osflavor <= OSFlavors.Mac)
 {
     if (jt == 0)
     {
@@ -169,7 +169,7 @@ if (j_ch > 0)
     j_fl = 0
     j_fu = 0
     j_fd = 0
-    if (global.osflavor >= OS_FLAVOR_PLAYSTATION)
+    if (global.osflavor >= OSFlavors.Playstation)
     {
         if (gamepad_button_check((j_ch - 1), gp_padu) || gamepad_button_check((j_ch - 1), gp_padd) || gamepad_button_check((j_ch - 1), gp_padl) || gamepad_button_check((j_ch - 1), gp_padr))
         {
@@ -322,7 +322,7 @@ if keyboard_check(vk_left)
     try_left = 1
 if keyboard_check_released(vk_left)
     try_left = 0
-if (global.osflavor == OS_FLAVOR_PC)
+if (global.osflavor == OSFlavors.PC)
 {
     if try_up
         up = keyboard_check_direct(vk_up)

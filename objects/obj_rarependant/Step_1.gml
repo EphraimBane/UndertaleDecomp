@@ -51,7 +51,7 @@ if (con == 5)
     caster_resume(global.currentsong)
     instance_create(0, 0, obj_musfadein)
     FL_GotArtifact = 1
-    if (global.osflavor == OS_FLAVOR_SWITCH)
+    if (global.osflavor == OSFlavors.Switch)
     {
         ossafe_ini_open("undertale.ini")
         ini_write_real("General", "DB", 1)

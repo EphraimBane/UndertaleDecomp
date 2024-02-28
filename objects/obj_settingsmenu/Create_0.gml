@@ -39,7 +39,7 @@ if ossafe_file_exists("undertale.ini")
             border_enabled[9] = 1
         if (CH || BH)
             border_enabled[10] = 1
-        if (global.osflavor == OS_FLAVOR_SWITCH)
+        if (global.osflavor == OSFlavors.Switch)
         {
             if M
             {

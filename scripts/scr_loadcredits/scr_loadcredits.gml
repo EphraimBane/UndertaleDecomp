@@ -1,7 +1,7 @@
 function scr_loadcredits()
 {
 	var credamt = 0
-	if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+	if (global.osflavor <= OSFlavors.Mac)
 	{
 	    var credits_path = (working_directory + "credits.txt")
 	    var credfile = file_text_open_read(credits_path)

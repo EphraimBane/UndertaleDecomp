@@ -136,7 +136,7 @@ if (con == 40)
     alarm[4] = 120
     wx = 0
     wy = 0
-    if (global.osflavor == OS_FLAVOR_PC)
+    if (global.osflavor == OSFlavors.PC)
     {
         window_set_fullscreen(false)
         window_set_caption(" ")
@@ -151,13 +151,13 @@ if (con == 41)
     y = (((room_height / 2) + random(4)) - random(4))
     image_xscale += 0.08
     image_yscale += 0.08
-    if (global.osflavor == OS_FLAVOR_PC)
+    if (global.osflavor == OSFlavors.PC)
         window_set_position(((wx + random(((redsiner / 4) + 4))) - random(((redsiner / 4) + 4))), ((wy + random(((redsiner / 4) + 4))) - random(((redsiner / 4) + 4))))
 }
 if (con == 42)
 {
     con = 60
-    if (global.osflavor == OS_FLAVOR_PC)
+    if (global.osflavor == OSFlavors.PC)
         window_center()
     flashred = 0
 }

@@ -84,12 +84,12 @@ if (movement == 13)
 }
 if (jumpstage == 2 && movement == 2)
 {
-    if (global.osflavor == OS_FLAVOR_PC)
+    if (global.osflavor == OSFlavors.PC)
     {
         if (keyboard_check_direct(vk_up) == 0 && vspeed <= -1)
             vspeed = -1
     }
-    if (global.osflavor != OS_FLAVOR_PC)
+    if (global.osflavor != OSFlavors.PC)
     {
         if (obj_time.up == 0 && vspeed <= -1)
             vspeed = -1
@@ -105,12 +105,12 @@ if (jumpstage == 2 && movement == 2)
 }
 if (jumpstage == 2 && movement == 11)
 {
-    if (global.osflavor == OS_FLAVOR_PC)
+    if (global.osflavor == OSFlavors.PC)
     {
         if (keyboard_check_direct(vk_left) == 0 && hspeed <= -1)
             hspeed = -1
     }
-    if (global.osflavor != OS_FLAVOR_PC)
+    if (global.osflavor != OSFlavors.PC)
     {
         if (obj_time.left == 0 && hspeed <= -1)
             hspeed = -1
@@ -126,12 +126,12 @@ if (jumpstage == 2 && movement == 11)
 }
 if (jumpstage == 2 && movement == 12)
 {
-    if (global.osflavor == OS_FLAVOR_PC)
+    if (global.osflavor == OSFlavors.PC)
     {
         if (keyboard_check_direct(vk_down) == 0 && vspeed >= 1)
             vspeed = 1
     }
-    if (global.osflavor != OS_FLAVOR_PC)
+    if (global.osflavor != OSFlavors.PC)
     {
         if (obj_time.down == 0 && vspeed >= 1)
             vspeed = 1
@@ -147,12 +147,12 @@ if (jumpstage == 2 && movement == 12)
 }
 if (jumpstage == 2 && movement == 13)
 {
-    if (global.osflavor == OS_FLAVOR_PC)
+    if (global.osflavor == OSFlavors.PC)
     {
         if (keyboard_check_direct(vk_right) == 0 && hspeed >= 1)
             hspeed = 1
     }
-    if (global.osflavor != OS_FLAVOR_PC)
+    if (global.osflavor != OSFlavors.PC)
     {
         if (obj_time.right == 0 && hspeed >= 1)
             hspeed = 1

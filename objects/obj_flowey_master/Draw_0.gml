@@ -509,7 +509,7 @@ if (dcon > 0)
             ini_write_real("FFFFF", "F", 0)
             ossafe_ini_close()
             ossafe_savedata_save()
-            if (global.osflavor == OS_FLAVOR_PC)
+            if (global.osflavor == OSFlavors.PC)
             {
                 if file_exists("flowey.exe")
                     file_rename("flowey.exe", "undertale.exe")

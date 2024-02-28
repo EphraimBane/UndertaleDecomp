@@ -10,7 +10,7 @@ if (active == true)
     buffer = -1
     if (everselect == 0)
         mytext = scr_gettext("obj_controlspear_89")
-    if (global.osflavor >= OS_FLAVOR_PLAYSTATION)
+    if (global.osflavor >= OSFlavors.Playstation)
         mytext = scr_gettext("obj_controlspear_90")
     if (everselect != 0)
         mytext = " "

@@ -3,7 +3,7 @@
 /// @arg	{Real} value
 function ossafe_file_text_write_real(_filepath, _value)
 {
-	if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+	if (global.osflavor <= OSFlavors.Mac)
 	    return file_text_write_real(_filepath, _value);
 	else
 	{

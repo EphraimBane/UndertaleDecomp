@@ -4,7 +4,7 @@ for (i = 0; i < (wd / 2); i += 1)
         ossafe_file_text_write_string(file, "1")
     else
         ossafe_file_text_write_string(file, "0")
-    if (global.osflavor >= OS_FLAVOR_CONSOLE)
+    if (global.osflavor >= OSFlavors.Console)
         ossafe_file_text_writeln(file)
 }
 if (myvapor == 0)
