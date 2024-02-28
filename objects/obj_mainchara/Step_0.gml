@@ -1,3 +1,10 @@
+// DECOMP CODE
+
+if (view_get_visible(7))
+	return;
+
+//
+
 if (global.facing == Direction.Down)
     sprite_index = dsprite
 if (global.facing == Direction.Right)

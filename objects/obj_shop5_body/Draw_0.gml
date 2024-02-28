@@ -229,5 +229,5 @@ if (sellmenu == 2)
             sellmenu = 1
     }
 }
-if (FL_TemmieCollegePaid == 1)
+if (FL_TemmieCollegePaid == true)
     draw_sprite(spr_temhat, 0, ((99 + bodyx) + 37), (1 + bodyy))

@@ -615,6 +615,7 @@
     {"id":{"name":"obj_froglegs","path":"objects/obj_froglegs/obj_froglegs.yy",},},
     {"id":{"name":"obj_froghead","path":"objects/obj_froghead/obj_froghead.yy",},},
     {"id":{"name":"obj_icecap","path":"objects/obj_icecap/obj_icecap.yy",},},
+    {"id":{"name":"cmd_unlock_cam","path":"scripts/cmd_unlock_cam/cmd_unlock_cam.yy",},},
     {"id":{"name":"obj_jerry","path":"objects/obj_jerry/obj_jerry.yy",},},
     {"id":{"name":"obj_icecube","path":"objects/obj_icecube/obj_icecube.yy",},},
     {"id":{"name":"obj_dogeparent","path":"objects/obj_dogeparent/obj_dogeparent.yy",},},
