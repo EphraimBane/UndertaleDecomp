@@ -643,7 +643,7 @@ enum MadMewMewStatus
 	DoorOpened,
 	Spared,
 	Killed
-]
+}
 
 enum YellowButtonStatus
 {

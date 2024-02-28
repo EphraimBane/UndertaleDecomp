@@ -6,7 +6,7 @@ function joystick_process_events()
 	{
 	    var xaxis = joystick_xpos(1)
 	    if (xaxis < -0.3)
-	        event_perform(ev_mouse, 16)
+	        event_perform(ev_mouse, 16) // TODO: THESE
 	    if (xaxis > 0.3)
 	        event_perform(ev_mouse, 17)
 	    var yaxis = joystick_ypos(1)

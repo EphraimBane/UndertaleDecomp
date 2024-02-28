@@ -119,7 +119,7 @@ function SCR_BORDERSETUP()
 	    global.idealborder[2] = 50
 	    global.idealborder[3] = 385
 	}
-	if (global.border == 17)
+	if (global.border == 17) // TODO: THESE
 	{
 	    global.idealborder[0] = 162
 	    global.idealborder[1] = 472
