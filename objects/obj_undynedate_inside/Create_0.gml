@@ -13,7 +13,7 @@ with (teacup)
 con = 1
 global.interact = 1
 alarm[4] = 40
-caster_free(-3)
+caster_free(all)
 global.facing = Direction.Up
 papyrus = instance_create(120, 140, obj_papyrus_actor)
 papyrus.sprite_index = papyrus.usprite

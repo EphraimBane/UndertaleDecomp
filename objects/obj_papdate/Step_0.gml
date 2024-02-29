@@ -1174,6 +1174,6 @@ if (cn == 88)
     ossafe_savedata_save()
     global.interact = 0
     instance_create(0, 0, obj_persistentfader)
-    caster_free(-3)
+    caster_free(all)
     room_goto(room_tundra_paproom)
 }

@@ -304,6 +304,6 @@ if (con == 28)
 }
 if (con == 30)
 {
-    caster_free(-3)
+    caster_free(all)
     room_goto(global.currentroom)
 }

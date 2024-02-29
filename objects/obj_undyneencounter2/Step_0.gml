@@ -145,7 +145,7 @@ if (active == true && instance_exists(obj_mainchara))
     {
         if (collision_rectangle(200, 100, 220, 900, obj_mainchara, 0, 1) || collision_rectangle(780, 100, 790, 900, obj_mainchara, 0, 1))
         {
-            caster_free(-3)
+            caster_free(all)
             global.currentsong = caster_load("music/ambientwater.ogg")
             global.interact = 1
             cn = 25

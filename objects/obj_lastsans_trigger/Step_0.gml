@@ -264,7 +264,7 @@ if (con == 20 && instance_exists(OBJ_WRITER) == 0)
     global.typer = 21
     global.msg[0] = scr_gettext("obj_lastsans_trigger_390")
     instance_create(0, 0, obj_dialoguer)
-    caster_free(-3)
+    caster_free(all)
     con = 7
 }
 if (con == 21 && instance_exists(OBJ_WRITER) == 0)
@@ -275,7 +275,7 @@ if (con == 21 && instance_exists(OBJ_WRITER) == 0)
     global.typer = 21
     global.msg[0] = scr_gettext("obj_lastsans_trigger_402")
     instance_create(0, 0, obj_dialoguer)
-    caster_free(-3)
+    caster_free(all)
     con = 7
 }
 if (con == 23 && instance_exists(OBJ_WRITER) == 0)
@@ -363,7 +363,7 @@ if (con == 23 && instance_exists(OBJ_WRITER) == 0)
         global.msg[4] = scr_gettext("obj_lastsans_trigger_495")
     }
     instance_create(0, 0, obj_dialoguer)
-    caster_free(-3)
+    caster_free(all)
     con = 7
 }
 if (con == 26 && instance_exists(OBJ_WRITER) == 0)

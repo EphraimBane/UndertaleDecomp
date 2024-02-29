@@ -191,7 +191,7 @@ if (con == 50)
         active = false
     with (obj_dmgwriter)
         instance_destroy()
-    caster_free(-3)
+    caster_free(all)
     with (OBJ_WRITER)
         instance_destroy()
     with (mypart1)

@@ -293,7 +293,7 @@ if (con == 41 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 42 && instance_exists(OBJ_WRITER) == 0)
 {
-    caster_free(-3)
+    caster_free(all)
     mypart1.behind = 2
     snd_play(snd_item)
     con = 43
@@ -327,7 +327,7 @@ if (con == 47)
 }
 if (con == 48)
 {
-    caster_free(-3)
+    caster_free(all)
     snd_play(snd_laz)
     wht = scr_marker(0, 0, spr_pixwht)
     wht.image_xscale = 700

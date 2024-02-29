@@ -40,7 +40,7 @@ if (con == 5 && instance_exists(OBJ_WRITER) == 0)
         steam_file_write_file("system_information_962", "system_information_962")
     }
     ossafe_savedata_save()
-    caster_free(-3)
+    caster_free(all)
     instance_create(0, 0, obj_whitefader)
     con = 6
     if (global.osflavor <= OSFlavors.Mac)

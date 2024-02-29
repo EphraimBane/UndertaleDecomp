@@ -392,7 +392,7 @@ else
 draw_text(20, (170 + (2 * vspacing)), string_hash_to_newline(scr_gettext("joyconfig_test")))
 if (menu == 9 && menu_engage == 1)
 {
-    caster_free(-3)
+    caster_free(all)
     room_goto(room_controltest)
 }
 if (weather == 1)

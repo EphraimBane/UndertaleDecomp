@@ -998,7 +998,7 @@ if (con == 92 && instance_exists(obj_blconwideslave) == 0)
 }
 if (con == 94)
 {
-    caster_free(-3)
+    caster_free(all)
     snd_play(snd_impact)
     border_d = 1
     tx = 320
@@ -1425,6 +1425,6 @@ if (ting_s == 1)
 }
 if (lastwhite == 1 && wht > 1.4)
 {
-    caster_free(-3)
+    caster_free(all)
     room_goto(room_asrielappears)
 }

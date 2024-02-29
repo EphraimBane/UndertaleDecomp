@@ -7,7 +7,7 @@ function scr_namingscreen()
 	{
 	    global.charname = charname
 	    instance_create(0, 0, obj_whitefader)
-	    caster_free(-3)
+	    caster_free(all)
 	    alerm = 0
 	    naming = 5
 	    cy = caster_load("music/cymbal.ogg")
@@ -499,7 +499,7 @@ function scr_namingscreen()
 	            action = selected3
 	        if (action == 0)
 	        {
-	            caster_free(-3)
+	            caster_free(all)
 	            if (ossafe_file_exists("file0") == 0)
 	                room_goto_next()
 	            else
@@ -521,7 +521,7 @@ function scr_namingscreen()
 	        }
 	        if (action == 2)
 	        {
-	            caster_free(-3)
+	            caster_free(all)
 	            room_goto(room_settings)
 	        }
 	    }

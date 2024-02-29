@@ -1834,7 +1834,7 @@ function scr_battlegroup()
 	        global.monstertype[0] = 99
 	        global.monstertype[1] = 0
 	        global.monstertype[2] = 0
-	        caster_free(-3)
+	        caster_free(all)
 	        global.batmusic = caster_load("music/xpart.ogg")
 	        caster_loop(global.batmusic, 0.8, 0.95)
 	        global.msc = 0

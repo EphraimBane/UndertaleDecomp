@@ -264,7 +264,7 @@ if (con == 105)
     draw_set_alpha(1)
     if (blk >= 1.6)
     {
-        caster_free(-3)
+        caster_free(all)
         do_room_goto = true
     }
 }

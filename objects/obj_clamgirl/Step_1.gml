@@ -14,7 +14,7 @@ if (gcon == 1 && global.interact == 0)
         visible = false
         clam = scr_marker(x, y, spr_clam_goner_b)
         clam.image_speed = 0.15
-        caster_free(-3)
+        caster_free(all)
         global.msg[0] = scr_gettext("obj_clamgirl_107")
         gcon = 2
         global.typer = 5

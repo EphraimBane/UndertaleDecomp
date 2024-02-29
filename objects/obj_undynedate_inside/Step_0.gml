@@ -548,7 +548,7 @@ if (con == 95 && instance_exists(OBJ_WRITER) == 0)
 {
     with (obj_musfadeout)
         instance_destroy()
-    caster_free(-3)
+    caster_free(all)
     FL_AnimationIndex = 0
     global.currentsong = caster_load("music/undynetruetheme.ogg")
     caster_loop(global.currentsong, 0.9, 1)
@@ -1095,7 +1095,7 @@ if (con == 217 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 250 && instance_exists(OBJ_WRITER) == 0)
 {
-    caster_free(-3)
+    caster_free(all)
     snd_play(snd_laz)
     wht = instance_create(0, 0, obj_whitesploder)
     con = 251
@@ -1228,7 +1228,7 @@ if (con == 263 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 264 && instance_exists(OBJ_WRITER) == 0)
 {
-    caster_free(-3)
+    caster_free(all)
     global.msg[0] = scr_gettext("obj_undynedate_inside_1490")
     instance_create(0, 0, obj_dialoguer)
     con = 265

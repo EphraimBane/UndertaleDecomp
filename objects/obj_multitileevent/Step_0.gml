@@ -414,7 +414,7 @@ if (con == 75)
     with (obj_mettaton_flightdress)
         middle = 2
     obj_mettaton_flightdress.sing = -1
-    caster_free(-3)
+    caster_free(all)
     obj_tileguytileparent.grey = 1
     snd_play(snd_dumbvictory)
     global.interact = 1
