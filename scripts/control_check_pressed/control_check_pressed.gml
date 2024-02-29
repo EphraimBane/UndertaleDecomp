@@ -1,10 +1,12 @@
-function control_check_pressed()
+/// @func	control_check_pressed(control)
+/// @arg	control
+function control_check_pressed(_control)
 {
 	if (obj_decomp_console.active)
 		return false;
 		
-	var control = argument0
+	var control = _control
 	if (control < 0 || control > 2)
-	    return 0;
+	    return false;
 	return global.control_pressed[control];
 }
