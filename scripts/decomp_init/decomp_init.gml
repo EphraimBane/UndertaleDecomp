@@ -1,4 +1,4 @@
-,global.decomp_vars = {
+global.decomp_vars = {
 	VanillaMode : false,
 	EnablePSDogShrine : true,
 	EnableSwitchDogShrine : true,
