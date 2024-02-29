@@ -665,4 +665,99 @@ enum BurgerPantsStatus
 	CanTalk,
 	Talked
 }
+
+enum MonsterType
+{
+	// 1 - 9
+	TestFroggit = 1,
+	Dummy,
+	Froggit_1,
+	Froggit_2,
+	Whimsun,
+	Moldsmal_1,
+	Migosp,
+	Vegetoid,
+	Loox,
+	// 10 - 19
+	Toriel,
+	Napstablook,
+	Moldsmal_2,
+	Doggo,
+	LesserDog,
+	Dogamy,
+	Dogaressa,
+	GreaterDog,
+	Snowdrake,
+	IceCap,
+	// 20 - 29
+	Ice,
+	Jerry,
+	Gyftrot,
+	Aaron,
+	Temmie,
+	Papyrus,
+	Moldsmal_3,
+	// Empty
+	Woshua = 28,
+	Shyren,
+	// 30 - 39
+	Agent,
+	MadDummy,
+	Undyne_1,
+	Mettaton_1,
+	RG_01,
+	RG_02,
+	Tsunderplane,
+	Vulkin,
+	Pyrope,
+	Muffet,
+	// 40 - 49
+	Mettaton_2,
+	Undyne_2,
+	Madjick,
+	KnightKnight,
+	FinalFroggit_1,
+	Astigmatism_1,
+	Whimsalot_1,
+	Bomb,
+	RG_03,
+	RG_04,
+	// 50 - 59
+	Mettaton_3,
+	MettatonEX,
+	Asgore,
+	LemonBread,
+	ReaperBird,
+	Amalgamate,
+	Memoryhead,
+	Endogeny,
+	LostSoul_Undyne,
+	LostSoul_Alphys,
+	// 60 - 68
+	LostSoul_Papyrus,
+	LostSoul_Sans,
+	LostSoul_Toriel,
+	LostSoul_Asgore,
+	MonsterKid,
+	UndyneUndying,
+	GladDummy,
+	MettatonNEO,
+	Sans,
+	// 70 - 77
+	FinalFroggit_2 = 70,
+	Astigmatism_2,
+	Whimsalot_2,
+	Migospel,
+	Moldessa,
+	Parsnik,
+	Glyde,
+	MadMewMew,
+	// 80 - 81
+	SoSorry = 80,
+	Doodlebog,
+	// 99 - 100 (and 666)
+	AsrielDreemurr = 99,
+	Asriel,
+	Gaster = 666
+}
 #endregion
