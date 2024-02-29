@@ -5744,6 +5744,7 @@
     {"id":{"name":"spr_undyneb_smooch","path":"sprites/spr_undyneb_smooch/spr_undyneb_smooch.yy",},},
     {"id":{"name":"spr_undyneb_smooch_s","path":"sprites/spr_undyneb_smooch_s/spr_undyneb_smooch_s.yy",},},
     {"id":{"name":"spr_adate_bodycoat","path":"sprites/spr_adate_bodycoat/spr_adate_bodycoat.yy",},},
+    {"id":{"name":"cmd_save","path":"scripts/cmd_save/cmd_save.yy",},},
     {"id":{"name":"spr_adate_smooch","path":"sprites/spr_adate_smooch/spr_adate_smooch.yy",},},
     {"id":{"name":"spr_adate_smooch_s","path":"sprites/spr_adate_smooch_s/spr_adate_smooch_s.yy",},},
     {"id":{"name":"spr_paphead_friendship","path":"sprites/spr_paphead_friendship/spr_paphead_friendship.yy",},},
