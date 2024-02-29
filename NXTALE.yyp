@@ -5059,7 +5059,6 @@
     {"id":{"name":"spr_papdoor","path":"sprites/spr_papdoor/spr_papdoor.yy",},},
     {"id":{"name":"spr_trash_paperball","path":"sprites/spr_trash_paperball/spr_trash_paperball.yy",},},
     {"id":{"name":"spr_trash_dustorb","path":"sprites/spr_trash_dustorb/spr_trash_dustorb.yy",},},
-    {"id":{"name":"command_push_function","path":"scripts/command_push_function/command_push_function.yy",},},
     {"id":{"name":"spr_trash_takeout","path":"sprites/spr_trash_takeout/spr_trash_takeout.yy",},},
     {"id":{"name":"spr_alphys_d","path":"sprites/spr_alphys_d/spr_alphys_d.yy",},},
     {"id":{"name":"spr_alphys_d_dark2","path":"sprites/spr_alphys_d_dark2/spr_alphys_d_dark2.yy",},},

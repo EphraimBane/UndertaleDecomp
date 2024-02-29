@@ -68,35 +68,43 @@ draw_set_alpha(1.0);
 
 #region History
 
+var text_height = string_height("A");
+
 var history_len = array_length(history);
+var history_max_pixel_height = (COMMAND_CONSOLE_HISTORY_MAX * text_height) - input_box_y
+var history_pixel_height = history_len * text_height;
+
 for (var i = 0; i < history_len; i++)
 {
 	draw_text(bounds_rect.x + 2, input_box_y - ((history_len - i) * char_height), history[i]);
 }
 
-if (history_len != 0)
+if (history_pixel_height > input_box_y)
 {
 	var scroll_x = bounds_rect.right - 9;
 	var scroll_y = bounds_rect.y + 3;
 	
 	var scroll_width = 5;
 	var scroll_height = (input_box_y - 4) - scroll_y;
-	
+
 	draw_set_color(c_gray);
 	ossafe_fill_rectangle(scroll_x, scroll_y, scroll_x + scroll_width, scroll_y + scroll_height);
 	
-	/* draw_set_color(c_white);
-	var scroll_size = scroll_height - (history_len / scroll_height);
+	draw_set_color(c_white);
 	
-	var bar_x = scroll_x;
-	var bar_y = (scroll_y + scroll_height) - (scroll_offset * scroll_size);
-	var bar_right =  scroll_x + scroll_width;
-	var bar_bottom = (scroll_y + scroll_height) - (scroll_height * scroll_size);
+	var normalized_history_height = scroll_height / history_max_pixel_height;
 	
-	if (bar_x >= mouse_x && mouse_x <= bar_right && bar_y >= mouse_y && mouse_y <= bar_bottom)
+	trace(history_pixel_height - input_box_y);
+	var scrollbar_x = scroll_x;
+	var scrollbar_y = scroll_y + ((history_pixel_height - input_box_y) * normalized_history_height);
+	var scrollbar_right = scrollbar_x + scroll_width;
+	var scrollbar_bottom = scroll_y + scroll_height;
+	
+	if (point_in_rectangle(window_mouse_get_x(), window_mouse_get_y(), scrollbar_x, scrollbar_y, scrollbar_right, scrollbar_bottom))
 		draw_set_color(c_yellow);
 	
-	ossafe_fill_rectangle(bar_x, bar_y, bar_right, bar_bottom); */
+	ossafe_fill_rectangle(scrollbar_x, scrollbar_y, scrollbar_right, scrollbar_bottom);
+	
 }
 draw_set_color(c_white);
 #endregion
