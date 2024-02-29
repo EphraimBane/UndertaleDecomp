@@ -85,7 +85,7 @@ if (history_len != 0)
 	draw_set_color(c_gray);
 	ossafe_fill_rectangle(scroll_x, scroll_y, scroll_x + scroll_width, scroll_y + scroll_height);
 	
-	draw_set_color(c_white);
+	/* draw_set_color(c_white);
 	var scroll_size = scroll_height - (history_len / scroll_height);
 	
 	var bar_x = scroll_x;
@@ -96,7 +96,7 @@ if (history_len != 0)
 	if (bar_x >= mouse_x && mouse_x <= bar_right && bar_y >= mouse_y && mouse_y <= bar_bottom)
 		draw_set_color(c_yellow);
 	
-	ossafe_fill_rectangle(bar_x, bar_y, bar_right, bar_bottom);
+	ossafe_fill_rectangle(bar_x, bar_y, bar_right, bar_bottom); */
 }
 draw_set_color(c_white);
 #endregion
