@@ -37,6 +37,6 @@ if (timer >= 310)
     b_al -= 0.02
 if (timer >= 370)
 {
-    caster_free(-3)
+    caster_free(all)
     instance_destroy()
 }

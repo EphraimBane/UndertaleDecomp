@@ -1378,7 +1378,7 @@ if (cn == 158)
 {
     und.set = 0
     global.facechoice = 1
-    caster_free(-3)
+    caster_free(all)
     global.currentsong = caster_load("music/undynetruetheme.ogg")
     caster_loop(global.currentsong, 0.65, 2)
     global.msg[0] = scr_gettext("obj_adate_1659")

@@ -15,7 +15,7 @@ if (mypart1.pause != 1)
     shk.obj = mypart1
     if ((global.monsterhp[myself] - takedamage) <= 0)
     {
-        caster_free(-3)
+        caster_free(all)
         global.faceemotion = 0
         mypart1.facetype = 2
         shk.shaketime = 5

@@ -99,7 +99,7 @@ if (con == 23)
 if (con == 24 && instance_exists(OBJ_WRITER) == 0)
 {
     con = 24.1
-    caster_free(-3)
+    caster_free(all)
     with (obj_birbnoise)
         instance_destroy()
     global.currentsong = caster_load("music/smallshock.ogg")

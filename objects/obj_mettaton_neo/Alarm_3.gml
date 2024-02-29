@@ -1,6 +1,6 @@
 if (mypart1.pause != 1)
 {
-    caster_free(-3)
+    caster_free(all)
     dmgwriter = instance_create(x, (y + 200), obj_dmgwriter)
     global.damage = takedamage
     global.damage = ((global.monsterhp[myself] + 4000) + floor(random(3289)))

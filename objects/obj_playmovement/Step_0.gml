@@ -558,7 +558,7 @@ if (con == 120 && instance_exists(OBJ_WRITER) == 0)
         mett.hspeed = -1
     if (skip == true)
         mett.hspeed = -3
-    caster_free(-3)
+    caster_free(all)
     mett.arm = 10
     con = 121
     alarm[4] = 30

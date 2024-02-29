@@ -104,6 +104,6 @@ if (death == 1 && timer == 850)
 }
 if (death == 1 && timer == 1150)
 {
-    caster_free(-3)
+    caster_free(all)
     room_goto(room_end_theend)
 }

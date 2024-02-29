@@ -194,7 +194,7 @@ if (hit_try > hit_reached)
 if (mercy_death == 1)
 {
     FL_GetDunkedOn = 1
-    caster_free(-3)
+    caster_free(all)
     FL_AnimationIndex = 0
     global.faceemotion = 4
     global.msg[0] = scr_gettext("obj_sansb_477")

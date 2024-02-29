@@ -20,7 +20,7 @@ if (con == 20)
     global.facechoice = 3
     global.faceemotion = 0
     global.typer = 17
-    caster_free(-3)
+    caster_free(all)
     global.currentsong = caster_load("music/sansdate.ogg")
     con = 21
     alarm[4] = 30

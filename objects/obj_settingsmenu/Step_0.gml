@@ -8,6 +8,6 @@ if finish
     ini_write_real("joypad1", "b2", global.button2)
     ossafe_ini_close()
     ossafe_savedata_save()
-    caster_free(-3)
+    caster_free(all)
     room_goto(room_intromenu)
 }

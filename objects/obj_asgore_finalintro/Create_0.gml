@@ -31,7 +31,7 @@ if (global.tempvalue[10] > 0 && FL_DatedAlphys < 12 && murder == 0)
     skip = true
     con = 2
     alarm[4] = 15
-    caster_free(-3)
+    caster_free(all)
 }
 obj_heart.visible = false
 global.seriousbattle = 1

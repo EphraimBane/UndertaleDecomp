@@ -2,7 +2,7 @@ if (flames == 0)
     instance_create(obj_toroverworld3.x, obj_toroverworld3.y, obj_pbflame)
 if (flames > 3)
 {
-    caster_free(-3)
+    caster_free(all)
     room_persistent = true
     alarm[2] = 34
     global.battlegroup = 22

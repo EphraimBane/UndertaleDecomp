@@ -316,7 +316,7 @@ if (con == 40)
     {
         global.faceemotion = 5
         global.msg[0] = scr_gettext("obj_savepoint_fake_507")
-        caster_free(-3)
+        caster_free(all)
         global.typer = 119
         mywriter = instance_create((__view_get(0, 0) + 30), (__view_get(1, obj_backgrounder_parent) + 100), obj_flowey_writer)
         con = 41

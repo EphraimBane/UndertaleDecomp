@@ -149,7 +149,7 @@ if (STOPPER == 0)
         if (FL_UndyneStatus == UndyneStatus.Killed)
         {
             global.mercy = 0
-            caster_free(-3)
+            caster_free(all)
             global.plot = 122
             instance_destroy()
         }
@@ -208,7 +208,7 @@ if (STOPPER == 0)
     if (FL_UndyneStatus == UndyneStatus.Killed && STOPPER == 0)
     {
         global.mercy = 0
-        caster_free(-3)
+        caster_free(all)
         audio_stop_all()
         global.plot = 122
         global.interact = 0

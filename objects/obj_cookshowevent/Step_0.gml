@@ -176,7 +176,7 @@ if (con == 29)
     chainsaw.hspeed = 0
     mett.image_speed = 0
     caster_free(bad)
-    caster_free(-3)
+    caster_free(all)
     mettsong = caster_load("music/mtgameshow.ogg")
     snd_play(snd_phone)
     con = 30
@@ -346,7 +346,7 @@ if (con == 59)
 }
 if (con == 61)
 {
-    caster_free(-3)
+    caster_free(all)
     global.msc = 0
     global.typer = 5
     global.msg[0] = scr_gettext("obj_cookshowevent_472")
@@ -469,7 +469,7 @@ if (con == 73 && instance_exists(OBJ_WRITER) == 0)
 if (con == 74)
 {
     flowey = instance_create(40, 360, obj_stalkerflowey)
-    caster_free(-3)
+    caster_free(all)
     global.flag[17] = 0
     global.interact = 0
     global.plot = 135

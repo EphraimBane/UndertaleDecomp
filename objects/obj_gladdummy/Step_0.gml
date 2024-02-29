@@ -54,7 +54,7 @@ if (global.hurtanim[myself] == 2)
     }
     else
     {
-        caster_free(-3)
+        caster_free(all)
         global.myfight = 0
         global.mnfight = 1
         killed = 1

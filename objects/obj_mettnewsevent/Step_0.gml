@@ -618,7 +618,7 @@ if (con > 129)
 }
 if (con == 130 && instance_exists(OBJ_WRITER) == 0)
 {
-    caster_free(-3)
+    caster_free(all)
     global.mercy = 1
     global.msc = 0
     global.typer = 5
@@ -701,7 +701,7 @@ if (con == 162)
     {
         with (obj_musfadeout)
             instance_destroy()
-        caster_free(-3)
+        caster_free(all)
     }
     global.currentsong = caster_load("music/mtgameshow.ogg")
     caster_loop(global.currentsong, 1, 1)
@@ -849,7 +849,7 @@ if (con == 171 && instance_exists(OBJ_WRITER) == 0)
         instance_destroy()
     global.plot = 161
     con = 172
-    caster_free(-3)
+    caster_free(all)
     with (obj_bluelaser_o)
         active = 2
     global.interact = 0

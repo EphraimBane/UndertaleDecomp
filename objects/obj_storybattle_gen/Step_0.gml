@@ -964,7 +964,7 @@ if (con == 381 && instance_exists(OBJ_WRITER))
 }
 if (con == 381 && instance_exists(OBJ_WRITER) == 0)
 {
-    caster_free(-3)
+    caster_free(all)
     con = 382
     alarm[4] = 45
 }

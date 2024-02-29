@@ -1,6 +1,6 @@
 if (con == 1)
 {
-    caster_free(-3)
+    caster_free(all)
     snd_play(snd_phone)
     global.typer = 21
     global.msc = 0

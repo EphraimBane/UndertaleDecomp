@@ -423,7 +423,7 @@ if (con == 48)
 if (con == 49 && instance_exists(OBJ_WRITER) == 0)
 {
     global.battlegroup = 92
-    caster_free(-3)
+    caster_free(all)
     room_restart()
 }
 if (con >= 20 && con <= 47)
@@ -505,7 +505,7 @@ if (con == 203)
 if (con == 204 && instance_exists(OBJ_WRITER) == 0)
 {
     global.battlegroup = 92
-    caster_free(-3)
+    caster_free(all)
     room_restart()
 }
 if (global.myfight == 4)

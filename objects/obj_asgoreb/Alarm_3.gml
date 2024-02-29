@@ -7,7 +7,7 @@ if ((global.monsterhp[myself] - takedamage) <= 500)
     with (dmgwriter)
         dmg = global.fivedamage
     instance_create(128, 46, obj_asgore_lastcutscene)
-    caster_free(-3)
+    caster_free(all)
     obj_purplegradienter.fade = 1
     with (obj_orangeparticlegen)
         instance_destroy()

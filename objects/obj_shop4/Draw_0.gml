@@ -637,7 +637,7 @@ if (global.debug == true)
         FL_BurgerPantsGirlsConvoCounter += 1
     if keyboard_check_pressed(ord("L"))
     {
-        caster_free(-3)
+        caster_free(all)
         room_goto(room_shop3)
     }
 }

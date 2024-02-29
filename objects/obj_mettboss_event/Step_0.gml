@@ -131,7 +131,7 @@ if (con == 6 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 7 && instance_exists(OBJ_WRITER) == 0)
 {
-    caster_free(-3)
+    caster_free(all)
     mtsong2 = caster_load("music/mettafly.ogg")
     drawblack = 1
     snd_play(snd_impact)
@@ -285,7 +285,7 @@ if (con == 39)
 }
 if (con == 40 && instance_exists(OBJ_WRITER) == 0)
 {
-    caster_free(-3)
+    caster_free(all)
     shkwv = caster_load("music/f_destroyed2.ogg")
     pt = 0
     vl = 0.5
@@ -338,7 +338,7 @@ if (con == 52)
     global.interact = 0
     con = 43
     global.plot = 199
-    caster_free(-3)
+    caster_free(all)
     instance_destroy()
     return;
 }

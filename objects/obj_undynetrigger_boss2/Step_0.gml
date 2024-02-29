@@ -15,7 +15,7 @@ if (con == 1)
 }
 if (con == 2 && instance_exists(OBJ_WRITER) == 0)
 {
-    caster_free(-3)
+    caster_free(all)
     global.currentsong = caster_load("music/undynefast.ogg")
     alarm[4] = 30
     undyne.vspeed = 8

@@ -1,4 +1,4 @@
-caster_free(-3)
+caster_free(all)
 visible = true
 type = floor(random(8))
 image_xscale = 2

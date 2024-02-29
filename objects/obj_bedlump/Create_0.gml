@@ -4,7 +4,7 @@ x1 = 101
 y1 = 60
 x2 = ((220 - sprite_width) - 1)
 y2 = 115
-caster_free(-3)
+caster_free(all)
 beat = caster_load("music/coolbeat.ogg")
 global.interact = 1
 if instance_exists(obj_mainchara)

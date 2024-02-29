@@ -25,3 +25,5 @@ command_register("kill", "This will kill you");
 command_register("global_set", "Sets a global variable", [ "name", "value" ]);
 command_register("global_get", "Gets a global variable", [ "name" ]);
 command_register("room_speed", "Sets the room speed", [ "speed" ]);
+
+command_register("save", "Opens save menu");

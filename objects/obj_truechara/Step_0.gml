@@ -163,7 +163,7 @@ if (con == 42)
 }
 if (con == 60)
 {
-    caster_free(-3)
+    caster_free(all)
     snd_play(snd_laz)
     image_speed = 0
     image_index = 0

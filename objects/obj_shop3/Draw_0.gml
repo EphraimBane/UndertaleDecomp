@@ -1887,7 +1887,7 @@ if (global.debug == true)
         global.gold = 5000
     if keyboard_check_pressed(ord("K"))
     {
-        caster_free(-3)
+        caster_free(all)
         room_goto(room_shop4)
     }
 }
