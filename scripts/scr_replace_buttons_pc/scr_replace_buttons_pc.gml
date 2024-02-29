@@ -1,7 +1,7 @@
 function scr_replace_buttons_pc()
 {
 	var str = argument0
-	if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+	if (global.osflavor <= OSFlavors.Mac)
 	{
 	    str = string_replace_all(str, "\\*Z", "[Z]")
 	    str = string_replace_all(str, "\\*X", "[X]")

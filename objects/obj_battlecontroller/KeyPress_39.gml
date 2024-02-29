@@ -89,7 +89,7 @@ if (global.mnfight == 0)
                 if (mv == 1)
                     snd_play(snd_squeak)
                 if (global.bmenuno != tempcheck)
-                    script_execute(scr_itemrewrite)
+                    scr_itemrewrite()
             }
             if (mv == 0 && global.bmenuno == 3.5)
             {
@@ -140,7 +140,7 @@ if (global.mnfight == 0)
                 if (mv == 1)
                     snd_play(snd_squeak)
                 if (global.bmenuno != tempcheck)
-                    script_execute(scr_itemrewrite)
+                    scr_itemrewrite()
             }
         }
     }

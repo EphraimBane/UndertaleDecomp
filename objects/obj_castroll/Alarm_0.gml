@@ -60,7 +60,7 @@ if (type == 2)
     temmie = instance_create((col2_x - 50), 1040, obj_monster_extrabody)
     temmie.type = 18
     temmie.image_yscale = 1
-    if (global.flag[157] < 2)
+    if (FL_MadMewMewStatus < MadMewMewStatus.Spared)
     {
         maddummy = instance_create((col1_x - 50), 1380, obj_monster_extrabody)
         maddummy.type = 20

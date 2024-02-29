@@ -1,5 +1,5 @@
 r = (round(random(1)) + 2)
-script_execute(SCR_BORDER, r, 2)
+SCR_BORDER(r, 2)
 x = xx
 y = yy
 if (bullettype == 0)
@@ -14,7 +14,7 @@ if (bullettype == 0)
 else
 {
     r = round(random(3))
-    script_execute(SCR_BORDER, r, 8)
+    SCR_BORDER(r, 8)
     iii = instance_create(x, y, blt_hoopbullet2)
     if instance_exists(iii)
         iii.dmg = global.monsteratk[myself]

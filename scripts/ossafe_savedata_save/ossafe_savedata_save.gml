@@ -1,6 +1,6 @@
 function ossafe_savedata_save()
 {
-	if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+	if (global.osflavor <= OSFlavors.Mac)
 	{
 	}
 	else

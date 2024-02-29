@@ -21,3 +21,6 @@ MrPorkchop - Made the Icon<br>
 [TaiAurori](https://devkats.club) - Android Port Testing<br>
 [Invoxiplaygames](https://ipg.pw/) - MacOS Port Testing<br>
 [Clovercorp](https://twitter.com/silverparasoul) - Came up with the Name 
+
+## PR Helpers
+[Zyle](https://zyle.dev/)

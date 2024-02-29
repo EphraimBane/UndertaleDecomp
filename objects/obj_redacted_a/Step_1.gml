@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 scr_npc_anim()
 image_alpha = 0
 dist = distance_to_object(obj_mainchara)

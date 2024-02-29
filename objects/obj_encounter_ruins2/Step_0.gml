@@ -2,7 +2,7 @@ if (global.encounter > steps)
 {
     if (global.interact == 0)
     {
-        script_execute(scr_steps, 250, 230, 20, 202)
+        scr_steps(250, 230, 20, 202)
         global.encounter = 0
         battlegroup = random(20)
         if (battlegroup <= 5)

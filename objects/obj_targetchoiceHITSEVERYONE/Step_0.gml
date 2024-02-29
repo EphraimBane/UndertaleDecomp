@@ -25,7 +25,7 @@ if (image_speed == 0)
             {
                 mons = global.monsterinstance[i]
                 hspeed = 0
-                script_execute(scr_attackcalc)
+                scr_attackcalc()
                 global.damage = damage
                 global.damage += random(2)
                 myx = (x + (sprite_width / 2))

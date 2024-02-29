@@ -1,5 +1,5 @@
-script_execute(SCR_BORDERSETUP, 0, 0, 0, 0, 0)
-script_execute(scr_battlegroup, 0, 0, 0, 0, 0)
+SCR_BORDERSETUP(0, 0, 0, 0, 0)
+scr_battlegroup(0, 0, 0, 0, 0)
 global.mercyuse = -1
 global.inbattle = 1
 global.itemused = 0

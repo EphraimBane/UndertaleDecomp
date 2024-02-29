@@ -4,9 +4,9 @@ if (global.encounter > steps)
     {
         if (global.interact == 0)
         {
-            script_execute(scr_steps, 340, 380, 18, 204)
+            scr_steps(340, 380, 18, 204)
             if (room == room_water6)
-                script_execute(scr_steps, 1040, 380, 18, 204)
+                scr_steps(1040, 380, 18, 204)
             global.encounter = 0
             battlegroup = floor(random(15))
             if (battlegroup < 15)

@@ -7,6 +7,6 @@ if (killed == 1)
 if (killed == 0)
     FL_SparedSpecific = 1
 global.plot = 60
-script_execute(scr_monsterdefeat, 0, 0, 0, 0, 0)
+scr_monsterdefeat(0, 0, 0, 0, 0)
 with (mypart1)
     instance_destroy()

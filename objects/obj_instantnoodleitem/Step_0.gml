@@ -13,7 +13,7 @@ if instance_exists(OBJ_WRITER)
         with (OBJ_WRITER)
             instance_destroy()
         global.msg[0] = scr_gettext("obj_instantnoodleitem_85")
-        script_execute(scr_recoitem, 4)
+        scr_recoitem(4)
         instance_create(0, 0, obj_foodsound)
     }
 }

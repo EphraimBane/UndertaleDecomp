@@ -58,7 +58,7 @@ if (weather == 4)
     draw_text_transformed((220 + sin((siner / 12))), (120 + cos((siner / 12))), string_hash_to_newline(scr_gettext("joyconfig_fun_fall")), 1, 1, -20)
 }
 var menu_max = 6
-if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+if (global.osflavor <= OSFlavors.Mac)
 {
     menu_max = 2
     if (obj_time.j_ch == 0)
@@ -76,7 +76,7 @@ if (menu_engage == 0)
         menu = menu_max
     if (buffer < 0 && control_check_pressed(0))
     {
-        if (!((global.osflavor >= OS_FLAVOR_PLAYSTATION && menu >= 2 && menu <= 4)))
+        if (!((global.osflavor >= OSFlavors.Playstation && menu >= 2 && menu <= 4)))
         {
             menu_engage = 1
             js_buffer = 1
@@ -85,7 +85,7 @@ if (menu_engage == 0)
     }
     if (menu == 1)
     {
-        if ((global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM && menu_engage == 1) || keyboard_check_pressed(vk_left) || keyboard_check_pressed(vk_right))
+        if ((global.osflavor <= OSFlavors.Mac && menu_engage == 1) || keyboard_check_pressed(vk_left) || keyboard_check_pressed(vk_right))
         {
             if (global.language == "en")
                 global.language = "ja"
@@ -96,7 +96,7 @@ if (menu_engage == 0)
     }
     if (menu == 6)
     {
-        if ((global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM && menu_engage == 1) || keyboard_check_pressed(vk_right))
+        if ((global.osflavor <= OSFlavors.Mac && menu_engage == 1) || keyboard_check_pressed(vk_right))
         {
             do
             {
@@ -141,7 +141,7 @@ else
     draw_set_color(c_yellow)
 draw_text(20, 70, string_hash_to_newline(scr_gettext("settings_language")))
 draw_text(92, 70, string_hash_to_newline(scr_gettext(("settings_language_" + global.language))))
-if (global.osflavor >= OS_FLAVOR_PLAYSTATION)
+if (global.osflavor >= OSFlavors.Playstation)
 {
     draw_set_color(c_white)
     draw_text(20, 100, string_hash_to_newline(scr_gettext("settings_button")))
@@ -291,7 +291,7 @@ if (intro == 1)
         intro = -1
     }
 }
-if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM && menu == 2 && menu_engage == 1)
+if (global.osflavor <= OSFlavors.Mac && menu == 2 && menu_engage == 1)
 {
     jc = instance_create(0, 0, obj_joypadmenu)
     jc.menu_engage = 0

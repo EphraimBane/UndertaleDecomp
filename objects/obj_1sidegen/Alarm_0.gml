@@ -1,8 +1,8 @@
-script_execute(SCR_BORDER, 0, 6)
+SCR_BORDER(0, 6)
 x = xx
 y = yy
 if (bullettype == 0)
-    script_execute(SCR_DIRECT, 2.5, 0.2, 0, 0, 0, 0, 0, 0, 0, 174)
+    SCR_DIRECT(2.5, 0.2, 0, 0, 0, 0, 0, 0, 0, 174)
 if (bullettype == 1)
 {
     iii = instance_create(x, y, blt_flybullet)
@@ -33,7 +33,7 @@ if (bullettype == 4)
 if (bullettype == 5)
 {
     num += 1
-    script_execute(SCR_BORDER, 0, 40)
+    SCR_BORDER(0, 40)
     x -= 20
     y += 5
     iii = instance_create(x, y, blt_vegbullet)
@@ -51,7 +51,7 @@ if (bullettype == 5)
 if (bullettype == 6)
 {
     num += 1
-    script_execute(SCR_BORDER, 0, 40)
+    SCR_BORDER(0, 40)
     x -= 20
     y += 5
     iii = instance_create(x, y, blt_gravbullet)
@@ -107,7 +107,7 @@ if (bullettype == 8)
 }
 if (bullettype == 9)
 {
-    script_execute(SCR_BORDER, 0, 80)
+    SCR_BORDER(0, 80)
     x -= 40
     y -= 20
     iii = instance_create(x, y, blt_avoidfire)
@@ -153,7 +153,7 @@ if (bullettype == 10)
 }
 if (bullettype == 11)
 {
-    script_execute(SCR_BORDER_X, 1, 30, 30)
+    SCR_BORDER_X(1, 30, 30)
     gen = instance_create(x, y, blt_hat)
     if instance_exists(gen)
         gen.dmg = global.monsteratk[myself]

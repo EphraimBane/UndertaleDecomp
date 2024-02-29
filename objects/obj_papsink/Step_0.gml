@@ -22,7 +22,7 @@ if (myinteract == 1)
                         with (interactedobject)
                             facing = Direction.Down
                         with (interactedobject)
-                            script_execute(scr_interact)
+                            scr_interact()
                     }
                 }
             }

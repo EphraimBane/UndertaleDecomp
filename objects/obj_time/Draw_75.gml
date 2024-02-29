@@ -1,4 +1,4 @@
-if (global.osflavor >= OS_FLAVOR_CONSOLE)
+if (global.osflavor >= OSFlavors.Console)
 {
     if (os_is_paused() && (!paused) && (!global.disable_os_pause))
     {

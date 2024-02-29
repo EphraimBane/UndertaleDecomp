@@ -5,7 +5,7 @@
 /// @returns	{real}
 function ossafe_file_text_write_string(_textFileID, _text)
 {
-	if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+	if (global.osflavor <= OSFlavors.Mac)
 	    return file_text_write_string(_textFileID, _text);
 	else
 	{

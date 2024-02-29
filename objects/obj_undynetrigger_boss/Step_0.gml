@@ -257,7 +257,7 @@ with (obj_undynetrigger_boss)
             global.msg[10] = scr_gettext("obj_undynetrigger_boss_379")
             global.msg[11] = scr_gettext("obj_undynetrigger_boss_381")
             global.msg[12] = scr_gettext("obj_undynetrigger_boss_382")
-            if (FL_ShyrenStatus == 1)
+            if (FL_ShyrenStatus == ShyrenStatus.Killed)
             {
                 global.msg[11] = scr_gettext("obj_undynetrigger_boss_386")
                 global.msg[12] = scr_gettext("obj_undynetrigger_boss_387")

@@ -19,4 +19,4 @@ if (object_index == obj_dogpillar2)
 }
 else if (FL_LesserDogStatus == DogStatus.Killed || FL_LesserDogStatus == DogStatus.Spared)
     instance_destroy()
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)

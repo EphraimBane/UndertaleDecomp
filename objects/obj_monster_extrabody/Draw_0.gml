@@ -197,7 +197,7 @@ if (active == true)
         if (y < (__view_get(1, 0) + 200))
         {
             siner2 = 1
-            if (global.flag[157] == 3)
+            if (FL_MadMewMewStatus == MadMewMewStatus.Killed)
                 siner2 = 8
         }
     }

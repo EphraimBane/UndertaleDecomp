@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 dsprite = spr_napstablook_d_headphone
 usprite = spr_napstablook_u_headphone
 lsprite = spr_napstablook_l_headphone

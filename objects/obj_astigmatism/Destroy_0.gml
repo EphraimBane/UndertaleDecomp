@@ -13,6 +13,6 @@ if (FL_Hardmode == 1)
 }
 x += 10
 y += 10
-script_execute(scr_monsterdefeat, 0, 0, 0, 0, 0)
+scr_monsterdefeat(0, 0, 0, 0, 0)
 with (mypart1)
     instance_destroy()

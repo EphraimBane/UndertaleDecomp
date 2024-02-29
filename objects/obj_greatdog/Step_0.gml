@@ -240,7 +240,7 @@ if (global.myfight == 4)
 {
     if (global.mercyuse == 0)
     {
-        script_execute(scr_mercystandard)
+        scr_mercystandard()
         if (mercy < 0)
             instance_destroy()
     }
@@ -249,7 +249,7 @@ if (dogignore > 3 && instance_exists(OBJ_WRITER) == 0)
 {
     mercymod = 6666
     FL_GreaterDogStatus = DogStatus.Ignored
-    script_execute(scr_mercystandard)
+    scr_mercystandard()
     if (mercy < 0)
         instance_destroy()
 }

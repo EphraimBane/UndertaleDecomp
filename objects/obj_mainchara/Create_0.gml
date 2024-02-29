@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 if (FL_TruePacifist == 1)
 {
     if (FL_SMSConvoParameters <= FL_TorielSMSConvoCounter)

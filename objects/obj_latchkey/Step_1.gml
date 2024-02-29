@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 if (room == room_kitchen_final && instance_exists(OBJ_WRITER) == 0)
 {
     if (FL_HaveCastleKey1 == 1)

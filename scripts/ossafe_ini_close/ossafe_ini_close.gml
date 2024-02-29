@@ -3,7 +3,7 @@
 /// @returns	{string}
 function ossafe_ini_close()
 {
-	if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+	if (global.osflavor <= OSFlavors.Mac)
 	    return ini_close();
 	else if (!is_undefined(global.current_ini))
 	{

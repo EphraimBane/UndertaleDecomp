@@ -25,7 +25,7 @@ function trophy_unlock(_trophy_id)
 	}
 	ds_map_set(global.trophy_state, trophy_id, 1)
 	
-	if (!global.decomp_vars.VanillaMode && global.decomp_vars.EnablePS4Trophies && global.osflavor != OS_FLAVOR_PLAYSTATION)
+	if (!global.decomp_vars.VanillaMode && global.decomp_vars.EnablePS4Trophies && global.osflavor != OSFlavors.Playstation)
 		save_trophies();
 	
 }

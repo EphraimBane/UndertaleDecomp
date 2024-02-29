@@ -29,11 +29,11 @@ if (room == room_tundra_sanshouse)
 if (room == room_water_undyneyard)
 {
     sprite_index = spr_dummy
-    if (FL_KilledGladDummy == 1)
+    if (FL_KilledGladDummy == true)
         instance_destroy()
-    if (global.flag[157] >= 1)
+    if (FL_MadMewMewStatus >= MadMewMewStatus.DoorOpened)
     {
-        if (FL_TruePacifist == 1)
+        if (FL_TruePacifist == true)
             instance_create(x, y, obj_sign_room)
         instance_destroy()
     }
@@ -72,13 +72,13 @@ if (room == room_fire9)
 if (room == room_fire6A)
 {
     sprite_index = spr_frypan
-    if (FL_GotFryingPan == 1)
+    if (FL_GotFryingPan == true)
         instance_destroy()
 }
 if (room == room_fire_apron)
 {
     sprite_index = spr_apron
-    if (FL_GotApron == 1)
+    if (FL_GotApron == true)
         instance_destroy()
 }
 if (room == room_water_nicecream)
@@ -89,7 +89,7 @@ if (room == room_water_nicecream)
 }
 if (room == room_fire_walkandbranch)
 {
-    if (FL_TruePacifist == 0 || FL_SoSorryStatus < SoSorryStatus.Spared)
+    if (FL_TruePacifist == false || FL_SoSorryStatus < SoSorryStatus.Spared)
         instance_destroy()
     sprite_index = spr_sorry_npc_d
 }
@@ -102,7 +102,7 @@ if (room == room_castle_exit)
     fcheck1 = ini_read_real("Flowey", "K", 0)
     fcheck2 = ini_read_real("FFFFF", "E", 0)
     ossafe_ini_close()
-    if (FL_KilledFlowey == 1)
+    if (FL_KilledFlowey == true)
         q = 1
     if (fcheck1 == 1 && fcheck2 == 2)
         q = 1
@@ -176,7 +176,7 @@ if (room == room_fire_restaurant)
 if (room == room_fire_pacing)
 {
     sprite_index = spr_dresslion_a
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
         sprite_index = spr_dresslion_b
     if (scr_murderlv() >= 12)
         instance_destroy()
@@ -208,6 +208,6 @@ if (room == room_water_temvillage)
 if (room == room_water_trashzone1)
 {
     sprite_index = spr_ds_donationbox_trash
-    if ((global.osflavor != OS_FLAVOR_PLAYSTATION && global.osflavor != OS_FLAVOR_SWITCH) || scr_murderlv() < 9)
+    if ((global.osflavor != OSFlavors.Playstation && global.osflavor != OSFlavors.Switch) || scr_murderlv() < 9)
         instance_destroy()
 }

@@ -522,7 +522,7 @@ if (global.myfight == 10)
         spare_timer += 1
         if (spare_timer >= 60)
         {
-            global.flag[157] = 2
+            FL_MadMewMewStatus = MadMewMewStatus.Spared
             ossafe_ini_open("undertale.ini")
             ini_write_real("Alphys", "M", 2)
             ossafe_ini_close()

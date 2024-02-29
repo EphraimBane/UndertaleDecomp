@@ -10,6 +10,6 @@ if (unpersist == 1)
 if (room == global.currentroom)
 {
     room_persistent = false
-    script_execute(scr_tempload)
+    scr_tempload()
     instance_destroy()
 }

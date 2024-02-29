@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 if (instance_exists(obj_dialoguer) == 0 && conversation == 1)
 {
     global.interact = 0

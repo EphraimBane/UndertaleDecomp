@@ -1,4 +1,4 @@
-script_execute(scr_monstersetup, 0, 0, 0, 0, 0)
+scr_monstersetup(0, 0, 0, 0, 0)
 image_speed = 0
 part1 = obj_wizardbody
 mypart1 = instance_create((x + 2), (y + 46), part1)

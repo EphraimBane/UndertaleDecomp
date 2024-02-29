@@ -1,2 +1,2 @@
-script_execute(scr_depth)
+scr_depth()
 depth += 50

@@ -4,4 +4,4 @@ gravity = 0.02
 gravity_direction = 270
 alarm[0] = 10
 vspeed = 1.2
-script_execute(scr_edge, 20, 6)
+scr_edge(20, 6)

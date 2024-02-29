@@ -8,16 +8,16 @@ else
     global.osflavor = 2
 */
 if (os_type == os_windows || os_type == os_linux || os_type == os_macosx)
-    global.osflavor = OS_FLAVOR_PC
+    global.osflavor = OSFlavors.PC
 else if (os_type == os_ps4 || os_type == os_psvita)
-    global.osflavor = OS_FLAVOR_PLAYSTATION
+    global.osflavor = OSFlavors.Playstation
 else if (os_type == os_switch)
-    global.osflavor = OS_FLAVOR_SWITCH
+    global.osflavor = OSFlavors.Switch
 else
-    global.osflavor = OS_FLAVOR_UNKNOWN_PLATFORM
+    global.osflavor = OSFlavors.Mac
 
 global.locale = ((os_get_language() + "_") + string_upper(os_get_region()))
-if (global.osflavor >= OS_FLAVOR_CONSOLE)
+if (global.osflavor >= OSFlavors.Console)
 {
     application_surface_enable(true)
     application_surface_draw_enable(false)
@@ -116,7 +116,7 @@ j2 = 0
 ja = 0
 j_ch = 0
 jt = 0
-if (global.osflavor >= OS_FLAVOR_PLAYSTATION)
+if (global.osflavor >= OSFlavors.Playstation)
 {
     i = 0
     while (i < gamepad_get_device_count())
@@ -157,9 +157,9 @@ global.endsong_loaded = 0
 control_init()
 scr_kanatype_init()
 if (!variable_global_exists("text_data_en"))
-    script_execute(textdata_en)
+    textdata_en()
 if (!variable_global_exists("text_data_ja"))
-    script_execute(textdata_ja)
+    textdata_ja()
 if (os_type == os_switch)
     global.language = substr(switch_language_get_desired_language(), 1, 2)
 else

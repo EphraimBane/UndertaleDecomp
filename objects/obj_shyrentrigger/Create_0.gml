@@ -1,6 +1,6 @@
 if (global.plot > 110)
 {
-    if (FL_ShyrenStatus == 2)
+    if (FL_ShyrenStatus == ShyrenStatus.Encouraged)
     {
     }
     instance_destroy()

@@ -1,5 +1,5 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
-script_execute(scr_npc_anim)
+scr_depth(0, 0, 0, 0, 0)
+scr_npc_anim()
 if (conversation == 2 && instance_exists(OBJ_WRITER) == 0)
 {
     global.interact = 1

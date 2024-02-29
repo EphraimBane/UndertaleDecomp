@@ -33,6 +33,6 @@ if (global.interact == 0)
         global.msg[12] = scr_gettext("obj_torielcall1_114")
         FL_WaitedOnTorielCall = 2
     }
-    script_execute(scr_writetext, 0, "x", 0, 0)
+    scr_writetext(0, "x", 0, 0)
     global.interact = 1
 }

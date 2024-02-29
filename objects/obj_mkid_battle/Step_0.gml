@@ -515,8 +515,8 @@ if (global.myfight == 4)
         con = 99
         global.myfight = -99
         global.mnfight = -99
-        script_execute(scr_mercystandard)
+        scr_mercystandard()
     }
 }
 if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
-    script_execute(scr_mercystandard)
+    scr_mercystandard()

@@ -1,4 +1,4 @@
-script_execute(scr_monstersetup, 0, 0, 0, 0, 0)
+scr_monstersetup(0, 0, 0, 0, 0)
 image_speed = 0
 part1 = obj_maddum_drawer
 mypart1 = instance_create((x + 50), (y + 10), part1)

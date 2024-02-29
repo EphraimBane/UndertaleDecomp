@@ -147,5 +147,5 @@ if (global.myfight == 2)
 if (global.myfight == 4)
 {
     if (global.mercyuse == 0)
-        script_execute(scr_mercystandard)
+        scr_mercystandard()
 }

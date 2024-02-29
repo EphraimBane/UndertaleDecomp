@@ -155,7 +155,7 @@ if (global.myfight == 2)
                 if (sleepy == 0)
                 {
                     global.msg[0] = scr_gettext("obj_finalknight_586")
-                    if (FL_ShyrenStatus == 2)
+                    if (FL_ShyrenStatus == ShyrenStatus.Encouraged)
                         global.msg[0] = scr_gettext("obj_finalknight_588")
                 }
                 if (sleepy == 1)
@@ -170,7 +170,7 @@ if (global.myfight == 2)
                     global.monsterdef[myself] = -30
                 }
                 sleepy += 1
-                if (FL_ShyrenStatus == 2)
+                if (FL_ShyrenStatus == ShyrenStatus.Encouraged)
                     sleepy += 1
                 if (sleepy > 0)
                     mypart1.asleep = 1
@@ -189,14 +189,14 @@ if (global.myfight == 4)
 {
     if (global.mercyuse == 0)
     {
-        script_execute(scr_mercystandard)
+        scr_mercystandard()
         if (mercy < 0)
             instance_destroy()
     }
 }
 if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
 {
-    script_execute(scr_mercystandard)
+    scr_mercystandard()
     if (mercy < 0)
         instance_destroy()
 }

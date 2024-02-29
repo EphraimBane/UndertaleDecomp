@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 image_speed = 0
 dsprite = spr_test_d
 usprite = spr_test_u
@@ -8,7 +8,7 @@ dtsprite = spr_test_dt
 utsprite = spr_test_ut
 ltsprite = spr_test_lt
 rtsprite = spr_test_rt
-script_execute(scr_npcsetup, 2)
+scr_npcsetup(2)
 movementalarm[0] = 20
 movementalarm[1] = -1
 memoryispeed = 0

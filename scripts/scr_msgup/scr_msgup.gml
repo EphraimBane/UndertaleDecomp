@@ -7,7 +7,7 @@ function scr_msgup()
 	writingy = round(writingy)
 	myx = writingx
 	myy = writingy
-	script_execute(SCR_TEXT, global.msc)
+	SCR_TEXT(global.msc)
 	n = 0
 	while (global.msg[n] != "%%%")
 	{

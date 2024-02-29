@@ -152,7 +152,7 @@ if (global.myfight == 2)
             if (whatiheard == 4)
             {
                 global.msc = 0
-                script_execute(scr_mercystandard)
+                scr_mercystandard()
                 global.msg[0] = scr_gettext("obj_icecap_431")
                 global.msg[1] = scr_gettext("obj_icecap_432")
                 if (mercy < 0)
@@ -183,7 +183,7 @@ if (global.myfight == 4)
 {
     if (global.mercyuse == 0)
     {
-        script_execute(scr_mercystandard)
+        scr_mercystandard()
         if (mercy < 0)
             instance_destroy()
     }

@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 if (myinteract == 1)
 {
     if (con == 0)
@@ -39,7 +39,7 @@ if (con == 1 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 9)
 {
-    if (global.flag[157] == 3)
+    if (FL_MadMewMewStatus == MadMewMewStatus.Killed)
         sprite_index = spr_npc_mewmew_shattered
     myinteract = 0
     global.mercy = 0
@@ -55,7 +55,7 @@ if (con == 11)
     global.typer = 5
     global.facechoice = 0
     global.faceemotion = 0
-    if (global.flag[157] == 3)
+    if (FL_MadMewMewStatus == MadMewMewStatus.Killed)
     {
         global.msg[0] = scr_gettext("obj_mewmew_npc_76")
         global.msg[1] = scr_gettext("obj_mewmew_npc_77")

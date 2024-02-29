@@ -59,7 +59,7 @@ if (cn == 4)
     global.msg[1] = scr_gettext("obj_papdate_201")
     global.msg[2] = scr_gettext("obj_papdate_202")
     global.msg[3] = scr_gettext("obj_papdate_203")
-    if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+    if (global.osflavor <= OSFlavors.Mac)
     {
         if (FL_PapyrusFightFlirt == 1)
             global.msg[4] = scr_gettext("obj_papdate_204")

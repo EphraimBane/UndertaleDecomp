@@ -5,11 +5,11 @@ if (global.encounter > steps)
     {
         if (global.interact == 0)
         {
-            script_execute(scr_steps, 340, 380, 40, 205)
+            scr_steps(340, 380, 40, 205)
             if (room == room_fire5)
-                script_execute(scr_steps, 1040, 680, 40, 205)
+                scr_steps(1040, 680, 40, 205)
             if (scr_murderlv() >= 12)
-                script_execute(scr_steps, 70, 120, 40, 205)
+                scr_steps(70, 120, 40, 205)
             global.encounter = 0
             battlegroup = floor(random(15))
             if (battlegroup <= 15)

@@ -1,4 +1,4 @@
-script_execute(scr_monstersetup, 0, 0, 0, 0, 0)
+scr_monstersetup(0, 0, 0, 0, 0)
 image_speed = 0
 mypart1 = instance_create(x, y, obj_froghead)
 mypart2 = instance_create(x, y, obj_froglegs)

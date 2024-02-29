@@ -31,7 +31,7 @@ if (turns == 5)
     textsize = 1
     global.msg[0] = scr_gettext("obj_mettatonex_214")
     global.msg[1] = scr_gettext("obj_mettatonex_215")
-    if (global.osflavor >= OS_FLAVOR_PLAYSTATION)
+    if (global.osflavor >= OSFlavors.Playstation)
         global.msg[1] = scr_gettext("obj_mettatonex_215_console")
     if (os_type == os_ps4 && extension_stubfunc_real())
         global.msg[1] = scr_gettext("obj_mettatonex_215_console_kbd")

@@ -14,7 +14,7 @@ if (room == room_ruins9)
     global.msg[0] = scr_gettext("obj_readable_room1_68")
 if (room == room_ruins13)
 {
-    if (global.osflavor >= OS_FLAVOR_CONSOLE)
+    if (global.osflavor >= OSFlavors.Console)
     {
         global.msg[0] = scr_gettext("obj_readable_room1_69_console_1")
         global.msg[1] = scr_gettext("obj_readable_room1_69_console_2")

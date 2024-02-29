@@ -137,7 +137,7 @@ if (oldmode == 1)
 }
 if (oldmode != 1)
 {
-    if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+    if (global.osflavor <= OSFlavors.Mac)
         draw_sprite(scr_getsprite(spr_pxquit), 1, 44, 27)
     if (num == 0)
     {

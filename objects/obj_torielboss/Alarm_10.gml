@@ -27,6 +27,6 @@ else
     caster_stop(global.batmusic)
     caster_free(global.batmusic)
     global.typer = 1
-    script_execute(scr_writetext, 0, scr_gettext("obj_torielboss_240"), 0, 0)
+    scr_writetext(0, scr_gettext("obj_torielboss_240"), 0, 0)
     alarm[11] = 1
 }

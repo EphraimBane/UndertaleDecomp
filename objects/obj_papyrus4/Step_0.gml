@@ -174,6 +174,9 @@ if (conversation == 63)
 {
     global.currentsong = caster_load("music/snowy.ogg")
     caster_loop(global.currentsong, 1, 0.95)
+	// Daniela: fix music not being pitched down in Genocide
+	if (!global.decomp_vars.VanillaMode && murder == 1)
+		caster_set_pitch(global.currentsong, 0.4);
     global.plot = 58
     global.interact = 0
     instance_create(sans.x, sans.y, obj_sans_room)

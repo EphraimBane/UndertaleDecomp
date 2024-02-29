@@ -503,7 +503,7 @@ function scr_namingscreen()
 	            if (ossafe_file_exists("file0") == 0)
 	                room_goto_next()
 	            else
-	                script_execute(scr_load)
+	                scr_load()
 	        }
 	        if (action == 1)
 	        {
@@ -529,7 +529,7 @@ function scr_namingscreen()
 	    {
 	        draw_set_color(c_silver)
 	        draw_text(85, 20, string_hash_to_newline(scr_gettext("instructions_title")))
-	        if (global.osflavor >= OS_FLAVOR_PLAYSTATION)
+	        if (global.osflavor >= OSFlavors.Playstation)
 	        {
 	            scr_drawtext_icons(85, 50, "\\*Z")
 	            draw_text(115, 50, string_hash_to_newline(scr_gettext("instructions_confirm_label")))
@@ -580,7 +580,7 @@ function scr_namingscreen()
 	        if (global.language == "ja")
 	            xx = 84
 	        yy = 160
-	        if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+	        if (global.osflavor <= OSFlavors.Mac)
 	            yy += 12
 	        draw_set_color(c_white)
 	        if (selected3 == 0)

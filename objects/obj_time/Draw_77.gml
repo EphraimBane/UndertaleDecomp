@@ -1,4 +1,4 @@
-if (global.osflavor >= OS_FLAVOR_CONSOLE)
+if (global.osflavor >= OSFlavors.Console)
 {
     var ww = window_get_width()
     var wh = window_get_height()

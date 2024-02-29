@@ -3,7 +3,7 @@
 /// @param	{Id.TextFile}	textFileID	The text file to close
 function ossafe_file_text_close(_textFileID)
 {
-	if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+	if (global.osflavor <= OSFlavors.Mac)
 	    return file_text_close(_textFileID);
 	else
 	{

@@ -457,14 +457,14 @@ if (global.myfight == 4)
 {
     if (global.mercyuse == 0)
     {
-        script_execute(scr_mercystandard)
+        scr_mercystandard()
         if (mercy < 0)
             mercy_death = 1
     }
 }
 if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
 {
-    script_execute(scr_mercystandard)
+    scr_mercystandard()
     if (mercy < 0)
         mercy_death = 1
 }
@@ -579,7 +579,7 @@ if (p_cut == 1)
 if (p_power == 1)
 {
     dopower = 0
-    if (global.osflavor == OS_FLAVOR_UNKNOWN_PLATFORM && hit_try >= 23)
+    if (global.osflavor == OSFlavors.Mac && hit_try >= 23)
         dopower = 1
     if (dopower == 0)
     {
@@ -592,7 +592,7 @@ if (p_beam == 1)
 {
     caster_stop(beamsfx)
     caster_play(beamsfx, 0.8, 1.2)
-    if (global.osflavor != OS_FLAVOR_UNKNOWN_PLATFORM)
+    if (global.osflavor != OSFlavors.Mac)
         caster_stop(beamsfx_a)
     caster_play(beamsfx_a, 0.6, 1.2)
     p_beam = 0

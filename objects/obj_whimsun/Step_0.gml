@@ -60,7 +60,7 @@ if (global.mnfight == 2)
     {
         global.turntimer = 100
         if (mycommand >= 0 && mycommand <= 50)
-            script_execute(scr_rotategen, 10, 20, 634, obj_heart.x, (obj_heart.y + 42))
+            scr_rotategen(10, 20, 634, obj_heart.x, (obj_heart.y + 42))
         else
             gen = instance_create(0, 0, obj_butterfly2gen)
         gen.myself = myself
@@ -81,7 +81,7 @@ if (global.mnfight == 2)
 }
 if (whatiheard == 3 && instance_exists(OBJ_WRITER) == 0)
 {
-    script_execute(scr_mercystandard)
+    scr_mercystandard()
     if (mercy < 0)
         instance_destroy()
 }
@@ -128,7 +128,7 @@ if (global.myfight == 4)
 {
     if (global.mercyuse == 0)
     {
-        script_execute(scr_mercystandard)
+        scr_mercystandard()
         if (mercy < 0)
             instance_destroy()
     }

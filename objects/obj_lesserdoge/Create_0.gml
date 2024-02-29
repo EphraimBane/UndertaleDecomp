@@ -1,4 +1,4 @@
-script_execute(scr_monstersetup, 0, 0, 0, 0, 0)
+scr_monstersetup(0, 0, 0, 0, 0)
 hurtanim = 0
 mercymod = 0
 instance_create(x, y, obj_lesserdogetail)

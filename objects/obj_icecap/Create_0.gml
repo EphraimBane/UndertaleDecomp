@@ -1,7 +1,7 @@
-script_execute(scr_monstersetup, 0, 0, 0, 0, 0)
+scr_monstersetup(0, 0, 0, 0, 0)
 hurtanim = 0
-normalgfx = 220
-hurtgfx = 219
+normalgfx = spr_icecap
+hurtgfx = spr_icecaphurt
 hurtsound = snd_damage
 talked = false
 whatiheard = -1

@@ -138,7 +138,7 @@ if (room == room_dogshrine_ruined)
 }
 if (room == room_water_undyneyard)
 {
-    if (global.flag[157] >= 3)
+    if (FL_MadMewMewStatus >= MadMewMewStatus.Killed)
     {
         global.msg[0] = scr_gettext("obj_sign_room_mew_0")
         global.msg[1] = scr_gettext("obj_sign_room_mew_1")

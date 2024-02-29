@@ -21,3 +21,7 @@ command_register("crash_game", "Crashes the game");
 command_register("clear", "Clears the output");
 command_register("monitor_plot", "Toggles the plot monitor");
 command_register("unlock_cam", "Creates an unlocked camera");
+command_register("kill", "This will kill you");
+command_register("global_set", "Sets a global variable", [ "name", "value" ]);
+command_register("global_get", "Gets a global variable", [ "name" ]);
+command_register("room_speed", "Sets the room speed", [ "speed" ]);

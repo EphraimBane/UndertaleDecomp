@@ -1,9 +1,9 @@
 gameshake = 100
 alarm[0] = 8
-if (global.osflavor == OS_FLAVOR_PC)
+if (global.osflavor == OSFlavors.PC)
     window_set_fullscreen(false)
 window_set_caption(" ")
-if (global.osflavor == OS_FLAVOR_PC)
+if (global.osflavor == OSFlavors.PC)
 {
     window_center()
     wx = window_get_x()
@@ -11,14 +11,14 @@ if (global.osflavor == OS_FLAVOR_PC)
     window_set_position((wx + gameshake), wy)
 }
 __background_set(2, 3, bg_num9)
-__background_set(1, 3, spr_introlast)
-__background_set(7, 3, spr_introlast) // Vultu: still feel like this can't right??
-__background_set(8, 3, spr_introlast)
-__background_set(0, 3, spr_introlast)
+__background_set(1, 3, 1)
+__background_set(7, 3, 1)
+__background_set(8, 3, 1)
+__background_set(0, 3, 1)
 __background_set(11, 3, c_black)
 __background_set(12, 3, c_black)
 in_silence = 0
-if (global.osflavor == OS_FLAVOR_PC)
+if (global.osflavor == OSFlavors.PC)
 {
 	// Vultu: Toby you can't delete a running program...
     if file_exists("undertale.exe")

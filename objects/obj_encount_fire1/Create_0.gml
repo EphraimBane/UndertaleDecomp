@@ -12,7 +12,7 @@ if (room == room_fire_walkandbranch && FL_HotlandBattleProgressCounter < 3)
     factor = 80
 if (room == room_fire_preshootguy4 && FL_HotlandBattleProgressCounter < 4)
     factor = 20
-script_execute(scr_steps, factor, 30, 40, 205)
+scr_steps(factor, 30, 40, 205)
 if (scr_enemynpc3() == 1)
     instance_destroy()
 if (room == room_fire_preshootguy4 && FL_CompletedShootPuzzle4 != 0)

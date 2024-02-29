@@ -464,7 +464,7 @@ if (con == 106)
     global.filechoice = 8
     global.currentroom = room_flowey_endchoice
     scr_saveprocess()
-    if (global.osflavor == OS_FLAVOR_PC)
+    if (global.osflavor == OSFlavors.PC)
     {
         if file_exists("undertale.exe")
             file_rename("undertale.exe", "flowey.exe")

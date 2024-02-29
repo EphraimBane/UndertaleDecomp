@@ -1,5 +1,5 @@
 if (global.inbattle == 0 && global.flag[18] == 0)
-    script_execute(scr_end)
+    scr_end()
 if (messed == 1)
     window_set_caption("Floweytale")
 if (messed == 2)

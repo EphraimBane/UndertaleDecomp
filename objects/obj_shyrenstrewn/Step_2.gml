@@ -1,2 +1,2 @@
-if (FL_ShyrenStatus == 2)
+if (FL_ShyrenStatus == ShyrenStatus.Encouraged)
     obj_shyrenstrewn.visible = false

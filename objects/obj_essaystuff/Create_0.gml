@@ -20,7 +20,7 @@ if (essaynum == 2)
     endbuffer = 120
 if (essaynum >= 3)
     endbuffer = 100
-if (global.osflavor <= OS_FLAVOR_UNKNOWN_PLATFORM)
+if (global.osflavor <= OSFlavors.Mac)
     keyboard_present = 1
 else
     keyboard_present = 0

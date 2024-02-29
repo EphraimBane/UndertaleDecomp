@@ -12,7 +12,7 @@ if (room == room_water_undynehouse)
 if (room == room_water_undyneyard)
 {
     sprite_index = spr_npc_mewmew
-    if (global.flag[157] >= 3)
+    if (FL_MadMewMewStatus >= MadMewMewStatus.Killed)
         sprite_index = spr_npc_mewmew_shattered
-    image_index = global.flag[158]
+    image_index = FL_MadMewMewImageIndex
 }

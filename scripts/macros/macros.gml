@@ -2,14 +2,18 @@
 // This file does exist in the actual undertale source, but we don't know
 // what it looks like, so we are going to make our own
 
-#macro OS_FLAVOR_PC 1
-#macro OS_FLAVOR_UNKNOWN_PLATFORM 2
-
-#macro OS_FLAVOR_CONSOLE 3
-#macro OS_FLAVOR_PLAYSTATION 4
-#macro OS_FLAVOR_SWITCH 5
+enum OSFlavors
+{
+	Unknown,
+	PC,
+	Mac,
+	Console,
+	Playstation,
+	Switch
+}
 
 // Vultu: Taken from https://tomat.dev/undertale/flags
+// Vultu: Anything not in that list was added by or Daniela
 // If any of this is wrong or misleading, please feel free to push a PR <3
 #region Flags
 
@@ -55,7 +59,7 @@
 #macro FL_DisobeyedToriel global.flag[44]
 #macro FL_TorielStatus global.flag[45]
 #macro FL_ChoiceFlavor global.flag[46]
-#macro FL_TundraCreepyStatus global.flag[46]
+#macro FL_TundraCreepyStatus global.flag[47]
 // 48 - 49 Unused
 #macro FL_KnowWaterSausage global.flag[50]
 #macro FL_WrongSwitchesPressedCount global.flag[51]
@@ -151,7 +155,9 @@
 #macro FL_SparedMadjick global.flag[154]
 #macro FL_SparedFinalKnight global.flag[155]
 #macro FL_SparedEndogenny global.flag[156]
-// 157 - 190 Unused
+#macro FL_MadMewMewStatus global.flag[157]
+#macro FL_MadMewMewImageIndex global.flag[158]
+// 159 - 190 Unused
 #macro FL_TorielPacifistConvoCounter global.flag[191]
 #macro FL_SansPacifistConvoCounter global.flag[192]
 #macro FL_UndynePacifistConvoCounter global.flag[193]
@@ -629,6 +635,14 @@ enum MadDummyStatus
 	Ignored,
 	Punched,
 	NotPunched
+}
+
+enum MadMewMewStatus 
+{
+	NotStarted,
+	DoorOpened,
+	Spared,
+	Killed
 }
 
 enum YellowButtonStatus

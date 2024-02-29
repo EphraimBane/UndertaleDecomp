@@ -12,4 +12,4 @@ if (myinteract == 1 && global.plot < 6)
     global.plot = 6
     myinteract = 0
 }
-script_execute(scr_depth)
+scr_depth()

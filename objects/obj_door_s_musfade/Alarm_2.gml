@@ -47,12 +47,14 @@ if (room == room_fire_elevator)
 }
 if (room == room_fire_core_final)
 {
-    FL_ElevatorFinalFloor = 1
+    if (global.decomp_vars.VanillaMode)
+		FL_ElevatorFinalFloor = 1
     room_goto(room_fire_finalelevator)
 }
 if (room == room_castle_elevatorout)
 {
-    FL_ElevatorFinalFloor = 0
+    if (global.decomp_vars.VanillaMode)
+		FL_ElevatorFinalFloor = 0
     room_goto(room_fire_finalelevator)
 }
 if (room == room_fire_finalelevator)

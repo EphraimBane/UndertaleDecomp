@@ -2,7 +2,7 @@ if (mercymod > 10 && global.monsterhp[myself] == global.monstermaxhp[myself])
     global.goldreward[3] += 12
 if (killed == 1)
     FL_SnowdrakeStatus = SnowdrakeStatus.Killed
-script_execute(scr_monsterdefeat, 0, 0, 0, 0, 0)
+scr_monsterdefeat(0, 0, 0, 0, 0)
 with (mypart1)
     instance_destroy()
 with (mypart2)
