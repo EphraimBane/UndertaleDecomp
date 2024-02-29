@@ -36,7 +36,7 @@ if (heartcon == 5)
         {
             global.border = 0
             global.hp = global.maxhp
-            caster_free(-3)
+            caster_free(all)
             with (obj_gameover)
                 instance_destroy()
             room_goto(room_battle)
@@ -62,7 +62,7 @@ if (heartcon == 5)
         {
             global.border = 0
             global.hp = global.maxhp
-            caster_free(-3)
+            caster_free(all)
             with (obj_gameover)
                 instance_destroy()
             room_goto(room_battle)

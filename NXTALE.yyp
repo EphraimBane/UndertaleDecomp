@@ -381,6 +381,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Ruins","folderPath":"folders/Tile Sets/Ruins.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Faces","folderPath":"folders/Objects/Faces.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Undyne","folderPath":"folders/Objects/Battle/Undyne.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Event","folderPath":"folders/Objects/Event.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"credits.txt","CopyToMask":-1,"filePath":"datafiles",},

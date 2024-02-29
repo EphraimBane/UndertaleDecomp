@@ -199,7 +199,7 @@ if (con == 18)
 }
 if (con == 19)
 {
-    caster_free(-3)
+    caster_free(all)
     caster_play(swipesound, 1, 1)
     global.batmusic = caster_load("music/vsasgore.ogg")
     w_on = 0

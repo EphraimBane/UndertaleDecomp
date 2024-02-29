@@ -1,4 +1,4 @@
-caster_free(-3)
+caster_free(all)
 global.currentsong = caster_load("music/snowy.ogg")
 myinteract = 3
 global.msc = 0

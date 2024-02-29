@@ -1,7 +1,7 @@
 remx = obj_vsflowey_heart.x
 remy = obj_vsflowey_heart.y
 bb = sprite_create_from_screen_x(0, 0, 640, 480, false, false, 0, 0)
-caster_free(-3)
+caster_free(all)
 with (all)
 {
     x = -500

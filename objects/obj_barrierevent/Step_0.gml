@@ -52,7 +52,7 @@ if (con == 16)
 }
 if (con == 17 && instance_exists(OBJ_WRITER) == 0)
 {
-    caster_free(-3)
+    caster_free(all)
     snd_play(snd_spearappear)
     h[0] = instance_create(60, 220, obj_heartcontainer)
     h[0].image_blend = c_green
@@ -74,7 +74,7 @@ if (con == 19)
 {
     FL_InBattle = 0
     FL_TypeHeartTransition = 1
-    caster_free(-3)
+    caster_free(all)
     global.battlegroup = 100
     instance_create(0, 0, obj_battler)
     con = 20

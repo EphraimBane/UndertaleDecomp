@@ -1448,7 +1448,7 @@ if (death_c == 37)
 {
     instance_create(0, 0, obj_unfader)
     death_c = 38
-    caster_free(-3)
+    caster_free(all)
     alarm[6] = 20
 }
 if (death_c == 39)

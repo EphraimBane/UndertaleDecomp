@@ -31,7 +31,7 @@ if (timer == 560)
 n_index += 1
 if (n_timer >= 140)
 {
-    caster_free(-3)
+    caster_free(all)
     room_goto(room_creditsdodger)
 }
 caster_set_volume(s8, (1 - n_alpha))

@@ -10,7 +10,7 @@ if (blacktime == 0)
         }
         if (hyperboys == 1)
         {
-            caster_free(-3)
+            caster_free(all)
             global.entrance = 24
             global.interact = 0
             FL_CompletedTrueLab = 0
@@ -23,7 +23,7 @@ if (blacktime == 1)
 {
     if (w > 2.6)
     {
-        caster_free(-3)
+        caster_free(all)
         global.entrance = 24
         room_goto(room_truelab_elevatorinside)
     }

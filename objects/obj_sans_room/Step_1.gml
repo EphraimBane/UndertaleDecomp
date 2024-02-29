@@ -3,7 +3,7 @@ scr_npcdir(2)
 if (s_click == 1 && instance_exists(OBJ_WRITER))
 {
     if (OBJ_WRITER.stringno == 8)
-        caster_free(-3)
+        caster_free(all)
 }
 if (s_click == 1 && instance_exists(OBJ_WRITER) == 0)
 {

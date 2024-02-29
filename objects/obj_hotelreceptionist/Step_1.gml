@@ -23,7 +23,7 @@ if (con == 2)
     global.interact = 1
 if (con == 3)
 {
-    caster_free(-3)
+    caster_free(all)
     global.entrance = 1
     instance_create(0, 0, obj_persistentfader)
     room_goto(room_fire_hotelbed)

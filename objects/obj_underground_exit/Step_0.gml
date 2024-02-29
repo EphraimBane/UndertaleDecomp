@@ -25,7 +25,7 @@ if (con == 11)
     caster_set_volume(global.currentsong, vol)
     if (vol <= 0.02)
     {
-        caster_free(-3)
+        caster_free(all)
         con = 12
         cym = caster_load("music/cymbal.ogg")
         caster_play(cym, 1, 1)

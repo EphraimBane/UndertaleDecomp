@@ -115,7 +115,7 @@ if (con == 10 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 15)
 {
-    caster_free(-3)
+    caster_free(all)
     con = 16
     alarm[4] = 30
 }
@@ -179,7 +179,7 @@ if (con == 19.5)
 if (con == 20 && instance_exists(OBJ_WRITER) == 0)
 {
     global.faceemotion = 5
-    caster_free(-3)
+    caster_free(all)
     instance_create((asgorex + 190), (asgorey - 30), obj_spinbullet_lastgen)
     con = 21
     alarm[4] = 70
@@ -280,7 +280,7 @@ if (con == 38)
 }
 if (con == 45)
 {
-    caster_free(-3)
+    caster_free(all)
     con = 46
     alarm[4] = 20
 }
@@ -667,7 +667,7 @@ if (con == 999)
 }
 if (con == 124)
 {
-    caster_free(-3)
+    caster_free(all)
     instance_create(0, 0, obj_persistentfader)
     room_goto(room_castle_exit)
 }

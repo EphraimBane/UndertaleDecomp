@@ -314,7 +314,7 @@ if (global.mnfight == 5)
         {
             with (obj_asriel_body)
                 transform = 1
-            caster_free(-3)
+            caster_free(all)
             bright = caster_load("music/sfx/sfx_spellcast.ogg")
             caster_play(bright, 0.24, 0.2)
             caster_play(bright, 0.24, 0.3)
@@ -347,7 +347,7 @@ if (global.mnfight == 5)
     }
     if (trcon == 7)
     {
-        caster_free(-3)
+        caster_free(all)
         FL_InBattle = 1
         global.battlegroup = 256
         room_restart()

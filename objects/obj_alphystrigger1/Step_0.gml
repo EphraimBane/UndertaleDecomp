@@ -401,7 +401,7 @@ if (con == 63 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 65)
 {
-    caster_free(-3)
+    caster_free(all)
     FL_AnimationIndex = 5
     mett.image_speed = 0.25
     global.msg[0] = scr_gettext("obj_alphystrigger1_514")
@@ -418,7 +418,7 @@ if (con == 66 && instance_exists(OBJ_WRITER) == 0)
     active = false
     speed = 0
     global.interact = 1
-    caster_free(-3)
+    caster_free(all)
     con = 67
     alarm[4] = 10
     global.border = 0

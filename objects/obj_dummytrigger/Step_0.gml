@@ -301,7 +301,7 @@ if (con == 30)
     }
     else
     {
-        caster_free(-3)
+        caster_free(all)
         snd_play(snd_break2)
         instance_create(0, 0, obj_flasher)
         con = 31

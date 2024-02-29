@@ -141,7 +141,7 @@ if (con == 9)
 {
     if (collision_rectangle(180, 100, 200, 200, obj_mainchara, 0, 1) || collision_rectangle(340, 100, 360, 200, obj_mainchara, 0, 1))
     {
-        caster_free(-3)
+        caster_free(all)
         global.currentsong = caster_load("music/waterfall.ogg")
         global.interact = 1
         con = 10
