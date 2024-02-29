@@ -56,7 +56,7 @@ if (keyboard_check_pressed(vk_enter))
 		
 		var commandDef = commands[getCommandDefIndex(command_name)];
 		command_writeline(input_text);
-		asset_get_index(commandDef.functionRef)(arg_array);
+		script_execute(asset_get_index(commandDef.functionRef), arg_array);
 		trace($"Attempting to execute command: \"{commandDef.displayName}\" with arguments: \"{arg_array}\"")
 	}
 	else

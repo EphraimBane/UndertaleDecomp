@@ -72,7 +72,7 @@ else
 				hover_op.value = clamp(hover_op.value, hover_op.minValue, hover_op.maxValue);
 				
 				if (hover_op.callbackFunction != noone)
-					hover_op.callbackFunction(hover_op);
+					script_execute(hover_op.callbackFunction, hover_op);
 			}
 			else
 				slider_hold_timer = 0;
@@ -90,7 +90,7 @@ else
 				var hover_op = cat.options[hover_option];
 				hover_op.value = !hover_op.value;
 				if (hover_op.callbackFunction != noone)
-					hover_op.callbackFunction(hover_op);
+					script_execute(hover_op.callbackFunction, hover_op);
 				break;
 			case MenuOptionTypes.Slider:
 				break;
