@@ -94,13 +94,13 @@ if (history_pixel_height > input_box_y)
 	
 	var normalized_history_height = scroll_height / history_max_pixel_height;
 	
-	trace(history_pixel_height - input_box_y);
+
 	var scrollbar_x = scroll_x;
 	var scrollbar_y = scroll_y + ((history_pixel_height - input_box_y) * normalized_history_height);
 	var scrollbar_right = scrollbar_x + scroll_width;
 	var scrollbar_bottom = scroll_y + scroll_height;
 	
-	if (point_in_rectangle(window_mouse_get_x(), window_mouse_get_y(), scrollbar_x, scrollbar_y, scrollbar_right, scrollbar_bottom))
+	if (point_in_rectangle(mouse_x - view_get_xport(0), mouse_y - view_get_yport(0), scrollbar_x, scrollbar_y, scrollbar_right, scrollbar_bottom))
 		draw_set_color(c_yellow);
 	
 	ossafe_fill_rectangle(scrollbar_x, scrollbar_y, scrollbar_right, scrollbar_bottom);
