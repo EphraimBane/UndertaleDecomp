@@ -386,6 +386,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Ruins","folderPath":"folders/Tile Sets/Ruins.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Waterfall","folderPath":"folders/Tile Sets/Waterfall.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Snowdin","folderPath":"folders/Tile Sets/Snowdin.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"credits.txt","CopyToMask":-1,"filePath":"datafiles",},
@@ -4601,6 +4602,7 @@
     {"id":{"name":"spr_rock","path":"sprites/spr_rock/spr_rock.yy",},},
     {"id":{"name":"spr_pillar","path":"sprites/spr_pillar/spr_pillar.yy",},},
     {"id":{"name":"spr_hole","path":"sprites/spr_hole/spr_hole.yy",},},
+    {"id":{"name":"ts_tundratiles","path":"tilesets/ts_tundratiles/ts_tundratiles.yy",},},
     {"id":{"name":"spr_centeredhole","path":"sprites/spr_centeredhole/spr_centeredhole.yy",},},
     {"id":{"name":"spr_hole2","path":"sprites/spr_hole2/spr_hole2.yy",},},
     {"id":{"name":"spr_switch","path":"sprites/spr_switch/spr_switch.yy",},},
