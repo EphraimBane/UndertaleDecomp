@@ -5,7 +5,7 @@
   "isCompatibility": true,
   "isDnD": false,
   "parent": {
-    "name": "Input",
-    "path": "folders/Scripts/Common/Input.yy",
+    "name": "Control",
+    "path": "folders/Scripts/Common/Control.yy",
   },
 }

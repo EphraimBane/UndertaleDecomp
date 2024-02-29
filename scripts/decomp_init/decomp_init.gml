@@ -1,4 +1,4 @@
-global.decomp_vars = {
+,global.decomp_vars = {
 	VanillaMode : false,
 	EnablePSDogShrine : true,
 	EnableSwitchDogShrine : true,
@@ -13,7 +13,8 @@ global.decomp_vars = {
 	SoundFXVolume : 100.0,
 	RestoreSFXPan : true,
 	RemoveBattleIconRandomness : false,
-	BattleIconRandomOverride : 0
+	BattleIconRandomOverride : 0,
+	FixInputLatency : true
 }
 
 #macro trace show_debug_message
