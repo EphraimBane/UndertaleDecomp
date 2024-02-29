@@ -12,7 +12,7 @@ function scr_phoneget()
 	    }
 	    else if (i == 8)
 	    {
-	        script_execute(scr_itemnospace)
+	        scr_itemnospace()
 	        break
 	    }
 	    else
@@ -21,5 +21,5 @@ function scr_phoneget()
 	        continue
 	    }
 	}
-	script_execute(scr_phonename)
+	scr_phonename()
 }

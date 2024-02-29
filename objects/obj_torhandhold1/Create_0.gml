@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 global.plot = 7.5
 image_speed = 0
 dsprite = spr_toriel_handhold_d

@@ -19,7 +19,7 @@ if (instance_number(obj_targetparent) == 0 && hit == 0)
     if (myscore > 0)
     {
         mons = global.monsterinstance[global.mytarget]
-        script_execute(scr_attackcalc)
+        scr_attackcalc()
         damage *= ((myscore / 160) * (4 / num))
         damage = round(damage)
         global.damage = damage

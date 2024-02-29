@@ -43,7 +43,7 @@ if obj_time.down
     }
 }
 if (global.hp < 1)
-    script_execute(scr_gameoverb)
+    scr_gameoverb()
 if (deleteafter == 1 && instance_exists(blconwd) == 0)
 {
     alarm[3] = 10

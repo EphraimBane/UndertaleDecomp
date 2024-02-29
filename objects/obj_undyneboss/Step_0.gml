@@ -417,7 +417,7 @@ if (global.myfight == 4)
     if (global.mercyuse == 0)
     {
         mercied += 1
-        script_execute(scr_mercystandard)
+        scr_mercystandard()
     }
 }
 if (obj_heart.sprite_index == spr_heartgreen && global.mnfight == 2)

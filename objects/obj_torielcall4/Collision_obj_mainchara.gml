@@ -12,7 +12,7 @@ if (global.interact == 0)
     global.msg[5] = scr_gettext("obj_torielcall4_93")
     global.msg[6] = scr_gettext("obj_torielcall4_94")
     global.msg[7] = scr_gettext("obj_torielcall4_95")
-    script_execute(scr_writetext, 0, "x", 0, 0)
+    scr_writetext(0, "x", 0, 0)
     global.interact = 1
-    script_execute(scr_phoneget, 202)
+    scr_phoneget(202)
 }

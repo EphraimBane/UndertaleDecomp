@@ -1,9 +1,9 @@
-script_execute(SCR_BORDER_X, floor(random(4)), 0, 0)
+SCR_BORDER_X(floor(random(4)), 0, 0)
 x = xx
 y = yy
 if (bullettype == 0)
 {
-    script_execute(SCR_BORDER_X, floor(random(4)), 14, 50)
+    SCR_BORDER_X(floor(random(4)), 14, 50)
     x = xx
     y = yy
     iii = instance_create(x, y, blt_clawbullet_white)
@@ -16,7 +16,7 @@ if (bullettype == 0)
 }
 if (bullettype == 1)
 {
-    script_execute(SCR_BORDER_X_X, floor(random(4)), 14, 0)
+    SCR_BORDER_X_X(floor(random(4)), 14, 0)
     x = xx
     y = yy
     iii = instance_create(x, y, blt_4sidebullet)

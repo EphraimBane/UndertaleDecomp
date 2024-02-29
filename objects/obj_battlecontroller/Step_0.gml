@@ -1,4 +1,4 @@
-script_execute(SCR_BORDERSETUP, 0, 0, 0, 0, 0)
+SCR_BORDERSETUP(0, 0, 0, 0, 0)
 currentplace = global.bmenuno
 if (global.monster[0] == false)
 {
@@ -12,7 +12,7 @@ if (global.monster[0] == false)
                 global.xp += global.xpreward[3]
                 global.gold += global.goldreward[3]
                 tlvl = global.lv
-                script_execute(scr_levelup)
+                scr_levelup()
                 if (FL_InBattle == 0)
                 {
                     caster_stop(global.batmusic)
@@ -139,7 +139,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                         if (global.item[0] != 0)
                         {
                             global.bmenucoord[3] = 0
-                            script_execute(scr_itemnameb)
+                            scr_itemnameb()
                             if (global.language == "ja")
                             {
                                 global.msc = 0
@@ -182,7 +182,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                     global.myfight = 1
                     obj_heart.x = -200
                     snd_play(snd_select)
-                    script_execute(scr_attack)
+                    scr_attack()
                     control_clear(0)
                 }
                 if (global.bmenuno == 10)
@@ -218,7 +218,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                         OBJ_WRITER.halt = 3
                         itempos = (global.bmenucoord[3] + ((global.bmenuno - 3) * 8))
                         thisitemid = global.item[itempos]
-                        script_execute(scr_itemuseb, itempos, thisitemid)
+                        scr_itemuseb(itempos, thisitemid)
                         global.talked = 91
                         global.myfight = 4
                         obj_heart.x = -200
@@ -232,7 +232,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                     global.mercyuse = global.bmenucoord[4]
                     if (global.mercyuse == 1)
                     {
-                        script_execute(scr_runaway)
+                        scr_runaway()
                         global.talked = 90
                     }
                     if (runaway == 0)
@@ -349,7 +349,7 @@ if (global.myfight == 1 || global.myfight == 2 || global.mnfight == 3)
 if (global.mnfight == 3)
 {
     global.border = 0
-    script_execute(SCR_BORDERSETUP)
+    SCR_BORDERSETUP()
     if (obj_lborder.x == global.idealborder[0])
     {
         global.typer = 1
@@ -399,7 +399,7 @@ if (global.myfight == 4)
     }
 }
 if (global.hp <= 0)
-    script_execute(scr_gameoverb)
+    scr_gameoverb()
 if (currentplace < global.bmenuno)
 {
     if (snd_isplaying(snd_select) != 1)

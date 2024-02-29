@@ -1,2 +1,2 @@
-script_execute(scr_scinit, 0, 0, 0, 0, 0)
+scr_scinit(0, 0, 0, 0, 0)
 messed = 0

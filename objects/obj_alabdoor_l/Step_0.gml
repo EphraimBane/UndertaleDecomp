@@ -42,7 +42,7 @@ if (con == 2 && instance_exists(OBJ_WRITER) == 0)
     for (i = 0; i < 9; i += 1)
     {
         if (global.item[i] == 56 || global.item[i] == 57)
-            script_execute(scr_itemshift, i, 0)
+            scr_itemshift(i, 0)
     }
     global.interact = 1
     caster_stop(global.currentsong)

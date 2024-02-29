@@ -13,7 +13,7 @@ function scr_itemget()
 	    }
 	    else if (i == 8)
 	    {
-	        script_execute(scr_itemnospace)
+	        scr_itemnospace()
 	        break
 	    }
 	    else
@@ -41,6 +41,6 @@ function scr_itemget()
 	    trophy_unlock("item_3")
 	if (bc >= 4)
 	    trophy_unlock("item_4")
-	script_execute(scr_itemnameb)
-	script_execute(scr_itemname)
+	scr_itemnameb()
+	scr_itemname()
 }

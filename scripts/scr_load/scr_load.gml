@@ -2,7 +2,7 @@ function scr_load()
 {
 	filechoicebk = global.filechoice
 	room_set_persistent(global.currentroom, 0)
-	script_execute(SCR_GAMESTART)
+	SCR_GAMESTART()
 	global.filechoice = filechoicebk
 	file = ("file" + string(global.filechoice))
 	myfileid = ossafe_file_text_open_read(file)
@@ -66,7 +66,7 @@ function scr_load()
 	ossafe_file_text_close(myfileid)
 	global.hp = global.maxhp
 	global.en = global.maxen
-	script_execute(scr_tempsave)
+	scr_tempsave()
 	if (global.currentroom < room_tundra_garage)
 	    global.area = 0
 	if (global.currentroom >= room_tundra_garage)

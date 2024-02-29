@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 if (FL_GotRibbon == 1 && instance_exists(obj_dialoguer) == 0)
 {
     instance_destroy()

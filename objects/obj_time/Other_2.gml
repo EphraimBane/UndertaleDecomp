@@ -1,4 +1,4 @@
-script_execute(SCR_GAMESTART, 0, 0, 0, 0, 0)
+SCR_GAMESTART(0, 0, 0, 0, 0)
 time = 0
 image_speed = 0
 jjjjjj = 0

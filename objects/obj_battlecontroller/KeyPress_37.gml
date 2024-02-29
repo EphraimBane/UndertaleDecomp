@@ -88,7 +88,7 @@ if (keyboard_check_pressed(vk_right) == 0)
                     if (mv != 0)
                         snd_play(snd_squeak)
                     if (global.bmenuno != tempcheck)
-                        script_execute(scr_itemrewrite)
+                        scr_itemrewrite()
                 }
                 if (mv == 0)
                 {
@@ -129,7 +129,7 @@ if (keyboard_check_pressed(vk_right) == 0)
                         if (mv == 1)
                             snd_play(snd_squeak)
                         if (global.bmenuno != tempcheck)
-                            script_execute(scr_itemrewrite)
+                            scr_itemrewrite()
                     }
                 }
             }

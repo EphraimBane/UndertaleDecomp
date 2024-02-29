@@ -2,9 +2,9 @@ if (global.encounter > steps)
 {
     if (global.interact == 0)
     {
-        script_execute(scr_steps, 190, 80, 20, 202)
+        scr_steps(190, 80, 20, 202)
         if (FL_Hardmode == 1)
-            script_execute(scr_steps, 100, 60, 20, 202)
+            scr_steps(100, 60, 20, 202)
         global.encounter = 0
         if (FL_Hardmode == 0)
         {

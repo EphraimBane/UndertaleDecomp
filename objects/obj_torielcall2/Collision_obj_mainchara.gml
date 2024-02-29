@@ -8,8 +8,8 @@ if (global.interact == 0)
     bs = ini_read_real("Toriel", "Bscotch", 0)
     ossafe_ini_close()
     if (bs == 0)
-        script_execute(scr_writetext, 222, "x", 0, 0)
+        scr_writetext(222, "x", 0, 0)
     else
-        script_execute(scr_writetext, 831, "x", 0, 0)
+        scr_writetext(831, "x", 0, 0)
     global.interact = 1
 }

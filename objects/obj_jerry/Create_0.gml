@@ -1,4 +1,4 @@
-script_execute(scr_monstersetup, 0, 0, 0, 0, 0)
+scr_monstersetup(0, 0, 0, 0, 0)
 hurtanim = 0
 normalgfx = spr_jerry
 hurtgfx = spr_jerryhurt

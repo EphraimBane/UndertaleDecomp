@@ -12,7 +12,7 @@ if instance_exists(obj_uborder)
         ossafe_fill_rectangle((obj_uborder.x + 5), (obj_uborder.y + 5), obj_rborder.x, obj_dborder.y)
 }
 if (__background_get_colour() != c_white && drawbinfo == 1)
-    script_execute(scr_binfowrite)
+    scr_binfowrite()
 if (global.bmenuno == 1 && global.myfight == 0 && global.mnfight == 0)
 {
     var maxwidth = 0

@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 t = 0
 image_speed = 0
 dsprite = spr_toriel_d

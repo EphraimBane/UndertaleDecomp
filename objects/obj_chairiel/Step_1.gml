@@ -4,7 +4,7 @@ if (global.plot < 19.9)
         image_index = obj_face_torieltalk.image_index
     else
         image_index = 0
-    script_execute(scr_npcdir, 2)
+    scr_npcdir(2)
 }
 if (global.plot == 19.9 && instance_exists(obj_dialoguer) == 0)
 {

@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 scr_npc_anim()
 if (room == room_water3A && instance_exists(OBJ_WRITER) == 0)
 {

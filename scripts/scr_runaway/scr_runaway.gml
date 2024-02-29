@@ -27,7 +27,7 @@ function scr_runaway()
 	    global.xp += global.xpreward[3]
 	    global.gold += global.goldreward[3]
 	    tlvl = global.lv
-	    script_execute(scr_levelup)
+	    scr_levelup()
 	    if (levelup == true)
 	        snd_play(snd_levelup)
 	    global.msc = 14

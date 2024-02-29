@@ -30,6 +30,6 @@ if (global.interact == 0)
         global.msg[9] = scr_gettext("obj_torielcall5_113")
     }
     instance_create(140, 200, obj_stalkerflowey)
-    script_execute(scr_writetext, 0, "x", 0, 0)
+    scr_writetext(0, "x", 0, 0)
     global.interact = 1
 }

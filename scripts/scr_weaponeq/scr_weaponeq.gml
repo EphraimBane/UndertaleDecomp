@@ -27,6 +27,6 @@ function scr_weaponeq()
 	    global.wstrength += 5
 	if (global.armor == Items.TemyArmor)
 	    global.wstrength += 10
-	script_execute(scr_itemnameb)
-	script_execute(scr_itemname)
+	scr_itemnameb()
+	scr_itemname()
 }

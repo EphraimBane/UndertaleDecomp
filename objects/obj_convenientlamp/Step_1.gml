@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 if (global.plot <= 35)
     solid = 0
 else

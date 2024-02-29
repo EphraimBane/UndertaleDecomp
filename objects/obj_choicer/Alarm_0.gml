@@ -1,4 +1,4 @@
 with (creator)
-    script_execute(scr_msgup)
+    scr_msgup()
 with (obj_choicer)
     instance_destroy()

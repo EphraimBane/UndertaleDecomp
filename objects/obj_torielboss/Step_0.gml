@@ -231,7 +231,7 @@ if (global.mnfight == 2)
 }
 if (whatiheard == 3 && instance_exists(OBJ_WRITER) == 0)
 {
-    script_execute(scr_mercystandard)
+    scr_mercystandard()
     if (mercy < 0)
         instance_destroy()
 }
@@ -285,7 +285,7 @@ if (global.myfight == 4)
 {
     if (global.mercyuse == 0)
     {
-        script_execute(scr_mercystandard)
+        scr_mercystandard()
         if (mercy < 0)
             instance_destroy()
     }
@@ -324,7 +324,7 @@ if (destroyed == 1)
     if instance_exists(OBJ_WRITER)
     {
         with (OBJ_WRITER)
-            script_execute(SCR_TEXTTYPE, global.typer)
+            SCR_TEXTTYPE(global.typer)
     }
     global.facechange = 1
 }

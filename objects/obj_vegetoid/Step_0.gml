@@ -102,7 +102,7 @@ if (global.mnfight == 2)
 }
 if (whatiheard == 1 && instance_exists(OBJ_WRITER) == 0)
 {
-    script_execute(scr_mercystandard)
+    scr_mercystandard()
     if (mercy < 8)
     {
         killed = 0
@@ -132,13 +132,13 @@ if (global.myfight == 2)
             if (whatiheard == 1)
             {
                 global.msc = 0
-                script_execute(scr_mercystandard)
+                scr_mercystandard()
                 global.msg[0] = scr_gettext("obj_vegetoid_428")
                 if (mercy < 8)
                 {
                     global.msg[0] = scr_gettext("obj_vegetoid_431")
                     instance_create(0, 0, obj_foodsound)
-                    script_execute(scr_recover, 5)
+                    scr_recover(5)
                     sprite_index = spr_vegetoidhurt
                 }
                 OBJ_WRITER.halt = 3
@@ -164,7 +164,7 @@ if (global.myfight == 4)
 {
     if (global.mercyuse == 0)
     {
-        script_execute(scr_mercystandard)
+        scr_mercystandard()
         if (mercy < 0)
         {
             FL_SparedVegetoid = 1

@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 if (myinteract > 0)
 {
     sprite_index = spr_muffet_buysell

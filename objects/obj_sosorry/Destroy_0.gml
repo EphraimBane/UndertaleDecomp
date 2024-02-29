@@ -7,6 +7,6 @@ if (killed == 0)
 }
 else
     FL_SoSorryStatus = SoSorryStatus.Spared
-script_execute(scr_monsterdefeat, 0, 0, 0, 0, 0)
+scr_monsterdefeat(0, 0, 0, 0, 0)
 with (mypart1)
     instance_destroy()

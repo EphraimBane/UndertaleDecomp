@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 if (talkedto == 1 && global.choice == 0 && instance_exists(obj_dialoguer) == 0)
 {
     global.battlegroup = 20

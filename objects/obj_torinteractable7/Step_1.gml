@@ -1,4 +1,4 @@
-script_execute(scr_depth, 0, 0, 0, 0, 0)
+scr_depth(0, 0, 0, 0, 0)
 if (FL_TruePacifist == 0)
 {
     if instance_exists(obj_face_torieltalk)
@@ -13,4 +13,4 @@ if (FL_TruePacifist == 1)
     else
         image_index = 0
 }
-script_execute(scr_npcdir, 2)
+scr_npcdir(2)

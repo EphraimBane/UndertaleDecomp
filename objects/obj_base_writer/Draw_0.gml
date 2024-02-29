@@ -204,7 +204,7 @@ while (n <= stringpos)
     }
     else if (ch == "&")
     {
-        script_execute(SCR_NEWLINE)
+        SCR_NEWLINE()
         n++
         continue
     }
@@ -244,7 +244,7 @@ while (n <= stringpos)
         if (myletter == "^")
             n++
         if ((!vtext) && myx > writingxend)
-            script_execute(SCR_NEWLINE)
+            SCR_NEWLINE()
         var letterx = myx
         var offsetx = 0
         var offsety = 0

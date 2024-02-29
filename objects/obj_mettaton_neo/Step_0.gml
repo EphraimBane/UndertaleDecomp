@@ -113,10 +113,10 @@ if (global.myfight == 2)
 if (global.myfight == 4)
 {
     if (global.mercyuse == 0)
-        script_execute(scr_mercystandard)
+        scr_mercystandard()
 }
 if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
-    script_execute(scr_mercystandard)
+    scr_mercystandard()
 if (con == 21)
 {
     mypart1.hspeed = -3

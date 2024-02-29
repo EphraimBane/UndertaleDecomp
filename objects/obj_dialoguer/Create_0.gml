@@ -12,12 +12,12 @@ if instance_exists(obj_mainchara)
         {
             writer = instance_create((xx + 10), (yy - 5), OBJ_WRITER)
             writer.writingxend = (writer.writingxend_base - 38)
-            script_execute(scr_facechoice)
+            scr_facechoice()
         }
         else if (global.facechoice != 0)
         {
             writer = instance_create((xx + 68), (yy - 5), OBJ_WRITER)
-            script_execute(scr_facechoice)
+            scr_facechoice()
         }
         else
             writer = instance_create((xx + 10), (yy - 5), OBJ_WRITER)
@@ -29,12 +29,12 @@ if instance_exists(obj_mainchara)
         {
             writer = instance_create((xx + 10), (yy + 150), OBJ_WRITER)
             writer.writingxend = (writer.writingxend_base - 38)
-            script_execute(scr_facechoice)
+            scr_facechoice()
         }
         else if (global.facechoice != 0)
         {
             writer = instance_create((xx + 68), (yy + 150), OBJ_WRITER)
-            script_execute(scr_facechoice)
+            scr_facechoice()
         }
         else
             writer = instance_create((xx + 10), (yy + 150), OBJ_WRITER)

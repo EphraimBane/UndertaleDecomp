@@ -13,7 +13,7 @@ function scr_storageget()
 	    }
 	    else if (i == 10)
 	    {
-	        script_execute(scr_itemnospace)
+	        scr_itemnospace()
 	        break
 	    }
 	    else
@@ -22,6 +22,6 @@ function scr_storageget()
 	        continue
 	    }
 	}
-	script_execute(scr_itemnameb)
-	script_execute(scr_storagename, 300)
+	scr_itemnameb()
+	scr_storagename(300)
 }
