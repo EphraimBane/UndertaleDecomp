@@ -382,6 +382,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Ruins","folderPath":"folders/Tile Sets/Ruins.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Waterfall","folderPath":"folders/Tile Sets/Waterfall.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Castle","folderPath":"folders/Tile Sets/Castle.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"credits.txt","CopyToMask":-1,"filePath":"datafiles",},
@@ -3300,6 +3301,7 @@
     {"id":{"name":"spr_fightbt_hollow","path":"sprites/spr_fightbt_hollow/spr_fightbt_hollow.yy",},},
     {"id":{"name":"spr_fightbt_hollow_ja","path":"sprites/spr_fightbt_hollow_ja/spr_fightbt_hollow_ja.yy",},},
     {"id":{"name":"spr_itembt","path":"sprites/spr_itembt/spr_itembt.yy",},},
+    {"id":{"name":"ts_ruins_tint","path":"tilesets/ts_ruins_tint/ts_ruins_tint.yy",},},
     {"id":{"name":"spr_itembt_ja","path":"sprites/spr_itembt_ja/spr_itembt_ja.yy",},},
     {"id":{"name":"spr_itembt_hollow","path":"sprites/spr_itembt_hollow/spr_itembt_hollow.yy",},},
     {"id":{"name":"spr_itembt_hollow_ja","path":"sprites/spr_itembt_hollow_ja/spr_itembt_hollow_ja.yy",},},
