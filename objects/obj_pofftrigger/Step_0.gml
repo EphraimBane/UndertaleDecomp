@@ -23,6 +23,9 @@ if (global.plot == 60 && t == 10)
         global.plot = 65
         global.currentsong = caster_load("music/snowy.ogg")
         caster_loop(global.currentsong, 1, 0.95)
+		// Daniela: fix music not being pitched down in Genocide
+		if (!global.decomp_vars.VanillaMode && murder == 1)
+			caster_set_pitch(global.currentsong, 0.4);
         t = 9999
         with (obj_dogpoff)
             instance_destroy()
