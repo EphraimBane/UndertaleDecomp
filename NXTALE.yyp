@@ -384,9 +384,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Castle","folderPath":"folders/Tile Sets/Castle.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Ruins","folderPath":"folders/Tile Sets/Ruins.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Snowdin","folderPath":"folders/Tile Sets/Snowdin.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Waterfall","folderPath":"folders/Tile Sets/Waterfall.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Snowdin","folderPath":"folders/Tile Sets/Snowdin.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"credits.txt","CopyToMask":-1,"filePath":"datafiles",},
@@ -3075,6 +3075,7 @@
     {"id":{"name":"cmd_hp_set","path":"scripts/cmd_hp_set/cmd_hp_set.yy",},},
     {"id":{"name":"mus_spoopy","path":"sounds/mus_spoopy/mus_spoopy.yy",},},
     {"id":{"name":"mus_spoopy_wave","path":"sounds/mus_spoopy_wave/mus_spoopy_wave.yy",},},
+    {"id":{"name":"ts_icewater","path":"tilesets/ts_icewater/ts_icewater.yy",},},
     {"id":{"name":"mus_spoopy_holiday","path":"sounds/mus_spoopy_holiday/mus_spoopy_holiday.yy",},},
     {"id":{"name":"mus_undyneboss","path":"sounds/mus_undyneboss/mus_undyneboss.yy",},},
     {"id":{"name":"mus_endingexcerpt1","path":"sounds/mus_endingexcerpt1/mus_endingexcerpt1.yy",},},
