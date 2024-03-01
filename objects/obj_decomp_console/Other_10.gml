@@ -26,4 +26,5 @@ command_register("global_set", "Sets a global variable", [ "name", "value" ]);
 command_register("global_get", "Gets a global variable", [ "name" ]);
 command_register("room_speed", "Sets the room speed", [ "speed" ]);
 
-command_register("save", "Opens save menu");
+command_register("save", "Opens save menu"); // Vultu: Yay this is danielas first command !!
+command_register("battle_start", "Starts a Battle depending on the set battlegroup value", [ "value" ]);

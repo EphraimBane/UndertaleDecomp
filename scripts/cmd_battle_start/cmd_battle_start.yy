@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "command_push_function",
+  "name": "cmd_battle_start",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Console",
-    "path": "folders/Scripts/Decomp/Console.yy",
+    "name": "Commands",
+    "path": "folders/Scripts/Decomp/Console/Commands.yy",
   },
 }

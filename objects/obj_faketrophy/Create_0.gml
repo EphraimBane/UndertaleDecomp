@@ -5,6 +5,6 @@ text = "Trophy text not set!";
 
 padding = 2;
 
-alarm[0] = 30 * 4; // Vultu: 4 Seconds
+alarm[0] = 30 * 3; // Vultu: 3 Seconds
 do_fade = false;
 fader = 100;

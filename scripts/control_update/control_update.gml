@@ -21,6 +21,6 @@ function control_update()
 	for (var i = 0; i <= 2; i++)
 	{
 	    global.control_pressed[i] = ((!global.control_state[i]) && global.control_new_state[i])
-	    global.control_state[i] = global.control_new_state[i]
+		global.control_state[i] = global.control_new_state[i]
 	}
 }
