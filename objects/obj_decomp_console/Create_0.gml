@@ -20,6 +20,9 @@ prev_dir_y = 0;
 mouse_click_x = 0;
 mouse_click_y = 0;
 
+show_collision = false;
+show_position = false;
+
 #macro COMMAND_CONSOLE_HISTORY_MAX 64
 function activate() 
 {

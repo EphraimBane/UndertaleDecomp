@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Commands",
-    "path": "folders/Scripts/Decomp/Console/Commands.yy",
+    "name": "Room",
+    "path": "folders/Scripts/Decomp/Console/Commands/Room.yy",
   },
 }

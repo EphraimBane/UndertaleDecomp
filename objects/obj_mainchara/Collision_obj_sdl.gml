@@ -1,8 +1,9 @@
+
 if (global.phasing == 0 && global.interact == 0)
 {
     if (global.facing == Direction.Left)
     {
-        if (collision_point((bbox_left - 2), (bbox_top - 2), obj_solidparent, 0, 1) == noone)
+        if (collision_point((bbox_left - 2), (bbox_top - 2), obj_solidparent, false, true) == noone)
         {
             x = (xprevious - 3)
             y = (yprevious - 3)
@@ -12,7 +13,14 @@ if (global.phasing == 0 && global.interact == 0)
     }
     if (global.facing == Direction.Down)
     {
-        if (collision_point((bbox_right + 3), (bbox_bottom + 3), obj_solidparent, 0, 1) == noone)
+		/* trace($"({x},{y}) - ({bbox_right},{bbox_bottom})");
+		var inst = collision_point((bbox_right + 3), (bbox_bottom + 3), obj_solidparent, 0, true);
+		if (inst != noone)
+			trace(inst); */
+		var inst = collision_point((bbox_right + 3), (bbox_bottom + 3), obj_solidparent, false, true);
+		trace(collision_point((bbox_right + 3), (bbox_bottom + 3), obj_solidparent, false, true));
+        //if (collision_point((bbox_right + 3), (bbox_bottom + 3), obj_solidparent, false, true) == noone)
+		if (inst == noone)
         {
             x = (xprevious + 3)
             y = (yprevious + 3)

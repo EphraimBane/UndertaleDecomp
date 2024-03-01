@@ -1,9 +1,9 @@
 
-
-
 var saved_draw_state = new draw_state();
 
 draw_set_font(fnt_maintext);
+var char_height = string_height(" ");
+var char_width = string_width(" ");
 
 #region Plot Variable
 
@@ -23,14 +23,31 @@ if (global.monitorPlotVariable)
 }
 #endregion
 
+#region Position
+
+if (show_position && instance_exists(obj_mainchara))
+{
+	var pos = $"X,Y: ({obj_mainchara.x}, {obj_mainchara.y})";
+	var pos_width = string_width(pos);
+	var pos_height = string_height(pos);
+
+	var pos_x = view_get_xport(0);
+	var pos_y = view_get_yport(0) + (active * (char_height * 7) + 6);
+
+	draw_set_color(c_black);
+	ossafe_fill_rectangle(pos_x, pos_y, pos_x + pos_width, pos_y + pos_height);
+	draw_set_color(c_white);
+	draw_text(pos_x, pos_y, pos);
+}
+#endregion
+
 if (!active)
 {
 	draw_load_state(saved_draw_state);
 	delete saved_draw_state;
 	return;
 }
-var char_height = string_height(" ");
-var char_width = string_width(" ");
+
 
 var bounds_rect = {
 	x : view_get_xport(0),
@@ -175,8 +192,6 @@ draw_set_color(c_white);
 draw_text(name_x, name_y, room_name);
 
 #endregion
-
-
 draw_load_state(saved_draw_state);
 
 delete saved_draw_state;

@@ -4,7 +4,7 @@ if (global.phasing == 0)
     {
         if (global.facing == Direction.Right)
         {
-            if (collision_point((bbox_right + 2), (bbox_top - 2), obj_solidparent, 0, 1) == -4)
+            if (collision_point((bbox_right + 2), (bbox_top - 2), obj_solidparent, false, true) == noone)
             {
                 x = (xprevious + 3)
                 y = (yprevious - 3)
@@ -14,7 +14,7 @@ if (global.phasing == 0)
         }
         if (global.facing == Direction.Down)
         {
-            if (collision_point((bbox_left - 3), (bbox_bottom + 3), obj_solidparent, 0, 1) == -4)
+            if (collision_point((bbox_left - 3), (bbox_bottom + 3), obj_solidparent, false, true) == noone)
             {
                 x = (xprevious - 3)
                 y = (yprevious + 3)

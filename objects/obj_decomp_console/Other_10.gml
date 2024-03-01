@@ -28,3 +28,6 @@ command_register("room_speed", "Sets the room speed", [ "speed" ]);
 
 command_register("save", "Opens save menu"); // Vultu: Yay this is danielas first command !!
 command_register("battle_start", "Starts a Battle depending on the set battlegroup value", [ "value" ]);
+command_register("show_solid", "Toggles the solid overlay", [ ]);
+command_register("pos_show", "Toggles the position overlay", [ ]);
+command_register("pos_set", "Sets the position of the player", [ "x", "y" ]);
