@@ -13,7 +13,7 @@ if (global.phasing == 0 && global.interact == 0)
     }
     if (global.facing == Direction.Down)
     {
-		if (collision_point((bbox_right + 3), (bbox_bottom + 3), obj_solidparent, false, true))
+		if (collision_point((bbox_right + 3), (bbox_bottom + 3), obj_solidparent, false, true) == noone)
         {
             x = (xprevious + 3)
             y = (yprevious + 3)
