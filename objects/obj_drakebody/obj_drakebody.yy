@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Snowdrake",
+    "path": "folders/Objects/Battle/Snowdrake.yy",
   },
   "parentObjectId": {
     "name": "obj_monsterparent",

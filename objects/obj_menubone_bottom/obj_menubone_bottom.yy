@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Sans",
+    "path": "folders/Objects/Battle/Sans.yy",
   },
   "parentObjectId": {
     "name": "obj_sansbullet_parent",

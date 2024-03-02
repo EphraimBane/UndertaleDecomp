@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Gytrot",
+    "path": "folders/Objects/Battle/Gytrot.yy",
   },
   "parentObjectId": null,
   "persistent": false,

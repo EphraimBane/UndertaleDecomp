@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Skeleton House",
+    "path": "folders/Objects/Overworld/Tundra/Snowdin/Skeleton House.yy",
   },
   "parentObjectId": {
     "name": "obj_solidsmall",

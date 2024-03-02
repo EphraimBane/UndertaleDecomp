@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Chara Void",
+    "path": "folders/Objects/Overworld/Chara Void.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Mettaton",
-    "path": "folders/Objects/Overworld/Hotlands/Mettaton.yy",
+    "path": "folders/Objects/Overworld/Hotland/Mettaton.yy",
   },
   "parentObjectId": null,
   "persistent": false,

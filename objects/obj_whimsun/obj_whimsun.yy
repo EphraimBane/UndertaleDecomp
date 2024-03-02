@@ -14,8 +14,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Whimsun",
+    "path": "folders/Objects/Battle/Whimsun.yy",
   },
   "parentObjectId": {
     "name": "obj_monsterparent",

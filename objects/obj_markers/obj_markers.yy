@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Markers",
+    "path": "folders/Objects/Common/Markers.yy",
   },
   "parentObjectId": null,
   "persistent": false,

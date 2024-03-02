@@ -15,8 +15,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Migospel",
+    "path": "folders/Objects/Battle/Migospel.yy",
   },
   "parentObjectId": {
     "name": "obj_monsterparent",

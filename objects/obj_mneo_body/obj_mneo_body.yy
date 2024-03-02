@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "NEO",
+    "path": "folders/Objects/Battle/Mettaton/NEO.yy",
   },
   "parentObjectId": null,
   "persistent": false,

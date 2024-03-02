@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Mettaton",
+    "path": "folders/Objects/Overworld/Hotland/Mettaton.yy",
   },
   "parentObjectId": {
     "name": "obj_readablesolid",

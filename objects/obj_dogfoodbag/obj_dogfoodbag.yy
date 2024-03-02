@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Garage",
+    "path": "folders/Objects/Overworld/Tundra/Snowdin/Garage.yy",
   },
   "parentObjectId": {
     "name": "obj_readable",

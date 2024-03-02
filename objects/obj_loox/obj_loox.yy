@@ -16,8 +16,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Loox",
+    "path": "folders/Objects/Battle/Loox.yy",
   },
   "parentObjectId": {
     "name": "obj_monsterparent",

@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Papyrus",
+    "path": "folders/Objects/Battle/Papyrus.yy",
   },
   "parentObjectId": {
     "name": "obj_monsterparent",

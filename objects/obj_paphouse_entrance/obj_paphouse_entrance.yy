@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Snowdin",
+    "path": "folders/Objects/Overworld/Tundra/Snowdin.yy",
   },
   "parentObjectId": {
     "name": "obj_readable",

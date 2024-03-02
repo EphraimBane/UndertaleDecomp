@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Library",
+    "path": "folders/Objects/Overworld/Tundra/Snowdin/Library.yy",
   },
   "parentObjectId": {
     "name": "obj_readablesolid",

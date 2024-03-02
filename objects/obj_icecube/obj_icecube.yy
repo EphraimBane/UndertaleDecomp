@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Ice cap",
+    "path": "folders/Objects/Battle/Ice cap.yy",
   },
   "parentObjectId": {
     "name": "obj_monsterparent",

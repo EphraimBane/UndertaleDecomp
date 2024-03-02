@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Tundra",
-    "path": "folders/Objects/Overworld/Tundra.yy",
+    "name": "NPC",
+    "path": "folders/Objects/Overworld/Tundra/NPC.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Waterfall",
+    "path": "folders/Objects/Encounterers/Waterfall.yy",
   },
   "parentObjectId": {
     "name": "obj_encountererparent",

@@ -14,8 +14,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Toriel",
+    "path": "folders/Objects/Battle/Dreamurr/Toriel.yy",
   },
   "parentObjectId": null,
   "persistent": false,

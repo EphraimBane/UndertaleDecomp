@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Core",
-    "path": "folders/Objects/Overworld/Hotlands/Core.yy",
+    "path": "folders/Objects/Overworld/Hotland/Core.yy",
   },
   "parentObjectId": {
     "name": "obj_coreobj_parent",

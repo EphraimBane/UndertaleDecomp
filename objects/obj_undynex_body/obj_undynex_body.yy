@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Undyne",
-    "path": "folders/Objects/Battle/Undyne.yy",
+    "name": "EX",
+    "path": "folders/Objects/Battle/Undyne/EX.yy",
   },
   "parentObjectId": null,
   "persistent": false,

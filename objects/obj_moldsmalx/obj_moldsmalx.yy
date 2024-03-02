@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Moldsmal",
+    "path": "folders/Objects/Battle/Moldsmal.yy",
   },
   "parentObjectId": {
     "name": "obj_monsterparent",
