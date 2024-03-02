@@ -23,5 +23,5 @@ MrPorkchop - Made the Icon<br>
 [Clovercorp](https://twitter.com/silverparasoul) - Came up with the Name 
 
 ## PR Helpers
-[Zyle](https://zyle.dev/)
+[Zyle](https://zyle.dev/)<br>
 [Marioalexsan](https://github.com/Marioalexsan)
