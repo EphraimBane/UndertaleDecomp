@@ -1,1 +1,1 @@
-global.inbattle = 1
+global.inbattle = true

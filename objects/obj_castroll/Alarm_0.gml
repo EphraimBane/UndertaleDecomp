@@ -1,4 +1,4 @@
-global.inbattle = 1
+global.inbattle = true
 type = global.cast_type
 if (type == 0)
 {

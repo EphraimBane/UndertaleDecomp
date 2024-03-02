@@ -98,9 +98,9 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        scr_itemshift(_itemIndex, 0)
 	        break
 	    case Items.SpiderDonut:
-	        if (global.seriousbattle == 0)
+	        if (global.seriousbattle == false)
 	        {
-	            if (global.inbattle == 1)
+	            if (global.inbattle == true)
 	            {
 	                randomtext = ceil(random(10))
 	                if (randomtext > 9)
@@ -117,7 +117,7 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        scr_itemshift(_itemIndex, 0)
 	        break
 	    case Items.StoicOnion:
-	        if (global.seriousbattle == 0)
+	        if (global.seriousbattle == false)
 	        {
 	            randomtext = round(random(10))
 	            if (randomtext > 8)
@@ -129,7 +129,7 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        break
 	    case Items.GhostFruit:
 	        foodsounder = instance_create(0, 0, obj_foodsound)
-	        if (global.seriousbattle == 0)
+	        if (global.seriousbattle == false)
 	        {
 	            with (foodsounder)
 	                soundtype = 2
@@ -458,14 +458,14 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        scr_itemshift(argument0, 0)
 	        break
 	    case 36:
-	        if (global.inbattle == 0)
+	        if (global.inbattle == false)
 	        {
 	            instance_create(0, 0, obj_foodsound)
 	            scr_recoitem(15)
 	        }
-	        if (global.inbattle == 1)
+	        if (global.inbattle == true)
 	        {
-	            if (global.seriousbattle == 1)
+	            if (global.seriousbattle == true)
 	            {
 	                global.msg[0] = scr_gettext("item_use_36a")
 	                instance_create(0, 0, obj_foodsound)
@@ -526,7 +526,7 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        scr_itemshift(argument0, 0)
 	        break
 	    case 41:
-	        if (global.inbattle == 1)
+	        if (global.inbattle == true)
 	        {
 	            if (global.sp < 8)
 	            {
@@ -569,7 +569,7 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        }
 	        else
 	            grt = instance_create(0, 0, obj_foodsound)
-	        if (global.inbattle == 1)
+	        if (global.inbattle == true)
 	        {
 	            if (global.at < 150)
 	                global.at += 4

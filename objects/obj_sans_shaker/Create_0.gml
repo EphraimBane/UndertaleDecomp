@@ -7,5 +7,5 @@ with (obj_sans_shaker)
     event_user(0)
 }
 self_d = 1
-__view_set(0, 0, 0)
-__view_set(1, 0, 0)
+__view_set(VIEW_PROP_CAM_X, 0, 0)
+__view_set(VIEW_PROP_CAM_Y, 0, 0)

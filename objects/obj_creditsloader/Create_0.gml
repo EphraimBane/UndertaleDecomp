@@ -13,7 +13,7 @@ hitname[0] = ""
 songed = 0
 active = false
 drawbar = 0
-global.inbattle = 1
+global.inbattle = true
 ting = 0
 ossafe_ini_open("undertale.ini")
 curf = ini_read_real("EndF", "EndF", 0)

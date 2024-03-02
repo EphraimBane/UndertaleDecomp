@@ -15,7 +15,7 @@ if (myinteract == 3)
 if (con == 1 && instance_exists(OBJ_WRITER) == 0)
 {
     obj_mainchara.cutscene = true
-    __view_set(9, 0, noone)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
     con = 2
     alarm[4] = 10
     global.interact = 1

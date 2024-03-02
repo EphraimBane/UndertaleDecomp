@@ -1,2 +1,2 @@
-__view_set(0, myview, myx)
-__view_set(1, myview, myy)
+__view_set(VIEW_PROP_CAM_X, myview, myx)
+__view_set(VIEW_PROP_CAM_Y, myview, myy)

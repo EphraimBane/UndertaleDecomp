@@ -10,16 +10,16 @@ if (obj_mainchara.y < 840 && global.interact == 0 && con == 0)
 if (con == 2)
 {
     obj_mainchara.vspeed = 0
-    __view_set(9, 0, noone)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
     obj_mainchara.cutscene = true
     con = 3
 }
 if (con == 3)
 {
-    __view_set(1, 0, (__view_get(1, 0) - 3))
-    if (__view_get(1, 0) <= 622)
+    __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 3))
+    if (__view_get(VIEW_PROP_CAM_Y, 0) <= 622)
     {
-        __view_set(1, 0, 620)
+        __view_set(VIEW_PROP_CAM_Y, 0, 620)
         con = 4
     }
 }
@@ -221,7 +221,7 @@ if (con == 21)
         con = 6
     with (mett)
         instance_destroy()
-    __view_set(1, 0, (__view_get(1, 0) - 60))
+    __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 60))
     instance_create(0, 0, obj_mettdestroyed_event)
     instance_destroy()
 }
@@ -327,7 +327,7 @@ if (con == 52)
     with (mett)
         visible = false
     obj_mainchara.cutscene = false
-    __view_set(9, 0, obj_mainchara)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
     obj_mainchara.visible = true
     with (sixty)
         instance_destroy()

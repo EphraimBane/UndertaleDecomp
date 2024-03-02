@@ -52,7 +52,7 @@ if (conversation == 6 && instance_exists(OBJ_WRITER) == 0)
     papyrus.sprite_index = papyrus.usprite
     sans.sprite_index = sans.ltsprite
     obj_mainchara.cutscene = true
-    __view_set(9, 0, noone)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
     conversation = 7
     x = 220
     global.interact = 0

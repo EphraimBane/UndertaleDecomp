@@ -1,5 +1,5 @@
 obj_mainchara.cutscene = true
-__view_set(1, 0, 60)
+__view_set(VIEW_PROP_CAM_Y, 0, 60)
 cn = 0
 active = false
 ld = 0

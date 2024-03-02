@@ -1,9 +1,9 @@
 if (x < -100)
 {
-    if (__view_get(0, 0) < 0)
-        __view_set(0, 0, (__view_get(0, 0) + 4))
+    if (__view_get(VIEW_PROP_CAM_X, 0) < 0)
+        __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 4))
     else
-        __view_set(0, 0, 0)
+        __view_set(VIEW_PROP_CAM_X, 0, 0)
 }
 var text_x = 10
 if (global.language == "ja")
@@ -11,7 +11,7 @@ if (global.language == "ja")
 if (x > -440 && td == 0)
 {
     td = 1
-    t1 = instance_create(text_x, (__view_get(1, obj_backgrounder_parent) + 20), obj_creditsword)
+    t1 = instance_create(text_x, (__view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent) + 20), obj_creditsword)
     t1.text = scr_gettext("castroll_name_asgore")
     if (global.language == "ja")
         t1.text_xofs = -3
@@ -19,7 +19,7 @@ if (x > -440 && td == 0)
 }
 if (x > 0 && td == 1)
 {
-    t2 = instance_create(text_x, (__view_get(1, obj_backgrounder_parent) + 120), obj_creditsword)
+    t2 = instance_create(text_x, (__view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent) + 120), obj_creditsword)
     t2.text = scr_gettext("castroll_name_monster_kid")
     if (global.language == "ja")
         t2.text_xofs = -3
@@ -58,8 +58,8 @@ if (y < 360 && td == 2)
 }
 if instance_exists(t3)
 {
-    if (t3.y > (__view_get(1, 0) + 84))
-        t3.y = (__view_get(1, 0) + 84)
+    if (t3.y > (__view_get(VIEW_PROP_CAM_Y, 0) + 84))
+        t3.y = (__view_get(VIEW_PROP_CAM_Y, 0) + 84)
 }
 if (con == 3)
 {
@@ -74,8 +74,8 @@ if (con == 3)
 }
 if (con == 4)
 {
-    if (__view_get(1, 0) > 0)
-        __view_set(1, 0, (__view_get(1, 0) - 1))
+    if (__view_get(VIEW_PROP_CAM_Y, 0) > 0)
+        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 1))
     else
     {
         vspeed = -0.5
@@ -86,8 +86,8 @@ if (con == 4)
         {
             vol -= 0.01
             caster_set_volume(all, vol)
-            __view_set(0, 0, (__view_get(0, 0) - 2))
-            if (__view_get(0, 0) < -200)
+            __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 2))
+            if (__view_get(VIEW_PROP_CAM_X, 0) < -200)
                 room_goto(room_end_mtebott)
         }
     }

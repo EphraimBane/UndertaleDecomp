@@ -1,4 +1,4 @@
-global.inbattle = 1
+global.inbattle = true
 global.facing = Direction.Up
 FL_AnimationIndex = 0
 global.faceemotion = 0
@@ -7,7 +7,7 @@ image_xscale = 2
 image_yscale = 2
 doomcon = 0
 shudder = 8
-global.flag[17] = 1
+FL_UnknownBoolean17 = true
 obj_borderparent.visible = false
 obj_fakeheart.visible = false
 alarm[2] = 80

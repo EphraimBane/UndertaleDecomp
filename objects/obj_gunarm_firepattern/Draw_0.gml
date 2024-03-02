@@ -65,13 +65,13 @@ if (blast == 1)
 {
     if (bt > 4)
     {
-        __view_set(0, 0, (choose(1, -1) * random(3)))
-        __view_set(1, 0, (choose(1, -1) * random(3)))
+        __view_set(VIEW_PROP_CAM_X, 0, (choose(1, -1) * random(3)))
+        __view_set(VIEW_PROP_CAM_Y, 0, (choose(1, -1) * random(3)))
     }
     else
     {
-        __view_set(0, 0, 0)
-        __view_set(1, 0, 0)
+        __view_set(VIEW_PROP_CAM_X, 0, 0)
+        __view_set(VIEW_PROP_CAM_Y, 0, 0)
     }
     if (image_index == 5)
         image_index = 4

@@ -1,4 +1,4 @@
-global.flag[17] = 0
+FL_UnknownBoolean17 = false
 if (global.flag[389] == 4)
     global.flag[389] = 5
 if (global.plot > 116)

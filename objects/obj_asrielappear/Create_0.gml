@@ -6,5 +6,5 @@ alarm[4] = 150
 counter = 0
 flasher = 0
 fl = 0
-global.inbattle = 1
+global.inbattle = true
 scr_enable_screen_border(false)

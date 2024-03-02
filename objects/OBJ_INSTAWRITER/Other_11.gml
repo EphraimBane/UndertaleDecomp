@@ -1,4 +1,4 @@
-if (global.inbattle == 0)
+if (global.inbattle == false)
 {
     if (!instance_exists(obj_choicer))
     {

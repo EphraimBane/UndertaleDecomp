@@ -1,4 +1,4 @@
-if (global.inbattle == 0 && global.flag[18] == 0)
+if (global.inbattle == false && FL_UnknownBoolean18 == false)
     scr_end()
 if (messed == 1)
     window_set_caption("Floweytale")

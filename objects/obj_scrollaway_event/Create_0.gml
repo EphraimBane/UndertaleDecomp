@@ -1,4 +1,4 @@
-__view_set(1, 0, 620)
+__view_set(VIEW_PROP_CAM_Y, 0, 620)
 l1 = 1000010
 l2 = 1000000
 l2x = 999995

@@ -12,6 +12,25 @@ enum OSFlavors
 	Switch
 }
 
+#region Deprecated Function Macros
+#macro VIEW_PROP_CAM_X 0
+#macro VIEW_PROP_CAM_Y 1
+#macro VIEW_PROP_CAM_WIDTH 2
+#macro VIEW_PROP_CAM_HEIGHT 3
+#macro VIEW_PROP_CAM_ANGLE 4
+#macro VIEW_PROP_CAM_X_BORDER 5
+#macro VIEW_PROP_CAM_Y_BORDER 6
+#macro VIEW_PROP_CAM_X_SPEED 7
+#macro VIEW_PROP_CAM_Y_SPEED 8
+#macro VIEW_PROP_CAM_TARGET 9
+#macro VIEW_PROP_VISIBLE 10
+#macro VIEW_PROP_X_PORT 11
+#macro VIEW_PROP_Y_PORT 12
+#macro VIEW_PROP_W_PORT 13
+#macro VIEW_PROP_H_PORT 14
+#macro VIEW_PROP_CAMERA 15
+#macro VIEW_PROP_SURFACE_ID 16
+#endregion
 // Vultu: Taken from https://tomat.dev/undertale/flags
 // Vultu: Anything not in that list was added by or Daniela
 // If any of this is wrong or misleading, please feel free to push a PR <3
@@ -31,7 +50,8 @@ enum OSFlavors
 #macro FL_DummyStatus global.flag[14]
 #macro FL_InBattle global.flag[15]
 #macro FL_TypeHeartTransition global.flag[16]
-// 17 - 18 set but never checked ?
+#macro FL_UnknownBoolean17 global.flag[17]
+#macro FL_UnknownBoolean18 global.flag[18]
 // 19 Unused
 #macro FL_AnimationIndex global.flag[20]
 #macro FL_CookedNoodles global.flag[21]
@@ -390,7 +410,7 @@ enum OSFlavors
 #macro FL_SavedUndyneLostSoul global.flag[505]
 #macro FL_SavedAlphysLostSoul global.flag[506]
 #macro FL_SavedPapyrusLostSoul global.flag[507]
-#macro FL_SavedTorielLostSoul FL_SavedTorielLostSoul
+#macro FL_SavedTorielLostSoul global.flag[508]
 #macro FL_ToggleFinalBeam global.flag[509]
 #macro FL_PlotOver global.flag[510] // TODO: Look into this !!!
 #macro FL_AsrielConvoCounter global.flag[511]

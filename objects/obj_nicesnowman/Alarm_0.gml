@@ -3,14 +3,14 @@ global.msc = 226
 global.typer = 5
 global.facechoice = 0
 global.faceemotion = 0
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msc = 0
     global.msg[0] = scr_gettext("obj_nicesnowman_107") //* Oh^1?&* About that piece I gave you?/
     global.msg[1] = scr_gettext("obj_nicesnowman_108") //* .../
     global.msg[2] = scr_gettext("obj_nicesnowman_109") //* ... I never gave you anything./%%
     scr_itemcheck(Items.SnowmanPiece)
-    scr_storagecheck((Items.SnowmanPiece)
+    scr_storagecheck(Items.SnowmanPiece)
     if (FL_SnowmanStatus == SnowmanStatus.TookPiece || FL_SnowmanStatus == SnowmanStatus.TookPieceAfterDispose)
     {
         global.msg[0] = scr_gettext("obj_nicesnowman_120") //* Ah..^1. I can feel that piece&  of me has been well taken&  care of./

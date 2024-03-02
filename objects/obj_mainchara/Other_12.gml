@@ -1,4 +1,4 @@
-if (global.interact == 0 && global.flag[17] == 0)
+if (global.interact == 0 && FL_UnknownBoolean17 == false)
 {
     snd_play(snd_squeak)
     global.interact = 5

@@ -12,7 +12,7 @@ hspeed = 6
 con = 0
 timer = 0
 x = -700
-__view_set(0, 0, -180)
+__view_set(VIEW_PROP_CAM_X, 0, -180)
 td = 0
 var text_x = 15
 if (global.language == "ja")
@@ -27,4 +27,4 @@ caster_stop(global.endsong[5])
 caster_stop(global.endsong[6])
 caster_play(global.endsong[7], 1, 1)
 vol = 0.9
-global.inbattle = 0
+global.inbattle = false

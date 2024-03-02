@@ -128,7 +128,7 @@ function SCR_GAMESTART()
 	global.choices = 0
 	global.interact = 0
 	global.viewpan = 0
-	global.inbattle = 0
+	global.inbattle = false
 	global.facechoice = 0
 	global.faceemotion = 0
 	global.seriousbattle = 0

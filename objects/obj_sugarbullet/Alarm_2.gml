@@ -1,2 +1,2 @@
 hspeed = 0
-x = ((__view_get(0, 0) + (idealspot * 20)) + 10)
+x = ((__view_get(VIEW_PROP_CAM_X, 0) + (idealspot * 20)) + 10)

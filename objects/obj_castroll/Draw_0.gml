@@ -21,7 +21,7 @@ if (global.cast_type == 0)
         active = true
 }
 if (active == true)
-    __view_set(1, 0, (__view_get(1, 0) + 2))
+    __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 2))
 if (active == true)
 {
     if (global.cast_type == 0)
@@ -125,13 +125,13 @@ if (active == true)
             draw_set_color(c_yellow)
             scr_drawtext_centered_scaled(330, ((mon.y + 210) + info_yofs), scr_gettext("castroll_yellow_napstablook"), infoscale, infoscale)
         }
-        if (__view_get(1, 0) > 1520 && __view_get(1, 0) < 1540)
+        if (__view_get(VIEW_PROP_CAM_Y, 0) > 1520 && __view_get(VIEW_PROP_CAM_Y, 0) < 1540)
             exper = 0
-        if (__view_get(1, 0) > 1540)
+        if (__view_get(VIEW_PROP_CAM_Y, 0) > 1540)
         {
             exper += 0.2
-            __view_set(1, 0, (__view_get(1, 0) + exper))
-            if (__view_get(1, 0) > (napstablook.y + 305))
+            __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + exper))
+            if (__view_get(VIEW_PROP_CAM_Y, 0) > (napstablook.y + 305))
             {
                 do_room_goto = true
                 do_room_goto_target = room_end_highway
@@ -242,15 +242,15 @@ if (active == true)
             draw_set_color(c_yellow)
             scr_drawtext_centered_scaled((col2_x + 20), ((mon.y + 210) + info_yofs), scr_gettext("castroll_yellow_greaterdog"), infoscale, infoscale)
         }
-        if (__view_get(1, 0) > 1920 && __view_get(1, 0) < 1940)
+        if (__view_get(VIEW_PROP_CAM_Y, 0) > 1920 && __view_get(VIEW_PROP_CAM_Y, 0) < 1940)
             exper = 0
-        if (__view_get(1, 0) > 1940)
+        if (__view_get(VIEW_PROP_CAM_Y, 0) > 1940)
         {
             vol -= 0.02
             caster_set_volume(all, vol)
             exper += 0.5
-            __view_set(0, 0, (__view_get(0, 0) - exper))
-            if (__view_get(0, 0) < -600)
+            __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - exper))
+            if (__view_get(VIEW_PROP_CAM_X, 0) < -600)
             {
                 do_room_goto = true
                 do_room_goto_target = room_end_beach
@@ -367,15 +367,15 @@ if (active == true)
             draw_set_color(c_yellow)
             scr_drawtext_centered_scaled(col2_x, (mon.y + 210), scr_gettext("castroll_yellow_shyren"), 1, 1)
         }
-        if (__view_get(1, 0) > 1220 && __view_get(1, 0) < 1240)
+        if (__view_get(VIEW_PROP_CAM_Y, 0) > 1220 && __view_get(VIEW_PROP_CAM_Y, 0) < 1240)
             exper = 0
-        if (__view_get(1, 0) > 1240)
+        if (__view_get(VIEW_PROP_CAM_Y, 0) > 1240)
         {
             vol -= 0.02
             caster_set_volume(all, vol)
             exper += 0.2
-            __view_set(1, 0, (__view_get(1, 0) + exper))
-            if (__view_get(1, 0) > (shyren.y + 300))
+            __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + exper))
+            if (__view_get(VIEW_PROP_CAM_Y, 0) > (shyren.y + 300))
             {
                 do_room_goto = true
                 do_room_goto_target = room_end_metta
@@ -531,15 +531,15 @@ if (active == true)
             draw_set_color(c_yellow)
             scr_drawtext_centered_scaled(320, ((mon.y + 210) + info_yofs), scr_gettext("castroll_yellow_amalgamates"), infoscale, infoscale)
         }
-        if (__view_get(1, 0) > 3000 && __view_get(1, 0) < 3040)
+        if (__view_get(VIEW_PROP_CAM_Y, 0) > 3000 && __view_get(VIEW_PROP_CAM_Y, 0) < 3040)
             exper = 0
-        if (__view_get(1, 0) > 3040)
+        if (__view_get(VIEW_PROP_CAM_Y, 0) > 3040)
         {
             exper += 0.5
-            __view_set(0, 0, (__view_get(0, 0) + exper))
+            __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + exper))
             vol -= 0.02
             caster_set_volume(all, vol)
-            if (__view_get(0, 0) > 640)
+            if (__view_get(VIEW_PROP_CAM_X, 0) > 640)
             {
                 do_room_goto = true
                 do_room_goto_target = room_end_school

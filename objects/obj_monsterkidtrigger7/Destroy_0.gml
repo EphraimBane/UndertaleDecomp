@@ -1,2 +1,2 @@
-if (global.flag[17] == 1)
-    global.flag[17] = 0
+if (FL_UnknownBoolean17 == true)
+    FL_UnknownBoolean17 = false
