@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Froggit",
+    "path": "folders/Objects/Battle/Froggit.yy",
   },
   "parentObjectId": {
     "name": "obj_fakefroggit",

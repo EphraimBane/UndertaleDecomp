@@ -11,7 +11,7 @@ if (room == room_fire_prelab)
         open = 1
         doorx = 8
     }
-    if (FL_TrueLabEvent12 == 1)
+    if (FL_AlphysLabLocked == 1)
     {
         instance_create((x + 0), (y + 52), obj_solidsmall)
         active = false
@@ -28,7 +28,7 @@ else
         open = 1
         doorx = 8
     }
-    if (FL_TrueLabEvent12 == 1)
+    if (FL_AlphysLabLocked == 1)
     {
         instance_create((x + 15), (y + 51), obj_solidsmall)
         active = false

@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "NPC",
-    "path": "folders/Objects/Overworld/Snowdin/NPC.yy",
+    "name": "Grillbys",
+    "path": "folders/Objects/Overworld/Tundra/Snowdin/Grillbys.yy",
   },
   "parentObjectId": {
     "name": "obj_readablesolid",

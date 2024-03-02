@@ -1,5 +1,5 @@
-xx = __view_get(0, view_current)
-yy = __view_get(1, view_current)
+xx = __view_get(VIEW_PROP_CAM_X, view_current)
+yy = __view_get(VIEW_PROP_CAM_Y, view_current)
 mode = 0
 alarm[0] = 0
 mychoicex = (xx + 20)
@@ -17,7 +17,7 @@ if (room == room_water_undynefinal || room == room_water_undynefinal2 || room ==
 spdr = (distance_to_point(mychoicex, mychoicey) / 17)
 move_towards_point(mychoicex, mychoicey, spdr)
 snd_play(snd_battlefall)
-if (FL_TypeHeartTransition == 1)
+if (FL_TypeHeartTransition == HeartTransitionType.QuickBattle)
 {
     x = xstart
     y = ystart

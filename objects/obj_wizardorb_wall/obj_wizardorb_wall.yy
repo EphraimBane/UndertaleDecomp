@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Madjick",
+    "path": "folders/Objects/Battle/Madjick.yy",
   },
   "parentObjectId": {
     "name": "obj_bulletgenparent",

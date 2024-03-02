@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Undyne",
+    "path": "folders/Objects/Battle/Undyne.yy",
   },
   "parentObjectId": {
     "name": "obj_friendparent",

@@ -14,8 +14,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Greater Dog",
+    "path": "folders/Objects/Battle/Greater Dog.yy",
   },
   "parentObjectId": {
     "name": "obj_dogeparent",

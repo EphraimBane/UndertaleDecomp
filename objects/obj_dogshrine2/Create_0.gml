@@ -1,5 +1,5 @@
 bg_siner = 0
-if (caster_is_playing(global.currentsong) != 1 && FL_TruePacifist == 0)
+if (caster_is_playing(global.currentsong) != 1 && FL_TruePacifist == false)
 {
     global.currentsong = mus_wind
     caster_loop(global.currentsong, 0.5, 0.5)

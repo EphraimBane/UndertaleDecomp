@@ -6,7 +6,7 @@ if (scr_murderlv() >= 10)
     murder = 1
 instance_create(0, 0, obj_fader)
 vol = 0.5
-if (FL_TruePacifist == 0)
+if (FL_TruePacifist == false)
 {
     shopmus = caster_load("music/temshop.ogg")
     caster_loop(shopmus, vol, 1)

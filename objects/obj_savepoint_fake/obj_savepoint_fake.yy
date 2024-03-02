@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Omega Flowey",
+    "path": "folders/Objects/Overworld/Omega Flowey.yy",
   },
   "parentObjectId": {
     "name": "obj_interactable",

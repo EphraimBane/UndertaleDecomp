@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Solids",
+    "path": "folders/Objects/Common/Solids.yy",
   },
   "parentObjectId": {
     "name": "obj_solidparent",

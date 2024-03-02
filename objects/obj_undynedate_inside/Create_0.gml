@@ -30,7 +30,7 @@ if (con == 104)
     con = 104
     undyne.x = 208
     undyne.y = 10
-    __view_set(9, 0, noone)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
     obj_mainchara.cutscene = true
     obj_mainchara.x = 200
     obj_mainchara.y = 140

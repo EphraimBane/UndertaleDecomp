@@ -3,13 +3,13 @@ if (myinteract == 1 && buffer > 0)
     myinteract = 0
 if (myinteract == 1)
 {
-    if (FL_TrueLabEvent12 == 1)
+    if (FL_AlphysLabLocked == 1)
     {
         h = 0
-        scr_itemcheck(56)
+        scr_itemcheck(Items.UndynesLetter)
         if (haveit == true)
             h = 1
-        scr_itemcheck(57)
+        scr_itemcheck(Items.UndynesLetterEX)
         if (haveit == true)
             h = 1
         if (h == 0)

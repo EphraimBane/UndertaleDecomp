@@ -13,5 +13,5 @@ talkedto = 0
 image_speed = 0
 if (scr_murderlv() >= 7)
     instance_destroy()
-if (FL_TruePacifist == 0)
+if (FL_TruePacifist == false)
     instance_destroy()

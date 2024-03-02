@@ -41,7 +41,7 @@ if (con == 5)
             instance_destroy()
         con = 6
         global.interact = 0
-        if (FL_TruePacifist == 0)
+        if (FL_TruePacifist == false)
             global.currentsong = caster_load("music/muscle.ogg")
         else
             global.currentsong = caster_load("music/reunited.ogg")

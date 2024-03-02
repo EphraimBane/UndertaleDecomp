@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Snowdin",
-    "path": "folders/Objects/Overworld/Snowdin.yy",
+    "path": "folders/Objects/Overworld/Tundra/Snowdin.yy",
   },
   "parentObjectId": {
     "name": "obj_readablesolid",

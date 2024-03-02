@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Events",
+    "path": "folders/Objects/Overworld/Tundra/Snowdin/Events.yy",
   },
   "parentObjectId": null,
   "persistent": false,

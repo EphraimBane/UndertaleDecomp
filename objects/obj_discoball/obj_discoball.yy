@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Alphys Lab",
+    "path": "folders/Objects/Overworld/Hotland/Alphys Lab.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -12,7 +12,7 @@ direction = 270
 talkedto = 0
 image_speed = 0
 fun = false
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
     instance_destroy()
 if (scr_murderlv() >= 10)
     instance_destroy()

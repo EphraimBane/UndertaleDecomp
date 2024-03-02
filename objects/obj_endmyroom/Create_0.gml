@@ -13,4 +13,4 @@ dooropen = caster_load("music/end/dooropen.ogg")
 crickets = caster_load("music/end/crickets.ogg")
 doorclose = caster_load("music/end/doorclose.ogg")
 caster_loop(crickets, 1, 0.9)
-global.inbattle = 0
+global.inbattle = false

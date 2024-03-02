@@ -259,7 +259,7 @@ if (menu == 1 || menu == 2)
 if (menu == 3)
 {
     menumax = 4
-    if (FL_TruePacifist == 0)
+    if (FL_TruePacifist == false)
     {
         if (murder == 0)
         {
@@ -300,7 +300,7 @@ if (menu == 3)
             scr_shop_draw_talktitle(3, 0, scr_gettext("shop4_talk12_title"))
         }
     }
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
     {
         scr_shop_draw_talktitle(0, 0, scr_gettext("shop4_talk5_title"))
         scr_shop_draw_talktitle(1, 0, scr_gettext("shop4_talk6_title"))
@@ -376,7 +376,7 @@ if (menu == 4)
             global.msg[0] = scr_gettext("obj_shop4_545")
             global.msg[1] = scr_gettext("obj_shop4_546")
             global.msg[2] = scr_gettext("obj_shop4_547")
-            if (FL_TruePacifist == 1)
+            if (FL_TruePacifist == true)
             {
                 global.msg[0] = scr_gettext("obj_shop4_551")
                 global.msg[1] = scr_gettext("obj_shop4_552")
@@ -470,7 +470,7 @@ if (menu == 4)
                 global.msg[4] = scr_gettext("obj_shop4_655")
                 global.msg[5] = scr_gettext("obj_shop4_656")
             }
-            if (FL_TruePacifist == 1)
+            if (FL_TruePacifist == true)
             {
                 global.msg[0] = scr_gettext("obj_shop4_662")
                 global.msg[1] = scr_gettext("obj_shop4_663")
@@ -534,7 +534,7 @@ if (menu == 4)
                 FL_BurgerPantsMTTConvoCounter = 2
             if (FL_BurgerPantsMTTConvoCounter == 0)
                 FL_BurgerPantsMTTConvoCounter = 1
-            if (FL_TruePacifist == 1)
+            if (FL_TruePacifist == true)
             {
                 global.msg[0] = scr_gettext("obj_shop4_734")
                 global.msg[1] = scr_gettext("obj_shop4_735")
@@ -560,7 +560,7 @@ if (menu == 4)
             global.msg[4] = scr_gettext("obj_shop4_760")
             global.msg[5] = scr_gettext("obj_shop4_761")
             global.msg[6] = scr_gettext("obj_shop4_762")
-            if (FL_TruePacifist == 1)
+            if (FL_TruePacifist == true)
             {
                 global.msg[0] = scr_gettext("obj_shop4_767")
                 global.msg[1] = scr_gettext("obj_shop4_768")

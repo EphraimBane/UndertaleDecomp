@@ -1,5 +1,5 @@
 if (global.debug == true)
 {
-    FL_TruePacifist = 1
+    FL_TruePacifist = true
     room_restart()
 }

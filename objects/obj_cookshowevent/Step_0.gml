@@ -1,6 +1,6 @@
 if (con == 1)
 {
-    global.flag[17] = 1
+    FL_UnknownBoolean17 = true
     global.msc = 0
     global.msg[0] = scr_gettext("obj_cookshowevent_89")
     global.msg[1] = scr_gettext("obj_cookshowevent_90")
@@ -98,7 +98,7 @@ if (con == 13 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 14)
 {
-    conf = instance_create(((obj_mainchara.x - 5) + random(20)), (__view_get(1, obj_backgrounder_parent) - 2), obj_confetti)
+    conf = instance_create(((obj_mainchara.x - 5) + random(20)), (__view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent) - 2), obj_confetti)
     conf.hspeed = (-1 + random(2))
 }
 if (con == 15)
@@ -213,7 +213,7 @@ if (con == 32 && instance_exists(OBJ_WRITER) == 0)
     mett.sprite_index = spr_mettaton_talk
     mett.image_speed = 0.25
     caster_loop(mettsong, 1, 1)
-    __view_set(9, 0, noone)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
     global.typer = 27
     global.facechoice = 0
     global.msg[0] = scr_gettext("obj_cookshowevent_326")
@@ -237,13 +237,13 @@ if (con == 33)
 }
 if (con == 33 && instance_exists(OBJ_WRITER) == 0)
 {
-    __view_set(0, 0, (__view_get(0, 0) + 4))
-    if (__view_get(0, 0) > 318)
+    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 4))
+    if (__view_get(VIEW_PROP_CAM_X, 0) > 318)
         con = 34
 }
 if (con == 34)
 {
-    __view_set(0, 0, 320)
+    __view_set(VIEW_PROP_CAM_X, 0, 320)
     with (ff2)
         instance_destroy()
     con = 37
@@ -256,15 +256,15 @@ if (con == 38)
 }
 if (con == 39)
 {
-    if (__view_get(0, 0) > 0)
-        __view_set(0, 0, (__view_get(0, 0) - 16))
+    if (__view_get(VIEW_PROP_CAM_X, 0) > 0)
+        __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 16))
 }
 if (con == 40)
 {
     global.msg[0] = scr_gettext("obj_cookshowevent_376")
     mett.image_speed = 0.25
     instance_create(0, 0, obj_dialoguer)
-    __view_set(9, 0, obj_mainchara)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
     obj_mainchara.cutscene = false
     con = 41
 }
@@ -279,15 +279,15 @@ if (con == 50)
 {
     global.interact = 1
     obj_mainchara.cutscene = true
-    __view_set(9, 0, noone)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
     con = 51
 }
 if (con == 51)
 {
-    __view_set(0, 0, (__view_get(0, 0) + 3))
-    if (__view_get(0, 0) >= 320)
+    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 3))
+    if (__view_get(VIEW_PROP_CAM_X, 0) >= 320)
     {
-        __view_set(0, 0, 320)
+        __view_set(VIEW_PROP_CAM_X, 0, 320)
         con = 52
     }
 }
@@ -373,7 +373,7 @@ if (con == 61.2)
     con = 62
 if (con == 62 && instance_exists(OBJ_WRITER) == 0)
 {
-    __view_set(9, 0, noone)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
     obj_mainchara.cutscene = true
     obj_mainchara.visible = false
     chara = instance_create(obj_mainchara.x, obj_mainchara.y, obj_npc_marker)
@@ -402,13 +402,13 @@ if (con == 65 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 66)
 {
-    __view_set(1, 0, (__view_get(1, 0) - 5))
-    if (chara.y >= (__view_get(1, 0) + 205))
-        chara.y = (__view_get(1, 0) + 205)
-    if (__view_get(1, 0) <= 90)
+    __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 5))
+    if (chara.y >= (__view_get(VIEW_PROP_CAM_Y, 0) + 205))
+        chara.y = (__view_get(VIEW_PROP_CAM_Y, 0) + 205)
+    if (__view_get(VIEW_PROP_CAM_Y, 0) <= 90)
     {
-        __view_set(1, 0, 90)
-        chara.y = (__view_get(1, 0) + 205)
+        __view_set(VIEW_PROP_CAM_Y, 0, 90)
+        chara.y = (__view_get(VIEW_PROP_CAM_Y, 0) + 205)
         con = 67
         obj_counterscroller.fakev = 3
         obj_counterscroller.mode = 1
@@ -463,14 +463,14 @@ if (con == 73 && instance_exists(OBJ_WRITER) == 0)
 {
     dn = 1
     con = 74
-    __view_set(9, 0, obj_mainchara)
-    __view_set(5, 0, 140)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    __view_set(VIEW_PROP_CAM_X_BORDER, 0, 140)
 }
 if (con == 74)
 {
     flowey = instance_create(40, 360, obj_stalkerflowey)
     caster_free(all)
-    global.flag[17] = 0
+    FL_UnknownBoolean17 = false
     global.interact = 0
     global.plot = 135
     with (obj_kitchenforcefield)

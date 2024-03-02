@@ -8,5 +8,5 @@ if (room == room_truelab_fan)
     image_alpha = 0.6
 if (room == room_truelab_cooler)
     image_alpha = 1
-if (FL_TrueLabEvent10 == 1)
+if (FL_EndogenyEvent == 1)
     image_alpha = 0

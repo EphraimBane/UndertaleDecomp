@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "SoSorry",
+    "path": "folders/Objects/Battle/SoSorry.yy",
   },
   "parentObjectId": {
     "name": "blt_parent_noborder",

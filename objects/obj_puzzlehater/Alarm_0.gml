@@ -6,7 +6,7 @@ global.faceemotion = 0
 global.msg[0] = scr_gettext("obj_puzzlehater_76")
 if (FL_SoSorryStatus == 1)
     global.msg[0] = scr_gettext("obj_puzzlehater_80")
-if (FL_SoSorryStatus == 0 && FL_TruePacifist == 0)
+if (FL_SoSorryStatus == 0 && FL_TruePacifist == false)
 {
     global.msg[0] = scr_gettext("obj_puzzlehater_85")
     global.msg[1] = scr_gettext("obj_puzzlehater_86")
@@ -17,7 +17,7 @@ if (FL_SoSorryStatus == 0 && FL_TruePacifist == 0)
     global.msg[6] = scr_gettext("obj_puzzlehater_91")
     FL_SoSorryStatus = 1
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_puzzlehater_97")
     global.msg[1] = scr_gettext("obj_puzzlehater_98")

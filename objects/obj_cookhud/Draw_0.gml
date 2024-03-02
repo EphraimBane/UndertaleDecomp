@@ -1,7 +1,7 @@
-y = (__view_get(1, 0) + 40)
-if (con == 0 && x >= __view_get(0, 0))
+y = (__view_get(VIEW_PROP_CAM_Y, 0) + 40)
+if (con == 0 && x >= __view_get(VIEW_PROP_CAM_X, 0))
 {
-    x = __view_get(0, 0)
+    x = __view_get(VIEW_PROP_CAM_X, 0)
     hspeed = 0
     friction = 0
     con = 1

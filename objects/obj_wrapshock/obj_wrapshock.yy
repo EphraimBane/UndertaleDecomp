@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "True Pacifist Asgore",
+    "path": "folders/Objects/Battle/True Pacifist Asgore.yy",
   },
   "parentObjectId": null,
   "persistent": false,

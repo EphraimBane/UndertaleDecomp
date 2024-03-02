@@ -68,7 +68,7 @@ if (king == obj_musicobjectparent && zap == 0)
         }
         if (FL_UnusedMadjickSoundHandle != 0)
             caster_free(FL_UnusedMadjickSoundHandle)
-        caster_resume(-3)
+        caster_resume(all)
         global.turntimer = -1
         global.mnfight = 3
         global.myfight = -1

@@ -22,7 +22,7 @@ if (FL_DoggoStatus == DogStatus.Killed)
     global.msg[0] = scr_gettext("obj_grillbynpc_womandog_97")
 if (FL_DoggoStatus == DogStatus.Killed && FL_GreaterDogStatus == DogStatus.Killed)
     global.msg[0] = scr_gettext("obj_grillbynpc_womandog_99")
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_grillbynpc_womandog_105")
     global.msg[1] = scr_gettext("obj_grillbynpc_womandog_106")

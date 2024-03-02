@@ -5,8 +5,8 @@ if (buffer > 3)
     boxno = 300
     if (boxtype == 1)
         boxno = 312
-    xx = __view_get(0, view_current)
-    yy = (__view_get(1, view_current) + 6)
+    xx = __view_get(VIEW_PROP_CAM_X, view_current)
+    yy = (__view_get(VIEW_PROP_CAM_Y, view_current) + 6)
     var boxofs = 8
     var heartofs = 9
     var itemofs = 23

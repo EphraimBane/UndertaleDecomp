@@ -16,8 +16,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Shyren",
+    "path": "folders/Objects/Battle/Shyren.yy",
   },
   "parentObjectId": {
     "name": "obj_monsterparent",

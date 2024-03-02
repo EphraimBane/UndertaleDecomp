@@ -1,7 +1,7 @@
 if (con == 1)
 {
     obj_mainchara.cutscene = true
-    global.flag[17] = 1
+    FL_UnknownBoolean17 = true
     global.msc = 0
     global.typer = 5
     global.facechoice = 0
@@ -386,14 +386,14 @@ if (con == 100 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 105)
 {
-    if (__view_get(0, 0) > 240)
-        __view_set(0, 0, (__view_get(0, 0) - 3))
-    if (__view_get(0, 0) < 210)
-        __view_set(0, 0, (__view_get(0, 0) + 3))
-    if (__view_get(1, 0) < 140)
-        __view_set(1, 0, (__view_get(1, 0) + 3))
-    if (__view_get(1, 0) > 150)
-        __view_set(1, 0, (__view_get(1, 0) - 3))
+    if (__view_get(VIEW_PROP_CAM_X, 0) > 240)
+        __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 3))
+    if (__view_get(VIEW_PROP_CAM_X, 0) < 210)
+        __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 3))
+    if (__view_get(VIEW_PROP_CAM_Y, 0) < 140)
+        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 3))
+    if (__view_get(VIEW_PROP_CAM_Y, 0) > 150)
+        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 3))
 }
 if (con == 104)
 {
@@ -479,7 +479,7 @@ if (con == 125)
 }
 if (con == 125.1 && instance_exists(OBJ_WRITER) == 0)
 {
-    wordfall = instance_create((__view_get(0, 0) + 20), (__view_get(1, obj_backgrounder_parent) + 20), obj_wordfall)
+    wordfall = instance_create((__view_get(VIEW_PROP_CAM_X, 0) + 20), (__view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent) + 20), obj_wordfall)
     global.typer = 5
     global.msg[0] = scr_gettext("obj_mettnewsevent_694")
     global.msg[1] = scr_gettext("obj_mettnewsevent_695")
@@ -501,11 +501,11 @@ if (con == 126 && instance_exists(OBJ_WRITER) == 0)
 if (con == 127 && instance_exists(OBJ_WRITER) == 0)
 {
     global.facing = Direction.Up
-    __view_set(9, 0, noone)
-    if (__view_get(1, 0) > 40)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    if (__view_get(VIEW_PROP_CAM_Y, 0) > 40)
     {
         obj_mettanchor.y -= 15
-        __view_set(1, 0, (__view_get(1, 0) - 10))
+        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 10))
     }
     else
         con = 128
@@ -561,22 +561,22 @@ if (con == 129 && instance_exists(OBJ_WRITER) == 0)
     go = 0
     xx = obj_mainchara.x
     yy = obj_mainchara.y
-    if (__view_get(0, 0) < round(((xx - (__view_get(2, 0) / 2)) + 10)))
-        __view_set(0, 0, (__view_get(0, 0) + 5))
-    if (__view_get(0, 0) > round(((xx - (__view_get(2, 0) / 2)) + 10)))
-        __view_set(0, 0, (__view_get(0, 0) - 5))
-    if (abs((__view_get(0, 0) - round(((xx - (__view_get(2, 0) / 2)) + 10)))) < 6)
+    if (__view_get(VIEW_PROP_CAM_X, 0) < round(((xx - (__view_get(VIEW_PROP_CAM_WIDTH, 0) / 2)) + 10)))
+        __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 5))
+    if (__view_get(VIEW_PROP_CAM_X, 0) > round(((xx - (__view_get(VIEW_PROP_CAM_WIDTH, 0) / 2)) + 10)))
+        __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 5))
+    if (abs((__view_get(VIEW_PROP_CAM_X, 0) - round(((xx - (__view_get(VIEW_PROP_CAM_WIDTH, 0) / 2)) + 10)))) < 6)
     {
-        __view_set(0, 0, round(((xx - (__view_get(2, 0) / 2)) + 10)))
+        __view_set(VIEW_PROP_CAM_X, 0, round(((xx - (__view_get(VIEW_PROP_CAM_WIDTH, 0) / 2)) + 10)))
         go += 1
     }
-    if (__view_get(1, 0) < round(((yy - (__view_get(3, 0) / 2)) + 10)))
-        __view_set(1, 0, (__view_get(1, 0) + 5))
-    if (__view_get(1, 0) > round(((yy - (__view_get(3, 0) / 2)) + 10)))
-        __view_set(1, 0, (__view_get(1, 0) - 5))
-    if (abs((__view_get(1, 0) - round(((yy - (__view_get(3, 0) / 2)) + 10)))) < 6)
+    if (__view_get(VIEW_PROP_CAM_Y, 0) < round(((yy - (__view_get(VIEW_PROP_CAM_HEIGHT, 0) / 2)) + 10)))
+        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 5))
+    if (__view_get(VIEW_PROP_CAM_Y, 0) > round(((yy - (__view_get(VIEW_PROP_CAM_HEIGHT, 0) / 2)) + 10)))
+        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 5))
+    if (abs((__view_get(VIEW_PROP_CAM_Y, 0) - round(((yy - (__view_get(VIEW_PROP_CAM_HEIGHT, 0) / 2)) + 10)))) < 6)
     {
-        __view_set(1, 0, round(((yy - (__view_get(3, 0) / 2)) + 10)))
+        __view_set(VIEW_PROP_CAM_Y, 0, round(((yy - (__view_get(VIEW_PROP_CAM_HEIGHT, 0) / 2)) + 10)))
         go += 1
     }
     if (go == 2)
@@ -656,13 +656,13 @@ if (con == 131 && instance_exists(OBJ_WRITER) == 0)
     newpresent.bombtype = 5
     newgame = instance_create(210, 500, obj_mettnews_battleobj)
     newgame.bombtype = 6
-    newticker = instance_create(__view_get(0, 0), (__view_get(1, obj_backgrounder_parent) + 200), obj_mettnews_ticker)
+    newticker = instance_create(__view_get(VIEW_PROP_CAM_X, 0), (__view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent) + 200), obj_mettnews_ticker)
     newticker.on = 1
     newticker.doom = 1
     newticker.voff = 40
     doomtimer = instance_create(0, 0, obj_doomtimer)
     obj_mainchara.cutscene = false
-    __view_set(9, 0, obj_mainchara)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
     global.interact = 0
     global.currentsong = caster_load("music/news_battle.ogg")
     caster_loop(global.currentsong, 1, 1)
@@ -694,7 +694,7 @@ if (con == 162)
     }
     with (newticker)
         instance_destroy()
-    mett = instance_create((__view_get(0, 0) + 340), (__view_get(1, obj_backgrounder_parent) + 70), obj_mettanchor)
+    mett = instance_create((__view_get(VIEW_PROP_CAM_X, 0) + 340), (__view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent) + 70), obj_mettanchor)
     FL_AnimationIndex = 8
     mett.on = 2
     if instance_exists(obj_musfadeout)
@@ -840,7 +840,7 @@ if (con == 171 && instance_exists(OBJ_WRITER) == 0)
 {
     flowey = instance_create(40, 300, obj_stalkerflowey)
     obj_mainchara.cutscene = false
-    __view_set(9, 0, obj_mainchara)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
     with (obj_mettnews_ticker)
         instance_destroy()
     with (obj_mettanchor)
@@ -853,10 +853,10 @@ if (con == 171 && instance_exists(OBJ_WRITER) == 0)
     with (obj_bluelaser_o)
         active = 2
     global.interact = 0
-    global.flag[17] = 0
+    FL_UnknownBoolean17 = false
     global.mercy = 0
     scr_tempsave()
     instance_destroy()
 }
-if (__view_get(1, 0) <= 0)
-    __view_set(1, 0, 0)
+if (__view_get(VIEW_PROP_CAM_Y, 0) <= 0)
+    __view_set(VIEW_PROP_CAM_Y, 0, 0)

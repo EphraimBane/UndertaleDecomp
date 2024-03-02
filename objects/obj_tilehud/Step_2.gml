@@ -1,3 +1,3 @@
-x = (__view_get(0, 0) + 210)
+x = (__view_get(VIEW_PROP_CAM_X, 0) + 210)
 if (x < 210)
     x = 210

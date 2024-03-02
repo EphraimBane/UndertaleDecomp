@@ -19,7 +19,7 @@ if (talkedto > 0)
     global.msg[1] = scr_gettext("obj_snowdrakedad_88")
     global.msg[2] = scr_gettext("obj_snowdrakedad_89")
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_snowdrakedad_94")
     global.msg[1] = scr_gettext("obj_snowdrakedad_95")

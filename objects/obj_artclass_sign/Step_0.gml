@@ -26,7 +26,7 @@ if (myinteract == 1)
             global.msg[0] = scr_gettext("obj_artclass_sign_224")
             skip = true
         }
-        if (FL_TruePacifist == 1 || FL_DisableRandomEncounters == 1)
+        if (FL_TruePacifist == true || FL_DisableRandomEncounters == 1)
         {
             global.msg[0] = scr_gettext("obj_artclass_sign_231")
             skip = true

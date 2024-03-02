@@ -1,3 +1,3 @@
-global.flag[17] = 0
-if (FL_TruePacifist == 0)
+FL_UnknownBoolean17 = false
+if (FL_TruePacifist == false)
     audio_stop_all()

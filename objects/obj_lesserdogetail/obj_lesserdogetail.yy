@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Lesser Dog",
+    "path": "folders/Objects/Battle/Lesser Dog.yy",
   },
   "parentObjectId": {
     "name": "obj_dogeBtail",

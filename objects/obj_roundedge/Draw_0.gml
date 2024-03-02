@@ -4,8 +4,8 @@ if (part == 0)
     part = 1
 wp = (w0 / part)
 hp = (h0 / part)
-lside = __view_get(0, 0)
-rside = (__view_get(0, 0) + __view_get(2, 0))
+lside = __view_get(VIEW_PROP_CAM_X, 0)
+rside = (__view_get(VIEW_PROP_CAM_X, 0) + __view_get(VIEW_PROP_CAM_WIDTH, 0))
 side = 0
 curx = 0
 size = 1

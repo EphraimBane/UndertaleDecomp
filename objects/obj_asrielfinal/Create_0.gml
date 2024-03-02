@@ -26,7 +26,7 @@ with (obj_battlebg)
 nextbattle = 0
 gocon = 0
 gotimer = 0
-total = (((FL_SavedLostSoul1 + FL_SavedLostSoul2) + FL_SavedLostSoul3) + FL_SavedLostSoul4)
+total = (((FL_SavedUndyneLostSoul + FL_SavedAlphysLostSoul) + FL_SavedPapyrusLostSoul) + FL_SavedTorielLostSoul)
 if (total == 1)
     global.msg[0] = scr_gettext("obj_asrielfinal_58")
 if (total == 2)

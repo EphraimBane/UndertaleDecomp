@@ -26,7 +26,7 @@ if (FL_LesserDogStatus == DogStatus.MaxNeckSize)
     global.msg[3] = scr_gettext("obj_dogroom_npc_90")
     global.msg[4] = scr_gettext("obj_dogroom_npc_91")
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_dogroom_npc_96")
     global.msg[1] = scr_gettext("obj_dogroom_npc_97")

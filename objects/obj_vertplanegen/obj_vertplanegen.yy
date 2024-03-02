@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Tsunderplane",
+    "path": "folders/Objects/Battle/Tsunderplane.yy",
   },
   "parentObjectId": {
     "name": "obj_bulletgenparent",

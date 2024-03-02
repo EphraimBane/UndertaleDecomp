@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "NPC",
-    "path": "folders/Objects/Overworld/NPC.yy",
+    "name": "NPC - OLD!! SORT THESR",
+    "path": "folders/Objects/Overworld/NPC - OLD!! SORT THESR.yy",
   },
   "parentObjectId": {
     "name": "obj_readablesolid",

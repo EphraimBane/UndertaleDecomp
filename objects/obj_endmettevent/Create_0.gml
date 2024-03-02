@@ -33,4 +33,4 @@ alarm[5] = 5
 scr_loadendsong()
 caster_stop(global.endsong[3])
 caster_play(global.endsong[5], 1, 1)
-global.inbattle = 0
+global.inbattle = false

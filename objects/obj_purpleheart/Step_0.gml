@@ -70,7 +70,7 @@ if (ttype == 1)
 }
 if (ttype == 3)
 {
-    if (instance_exists(obj_hideouscupcake) == 0)
+    if (instance_exists(obj_hideouscupcake) == false)
         instance_create((xmid - xlen), 460, obj_hideouscupcake)
     if instance_exists(obj_hideouscupcake)
     {

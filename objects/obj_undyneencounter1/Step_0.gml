@@ -48,8 +48,8 @@ if (active == true)
     {
         if (ar.image_alpha > 0.02)
             ar.image_alpha -= 0.1
-        if (__view_get(1, 0) > 10)
-            __view_set(1, 0, (__view_get(1, 0) - 5))
+        if (__view_get(VIEW_PROP_CAM_Y, 0) > 10)
+            __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 5))
         else
             cn = 2
     }
@@ -69,7 +69,7 @@ if (active == true)
         global.currentsong = usong
         caster_loop(global.currentsong, 1, 1)
         global.interact = 0
-        global.flag[17] = 1
+        FL_UnknownBoolean17 = true
         FL_ArmorUndyneSaw = global.armor
         cn = 5
     }

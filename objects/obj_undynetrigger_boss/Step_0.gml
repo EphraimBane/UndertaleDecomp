@@ -18,7 +18,7 @@ with (obj_undynetrigger_boss)
     if (con == 1)
     {
         obj_mainchara.cutscene = true
-        __view_set(9, 0, noone)
+        __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
         con = 2
         alarm[4] = 33
     }
@@ -30,8 +30,8 @@ with (obj_undynetrigger_boss)
     }
     if (con == 3)
     {
-        __view_set(1, 0, (__view_get(1, 0) - 4))
-        if (__view_get(1, 0) < 80)
+        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 4))
+        if (__view_get(VIEW_PROP_CAM_Y, 0) < 80)
             con = 4
     }
     if (con == 4)
@@ -108,7 +108,7 @@ with (obj_undynetrigger_boss)
     {
         global.msg[0] = scr_gettext("obj_undynetrigger_boss_220")
         event_user(1)
-        __view_set(4, 0, 0)
+        __view_set(VIEW_PROP_CAM_ANGLE, 0, 0)
         con = 14
     }
     if (con == 14)
@@ -138,17 +138,17 @@ with (obj_undynetrigger_boss)
         undyne.image_index = 0
         undyne.image_speed = 0
         fakedrawer = 0
-        __view_set(10, 1, false)
-        __view_set(3, 1, 240)
-        __view_set(2, 1, 320)
-        __view_set(0, 1, 0)
-        __view_set(1, 1, 60)
-        __view_set(9, 0, noone)
-        global.flag[18] = 0
-        __view_set(0, 0, 0)
-        __view_set(1, 0, 60)
-        __view_set(3, 0, 240)
-        __view_set(2, 0, 320)
+        __view_set(VIEW_PROP_CAM_Y0, 1, false)
+        __view_set(VIEW_PROP_CAM_HEIGHT, 1, 240)
+        __view_set(VIEW_PROP_CAM_WIDTH, 1, 320)
+        __view_set(VIEW_PROP_CAM_X, 1, 0)
+        __view_set(VIEW_PROP_CAM_Y, 1, 60)
+        __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+        FL_UnknownBoolean18 = false
+        __view_set(VIEW_PROP_CAM_X, 0, 0)
+        __view_set(VIEW_PROP_CAM_Y, 0, 60)
+        __view_set(VIEW_PROP_CAM_HEIGHT, 0, 240)
+        __view_set(VIEW_PROP_CAM_WIDTH, 0, 320)
         alarm[4] = 20
     }
     if (con == 18)
@@ -311,11 +311,11 @@ with (obj_undynetrigger_boss)
     {
         obj_mainchara.visible = true
         obj_mainchara.y = rememberyyy
-        __view_set(1, 0, (__view_get(1, 0) + 8))
-        if (__view_get(1, 0) >= yy)
+        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 8))
+        if (__view_get(VIEW_PROP_CAM_Y, 0) >= yy)
         {
             save = instance_create(220, 660, obj_savepoint)
-            __view_set(9, 0, obj_mainchara)
+            __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
             obj_mainchara.cutscene = false
             global.interact = 0
             con = 26

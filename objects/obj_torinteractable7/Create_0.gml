@@ -11,7 +11,7 @@ facing = Direction.Right
 direction = 180
 talkedto = 0
 image_speed = 0
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     y += 20
     dsprite = spr_asriel_d

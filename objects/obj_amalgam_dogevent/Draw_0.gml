@@ -61,7 +61,7 @@ if (con == 9)
 {
     yl = caster_load("music/sfx_yowl.ogg")
     global.interact = 0
-    global.flag[17] = 1
+    FL_UnknownBoolean17 = true
     alarm[7] = 20
     con = 10
 }
@@ -77,20 +77,20 @@ if (con == 11)
     global.battlegroup = 86
     global.mercy = 1
     global.border = 0
-    FL_TypeHeartTransition = 0
+    FL_TypeHeartTransition = HeartTransitionType.Normal
     instance_create(0, 0, obj_battler)
     con = 12
     alarm[4] = 32
 }
 if (con == 13)
 {
-    global.flag[17] = 0
+    FL_UnknownBoolean17 = false
     global.interact = 0
     with (obj_mainchara)
         uncan = 0
     global.mercy = 0
     myinteract = 0
-    FL_TrueLabEvent10 = 1
+    FL_EndogenyEvent = 1
     scr_tempsave()
     instance_destroy()
 }

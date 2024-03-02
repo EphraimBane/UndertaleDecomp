@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "UI",
+    "path": "folders/Objects/Battle/UI.yy",
   },
   "parentObjectId": {
     "name": "obj_battlethingparent",

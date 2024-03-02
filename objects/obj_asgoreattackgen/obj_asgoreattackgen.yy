@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Asgore",
+    "path": "folders/Objects/Battle/Dreamurr/Asgore.yy",
   },
   "parentObjectId": null,
   "persistent": false,

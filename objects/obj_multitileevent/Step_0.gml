@@ -1,7 +1,7 @@
 if (con == 1)
 {
     global.phasing = 1
-    global.flag[17] = 1
+    FL_UnknownBoolean17 = true
     global.interact = 1
     obj_mainchara.x = 140
     obj_mainchara.y = -20
@@ -48,12 +48,12 @@ if (con == 6)
 }
 if (con == 7 && instance_exists(OBJ_WRITER) == 0)
 {
-    __view_set(9, 0, noone)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
     obj_mainchara.cutscene = true
-    __view_set(0, 0, (__view_get(0, 0) + 5))
-    if (__view_get(0, 0) >= 96)
+    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 5))
+    if (__view_get(VIEW_PROP_CAM_X, 0) >= 96)
     {
-        __view_set(0, 0, 100)
+        __view_set(VIEW_PROP_CAM_X, 0, 100)
         con = 8
         alarm[4] = 15
     }
@@ -84,10 +84,10 @@ if (con == 12)
 }
 if (con == 13 && instance_exists(OBJ_WRITER) == 0)
 {
-    __view_set(0, 0, (__view_get(0, 0) - 5))
-    if (__view_get(0, 0) <= 4)
+    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 5))
+    if (__view_get(VIEW_PROP_CAM_X, 0) <= 4)
     {
-        __view_set(0, 0, 0)
+        __view_set(VIEW_PROP_CAM_X, 0, 0)
         con = 14
         alarm[4] = 20
     }
@@ -123,7 +123,7 @@ if (con == 18 && instance_exists(OBJ_WRITER) == 0)
     flavor = 0
     global.phasing = 0
     obj_mainchara.cutscene = false
-    __view_set(9, 0, obj_mainchara)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
     global.interact = 0
     con = 20
 }
@@ -156,10 +156,10 @@ if (con == 30)
         with (obj_tileguy)
             instance_destroy()
     }
-    if (flame1.x < (__view_get(0, 0) - 20))
-        flame1.x = (__view_get(0, 0) - 20)
-    if (flame2.x > (__view_get(0, 0) + __view_get(2, 0)))
-        flame2.x = (__view_get(0, 0) + __view_get(2, 0))
+    if (flame1.x < (__view_get(VIEW_PROP_CAM_X, 0) - 20))
+        flame1.x = (__view_get(VIEW_PROP_CAM_X, 0) - 20)
+    if (flame2.x > (__view_get(VIEW_PROP_CAM_X, 0) + __view_get(VIEW_PROP_CAM_WIDTH, 0)))
+        flame2.x = (__view_get(VIEW_PROP_CAM_X, 0) + __view_get(VIEW_PROP_CAM_WIDTH, 0))
     con = 31
     alarm[4] = 60
 }
@@ -370,7 +370,7 @@ if (con == 59)
             instance_destroy()
     }
     obj_mainchara.cutscene = false
-    __view_set(9, 0, obj_mainchara)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
     global.interact = 1
     if (global.interact == 0)
         global.interact = 1
@@ -405,7 +405,7 @@ if (con == 62 && instance_exists(OBJ_WRITER) == 0)
     global.currentsong = caster_load("music/anothermedium.ogg")
     caster_loop(global.currentsong, 1, 1)
     global.interact = 0
-    global.flag[17] = 0
+    FL_UnknownBoolean17 = false
     global.plot = 168
     instance_destroy()
 }

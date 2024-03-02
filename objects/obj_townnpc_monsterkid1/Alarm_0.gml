@@ -7,7 +7,7 @@ global.msg[0] = scr_gettext("obj_townnpc_monsterkid1_80")
 global.msg[1] = scr_gettext("obj_townnpc_monsterkid1_81")
 if (talkedto > 0)
     global.msg[0] = scr_gettext("obj_townnpc_monsterkid1_82")
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     if (FL_MonsterKidSavedStatus == MonsterKidSavedStatus.RoomExit)
     {

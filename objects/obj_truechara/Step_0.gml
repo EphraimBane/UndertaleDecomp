@@ -127,7 +127,7 @@ if (con == 31 && instance_exists(OBJ_WRITER) == 0)
     con = 40
 if (con == 40)
 {
-    caster_stop(-3)
+    caster_stop(all)
     caster_play(ch_sfx2, 1, 0.95)
     sprite_index = spr_truechara_laugh
     image_speed = 0.5

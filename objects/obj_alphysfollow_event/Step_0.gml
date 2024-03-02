@@ -1,6 +1,6 @@
 if (con == 1 && global.interact == 0 && obj_mainchara.x > 400)
 {
-    al = instance_create((__view_get(0, obj_backgrounder_parent) - 40), obj_mainchara.ystart, obj_alphys_npc)
+    al = instance_create((__view_get(VIEW_PROP_CAM_X, obj_backgrounder_parent) - 40), obj_mainchara.ystart, obj_alphys_npc)
     al.mask_index = spr_alphys_megamask
     al.fun = true
     al.image_speed = 0.2
@@ -237,7 +237,7 @@ if (con == 70 && instance_exists(OBJ_WRITER) == 0)
     con = 71
     follow = 0
     global.interact = 0
-    FL_TrueLabEvent12 = 1
+    FL_AlphysLabLocked = 1
     global.plot = 199
     instance_destroy()
 }

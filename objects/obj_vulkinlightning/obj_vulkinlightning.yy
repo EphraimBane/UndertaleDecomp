@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Vulkin",
+    "path": "folders/Objects/Battle/Vulkin.yy",
   },
   "parentObjectId": {
     "name": "blt_parent",

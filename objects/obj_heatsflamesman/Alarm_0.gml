@@ -18,7 +18,7 @@ if (room == room_fire_elevator_r3)
         global.msg[0] = scr_gettext("obj_heatsflamesman_90")
     }
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
     global.msg[0] = scr_gettext("obj_heatsflamesman_97")
 mydialoguer = instance_create(0, 0, obj_dialoguer)
 talkedto += 1

@@ -1,6 +1,6 @@
 if (con == 1)
 {
-    global.flag[17] = 1
+    FL_UnknownBoolean17 = true
     global.msc = 0
     global.typer = 27
     global.facechoice = 0
@@ -14,10 +14,10 @@ if (con == 1)
 }
 if (con == 2 && instance_exists(OBJ_WRITER) == 0)
 {
-    __view_set(1, 0, (__view_get(1, 0) - 3))
+    __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 3))
     if (obj_mainchara.y < 238)
         obj_mainchara.y += 0.5
-    if (__view_get(1, 0) <= 0)
+    if (__view_get(VIEW_PROP_CAM_Y, 0) <= 0)
     {
         con = 9
         alarm[4] = 30
@@ -187,7 +187,7 @@ if (con == 28)
     con = 29
 }
 if (con == 29)
-    __view_set(1, 0, (__view_get(1, 0) + 1))
+    __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 1))
 if (con == 30)
 {
     mett.vspeed = 0
@@ -627,7 +627,7 @@ if (con == 243)
     con = 244
 }
 if (con == 244)
-    __view_set(1, 0, (__view_get(1, 0) + 4))
+    __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 4))
 if (con == 245)
 {
     mett2 = instance_create(mett.x, mett.y, obj_mettaton_dress2)

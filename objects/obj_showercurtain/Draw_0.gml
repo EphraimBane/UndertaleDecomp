@@ -33,7 +33,7 @@ if (myinteract == 1 && mode == 0)
     alarm[4] = 10
     caster_free(dist)
     snd_play(snd_splash)
-    FL_TrueLabEvent3 = 1
+    FL_ShowerCurtainAmalgamEvent = 1
     drawkey = 1
 }
 if (con == 2)
@@ -42,7 +42,7 @@ if (con == 2)
     global.interact = 0
     con = 3
 }
-if (myinteract == 1 && FL_TrueLabEvent3 == 1)
+if (myinteract == 1 && FL_ShowerCurtainAmalgamEvent == 1)
 {
     con = 4
     myinteract = 0
@@ -53,14 +53,14 @@ if (myinteract == 1 && FL_TrueLabEvent3 == 1)
     global.msg[0] = scr_gettext("obj_showercurtain_227")
     global.msg[1] = scr_gettext("obj_showercurtain_228")
     instance_create(0, 0, obj_dialoguer)
-    FL_TrueLabEvent3 = 2
+    FL_ShowerCurtainAmalgamEvent = 2
 }
 if (con == 4 && instance_exists(OBJ_WRITER) == 0)
 {
     con = 10
     global.interact = 0
 }
-if (myinteract == 1 && FL_TrueLabEvent3 >= 2)
+if (myinteract == 1 && FL_ShowerCurtainAmalgamEvent >= 2)
 {
     con = 12
     myinteract = 0

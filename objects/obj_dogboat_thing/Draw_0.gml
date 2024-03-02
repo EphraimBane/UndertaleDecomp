@@ -21,4 +21,4 @@ if (lapbg == 1)
     }
     tile_layer_shift(1000000, bgspeed, 0)
 }
-__view_set(1, 0, 0)
+__view_set(VIEW_PROP_CAM_Y, 0, 0)

@@ -1,5 +1,5 @@
 event_user(0)
-if (FL_TruePacifist == 0)
+if (FL_TruePacifist == false)
 {
     caster_free(global.currentsong)
     global.currentsong = caster_load("music/intronoise.ogg")

@@ -72,8 +72,8 @@ if (con == 17 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 19)
 {
-    FL_InBattle = 0
-    FL_TypeHeartTransition = 1
+    FL_InBattle = false
+    FL_TypeHeartTransition = HeartTransitionType.QuickBattle
     caster_free(all)
     global.battlegroup = 100
     instance_create(0, 0, obj_battler)

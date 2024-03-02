@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Triggers",
+    "path": "folders/Objects/Overworld/Ruins/Triggers.yy",
   },
   "parentObjectId": null,
   "persistent": false,

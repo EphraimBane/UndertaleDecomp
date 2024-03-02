@@ -6,13 +6,13 @@ if (mode == 0)
     draw_sprite(spr_chefhat, 0, (x + 11), (y - 12))
     if (con == 0)
     {
-        x = (__view_get(0, 0) + 350)
+        x = (__view_get(VIEW_PROP_CAM_X, 0) + 350)
         hspeed = -6
         con = 1
     }
     if (con == 1)
     {
-        if (x < (__view_get(0, 0) + 280))
+        if (x < (__view_get(VIEW_PROP_CAM_X, 0) + 280))
         {
             hspeed = 0
             con = 2
@@ -26,7 +26,7 @@ if (mode == 0)
     }
     if (con == 4)
     {
-        if (x > (__view_get(0, 0) + 360))
+        if (x > (__view_get(VIEW_PROP_CAM_X, 0) + 360))
         {
             hspeed = 0
             con = 5
@@ -39,20 +39,20 @@ if (mode == 1)
     modetime += (1 + (insanity / 2.7))
     if (modetime > 20 && modetime < 170)
     {
-        if (x > (__view_get(0, 0) + 300))
+        if (x > (__view_get(VIEW_PROP_CAM_X, 0) + 300))
             hspeed = (-5 - (insanity * 2))
-        if (x < __view_get(0, 0))
+        if (x < __view_get(VIEW_PROP_CAM_X, 0))
             hspeed = (5 + (insanity * 2))
     }
     if (modetime >= 170)
     {
-        if (x <= (__view_get(0, 0) + 150))
+        if (x <= (__view_get(VIEW_PROP_CAM_X, 0) + 150))
             hspeed = -6
-        if (x >= (__view_get(0, 0) + 150))
+        if (x >= (__view_get(VIEW_PROP_CAM_X, 0) + 150))
             hspeed = 6
-        if (x > (__view_get(0, 0) + 350))
+        if (x > (__view_get(VIEW_PROP_CAM_X, 0) + 350))
             setmode = 2
-        if (x < (__view_get(0, 0) - 40))
+        if (x < (__view_get(VIEW_PROP_CAM_X, 0) - 40))
             setmode = 2
     }
     y += cos((siner / 3))
@@ -74,20 +74,20 @@ if (mode == 2)
     modetime += (1 + (insanity / 2.7))
     if (modetime > 20 && modetime < 170)
     {
-        if (x > (__view_get(0, 0) + 300))
+        if (x > (__view_get(VIEW_PROP_CAM_X, 0) + 300))
             hspeed = -3
-        if (x < __view_get(0, 0))
+        if (x < __view_get(VIEW_PROP_CAM_X, 0))
             hspeed = 3
     }
     if (modetime >= 170)
     {
-        if (x <= (__view_get(0, 0) + 150))
+        if (x <= (__view_get(VIEW_PROP_CAM_X, 0) + 150))
             hspeed = -8
-        if (x >= (__view_get(0, 0) + 150))
+        if (x >= (__view_get(VIEW_PROP_CAM_X, 0) + 150))
             hspeed = 8
-        if (x > (__view_get(0, 0) + 350))
+        if (x > (__view_get(VIEW_PROP_CAM_X, 0) + 350))
             setmode = 3
-        if (x < (__view_get(0, 0) - 40))
+        if (x < (__view_get(VIEW_PROP_CAM_X, 0) - 40))
             setmode = 3
     }
     y += cos((siner / 3))
@@ -107,20 +107,20 @@ if (mode == 3)
     modetime += (1 + (insanity / 2.7))
     if (modetime > 20 && modetime < 170)
     {
-        if (x > (__view_get(0, 0) + 300))
+        if (x > (__view_get(VIEW_PROP_CAM_X, 0) + 300))
             hspeed = (-6 - insanity)
-        if (x < __view_get(0, 0))
+        if (x < __view_get(VIEW_PROP_CAM_X, 0))
             hspeed = (6 + insanity)
     }
     if (modetime >= 170)
     {
-        if (x <= (__view_get(0, 0) + 150))
+        if (x <= (__view_get(VIEW_PROP_CAM_X, 0) + 150))
             hspeed = -8
-        if (x >= (__view_get(0, 0) + 150))
+        if (x >= (__view_get(VIEW_PROP_CAM_X, 0) + 150))
             hspeed = 8
-        if (x > (__view_get(0, 0) + 350))
+        if (x > (__view_get(VIEW_PROP_CAM_X, 0) + 350))
             setmode = 1
-        if (x < (__view_get(0, 0) - 40))
+        if (x < (__view_get(VIEW_PROP_CAM_X, 0) - 40))
             setmode = 1
     }
     siner += 1
@@ -143,8 +143,8 @@ if (mode == 4)
 }
 if (setmode == 1)
 {
-    x = (__view_get(0, 0) + 350)
-    y = (__view_get(1, 0) + 20)
+    x = (__view_get(VIEW_PROP_CAM_X, 0) + 350)
+    y = (__view_get(VIEW_PROP_CAM_Y, 0) + 20)
     siner = 0
     mode = 1
     modetime = 0
@@ -157,8 +157,8 @@ if (setmode == 1)
 }
 if (setmode == 2)
 {
-    x = (__view_get(0, 0) + 350)
-    y = (__view_get(1, 0) + 20)
+    x = (__view_get(VIEW_PROP_CAM_X, 0) + 350)
+    y = (__view_get(VIEW_PROP_CAM_Y, 0) + 20)
     siner = 0
     mode = 2
     modetime = 0
@@ -169,8 +169,8 @@ if (setmode == 2)
 }
 if (setmode == 3)
 {
-    x = (__view_get(0, 0) + 420)
-    y = (__view_get(1, 0) + 20)
+    x = (__view_get(VIEW_PROP_CAM_X, 0) + 420)
+    y = (__view_get(VIEW_PROP_CAM_Y, 0) + 20)
     siner = 0
     mode = 3
     modetime = 0

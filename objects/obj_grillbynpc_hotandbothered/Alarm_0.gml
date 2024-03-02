@@ -22,7 +22,7 @@ if scr_deaddog()
     global.msg[0] = scr_gettext("obj_grillbynpc_hotandbothered_90")
     global.msg[1] = scr_gettext("obj_grillbynpc_hotandbothered_91")
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_grillbynpc_hotandbothered_98")
     global.msg[1] = scr_gettext("obj_grillbynpc_hotandbothered_99")

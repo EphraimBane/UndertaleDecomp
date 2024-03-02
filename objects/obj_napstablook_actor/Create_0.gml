@@ -13,12 +13,12 @@ direction = 90
 talkedto = 0
 image_speed = 0
 fun = false
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     direction = 270
     instance_create(216, 122, obj_npc_room)
 }
-if (FL_TruePacifist == 0 && room == room_water_blookyard)
+if (FL_TruePacifist == false && room == room_water_blookyard)
     instance_destroy()
 if (scr_murderlv() >= 10)
     instance_destroy()

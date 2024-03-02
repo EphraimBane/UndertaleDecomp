@@ -1,4 +1,4 @@
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     instance_destroy()
     return;

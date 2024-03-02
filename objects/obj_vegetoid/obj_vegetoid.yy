@@ -14,8 +14,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Vegetoid",
+    "path": "folders/Objects/Battle/Vegetoid.yy",
   },
   "parentObjectId": {
     "name": "obj_monsterparent",

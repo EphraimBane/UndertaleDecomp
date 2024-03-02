@@ -6,7 +6,7 @@ if (ll > 2)
         game_end()
     else
     {
-        caster_stop(-3)
+        caster_stop(all)
         force_black_screen = 1
         alarm[3] = -1
         alarm[4] = 150

@@ -335,13 +335,13 @@ if (global.mnfight == 5)
     {
         if (shakeamt < 9)
             shakeamt += 0.25
-        __view_set(0, 0, ((0 + random(shakeamt)) - random(shakeamt)))
-        __view_set(1, 0, ((0 + random(shakeamt)) - random(shakeamt)))
+        __view_set(VIEW_PROP_CAM_X, 0, ((0 + random(shakeamt)) - random(shakeamt)))
+        __view_set(VIEW_PROP_CAM_Y, 0, ((0 + random(shakeamt)) - random(shakeamt)))
     }
     if (trcon == 3)
     {
-        __view_set(0, 0, 0)
-        __view_set(1, 0, 0)
+        __view_set(VIEW_PROP_CAM_X, 0, 0)
+        __view_set(VIEW_PROP_CAM_Y, 0, 0)
         trcon = 6
         alarm[10] = 150
     }

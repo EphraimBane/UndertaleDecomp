@@ -8,18 +8,18 @@ if (dx > 110)
     doomtime -= 0.5
 if (dx >= 120 && instance_exists(obj_battlebomb))
 {
-    if (obj_battlebomb.defuse == 0 && obj_battlebomb.mypart1.got == 0 && dr == 0)
+    if (obj_battlebomb.defuse == false && obj_battlebomb.mypart1.got == false && dr == 0)
     {
         dr = 1
-        FL_FailedBombDefusing = 1
+        FL_FailedBombDefusing = true
         obj_battlebomb_body.type = 99
         obj_battlebomb_body.bombtype = 99
         obj_battlebomb_body.speed = 0
-        obj_battlebomb.failure = 1
+        obj_battlebomb.failure = true
         obj_battlebomb.con = 1001
     }
 }
-if (dx >= 120 && global.inbattle == 0 && global.interact == 0)
+if (dx >= 120 && global.inbattle == false && global.interact == 0)
 {
     finaltimer += 1
     if (finaltimer > 5)
@@ -31,5 +31,5 @@ if (dx >= 120 && global.inbattle == 0 && global.interact == 0)
         instance_destroy()
     }
 }
-if (__view_get(1, 0) <= 0)
-    __view_set(1, 0, 0)
+if (__view_get(VIEW_PROP_CAM_Y, 0) <= 0)
+    __view_set(VIEW_PROP_CAM_Y, 0, 0)

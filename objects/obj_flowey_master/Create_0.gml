@@ -1,5 +1,5 @@
 obj_screen.messed = 0
-global.inbattle = 1
+global.inbattle = true
 savetimer = 0
 loadtimer = 0
 darkmode = 0

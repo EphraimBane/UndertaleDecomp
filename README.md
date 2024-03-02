@@ -1,11 +1,14 @@
 # Undertale-DC
 - PLEASE NOTE THIS IS STILL A WORK IN PROGRESS! -<br>
-
 A decompilation of the latest version of UNDERTALE for the Nintendo Switch ported to the latest Gamemaker Studio 2 with many added toggleable enhancements<br>
 (If you are toby fox please hmu I'd love to talk :3)
 ### Main Contributors
 Vultumast - Project Lead - Code Cleanup, Bug Fixing, Some Sorting<br>
 [Daniela](https://lethallava.land/@daniela) - Main Project assistant - Code Cleanup, Bug Fixing, Most Sorting, Most Testing
+
+## Contact
+Discord: ``vultumast``<br>
+Email: ``vultumast@gmail.com``<br>
 
 ## Do you have permission to share this?
 I specifically emailed the fangamer UNDERTALE contact for permission, and was extremely specific that this was a DECOMP, and I was told explicitly:<br>
@@ -23,4 +26,5 @@ MrPorkchop - Made the Icon<br>
 [Clovercorp](https://twitter.com/silverparasoul) - Came up with the Name 
 
 ## PR Helpers
-[Zyle](https://zyle.dev/)
+[Zyle](https://zyle.dev/)<br>
+[Marioalexsan](https://github.com/Marioalexsan)

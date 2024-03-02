@@ -1,5 +1,5 @@
 fansfx = caster_load("music/deeploop2.ogg")
-if (FL_TrueLabEvent10 == 1)
+if (FL_EndogenyEvent == 1)
 {
     if (room == room_truelab_fan)
         caster_loop(fansfx, 0.5, 3)

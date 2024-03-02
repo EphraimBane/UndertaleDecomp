@@ -630,7 +630,7 @@ if (cn == 63)
     yy = al.y
     if (skip == true)
     {
-        caster_stop(-3)
+        caster_stop(all)
         global.currentsong = caster_loop(lab, 1, 0.75)
     }
     global.typer = 74
@@ -1495,7 +1495,7 @@ if (cn == 170)
     ossafe_ini_close()
     ossafe_savedata_save()
     instance_create(0, 0, obj_persistentfader)
-    FL_TrueLabEvent12 = 0
+    FL_AlphysLabLocked = 0
     FL_DatedAlphys = 10
     room_goto(room_water_trashzone1)
 }

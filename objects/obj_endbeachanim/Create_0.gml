@@ -18,7 +18,7 @@ crack = 0
 ctime = 0
 scr_loadendsong()
 caster_play(global.endsong[3], 1, 1)
-global.inbattle = 0
+global.inbattle = false
 o = scr_marker(18, 175, spr_onionsan_bright)
 o.depth = 200000
 o.image_speed = 0.1

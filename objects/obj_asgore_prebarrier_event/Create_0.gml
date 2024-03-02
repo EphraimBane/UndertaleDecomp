@@ -1,5 +1,5 @@
 con = 0
-if (global.plot > 207 || FL_TruePacifist == 1)
+if (global.plot > 207 || FL_TruePacifist == true)
     instance_destroy()
 else if (global.plot == 207)
 {

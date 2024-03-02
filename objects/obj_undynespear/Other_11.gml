@@ -1,8 +1,8 @@
 if (active == true)
 {
     global.border = 3
-    FL_InBattle = 1
-    FL_TypeHeartTransition = 1
+    FL_InBattle = true
+    FL_TypeHeartTransition = HeartTransitionType.QuickBattle
     FL_QuickBattle = 1
     SCR_BORDERSETUP()
     instance_create(0, 0, obj_battlerquick)

@@ -9,7 +9,7 @@ global.msg[2] = scr_gettext("obj_papcheckpoint_100")
 global.msg[3] = scr_gettext("obj_papcheckpoint_101")
 global.msg[4] = scr_gettext("obj_papcheckpoint_102")
 global.msg[5] = scr_gettext("obj_papcheckpoint_103")
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[5] = scr_gettext("obj_papcheckpoint_107")
     global.msg[6] = scr_gettext("obj_papcheckpoint_108")

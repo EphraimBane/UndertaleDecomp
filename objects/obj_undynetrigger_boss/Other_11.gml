@@ -4,20 +4,20 @@ if (playthesong == 0)
     caster_loop(global.currentsong, 0.9, 1)
     playthesong = 1
 }
-global.flag[18] = 1
+FL_UnknownBoolean18 = true
 fakedrawer = 1
 instance_create(0, 0, obj_flasher)
 scr_shake(3, 3, 2)
-__view_set(9, 0, object_index)
-__view_set(5, 0, 160)
-__view_set(6, 0, 100)
-__view_set(2, 0, 160)
-__view_set(3, 0, 120)
+__view_set(VIEW_PROP_CAM_TARGET, 0, object_index)
+__view_set(VIEW_PROP_CAM_X_BORDER, 0, 160)
+__view_set(VIEW_PROP_CAM_Y_BORDER, 0, 100)
+__view_set(VIEW_PROP_CAM_WIDTH, 0, 160)
+__view_set(VIEW_PROP_CAM_HEIGHT, 0, 120)
 snd_play(snd_damage)
 global.typer = 37
 global.msc = 0
 instance_create((10 + xx), (150 + yy), OBJ_WRITER)
-if (__view_get(4, 0) <= 0)
-    __view_set(4, 0, (10 + random(40)))
+if (__view_get(VIEW_PROP_CAM_ANGLE, 0) <= 0)
+    __view_set(VIEW_PROP_CAM_ANGLE, 0, (10 + random(40)))
 else
-    __view_set(4, 0, (-1 - random(40)))
+    __view_set(VIEW_PROP_CAM_ANGLE, 0, (-1 - random(40)))

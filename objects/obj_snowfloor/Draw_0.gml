@@ -5,7 +5,7 @@ while (yy < 5)
 {
     if (dodraw[xx, yy] == 1)
         draw_circle(snowx[xx, yy], snowy[xx, yy], 2.8, 0)
-    if (collision_circle(snowx[xx, yy], snowy[xx, yy], 2, obj_mainchara, 0, 1) != -4)
+    if (collision_circle(snowx[xx, yy], snowy[xx, yy], 2, obj_mainchara, 0, 1) != noone)
         moveme[xx, yy] = (floor(random(4)) + 2)
     if (moveme[xx, yy] > 1)
     {

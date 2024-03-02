@@ -4,7 +4,7 @@ if (con == 1)
         visible = false
     with (brokemett)
         visible = true
-    __view_set(1, 0, (__view_get(1, 0) + 20))
+    __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 20))
     con = 2
     alarm[4] = 50
 }
@@ -114,13 +114,13 @@ if (con == 19)
 if (con == 20 && instance_exists(OBJ_WRITER) == 0)
 {
     al.sprite_index = al.utsprite
-    __view_set(9, 0, obj_mainchara)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
     obj_mainchara.cutscene = true
     con = 21
     alarm[4] = 30
 }
 if (con == 21)
-    __view_set(1, 0, (__view_get(1, 0) + 2))
+    __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 2))
 if (con == 22)
 {
     obj_mainchara.cutscene = false

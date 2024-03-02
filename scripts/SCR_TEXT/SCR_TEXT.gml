@@ -504,7 +504,7 @@ function SCR_TEXT()
 	            global.msg[0] = scr_gettext("SCR_TEXT_511")
 	            global.msg[1] = scr_gettext("SCR_TEXT_512")
 	            global.msg[2] = scr_gettext("SCR_TEXT_513")
-	            if (FL_TruePacifist == 1)
+	            if (FL_TruePacifist == true)
 	            {
 	                global.msg[0] = scr_gettext("SCR_TEXT_516")
 	                global.msg[1] = scr_gettext("SCR_TEXT_517")
@@ -526,9 +526,9 @@ function SCR_TEXT()
 	        if (FL_SnowmanStatus == SnowmanStatus.TookPieceAfterDispose)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_540")
-	            scr_itemcheck(16)
-	            scr_storagecheck(16)
-	            if (haveit == false && haveit2 == 0)
+	            scr_itemcheck(Items.SnowmanPiece)
+	            scr_storagecheck(Items.SnowmanPiece)
+	            if (haveit == false && haveit2 == false)
 	            {
 	                global.msg[0] = scr_gettext("SCR_TEXT_545")
 	                global.msg[1] = scr_gettext("SCR_TEXT_546")
@@ -540,12 +540,12 @@ function SCR_TEXT()
 	        if (FL_SnowmanStatus == SnowmanStatus.TookPiece)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_554")
-	            scr_itemcheck(16)
-	            scr_storagecheck(16)
-	            if (haveit == false && haveit2 == 0)
+	            scr_itemcheck(Items.SnowmanPiece)
+	            scr_storagecheck(Items.SnowmanPiece)
+	            if (haveit == false && haveit2 == false)
 	            {
 	                global.msg[1] = scr_gettext("SCR_TEXT_559")
-	                scr_itemget(16)
+	                scr_itemget(Items.SnowmanPiece)
 	                if (noroom == 1)
 	                    global.msg[2] = scr_gettext("SCR_TEXT_563")
 	                else
@@ -570,7 +570,7 @@ function SCR_TEXT()
 	    case 227:
 	        if (global.choice == 0)
 	        {
-	            scr_itemget(16)
+	            scr_itemget(Items.SnowmanPiece)
 	            if (noroom == 1)
 	                global.msg[0] = scr_gettext("SCR_TEXT_590")
 	            else
@@ -683,8 +683,8 @@ function SCR_TEXT()
 	    case 232:
 	        doak = 0
 	        noroom = 0
-	        scr_itemcheck(26)
-	        if (FL_HaveUmbrella == 0)
+	        scr_itemcheck(Items.PunchCard)
+	        if (FL_HaveUmbrella == false)
 	        {
 	            if (FL_NicecreamDonationTotal < 5)
 	            {
@@ -701,7 +701,7 @@ function SCR_TEXT()
 	                global.msg[3] = scr_gettext("SCR_TEXT_714")
 	            }
 	        }
-	        if (FL_HaveUmbrella == 1)
+	        if (FL_HaveUmbrella == true)
 	        {
 	            if (FL_NicecreamDonationTotal < 5)
 	            {
@@ -727,7 +727,7 @@ function SCR_TEXT()
 	        }
 	        break
 	    case 233:
-	        scr_itemcheck(26)
+	        scr_itemcheck(Items.PunchCard)
 	        if (itemcount < 3)
 	        {
 	            if (FL_HaveUmbrella == 0)
@@ -1511,7 +1511,7 @@ function SCR_TEXT()
 	        else
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_1589")
-	            if (FL_TruePacifist == 1)
+	            if (FL_TruePacifist == true)
 	            {
 	                global.msg[0] = scr_gettext("SCR_TEXT_1592")
 	                global.msg[1] = scr_gettext("SCR_TEXT_1593")
@@ -1588,7 +1588,7 @@ function SCR_TEXT()
 	        global.msg[1] = scr_gettext("SCR_TEXT_1676")
 	        break
 	    case 513:
-	        scr_itemcheck(5)
+	        scr_itemcheck(Items.RockCandy)
 	        if (global.choice == 0)
 	        {
 	            if (haveit == false)
@@ -2016,7 +2016,7 @@ function SCR_TEXT()
 	        global.msg[2] = scr_gettext("SCR_TEXT_2065")
 	        if (obj_townnpc_innlady.jtext == 1)
 	            global.msg[0] = scr_gettext("SCR_TEXT_2069")
-	        if (FL_TruePacifist == 1)
+	        if (FL_TruePacifist == true)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_2074")
 	            global.msg[1] = scr_gettext("SCR_TEXT_2075")
@@ -2078,7 +2078,7 @@ function SCR_TEXT()
 	        if (global.choice == 0)
 	        {
 	            if (instance_exists(obj_starchecker) == 0)
-	                instance_create(__view_get(0, 0), __view_get(1, obj_backgrounder_parent), obj_starchecker)
+	                instance_create(__view_get(VIEW_PROP_CAM_X, 0), __view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent), obj_starchecker)
 	        }
 	        break
 	    case 551:
@@ -2105,7 +2105,7 @@ function SCR_TEXT()
 	        if (global.choice == 0)
 	        {
 	            if (instance_exists(obj_starchecker) == 0)
-	                instance_create(__view_get(0, 0), __view_get(1, obj_backgrounder_parent), obj_starchecker)
+	                instance_create(__view_get(VIEW_PROP_CAM_X, 0), __view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent), obj_starchecker)
 	            obj_mainchara.dsprite = spr_maincharad_pranked
 	            obj_mainchara.lsprite = spr_maincharal_pranked
 	        }
@@ -4334,7 +4334,7 @@ function SCR_TEXT()
 	        global.msg[0] = scr_gettext("SCR_TEXT_4713")
 	        break
 	    case 780:
-	        if (FL_TrueLabEvent10 == 0)
+	        if (FL_EndogenyEvent == 0)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_4720")
 	            global.msg[1] = scr_gettext("SCR_TEXT_4721")
@@ -4349,7 +4349,7 @@ function SCR_TEXT()
 	        {
 	            with (obj_mainchara)
 	                uncan = 1
-	            FL_TrueLabEvent10 = 1
+	            FL_EndogenyEvent = 1
 	            if instance_exists(obj_amalgam_dogevent)
 	                obj_amalgam_dogevent.con = 50
 	        }
@@ -4370,14 +4370,14 @@ function SCR_TEXT()
 	        }
 	        break
 	    case 784:
-	        if (FL_TrueLabEvent4 > 1)
+	        if (FL_BedAmalgamEvent > 1)
 	            global.msg[0] = scr_gettext("SCR_TEXT_4763")
-	        if (FL_TrueLabEvent4 == 1)
+	        if (FL_BedAmalgamEvent == 1)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_4767")
-	            FL_TrueLabEvent4 = 2
+	            FL_BedAmalgamEvent = 2
 	        }
-	        if (FL_TrueLabEvent4 == 0)
+	        if (FL_BedAmalgamEvent == 0)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_4772")
 	            global.msg[1] = scr_gettext("SCR_TEXT_4773")
@@ -4388,16 +4388,16 @@ function SCR_TEXT()
 	        global.msg[0] = scr_gettext("SCR_TEXT_4779")
 	        if (global.choice == 0)
 	        {
-	            if (FL_TrueLabEvent4 == 0)
+	            if (FL_BedAmalgamEvent == 0)
 	            {
 	                snd_play(snd_noise)
-	                FL_TrueLabEvent4 = 1
+	                FL_BedAmalgamEvent = 1
 	            }
 	        }
 	        break
 	    case 786:
 	        global.msg[0] = scr_gettext("SCR_TEXT_4791")
-	        if (FL_TrueLabEvent11 == 0)
+	        if (FL_TrueLabPowerSwitchOn == 0)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_4794")
 	            global.msg[1] = scr_gettext("SCR_TEXT_4795")
@@ -4412,7 +4412,7 @@ function SCR_TEXT()
 	                uncan = 1
 	            if instance_exists(obj_lab_powerswitch)
 	            {
-	                FL_TrueLabEvent11 = 1
+	                FL_TrueLabPowerSwitchOn = 1
 	                obj_lab_powerswitch.con = 5
 	            }
 	        }
@@ -5096,13 +5096,13 @@ function SCR_TEXT()
 	            global.msg[0] = scr_gettext("SCR_TEXT_5569")
 	            global.msg[1] = scr_gettext("SCR_TEXT_5570")
 	            global.msg[2] = scr_gettext("SCR_TEXT_5571")
-	            if (FL_TruePacifist == 1)
+	            if (FL_TruePacifist == true)
 	                global.msg[0] = scr_gettext("SCR_TEXT_5575")
 	        }
 	        else
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_5581")
-	            if (FL_TruePacifist == 1)
+	            if (FL_TruePacifist == true)
 	                global.msg[0] = scr_gettext("SCR_TEXT_5585")
 	        }
 	        break
@@ -5131,13 +5131,13 @@ function SCR_TEXT()
 	            global.msg[0] = scr_gettext("SCR_TEXT_5617")
 	            global.msg[1] = scr_gettext("SCR_TEXT_5618")
 	            global.msg[2] = scr_gettext("SCR_TEXT_5619")
-	            if (FL_TruePacifist == 1)
+	            if (FL_TruePacifist == true)
 	                global.msg[0] = scr_gettext("SCR_TEXT_5623")
 	        }
 	        else
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_5628")
-	            if (FL_TruePacifist == 1)
+	            if (FL_TruePacifist == true)
 	                global.msg[0] = scr_gettext("SCR_TEXT_5632")
 	        }
 	        break
@@ -5164,7 +5164,7 @@ function SCR_TEXT()
 	        global.msg[1] = scr_gettext("SCR_TEXT_5663")
 	        global.msg[2] = scr_gettext("SCR_TEXT_5664")
 	        global.msg[3] = scr_gettext("SCR_TEXT_5665")
-	        if (FL_TruePacifist == 1)
+	        if (FL_TruePacifist == true)
 	            global.msg[0] = scr_gettext("SCR_TEXT_5669")
 	        break
 	    case 865:
@@ -5173,37 +5173,37 @@ function SCR_TEXT()
 	            global.msg[0] = scr_gettext("SCR_TEXT_5676")
 	            global.msg[1] = scr_gettext("SCR_TEXT_5677")
 	            type = 0
-	            scr_itemcheck(38)
-	            if (haveit == true && global.flag[264] == 0)
+	            scr_itemcheck(Items.HotDog)
+	            if (haveit == true && FL_GotHushPuppy == 0)
 	                type = 1
-	            scr_itemcheck(39)
+	            scr_itemcheck(Items.HotCat)
 	            if (haveit == true)
 	                type = 2
-	            scr_itemcheck(28)
+	            scr_itemcheck(Items.DogSalad)
 	            if (haveit == true)
 	                type = 3
-	            scr_itemcheck(29)
+	            scr_itemcheck(Items.DogResidue29)
 	            if (haveit == true)
 	                type = 4
-	            scr_itemcheck(30)
+	            scr_itemcheck(Items.DogResidue30)
 	            if (haveit == true)
 	                type = 4
-	            scr_itemcheck(31)
+	            scr_itemcheck(Items.DogResidue31)
 	            if (haveit == true)
 	                type = 4
-	            scr_itemcheck(32)
+	            scr_itemcheck(Items.DogResidue32)
 	            if (haveit == true)
 	                type = 4
-	            scr_itemcheck(33)
+	            scr_itemcheck(Items.DogResidue33)
 	            if (haveit == true)
 	                type = 4
-	            scr_itemcheck(34)
+	            scr_itemcheck(Items.DogResidue34)
 	            if (haveit == true)
 	                type = 4
-	            if (type == 1 && global.flag[264] == 0)
+	            if (type == 1 && FL_GotHushPuppy == 0)
 	            {
-	                scr_itemremove(38)
-	                scr_itemget(62)
+	                scr_itemremove(Items.HotDog)
+	                scr_itemget(Items.HushPuppy)
 	                global.msg[0] = scr_gettext("SCR_TEXT_5705")
 	                global.msg[1] = scr_gettext("SCR_TEXT_5706")
 	                global.msg[2] = scr_gettext("SCR_TEXT_5707")
@@ -5214,7 +5214,7 @@ function SCR_TEXT()
 	                global.msg[7] = scr_gettext("SCR_TEXT_5712")
 	                global.msg[8] = scr_gettext("SCR_TEXT_5713")
 	                global.msg[9] = scr_gettext("SCR_TEXT_5714")
-	                global.flag[264] = 1
+	                FL_GotHushPuppy = 1
 	            }
 	            if (type == 2)
 	            {
@@ -5223,14 +5223,14 @@ function SCR_TEXT()
 	            }
 	            if (type == 3)
 	            {
-	                scr_itemremove(28)
+	                scr_itemremove(Items.DogSalad)
 	                global.msg[0] = scr_gettext("SCR_TEXT_5727")
 	                global.msg[1] = scr_gettext("SCR_TEXT_5728")
 	                global.msg[2] = scr_gettext("SCR_TEXT_5729")
 	            }
 	            if (type == 4)
 	            {
-	                rr = choose(29, 30, 31, 32, 33, 34)
+	                rr = choose(Items.DogResidue29, Items.DogResidue30, Items.DogResidue31, Items.DogResidue32, Items.DogResidue33, Items.DogResidue34)
 	                scr_itemget(rr)
 	                global.msg[0] = scr_gettext("SCR_TEXT_5736")
 	                global.msg[1] = scr_gettext("SCR_TEXT_5737")
@@ -5404,7 +5404,7 @@ function SCR_TEXT()
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5954")
 	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5955")
-	            if (FL_TruePacifist == 1)
+	            if (FL_TruePacifist == true)
 	            {
 	                global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5958")
 	                global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5959")
@@ -6354,7 +6354,7 @@ function SCR_TEXT()
 	        global.choices[5] = 0
 	        break
 	    case 1100:
-	        global.msg[0] = scr_gettext("SCR_TEXT_6804")
+	        global.msg[0] = scr_gettext("SCR_TEXT_6804") //   * Error
 	        global.choices[0] = 1
 	        global.choices[1] = 0
 	        global.choices[2] = 0
@@ -6363,7 +6363,7 @@ function SCR_TEXT()
 	        global.choices[5] = 0
 	        if (FL_AsrielFightConvoCounter == 0)
 	        {
-	            global.msg[0] = scr_gettext("SCR_TEXT_6814")
+	            global.msg[0] = scr_gettext("SCR_TEXT_6814") //   * Struggle
 	            global.choices[0] = 1
 	            global.choices[1] = 0
 	            global.choices[2] = 0
@@ -6373,22 +6373,22 @@ function SCR_TEXT()
 	        }
 	        if (FL_AsrielFightConvoCounter == 1)
 	        {
-	            if (FL_SavedLostSoul1 == 0)
-	                global.msg[0] = scr_gettext("SCR_TEXT_6825")
+	            if (FL_SavedUndyneLostSoul == false)
+	                global.msg[0] = scr_gettext("SCR_TEXT_6825") //\\W   * Undyne     
 	            else
-	                global.msg[0] = scr_gettext("SCR_TEXT_6826")
-	            if (FL_SavedLostSoul2 == 0)
-	                global.msg[0] += scr_gettext("SCR_TEXT_6828")
+	                global.msg[0] = scr_gettext("SCR_TEXT_6826") //\\W   \\Y* (Saved)    \\W
+	            if (FL_SavedAlphysLostSoul == false)
+	                global.msg[0] += scr_gettext("SCR_TEXT_6828") //   * Alphys \\W &
 	            else
-	                global.msg[0] += scr_gettext("SCR_TEXT_6829")
-	            if (FL_SavedLostSoul3 == 0)
-	                global.msg[0] += scr_gettext("SCR_TEXT_6831")
+	                global.msg[0] += scr_gettext("SCR_TEXT_6829") //   \\Y* (Saved)\\W &
+	            if (FL_SavedPapyrusLostSoul == false)
+	                global.msg[0] += scr_gettext("SCR_TEXT_6831") //\\W   * Papyrus       * Sans \\W &
 	            else
-	                global.msg[0] += scr_gettext("SCR_TEXT_6832")
-	            if (global.flag[508] == 0)
-	                global.msg[0] += scr_gettext("SCR_TEXT_6834")
+	                global.msg[0] += scr_gettext("SCR_TEXT_6832") //\\Y   * (Saved)       * (Saved)\\W &
+	            if (FL_SavedTorielLostSoul == false)
+	                global.msg[0] += scr_gettext("SCR_TEXT_6834") //\\W   * Toriel        * Asgore \\W 
 	            else
-	                global.msg[0] += scr_gettext("SCR_TEXT_6835")
+	                global.msg[0] += scr_gettext("SCR_TEXT_6835") //\\Y   * (Saved)       * (Saved)\\W 
 	            global.choices[0] = 1
 	            global.choices[1] = 1
 	            global.choices[2] = 1
@@ -6399,9 +6399,9 @@ function SCR_TEXT()
 	        if (FL_AsrielFightConvoCounter > 1)
 	        {
 	            if (FL_AsrielFightConvoCounter == 2)
-	                global.msg[0] = scr_gettext("SCR_TEXT_6848")
+	                global.msg[0] = scr_gettext("SCR_TEXT_6848") //   * Someone else
 	            if (FL_AsrielFightConvoCounter == 3)
-	                global.msg[0] = scr_gettext("SCR_TEXT_6849")
+	                global.msg[0] = scr_gettext("SCR_TEXT_6849") //   * Asriel Dreemurr
 	            global.choices[0] = 1
 	            global.choices[1] = 0
 	            global.choices[2] = 0
@@ -6519,7 +6519,7 @@ function SCR_TEXT()
 	            global.msg[3] = scr_gettext("SCR_TEXT_6977")
 	            global.msg[4] = scr_gettext("SCR_TEXT_6978")
 	            global.msg[5] = scr_gettext("SCR_TEXT_6979")
-	            if (FL_CalledTorielMom == 1)
+	            if (FL_CalledTorielMom == true)
 	            {
 	                global.msg[3] = scr_gettext("SCR_TEXT_6982")
 	                global.msg[4] = scr_gettext("SCR_TEXT_6983")
@@ -6531,21 +6531,21 @@ function SCR_TEXT()
 	    case 1506:
 	        if (FL_TorielStatus == TorielStatus.Killed)
 	        {
-	            global.msg[0] = scr_gettext("SCR_TEXT_6994")
-	            global.msg[1] = scr_gettext("SCR_TEXT_6995")
-	            global.msg[2] = scr_gettext("SCR_TEXT_6996")
+	            global.msg[0] = scr_gettext("SCR_TEXT_6994") //* Dialing... /
+	            global.msg[1] = scr_gettext("SCR_TEXT_6995") //* ... /
+	            global.msg[2] = scr_gettext("SCR_TEXT_6996") //* But nobody came./%%
 	        }
 	        else
 	        {
-	            global.msg[0] = scr_gettext("SCR_TEXT_7000")
-	            global.msg[1] = scr_gettext("SCR_TEXT_7001")
-	            global.msg[2] = scr_gettext("SCR_TEXT_7002")
-	            scr_itemcheck(27)
+	            global.msg[0] = scr_gettext("SCR_TEXT_7000") //* Dialing... /
+	            global.msg[1] = scr_gettext("SCR_TEXT_7001") //* ... /
+	            global.msg[2] = scr_gettext("SCR_TEXT_7002") //* Nobody picked up./%%
+	            scr_itemcheck(Items.AnnoyingDog)
 	            if (haveit == true)
 	            {
-	                global.msg[0] = scr_gettext("SCR_TEXT_7007")
-	                global.msg[1] = scr_gettext("SCR_TEXT_7008")
-	                global.msg[2] = scr_gettext("SCR_TEXT_7009")
+	                global.msg[0] = scr_gettext("SCR_TEXT_7007") //* Dialing... /
+	                global.msg[1] = scr_gettext("SCR_TEXT_7008") //* ... /
+	                global.msg[2] = scr_gettext("SCR_TEXT_7009") //* The ringing is coming from&  inside your inventory./%%
 	            }
 	        }
 	        break
@@ -6564,7 +6564,7 @@ function SCR_TEXT()
 	        global.msg[2] = scr_gettext("SCR_TEXT_7027")
 	        break
 	    case 1510:
-	        if (FL_TruePacifist == 0)
+	        if (FL_TruePacifist == false)
 	            scr_papcall()
 	        else
 	            global.msg[0] = scr_gettext("SCR_TEXT_7040")

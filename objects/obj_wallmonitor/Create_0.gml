@@ -3,7 +3,7 @@ lit = 0
 active = true
 if (room == room_truelab_prepower)
     active = false
-if (FL_TrueLabEvent5 == 1)
+if (FL_PowerSwitchAmalgamEvent == 1)
 {
     active = false
     if (room == room_truelab_prepower)

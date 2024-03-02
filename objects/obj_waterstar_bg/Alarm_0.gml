@@ -1,4 +1,4 @@
-__view_set(0, 0, 300)
+__view_set(VIEW_PROP_CAM_X, 0, 300)
 obj_mainchara.x = 300
 image_xscale = size
 image_yscale = size
@@ -9,7 +9,7 @@ image_index = random(10)
 image_speed = 0.25
 go = 1
 obj_mainchara.x = rememberx
-__view_set(0, 0, rememberview)
+__view_set(VIEW_PROP_CAM_X, 0, rememberview)
 x = xhome
 if (obj_mainchara.x > (room_width - 90))
 {

@@ -44,6 +44,6 @@ else
     global.facing = Direction.Up
     global.interact = 1
     obj_mainchara.cutscene = true
-    __view_set(9, 0, obj_mainchara)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
 }
 x_maroon = merge_color(c_black, c_maroon, 0.35)

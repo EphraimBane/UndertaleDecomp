@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Doggo",
+    "path": "folders/Objects/Battle/Doggo.yy",
   },
   "parentObjectId": {
     "name": "obj_monsterparent",

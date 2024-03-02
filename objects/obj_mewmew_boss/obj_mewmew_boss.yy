@@ -18,8 +18,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Mad Mew Mew",
+    "path": "folders/Objects/Battle/Mad Mew Mew.yy",
   },
   "parentObjectId": {
     "name": "obj_monsterparent",

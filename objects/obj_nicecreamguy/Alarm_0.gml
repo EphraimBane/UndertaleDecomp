@@ -100,7 +100,7 @@ if (room == room_fire_hotelfront_1)
             global.msg[5] = scr_gettext("obj_nicecreamguy_220")
             FL_NiceCreamBusiness2 = 1
         }
-        if (FL_TruePacifist == 1)
+        if (FL_TruePacifist == true)
         {
             global.msg[0] = scr_gettext("obj_nicecreamguy_227")
             if (FL_NicecreamDonationTotal <= 10)

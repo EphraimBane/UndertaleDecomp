@@ -18,4 +18,4 @@ birb.image_xscale = -1
 timer = 0
 td = 0
 caster_play(mus_cast_2, 1, 1)
-global.inbattle = 0
+global.inbattle = false

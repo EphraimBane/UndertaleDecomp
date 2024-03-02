@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Reaperbird",
+    "path": "folders/Objects/Battle/Reaperbird.yy",
   },
   "parentObjectId": null,
   "persistent": false,

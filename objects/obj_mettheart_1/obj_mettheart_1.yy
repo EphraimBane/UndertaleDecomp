@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "EX",
+    "path": "folders/Objects/Battle/Mettaton/EX.yy",
   },
   "parentObjectId": {
     "name": "obj_mettheart_parent",

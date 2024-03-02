@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Skeleton House",
-    "path": "folders/Objects/Overworld/Snowdin/Skeleton House.yy",
+    "path": "folders/Objects/Overworld/Tundra/Snowdin/Skeleton House.yy",
   },
   "parentObjectId": {
     "name": "obj_readable",

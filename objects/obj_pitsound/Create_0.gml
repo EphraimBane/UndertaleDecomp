@@ -1,7 +1,7 @@
 siner = 0
 FL_InBattle = 0
 event_user(0)
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
     return;
 if (caster_is_playing(global.currentsong) != 1)
 {

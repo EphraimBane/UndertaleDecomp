@@ -323,7 +323,7 @@ if (menu == 3)
             draw_set_color(c_white)
         }
     }
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
     {
         scr_shop_draw_talktitle(0, 0, scr_gettext("shop3_talk5_title"))
         scr_shop_draw_talktitle(1, 0, scr_gettext("shop3_talk6_title"))
@@ -433,7 +433,7 @@ if (menu == 4)
                 cattywriter = instance_create(145, 110, OBJ_WRITER)
                 cattywriter.mycolor = 16759772
             }
-            else if (FL_TruePacifist == 0)
+            else if (FL_TruePacifist == false)
             {
                 if (FL_BurgerPantsGirlsConvoCounter == 7)
                 {
@@ -475,7 +475,7 @@ if (menu == 4)
         }
         if (sell == 4)
         {
-            if (FL_TruePacifist == 0)
+            if (FL_TruePacifist == false)
             {
                 if (FL_BrattyCattyConvoCounter == 2 || FL_BrattyCattyConvoCounter == 3)
                 {
@@ -515,7 +515,7 @@ if (menu == 4)
         }
         if (sell == 5)
         {
-            if (FL_TruePacifist == 0)
+            if (FL_TruePacifist == false)
             {
                 if (FL_MettatonConvoCounter == 1)
                 {
@@ -550,7 +550,7 @@ if (menu == 4)
         }
         if (sell == 6)
         {
-            if (FL_TruePacifist == 0)
+            if (FL_TruePacifist == false)
             {
                 if (FL_AlphysConvoCounter == 0)
                 {

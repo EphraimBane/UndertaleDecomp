@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Mysteryman",
+    "path": "folders/Objects/Overworld/Waterfall/Mysteryman.yy",
   },
   "parentObjectId": {
     "name": "obj_interactable",

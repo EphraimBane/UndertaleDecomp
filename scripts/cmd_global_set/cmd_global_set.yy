@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Commands",
-    "path": "folders/Scripts/Decomp/Console/Commands.yy",
+    "name": "Variable",
+    "path": "folders/Scripts/Decomp/Console/Commands/Variable.yy",
   },
 }

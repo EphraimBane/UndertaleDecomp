@@ -5,7 +5,7 @@ image_yscale = 1
 reeled = 0
 image_speed = 0
 orx = 0
-if (global.plot > 100 && FL_Fun == 65 && FL_TruePacifist == 0)
+if (global.plot > 100 && FL_Fun == 65 && FL_TruePacifist == false)
 {
     orx = 0
     if ossafe_file_exists("undertale.ini")

@@ -15,7 +15,7 @@ if (instance_exists(OBJ_WRITER) && myinteract != 0)
     if (xed > 0)
     {
         OBJ_WRITER.mystring[4] = scr_gettext("obj_smallfrog_xadvice_150")
-        if (FL_TruePacifist == 1)
+        if (FL_TruePacifist == true)
             OBJ_WRITER.mystring[4] = scr_gettext("obj_smallfrog_xadvice_153")
         xed = 0
     }

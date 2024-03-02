@@ -559,7 +559,7 @@ if (con == 132 && instance_exists(OBJ_WRITER) == 0)
     ossafe_savedata_save()
     global.typer = 63
     global.msc = 0
-    caster_stop(-3)
+    caster_stop(all)
     global.msg[0] = scr_gettext("obj_asgore_lastcutscene_831")
     global.msg[1] = scr_gettext("obj_asgore_lastcutscene_832")
     global.msg[2] = scr_gettext("obj_asgore_lastcutscene_833")

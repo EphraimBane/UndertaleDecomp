@@ -17,7 +17,7 @@ obj_vsflowey_heart.x = 314
 obj_vsflowey_heart.y = 422
 obj_vsflowey_heart.special = true
 obj_vsflowey_heart.sprite_index = spr_ourheart
-caster_stop(-3)
+caster_stop(all)
 caster_play(mus_hit, 1, 1)
 with (obj_floweybodyparent)
 {

@@ -1,4 +1,7 @@
-function scr_itemget()
+/// @func			scr_itemget(item)
+/// @desc			Attemps to gives an item to the player, check "noroom" for failure
+/// @param	{Real}	item
+function scr_itemget(_item)
 {
 	i = 0
 	loop = 1
@@ -8,10 +11,10 @@ function scr_itemget()
 	{
 	    if (global.item[i] == 0)
 	    {
-	        global.item[i] = argument0
+	        global.item[i] = _item
 	        break
 	    }
-	    else if (i == 8)
+	    else if (i == InventorySize)
 	    {
 	        scr_itemnospace()
 	        break

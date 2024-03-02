@@ -162,12 +162,12 @@ if (dcon > 0)
         obj_vsflowey_heart.sprite_index = spr_ourheart
         with (obj_floweyx_tv)
             tvmode = 10
-        caster_stop(-3)
+        caster_stop(all)
         caster_play(sfx_glock, 1, 1)
         with (obj_flowey_writer)
             instance_destroy()
-        __view_set(0, 0, 0)
-        __view_set(1, 0, 0)
+        __view_set(VIEW_PROP_CAM_X, 0, 0)
+        __view_set(VIEW_PROP_CAM_Y, 0, 0)
         with (obj_vsflowey_shaker)
             instance_destroy()
         with (obj_floweybodyparent)
@@ -336,7 +336,7 @@ if (dcon > 0)
     }
     if (dcon == 34)
     {
-        caster_stop(-3)
+        caster_stop(all)
         global.typer = 117
         global.msg[0] = scr_gettext("obj_flowey_master_1276")
         global.msg[1] = scr_gettext("obj_flowey_master_1277")
@@ -577,8 +577,8 @@ if (introcon > 0)
             mus_intro = caster_load("music/f_intro.ogg")
             caster_play(mus_intro, 1, 1)
         }
-        __view_set(1, 0, (__view_get(1, 0) + 480))
-        ny = __view_get(1, 0)
+        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 480))
+        ny = __view_get(VIEW_PROP_CAM_Y, 0)
         hy = obj_vsflowey_heart.y
         obj_vsflowey_heart.y += 480
         __background_set_colour(c_maroon)
@@ -609,7 +609,7 @@ if (introcon > 0)
             ny -= (12/11)
         if (introskip == 1)
             ny -= 480
-        __view_set(1, 0, floor(ny))
+        __view_set(VIEW_PROP_CAM_Y, 0, floor(ny))
         obj_vsflowey_heart.y = (hy + floor(ny))
     }
     if (introcon == 3)
@@ -620,7 +620,7 @@ if (introcon > 0)
         alarm[5] = 70
         if (introskip == 1)
             alarm[5] = 1
-        __view_set(1, 0, 0)
+        __view_set(VIEW_PROP_CAM_Y, 0, 0)
         obj_vsflowey_heart.y = floor(obj_vsflowey_heart.y)
     }
     if (introcon == 5)
@@ -653,7 +653,7 @@ if (introcon > 0)
     {
         sh = instance_create(0, 0, obj_vsflowey_shaker)
         sh.decay = 0
-        caster_stop(-3)
+        caster_stop(all)
         caster_play(sfx_laugh, 1, 1)
         obj_floweyx_mouth.laugh = 1
         obj_floweyx_tv.tvmode = 20
@@ -664,8 +664,8 @@ if (introcon > 0)
     {
         with (sh)
             instance_destroy()
-        __view_set(0, 0, 0)
-        __view_set(1, 0, 0)
+        __view_set(VIEW_PROP_CAM_X, 0, 0)
+        __view_set(VIEW_PROP_CAM_Y, 0, 0)
         obj_floweyx_mouth.laugh = 0
         obj_floweyx_tv.tvmode = 21
         introcon = 11

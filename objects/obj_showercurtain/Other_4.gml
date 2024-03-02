@@ -1,6 +1,6 @@
-if (FL_TrueLabEvent3 == 1)
+if (FL_ShowerCurtainAmalgamEvent == 1)
     mode = 2
-if (FL_TrueLabEvent3 >= 2)
+if (FL_ShowerCurtainAmalgamEvent >= 2)
     mode = 2
 if (mode == 0)
 {

@@ -34,7 +34,7 @@ powersfx = caster_load("music/sfx/sfx_spellcast.ogg")
 sn = 0
 with (obj_battlebg)
     instance_destroy()
-if (FL_ButItRefused > 0 && FL_TruePacifist == 0)
+if (FL_ButItRefused > 0 && FL_TruePacifist == false)
 {
     specialnormal = 0
     aligncon = 0

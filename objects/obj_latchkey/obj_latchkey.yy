@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Castle",
+    "path": "folders/Objects/Overworld/Castle.yy",
   },
   "parentObjectId": {
     "name": "obj_readablesolid",

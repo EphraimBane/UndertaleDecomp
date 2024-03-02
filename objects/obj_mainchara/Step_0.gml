@@ -27,7 +27,7 @@ if (global.inbattle == true)
         caster_resume(global.currentsong)
     }
     room_persistent = false
-    global.inbattle = 0
+    global.inbattle = false
     if (global.specialbattle == 0)
         global.interact = 0
     depth = 100

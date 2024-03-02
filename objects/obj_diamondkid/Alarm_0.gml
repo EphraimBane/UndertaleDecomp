@@ -18,7 +18,7 @@ if (FL_KilledMettaton == 1)
     global.msg[0] = scr_gettext("obj_diamondkid_87")
     global.msg[1] = scr_gettext("obj_diamondkid_88")
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
     global.msg[0] = scr_gettext("obj_diamondkid_93")
 if (x > 160)
 {
@@ -34,7 +34,7 @@ if (x > 160)
         global.msg[0] = scr_gettext("obj_diamondkid_112")
         global.msg[1] = scr_gettext("obj_diamondkid_113")
     }
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
     {
         global.msg[0] = scr_gettext("obj_diamondkid_119")
         global.msg[1] = scr_gettext("obj_diamondkid_120")

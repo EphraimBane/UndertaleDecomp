@@ -23,7 +23,7 @@ if (FL_PapyrusStatus == PapyrusStatus.Killed)
     global.msg[2] = scr_gettext("obj_townnpc_weirdfish_93")
     global.msg[3] = scr_gettext("obj_townnpc_weirdfish_94")
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_townnpc_weirdfish_99")
     global.msg[1] = scr_gettext("obj_townnpc_weirdfish_100")

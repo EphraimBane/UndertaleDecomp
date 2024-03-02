@@ -396,7 +396,7 @@ if (menu == 4)
         {
             with (OBJ_WRITER)
                 instance_destroy()
-            if (FL_TruePacifist == 0)
+            if (FL_TruePacifist == false)
                 caster_pause(shopmus)
             c_con = 2
             alarm[4] = 120
@@ -419,7 +419,7 @@ if (menu == 4)
         }
         if (c_con == 5)
         {
-            if (FL_TruePacifist == 0)
+            if (FL_TruePacifist == false)
                 caster_resume(shopmus)
             global.msg[0] = scr_gettext("obj_shop5_672")
             global.msg[1] = scr_gettext("obj_shop5_673")

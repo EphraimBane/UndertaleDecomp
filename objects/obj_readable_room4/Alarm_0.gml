@@ -7,7 +7,7 @@ global.msg[0] = scr_gettext("obj_readable_room4_60")
 if (room == room_torhouse3)
 {
     global.msg[0] = scr_gettext("obj_readable_room4_63")
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
         global.msg[0] = scr_gettext("obj_readable_room4_64")
 }
 if (room == room_torhouse3 && murdererlv1() == 1)
@@ -128,7 +128,7 @@ if (room == room_truelab_hall1)
     global.msg[4] = scr_gettext("obj_readable_room4_197")
     global.msg[5] = scr_gettext("obj_readable_room4_198")
     global.msg[6] = scr_gettext("obj_readable_room4_199")
-    if (FL_TrueLabEvent5 == 1)
+    if (FL_PowerSwitchAmalgamEvent == 1)
         global.msg[0] = scr_gettext("obj_readable_room4_201")
 }
 if (room == room_truelab_mirror)

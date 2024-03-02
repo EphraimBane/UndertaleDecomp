@@ -19,7 +19,7 @@ image_speed = 0
 fun = false
 con = 0
 rid = 0
-if (FL_PapyrusDateCounter >= 4 && FL_TruePacifist == 0)
+if (FL_PapyrusDateCounter >= 4 && FL_TruePacifist == false)
 {
     instance_create(x, y, obj_papyrus_room)
     instance_destroy()

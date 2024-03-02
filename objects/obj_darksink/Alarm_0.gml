@@ -7,14 +7,14 @@ dont = 0
 global.msg[0] = scr_gettext("obj_darksink_91")
 if (how_bad_me_key == 0)
 {
-    if (wcon == 0 && FL_TrueLabEvent6 != 2)
+    if (wcon == 0 && FL_TrueLabSinkCounter != 2)
     {
         global.msg[0] = scr_gettext("obj_darksink_98")
-        if (FL_TrueLabEvent6 == 13)
+        if (FL_TrueLabSinkCounter == 13)
             global.msg[0] = scr_gettext("obj_darksink_100")
         caster_stop(water)
         caster_loop(water, 0.6, 2.2)
-        FL_TrueLabEvent6 += 1
+        FL_TrueLabSinkCounter += 1
         wcon = 1
     }
     else if (wcon == 1)
@@ -23,7 +23,7 @@ if (how_bad_me_key == 0)
         caster_stop(water)
         wcon = 0
     }
-    else if (FL_TrueLabEvent6 == 2 && FL_TrueLabEvent1 == 0)
+    else if (FL_TrueLabSinkCounter == 2 && FL_MemoryHeadStatus == 0)
     {
         with (obj_mainchara)
             uncan = 1
@@ -37,7 +37,7 @@ else
     how_bad_me_key = 0
     global.msg[0] = scr_gettext("obj_darksink_132")
     global.msg[1] = scr_gettext("obj_darksink_133")
-    FL_TrueLabEvent7 = 0
-    FL_TrueLabEvent1 = 2
+    FL_TrueLabKeySink = 0
+    FL_MemoryHeadStatus = 2
 }
 mydialoguer = instance_create(0, 0, obj_dialoguer)

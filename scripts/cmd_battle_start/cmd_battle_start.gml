@@ -1,3 +1,4 @@
+
 function cmd_battle_start(_args)
 {
 	if (array_length(_args) < 1)

@@ -1,6 +1,6 @@
 siner = 0
 image_speed = 0
-if (FL_TruePacifist == 0)
+if (FL_TruePacifist == false)
 {
     instance_destroy()
     return;

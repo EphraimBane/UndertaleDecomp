@@ -12,8 +12,8 @@ if (blue == 2)
 if (check == 1 && global.interact == 0)
 {
     global.border = 20
-    FL_InBattle = 1
-    FL_TypeHeartTransition = 1
+    FL_InBattle = false
+    FL_TypeHeartTransition = HeartTransitionType.QuickBattle
     FL_QuickBattle = 2
     if (room == room_fire_core4 || room == room_fire_core5)
         FL_QuickBattle = 3

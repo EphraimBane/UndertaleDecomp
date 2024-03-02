@@ -19,8 +19,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Asriel",
+    "path": "folders/Objects/Battle/Dreamurr/Asriel.yy",
   },
   "parentObjectId": null,
   "persistent": false,

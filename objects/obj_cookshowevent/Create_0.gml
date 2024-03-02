@@ -5,8 +5,8 @@ if (global.plot > 134)
 else
 {
     obj_mainchara.cutscene = true
-    __view_set(1, 0, 240)
+    __view_set(VIEW_PROP_CAM_Y, 0, 240)
     instance_create(0, 0, obj_musfadeout)
-    __view_set(9, 0, noone)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
 }
 yoffset1 = 240

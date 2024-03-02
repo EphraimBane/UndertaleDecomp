@@ -118,7 +118,7 @@ while (n <= stringpos)
             if (myfont == fnt_papyrus || myfont == fnt_ja_papyrus_btl)
                 icontype = 1
             var sprite = scr_getbuttonsprite(ch, icontype)
-            if (sprite != -4)
+            if (sprite != noone)
             {
                 var spritex = myx
                 var spritey = myy
@@ -195,9 +195,9 @@ while (n <= stringpos)
                 if (myfont == fnt_ja_comicsans_big)
                     myx += 11
             }
-            if (__view_get(2, view_current) == 640)
+            if (__view_get(VIEW_PROP_CAM_WIDTH, view_current) == 640)
                 myx *= 2
-            myx += __view_get(0, view_current)
+            myx += __view_get(VIEW_PROP_CAM_X, view_current)
         }
         n++
         continue
@@ -350,7 +350,7 @@ while (n <= stringpos)
             offsetx += (random(shake) - (shake / 2))
             offsety += (random(shake) - (shake / 2))
         }
-        var display_scale = (surface_get_width(application_surface) / __view_get(2, view_current))
+        var display_scale = (surface_get_width(application_surface) / __view_get(VIEW_PROP_CAM_WIDTH, view_current))
         var finalx = (round(((letterx + offsetx) * display_scale)) / display_scale)
         var finaly = (round(((myy + offsety) * display_scale)) / display_scale)
         draw_text_transformed(finalx, finaly, string_hash_to_newline(myletter), (htextscale * halfscale), (vtextscale * halfscale), angle)

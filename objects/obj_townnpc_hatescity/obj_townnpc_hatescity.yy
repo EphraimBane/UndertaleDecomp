@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "NPC",
-    "path": "folders/Objects/Overworld/Snowdin/NPC.yy",
+    "path": "folders/Objects/Overworld/Tundra/Snowdin/NPC.yy",
   },
   "parentObjectId": {
     "name": "obj_readablesolid",

@@ -5,7 +5,7 @@ global.facechoice = 0
 global.faceemotion = 0
 global.msg[0] = scr_gettext("obj_muffetnpc2_75")
 global.msg[1] = scr_gettext("obj_muffetnpc2_76")
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_muffetnpc2_81")
     global.msg[1] = scr_gettext("obj_muffetnpc2_82")

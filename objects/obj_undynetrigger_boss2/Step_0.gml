@@ -1,6 +1,6 @@
 if (con == 1)
 {
-    undyne = scr_marker(150, (__view_get(1, 0) - 230), spr_undynedive)
+    undyne = scr_marker(150, (__view_get(VIEW_PROP_CAM_Y, 0) - 230), spr_undynedive)
     undyne.image_speed = 0.334
     global.typer = 37
     global.msc = 0
@@ -52,7 +52,7 @@ if (con == 6)
     }
     else
     {
-        global.flag[17] = 0
+        FL_UnknownBoolean17 = false
         global.plot = 122
     }
 }

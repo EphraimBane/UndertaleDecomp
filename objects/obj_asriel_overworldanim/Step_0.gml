@@ -84,8 +84,8 @@ if (con == 10 || con == 11)
     {
         if (shaked < 1)
             shaked = 1
-        __view_set(0, 0, ((0 + random(shaked)) - random(shaked)))
-        __view_set(1, 0, ((0 + random(shaked)) - random(shaked)))
+        __view_set(VIEW_PROP_CAM_X, 0, ((0 + random(shaked)) - random(shaked)))
+        __view_set(VIEW_PROP_CAM_Y, 0, ((0 + random(shaked)) - random(shaked)))
     }
 }
 if (powered == 1)
@@ -381,7 +381,7 @@ if (con == 64)
     {
         FL_PlotOver = 1
         global.plot = 999
-        FL_TruePacifist = 1
+        FL_TruePacifist = true
         ossafe_ini_open("undertale.ini")
         ini_write_real("F7", "F7", 1)
         ossafe_ini_close()

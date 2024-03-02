@@ -7,5 +7,5 @@ on = 1
 image_speed = 0
 rev_alpha = 0
 xtimer = 0
-global.inbattle = 1
+global.inbattle = true
 active = true

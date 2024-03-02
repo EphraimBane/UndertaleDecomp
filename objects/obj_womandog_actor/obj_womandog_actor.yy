@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "NPC",
+    "path": "folders/Objects/Overworld/Tundra/NPC.yy",
   },
   "parentObjectId": {
     "name": "obj_mandog_actor",

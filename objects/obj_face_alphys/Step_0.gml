@@ -22,7 +22,7 @@ if (FL_AlphysExpression == 3)
     if (global.faceemotion == 0)
         sprite_index = u[25]
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     sprite_index = u[global.faceemotion]
     if (global.faceemotion == 1)

@@ -6,7 +6,7 @@ global.faceemotion = 0
 global.msg[0] = scr_gettext("obj_townnpc_slimedad_70")
 if (global.plot >= 122)
     global.msg[0] = scr_gettext("obj_townnpc_slimedad_74")
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_townnpc_slimedad_79")
     global.msg[1] = scr_gettext("obj_townnpc_slimedad_80")

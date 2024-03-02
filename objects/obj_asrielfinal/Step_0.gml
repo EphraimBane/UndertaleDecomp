@@ -112,7 +112,7 @@ if (global.mnfight == 2)
             turns += 1
         }
         global.msg[0] = scr_gettext("obj_asrielfinal_423")
-        total = (((FL_SavedLostSoul1 + FL_SavedLostSoul2) + FL_SavedLostSoul3) + FL_SavedLostSoul4)
+        total = (((FL_SavedUndyneLostSoul + FL_SavedAlphysLostSoul) + FL_SavedPapyrusLostSoul) + FL_SavedTorielLostSoul)
         if (total == 1)
             global.msg[0] = scr_gettext("obj_asrielfinal_425")
         if (total == 2)
@@ -168,7 +168,7 @@ if (global.myfight == 2)
                 if (whatiheard == 0)
                 {
                     global.msc = 0
-                    if (FL_SavedLostSoul1 == 0)
+                    if (FL_SavedUndyneLostSoul == 0)
                     {
                         event_user(0)
                         nextbattle = 87
@@ -184,7 +184,7 @@ if (global.myfight == 2)
                 if (whatiheard == 3)
                 {
                     global.msc = 0
-                    if (FL_SavedLostSoul2 == 0)
+                    if (FL_SavedAlphysLostSoul == 0)
                     {
                         event_user(0)
                         nextbattle = 89
@@ -199,7 +199,7 @@ if (global.myfight == 2)
                 if (whatiheard == 1 || whatiheard == 4)
                 {
                     global.msc = 0
-                    if (FL_SavedLostSoul3 == 0)
+                    if (FL_SavedPapyrusLostSoul == 0)
                     {
                         event_user(0)
                         nextbattle = 88
@@ -214,7 +214,7 @@ if (global.myfight == 2)
                 if (whatiheard == 2 || whatiheard == 5)
                 {
                     global.msc = 0
-                    if (FL_SavedLostSoul4 == 0)
+                    if (FL_SavedTorielLostSoul == 0)
                     {
                         event_user(0)
                         nextbattle = 90

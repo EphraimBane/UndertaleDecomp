@@ -1,3 +1,5 @@
+/// @func	scr_tempsave()
+/// @desc	Quick saves
 function scr_tempsave()
 {
 	filechoicebk2 = global.filechoice

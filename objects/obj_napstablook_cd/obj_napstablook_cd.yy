@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Napstablook House",
+    "path": "folders/Objects/Overworld/Waterfall/Napstablook House.yy",
   },
   "parentObjectId": {
     "name": "obj_readablesolid",

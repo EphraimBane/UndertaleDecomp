@@ -5,7 +5,7 @@ anim = 0
 myinteract = 0
 scr_depth()
 talkedto = 0
-if (FL_TrueLabEvent2 == 1)
+if (FL_SnowyAmalgamEvent == 1)
 {
     x = 170
     y = 138
@@ -13,5 +13,5 @@ if (FL_TrueLabEvent2 == 1)
     image_speed = 0.2
     image_blend = c_blue
 }
-if (FL_TrueLabEvent2 > 1)
+if (FL_SnowyAmalgamEvent > 1)
     instance_destroy()

@@ -42,7 +42,7 @@ if (acon > 0)
         global.battlegroup = 85
         global.mercy = 1
         global.border = 0
-        FL_TypeHeartTransition = 0
+        FL_TypeHeartTransition = HeartTransitionType.Normal
         instance_create(0, 0, obj_battler)
         acon = 6
         alarm[4] = 32
@@ -59,14 +59,14 @@ if (acon > 0)
             wcon = 0
         myinteract = 0
         alarm[4] = 10
-        FL_TrueLabEvent6 = 10
-        FL_TrueLabEvent7 = 3
+        FL_TrueLabSinkCounter = 10
+        FL_TrueLabKeySink = 3
         if (obj_mainchara.x < 110)
-            FL_TrueLabEvent7 = 2
+            FL_TrueLabKeySink = 2
         if (obj_mainchara.x < 75)
-            FL_TrueLabEvent7 = 1
+            FL_TrueLabKeySink = 1
         event_user(0)
-        FL_TrueLabEvent1 = 1
+        FL_MemoryHeadStatus = 1
         acon = -10
     }
     if (acon == 1 || acon == 2)

@@ -1,6 +1,6 @@
 dx = floor((doomtime / 30))
 dx2 = floor((doomtime / 180))
-if (global.inbattle == 1)
+if (global.inbattle == true)
 {
     scr_setfont(fnt_main)
     draw_set_color(c_yellow)

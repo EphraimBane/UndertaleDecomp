@@ -97,7 +97,7 @@ if (instance_exists(OBJ_WRITER) == 0 && con == 15)
 }
 if (con == 16)
 {
-    if (am[0].y > (__view_get(1, 0) + 300))
+    if (am[0].y > (__view_get(VIEW_PROP_CAM_Y, 0) + 300))
     {
         con = 20
         i = 0
@@ -228,7 +228,7 @@ if (con == 28)
         uncan = 0
     global.interact = 0
     FL_AlphysExpression = 0
-    FL_TrueLabEvent5 = 1
+    FL_PowerSwitchAmalgamEvent = 1
     FL_DatedAlphys = 12
     FL_UnlockedNewHomeLatch = 1
     if (global.plot < 201)

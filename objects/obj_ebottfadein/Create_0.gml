@@ -16,4 +16,4 @@ caster_stop(global.endsong[7])
 s8 = caster_play(global.endsong[8], 1, 1)
 noise = caster_load("music/f_noise.ogg")
 noise = caster_loop(noise, 0, 1)
-global.inbattle = 1
+global.inbattle = true

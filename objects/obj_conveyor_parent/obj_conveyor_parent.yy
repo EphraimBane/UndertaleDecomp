@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Hotlands",
-    "path": "folders/Objects/Overworld/Hotlands.yy",
+    "name": "Hotland",
+    "path": "folders/Objects/Overworld/Hotland.yy",
   },
   "parentObjectId": null,
   "persistent": false,

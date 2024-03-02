@@ -70,16 +70,16 @@ if (conversation == 6 && instance_exists(OBJ_WRITER) == 0)
     papyrus.sprite_index = papyrus.lsprite
     sans.sprite_index = sans.lsprite
     obj_mainchara.cutscene = true
-    __view_set(9, 0, noone)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
     alarm[3] = 30
     conversation = 7
 }
 if (conversation == 8)
 {
-    __view_set(0, 0, (__view_get(0, 0) - 1))
-    if (__view_get(0, 0) <= -40)
+    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 1))
+    if (__view_get(VIEW_PROP_CAM_X, 0) <= -40)
     {
-        __view_set(0, 0, -40)
+        __view_set(VIEW_PROP_CAM_X, 0, -40)
         conversation = 9
         alarm[3] = 30
     }
@@ -110,10 +110,10 @@ if (conversation == 10)
 }
 if (conversation == 11 && instance_exists(OBJ_WRITER) == 0)
 {
-    __view_set(0, 0, (__view_get(0, 0) + 4))
-    if (__view_get(0, 0) >= 0)
+    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 4))
+    if (__view_get(VIEW_PROP_CAM_X, 0) >= 0)
     {
-        __view_set(0, 0, 0)
+        __view_set(VIEW_PROP_CAM_X, 0, 0)
         conversation = 12
     }
 }
@@ -133,7 +133,7 @@ if (conversation == 12)
 if (conversation == 13 && instance_exists(OBJ_WRITER) == 0)
 {
     obj_mainchara.cutscene = false
-    __view_set(9, 0, obj_mainchara)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
     global.typer = 17
     global.facechoice = 3
     global.faceemotion = 0

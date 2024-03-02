@@ -10,9 +10,9 @@ if (global.plot > 166)
     instance_destroy()
 else
 {
-    __view_set(1, 0, 120)
+    __view_set(VIEW_PROP_CAM_Y, 0, 120)
     obj_mainchara.cutscene = true
-    __view_set(9, 0, noone)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
 }
 mainmove = 0
 frantic = 0

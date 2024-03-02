@@ -421,17 +421,17 @@ if (con == 81 && instance_exists(OBJ_WRITER) == 0)
     mcxp = obj_mainchara.x
     mcyp = obj_mainchara.y
     global.interact = 0
-    global.flag[17] = 1
+    FL_UnknownBoolean17 = true
 }
 if (con == 82)
 {
     if (obj_mainchara.x != mcxp || obj_mainchara.y != mcyp)
     {
         caster_pause(global.currentsong)
-        global.flag[17] = 0
+        FL_UnknownBoolean17 = false
         global.interact = 1
         obj_mainchara.cutscene = true
-        __view_set(9, 0, noone)
+        __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
         obj_mainchara.x = mcxp
         obj_mainchara.y = mcyp
         undyne.visible = false
@@ -1103,7 +1103,7 @@ if (con == 250 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 252)
 {
-    blk = instance_create((__view_get(0, obj_backgrounder_parent) - 2), -2, obj_npc_marker)
+    blk = instance_create((__view_get(VIEW_PROP_CAM_X, obj_backgrounder_parent) - 2), -2, obj_npc_marker)
     blk.depth = (wht.depth - 2)
     blk.image_alpha = 0
     blk.visible = true
@@ -1250,7 +1250,7 @@ if (con == 268)
 {
     room_persistent = false
     global.phasing = 0
-    global.flag[17] = 0
+    FL_UnknownBoolean17 = false
     global.mercy = 0
     snd_play(snd_bell)
     room_goto(room_water_undyneyard)

@@ -22,13 +22,42 @@ if (!active)
 if (prev_dir_y != dir_y && dir_y != 0)
 {
 	trace($"aa:{array_length(commands_history)} i : {commands_history_index}");
-	if (dir_y == 1 && array_length(commands_history) > 0 && array_length(commands_history) > commands_history_index)
+	
+	if (array_length(commands_history) > 0)
 	{
-		keyboard_string = commands_history[((array_length(commands_history) - 1) - commands_history_index++)];	
+		if (dir_y == 1 && commands_history_index + 1 < array_length(commands_history))
+		{
+			if (commands_history_index == -1)
+			{
+				commands_textbox = keyboard_string;
+			}
+			
+			keyboard_string = commands_history[++commands_history_index];
+		}
+		else if (dir_y == -1)
+		{
+			if (commands_history_index > 0)
+			{
+				keyboard_string = commands_history[--commands_history_index];	
+			}
+			else
+			{
+				commands_history_index = -1;
+				keyboard_string = commands_textbox;
+			}
+		}
 	}
-	else
+}
+
+if (prev_dir_x != dir_x && dir_x != 0)
+{
+	if (dir_x == 1)
 	{
-		
+		scroll_offset = min(scroll_offset + 1, max(array_length(history) - SCROLL_MIN_ENTRIES_SHOWN, 0));
+	}
+	else if (dir_x == -1)
+	{
+		scroll_offset = max(scroll_offset - 1, 0);
 	}
 }
 
@@ -56,7 +85,8 @@ if (keyboard_check_pressed(vk_enter))
 			arg_array = array_create(array_length(temp) - 1);		
 			array_copy(arg_array, 0, temp, 1, arg_count);
 		}
-		commands_history_index = 0;
+		commands_history_index = -1;
+		commands_textbox = "";
 		var commandDef = commands[getCommandDefIndex(command_name)];
 		command_writeline(input_text);
 		trace($"Attempting to execute command: \"{commandDef.displayName}\" with arguments: \"{arg_array}\"");

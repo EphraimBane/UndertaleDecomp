@@ -9,7 +9,7 @@ if (global.plot >= 122)
     global.msg[0] = scr_gettext("obj_librarynpc_lizard1_73")
     global.msg[1] = scr_gettext("obj_librarynpc_lizard1_74")
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_librarynpc_lizard1_79")
     global.msg[1] = scr_gettext("obj_librarynpc_lizard1_80")

@@ -388,6 +388,6 @@ if (saved == 4 && writer.halt != false && obj_ripoff_sans.writer.halt != false &
 if (saved == 6)
 {
     global.battlegroup = 256
-    FL_SavedLostSoul3 = 1
+    FL_SavedPapyrusLostSoul = 1
     room_restart()
 }

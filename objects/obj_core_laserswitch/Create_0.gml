@@ -1,7 +1,7 @@
 myinteract = 0
 con = 0
 pcon = 0
-if (global.plot > 180 || FL_TruePacifist == 1)
+if (global.plot > 180 || FL_TruePacifist == true)
 {
     meswitch = scr_marker(x, y, spr_onoffswitch_on)
     with (meswitch)

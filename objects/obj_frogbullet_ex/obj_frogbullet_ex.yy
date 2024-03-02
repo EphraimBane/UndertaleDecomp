@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Final Froggit",
+    "path": "folders/Objects/Battle/Final Froggit.yy",
   },
   "parentObjectId": {
     "name": "blt_parent_noborder",

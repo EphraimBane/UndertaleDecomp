@@ -13,7 +13,7 @@ if (FL_CompletedShootPuzzle2 == 1)
     global.msg[0] = scr_gettext("obj_disembodiedfoxhead_67")
     global.msg[1] = scr_gettext("obj_disembodiedfoxhead_68")
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_disembodiedfoxhead_73")
     global.msg[1] = scr_gettext("obj_disembodiedfoxhead_74")

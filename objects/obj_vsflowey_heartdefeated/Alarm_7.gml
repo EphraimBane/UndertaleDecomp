@@ -1,4 +1,4 @@
-caster_stop(-3)
+caster_stop(all)
 global.typer = 115
 global.msg[0] = scr_gettext("obj_vsflowey_heartdefeated_114")
 global.msg[1] = scr_gettext("obj_vsflowey_heartdefeated_115")
