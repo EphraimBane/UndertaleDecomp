@@ -26,6 +26,7 @@ show_collision = false;
 show_position = false;
 
 #macro COMMAND_CONSOLE_HISTORY_MAX 64
+#macro SCROLL_MIN_ENTRIES_SHOWN 6
 function activate() 
 {
 	trace("Activating Console");

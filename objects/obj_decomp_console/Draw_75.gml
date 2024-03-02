@@ -91,9 +91,9 @@ var history_len = array_length(history);
 var history_max_pixel_height = (COMMAND_CONSOLE_HISTORY_MAX * text_height) - input_box_y
 var history_pixel_height = history_len * text_height;
 
-for (var i = 0; i < history_len; i++)
+for (var i = scroll_offset; i < history_len; i++)
 {
-	draw_text(bounds_rect.x + 2, input_box_y - ((i + 1) * char_height), history[i]);
+	draw_text(bounds_rect.x + 2, input_box_y - ((i - scroll_offset + 1) * char_height), history[i]);
 }
 
 if (history_pixel_height > input_box_y)
@@ -111,11 +111,14 @@ if (history_pixel_height > input_box_y)
 	
 	var normalized_history_height = scroll_height / history_max_pixel_height;
 	
+	var scrollbar_progress = 1 - clamp(scroll_offset / (history_len - SCROLL_MIN_ENTRIES_SHOWN), 0, 1);
+	var scrollbar_ratio = SCROLL_MIN_ENTRIES_SHOWN / history_len;
+	var scrollbar_height = scroll_height * scrollbar_ratio;
 
 	var scrollbar_x = scroll_x;
-	var scrollbar_y = scroll_y + ((history_pixel_height - input_box_y) * normalized_history_height);
+	var scrollbar_y = scroll_y + (scroll_height - scrollbar_height) * scrollbar_progress;
 	var scrollbar_right = scrollbar_x + scroll_width;
-	var scrollbar_bottom = scroll_y + scroll_height;
+	var scrollbar_bottom = scrollbar_y + scrollbar_height;
 	
 	//if (point_in_rectangle(mouse_x - view_get_xport(0), mouse_y - view_get_yport(0), scrollbar_x, scrollbar_y, scrollbar_right, scrollbar_bottom))
 	//	draw_set_color(c_yellow);
@@ -169,22 +172,50 @@ if (command_name != "")
 
 #region Popout
 
-var popout_x = bounds_rect.x;
-var popout_y = bounds_rect.bottom;
-
-/*
-if (valid_command_name)
+if (command_name != "" && !valid_command_name)
 {
+	var matching_cmds = array_create(0);
+	var rect_width = 0;
+	var rect_height = 0;
 	
-}
-else
-{
-	for (var i = 0; i < array_length(commands); i++)
+	for (var i = 0; i < array_length(commands) && array_length(matching_cmds) <= 6; i++)
 	{
-		draw_text(popout_x, popout_y + (i * char_height), commands[i].displayName);
+		if (string_starts_with(commands[i].displayName, command_name))
+		{
+			array_push(matching_cmds, commands[i].displayName);
+			rect_width = max(rect_width, string_width(commands[i].displayName));
+			rect_height += char_height;
+		}
+	}
+	
+	if (array_length(matching_cmds) > 0)
+	{
+		var popout_border = 2;
+		var popout_pad = 2;
+		
+		var popout_x = bounds_rect.x + popout_border;
+		var popout_y = bounds_rect.bottom + char_height + popout_border;
+		var popout_width = popout_x + rect_width + 2 * popout_pad;
+		var popout_height = popout_y + rect_height + 2 * popout_pad;
+
+		var border_x = popout_x - popout_border - popout_pad;
+		var border_y = popout_y - popout_border - popout_pad;
+		var border_right = popout_x + rect_width + popout_border + 2 * popout_pad;
+		var border_bottom = popout_y + rect_height + popout_border + 2 * popout_pad;
+	
+		draw_set_color(c_white);
+		ossafe_fill_rectangle(border_x, border_y, border_right, border_bottom);
+		draw_set_color(c_black);
+		ossafe_fill_rectangle(popout_x, popout_y, popout_width, popout_height);
+		draw_set_color(c_white);
+	
+		for (var i = 0; i < array_length(matching_cmds); i++)
+		{
+			draw_text(popout_x + popout_pad, popout_y + popout_pad + (i * char_height), matching_cmds[i]);
+		}
 	}
 }
-*/
+
 #endregion
 
 #region Room name
