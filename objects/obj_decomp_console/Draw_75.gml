@@ -93,7 +93,7 @@ var history_pixel_height = history_len * text_height;
 
 for (var i = 0; i < history_len; i++)
 {
-	draw_text(bounds_rect.x + 2, input_box_y - ((history_len - i) * char_height), history[i]);
+	draw_text(bounds_rect.x + 2, input_box_y - ((i + 1) * char_height), history[i]);
 }
 
 if (history_pixel_height > input_box_y)
