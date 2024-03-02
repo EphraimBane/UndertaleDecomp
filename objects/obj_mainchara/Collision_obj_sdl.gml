@@ -13,14 +13,7 @@ if (global.phasing == 0 && global.interact == 0)
     }
     if (global.facing == Direction.Down)
     {
-		/* trace($"({x},{y}) - ({bbox_right},{bbox_bottom})");
-		var inst = collision_point((bbox_right + 3), (bbox_bottom + 3), obj_solidparent, 0, true);
-		if (inst != noone)
-			trace(inst); */
-		var inst = collision_point((bbox_right + 3), (bbox_bottom + 3), obj_solidparent, false, true);
-		trace(collision_point((bbox_right + 3), (bbox_bottom + 3), obj_solidparent, false, true));
-        //if (collision_point((bbox_right + 3), (bbox_bottom + 3), obj_solidparent, false, true) == noone)
-		if (inst == noone)
+		if (collision_point((bbox_right + 3), (bbox_bottom + 3), obj_solidparent, false, true))
         {
             x = (xprevious + 3)
             y = (yprevious + 3)
