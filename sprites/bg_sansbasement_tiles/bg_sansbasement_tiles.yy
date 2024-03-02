@@ -15,8 +15,8 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2e085794-485a-4c4f-b436-3a4e305e51e8",},
   ],
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 20,
+  "gridY": 20,
   "height": 120,
   "HTile": false,
   "layers": [
@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "unsorted",
-    "path": "folders/Sprites/unsorted.yy",
+    "name": "Snowdin",
+    "path": "folders/Sprites/Tilesets/Snowdin.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

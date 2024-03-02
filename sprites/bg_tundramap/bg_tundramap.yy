@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Snowdin",
-    "path": "folders/Sprites/Overworld/Snowdin.yy",
+    "path": "folders/Sprites/Tilesets/Snowdin.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
