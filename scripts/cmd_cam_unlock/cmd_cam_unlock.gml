@@ -1,4 +1,4 @@
-function cmd_unlock_cam()
+function cmd_cam_unlock()
 {
 	if (view_get_visible(7))
 		view_set_visible(7, false);

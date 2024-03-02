@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "cmd_unlock_cam",
+  "name": "cmd_game_speed",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Commands",
-    "path": "folders/Scripts/Decomp/Console/Commands.yy",
+    "name": "Game",
+    "path": "folders/Scripts/Decomp/Console/Commands/Game.yy",
   },
 }

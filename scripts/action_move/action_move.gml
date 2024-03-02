@@ -1,3 +1,4 @@
+/// @deprecated
 function action_move()
 {
 	if (argument0 == "000000000")

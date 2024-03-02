@@ -1,7 +1,12 @@
-function action_set_gravity()
+/// @func			action_set_gravity(direction, value)
+/// @desc			Sets the gravity and gravity_direction of the caller
+/// @deprecated
+/// @param	{real}	direction	The value to set gravit_direction to
+/// @param	{real}	value		The value to set gravity to
+function action_set_gravity(_direction, _value)
 {
-	var dir = argument0
-	var val = argument1
+	var dir = _direction
+	var val = _value
 	if global.__argument_relative
 	{
 	    dir += gravity_direction
