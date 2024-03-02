@@ -1,5 +1,6 @@
 function __global_object_depths()
 {
+	// TODO: THIS!!!!
 	global.__objectDepths[0] = 0
 	global.__objectDepths[1] = 0
 	global.__objectDepths[2] = 0

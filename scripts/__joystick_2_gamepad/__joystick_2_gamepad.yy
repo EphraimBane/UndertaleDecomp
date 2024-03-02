@@ -5,7 +5,7 @@
   "isCompatibility": true,
   "isDnD": false,
   "parent": {
-    "name": "Legacy",
-    "path": "folders/Scripts/Common/Legacy.yy",
+    "name": "Deprecated Functioned",
+    "path": "folders/Scripts/Deprecated Functioned.yy",
   },
 }
