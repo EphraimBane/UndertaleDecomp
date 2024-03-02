@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "cmd_crash_game",
+  "name": "cmd_cam_unlock",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

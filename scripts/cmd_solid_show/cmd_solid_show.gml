@@ -1,4 +1,4 @@
-function cmd_show_solid(_args)
+function cmd_solid_show(_args)
 {	
 	obj_decomp_console.show_collision = !obj_decomp_console.show_collision;
 	if (instance_exists(obj_solidparent))

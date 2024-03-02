@@ -1,4 +1,4 @@
-function cmd_room_speed(_args)
+function cmd_game_speed(_args)
 {
 	if (array_length(_args) < 1)
 	{
@@ -12,6 +12,5 @@ function cmd_room_speed(_args)
 		command_writeline($"Room speed cannot be {rm_speed}");
 		return;
 	}
-	
-	room_speed = rm_speed;
+	game_set_speed(rm_speed, gamespeed_fps);
 }

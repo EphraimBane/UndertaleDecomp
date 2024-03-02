@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Action",
-    "path": "folders/Scripts/Action.yy",
+    "path": "folders/Scripts/Deprecated Functioned/Action.yy",
   },
 }
