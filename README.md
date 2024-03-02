@@ -24,3 +24,4 @@ MrPorkchop - Made the Icon<br>
 
 ## PR Helpers
 [Zyle](https://zyle.dev/)
+[Marioalexsan](https://github.com/Marioalexsan)
