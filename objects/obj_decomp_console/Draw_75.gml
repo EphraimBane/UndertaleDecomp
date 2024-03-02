@@ -152,6 +152,16 @@ if (command_name != "")
 		draw_set_color(c_red);
 		
 	draw_text(input_text_x + ((string_pos(command_name, input_text) - 1) * char_width), input_text_y, command_name);
+	
+	// Draw inline help text
+	var help_text = getCommandHelpText(command_name);
+	
+	if (help_text != "")
+	{
+		draw_set_color(c_gray);
+		draw_text(input_text_x + string_width(input_text + string_repeat("  ", 3)), input_text_y, help_text);
+	}
+	
 	draw_set_color(c_white);
 }
 
