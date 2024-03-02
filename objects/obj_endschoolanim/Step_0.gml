@@ -85,7 +85,7 @@ if (con == 4)
         else
         {
             vol -= 0.01
-            caster_set_volume(-3, vol)
+            caster_set_volume(all, vol)
             __view_set(0, 0, (__view_get(0, 0) - 2))
             if (__view_get(0, 0) < -200)
                 room_goto(room_end_mtebott)

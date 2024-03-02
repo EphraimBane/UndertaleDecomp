@@ -13,7 +13,7 @@ if (control_check_pressed(0) && selected3 == 0)
 {
     if (buffer > 20)
     {
-        caster_stop(-3)
+        caster_stop(all)
         room_goto_next()
     }
 }

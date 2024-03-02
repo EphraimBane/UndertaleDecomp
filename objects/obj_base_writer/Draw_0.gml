@@ -118,7 +118,7 @@ while (n <= stringpos)
             if (myfont == fnt_papyrus || myfont == fnt_ja_papyrus_btl)
                 icontype = 1
             var sprite = scr_getbuttonsprite(ch, icontype)
-            if (sprite != -4)
+            if (sprite != noone)
             {
                 var spritex = myx
                 var spritey = myy

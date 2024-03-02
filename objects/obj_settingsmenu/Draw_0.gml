@@ -216,7 +216,7 @@ if (global.osflavor >= OSFlavors.Playstation)
         }
         var command = string_char_at("ZXC", (i + 1))
         var sprite = scr_getbuttonsprite(command, 0)
-        if (sprite != -4)
+        if (sprite != noone)
             draw_sprite(sprite, 0, button_x, (100 + ((i + 1) * vspacing)))
     }
     if (r_buffer > 0)

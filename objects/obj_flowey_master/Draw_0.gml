@@ -162,7 +162,7 @@ if (dcon > 0)
         obj_vsflowey_heart.sprite_index = spr_ourheart
         with (obj_floweyx_tv)
             tvmode = 10
-        caster_stop(-3)
+        caster_stop(all)
         caster_play(sfx_glock, 1, 1)
         with (obj_flowey_writer)
             instance_destroy()
@@ -336,7 +336,7 @@ if (dcon > 0)
     }
     if (dcon == 34)
     {
-        caster_stop(-3)
+        caster_stop(all)
         global.typer = 117
         global.msg[0] = scr_gettext("obj_flowey_master_1276")
         global.msg[1] = scr_gettext("obj_flowey_master_1277")
@@ -653,7 +653,7 @@ if (introcon > 0)
     {
         sh = instance_create(0, 0, obj_vsflowey_shaker)
         sh.decay = 0
-        caster_stop(-3)
+        caster_stop(all)
         caster_play(sfx_laugh, 1, 1)
         obj_floweyx_mouth.laugh = 1
         obj_floweyx_tv.tvmode = 20

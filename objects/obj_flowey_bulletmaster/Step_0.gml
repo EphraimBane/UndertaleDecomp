@@ -36,7 +36,7 @@ if (active == true)
         {
             if (mustype == 3)
             {
-                caster_stop(-3)
+                caster_stop(all)
                 caster_play(mus_endnote, 1, 1)
                 mustype = 0
             }
@@ -83,7 +83,7 @@ if (active == true)
             move = 0
         with (obj_flowey_master)
         {
-            caster_stop(-3)
+            caster_stop(all)
             caster_loop(mus_noise, 1, 1)
             event_user(6)
         }

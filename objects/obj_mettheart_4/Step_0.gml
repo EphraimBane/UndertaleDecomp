@@ -90,7 +90,7 @@ if (lastcon == 1 && global.turntimer > 1)
     obj_mettb_body.hurt = 2
     obj_mettb_body.dsf = 2
     obj_mettattackgen.dark = 0
-    caster_stop(-3)
+    caster_stop(all)
     obj_heart.shot = 0
     global.turntimer = 900
     mtb = instance_create(x, y, obj_mettheart_burst)

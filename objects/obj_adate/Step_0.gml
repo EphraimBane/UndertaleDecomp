@@ -630,7 +630,7 @@ if (cn == 63)
     yy = al.y
     if (skip == true)
     {
-        caster_stop(-3)
+        caster_stop(all)
         global.currentsong = caster_loop(lab, 1, 0.75)
     }
     global.typer = 74

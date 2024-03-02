@@ -1,7 +1,12 @@
-function __view_get()
+/// @func			__view_get(property, view_index, value)
+/// @desc			THIS IS A LEGACY FUNCTION DO NOT CALL
+/// @deprecated
+/// @param	{real}	property		The property to get
+/// @param	{real}	view_index		The view index
+function __view_get(_property, _view_index)
 {
-	var __prop = argument0
-	var __index = argument1
+	var __prop = _property
+	var __index = _view_index
 	var __res = -1
 	switch __prop
 	{

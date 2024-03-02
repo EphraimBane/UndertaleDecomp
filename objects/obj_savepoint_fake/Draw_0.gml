@@ -142,16 +142,16 @@ if (con == 16)
 if (con == 18)
 {
     caster_loop(hellmus, 0.8, 0.7)
-    global.msg[0] = scr_gettext("obj_savepoint_fake_266")
-    global.msg[1] = scr_gettext("obj_savepoint_fake_267")
-    global.msg[2] = scr_gettext("obj_savepoint_fake_268")
-    global.msg[3] = scr_gettext("obj_savepoint_fake_269")
-    global.msg[4] = scr_gettext("obj_savepoint_fake_270")
-    global.msg[5] = scr_gettext("obj_savepoint_fake_271")
-    global.msg[6] = scr_gettext("obj_savepoint_fake_272")
-    global.msg[7] = scr_gettext("obj_savepoint_fake_273")
-    global.msg[8] = scr_gettext("obj_savepoint_fake_274")
-    global.msg[9] = scr_gettext("obj_savepoint_fake_275")
+    global.msg[0] = scr_gettext("obj_savepoint_fake_266") //Howdy!/
+    global.msg[1] = scr_gettext("obj_savepoint_fake_267") //It's me, FLOWEY./
+    global.msg[2] = scr_gettext("obj_savepoint_fake_268") //\\E2FLOWEY the FLOWER!/
+    global.msg[3] = scr_gettext("obj_savepoint_fake_269") //\\E0I owe you a HUGE thanks./
+    global.msg[4] = scr_gettext("obj_savepoint_fake_270") //\\E9You really did a number&on that old fool./
+    global.msg[5] = scr_gettext("obj_savepoint_fake_271") //\\E0Without you^1, I NEVER could&have gotten past him./
+    global.msg[6] = scr_gettext("obj_savepoint_fake_272") //\\E7But now^1, with YOUR help.../
+    global.msg[7] = scr_gettext("obj_savepoint_fake_273") //\\E8 %
+    global.msg[8] = scr_gettext("obj_savepoint_fake_274") //\\TFHe's DEAD./
+    global.msg[9] = scr_gettext("obj_savepoint_fake_275") //\\E6And I'VE got the human&SOULS!/%%
     global.typer = 9
     global.msg[10] = scr_gettext("obj_savepoint_fake_278")
     mywriter = instance_create((__view_get(0, 0) + 30), (__view_get(1, obj_backgrounder_parent) + 100), obj_flowey_writer)
@@ -159,7 +159,7 @@ if (con == 18)
 }
 if (con == 19)
 {
-    if (instance_exists(mywriter) == 0)
+    if (instance_exists(mywriter) == false)
     {
         laugh = caster_load("music/f_newlaugh.ogg")
         fl.type = 1
@@ -188,21 +188,21 @@ if (con == 25)
 }
 if (con == 26)
 {
-    global.msg[0] = scr_gettext("obj_savepoint_fake_332")
-    global.msg[1] = scr_gettext("obj_savepoint_fake_333")
-    global.msg[2] = scr_gettext("obj_savepoint_fake_334")
-    global.msg[3] = scr_gettext("obj_savepoint_fake_335")
-    global.msg[4] = scr_gettext("obj_savepoint_fake_337")
-    global.msg[5] = scr_gettext("obj_savepoint_fake_338")
-    global.msg[6] = scr_gettext("obj_savepoint_fake_339")
-    global.msg[7] = scr_gettext("obj_savepoint_fake_340")
-    global.msg[8] = scr_gettext("obj_savepoint_fake_341")
-    global.msg[9] = scr_gettext("obj_savepoint_fake_342")
-    global.msg[10] = scr_gettext("obj_savepoint_fake_343")
-    global.msg[11] = scr_gettext("obj_savepoint_fake_344")
-    global.msg[12] = scr_gettext("obj_savepoint_fake_345")
-    global.msg[13] = scr_gettext("obj_savepoint_fake_346")
-    global.msg[14] = scr_gettext("obj_savepoint_fake_347")
+    global.msg[0] = scr_gettext("obj_savepoint_fake_332") //\\E0Boy!/
+    global.msg[1] = scr_gettext("obj_savepoint_fake_333") //\\E0I've been empty for so&long.../
+    global.msg[2] = scr_gettext("obj_savepoint_fake_334") //\\E4It feels great to have a&SOUL inside me again./
+    global.msg[3] = scr_gettext("obj_savepoint_fake_335") //\\E1Mmmm^1, I can feel them&wriggling.../
+    global.msg[4] = scr_gettext("obj_savepoint_fake_337") //\\E6Awww^1, you're feeling&left out^1, aren't you?/
+    global.msg[5] = scr_gettext("obj_savepoint_fake_338") //\\E1Well^1, that's just perfect./
+    global.msg[6] = scr_gettext("obj_savepoint_fake_339") //\\E0After all^1, I only have&six souls./
+    global.msg[7] = scr_gettext("obj_savepoint_fake_340") //\\E1I still need one more.../
+    global.msg[8] = scr_gettext("obj_savepoint_fake_341") //\\TFB\\E2efore I become GOD./ 
+    global.msg[9] = scr_gettext("obj_savepoint_fake_342") //\\E3And then^1, with my&newfound powers.../
+    global.msg[10] = scr_gettext("obj_savepoint_fake_343") //\\E7Monsters./
+    global.msg[11] = scr_gettext("obj_savepoint_fake_344") //\\E5Humans./
+    global.msg[12] = scr_gettext("obj_savepoint_fake_345") //\\E5Everyone^2./
+    global.msg[13] = scr_gettext("obj_savepoint_fake_346") //\\E8I'll show them all the REAL&meaning of this world./%%
+    global.msg[14] = scr_gettext("obj_savepoint_fake_347") //%%%
     global.typer = 9
     mywriter = instance_create((__view_get(0, 0) + 30), (__view_get(1, obj_backgrounder_parent) + 100), obj_flowey_writer)
     con = 27
@@ -236,7 +236,7 @@ if (con == 27)
             }
         }
     }
-    if (instance_exists(obj_flowey_writer) == 0)
+    if (instance_exists(obj_flowey_writer) == false)
     {
         con = 28
         fl.type = 1
@@ -265,26 +265,26 @@ if (con == 33)
 }
 if (con == 34)
 {
-    global.msg[0] = scr_gettext("obj_savepoint_fake_435")
-    global.msg[1] = scr_gettext("obj_savepoint_fake_436")
-    if (ossafe_file_exists("file0") == 0)
+    global.msg[0] = scr_gettext("obj_savepoint_fake_435") //\\E0Oh^1, and forget about escaping&to your old SAVE FILE./
+    global.msg[1] = scr_gettext("obj_savepoint_fake_436") //\\TFI\\E2t's gone FOREVER./
+    if (ossafe_file_exists("file0") == false)
     {
-        global.msg[0] = scr_gettext("obj_savepoint_fake_439")
-        global.msg[1] = scr_gettext("obj_savepoint_fake_440")
+        global.msg[0] = scr_gettext("obj_savepoint_fake_439") //\\E0Golly^1, if only you&had a SAVE FILE you&could run away to.../
+        global.msg[1] = scr_gettext("obj_savepoint_fake_440") //\\TFB\\E2ut you were just&too STUPID to make one!/
     }
-    global.msg[2] = scr_gettext("obj_savepoint_fake_442")
-    global.msg[3] = scr_gettext("obj_savepoint_fake_443")
-    global.msg[4] = scr_gettext("obj_savepoint_fake_444")
-    global.msg[5] = scr_gettext("obj_savepoint_fake_445")
-    global.msg[6] = scr_gettext("obj_savepoint_fake_446")
-    global.msg[7] = scr_gettext("obj_savepoint_fake_447")
+    global.msg[2] = scr_gettext("obj_savepoint_fake_442") //\\TfB\\E3ut don't worry./
+    global.msg[3] = scr_gettext("obj_savepoint_fake_443") //\\E0Your old friend FLOWEY.../
+    global.msg[4] = scr_gettext("obj_savepoint_fake_444") //\\E1Has worked out a replacement&for you!/
+    global.msg[5] = scr_gettext("obj_savepoint_fake_445") //\\TFI\\E6'll SAVE over your own&death./
+    global.msg[6] = scr_gettext("obj_savepoint_fake_446") //\\E7So you can watch me tear&you to bloody pieces.../
+    global.msg[7] = scr_gettext("obj_savepoint_fake_447") //\\E8Over^1, and over^1, and over.../%%
     global.typer = 9
     mywriter = instance_create((__view_get(0, 0) + 30), (__view_get(1, obj_backgrounder_parent) + 100), obj_flowey_writer)
     con = 35
 }
 if (con == 35)
 {
-    if (instance_exists(obj_flowey_writer) == 0)
+    if (instance_exists(obj_flowey_writer) == false)
     {
         obj_mainchara_fake.vspeed = -2
         obj_mainchara_fake.image_speed = 0.334
@@ -303,19 +303,19 @@ if (con == 37)
 }
 if (con == 39)
 {
-    global.msg[0] = scr_gettext("obj_savepoint_fake_490")
-    global.msg[1] = scr_gettext("obj_savepoint_fake_491")
-    global.msg[2] = scr_gettext("obj_savepoint_fake_492")
+    global.msg[0] = scr_gettext("obj_savepoint_fake_490") //\\E9... what?/
+    global.msg[1] = scr_gettext("obj_savepoint_fake_491") //Do you really think&you can stop ME?/
+    global.msg[2] = scr_gettext("obj_savepoint_fake_492") //\\TfH\\E4ee hee hee.../%%
     global.typer = 16
     mywriter = instance_create((__view_get(0, 0) + 30), (__view_get(1, obj_backgrounder_parent) + 100), obj_flowey_writer)
     con = 40
 }
 if (con == 40)
 {
-    if (instance_exists(obj_flowey_writer) == 0)
+    if (instance_exists(obj_flowey_writer) == false)
     {
         global.faceemotion = 5
-        global.msg[0] = scr_gettext("obj_savepoint_fake_507")
+        global.msg[0] = scr_gettext("obj_savepoint_fake_507") //\\E5You really ARE an idiot^4.%%
         caster_free(all)
         global.typer = 119
         mywriter = instance_create((__view_get(0, 0) + 30), (__view_get(1, obj_backgrounder_parent) + 100), obj_flowey_writer)
@@ -324,7 +324,7 @@ if (con == 40)
 }
 if (con == 41)
 {
-    if (instance_exists(obj_flowey_writer) == 0)
+    if (instance_exists(obj_flowey_writer) == false)
     {
         with (obj_floweyfacer)
             instance_destroy()

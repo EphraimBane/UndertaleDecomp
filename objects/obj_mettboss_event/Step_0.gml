@@ -66,7 +66,7 @@ if (con == 5.4)
 }
 if (con == 5.5 && instance_exists(OBJ_WRITER) == 0)
 {
-    caster_stop(-3)
+    caster_stop(all)
     snd_play(snd_item)
     mett.image_index = 1
     con = 4.6

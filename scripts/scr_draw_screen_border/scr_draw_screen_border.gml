@@ -30,10 +30,10 @@ function scr_draw_screen_border()
 	    if (obj_time.idle && current_time >= (obj_time.idle_time + idle_min))
 	        idle_time = (current_time - (obj_time.idle_time + idle_min))
 	    var idle_frame = (floor((idle_time / 100)) % 3)
-	    var base = -4
+	    var base = noone
 	    for (var i = 0; i < 9; i++)
 	    {
-	        overlay[i, 0] = -4
+	        overlay[i, 0] = noone
 	        overlay[i, 1] = spr_undertaletitle
 	        overlay[i, 2] = spr_undertaletitle
 	    }
@@ -121,10 +121,10 @@ function scr_draw_screen_border()
 	        if (global.screen_border_state > 0)
 	            overlay1 = 2853
 	    }
-	    if (base != -4)
+	    if (base != noone)
 	    {
 	        scr_draw_background_ps4(base, 0, 0)
-	        if (overlay[0, 0] != -4)
+	        if (overlay[0, 0] != noone)
 	        {
 	            if (global.screen_border_state > 0)
 	            {
@@ -140,7 +140,7 @@ function scr_draw_screen_border()
 	        }
 	        for (i = 1; i < 9; i++)
 	        {
-	            if (overlay[i, 0] != -4)
+	            if (overlay[i, 0] != noone)
 	                scr_draw_background_ps4(overlay[i, 0], overlay[i, 1], overlay[i, 2])
 	        }
 	    }

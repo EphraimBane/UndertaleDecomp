@@ -16,7 +16,7 @@ if (x > (global.idealborder[1] - sprite_width))
     x -= random((global.idealborder[1] - global.idealborder[0]))
 if (x < global.idealborder[0])
     x += random((global.idealborder[1] - global.idealborder[0]))
-if (instance_position((x + (sprite_width / 2)), (y - 15), object_index) != -4)
+if (instance_position((x + (sprite_width / 2)), (y - 15), object_index) != noone)
 {
     if (gg == 1)
         x += (sprite_width / 2)

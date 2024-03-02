@@ -54,7 +54,7 @@ if (global.floweyhp <= 0)
         instance_destroy()
     with (obj_floweybullet_parent)
         instance_destroy()
-    caster_stop(-3)
+    caster_stop(all)
     snd_play(snd_heavydamage)
     dd.alarm[2] = -1
     dcon = 1

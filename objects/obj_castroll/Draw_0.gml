@@ -247,7 +247,7 @@ if (active == true)
         if (__view_get(1, 0) > 1940)
         {
             vol -= 0.02
-            caster_set_volume(-3, vol)
+            caster_set_volume(all, vol)
             exper += 0.5
             __view_set(0, 0, (__view_get(0, 0) - exper))
             if (__view_get(0, 0) < -600)
@@ -372,7 +372,7 @@ if (active == true)
         if (__view_get(1, 0) > 1240)
         {
             vol -= 0.02
-            caster_set_volume(-3, vol)
+            caster_set_volume(all, vol)
             exper += 0.2
             __view_set(1, 0, (__view_get(1, 0) + exper))
             if (__view_get(1, 0) > (shyren.y + 300))
@@ -538,7 +538,7 @@ if (active == true)
             exper += 0.5
             __view_set(0, 0, (__view_get(0, 0) + exper))
             vol -= 0.02
-            caster_set_volume(-3, vol)
+            caster_set_volume(all, vol)
             if (__view_get(0, 0) > 640)
             {
                 do_room_goto = true

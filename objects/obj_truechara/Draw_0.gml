@@ -45,7 +45,7 @@ if (choicer == 1)
     {
         snd_play(snd_select)
         choicer = 0
-        caster_stop(-3)
+        caster_stop(all)
         if (choice == 0)
             con = 19
         if (choice == 1)

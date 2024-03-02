@@ -25,7 +25,7 @@ if (type == 1)
 if (type == 2)
 {
     snd_play(snd_select)
-    caster_stop(-3)
+    caster_stop(all)
     snd_play(snd_laz)
     strike = scr_marker((obj_flowey_wilt.x + 25), (obj_flowey_wilt.y - 20), spr_strike)
     strike.image_xscale = 1
