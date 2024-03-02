@@ -381,7 +381,7 @@ if (con == 64)
     {
         FL_PlotOver = 1
         global.plot = 999
-        FL_TruePacifist = 1
+        FL_TruePacifist = true
         ossafe_ini_open("undertale.ini")
         ini_write_real("F7", "F7", 1)
         ossafe_ini_close()

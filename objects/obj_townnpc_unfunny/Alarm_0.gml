@@ -14,7 +14,7 @@ if (global.plot >= 122)
     global.msg[1] = scr_gettext("obj_townnpc_unfunny_78")
     global.msg[2] = scr_gettext("obj_townnpc_unfunny_79")
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_townnpc_unfunny_85")
     global.msg[1] = scr_gettext("obj_townnpc_unfunny_86")

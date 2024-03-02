@@ -28,7 +28,7 @@ if (FL_CurrentNapstablookSong == 3)
     global.msg[0] = scr_gettext("obj_napstablook_actor_143")
     global.msg[1] = scr_gettext("obj_napstablook_actor_144")
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     if (FL_NapstablookPacifistConvoCounter == 0)
     {

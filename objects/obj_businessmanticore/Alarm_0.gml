@@ -7,7 +7,7 @@ global.msg[0] = scr_gettext("obj_businessmanticore_70")
 global.msg[1] = scr_gettext("obj_businessmanticore_71")
 if (talkedto > 0)
     global.msg[0] = scr_gettext("obj_businessmanticore_75")
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_businessmanticore_80")
     global.msg[1] = scr_gettext("obj_businessmanticore_81")

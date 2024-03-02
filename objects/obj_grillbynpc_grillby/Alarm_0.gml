@@ -5,7 +5,7 @@ global.facechoice = 0
 global.faceemotion = 0
 global.msg[0] = scr_gettext("obj_grillbynpc_grillby_73")
 global.msg[1] = scr_gettext("obj_grillbynpc_grillby_74")
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
     global.msg[0] = scr_gettext("obj_grillbynpc_grillby_78")
 if (sansmode == 1)
 {

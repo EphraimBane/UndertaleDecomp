@@ -33,7 +33,7 @@ if (FL_PapyrusStatus == PapyrusStatus.Killed)
     if (talkedto > 0)
         global.msg[0] = scr_gettext("obj_grillbynpc_foodmonster_104")
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_grillbynpc_foodmonster_109")
     global.msg[1] = scr_gettext("obj_grillbynpc_foodmonster_110")

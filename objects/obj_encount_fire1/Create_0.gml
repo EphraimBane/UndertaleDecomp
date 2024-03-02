@@ -1,4 +1,4 @@
-if (FL_DisableRandomEncounters == 1 || FL_TruePacifist == 1)
+if (FL_DisableRandomEncounters == 1 || FL_TruePacifist == true)
     instance_destroy()
 alldead = 0
 global.encounter = 0

@@ -12,7 +12,7 @@ if (room == room_ruins19)
     room_goto(room_ruins16)
 if (room == room_torhouse1)
 {
-    if (FL_TruePacifist == 0)
+    if (FL_TruePacifist == false)
         caster_free(global.currentsong2)
     room_goto(room_basement1)
 }

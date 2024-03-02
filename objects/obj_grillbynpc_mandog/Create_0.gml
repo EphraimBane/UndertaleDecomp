@@ -14,8 +14,8 @@ talkedto = 0
 image_speed = 0
 if (FL_DogCoupleStatus == DogStatus.Killed)
     instance_destroy()
-if (FL_TruePacifist == 1 && room == room_tundra_grillby)
+if (FL_TruePacifist == true && room == room_tundra_grillby)
     instance_destroy()
-if (FL_TruePacifist == 0 && room == room_tundra_town)
+if (FL_TruePacifist == false && room == room_tundra_town)
     instance_destroy()
 sansmode = 0

@@ -4,7 +4,7 @@ global.typer = 5
 global.facechoice = 0
 global.faceemotion = 0
 global.msg[0] = scr_gettext("obj_hotelreceptionist_95")
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msc = 0
     global.msg[0] = scr_gettext("obj_hotelreceptionist_100")

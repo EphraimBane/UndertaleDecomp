@@ -2,7 +2,7 @@ myinteract = 0
 image_xscale = 1
 image_yscale = 1
 image_speed = 0.2
-if (FL_DatedAlphys >= 12 && FL_TruePacifist == 0)
+if (FL_DatedAlphys >= 12 && FL_TruePacifist == false)
 {
     if (room == room_castle_front)
         instance_destroy()

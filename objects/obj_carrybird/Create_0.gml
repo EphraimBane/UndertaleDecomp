@@ -7,7 +7,7 @@ carry = 0
 sinoid = 0
 clamp_r = 0
 right = 0
-if (FL_TruePacifist == 0)
+if (FL_TruePacifist == false)
     birdsong = caster_load("music/birdsong.ogg")
 if (global.entrance == 20 && global.plot > 115)
 {

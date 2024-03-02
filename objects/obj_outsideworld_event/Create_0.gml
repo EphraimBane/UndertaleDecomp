@@ -1,4 +1,4 @@
-FL_TruePacifist = 1
+FL_TruePacifist = true
 global.interact = 1
 thisblend = merge_color(c_black, c_orange, 0.2)
 obj_readablesolid.image_blend = thisblend

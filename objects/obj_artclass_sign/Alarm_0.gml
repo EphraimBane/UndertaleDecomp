@@ -22,7 +22,7 @@ if (con == 0)
         global.msg[0] = scr_gettext("obj_artclass_sign_224")
         skip = true
     }
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
     {
         global.msg[0] = scr_gettext("obj_artclass_sign_231")
         skip = true

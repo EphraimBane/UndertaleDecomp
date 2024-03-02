@@ -1,4 +1,4 @@
-if (FL_NapstablookSpared != 1 || FL_RuinsKillsCounter > 15 || FL_TruePacifist == 1)
+if (FL_NapstablookSpared != 1 || FL_RuinsKillsCounter > 15 || FL_TruePacifist == true)
     instance_destroy()
 myinteract = 0
 image_xscale = 1

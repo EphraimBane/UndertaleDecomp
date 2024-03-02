@@ -907,9 +907,9 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	    case 206:
 	        scr_phone_moveup(argument0, argument1)
 	        snd_play(snd_phone)
-	        if (FL_TruePacifist == 0)
+	        if (FL_TruePacifist == false)
 	            scr_writetext(1506, "x", 0, 0)
-	        if (FL_TruePacifist == 1)
+	        if (FL_TruePacifist == true)
 	            scr_writetext(1515, "x", 0, 0)
 	        break
 	    case 210:

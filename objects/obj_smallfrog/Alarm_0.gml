@@ -14,7 +14,7 @@ if (FL_Hardmode == 1)
     global.msg[3] = scr_gettext("obj_smallfrog_73")
     global.msg[4] = scr_gettext("obj_smallfrog_74")
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_smallfrog_79")
     global.msg[1] = scr_gettext("obj_smallfrog_80")
@@ -31,7 +31,7 @@ if (room == room_ruins17)
     global.msg[2] = scr_gettext("obj_smallfrog_92")
     global.msg[3] = scr_gettext("obj_smallfrog_93")
     global.msg[4] = scr_gettext("obj_smallfrog_94")
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
     {
         global.msg[0] = scr_gettext("obj_smallfrog_97")
         global.msg[1] = scr_gettext("obj_smallfrog_98")
@@ -64,7 +64,7 @@ if (room == room_ruins13 && x > 300 && x < 400)
         global.msg[2] = scr_gettext("obj_smallfrog_119_console")
         global.msg[3] = scr_gettext("obj_smallfrog_120_console")
     }
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
         global.msg[0] = scr_gettext("obj_smallfrog_124")
 }
 if (room == room_ruins13 && x > 400)
@@ -75,7 +75,7 @@ if (room == room_ruins13 && x > 400)
         global.msc = 751
     if (FL_NameColor == NameColors.Pink)
         global.msc = 753
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
     {
         global.msc = 0
         if (FL_NameColor == NameColors.Yellow)

@@ -1,4 +1,4 @@
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
     instance_create((x + 3), (y + 56), obj_door_s_musfade)
 else
 {

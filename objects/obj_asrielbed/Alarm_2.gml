@@ -7,7 +7,7 @@ if (global.plot >= 24 && jump < 5)
     global.msg[0] = scr_gettext("obj_asrielbed_87")
     global.msg[1] = scr_gettext("obj_asrielbed_88")
     global.msg[2] = scr_gettext("obj_asrielbed_89")
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
     {
         global.typer = 5
         global.msg[0] = scr_gettext("obj_asrielbed_93")

@@ -1,5 +1,5 @@
 global.interact = 3
-if (FL_TruePacifist == 0)
+if (FL_TruePacifist == false)
     instance_create(0, 0, obj_musfadeout)
 instance_create(0, 0, obj_unfader)
 if (touched == false)

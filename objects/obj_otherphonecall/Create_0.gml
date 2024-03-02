@@ -1,5 +1,5 @@
 con = 0
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
     instance_destroy()
 if (FL_FunCallOccurred == 1)
     instance_destroy()

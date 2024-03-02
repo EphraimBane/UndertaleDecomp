@@ -12,14 +12,14 @@ if (talkedto > 0)
     global.msg[0] = scr_gettext("obj_clamgirl_81")
     global.msg[1] = scr_gettext("obj_clamgirl_82")
 }
-if (FL_TruePacifist == 0)
+if (FL_TruePacifist == false)
     FL_InteractedWithClamgirl = 1
 if (FL_UndyneStatus == UndyneStatus.Killed)
 {
     global.msg[0] = scr_gettext("obj_clamgirl_93")
     global.msg[1] = scr_gettext("obj_clamgirl_94")
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     if (FL_InteractedWithClamgirl == 1)
     {

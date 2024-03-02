@@ -14,6 +14,6 @@ if (room == room_fire_newsreport)
 }
 if (global.plot > 184)
     active = 2
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
     active = 2
 activebuffer = 0

@@ -25,7 +25,7 @@ if (room == room_fire_hotelfront_1)
     global.msg[2] = scr_gettext("obj_royal_rabbitbounce_109")
     if (tt >= 1)
         global.msg[0] = scr_gettext("obj_royal_rabbitbounce_113")
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
     {
         global.msg[0] = scr_gettext("obj_royal_rabbitbounce_118")
         global.msg[1] = scr_gettext("obj_royal_rabbitbounce_119")

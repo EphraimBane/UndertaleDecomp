@@ -11,7 +11,7 @@ facing = Direction.Down
 direction = 0
 talkedto = 0
 image_speed = 0.125
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
     image_speed = 0.5
 if (scr_murderlv() >= 12)
     instance_destroy()

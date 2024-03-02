@@ -45,7 +45,7 @@ if (scr_murderlv() >= 2)
     global.msc = 0
     noroom = 0
     if (FL_SnowmanPieceCounter <= 2)
-        scr_itemget((Items.SnowmanPiece)
+        scr_itemget(Items.SnowmanPiece)
     if (noroom == 1)
         global.msg[0] = scr_gettext("obj_nicesnowman_155") //* (You're carrying too many&  items.)/%%
     else

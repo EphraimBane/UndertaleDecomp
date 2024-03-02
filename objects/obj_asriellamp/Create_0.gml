@@ -5,7 +5,7 @@ image_yscale = 1
 if (global.plot == 0)
     instance_destroy()
 active = true
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
     active = false
 if (active == true)
 {

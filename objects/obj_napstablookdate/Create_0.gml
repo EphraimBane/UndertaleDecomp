@@ -1,4 +1,4 @@
-if (FL_TruePacifist == 0 && scr_murderlv() < 10)
+if (FL_TruePacifist == false && scr_murderlv() < 10)
 {
     nap = instance_create(210, 70, obj_napstablook_actor)
     image_xscale = 4

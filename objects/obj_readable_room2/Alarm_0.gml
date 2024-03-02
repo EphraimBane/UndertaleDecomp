@@ -7,7 +7,7 @@ global.msg[0] = scr_gettext("obj_readable_room2_60")
 if (room == room_asrielroom)
 {
     global.msg[0] = scr_gettext("obj_readable_room2_63")
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
         global.msg[0] = scr_gettext("obj_readable_room2_67")
 }
 if (room == room_asrielroom_final)
@@ -69,7 +69,7 @@ if (room == room_kitchen)
     global.msg[0] = scr_gettext("obj_readable_room2_140")
     if (FL_GotBScotchPie > 0)
         global.msg[0] = scr_gettext("obj_readable_room2_141")
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
         global.msg[0] = scr_gettext("obj_readable_room2_144")
 }
 if (room == room_tundra_library)
@@ -401,7 +401,7 @@ if (room == room_fire_hotelbed)
 if (room == room_water_temvillage)
 {
     global.msg[0] = scr_gettext("obj_readable_room2_560")
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
         global.msg[0] = scr_gettext("obj_readable_room2_563")
 }
 if (room == room_water11)

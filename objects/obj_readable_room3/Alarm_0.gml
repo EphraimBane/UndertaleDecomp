@@ -15,7 +15,7 @@ if (room == room_asrielroom_final)
 if (room == room_torielroom)
 {
     global.msg[0] = scr_gettext("obj_readable_room3_71")
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
     {
         global.msg[0] = scr_gettext("obj_readable_room3_74")
         global.msg[1] = scr_gettext("obj_readable_room3_75")

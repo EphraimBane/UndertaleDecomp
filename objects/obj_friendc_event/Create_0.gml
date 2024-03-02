@@ -1,7 +1,7 @@
 con = 0
-if (FL_TruePacifist == 1 && FL_PlotOver == 2)
+if (FL_TruePacifist == true && FL_PlotOver == 2)
 {
-    if (caster_is_playing(global.currentsong) != 1 && FL_TruePacifist == 1)
+    if (caster_is_playing(global.currentsong) != 1 && FL_TruePacifist == true)
     {
         global.currentsong = caster_load("music/reunited.ogg")
         caster_loop(global.currentsong, 1, 1)
@@ -18,7 +18,7 @@ else
 {
     global.hp = global.maxhp
     global.currentsong = caster_load("music/reunited.ogg")
-    FL_TruePacifist = 1
+    FL_TruePacifist = true
     FL_SMSConvoParameters = 1
     FL_ToggleFinalBeam = 0
     global.plot = 999

@@ -13,7 +13,7 @@ talkedto = 0
 image_speed = 0
 if (scr_enemynpc1() != 1)
     instance_destroy()
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     instance_create((x + 40), (y - 8), obj_npc_room)
     instance_create((x + 100), y, obj_snowdrakedad)

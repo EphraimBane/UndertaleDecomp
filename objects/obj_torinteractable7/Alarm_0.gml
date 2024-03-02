@@ -5,7 +5,7 @@ global.msg[1] = scr_gettext("obj_torinteractable7_83")
 global.typer = 4
 global.facechoice = 1
 global.faceemotion = 0
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.typer = 89
     global.facechoice = 9

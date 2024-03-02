@@ -39,7 +39,7 @@ if (global.debug == true)
     gox = 2
 if (gox == 0)
     instance_destroy()
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
     instance_destroy()
 if (scr_murderlv() >= 12)
     instance_destroy()

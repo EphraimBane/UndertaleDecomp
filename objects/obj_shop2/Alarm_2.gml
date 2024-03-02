@@ -1,4 +1,4 @@
-if (FL_TruePacifist == 0)
+if (FL_TruePacifist == false)
 {
     caster_set_volume(shopmus, vol)
     vol -= 0.02

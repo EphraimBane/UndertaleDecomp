@@ -12,7 +12,7 @@ global.msg[5] = scr_gettext("obj_spagnot_103")
 global.msg[6] = scr_gettext("obj_spagnot_104")
 global.msg[7] = scr_gettext("obj_spagnot_105")
 global.msg[8] = scr_gettext("obj_spagnot_106")
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_spagnot_110")
     global.msg[1] = scr_gettext("obj_spagnot_111")

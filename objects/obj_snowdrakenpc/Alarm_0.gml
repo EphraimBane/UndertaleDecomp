@@ -8,7 +8,7 @@ global.msg[1] = scr_gettext("obj_snowdrakenpc_77")
 global.msg[2] = scr_gettext("obj_snowdrakenpc_78")
 if (talkedto > 0)
     global.msg[0] = scr_gettext("obj_snowdrakenpc_82")
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_snowdrakenpc_87")
     global.msg[1] = scr_gettext("obj_snowdrakenpc_88")

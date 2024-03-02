@@ -28,7 +28,7 @@ if (menu == 0)
         if (mainmessage == 0)
             global.msg[0] = scr_gettext("obj_shop2_235")
         mainmessage = 1
-        if (FL_TruePacifist == 1)
+        if (FL_TruePacifist == true)
             global.msg[0] = scr_gettext("obj_shop2_236")
         if (murder == 1)
             global.msg[0] = scr_gettext("obj_shop2_237")
@@ -187,7 +187,7 @@ if (menu == 1 || menu == 2)
 if (menu == 3)
 {
     menumax = 4
-    if (FL_TruePacifist == 0)
+    if (FL_TruePacifist == false)
     {
         if (murder == 0)
         {
@@ -211,7 +211,7 @@ if (menu == 3)
             scr_shop_draw_talktitle(3, 0, scr_gettext("shop2_talk12_title"))
         }
     }
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
     {
         scr_shop_draw_talktitle(0, 0, scr_gettext("shop2_talk5_title"))
         scr_shop_draw_talktitle(1, 0, scr_gettext("shop2_talk6_title"))
@@ -296,7 +296,7 @@ if (menu == 4)
                 global.msg[4] = scr_gettext("obj_shop2_472")
                 global.msg[5] = scr_gettext("obj_shop2_473")
             }
-            if (FL_TruePacifist == 1)
+            if (FL_TruePacifist == true)
             {
                 global.msg[0] = scr_gettext("obj_shop2_478")
                 global.msg[1] = scr_gettext("obj_shop2_479")
@@ -351,7 +351,7 @@ if (menu == 4)
                 FL_GersonEmblemCounter = 2
             if (FL_GersonEmblemCounter == 0)
                 FL_GersonEmblemCounter = 1
-            if (FL_TruePacifist == 1)
+            if (FL_TruePacifist == true)
             {
                 global.msg[0] = scr_gettext("obj_shop2_537")
                 global.msg[1] = scr_gettext("obj_shop2_538")
@@ -383,7 +383,7 @@ if (menu == 4)
             global.msg[3] = scr_gettext("obj_shop2_567")
             global.msg[4] = scr_gettext("obj_shop2_568")
             global.msg[5] = scr_gettext("obj_shop2_569")
-            if (FL_TruePacifist == 1)
+            if (FL_TruePacifist == true)
             {
                 global.msg[0] = scr_gettext("obj_shop2_573")
                 global.msg[1] = scr_gettext("obj_shop2_574")
@@ -407,7 +407,7 @@ if (menu == 4)
             global.msg[1] = scr_gettext("obj_shop2_596")
             global.msg[2] = scr_gettext("obj_shop2_597")
             global.msg[3] = scr_gettext("obj_shop2_598")
-            if (FL_TruePacifist == 1)
+            if (FL_TruePacifist == true)
             {
                 global.msg[0] = scr_gettext("obj_shop2_601")
                 global.msg[1] = scr_gettext("obj_shop2_602")

@@ -39,7 +39,7 @@ won = 0
 fun = false
 con = 0
 bringback = 0
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
     instance_destroy()
 if (scr_murderlv() >= 10)
     instance_destroy()

@@ -35,5 +35,5 @@ if (global.debug == true)
     gox = 1
 if (gox == 0)
     instance_destroy()
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
     instance_destroy()

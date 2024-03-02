@@ -14,7 +14,7 @@ if (global.plot >= 122)
     global.msg[1] = scr_gettext("obj_librarynpc_wordsearch_79")
     global.msg[2] = scr_gettext("obj_librarynpc_wordsearch_80")
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     global.msg[0] = scr_gettext("obj_librarynpc_wordsearch_85")
     global.msg[1] = scr_gettext("obj_librarynpc_wordsearch_86")

@@ -3,7 +3,7 @@ global.msc = 0
 global.typer = 37
 global.facechoice = 5
 global.faceemotion = 0
-if (FL_TruePacifist == 0)
+if (FL_TruePacifist == false)
 {
     global.msg[0] = scr_gettext("obj_undyne_friendc_76")
     global.msg[1] = scr_gettext("obj_undyne_friendc_77")
@@ -97,7 +97,7 @@ if (FL_TruePacifist == 0)
         }
     }
 }
-if (FL_TruePacifist == 1)
+if (FL_TruePacifist == true)
 {
     if (FL_UndynePacifistConvoCounter == 0)
         global.msc = 806

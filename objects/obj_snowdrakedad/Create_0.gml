@@ -11,7 +11,7 @@ facing = Direction.Down
 direction = 0
 talkedto = 0
 image_speed = 0
-if (FL_TruePacifist == 1 && room == room_fire_restaurant)
+if (FL_TruePacifist == true && room == room_fire_restaurant)
     instance_destroy()
 if (scr_murderlv() >= 12)
     instance_destroy()

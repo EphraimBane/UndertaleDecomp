@@ -1,4 +1,4 @@
-if (room == room_castle_elevatorout && x < (room_width / 2) && FL_DatedAlphys >= 12 && FL_TruePacifist == 0)
+if (room == room_castle_elevatorout && x < (room_width / 2) && FL_DatedAlphys >= 12 && FL_TruePacifist == false)
 {
     instance_create(x, (y + 30), obj_solidsmall)
     instance_create((x + 20), (y + 30), obj_solidsmall)

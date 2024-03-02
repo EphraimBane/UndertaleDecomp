@@ -13,7 +13,7 @@ if (FL_PouredWaterCounter > 0)
             pudspr.image_index = 1
         if (FL_PouredWaterCounter > 15)
             pudspr.image_index = 2
-        if (FL_PouredWaterCounter > 15 && FL_TruePacifist == 1)
+        if (FL_PouredWaterCounter > 15 && FL_TruePacifist == true)
             pudspr.image_index = 3
     }
 }

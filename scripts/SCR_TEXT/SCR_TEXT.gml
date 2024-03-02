@@ -504,7 +504,7 @@ function SCR_TEXT()
 	            global.msg[0] = scr_gettext("SCR_TEXT_511")
 	            global.msg[1] = scr_gettext("SCR_TEXT_512")
 	            global.msg[2] = scr_gettext("SCR_TEXT_513")
-	            if (FL_TruePacifist == 1)
+	            if (FL_TruePacifist == true)
 	            {
 	                global.msg[0] = scr_gettext("SCR_TEXT_516")
 	                global.msg[1] = scr_gettext("SCR_TEXT_517")
@@ -1511,7 +1511,7 @@ function SCR_TEXT()
 	        else
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_1589")
-	            if (FL_TruePacifist == 1)
+	            if (FL_TruePacifist == true)
 	            {
 	                global.msg[0] = scr_gettext("SCR_TEXT_1592")
 	                global.msg[1] = scr_gettext("SCR_TEXT_1593")
@@ -2016,7 +2016,7 @@ function SCR_TEXT()
 	        global.msg[2] = scr_gettext("SCR_TEXT_2065")
 	        if (obj_townnpc_innlady.jtext == 1)
 	            global.msg[0] = scr_gettext("SCR_TEXT_2069")
-	        if (FL_TruePacifist == 1)
+	        if (FL_TruePacifist == true)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_2074")
 	            global.msg[1] = scr_gettext("SCR_TEXT_2075")
@@ -5096,13 +5096,13 @@ function SCR_TEXT()
 	            global.msg[0] = scr_gettext("SCR_TEXT_5569")
 	            global.msg[1] = scr_gettext("SCR_TEXT_5570")
 	            global.msg[2] = scr_gettext("SCR_TEXT_5571")
-	            if (FL_TruePacifist == 1)
+	            if (FL_TruePacifist == true)
 	                global.msg[0] = scr_gettext("SCR_TEXT_5575")
 	        }
 	        else
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_5581")
-	            if (FL_TruePacifist == 1)
+	            if (FL_TruePacifist == true)
 	                global.msg[0] = scr_gettext("SCR_TEXT_5585")
 	        }
 	        break
@@ -5131,13 +5131,13 @@ function SCR_TEXT()
 	            global.msg[0] = scr_gettext("SCR_TEXT_5617")
 	            global.msg[1] = scr_gettext("SCR_TEXT_5618")
 	            global.msg[2] = scr_gettext("SCR_TEXT_5619")
-	            if (FL_TruePacifist == 1)
+	            if (FL_TruePacifist == true)
 	                global.msg[0] = scr_gettext("SCR_TEXT_5623")
 	        }
 	        else
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_5628")
-	            if (FL_TruePacifist == 1)
+	            if (FL_TruePacifist == true)
 	                global.msg[0] = scr_gettext("SCR_TEXT_5632")
 	        }
 	        break
@@ -5164,7 +5164,7 @@ function SCR_TEXT()
 	        global.msg[1] = scr_gettext("SCR_TEXT_5663")
 	        global.msg[2] = scr_gettext("SCR_TEXT_5664")
 	        global.msg[3] = scr_gettext("SCR_TEXT_5665")
-	        if (FL_TruePacifist == 1)
+	        if (FL_TruePacifist == true)
 	            global.msg[0] = scr_gettext("SCR_TEXT_5669")
 	        break
 	    case 865:
@@ -5404,7 +5404,7 @@ function SCR_TEXT()
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5954")
 	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5955")
-	            if (FL_TruePacifist == 1)
+	            if (FL_TruePacifist == true)
 	            {
 	                global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5958")
 	                global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5959")
@@ -6564,7 +6564,7 @@ function SCR_TEXT()
 	        global.msg[2] = scr_gettext("SCR_TEXT_7027")
 	        break
 	    case 1510:
-	        if (FL_TruePacifist == 0)
+	        if (FL_TruePacifist == false)
 	            scr_papcall()
 	        else
 	            global.msg[0] = scr_gettext("SCR_TEXT_7040")

@@ -7,7 +7,7 @@ global.msg[0] = scr_gettext("obj_readable_room4_60")
 if (room == room_torhouse3)
 {
     global.msg[0] = scr_gettext("obj_readable_room4_63")
-    if (FL_TruePacifist == 1)
+    if (FL_TruePacifist == true)
         global.msg[0] = scr_gettext("obj_readable_room4_64")
 }
 if (room == room_torhouse3 && murdererlv1() == 1)

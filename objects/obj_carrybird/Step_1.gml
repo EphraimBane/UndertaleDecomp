@@ -1,7 +1,7 @@
 scr_depth(0, 0, 0, 0, 0)
 if (carry == 1 && instance_exists(OBJ_WRITER) == 0)
 {
-    if (FL_TruePacifist == 0)
+    if (FL_TruePacifist == false)
         scr_musfadepause(0.05)
     global.interact = 1
     alarm[4] = 20
@@ -13,7 +13,7 @@ if (carry == 2)
 if (carry == 3)
 {
     voli = 0
-    if (FL_TruePacifist == 0)
+    if (FL_TruePacifist == false)
         caster_loop(birdsong, 0.2, 1.1)
     sprite_index = spr_smallbird_fly
     image_speed = 0.25
@@ -27,7 +27,7 @@ if (carry == 3)
 if (carry == 4)
 {
     voli += 0.02
-    if (FL_TruePacifist == 0)
+    if (FL_TruePacifist == false)
         caster_set_volume(birdsong, voli)
 }
 if (carry == 5)
@@ -87,12 +87,12 @@ if (carry == 14)
 {
     if (voli > 0)
         voli -= 0.008
-    if (FL_TruePacifist == 0)
+    if (FL_TruePacifist == false)
         caster_set_volume(birdsong, voli)
 }
 if (carry == 15)
 {
-    if (FL_TruePacifist == 0)
+    if (FL_TruePacifist == false)
         caster_stop(birdsong)
     sinoid = 0
     clamp_r = 0
