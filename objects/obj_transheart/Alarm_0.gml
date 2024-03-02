@@ -15,7 +15,7 @@ if (room == room_water_undynefinal)
 }
 spdr = (distance_to_point(mychoicex, mychoicey) / 17)
 move_towards_point(mychoicex, mychoicey, spdr)
-if (FL_TypeHeartTransition == 1)
+if (FL_TypeHeartTransition == HeartTransitionType.QuickBattle)
 {
     mychoicex = (xx + 154)
     mychoicey = (yy + 156)

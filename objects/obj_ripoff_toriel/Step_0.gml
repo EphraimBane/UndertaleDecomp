@@ -280,7 +280,7 @@ if (saved == 4 && writer.halt != false && obj_ripoff_asgore.writer.halt != false
 if (saved == 6)
 {
     global.battlegroup = 256
-    FL_SavedLostSoul4 = 1
+    FL_SavedTorielLostSoul = 1
     room_restart()
 }
 if (turnoff == 1 && global.turntimer <= 0)

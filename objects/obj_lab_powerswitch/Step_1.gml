@@ -228,7 +228,7 @@ if (con == 28)
         uncan = 0
     global.interact = 0
     FL_AlphysExpression = 0
-    FL_TrueLabEvent5 = 1
+    FL_PowerSwitchAmalgamEvent = 1
     FL_DatedAlphys = 12
     FL_UnlockedNewHomeLatch = 1
     if (global.plot < 201)

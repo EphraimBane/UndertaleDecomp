@@ -232,7 +232,7 @@ if (global.mnfight == 5 && instance_exists(OBJ_WRITER) == 0)
     if (saved == 6)
     {
         global.battlegroup = 256
-        FL_SavedLostSoul2 = 1
+        FL_SavedAlphysLostSoul = 1
         room_restart()
     }
 }

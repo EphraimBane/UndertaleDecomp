@@ -1,4 +1,4 @@
-FL_TypeHeartTransition = 0
+FL_TypeHeartTransition = HeartTransitionType.Normal
 con = 1
 if (global.plot > 198)
     instance_destroy()

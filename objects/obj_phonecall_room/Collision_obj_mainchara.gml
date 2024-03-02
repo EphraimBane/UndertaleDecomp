@@ -340,7 +340,7 @@ if (t == 0 && global.interact == 0)
         global.msg[16] = scr_gettext("obj_phonecall_room_585")
         if (FL_PapyrusStatus == PapyrusStatus.Killed)
             donotcall = 1
-        FL_TrueLabEvent12 = 0
+        FL_AlphysLabLocked = 0
         FL_DatedAlphys = 11
     }
     if (room == room_fire10 && global.plot < 139)

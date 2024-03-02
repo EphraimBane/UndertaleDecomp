@@ -1495,7 +1495,7 @@ if (cn == 170)
     ossafe_ini_close()
     ossafe_savedata_save()
     instance_create(0, 0, obj_persistentfader)
-    FL_TrueLabEvent12 = 0
+    FL_AlphysLabLocked = 0
     FL_DatedAlphys = 10
     room_goto(room_water_trashzone1)
 }

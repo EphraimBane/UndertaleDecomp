@@ -1,7 +1,7 @@
 no = 0
 dp = 0
 nod = 0
-if (FL_TrueLabEvent10 > 0)
+if (FL_EndogenyEvent > 0)
 {
     instance_destroy()
     return;

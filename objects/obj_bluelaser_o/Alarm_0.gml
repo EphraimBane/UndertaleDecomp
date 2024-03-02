@@ -4,7 +4,7 @@ if (room != room_fire_core_laserfun)
         active = true
 }
 global.border = 0
-FL_InBattle = 0
-FL_TypeHeartTransition = 0
+FL_InBattle = false
+FL_TypeHeartTransition = HeartTransitionType.Normal
 if (room == room_fire_core4 || room == room_fire_core_laserfun)
-    FL_InBattle = 1
+    FL_InBattle = true

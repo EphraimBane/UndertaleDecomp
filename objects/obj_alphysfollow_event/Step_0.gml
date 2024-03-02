@@ -237,7 +237,7 @@ if (con == 70 && instance_exists(OBJ_WRITER) == 0)
     con = 71
     follow = 0
     global.interact = 0
-    FL_TrueLabEvent12 = 1
+    FL_AlphysLabLocked = 1
     global.plot = 199
     instance_destroy()
 }

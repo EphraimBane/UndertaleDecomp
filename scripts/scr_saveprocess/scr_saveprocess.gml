@@ -1,3 +1,5 @@
+/// @func	scr_saveprocess()
+/// @desc	Saves the game to "file + global.filechoice"
 function scr_saveprocess()
 {
 	global.lastsavedkills = global.kills

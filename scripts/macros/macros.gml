@@ -192,7 +192,7 @@ enum OSFlavors
 #macro FL_InteractedWithFakedog global.flag[261]
 #macro FL_DeliveredSeaTea global.flag[262]
 #macro FL_DeliveredCinnabun global.flag[263]
-#macro FL_DeliveredHotDog global.flag[264]
+#macro FL_GotHushPuppy global.flag[264]
 #macro FL_TemSellParameter1 global.flag[265]
 #macro FL_TemSellParameter2 global.flag[266]
 #macro FL_HotelStatus global.flag[267]
@@ -363,18 +363,18 @@ enum OSFlavors
 // 477 - 479 Unused
 #macro FL_CompletedTrueLab global.flag[480]
 // TODO: LOOK InTO THESE!!!!
-#macro FL_TrueLabEvent1 global.flag[481]
-#macro FL_TrueLabEvent2 global.flag[482]
-#macro FL_TrueLabEvent3 global.flag[483]
-#macro FL_TrueLabEvent4 global.flag[484]
-#macro FL_TrueLabEvent5 global.flag[485]
-#macro FL_TrueLabEvent6 global.flag[486]
-#macro FL_TrueLabEvent7 global.flag[487]
-#macro FL_TrueLabEvent8 global.flag[488]
-#macro FL_TrueLabEvent9 global.flag[489]
-#macro FL_TrueLabEvent10 global.flag[490]
-#macro FL_TrueLabEvent11 global.flag[491]
-#macro FL_TrueLabEvent12 global.flag[492]
+#macro FL_MemoryHeadStatus global.flag[481]
+#macro FL_SnowyAmalgamEvent global.flag[482]
+#macro FL_ShowerCurtainAmalgamEvent global.flag[483]
+#macro FL_BedAmalgamEvent global.flag[484]
+#macro FL_PowerSwitchAmalgamEvent global.flag[485]
+#macro FL_TrueLabSinkCounter global.flag[486]
+#macro FL_TrueLabKeySink global.flag[487]
+#macro FL_ReaperbirdEvent global.flag[488]
+#macro FL_LemonBreadEvent global.flag[489]
+#macro FL_EndogenyEvent global.flag[490]
+#macro FL_TrueLabPowerSwitchOn global.flag[491]
+#macro FL_AlphysLabLocked global.flag[492]
 #macro FL_DatedAlphys global.flag[493]
 #macro FL_UndynesLetterStatus global.flag[494] // TODO: ENUM HERE
 #macro FL_PopatoChispsBoughtCounter global.flag[495]
@@ -387,15 +387,22 @@ enum OSFlavors
 #macro FL_ButItRefused global.flag[502]
 #macro FL_DreamedAsrielFight global.flag[503]
 // 504 - Unused
-// TODO: LOOK INTO THESE
-#macro FL_SavedLostSoul1 global.flag[505]
-#macro FL_SavedLostSoul2 global.flag[506]
-#macro FL_SavedLostSoul3 global.flag[507]
-#macro FL_SavedLostSoul4 global.flag[508]
+#macro FL_SavedUndyneLostSoul global.flag[505]
+#macro FL_SavedAlphysLostSoul global.flag[506]
+#macro FL_SavedPapyrusLostSoul global.flag[507]
+#macro FL_SavedTorielLostSoul FL_SavedTorielLostSoul
 #macro FL_ToggleFinalBeam global.flag[509]
 #macro FL_PlotOver global.flag[510] // TODO: Look into this !!!
 #macro FL_AsrielConvoCounter global.flag[511]
 #macro FL_FinalTorielChoice global.flag[512] // TODO: make this choice !!
+#endregion
+
+#region Macros
+#macro DimensionBoxAItemStart 300
+#macro DimensionBoxBItemStart 312
+#macro DimensionalBoxSize 11
+#macro InventorySize 8
+
 #endregion
 
 #region Enums
@@ -759,5 +766,11 @@ enum MonsterType
 	AsrielDreemurr = 99,
 	Asriel,
 	Gaster = 666
+}
+
+enum HeartTransitionType
+{
+	Normal,
+	QuickBattle
 }
 #endregion

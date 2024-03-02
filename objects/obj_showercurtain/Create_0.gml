@@ -4,13 +4,13 @@ drawkey = 0
 con = 0
 myinteract = 0
 mode = 0
-if (FL_TrueLabEvent3 == 1)
+if (FL_ShowerCurtainAmalgamEvent == 1)
 {
     mode = 2
     drawkey = 1
     size = 0.3
 }
-if (FL_TrueLabEvent3 >= 2)
+if (FL_ShowerCurtainAmalgamEvent >= 2)
 {
     mode = 2
     drawkey = 0

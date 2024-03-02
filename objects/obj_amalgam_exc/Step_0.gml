@@ -57,7 +57,7 @@ if (con == 6)
     global.battlegroup = 83
     global.mercy = 1
     global.border = 0
-    FL_TypeHeartTransition = 0
+    FL_TypeHeartTransition = HeartTransitionType.Normal
     instance_create(0, 0, obj_battler)
     con = 7
     alarm[4] = 32
@@ -68,7 +68,7 @@ if (con == 8)
     global.mercy = 0
     caster_resume(global.currentsong)
     myinteract = 0
-    FL_TrueLabEvent8 = 1
+    FL_ReaperbirdEvent = 1
     scr_tempsave()
     instance_destroy()
 }
