@@ -7,7 +7,7 @@ with (door)
     depth = 900000
 with (door)
     image_speed = 0
-if (global.flag[389] >= 2)
+if (FL_UndyneDateStatus >= 2)
 {
     with (housesprite)
         sprite_index = spr_undynehouse_fire
@@ -16,7 +16,7 @@ if (global.flag[389] >= 2)
     with (door)
         visible = false
 }
-if (FL_PapyrusCallConvoCounter == 2 && FL_PapyrusStatus == PapyrusStatus.Spared && FL_PapyrusDateCounter >= 3 && global.flag[389] <= 2)
+if (FL_PapyrusCallConvoCounter == 2 && FL_PapyrusStatus == PapyrusStatus.Spared && FL_PapyrusDateCounter >= 3 && FL_UndyneDateStatus <= 2)
 {
     papyrus = instance_create(140, 80, obj_papyrus_room)
     with (papyrus)
@@ -34,7 +34,7 @@ if (FL_UndyneStatus == UndyneStatus.Killed)
     d = 1
 if (FL_UndyneStatus == UndyneStatus.SparedWithoutWater)
     d = 1
-if (global.flag[389] >= 2)
+if (FL_UndyneDateStatus >= 2)
     d = 1
 if (global.kills > 0)
     d = 1

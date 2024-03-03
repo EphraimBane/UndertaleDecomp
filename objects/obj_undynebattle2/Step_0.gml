@@ -251,7 +251,7 @@ if (con == 29)
     FL_UnknownBoolean17 = false
     global.mercy = 0
     instance_create(0, 0, obj_persistentfader)
-    global.flag[389] = 3
+    FL_UndyneDateStatus = 3
     room_goto(room_water_undyneyard)
 }
 if (con == 80 && instance_exists(OBJ_WRITER) == 0)
