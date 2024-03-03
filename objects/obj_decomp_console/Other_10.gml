@@ -31,3 +31,5 @@ command_register("battle_start", "Starts a Battle depending on the set battlegro
 command_register("solid_show", "Toggles the solid overlay", [ ]);
 command_register("pos_show", "Toggles the position overlay", [ ]);
 command_register("pos_set", "Sets the position of the player", [ "x", "y" ]);
+
+command_register("random_encounters", "Toggles random monster encounters", [ "value" ]);
