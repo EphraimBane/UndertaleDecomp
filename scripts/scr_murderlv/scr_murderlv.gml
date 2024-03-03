@@ -19,19 +19,19 @@ function scr_murderlv()
 	    mrd = 8
 	if (mrd == 8 && FL_ShyrenStatus == ShyrenStatus.Killed)
 	    mrd = 9
-	if (mrd == 9 && FL_KilledGladDummy == 1)
+	if (mrd == 9 && FL_KilledGladDummy == true)
 	    mrd = 10
 	if (mrd == 10 && FL_WaterfallKillsCounter >= 18)
 	    mrd = 11
-	if (mrd == 11 && FL_KilledUndyneEX == 1 && FL_UndyneStatus == UndyneStatus.Killed)
+	if (mrd == 11 && FL_KilledUndyneEX == true && FL_UndyneStatus == UndyneStatus.Killed)
 	    mrd = 12
-	if (mrd == 12 && FL_KilledRoyalGuards == 1)
+	if (mrd == 12 && FL_KilledRoyalGuards == true)
 	    mrd = 13
-	if (mrd == 13 && FL_KilledMuffet == 1)
+	if (mrd == 13 && FL_KilledMuffet == true)
 	    mrd = 14
 	if (mrd == 14 && FL_HotlandKillsCounter >= 40)
 	    mrd = 15
-	if (mrd == 15 && FL_KilledMettaton == 1 && FL_SparedSpecific == 0)
+	if (mrd == 15 && FL_KilledMettaton == true && FL_SparedSpecific == 0)
 	    mrd = 16
 	murderboy = mrd
 	if (FL_MurderLevelOverride > 0)

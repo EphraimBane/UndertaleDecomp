@@ -28,7 +28,7 @@ if (room == room_fire_core1)
     FL_AreaKillsPointer = 205
     con = 40
     ok = 0
-    if (FL_GotAlphysAdvice1 == 1)
+    if (FL_GotAlphysAdvice1 == true)
         ok = 1
     if (FL_DisableAlphysCalls > 0)
         ok = 1

@@ -1,10 +1,14 @@
-function scr_weaponeq()
+/// @func						scr_weaponeq(itemIndex, weaponItem)
+/// @desc						Equips an armor item
+/// @arg	{Real}	itemIndex	The index of the inventory to put the current armor into
+/// @arg	{Real}	weaponItem	The item to equip
+function scr_weaponeq(_itemIndex, _weaponItem)
 {
 	if (global.weapon == Items.ToughGlove && global.inbattle == true && FL_StrongToughGlove == true)
 	    global.at = (8 + (global.lv * 2))
-	if (argument0 >= 0)
-	    global.item[argument0] = global.weapon
-	global.weapon = argument1
+	if (_itemIndex >= 0)
+	    global.item[_itemIndex] = global.weapon
+	global.weapon = _weaponItem
 	if (global.weapon == Items.Stick)
 	    global.wstrength = 0
 	if (global.weapon == Items.ToyKnife)

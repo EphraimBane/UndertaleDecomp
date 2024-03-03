@@ -1,4 +1,5 @@
-/// @func	scr_armoreq(itemIndex, armorItem)
+/// @func						scr_armoreq(itemIndex, armorItem)
+/// @desc						Equips an armor item
 /// @arg	{Real}	itemIndex	The index of the inventory to put the current armor into
 /// @arg	{Real}	armorItem	The item to equip
 function scr_armoreq(_itemIndex, _armorItem)

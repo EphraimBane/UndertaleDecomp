@@ -453,6 +453,10 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Ruins","folderPath":"folders/Tile Sets/Ruins.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Unsure","folderPath":"folders/Scripts/Unsure.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Text","folderPath":"folders/Scripts/Text.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Faces","folderPath":"folders/Scripts/Text/Faces.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/Scripts/UI.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"credits.txt","CopyToMask":-1,"filePath":"datafiles",},
@@ -4070,6 +4074,7 @@
     {"id":{"name":"spr_sansb_torso","path":"sprites/spr_sansb_torso/spr_sansb_torso.yy",},},
     {"id":{"name":"spr_sansb_blueeye","path":"sprites/spr_sansb_blueeye/spr_sansb_blueeye.yy",},},
     {"id":{"name":"spr_sansb_face","path":"sprites/spr_sansb_face/spr_sansb_face.yy",},},
+    {"id":{"name":"OG Roomlist","path":"notes/OG Roomlist/OG Roomlist.yy",},},
     {"id":{"name":"spr_sansb_face_sweat","path":"sprites/spr_sansb_face_sweat/spr_sansb_face_sweat.yy",},},
     {"id":{"name":"spr_sansb_rightstrike","path":"sprites/spr_sansb_rightstrike/spr_sansb_rightstrike.yy",},},
     {"id":{"name":"spr_sansb_handdown","path":"sprites/spr_sansb_handdown/spr_sansb_handdown.yy",},},
