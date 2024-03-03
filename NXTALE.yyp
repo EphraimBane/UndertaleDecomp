@@ -1689,6 +1689,7 @@
     {"id":{"name":"obj_cherrypetal","path":"objects/obj_cherrypetal/obj_cherrypetal.yy",},},
     {"id":{"name":"obj_playmovement","path":"objects/obj_playmovement/obj_playmovement.yy",},},
     {"id":{"name":"obj_textdrawtest","path":"objects/obj_textdrawtest/obj_textdrawtest.yy",},},
+    {"id":{"name":"cmd_random_encounters","path":"scripts/cmd_random_encounters/cmd_random_encounters.yy",},},
     {"id":{"name":"obj_songwriter","path":"objects/obj_songwriter/obj_songwriter.yy",},},
     {"id":{"name":"obj_mettaton_flightdress","path":"objects/obj_mettaton_flightdress/obj_mettaton_flightdress.yy",},},
     {"id":{"name":"obj_mettaton_dress1","path":"objects/obj_mettaton_dress1/obj_mettaton_dress1.yy",},},

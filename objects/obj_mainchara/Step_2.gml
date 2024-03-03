@@ -44,7 +44,7 @@ if (moving == false)
 }
 if (global.interact == 0)
 {
-    if (moving == true)
+    if (moving == true && obj_decomp_console.random_encounters)
         global.encounter += 1
 }
 if (cutscene == false)
