@@ -1,6 +1,6 @@
 image_yscale = 6
 active = false
-FL_AreaKillsPointer = 205
+FL_AreaKillsPointer = KillsPointer_Hotland
 if (FL_FoughtMuffet < 5 && global.tempvalue[11] > 0)
     FL_FoughtMuffet = 5
 con = FL_FoughtMuffet

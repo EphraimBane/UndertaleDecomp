@@ -60,7 +60,7 @@ if (t == 8)
 if (t == 9 && instance_exists(OBJ_WRITER) == 0)
 {
     global.battlegroup = 25
-    FL_AreaKillsPointer = 0
+    FL_AreaKillsPointer = KillsPointer_Invalid
     global.mercy = 1
     instance_create(0, 0, obj_battler)
     t = 10

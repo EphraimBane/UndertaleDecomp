@@ -2,9 +2,9 @@ buffer += 1
 global.interact = 1
 if (buffer > 3)
 {
-    boxno = 300
+    boxno = DimensionBoxAItemStart
     if (boxtype == 1)
-        boxno = 312
+        boxno = DimensionBoxBItemStart
     xx = __view_get(VIEW_PROP_CAM_X, view_current)
     yy = (__view_get(VIEW_PROP_CAM_Y, view_current) + 6)
     var boxofs = 8

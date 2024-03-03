@@ -428,6 +428,11 @@ enum OSFlavors
 #macro CancelButton 1
 #macro MenuButton 3
 
+#macro KillsPointer_Invalid 0
+#macro KillsPointer_Ruins 202
+#macro KillsPointer_Tundra 204
+#macro KillsPointer_Hotland 205
+
 #macro c_soulblue 0xFFA914
 #macro c_altblue 0xFDC00E
 #macro c_pink 0xD4BBFF

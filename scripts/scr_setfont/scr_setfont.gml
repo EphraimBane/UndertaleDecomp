@@ -1,6 +1,9 @@
-function scr_setfont()
+/// @func					scr_setfont(font)
+/// @desc					Sets the current font based on the language
+/// @param	{Asset.GMFont}	font
+function scr_setfont(_font)
 {
-	var newfont = argument0
+	var newfont = _font
 	if (global.language == "ja")
 	{
 	    if (newfont == fnt_main)

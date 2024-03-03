@@ -2,7 +2,7 @@ scr_depth(0, 0, 0, 0, 0)
 if (talkedto == 1 && global.choice == 0 && instance_exists(obj_dialoguer) == 0)
 {
     global.battlegroup = 20
-    FL_AreaKillsPointer = 0
+    FL_AreaKillsPointer = KillsPointer_Invalid
     global.mercy = 1
     instance_create(0, 0, obj_battler)
     talkedto = 0

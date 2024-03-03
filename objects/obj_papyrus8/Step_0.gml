@@ -184,7 +184,7 @@ if (conversation == 16 && instance_exists(OBJ_WRITER) == 0)
     myinteract = 3
     global.seriousbattle = 0
     global.battlegroup = 27
-    FL_AreaKillsPointer = 0
+    FL_AreaKillsPointer = KillsPointer_Invalid
     global.mercy = 1
     instance_create(0, 0, obj_battler)
     conversation = 17

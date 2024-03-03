@@ -1,4 +1,4 @@
-FL_AreaKillsPointer = 205
+FL_AreaKillsPointer = KillsPointer_Hotland
 image_xscale = 6
 con = 0
 if (FL_TruePacifist == true || FL_DisableRandomEncounters == 1 || global.plot > 198)

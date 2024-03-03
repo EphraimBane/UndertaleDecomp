@@ -457,6 +457,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Text","folderPath":"folders/Scripts/Text.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Faces","folderPath":"folders/Scripts/Text/Faces.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/Scripts/UI.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Storage","folderPath":"folders/Scripts/Item/Storage.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"credits.txt","CopyToMask":-1,"filePath":"datafiles",},

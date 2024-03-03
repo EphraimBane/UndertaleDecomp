@@ -25,7 +25,7 @@ if (global.entrance == 19)
 if (room == room_fire_core1)
 {
     depth = 790000
-    FL_AreaKillsPointer = 205
+    FL_AreaKillsPointer = KillsPointer_Hotland
     con = 40
     ok = 0
     if (FL_GotAlphysAdvice1 == true)
@@ -38,7 +38,7 @@ if (room == room_fire_core1)
         con = 0
 }
 if (room == room_fire_core_premett)
-    FL_AreaKillsPointer = 205
+    FL_AreaKillsPointer = KillsPointer_Hotland
 if (room == room_castle_precastle)
 {
     con = 50

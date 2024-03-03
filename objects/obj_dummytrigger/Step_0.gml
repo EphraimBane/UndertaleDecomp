@@ -138,23 +138,23 @@ if (con == 9)
     con = 10
     caster_loop(predummy, 0.8, 1)
     if (FL_MadDummyStatus == MadDummyStatus.Ignored)
-        global.msg[0] = scr_gettext("obj_dummytrigger_222")
+        global.msg[0] = scr_gettext("obj_dummytrigger_222") //* Hahaha..^1.&* It's just like you to&  run away./
     if (FL_MadDummyStatus == MadDummyStatus.Punched)
-        global.msg[0] = scr_gettext("obj_dummytrigger_223")
+        global.msg[0] = scr_gettext("obj_dummytrigger_223") //* FOOL^1!&* You think you can hurt&  ME???/
     if (FL_MadDummyStatus == MadDummyStatus.NotPunched)
-        global.msg[0] = scr_gettext("obj_dummytrigger_224")
-    global.msg[1] = scr_gettext("obj_dummytrigger_225")
-    global.msg[2] = scr_gettext("obj_dummytrigger_226")
+        global.msg[0] = scr_gettext("obj_dummytrigger_224") //* Hahaha..^1.&* Too intimidated to fight&  me^1, huh!?/
+    global.msg[1] = scr_gettext("obj_dummytrigger_225") //* I am a ghost that lives&  inside a DUMMY./
+    global.msg[2] = scr_gettext("obj_dummytrigger_226") //* My cousin used to live&  inside a DUMMY^1, too^1.&* Until.../
     if (FL_DummyStatus == DummyStatus.Run)
     {
-        global.msg[3] = scr_gettext("obj_dummytrigger_229")
-        global.msg[4] = scr_gettext("obj_dummytrigger_230")
-        global.msg[5] = scr_gettext("obj_dummytrigger_231")
-        global.msg[6] = scr_gettext("obj_dummytrigger_232")
-        global.msg[7] = scr_gettext("obj_dummytrigger_233")
-        global.msg[8] = scr_gettext("obj_dummytrigger_234")
-        global.msg[9] = scr_gettext("obj_dummytrigger_235")
-        global.msg[10] = scr_gettext("obj_dummytrigger_236")
+        global.msg[3] = scr_gettext("obj_dummytrigger_229") //* YOU CAME ALONG!/
+        global.msg[4] = scr_gettext("obj_dummytrigger_230") //* They were a shy sort^1.&* Living a lonely life in&  the RUINS.../
+        global.msg[5] = scr_gettext("obj_dummytrigger_231") //* They saw you and hoped you&  might TALK to them./
+        global.msg[6] = scr_gettext("obj_dummytrigger_232") //* Perhaps strike up a&  friendly conversation./
+        global.msg[7] = scr_gettext("obj_dummytrigger_233") //* But NO!!!/
+        global.msg[8] = scr_gettext("obj_dummytrigger_234") //* You ran away..^1.&* And broke their little&  ethereal heart./
+        global.msg[9] = scr_gettext("obj_dummytrigger_235") //* Despicable^1.&* Despicable^1!&* DESPICABLE!/
+        global.msg[10] = scr_gettext("obj_dummytrigger_236") //* HUMAN^1!&* I'll show you what REAL&  heartbreak is!/%%
     }
     if (FL_DummyStatus == DummyStatus.Kill)
     {
@@ -324,25 +324,25 @@ if (con == 34)
     d.side = 1
     con = 35
 }
-if (con == 35 && instance_exists(OBJ_WRITER) == 0)
+if (con == 35 && instance_exists(OBJ_WRITER) == false)
 {
     with (dummy)
         sprite_index = spr_dummyglad
-    global.msg[0] = scr_gettext("obj_dummytrigger_427")
-    global.msg[1] = scr_gettext("obj_dummytrigger_428")
-    global.msg[2] = scr_gettext("obj_dummytrigger_429")
-    global.msg[3] = scr_gettext("obj_dummytrigger_430")
-    global.msg[4] = scr_gettext("obj_dummytrigger_431")
-    global.msg[5] = scr_gettext("obj_dummytrigger_432")
+    global.msg[0] = scr_gettext("obj_dummytrigger_427") //* Eureka^1.&* Eureka^1!&* EUREKA!/
+    global.msg[1] = scr_gettext("obj_dummytrigger_428") //* Human^1.&* That moment of unbridled&  emotion./
+    global.msg[2] = scr_gettext("obj_dummytrigger_429") //* It allowed me to finally&  fuse with my body!/
+    global.msg[3] = scr_gettext("obj_dummytrigger_430") //* I'm fully corporeal now^1!&* My lifelong dream^1, realized!/
+    global.msg[4] = scr_gettext("obj_dummytrigger_431") //* In return^1, I guess I&  won't stomp you./
+    global.msg[5] = scr_gettext("obj_dummytrigger_432") //* How's that sound?/%%
     d = instance_create(0, 0, obj_dialoguer)
     d.side = 1
     con = 36
 }
-if (con == 36 && instance_exists(OBJ_WRITER) == 0)
+if (con == 36 && instance_exists(OBJ_WRITER) == false)
 {
     con = 37
     global.battlegroup = 93
-    FL_AreaKillsPointer = 204
+    FL_AreaKillsPointer = KillsPointer_Tundra
     global.mercy = 1
     instance_create(0, 0, obj_battler)
     talkedto = 0
