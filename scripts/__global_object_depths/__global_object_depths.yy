@@ -5,7 +5,7 @@
   "isCompatibility": true,
   "isDnD": false,
   "parent": {
-    "name": "Deprecated Functioned",
-    "path": "folders/Scripts/Deprecated Functioned.yy",
+    "name": "Deprecated Functions",
+    "path": "folders/Scripts/Deprecated Functions.yy",
   },
 }

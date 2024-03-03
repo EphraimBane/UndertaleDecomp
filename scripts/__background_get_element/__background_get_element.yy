@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Background",
-    "path": "folders/Scripts/Deprecated Functioned/Background.yy",
+    "path": "folders/Scripts/Deprecated Functions/Background.yy",
   },
 }
