@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Core",
-    "path": "folders/Objects/Overworld/Hotland/Core.yy",
+    "name": "Actor",
+    "path": "folders/Objects/Actor.yy",
   },
   "parentObjectId": null,
   "persistent": false,

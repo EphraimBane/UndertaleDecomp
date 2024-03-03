@@ -464,6 +464,10 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Ruins","folderPath":"folders/Tile Sets/Ruins.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Puzzle","folderPath":"folders/Objects/Overworld/Tile Puzzle.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Event","folderPath":"folders/Objects/Event.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Actor","folderPath":"folders/Objects/Actor.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"NPC","folderPath":"folders/Objects/NPC.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"credits.txt","CopyToMask":-1,"filePath":"datafiles",},
