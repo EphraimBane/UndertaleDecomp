@@ -11,7 +11,7 @@ else
     image_speed = 0
 }
 charge -= 1
-if (shot == 1 && control_check_pressed(0) && global.mnfight == 2)
+if (shot == 1 && control_check_pressed(InteractButton) && global.mnfight == 2)
 {
     if (instance_number(obj_heartshot) == 0 || charge < 0)
     {

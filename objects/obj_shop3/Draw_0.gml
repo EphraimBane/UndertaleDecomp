@@ -75,21 +75,21 @@ if (menu == 0)
         global.faceemotion = 0
         FL_AnimationIndex = 0
     }
-    else if control_check_pressed(1)
+    else if control_check_pressed(CancelButton)
     {
         with (OBJ_WRITER)
         {
             if (halt == false)
                 stringpos = string_length(originalstring)
-            control_clear(1)
+            control_clear(CancelButton)
         }
     }
     menumax = 3
     scr_shop_draw_topmenu(murder != 0)
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         OBJ_WRITER.dfy = 1
-        control_clear(0)
+        control_clear(InteractButton)
         if (menuc[0] == 0)
             menu = 1
         if (menuc[0] == 1)
@@ -180,7 +180,7 @@ if (menu == 1 || menu == 2)
         if (global.language == "ja")
             hearty -= 2
         draw_sprite(spr_heartsmall, 0, 15, (hearty + (menuc[1] * 20)))
-        if control_check_pressed(0)
+        if control_check_pressed(InteractButton)
         {
             soldout = 0
             if (menuc[1] == 1 && FL_GotGun == 1)
@@ -197,13 +197,13 @@ if (menu == 1 || menu == 2)
             if (menuc[1] == menumax)
                 menu = 0
         }
-        else if control_check_pressed(1)
+        else if control_check_pressed(CancelButton)
         {
             menu = 0
             OBJ_WRITER.dfy = 1
         }
         if (menu == 2)
-            control_clear(0)
+            control_clear(InteractButton)
         menuc[2] = 0
     }
     if (menu == 2)
@@ -221,15 +221,15 @@ if (menu == 1 || menu == 2)
         if (global.language == "ja")
             hearty -= 2
         draw_sprite(spr_heartsmall, 0, heartx, (hearty + (menuc[2] * 15)))
-        if control_check_pressed(1)
+        if control_check_pressed(CancelButton)
         {
             menu = 1
-            control_clear(1)
+            control_clear(CancelButton)
             sidemessage = 2
         }
-        else if control_check_pressed(0)
+        else if control_check_pressed(InteractButton)
         {
-            control_clear(0)
+            control_clear(InteractButton)
             if (menuc[2] == 0)
             {
                 scr_cost(itemcost[menuc[1]])
@@ -346,21 +346,21 @@ if (menu == 3)
         brattywriter = instance_create(writerx, 110, OBJ_WRITER)
         brattywriter.mycolor = 13941759
     }
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         OBJ_WRITER.dfy = 1
         if (menuc[3] < menumax)
         {
             sell = (menuc[3] + 3)
-            control_clear(0)
+            control_clear(InteractButton)
             menu = 4
         }
         else
             menu = 0
     }
-    else if control_check_pressed(1)
+    else if control_check_pressed(CancelButton)
     {
-        control_clear(1)
+        control_clear(CancelButton)
         menu = 0
         OBJ_WRITER.dfy = 1
     }
@@ -612,9 +612,9 @@ if (menu == 4)
             instance_create(10, 110, OBJ_WRITER)
         selling = 1
     }
-    if (con == 4 && brattywriter.halt != false && cattywriter.halt != false && control_check_pressed(0))
+    if (con == 4 && brattywriter.halt != false && cattywriter.halt != false && control_check_pressed(InteractButton))
     {
-        control_clear(0)
+        control_clear(InteractButton)
         with (brattywriter)
             instance_destroy()
         with (cattywriter)
@@ -826,9 +826,9 @@ if (menu == 4)
     if (con == 50)
     {
         selling = 4
-        if (brattywriter.halt != false && cattywriter.halt != false && control_check_pressed(0))
+        if (brattywriter.halt != false && cattywriter.halt != false && control_check_pressed(InteractButton))
         {
-            control_clear(0)
+            control_clear(InteractButton)
             with (brattywriter)
                 instance_destroy()
             with (cattywriter)
@@ -1572,9 +1572,9 @@ if (menu == 4)
             con = 129
         }
     }
-    if (con == 200 && brattywriter.halt != false && cattywriter.halt != false && control_check_pressed(0))
+    if (con == 200 && brattywriter.halt != false && cattywriter.halt != false && control_check_pressed(InteractButton))
     {
-        control_clear(0)
+        control_clear(InteractButton)
         selling = 4
         caster_pause(global.currentsong)
         with (cattywriter)
@@ -1672,9 +1672,9 @@ if (menu == 4)
     if (con == 250)
     {
         selling = 4
-        if (brattywriter.halt != false && cattywriter.halt != false && control_check_pressed(0))
+        if (brattywriter.halt != false && cattywriter.halt != false && control_check_pressed(InteractButton))
         {
-            control_clear(0)
+            control_clear(InteractButton)
             with (brattywriter)
                 instance_destroy()
             with (cattywriter)
@@ -1806,7 +1806,7 @@ if (menu == 4)
             con = 998
         }
     }
-    if (con == 900 && brattywriter.halt != false && cattywriter.halt == 6 && control_check_pressed(0))
+    if (con == 900 && brattywriter.halt != false && cattywriter.halt == 6 && control_check_pressed(InteractButton))
     {
         with (brattywriter)
             instance_destroy()
@@ -1820,9 +1820,9 @@ if (menu == 4)
         selling = 1
         con = 0
     }
-    if ((con == 998 || con == 999) && brattywriter.halt != false && cattywriter.halt != false && control_check_pressed(0))
+    if ((con == 998 || con == 999) && brattywriter.halt != false && cattywriter.halt != false && control_check_pressed(InteractButton))
     {
-        control_clear(0)
+        control_clear(InteractButton)
         with (brattywriter)
             instance_destroy()
         with (cattywriter)
@@ -1833,19 +1833,19 @@ if (menu == 4)
     }
     if instance_exists(OBJ_WRITER)
     {
-        if control_check_pressed(1)
+        if control_check_pressed(CancelButton)
         {
             with (OBJ_WRITER)
             {
                 if (halt == false)
                     stringpos = string_length(originalstring)
-                control_clear(1)
+                control_clear(CancelButton)
             }
         }
     }
-    if (selling == 1 && sell == 2 && instance_exists(OBJ_WRITER) && brattywriter.halt != false && cattywriter.halt != false && control_check_pressed(0))
+    if (selling == 1 && sell == 2 && instance_exists(OBJ_WRITER) && brattywriter.halt != false && cattywriter.halt != false && control_check_pressed(InteractButton))
     {
-        control_clear(0)
+        control_clear(InteractButton)
         with (brattywriter)
             instance_destroy()
         with (cattywriter)

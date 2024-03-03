@@ -74,7 +74,7 @@ if (menu_engage == 0)
         menu = 0
     if (menu >= menu_max)
         menu = menu_max
-    if (buffer < 0 && control_check_pressed(0))
+    if (buffer < 0 && control_check_pressed(InteractButton))
     {
         if (!((global.osflavor >= OSFlavors.Playstation && menu >= 2 && menu <= 4)))
         {
@@ -156,9 +156,9 @@ if (global.osflavor >= OSFlavors.Playstation)
         if (i == 0)
             var itext = scr_gettext("settings_button_confirm")
         else if (i == 1)
-            itext = scr_gettext("settings_button_cancel")
+            itext = scr_gettext("settings_CancelButton")
         else
-            itext = scr_gettext("settings_button_menu")
+            itext = scr_gettext("settings_MenuButton")
         draw_text(40, (100 + ((i + 1) * vspacing)), string_hash_to_newline(itext))
         draw_set_color(c_white)
         var xx = (40 + string_width(string_hash_to_newline(itext)))

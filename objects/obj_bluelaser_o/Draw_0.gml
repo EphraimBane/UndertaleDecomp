@@ -12,7 +12,7 @@ if (active != 2)
         image_speed = 0.5
     if (blue == 1)
     {
-        draw_set_color(0xFFA914)
+        draw_set_color(c_soulblue)
         sprite_index = spr_lasermachine_b
     }
     if (blue == 2)

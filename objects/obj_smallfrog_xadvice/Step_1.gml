@@ -7,7 +7,7 @@ if (room == room_ruins7 && global.kills > 2)
     instance_destroy()
 if (instance_exists(OBJ_WRITER) && myinteract != 0)
 {
-    var skipbutton = control_check(1)
+    var skipbutton = control_check(CancelButton)
     var skipped = (skipbutton && (!last_skipbutton))
     last_skipbutton = skipbutton
     if (skipped && OBJ_WRITER.stringno > 1)

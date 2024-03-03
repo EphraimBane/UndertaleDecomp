@@ -20,7 +20,7 @@ if (active == true)
         {
             if (type == 0)
             {
-                draw_set_color(0xFFA914)
+                draw_set_color(c_soulblue)
                 bb = 1
             }
             else
@@ -36,7 +36,7 @@ if (active == true)
         }
         else
         {
-            draw_set_color(0xFFA914)
+            draw_set_color(c_soulblue)
             bb = 1
         }
         if (yy > global.idealborder[2])

@@ -1,2 +1,2 @@
-if (control_check(0) == 1)
+if (control_check(InteractButton) == 1)
     event_user(0)

@@ -1301,7 +1301,7 @@ function scr_papcall()
 	        }
 	        if (u == 1)
 	        {
-	            if (global.flag[389] < 5)
+	            if (FL_UndyneDateStatus < 5)
 	            {
 	                scr_papface(1, 0)
 	                global.msg[2] = scr_gettext("scr_papcall_1662")

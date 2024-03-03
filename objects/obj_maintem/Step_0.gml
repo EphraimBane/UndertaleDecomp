@@ -15,13 +15,13 @@ if (control == 1)
         height += 1
         y -= 1
     }
-    if control_check(0)
+    if control_check(InteractButton)
     {
         length += 1
         leg3.x += 1
         leg4.x += 1
     }
-    if control_check(1)
+    if control_check(CancelButton)
     {
         length -= 1
         leg3.x -= 1

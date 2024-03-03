@@ -33,7 +33,7 @@ if (x > (global.idealborder[0] - 5) && x < (global.idealborder[1] - 4))
     drawn = 1
     draw_set_color(c_white)
     if (blue == 1)
-        draw_set_color(0xFFA914)
+        draw_set_color(c_soulblue)
     ossafe_fill_rectangle((x + 3), (y + 4), (x + 9), (global.idealborder[3] - 6))
 }
 if (abs((obj_heart.x - x)) < 15 && global.invc < 1)

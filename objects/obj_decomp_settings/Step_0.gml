@@ -1,12 +1,12 @@
 var dir_x = obj_time.right - obj_time.left;
 var dir_y = obj_time.up - obj_time.down;
 
-var btn_0 = control_check(0);
-var btn_1 = control_check(1);
-var btn_2 = control_check(2);
-control_clear(0);
-control_clear(1);
-control_clear(2);
+var btn_0 = control_check(InteractButton);
+var btn_1 = control_check(CancelButton);
+var btn_2 = control_check(MenuButton);
+control_clear(InteractButton);
+control_clear(CancelButton);
+control_clear(MenuButton);
 
 if (hover_category == -1)
 {
@@ -36,7 +36,7 @@ if (selected_category == -1)
 	{
 		selected_category = hover_category;
 		hover_option = 0;
-		control_clear(0);
+		control_clear(InteractButton);
 	}
 }
 else

@@ -9,7 +9,7 @@ if (obj_time.up && num == 0)
     num += 4
 if (buffer < 1)
 {
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         justplayed[num] = 6
         played[num] = 20
@@ -26,11 +26,11 @@ for (i = 0; i < 10; i += 1)
 }
 global.interact = 1
 buffer -= 1
-if (control_check(1) == 0)
+if (control_check(CancelButton) == 0)
     coff = 0
 if (buffer < 0)
 {
-    if control_check(1)
+    if control_check(CancelButton)
         coff += 1
 }
 if (coff > 1)

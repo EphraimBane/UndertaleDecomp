@@ -352,11 +352,11 @@ if keyboard_check_released(vk_left)
     left = 0
 if keyboard_check_released(vk_right)
     right = 0
-var now_idle = (!((up || down || left || right || control_check(0) || control_check(1) || control_check(2))))
+var now_idle = (!((up || down || left || right || control_check(InteractButton) || control_check(CancelButton) || control_check(MenuButton))))
 if (now_idle && (!idle))
     idle_time = current_time
 idle = now_idle
-if control_check(2)
+if control_check(MenuButton)
 {
     if (FL_FastTextSkip == 1)
     {

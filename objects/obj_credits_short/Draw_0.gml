@@ -273,7 +273,7 @@ if (number == 10)
 }
 if (won >= 1)
 {
-    if control_check(0)
+    if control_check(InteractButton)
     {
         if (alarm[5] > 20)
             alarm[5] = 20

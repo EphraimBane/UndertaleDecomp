@@ -1,6 +1,6 @@
 if (global.debug == true)
 {
-    if control_check_pressed(2)
+    if control_check_pressed(MenuButton)
         rating -= 1
 }
 if (global.turntimer < 1)

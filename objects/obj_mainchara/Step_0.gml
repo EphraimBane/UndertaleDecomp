@@ -141,9 +141,9 @@ if obj_time.down
         }
     }
 }
-if control_check_pressed(0)
+if control_check_pressed(InteractButton)
     event_user(0)
-if control_check_pressed(2)
+if control_check_pressed(BUTTON_MENU)
     event_user(2)
 with (collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_doorparent, 0, 0))
     event_user(9)

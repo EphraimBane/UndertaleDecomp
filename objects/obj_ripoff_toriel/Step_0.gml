@@ -28,7 +28,7 @@ if (global.mnfight == 1)
         global.heard = 0
     }
 }
-if control_check_pressed(0)
+if control_check_pressed(InteractButton)
 {
     if (alarm[5] > 5 && obj_lborder.x == global.idealborder[0] && alarm[6] < 0)
         alarm[5] = 2
@@ -266,7 +266,7 @@ if (global.mnfight == 5 && instance_exists(OBJ_WRITER) == 0)
         saved = 4
     }
 }
-if (saved == 4 && writer.halt != false && obj_ripoff_asgore.writer.halt != false && control_check_pressed(0))
+if (saved == 4 && writer.halt != false && obj_ripoff_asgore.writer.halt != false && control_check_pressed(InteractButton))
 {
     with (writer)
         instance_destroy()

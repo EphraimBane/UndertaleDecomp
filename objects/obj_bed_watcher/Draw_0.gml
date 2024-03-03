@@ -1,5 +1,5 @@
 draw_sprite(sprite_index, image_index, x, y)
-if (keyboard_check_pressed(vk_left) || control_check_pressed(0) || control_check_pressed(1))
+if (keyboard_check_pressed(vk_left) || control_check_pressed(InteractButton) || control_check_pressed(CancelButton))
 {
     if (con > 7 && con < 30)
         con = 30

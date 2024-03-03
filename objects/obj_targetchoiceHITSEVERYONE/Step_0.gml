@@ -17,7 +17,7 @@ if (xxx == 1)
 }
 if (image_speed == 0)
 {
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         for (i = 0; i < 3; i += 1)
         {

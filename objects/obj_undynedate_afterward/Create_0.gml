@@ -1,5 +1,5 @@
 con = 0
-if (global.flag[389] == 3)
+if (FL_UndyneDateStatus == 3)
 {
     FL_AnimationIndex = 0
     con = 1

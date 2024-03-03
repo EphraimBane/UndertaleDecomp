@@ -1,6 +1,6 @@
 if (skipper == 1 && instance_exists(OBJ_WRITER))
 {
-    if control_check_pressed(1)
+    if control_check_pressed(CancelButton)
     {
         if (alarm[4] > 10)
             alarm[4] = 10

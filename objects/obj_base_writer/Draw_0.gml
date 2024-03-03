@@ -34,11 +34,11 @@ while (n <= stringpos)
         else if (ch == "O")
             mycolor = c_orange
         else if (ch == "L")
-            mycolor = 0xFDC00E
+            mycolor = c_altblue
         else if (ch == "P")
             mycolor = c_fuchsia
         else if (ch == "p")
-            mycolor = 0xD4BBFF
+            mycolor = c_pink
         else if (ch == "C")
             event_user(1)
         else if (ch == "M")

@@ -72,7 +72,7 @@ if (con == 6 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 7 && instance_exists(OBJ_WRITER) == 0)
 {
-    if (control_check_pressed(0) && blcontimer <= 15)
+    if (control_check_pressed(InteractButton) && blcontimer <= 15)
     {
         snd_stop(snd_b)
         snd_play(snd_b)

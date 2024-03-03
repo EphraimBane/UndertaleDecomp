@@ -30,7 +30,7 @@ if (con == 2)
     d = 0
     if (won < 1)
         d = 1
-    if (global.flag[389] < 3)
+    if (FL_UndyneDateStatus < 3)
         d = 1
     if (global.kills > 0)
         d = 1
@@ -108,7 +108,7 @@ if (con == 5)
     con = 6
     global.facing = Direction.Right
     global.interact = 0
-    global.flag[389] = 4
+    FL_UndyneDateStatus = 4
     FL_IncludeUndyneInPapyrusCalls = 1
     instance_destroy()
 }

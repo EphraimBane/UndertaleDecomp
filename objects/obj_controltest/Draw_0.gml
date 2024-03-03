@@ -4,11 +4,11 @@ c_index = 0
 buffer -= 1
 if (buffer < 0)
 {
-    if control_check(0)
+    if control_check(InteractButton)
         z_index = 2
     else if (z_index == 1)
         z_index = 3
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         if (fun == true)
         {
@@ -17,11 +17,11 @@ if (buffer < 0)
         }
         z_index = 1
     }
-    if control_check(1)
+    if control_check(CancelButton)
         x_index = 2
     else if (x_index == 1)
         x_index = 3
-    if control_check_pressed(1)
+    if control_check_pressed(CancelButton)
     {
         if (fun == true)
         {
@@ -30,11 +30,11 @@ if (buffer < 0)
         }
         x_index = 1
     }
-    if control_check(2)
+    if control_check(MenuButton)
         c_index = 2
     else if (c_index == 1)
         c_index = 3
-    if control_check_pressed(2)
+    if control_check_pressed(MenuButton)
     {
         if (fun == true)
         {

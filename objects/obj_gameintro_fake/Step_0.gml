@@ -1,2 +1,2 @@
-if (skipper == 1 && control_check_pressed(0))
+if (skipper == 1 && control_check_pressed(InteractButton))
     room_goto_next()

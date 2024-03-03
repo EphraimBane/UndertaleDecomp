@@ -1,2 +1,2 @@
-if control_check_pressed(0)
+if control_check_pressed(InteractButton)
     instance_destroy()

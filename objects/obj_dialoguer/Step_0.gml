@@ -1,6 +1,6 @@
 if (instance_exists(writer) == 0)
     instance_destroy()
-else if control_check_pressed(1)
+else if control_check_pressed(CancelButton)
 {
     if (writer.halt == false)
     {
@@ -10,7 +10,7 @@ else if control_check_pressed(1)
             writer.stringpos = string_length(writer.originalstring)
         }
     }
-    control_clear(1)
+    control_clear(CancelButton)
 }
 if (global.facechange == 2)
     global.facechange = 0

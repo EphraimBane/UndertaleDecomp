@@ -82,9 +82,9 @@ if (global.mnfight == 0 && global.myfight == 0)
     global.typer = 1
     if (active == true)
     {
-        if (control_check_pressed(1) == 0)
+        if (control_check_pressed(CancelButton) == 0)
         {
-            if control_check_pressed(0)
+            if control_check_pressed(InteractButton)
             {
                 if (global.bmenuno == 0)
                 {
@@ -107,7 +107,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                                 global.bmenuno = 10
                                 global.msc = (1000 + global.monstertype[global.mytarget])
                                 instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
-                                control_clear(0)
+                                control_clear(InteractButton)
                                 SCR_TEXT(global.msc)
                                 if (global.choices[global.bmenucoord[2]] == 0)
                                     global.bmenucoord[2] = 0
@@ -171,7 +171,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                     with (OBJ_INSTAWRITER)
                         halt = 3
                     instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
-                    control_clear(0)
+                    control_clear(InteractButton)
                     return;
                 }
                 if (global.bmenuno == 1)
@@ -183,7 +183,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                     obj_heart.x = -200
                     snd_play(snd_select)
                     scr_attack()
-                    control_clear(0)
+                    control_clear(InteractButton)
                 }
                 if (global.bmenuno == 10)
                 {
@@ -196,7 +196,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                     snd_play(snd_select)
                     global.myfight = 2
                     obj_heart.x = -200
-                    control_clear(0)
+                    control_clear(InteractButton)
                 }
                 if (global.bmenuno == 2)
                 {
@@ -206,7 +206,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                     global.bmenuno = 10
                     global.msc = (1000 + global.monstertype[global.mytarget])
                     instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
-                    control_clear(0)
+                    control_clear(InteractButton)
                     SCR_TEXT(global.msc)
                     if (global.choices[global.bmenucoord[2]] == 0)
                         global.bmenucoord[2] = 0
@@ -224,7 +224,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                         obj_heart.x = -200
                         snd_play(snd_select)
                     }
-                    control_clear(0)
+                    control_clear(InteractButton)
                 }
                 if (global.bmenuno == 4)
                 {
@@ -239,14 +239,14 @@ if (global.mnfight == 0 && global.myfight == 0)
                         snd_play(snd_select)
                     global.myfight = 4
                     obj_heart.x = -200
-                    control_clear(0)
+                    control_clear(InteractButton)
                 }
             }
         }
     }
     if (active == true)
     {
-        if control_check_pressed(1)
+        if control_check_pressed(CancelButton)
         {
             if (global.bmenuno != 0 && global.bmenuno < 6)
             {
@@ -257,7 +257,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                 global.msg[0] = global.tmsg
                 global.msc = 0
                 instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
-                control_clear(1)
+                control_clear(CancelButton)
             }
             if (global.bmenuno == 10)
             {
@@ -277,7 +277,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                     }
                 }
                 instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
-                control_clear(1)
+                control_clear(CancelButton)
             }
             if (global.bmenuno == 11)
             {
@@ -287,7 +287,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                 global.typer = 1
                 global.msc = 0
                 instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
-                control_clear(1)
+                control_clear(CancelButton)
             }
         }
     }
@@ -334,13 +334,13 @@ if (global.mnfight == 0 && global.myfight == 0)
 }
 if (active == true)
 {
-    if control_check_pressed(1)
+    if control_check_pressed(CancelButton)
     {
         if (global.mnfight == 0 && FL_CookedNoodles == 0)
         {
             if (instance_number(OBJ_WRITER) > 0)
                 OBJ_WRITER.stringpos = string_length(OBJ_WRITER.originalstring)
-            control_clear(1)
+            control_clear(CancelButton)
         }
     }
 }
@@ -372,7 +372,7 @@ if (global.myfight == 3)
             obj_heart.y = (global.idealborder[2] + 92)
             if (global.language == "ja")
                 obj_heart.y += 8
-            if control_check_pressed(0)
+            if control_check_pressed(InteractButton)
             {
                 global.heard = 0
                 global.talked = (6 + global.bmenucoord[6])
@@ -394,7 +394,7 @@ if (global.myfight == 4)
         {
             global.myfight = 0
             global.mnfight = 1
-            control_clear(0)
+            control_clear(InteractButton)
         }
     }
 }

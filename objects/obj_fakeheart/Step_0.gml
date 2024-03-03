@@ -10,7 +10,7 @@ if obj_time.left
 {
     if (movement == 1)
     {
-        if (control_check(1) == 1)
+        if (control_check(CancelButton) == 1)
             x -= (global.sp / 2)
         else
             x -= global.sp
@@ -20,7 +20,7 @@ if obj_time.right
 {
     if (movement == 1)
     {
-        if (control_check(1) == 1)
+        if (control_check(CancelButton) == 1)
             x += (global.sp / 2)
         else
             x += global.sp
@@ -30,7 +30,7 @@ if obj_time.up
 {
     if (movement == 1)
     {
-        if (control_check(1) == 1)
+        if (control_check(CancelButton) == 1)
             y -= (global.sp / 2)
         else
             y -= global.sp
@@ -40,7 +40,7 @@ if obj_time.down
 {
     if (movement == 1)
     {
-        if (control_check(1) == 1)
+        if (control_check(CancelButton) == 1)
             y += (global.sp / 2)
         else
             y += global.sp
