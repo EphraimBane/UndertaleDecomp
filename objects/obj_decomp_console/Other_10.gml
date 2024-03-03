@@ -1,9 +1,9 @@
 /// @description Register Commands
 
 
-command_register("help", "Seems like you know how to use it.");
+command_register("help", "Seems like you know how to use it.", [ "[command]" ]);
 command_register("sv_cheats", "Hax.", [ "value" ]);
-command_register("room_goto", "Goes to a specified room");
+command_register("room_goto", "Goes to a specified room", [ "roomName" ]);
 command_register("room_goto_next", "Goes to the next room");
 command_register("room_goto_prev", "Goes to the previous room");
 command_register("flag_set", "Sets a specific flag's value", [ "flagID", "value" ]);
@@ -32,4 +32,16 @@ command_register("solid_show", "Toggles the solid overlay", [ ]);
 command_register("pos_show", "Toggles the position overlay", [ ]);
 command_register("pos_set", "Sets the position of the player", [ "x", "y" ]);
 
-command_register("random_encounters", "Toggles random monster encounters", [ "value" ]);
+command_register("random_encounters", "Toggles random monster encounters");
+
+#region Argument hints 
+
+var roomNameHints = array_create(0);
+for (var i = 0; i < room_last; i++)
+    roomNameHints[i] = room_get_name(i);
+	
+array_sort(roomNameHints, true);
+
+command_register_param_hints("room_goto", "roomName", roomNameHints);
+
+#endregion
