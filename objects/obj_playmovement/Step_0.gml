@@ -12,7 +12,7 @@ if (con == 1)
     ossafe_ini_close()
     ossafe_savedata_save()
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 3))
     if (obj_mainchara.y < 238)
@@ -143,7 +143,7 @@ if (con == 14)
     di.side = 1
     con = 17
 }
-if (con == 17 && instance_exists(OBJ_WRITER) == 0)
+if (con == 17 && instance_exists(OBJ_WRITER) == false)
 {
     con = 18
     mett.hspeed = 2.5
@@ -169,7 +169,7 @@ if (con == 21)
     di.side = 1
     con = 26
 }
-if (con == 26 && instance_exists(OBJ_WRITER) == 0)
+if (con == 26 && instance_exists(OBJ_WRITER) == false)
 {
     global.msc = 0
     caster_play(opera1, 1, 1)
@@ -551,7 +551,7 @@ if (con == 106)
     instance_create(0, 0, obj_dialoguer)
     con = 120
 }
-if (con == 120 && instance_exists(OBJ_WRITER) == 0)
+if (con == 120 && instance_exists(OBJ_WRITER) == false)
 {
     mett.hspeed = 1
     if (mett.x < (obj_mainchara.x + 19))
@@ -604,12 +604,12 @@ if (con == 127)
     con = 128
     global.plot = 167
 }
-if (con == 240 && instance_exists(OBJ_WRITER) == 0)
+if (con == 240 && instance_exists(OBJ_WRITER) == false)
 {
     skip = true
     con = 241
 }
-if (con == 241 && instance_exists(OBJ_WRITER) == 0)
+if (con == 241 && instance_exists(OBJ_WRITER) == false)
 {
     global.msc = 0
     caster_play(opera1, 0.5, 3)

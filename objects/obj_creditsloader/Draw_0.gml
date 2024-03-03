@@ -24,7 +24,7 @@ if (a_con == 7 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 1)
         a2.image_index = 1
 }
-if (a_con == 7 && instance_exists(OBJ_WRITER) == 0)
+if (a_con == 7 && instance_exists(OBJ_WRITER) == false)
 {
     a_con = 8
     alarm[4] = 50
@@ -50,7 +50,7 @@ if (a_con == 2)
     global.msg[1] = scr_gettext("obj_creditsloader_493")
     scr_blcon_x((asriel.x + 80), (asriel.y - 20))
 }
-if (a_con == 3 && instance_exists(OBJ_WRITER) == 0)
+if (a_con == 3 && instance_exists(OBJ_WRITER) == false)
 {
     caster_stop(horror)
     a_con = 4

@@ -23,7 +23,7 @@ if (con == 3)
     instance_create(0, 0, obj_dialoguer)
     con = 4
 }
-if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4 && instance_exists(OBJ_WRITER) == false)
 {
     pap.thisy = pap.y
     con = 5
@@ -57,7 +57,7 @@ if (con == 8)
     instance_create(0, 0, obj_dialoguer)
     con = 9
 }
-if (con == 9 && instance_exists(OBJ_WRITER) == 0)
+if (con == 9 && instance_exists(OBJ_WRITER) == false)
 {
     sans.y += 2
     sans.sprite_index = spr_sans_d
@@ -79,7 +79,7 @@ if (con == 11)
     instance_create(0, 0, obj_dialoguer)
     con = 12
 }
-if (con == 12 && instance_exists(OBJ_WRITER) == 0)
+if (con == 12 && instance_exists(OBJ_WRITER) == false)
 {
     con = 13
     alarm[4] = 3
@@ -110,7 +110,7 @@ if (con == 16)
     instance_create(0, 0, obj_dialoguer)
     con = 17
 }
-if (con == 17 && instance_exists(OBJ_WRITER) == 0)
+if (con == 17 && instance_exists(OBJ_WRITER) == false)
 {
     con = 18
     alarm[4] = 3
@@ -141,7 +141,7 @@ if (con == 21)
     instance_create(0, 0, obj_dialoguer)
     con = 22
 }
-if (con == 22 && instance_exists(OBJ_WRITER) == 0)
+if (con == 22 && instance_exists(OBJ_WRITER) == false)
 {
     con = 23
     alarm[4] = 120
@@ -161,7 +161,7 @@ if (con == 24)
     instance_create(0, 0, obj_dialoguer)
     con = 25
 }
-if (con == 25 && instance_exists(OBJ_WRITER) == 0)
+if (con == 25 && instance_exists(OBJ_WRITER) == false)
 {
     asg.sprite_index = spr_asgore_r
     asg.image_speed = 0.25
@@ -189,7 +189,7 @@ if (con == 29)
     global.msg[0] = scr_gettext("obj_outsideworld_event_309")
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 30 && instance_exists(OBJ_WRITER) == 0)
+if (con == 30 && instance_exists(OBJ_WRITER) == false)
 {
     con = 31
     tor.sprite_index = spr_toriel_u
@@ -210,7 +210,7 @@ if (con == 35)
     instance_create(0, 0, obj_dialoguer)
     con = 36
 }
-if (con == 100 && instance_exists(OBJ_WRITER) == 0)
+if (con == 100 && instance_exists(OBJ_WRITER) == false)
 {
     FL_FinalTorielChoice = Choices.Stayed
     global.msc = 0
@@ -231,7 +231,7 @@ if (con == 100 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 101
 }
-if (con == 101 && instance_exists(OBJ_WRITER) == 0)
+if (con == 101 && instance_exists(OBJ_WRITER) == false)
 {
     tor.x -= 16
     tor.sprite_index = spr_toriel_handhold_r
@@ -245,7 +245,7 @@ if (con == 103)
     con = 104
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 104 && instance_exists(OBJ_WRITER) == 0)
+if (con == 104 && instance_exists(OBJ_WRITER) == false)
 {
     tor.x += 2
     tor.image_speed = 0.125
@@ -268,7 +268,7 @@ if (con == 105)
         do_room_goto = true
     }
 }
-if (con == 200 && instance_exists(OBJ_WRITER) == 0)
+if (con == 200 && instance_exists(OBJ_WRITER) == false)
 {
     global.msc = 0
     global.facechoice = 1
@@ -288,7 +288,7 @@ if (con == 201 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 3)
         tor.sprite_index = spr_toriel_l
 }
-if (con == 201 && instance_exists(OBJ_WRITER) == 0)
+if (con == 201 && instance_exists(OBJ_WRITER) == false)
 {
     tor.sprite_index = spr_toriel_u
     con = 203
@@ -332,7 +332,7 @@ if (con == 212)
     instance_create(0, 0, obj_dialoguer)
     con = 213
 }
-if (con == 213 && instance_exists(OBJ_WRITER) == 0)
+if (con == 213 && instance_exists(OBJ_WRITER) == false)
 {
     tor.sprite_index = spr_toriel_l
     con = 214

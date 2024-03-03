@@ -1,5 +1,5 @@
 draw_sprite(sprite_index, image_index, x, y)
-if (dont == 1 && instance_exists(OBJ_WRITER) == 0)
+if (dont == 1 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 1
     dont = 2

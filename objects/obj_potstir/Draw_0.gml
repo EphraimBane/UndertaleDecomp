@@ -46,7 +46,7 @@ if (stime > 210 && stir <= 70 && sval == 2)
 }
 if (stime > 300 || stir > 70)
 {
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         sval = 99
         global.msc = 0

@@ -239,7 +239,7 @@ if (whatiheard == 3 && flex == 3 && instance_exists(OBJ_WRITER))
         mypart1.vspeed = -4
     }
 }
-if (whatiheard == 3 && flex == 3 && instance_exists(OBJ_WRITER) == 0)
+if (whatiheard == 3 && flex == 3 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)
@@ -256,7 +256,7 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (mercymod == 333 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 333 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)

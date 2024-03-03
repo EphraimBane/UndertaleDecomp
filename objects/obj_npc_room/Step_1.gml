@@ -1,6 +1,6 @@
 scr_depth(0, 0, 0, 0, 0)
 scr_npc_anim()
-if (room == room_water3A && instance_exists(OBJ_WRITER) == 0)
+if (room == room_water3A && instance_exists(OBJ_WRITER) == false)
 {
     if (FL_GotTutu == 1)
     {
@@ -8,7 +8,7 @@ if (room == room_water3A && instance_exists(OBJ_WRITER) == 0)
         instance_destroy()
     }
 }
-if (room == room_water_shoe && instance_exists(OBJ_WRITER) == 0)
+if (room == room_water_shoe && instance_exists(OBJ_WRITER) == false)
 {
     if (FL_GotBalletShoes == 1)
     {
@@ -16,7 +16,7 @@ if (room == room_water_shoe && instance_exists(OBJ_WRITER) == 0)
         instance_destroy()
     }
 }
-if (room == room_fire6A && instance_exists(OBJ_WRITER) == 0)
+if (room == room_fire6A && instance_exists(OBJ_WRITER) == false)
 {
     if (FL_GotFryingPan == 1)
     {
@@ -24,7 +24,7 @@ if (room == room_fire6A && instance_exists(OBJ_WRITER) == 0)
         instance_destroy()
     }
 }
-if (room == room_fire_apron && instance_exists(OBJ_WRITER) == 0)
+if (room == room_fire_apron && instance_exists(OBJ_WRITER) == false)
 {
     if (FL_GotApron == 1)
     {

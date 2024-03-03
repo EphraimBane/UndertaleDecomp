@@ -26,7 +26,7 @@ if instance_exists(OBJ_WRITER)
 }
 if (instance_exists(OBJ_WRITER) && conversation == 1)
     scr_textskip()
-if (instance_exists(OBJ_WRITER) == 0)
+if (instance_exists(OBJ_WRITER) == false)
 {
     if (conversation == 1)
     {

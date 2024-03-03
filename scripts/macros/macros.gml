@@ -431,7 +431,7 @@ enum OSFlavors
 
 #macro InteractButton 0
 #macro CancelButton 1
-#macro MenuButton 3
+#macro MenuButton 2
 
 #macro KillsPointer_Invalid 0
 #macro KillsPointer_Ruins 202

@@ -210,7 +210,7 @@ if (con == 9)
     if instance_exists(obj_dialoguer)
         obj_dialoguer.side = 1
 }
-if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+if (con == 10 && instance_exists(OBJ_WRITER) == false)
 {
     caster_free(shock)
     caster_free(predummy)
@@ -271,7 +271,7 @@ if (con == 16)
     greg = 1
     con = 17
 }
-if (con == 17 && instance_exists(OBJ_WRITER) == 0)
+if (con == 17 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 0
     dummy.vspeed = -3

@@ -99,7 +99,7 @@ if (global.mnfight == 2)
 }
 if (whatiheard == 0)
 {
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         global.mnfight = 1
         global.myfight = 0
@@ -107,7 +107,7 @@ if (whatiheard == 0)
 }
 if (whatiheard == 3)
 {
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         FL_SparedLast = 1
         global.monster[myself] = false

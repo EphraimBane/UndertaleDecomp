@@ -209,7 +209,7 @@ if (global.mnfight == 5)
         writer = instance_create((blcon.x + 15), (blcon.y + 10), OBJ_NOMSCWRITER)
         con = 3
     }
-    if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 3 && instance_exists(OBJ_WRITER) == false)
     {
         with (mypart1)
             shaker = 0
@@ -230,7 +230,7 @@ if (global.mnfight == 5)
             writer = instance_create((blcon.x + 15), (blcon.y + 10), OBJ_NOMSCWRITER)
         }
     }
-    if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 4 && instance_exists(OBJ_WRITER) == false)
     {
         with (blcon)
             instance_destroy()
@@ -243,7 +243,7 @@ if (global.mnfight == 5)
         writer = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_NOMSCWRITER)
         con = 5
     }
-    if (con == 5 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 5 && instance_exists(OBJ_WRITER) == false)
     {
         with (blcon)
             instance_destroy()
@@ -263,7 +263,7 @@ if (global.mnfight == 5)
             writer = instance_create((blcon.x + 15), (blcon.y + 10), OBJ_NOMSCWRITER)
         }
     }
-    if (con == 6 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 6 && instance_exists(OBJ_WRITER) == false)
     {
         with (blcon)
             instance_destroy()
@@ -277,7 +277,7 @@ if (global.mnfight == 5)
         writer = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_NOMSCWRITER)
         con = 7
     }
-    if (con == 7 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 7 && instance_exists(OBJ_WRITER) == false)
     {
         with (blcon)
             instance_destroy()
@@ -294,7 +294,7 @@ if (global.mnfight == 5)
             writer = instance_create((blcon.x + 15), (blcon.y + 10), OBJ_NOMSCWRITER)
         }
     }
-    if (con == 8 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 8 && instance_exists(OBJ_WRITER) == false)
     {
         with (blcon)
             instance_destroy()
@@ -306,7 +306,7 @@ if (global.mnfight == 5)
         writer = instance_create((blcon.x + 15), (blcon.y + 10), OBJ_NOMSCWRITER)
         con = 10
     }
-    if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 10 && instance_exists(OBJ_WRITER) == false)
     {
         fuckyou = 0
         with (blcon)
@@ -333,7 +333,7 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)

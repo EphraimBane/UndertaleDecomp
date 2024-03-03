@@ -10,7 +10,7 @@ if (myinteract == 1 && global.interact == 0)
 }
 if (myinteract == 2)
 {
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         rman.image_speed = 0
         rman.image_index = 0
@@ -33,7 +33,7 @@ if (con == 0)
     siner += 1
     dogy = ((sin((siner / 10)) * 1) + 1)
 }
-if (con == 0.1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 0.1 && instance_exists(OBJ_WRITER) == false)
 {
     obj_mainchara.image_speed = 0.25
     con = 0.2
@@ -286,7 +286,7 @@ if (con == 10)
     scr_regulartext()
     con = 11
 }
-if (con == 11 && instance_exists(OBJ_WRITER) == 0)
+if (con == 11 && instance_exists(OBJ_WRITER) == false)
 {
     con = 12
     alarm[4] = 20
@@ -404,7 +404,7 @@ if (con == 58)
     con = 59
     rman.image_speed = 0.1
 }
-if (con == 59 && instance_exists(OBJ_WRITER) == 0)
+if (con == 59 && instance_exists(OBJ_WRITER) == false)
 {
     //depth = (rman + 1) VULTU: This is broken since gamemaker introduced handles
 	depth = (rman.depth + 1)

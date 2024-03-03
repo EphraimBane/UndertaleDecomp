@@ -8,7 +8,7 @@ if (fun == false)
 }
 if (speed == 0 && con == 0)
     scr_npc_watch(0)
-if (con == 1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1 && instance_exists(OBJ_WRITER) == false)
 {
     con = 2
     solid = 0
@@ -108,7 +108,7 @@ if (con == 12)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     con = 13
 }
-if (con == 13 && instance_exists(OBJ_WRITER) == 0)
+if (con == 13 && instance_exists(OBJ_WRITER) == false)
 {
     vspeed = -6
     sprite_index = usprite

@@ -7,7 +7,7 @@ if (con == 1)
     instance_create(220, 320, OBJ_WRITER)
     con = 2
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     caster_loop(ch_sfx1, 1, 1)
     con = 3
@@ -72,7 +72,7 @@ if (con == 4)
     instance_create(writerx, 320, OBJ_WRITER)
     con = 5
 }
-if (con == 5 && instance_exists(OBJ_WRITER) == 0)
+if (con == 5 && instance_exists(OBJ_WRITER) == false)
 {
     con = 6
     alarm[4] = 30
@@ -96,7 +96,7 @@ if (con == 22 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 1)
         sprite_index = spr_truechara_weird
 }
-if (con == 22 && instance_exists(OBJ_WRITER) == 0)
+if (con == 22 && instance_exists(OBJ_WRITER) == false)
     con = 60
 if (con == 30)
 {
@@ -123,7 +123,7 @@ if (con == 31 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 4)
         sprite_index = spr_truechara_weird
 }
-if (con == 31 && instance_exists(OBJ_WRITER) == 0)
+if (con == 31 && instance_exists(OBJ_WRITER) == false)
     con = 40
 if (con == 40)
 {

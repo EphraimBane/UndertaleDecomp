@@ -99,7 +99,7 @@ if (global.myfight == 2)
                 if (totalmercy >= 3)
                 {
                     global.msg[1] = scr_gettext("obj_ripoff_sans_490") //* It nods its head solemnly..^1.&* Seems like it will!/%%
-                    obj_ripoff_papyrus.saved = 1
+                    obj_ripoff_papyrus.saved = true
                     global.mnfight = 5
                     if (obj_ripoff_papyrus.mercyno == 0)
                     {
@@ -124,7 +124,7 @@ if (global.myfight == 2)
                 if (totalmercy >= 3)
                 {
                     global.msg[1] = scr_gettext("obj_ripoff_sans_520") //* Suddenly^1, the memories are&  flooding back!/%%
-                    obj_ripoff_papyrus.saved = 1
+                    obj_ripoff_papyrus.saved = true
                     global.mnfight = 5
                     if (obj_ripoff_papyrus.mercyno == 0)
                     {
@@ -148,7 +148,7 @@ if (global.myfight == 2)
                 if (totalmercy >= 3)
                 {
                     global.msg[1] = scr_gettext("obj_ripoff_sans_546")
-                    obj_ripoff_papyrus.saved = 1
+                    obj_ripoff_papyrus.saved = true
                     global.mnfight = 5
                     if (obj_ripoff_papyrus.mercyno == 0)
                     {
@@ -168,14 +168,14 @@ if (global.myfight == 2)
                     totalmercy += 1
                 mercyno += 1
                 if (FL_HarderPuzzleChoice == Choices.JuniorJumble)
-                    global.msg[0] = scr_gettext("obj_ripoff_sans_571") //* You tell the Lost Soul you&  think that crosswords&  are tougher than jumble./
+                    global.msg[0] = scr_gettext("obj_ripoff_sans_571") //* You tell the Lost Soul you&  think that jumble is&  tougher than crosswords.
                 if (FL_HarderPuzzleChoice == Choices.WordSearch)
                     global.msg[0] = scr_gettext("obj_ripoff_sans_576") //* You tell the Lost Soul you&  think that crosswords&  are tougher than jumble./
                 global.msg[1] = scr_gettext("obj_ripoff_sans_579") //* It seems to have some dim&  recollection of this&  fact.../^
                 if (totalmercy >= 3)
                 {
                     global.msg[1] = scr_gettext("obj_ripoff_sans_583") //* It nods its head^1, like it&  knew this without question...!/%%
-                    obj_ripoff_papyrus.saved = 1
+                    obj_ripoff_papyrus.saved = true
                     global.mnfight = 5
                     if (obj_ripoff_papyrus.mercyno == 0)
                     {
@@ -201,7 +201,7 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)

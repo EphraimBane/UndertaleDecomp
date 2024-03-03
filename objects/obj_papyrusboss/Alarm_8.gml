@@ -12,7 +12,7 @@ if (bonetalk3 == 0)
     bonetalk3 = 1
 }
 alarm[8] = 2
-if (bonetalk3 == 1 && instance_exists(OBJ_WRITER) == 0)
+if (bonetalk3 == 1 && instance_exists(OBJ_WRITER) == false)
 {
     vol = 0
     with (blcon)

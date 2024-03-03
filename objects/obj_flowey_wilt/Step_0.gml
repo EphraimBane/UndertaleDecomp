@@ -9,7 +9,7 @@ if (doomcon == 0)
 }
 if (writing == 1)
 {
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         writing = 0
         event_user(2)
@@ -29,7 +29,7 @@ else
 FL_AnimationIndex = 0
 if (con == 16)
 {
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         fader = 1
         con = 17

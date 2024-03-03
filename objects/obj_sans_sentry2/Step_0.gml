@@ -12,7 +12,7 @@ if (myinteract == 3)
         myinteract = 0
     }
 }
-if (con == 1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1 && instance_exists(OBJ_WRITER) == false)
 {
     con = 2
     alarm[4] = 10
@@ -65,7 +65,7 @@ if (con == 11)
     instance_create(0, 0, obj_dialoguer)
     con = 12
 }
-if (con == 12 && instance_exists(OBJ_WRITER) == 0)
+if (con == 12 && instance_exists(OBJ_WRITER) == false)
 {
     with (obj_doorA)
         instance_destroy()

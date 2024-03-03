@@ -35,7 +35,7 @@ if (conversation == 4)
     scr_regulartext()
     conversation = 5
 }
-if (conversation == 5 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 5 && instance_exists(OBJ_WRITER) == false)
 {
     global.battlegroup = 23
     FL_AreaKillsPointer = KillsPointer_Invalid
@@ -78,7 +78,7 @@ if (global.plot == 41 && conversation == 6)
         scr_regulartext()
     }
 }
-if (conversation == 7 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 7 && instance_exists(OBJ_WRITER) == false)
 {
     vspeed = 1
     alarm[0] = 20

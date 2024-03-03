@@ -76,7 +76,7 @@ if (con == 4)
     minicon = 0
     papx = papyrus.x
 }
-if (con == 80 && instance_exists(OBJ_WRITER) == 1)
+if (con == 80 && instance_exists(OBJ_WRITER) == true)
 {
     if (minicon == 0)
     {
@@ -95,7 +95,7 @@ if (con == 80 && instance_exists(OBJ_WRITER) == 1)
         }
     }
 }
-if (con == 80 && instance_exists(OBJ_WRITER) == 0)
+if (con == 80 && instance_exists(OBJ_WRITER) == false)
 {
     undyne.sprite_index = spr_undynea_starkl
     papyrus.hspeed = -0.5
@@ -111,7 +111,7 @@ if (con == 81.5)
     con = 81
     alarm[4] = 90
 }
-if (con == 82 && instance_exists(OBJ_WRITER) == 0)
+if (con == 82 && instance_exists(OBJ_WRITER) == false)
 {
     global.msg[0] = scr_gettext("obj_undyne1_217")
     global.msg[1] = scr_gettext("obj_undyne1_218")
@@ -121,7 +121,7 @@ if (con == 82 && instance_exists(OBJ_WRITER) == 0)
     OBJ_WRITER.y += 155
     con = 5
 }
-if (con == 5 && instance_exists(OBJ_WRITER) == 0)
+if (con == 5 && instance_exists(OBJ_WRITER) == false)
 {
     FL_AnimationIndex = 3
     papyrus.hspeed = -3
@@ -423,7 +423,7 @@ if (con == 47)
     instance_create(0, 0, obj_dialoguer)
     con = 48
 }
-if (con == 48 && instance_exists(OBJ_WRITER) == 0)
+if (con == 48 && instance_exists(OBJ_WRITER) == false)
 {
     mkid.hspeed = 6
     mkid.myinteract = 0

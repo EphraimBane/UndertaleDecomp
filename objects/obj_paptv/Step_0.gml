@@ -36,7 +36,7 @@ if (conversation == 4)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 5
 }
-if (conversation == 5 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 5 && instance_exists(OBJ_WRITER) == false)
 {
     read += 1
     conversation = 0

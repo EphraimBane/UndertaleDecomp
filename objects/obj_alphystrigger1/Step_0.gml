@@ -87,7 +87,7 @@ if (con == 18)
     instance_create(0, 0, obj_dialoguer)
     con = 19
 }
-if (con == 19 && instance_exists(OBJ_WRITER) == 0)
+if (con == 19 && instance_exists(OBJ_WRITER) == false)
 {
     global.msg[0] = scr_gettext("obj_alphystrigger1_175")
     global.msg[1] = scr_gettext("obj_alphystrigger1_176")
@@ -113,7 +113,7 @@ if (con == 20)
         looktimer = 0
     }
 }
-if (con == 20 && instance_exists(OBJ_WRITER) == 0)
+if (con == 20 && instance_exists(OBJ_WRITER) == false)
 {
     con = 21
     alarm[4] = 100
@@ -170,7 +170,7 @@ if (con == 24)
     global.msg[28] = scr_gettext("obj_alphystrigger1_257")
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 25 && instance_exists(OBJ_WRITER) == 0)
+if (con == 25 && instance_exists(OBJ_WRITER) == false)
 {
     labvolume -= 0.03
     caster_set_volume(lab, labvolume)
@@ -197,7 +197,7 @@ if (con == 29)
     instance_create(0, 0, obj_dialoguer)
     con = 30
 }
-if (con == 30 && instance_exists(OBJ_WRITER) == 0)
+if (con == 30 && instance_exists(OBJ_WRITER) == false)
 {
     con = 31
     alarm[4] = 30
@@ -218,7 +218,7 @@ if (con == 34)
     instance_create(0, 0, obj_dialoguer)
     con = 35
 }
-if (con == 35 && instance_exists(OBJ_WRITER) == 0)
+if (con == 35 && instance_exists(OBJ_WRITER) == false)
 {
     con = 36
     alarm[4] = 30
@@ -247,7 +247,7 @@ if (con == 40)
     instance_create(0, 0, obj_dialoguer)
     con = 41
 }
-if (con == 41 && instance_exists(OBJ_WRITER) == 0)
+if (con == 41 && instance_exists(OBJ_WRITER) == false)
 {
     con = 42
     alarm[4] = 20
@@ -309,7 +309,7 @@ if (con == 48)
     gamesign.image_speed = 0.2
     gamesign.visible = true
 }
-if (con == 49 && instance_exists(OBJ_WRITER) == 0)
+if (con == 49 && instance_exists(OBJ_WRITER) == false)
 {
     con = 50
     alarm[4] = 20
@@ -343,7 +343,7 @@ if (con == 55)
     instance_create(0, 0, obj_dialoguer)
     con = 56
 }
-if (con == 56 && instance_exists(OBJ_WRITER) == 0)
+if (con == 56 && instance_exists(OBJ_WRITER) == false)
 {
     caster_play(cheer, 1, 1)
     caster_loop(gameshow, 1, 1)
@@ -369,7 +369,7 @@ if (con == 58)
     instance_create(0, 0, obj_dialoguer)
     con = 59
 }
-if (con == 59 && instance_exists(OBJ_WRITER) == 0)
+if (con == 59 && instance_exists(OBJ_WRITER) == false)
 {
     caster_play(clap, 1, 1)
     mett.image_speed = 0.5
@@ -392,7 +392,7 @@ if (con == 61)
     instance_create(0, 0, obj_dialoguer)
     con = 63
 }
-if (con == 63 && instance_exists(OBJ_WRITER) == 0)
+if (con == 63 && instance_exists(OBJ_WRITER) == false)
 {
     mett.image_speed = 0
     snd_play(snd_drumroll)
@@ -408,7 +408,7 @@ if (con == 65)
     instance_create(0, 0, obj_dialoguer)
     con = 66
 }
-if (con == 66 && instance_exists(OBJ_WRITER) == 0)
+if (con == 66 && instance_exists(OBJ_WRITER) == false)
 {
     if instance_exists(obj_confetti)
     {
@@ -464,7 +464,7 @@ if (con == 71)
     instance_create(0, 0, obj_dialoguer)
     con = 72
 }
-if (con == 72 && instance_exists(OBJ_WRITER) == 0)
+if (con == 72 && instance_exists(OBJ_WRITER) == false)
 {
     alphys2 = instance_create(alphys.x, alphys.y, obj_alphys_npc)
     with (alphys)

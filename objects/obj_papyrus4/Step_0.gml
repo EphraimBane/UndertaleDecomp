@@ -15,7 +15,7 @@ if (conversation == 1)
     sans.sprite_index = sans.ltsprite
     conversation = 2
 }
-if (conversation == 2 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 2 && instance_exists(OBJ_WRITER) == false)
 {
     conversation = 3
     xxblcon = instance_create((papyrus.x + 3), (papyrus.y - 12), obj_cosmeticblcon)
@@ -45,7 +45,7 @@ if (conversation == 4)
     }
     mydialoguer = instance_create(0, 0, obj_dialoguer)
 }
-if (conversation == 6 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 6 && instance_exists(OBJ_WRITER) == false)
 {
     papyrus.fun = true
     papyrus.image_speed = 0.2
@@ -58,7 +58,7 @@ if (conversation == 6 && instance_exists(OBJ_WRITER) == 0)
     global.interact = 0
     solid = 0
 }
-if (conversation == 50 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 50 && instance_exists(OBJ_WRITER) == false)
 {
     obj_specialtile.alarm[0] = 2
     conversation = 51
@@ -128,7 +128,7 @@ if (conversation == 60)
 }
 if (conversation == 62)
     conversation = 63
-if (conversation == 80 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 80 && instance_exists(OBJ_WRITER) == false)
 {
     instance_create((papyrus.x + 10), (papyrus.y + 20), obj_spagnot)
     with (obj_spagnot)
@@ -147,7 +147,7 @@ if (conversation == 82)
     alarm[4] = 10
     conversation = 55
 }
-if (conversation == 99 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 99 && instance_exists(OBJ_WRITER) == false)
     conversation = 22
 if (conversation == 22)
 {
@@ -159,7 +159,7 @@ if (conversation == 22)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 23
 }
-if (conversation == 23 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 23 && instance_exists(OBJ_WRITER) == false)
 {
     papyrus.hspeed = 5
     papyrus.fun = true
@@ -186,7 +186,7 @@ if (conversation == 63)
         instance_destroy()
     instance_destroy()
 }
-if (conversation == 120 && instance_exists(OBJ_WRITER) == 1)
+if (conversation == 120 && instance_exists(OBJ_WRITER) == true)
 {
     global.facing = Direction.Right
     if (OBJ_WRITER.stringno == 2)
@@ -201,7 +201,7 @@ if (conversation == 120 && instance_exists(OBJ_WRITER) == 1)
         mc.image_speed = 0
     }
 }
-if (conversation == 120 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 120 && instance_exists(OBJ_WRITER) == false)
 {
     global.facing = Direction.Right
     if (mc.x > (mc.xstart + 90))

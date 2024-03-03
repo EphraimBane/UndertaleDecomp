@@ -11,7 +11,7 @@ if (con == 1)
     con = 2
     snd_play(snd_phone)
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     bossa = caster_load("music/hotel.ogg")
     con = 3
@@ -49,7 +49,7 @@ if (con == 6)
     g.side = 0
     con = 7
 }
-if (con == 7 && instance_exists(OBJ_WRITER) == 0)
+if (con == 7 && instance_exists(OBJ_WRITER) == false)
 {
     caster_loop(bossa, 1, 1)
     con = 8
@@ -69,7 +69,7 @@ if (con == 9)
     g.side = 1
     con = 10
 }
-if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+if (con == 10 && instance_exists(OBJ_WRITER) == false)
 {
     g = instance_create(40, (180 + yoffset1), obj_killervisage)
     with (g)
@@ -88,7 +88,7 @@ if (con == 12)
     g = instance_create(0, 0, obj_dialoguer)
     applause = caster_load("music/mett_applause.ogg")
 }
-if (con == 13 && instance_exists(OBJ_WRITER) == 0)
+if (con == 13 && instance_exists(OBJ_WRITER) == false)
 {
     mett.sprite_index = spr_mettaton_clap
     mett.image_speed = 0.5
@@ -153,7 +153,7 @@ if (con == 26)
     instance_create(0, 0, obj_dialoguer)
     con = 27
 }
-if (con == 27 && instance_exists(OBJ_WRITER) == 0)
+if (con == 27 && instance_exists(OBJ_WRITER) == false)
 {
     snd_play(snd_shock)
     caster_loop(bad, 1, 1)
@@ -208,7 +208,7 @@ if (con == 31)
     instance_create(0, 0, obj_dialoguer)
     con = 32
 }
-if (con == 32 && instance_exists(OBJ_WRITER) == 0)
+if (con == 32 && instance_exists(OBJ_WRITER) == false)
 {
     mett.sprite_index = spr_mettaton_talk
     mett.image_speed = 0.25
@@ -235,7 +235,7 @@ if (con == 33)
         }
     }
 }
-if (con == 33 && instance_exists(OBJ_WRITER) == 0)
+if (con == 33 && instance_exists(OBJ_WRITER) == false)
 {
     __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 4))
     if (__view_get(VIEW_PROP_CAM_X, 0) > 318)
@@ -268,7 +268,7 @@ if (con == 40)
     obj_mainchara.cutscene = false
     con = 41
 }
-if (con == 41 && instance_exists(OBJ_WRITER) == 0)
+if (con == 41 && instance_exists(OBJ_WRITER) == false)
 {
     global.plot = 134
     mett.image_speed = 0
@@ -324,7 +324,7 @@ if (con == 56)
     instance_create(0, 0, obj_dialoguer)
     con = 57
 }
-if (con == 57 && instance_exists(OBJ_WRITER) == 0)
+if (con == 57 && instance_exists(OBJ_WRITER) == false)
 {
     global.plot = 134
     mett2 = instance_create(mett.x, mett.y, obj_mettaton_actor)
@@ -361,7 +361,7 @@ if (con == 61)
     con = 61.1
     snd_play(snd_phone)
 }
-if (con == 61.1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 61.1 && instance_exists(OBJ_WRITER) == false)
 {
     global.facing = Direction.Down
     jetpack = instance_create(obj_mainchara.x, (obj_mainchara.y + 10), obj_phonetojetpack)
@@ -371,7 +371,7 @@ if (con == 61.1 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 61.2)
     con = 62
-if (con == 62 && instance_exists(OBJ_WRITER) == 0)
+if (con == 62 && instance_exists(OBJ_WRITER) == false)
 {
     __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
     obj_mainchara.cutscene = true
@@ -394,7 +394,7 @@ if (con == 64)
     instance_create(0, 0, obj_dialoguer)
     con = 65
 }
-if (con == 65 && instance_exists(OBJ_WRITER) == 0)
+if (con == 65 && instance_exists(OBJ_WRITER) == false)
 {
     race = caster_load("music/hotel_battle.ogg")
     global.currentsong = caster_loop(race, 1, 1)
@@ -459,7 +459,7 @@ if (con == 72)
     snd_play(snd_phone)
     con = 73
 }
-if (con == 73 && instance_exists(OBJ_WRITER) == 0)
+if (con == 73 && instance_exists(OBJ_WRITER) == false)
 {
     dn = 1
     con = 74

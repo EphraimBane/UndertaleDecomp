@@ -56,7 +56,7 @@ if (con == 4)
     scr_blcon_x((x + 300), (y + 20))
     blcon.sprite_index = spr_blconsm
 }
-if (con == 5 && instance_exists(OBJ_WRITER) == 0)
+if (con == 5 && instance_exists(OBJ_WRITER) == false)
 {
     con = 6
     chokemusic = caster_load("music/chokedup.ogg")
@@ -81,7 +81,7 @@ if (con == 7)
     scr_blcon_ofs((x + 270), (y + 20), 0, 6, 0)
     con = 8
 }
-if (con == 8 && instance_exists(OBJ_WRITER) == 0)
+if (con == 8 && instance_exists(OBJ_WRITER) == false)
 {
     con = 9
     global.msg[0] = scr_gettext("obj_asgore_lastcutscene_294")
@@ -101,7 +101,7 @@ if (con == 8 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 8 || con == 10 || con == 18 || con == 19)
     scr_textskip()
-if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+if (con == 10 && instance_exists(OBJ_WRITER) == false)
 {
     fightbt2 = instance_create((global.idealborder[0] + 50), (global.idealborder[2] + 50), obj_anybt)
     fightbt2.type = 0
@@ -130,7 +130,7 @@ if (con == 17)
     scr_blcon_ofs((x + 270), (y + 20), 0, 6, 0)
     con = 18
 }
-if (con == 18 && instance_exists(OBJ_WRITER) == 0)
+if (con == 18 && instance_exists(OBJ_WRITER) == false)
 {
     caster_loop(msb, 1, 1)
     global.msg[0] = scr_gettext("obj_asgore_lastcutscene_352")
@@ -169,14 +169,14 @@ if (con == 18 && instance_exists(OBJ_WRITER) == 0)
     if (q == 1)
         con = 130
 }
-if (con == 19 && instance_exists(OBJ_WRITER) == 0)
+if (con == 19 && instance_exists(OBJ_WRITER) == false)
 {
     con = 18.5
     alarm[4] = 50
 }
 if (con == 19.5)
     con = 20
-if (con == 20 && instance_exists(OBJ_WRITER) == 0)
+if (con == 20 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 5
     caster_free(all)
@@ -393,7 +393,7 @@ if (con == 96)
     obj_blconwideslave.sprite_index = spr_blconsm
     con = 97
 }
-if (con == 97 && instance_exists(OBJ_WRITER) == 0)
+if (con == 97 && instance_exists(OBJ_WRITER) == false)
 {
     global.msg[0] = scr_gettext("obj_asgore_lastcutscene_651")
     scr_blcon_x(360, 140)
@@ -428,7 +428,7 @@ if (con == 100)
     fimg2 = 0
     con = 99.5
 }
-if (con == 99.5 && instance_exists(OBJ_WRITER) == 0)
+if (con == 99.5 && instance_exists(OBJ_WRITER) == false)
 {
     cym = caster_load("music/cymbal.ogg")
     con = 102
@@ -437,7 +437,7 @@ if (con == 99.5 && instance_exists(OBJ_WRITER) == 0)
     global.msg[0] = scr_gettext("obj_asgore_lastcutscene_692")
     instance_create(120, 350, OBJ_WRITER)
 }
-if (con == 102 && instance_exists(OBJ_WRITER) == 0)
+if (con == 102 && instance_exists(OBJ_WRITER) == false)
 {
     caster_play(cym, 1, 1)
     snd_play(snd_floweylaugh)
@@ -535,7 +535,7 @@ if (con == 121)
     obj_blconwideslave.depth = -9000
     OBJ_WRITER.depth = -90000
 }
-if (con == 122 && instance_exists(OBJ_WRITER) == 0)
+if (con == 122 && instance_exists(OBJ_WRITER) == false)
 {
     rowdy = 2
     with (heart[0])
@@ -546,12 +546,12 @@ if (con == 122 && instance_exists(OBJ_WRITER) == 0)
     wht = 0
     alarm[4] = 150
 }
-if (con == 130 && instance_exists(OBJ_WRITER) == 0)
+if (con == 130 && instance_exists(OBJ_WRITER) == false)
 {
     con = 131
     alarm[4] = 50
 }
-if (con == 132 && instance_exists(OBJ_WRITER) == 0)
+if (con == 132 && instance_exists(OBJ_WRITER) == false)
 {
     ossafe_ini_open("undertale.ini")
     ini_write_real("Flowey", "SK", 1)
@@ -576,7 +576,7 @@ if (con == 132 && instance_exists(OBJ_WRITER) == 0)
     con = 133
     remdepth = depth
 }
-if (con == 133 && instance_exists(OBJ_WRITER) == 0)
+if (con == 133 && instance_exists(OBJ_WRITER) == false)
 {
     cut = caster_load("music/sfx_cinematiccut.ogg")
     caster_play(cut, 1, 0.9)
@@ -621,7 +621,7 @@ if (con == 137)
     scr_blcon_x((x + 270), (y + 20))
     con = 138
 }
-if (con == 138 && instance_exists(OBJ_WRITER) == 0)
+if (con == 138 && instance_exists(OBJ_WRITER) == false)
 {
     con = 139
     alarm[4] = 30
@@ -686,7 +686,7 @@ if (con == 150)
     obj_blconwideslave.depth = -9000
     OBJ_WRITER.depth = -90000
 }
-if (con == 151 && instance_exists(OBJ_WRITER) == 0)
+if (con == 151 && instance_exists(OBJ_WRITER) == false)
 {
     global.msc = 0
     global.typer = 102
@@ -696,7 +696,7 @@ if (con == 151 && instance_exists(OBJ_WRITER) == 0)
     obj_blconwideslave.depth = -9000
     OBJ_WRITER.depth = -90000
 }
-if (con == 152 && instance_exists(OBJ_WRITER) == 0)
+if (con == 152 && instance_exists(OBJ_WRITER) == false)
 {
     global.msc = 0
     global.typer = 103
@@ -706,7 +706,7 @@ if (con == 152 && instance_exists(OBJ_WRITER) == 0)
     obj_blconwideslave.depth = -9000
     OBJ_WRITER.depth = -90000
 }
-if (con == 153 && instance_exists(OBJ_WRITER) == 0)
+if (con == 153 && instance_exists(OBJ_WRITER) == false)
 {
     instance_create(285, 150, obj_floweygonk)
     instance_destroy()

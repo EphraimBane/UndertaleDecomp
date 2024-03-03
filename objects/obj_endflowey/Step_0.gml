@@ -421,7 +421,7 @@ if (con == 140)
     instance_create(writerx, writery, OBJ_WRITER)
     con = 2
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     flowey = 3
     con = 3

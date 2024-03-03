@@ -262,13 +262,13 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)
         instance_destroy()
 }
-if (global.mnfight == 5 && instance_exists(OBJ_WRITER) == 0)
+if (global.mnfight == 5 && instance_exists(OBJ_WRITER) == false)
 {
     if (saved == 1)
     {
@@ -295,7 +295,7 @@ if (global.mnfight == 5 && instance_exists(OBJ_WRITER) == 0)
         scr_blcon_x((x + 80), y)
         saved = 4
     }
-    if (saved == 4 && instance_exists(OBJ_WRITER) == 0)
+    if (saved == 4 && instance_exists(OBJ_WRITER) == false)
     {
         instance_create(-10, -10, obj_screenwhiter)
         saved = 5

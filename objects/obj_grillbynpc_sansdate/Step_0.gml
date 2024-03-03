@@ -24,14 +24,14 @@ if (con == 3)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     con = 3.5
 }
-if (con == 3.5 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3.5 && instance_exists(OBJ_WRITER) == false)
 {
     sprite_index = usprite
     global.msg[0] = scr_gettext("obj_grillbynpc_sansdate_129")
     con = 4
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4 && instance_exists(OBJ_WRITER) == false)
 {
     sprite_index = usprite
     image_speed = 0.2
@@ -69,7 +69,7 @@ if (con == 7.1)
     con = 6.2
     alarm[2] = 20
 }
-if (con == 7.2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 7.2 && instance_exists(OBJ_WRITER) == false)
 {
     if (FL_DogCoupleStatus != 1)
     {
@@ -105,7 +105,7 @@ if (con == 9)
     talkedto += 1
     con = 10
 }
-if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+if (con == 10 && instance_exists(OBJ_WRITER) == false)
 {
     obj_grillbynpc_foodmonster.image_speed = 0
     obj_grillbynpc_hotandbothered.image_speed = 0
@@ -142,7 +142,7 @@ if (con == 12)
     talkedto += 1
     con = 13
 }
-if (con == 13 && instance_exists(OBJ_WRITER) == 0)
+if (con == 13 && instance_exists(OBJ_WRITER) == false)
 {
     obj_townnpc_weirdfish.image_speed = 0.5
     obj_grillbynpc_hot2.image_speed = 0.5
@@ -184,7 +184,7 @@ if (con == 15)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     con = 17
 }
-if (con == 17 && instance_exists(OBJ_WRITER) == 0)
+if (con == 17 && instance_exists(OBJ_WRITER) == false)
 {
     con = 17.1
     global.phasing = 1
@@ -214,7 +214,7 @@ if (con == 17.1)
         con = 20
     }
 }
-if (con == 20 && instance_exists(OBJ_WRITER) == 0)
+if (con == 20 && instance_exists(OBJ_WRITER) == false)
 {
     caster_pause(global.currentsong)
     caster_play(whoopee, 1, 1)
@@ -230,7 +230,7 @@ if (con == 22)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     con = 23
 }
-if (con == 23 && instance_exists(OBJ_WRITER) == 0)
+if (con == 23 && instance_exists(OBJ_WRITER) == false)
 {
     sprite_index = spr_sans_stoolcomb
     image_speed = 0.1
@@ -267,7 +267,7 @@ if (con == 29)
     instance_create(0, 0, obj_dialoguer)
     con = 30
 }
-if (con == 30 && instance_exists(OBJ_WRITER) == 0)
+if (con == 30 && instance_exists(OBJ_WRITER) == false)
 {
     grillby.visible = true
     grillby.vspeed = 2
@@ -328,7 +328,7 @@ if (con == 40 && instance_exists(OBJ_WRITER))
         image_index = 0
     }
 }
-if (con == 40 && instance_exists(OBJ_WRITER) == 0)
+if (con == 40 && instance_exists(OBJ_WRITER) == false)
 {
     con = 41.5
     if (burg == 2)
@@ -381,7 +381,7 @@ if (con == 41.6 && instance_exists(OBJ_WRITER))
         con = 42
     }
 }
-if (con == 42 && instance_exists(OBJ_WRITER) == 0)
+if (con == 42 && instance_exists(OBJ_WRITER) == false)
 {
     if (burg < 2)
     {
@@ -396,7 +396,7 @@ if (con == 42 && instance_exists(OBJ_WRITER) == 0)
     }
     con = 43
 }
-if (con == 43 && instance_exists(OBJ_WRITER) == 1)
+if (con == 43 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 2)
     {
@@ -406,7 +406,7 @@ if (con == 43 && instance_exists(OBJ_WRITER) == 1)
             food2.x -= 2
     }
 }
-if (con == 43 && instance_exists(OBJ_WRITER) == 0)
+if (con == 43 && instance_exists(OBJ_WRITER) == false)
 {
     sprite_index = spr_sans_stool_buttscratch
     image_speed = 0.2
@@ -430,7 +430,7 @@ if (con == 45)
     instance_create(0, 0, obj_dialoguer)
     con = 46
 }
-if (con == 46 && instance_exists(OBJ_WRITER) == 0)
+if (con == 46 && instance_exists(OBJ_WRITER) == false)
 {
     sprite_index = spr_sans_stool_u
     alarm[2] = 108
@@ -454,7 +454,7 @@ if (con == 48)
     con = 49
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 49 && instance_exists(OBJ_WRITER) == 0)
+if (con == 49 && instance_exists(OBJ_WRITER) == false)
 {
     con = 50
     alarm[2] = 30
@@ -481,7 +481,7 @@ if (con == 53)
     instance_create(0, 0, obj_dialoguer)
     con = 54
 }
-if (con == 54 && instance_exists(OBJ_WRITER) == 0)
+if (con == 54 && instance_exists(OBJ_WRITER) == false)
 {
     caster_resume(global.currentsong)
     grillby.image_speed = 0.25
@@ -520,7 +520,7 @@ if (con == 58)
     obj_mainchara.facing = Direction.Down
     con = 59
 }
-if (con == 59 && instance_exists(OBJ_WRITER) == 0)
+if (con == 59 && instance_exists(OBJ_WRITER) == false)
 {
     global.msc = 0
     global.msg[0] = scr_gettext("obj_grillbynpc_sansdate_683")
@@ -528,7 +528,7 @@ if (con == 59 && instance_exists(OBJ_WRITER) == 0)
     con = 60
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 60 && instance_exists(OBJ_WRITER) == 0)
+if (con == 60 && instance_exists(OBJ_WRITER) == false)
 {
     con = 61
     alarm[2] = 30
@@ -540,7 +540,7 @@ if (con == 62)
     instance_create(0, 0, obj_dialoguer)
     con = 63
 }
-if (con == 63 && instance_exists(OBJ_WRITER) == 0)
+if (con == 63 && instance_exists(OBJ_WRITER) == false)
 {
     sprite_index = dsprite
     image_index = 0
@@ -550,7 +550,7 @@ if (con == 63 && instance_exists(OBJ_WRITER) == 0)
     con = 64
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 64 && instance_exists(OBJ_WRITER) == 0)
+if (con == 64 && instance_exists(OBJ_WRITER) == false)
 {
     caster_free(whoopee)
     caster_free(mystery)
@@ -586,7 +586,7 @@ if (con == 70.1)
     gege.side = 0
     con = 70.2
 }
-if (con == 70.2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 70.2 && instance_exists(OBJ_WRITER) == false)
 {
     image_speed = 0.25
     vspeed = 2

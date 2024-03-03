@@ -26,7 +26,7 @@ if (conversation == 4)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 6
 }
-if (conversation == 6 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 6 && instance_exists(OBJ_WRITER) == false)
 {
     papyrus.hspeed = 4
     papyrus.npcdir = 1

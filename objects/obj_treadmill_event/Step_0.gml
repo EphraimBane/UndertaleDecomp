@@ -22,7 +22,7 @@ if (con == 2)
     d.side = 0
     con = 3
 }
-if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3 && instance_exists(OBJ_WRITER) == false)
 {
     pap.vspeed = 5
     pap.sprite_index = spr_papyrus_d

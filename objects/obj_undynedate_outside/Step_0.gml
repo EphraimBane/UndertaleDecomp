@@ -26,7 +26,7 @@ if (con == 8)
     instance_create(0, 0, obj_dialoguer)
     con = 9
 }
-if (con == 9 && instance_exists(OBJ_WRITER) == 0)
+if (con == 9 && instance_exists(OBJ_WRITER) == false)
 {
     papyrus.image_speed = 0.2
     if (papyrus.image_index >= 4)
@@ -41,7 +41,7 @@ if (con == 10)
     instance_create(0, 0, obj_dialoguer)
     con = 11
 }
-if (con == 11 && instance_exists(OBJ_WRITER) == 0)
+if (con == 11 && instance_exists(OBJ_WRITER) == false)
 {
     papyrus.image_speed = -0.2
     if (papyrus.image_index < 1)
@@ -106,7 +106,7 @@ if (con == 21)
     instance_create(0, 0, obj_dialoguer)
     con = 22
 }
-if (con == 22 && instance_exists(OBJ_WRITER) == 0)
+if (con == 22 && instance_exists(OBJ_WRITER) == false)
 {
     papyrus.hspeed = -4
     papyrus.sprite_index = papyrus.lsprite
@@ -138,7 +138,7 @@ if (con == 26)
     instance_create(0, 0, obj_dialoguer)
     con = 27
 }
-if (con == 27 && instance_exists(OBJ_WRITER) == 0)
+if (con == 27 && instance_exists(OBJ_WRITER) == false)
 {
     con = 28
     alarm[4] = 10
@@ -216,7 +216,7 @@ if (con == 38)
 }
 if (con == 39 && instance_exists(OBJ_WRITER))
     obj_mainchara.y = 175
-if (con == 39 && instance_exists(OBJ_WRITER) == 0)
+if (con == 39 && instance_exists(OBJ_WRITER) == false)
 {
     con = 38
     global.interact = 0

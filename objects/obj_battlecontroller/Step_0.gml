@@ -390,7 +390,7 @@ if (global.myfight == 4)
     if (runaway == 0)
     {
         obj_heart.x = -200
-        if (instance_exists(OBJ_WRITER) == 0)
+        if (instance_exists(OBJ_WRITER) == false)
         {
             global.myfight = 0
             global.mnfight = 1

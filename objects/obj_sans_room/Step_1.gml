@@ -5,7 +5,7 @@ if (s_click == 1 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 8)
         caster_free(all)
 }
-if (s_click == 1 && instance_exists(OBJ_WRITER) == 0)
+if (s_click == 1 && instance_exists(OBJ_WRITER) == false)
 {
     s_click = 2
     snd_play(snd_noise)

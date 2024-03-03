@@ -22,7 +22,7 @@ if (global.mnfight == 1)
 {
     if (talked == 2 && instance_exists(OBJ_WRITER))
         scr_textskip()
-    if (talked == 2 && instance_exists(OBJ_WRITER) == 0)
+    if (talked == 2 && instance_exists(OBJ_WRITER) == false)
     {
         event_user(2)
         talked = 3
@@ -223,7 +223,7 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (n_con == 1 && instance_exists(OBJ_WRITER) == 0)
+if (n_con == 1 && instance_exists(OBJ_WRITER) == false)
 {
     global.border = 0
     global.typer = 1
@@ -233,7 +233,7 @@ if (n_con == 1 && instance_exists(OBJ_WRITER) == 0)
     global.myfight = -5
     global.mnfight = 0
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
     instance_destroy()
 if (global.turntimer <= 0 && global.mnfight == 2)
 {
@@ -241,7 +241,7 @@ if (global.turntimer <= 0 && global.mnfight == 2)
     with (mypart1)
         back = false
 }
-if (d_con == 1 && instance_exists(OBJ_WRITER) == 0)
+if (d_con == 1 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 4
     FL_AnimationIndex = 0
@@ -284,7 +284,7 @@ if (d_con == 5)
     writer.depth = -1600
     d_con = 6
 }
-if (d_con == 6 && instance_exists(OBJ_WRITER) == 0)
+if (d_con == 6 && instance_exists(OBJ_WRITER) == false)
 {
     visible = false
     sprite_index = spr_sorry_d
@@ -312,7 +312,7 @@ if (p_con == 2)
     p_con = 3
     alarm[4] = 50
 }
-if (p_con == 1 && instance_exists(OBJ_WRITER) == 0)
+if (p_con == 1 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 1
     snd_play(snd_break2)
@@ -330,7 +330,7 @@ if (p_con == 4)
     writer.depth = -1600
     p_con = 5
 }
-if (p_con == 5 && instance_exists(OBJ_WRITER) == 0)
+if (p_con == 5 && instance_exists(OBJ_WRITER) == false)
 {
     FL_AnimationIndex = 0
     p_con = 0

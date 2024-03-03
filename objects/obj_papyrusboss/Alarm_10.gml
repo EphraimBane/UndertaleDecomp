@@ -39,7 +39,7 @@ if (bonetalk4 == 4)
     alarm[10] = 150
     bonetalk4 = 5
 }
-if (bonetalk4 == 3.5 && instance_exists(OBJ_WRITER) == 0)
+if (bonetalk4 == 3.5 && instance_exists(OBJ_WRITER) == false)
 {
     with (blcon)
         instance_destroy()
@@ -52,7 +52,7 @@ if (bonetalk4 == 2.5)
     bonetalk4 = 3
     alarm[10] = 80
 }
-if (bonetalk4 == 2 && instance_exists(OBJ_WRITER) == 0)
+if (bonetalk4 == 2 && instance_exists(OBJ_WRITER) == false)
 {
     dh.c = 4
     db.c = 4

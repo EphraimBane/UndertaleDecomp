@@ -1,5 +1,5 @@
 scr_npc_anim()
-if (con == 1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 1
     con = 2
@@ -104,7 +104,7 @@ if (con == 30)
     scr_regulartext()
     con = 31
 }
-if (con == 31 && instance_exists(OBJ_WRITER) == 0)
+if (con == 31 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 0
     con = 0

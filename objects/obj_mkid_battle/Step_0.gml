@@ -179,7 +179,7 @@ if (con == 21.2)
     OBJ_WRITER.depth = -3000
     con = 23
 }
-if (con == 23 && instance_exists(OBJ_WRITER) == 0)
+if (con == 23 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 1
     global.typer = 39
@@ -188,7 +188,7 @@ if (con == 23 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon_x((undyne.x + 160), undyne.y)
     con = 24
 }
-if (con == 24 && instance_exists(OBJ_WRITER) == 0)
+if (con == 24 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 33
     global.msg[0] = scr_gettext("obj_mkid_battle_574")
@@ -196,7 +196,7 @@ if (con == 24 && instance_exists(OBJ_WRITER) == 0)
     obj_blconwideslave.sprite_index = spr_blconabove
     con = 25
 }
-if (con == 25 && instance_exists(OBJ_WRITER) == 0)
+if (con == 25 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 2
     global.typer = 39
@@ -205,7 +205,7 @@ if (con == 25 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon_x((undyne.x + 160), undyne.y)
     con = 26
 }
-if (con == 26 && instance_exists(OBJ_WRITER) == 0)
+if (con == 26 && instance_exists(OBJ_WRITER) == false)
 {
     FL_AnimationIndex = 3
     con = 27
@@ -249,7 +249,7 @@ if (con == 34)
     scr_blcon_x((undyne.x + 160), undyne.y)
     con = 35
 }
-if (con == 34 && instance_exists(OBJ_WRITER) == 0)
+if (con == 34 && instance_exists(OBJ_WRITER) == false)
 {
     if (OBJ_WRITER.stringno == 1)
         siner.idealww = 6
@@ -260,7 +260,7 @@ if (con == 34 && instance_exists(OBJ_WRITER) == 0)
     if (OBJ_WRITER.stringno == 4)
         siner.idealww = 12
 }
-if (con == 35 && instance_exists(OBJ_WRITER) == 0)
+if (con == 35 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 4
     global.typer = 42
@@ -270,7 +270,7 @@ if (con == 35 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon_x((undyne.x + 160), undyne.y)
     con = 36
 }
-if (con == 35 && instance_exists(OBJ_WRITER) == 0)
+if (con == 35 && instance_exists(OBJ_WRITER) == false)
 {
     if (OBJ_WRITER.stringno == 1)
         siner.idealww = 15
@@ -279,7 +279,7 @@ if (con == 35 && instance_exists(OBJ_WRITER) == 0)
     if (OBJ_WRITER.stringno == 3)
         siner.idealww = 25
 }
-if (con == 36 && instance_exists(OBJ_WRITER) == 0)
+if (con == 36 && instance_exists(OBJ_WRITER) == false)
 {
     if (siner.idealww != 45)
         snd_play(snd_vaporized)
@@ -301,7 +301,7 @@ if (con == 38)
     scr_blcon_x((undyne.x + 160), undyne.y)
     con = 39
 }
-if (con == 39 && instance_exists(OBJ_WRITER) == 0)
+if (con == 39 && instance_exists(OBJ_WRITER) == false)
 {
     vol = 0
     truthmusic = caster_load("music/x_undyne_pre.ogg")
@@ -329,7 +329,7 @@ if (con == 39 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon_x((undyne.x + 160), undyne.y)
     con = 40
 }
-if (con == 40 && instance_exists(OBJ_WRITER) == 0)
+if (con == 40 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 42
     global.msg[0] = scr_gettext("obj_mkid_battle_728")
@@ -342,7 +342,7 @@ if (con == 40 || con == 41)
         vol += 0.02
     caster_set_volume(truthmusic, vol)
 }
-if (con == 41 && instance_exists(OBJ_WRITER) == 0)
+if (con == 41 && instance_exists(OBJ_WRITER) == false)
 {
     caster_free(truthmusic)
     risesfx = caster_load("music/f_destroyed2.ogg")
@@ -351,7 +351,7 @@ if (con == 41 && instance_exists(OBJ_WRITER) == 0)
     caster_loop(risesfx, 0, 0.5)
     siner.idealww = 50
 }
-if (con == 41 && instance_exists(OBJ_WRITER) == 0)
+if (con == 41 && instance_exists(OBJ_WRITER) == false)
 {
     wht = scr_marker(-2, -2, spr_pixwht)
     wht.image_speed = 0
@@ -420,7 +420,7 @@ if (con == 48)
     scr_blcon_x((undyne.x + 163), (undyne.y + 50))
     con = 49
 }
-if (con == 49 && instance_exists(OBJ_WRITER) == 0)
+if (con == 49 && instance_exists(OBJ_WRITER) == false)
 {
     global.battlegroup = 92
     caster_free(all)
@@ -461,7 +461,7 @@ if (con == 200)
 }
 if (con == 201)
     scr_textskip()
-if (con == 201 && instance_exists(OBJ_WRITER) == 0)
+if (con == 201 && instance_exists(OBJ_WRITER) == false)
 {
     risesfx = caster_load("music/f_destroyed2.ogg")
     vol = 0
@@ -502,7 +502,7 @@ if (con == 203)
     caster_set_volume(risesfx, vol)
     caster_set_pitch(risesfx, pit)
 }
-if (con == 204 && instance_exists(OBJ_WRITER) == 0)
+if (con == 204 && instance_exists(OBJ_WRITER) == false)
 {
     global.battlegroup = 92
     caster_free(all)
@@ -518,5 +518,5 @@ if (global.myfight == 4)
         scr_mercystandard()
     }
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
     scr_mercystandard()

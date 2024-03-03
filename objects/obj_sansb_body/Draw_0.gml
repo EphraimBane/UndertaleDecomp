@@ -372,7 +372,7 @@ if (fac == 19)
     scr_blcon_x((obj_sansb.x + 120), (y - 10))
     fac = 20
 }
-if (fac == 20 && instance_exists(OBJ_WRITER) == 0)
+if (fac == 20 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 0
     FL_AnimationIndex = 0
@@ -1016,7 +1016,7 @@ if (lac == 62)
     scr_blcon_x((obj_sansb.x + 120), (y - 10))
     lac = 63
 }
-if (lac == 63 && instance_exists(OBJ_WRITER) == 0)
+if (lac == 63 && instance_exists(OBJ_WRITER) == false)
 {
     FL_AnimationIndex = 0
     lac = 64
@@ -1043,7 +1043,7 @@ if (lac == 65)
     scr_blcon_x((obj_sansb.x + 120), (y - 10))
     lac = 66
 }
-if (lac == 66 && instance_exists(OBJ_WRITER) == 0)
+if (lac == 66 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 0
     lac = 67
@@ -1059,7 +1059,7 @@ if (lac == 68)
     scr_blcon_x((obj_sansb.x + 120), (y - 10))
     lac = 69
 }
-if (lac == 69 && instance_exists(OBJ_WRITER) == 0)
+if (lac == 69 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 0
     lac = 70
@@ -1082,7 +1082,7 @@ if (lac == 71)
     scr_blcon_x((obj_sansb.x + 120), (y - 10))
     lac = 72
 }
-if (lac == 72 && instance_exists(OBJ_WRITER) == 0)
+if (lac == 72 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 0
     lac = 73
@@ -1101,7 +1101,7 @@ if (lac == 74)
     scr_blcon_x((obj_sansb.x + 120), (y - 10))
     lac = 75
 }
-if (lac == 75 && instance_exists(OBJ_WRITER) == 0)
+if (lac == 75 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 0
     lac = -1
@@ -1367,7 +1367,7 @@ if (death_c == 27 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 7)
         global.faceemotion = 10
 }
-if (death_c == 27 && instance_exists(OBJ_WRITER) == 0)
+if (death_c == 27 && instance_exists(OBJ_WRITER) == false)
 {
     death_c = 27.1
     alarm[6] = 60
@@ -1400,7 +1400,7 @@ if (instance_exists(OBJ_WRITER) && death_c == 30)
         FL_AnimationIndex = 6
     }
 }
-if (death_c == 30 && instance_exists(OBJ_WRITER) == 0)
+if (death_c == 30 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 10
     FL_AnimationIndex = 5
@@ -1425,7 +1425,7 @@ if (death_c == 32)
     scr_blcon_x(20, (y - 10))
     death_c = 33
 }
-if (death_c == 33 && instance_exists(OBJ_WRITER) == 0)
+if (death_c == 33 && instance_exists(OBJ_WRITER) == false)
 {
     death_c = 34
     alarm[6] = 60

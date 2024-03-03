@@ -1,4 +1,4 @@
-if (dt == 1 && instance_exists(OBJ_WRITER) == 0)
+if (dt == 1 && instance_exists(OBJ_WRITER) == false)
 {
     dt = 0
     FL_SnowmanPieceCounter += 1

@@ -37,7 +37,7 @@ if (conversation == 1)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 2
 }
-if (conversation == 2 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 2 && instance_exists(OBJ_WRITER) == false)
 {
     conversation = 3
     papyrus.sprite_index = papyrus.ltsprite
@@ -83,7 +83,7 @@ if (conversation == 6 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno > 7)
         papyrus.sprite_index = spr_papyrus_orb
 }
-if (conversation == 6 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 6 && instance_exists(OBJ_WRITER) == false)
 {
     instance_create(10, 0, obj_puzzlewall1)
     papyrus.sprite_index = papyrus.ltsprite
@@ -95,7 +95,7 @@ if (conversation == 6 && instance_exists(OBJ_WRITER) == 0)
     global.interact = 0
     solid = 0
 }
-if (conversation == 8 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 8 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 1
     conversation = 9
@@ -133,7 +133,7 @@ if (conversation == 12)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 13
 }
-if (conversation == 13 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 13 && instance_exists(OBJ_WRITER) == false)
 {
     papyrus.fun = false
     papyrus.sprite_index = papyrus.utsprite
@@ -145,7 +145,7 @@ if (conversation == 13 && instance_exists(OBJ_WRITER) == 0)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 14
 }
-if (conversation == 14 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 14 && instance_exists(OBJ_WRITER) == false)
 {
     papyrus.sprite_index = papyrus.ltsprite
     papyrus.image_speed = 0
@@ -156,7 +156,7 @@ if (conversation == 14 && instance_exists(OBJ_WRITER) == 0)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 15
 }
-if (conversation == 15 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 15 && instance_exists(OBJ_WRITER) == false)
 {
     sans.sprite_index = sans.ltsprite
     papyrus.npcdir = 1
@@ -194,7 +194,7 @@ if (conversation == 16 && instance_exists(obj_papyrus_actor))
         conversation = 16.5
     }
 }
-if (conversation == 16.5 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 16.5 && instance_exists(OBJ_WRITER) == false)
 {
     alarm[1] = 30
     papyrus.sprite_index = spr_papyrus_orbtoss
@@ -226,7 +226,7 @@ if (conversation == 19 && instance_exists(obj_papyrus_actor))
         conversation = 20
     }
 }
-if (conversation == 20 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 20 && instance_exists(OBJ_WRITER) == false)
 {
     x = 248
     global.interact = 0
@@ -254,7 +254,7 @@ if (conversation == 22)
 }
 if (conversation == 23)
     global.interact = 1
-if (conversation == 23 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 23 && instance_exists(OBJ_WRITER) == false)
 {
     if instance_exists(obj_orbhead)
     {
@@ -312,7 +312,7 @@ if (conversation == 50)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 51
 }
-if (conversation == 51 && instance_exists(OBJ_WRITER) == 1)
+if (conversation == 51 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 4)
     {
@@ -327,7 +327,7 @@ if (conversation == 51 && instance_exists(OBJ_WRITER) == 1)
         mc.image_speed = 0
     }
 }
-if (conversation == 51 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 51 && instance_exists(OBJ_WRITER) == false)
 {
     if (mc.x >= 158)
     {
@@ -355,7 +355,7 @@ if (conversation == 53)
     instance_create(0, 0, obj_dialoguer)
     conversation = 54
 }
-if (conversation == 54 && instance_exists(OBJ_WRITER) == 1)
+if (conversation == 54 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 4)
     {
@@ -370,7 +370,7 @@ if (conversation == 54 && instance_exists(OBJ_WRITER) == 1)
         mc.image_speed = 0
     }
 }
-if (conversation == 54 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 54 && instance_exists(OBJ_WRITER) == false)
 {
     if (mc.x >= 218)
     {
@@ -397,7 +397,7 @@ if (conversation == 56)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 57
 }
-if (conversation == 57 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 57 && instance_exists(OBJ_WRITER) == false)
 {
     if instance_exists(obj_orbhead)
     {

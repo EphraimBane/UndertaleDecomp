@@ -27,7 +27,7 @@ if (con == -10)
         alarm[4] = 10
     }
 }
-if (con == -9 && instance_exists(OBJ_WRITER) == 0)
+if (con == -9 && instance_exists(OBJ_WRITER) == false)
 {
     obj_heart.x = -999
     global.mnfight = 999
@@ -63,7 +63,7 @@ if (con == -7)
     blcon2 = instance_create(500, 120, obj_blconsm)
     blconwd2 = instance_create(525, 130, OBJ_WRITER)
 }
-if (con == -6 && instance_exists(OBJ_WRITER) == 0)
+if (con == -6 && instance_exists(OBJ_WRITER) == false)
 {
     with (obj_blconsm)
         instance_destroy()
@@ -275,7 +275,7 @@ if (con == 40)
     }
     draw_set_alpha(1)
 }
-if (con == -120 && instance_exists(OBJ_WRITER) == 0)
+if (con == -120 && instance_exists(OBJ_WRITER) == false)
 {
     with (obj_blconsm)
         instance_destroy()

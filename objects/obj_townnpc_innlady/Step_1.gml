@@ -1,6 +1,6 @@
 scr_depth(0, 0, 0, 0, 0)
 scr_npc_anim()
-if (conversation == 2 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 2 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 1
     instance_create(0, 0, obj_unfader)
@@ -33,7 +33,7 @@ if (conversation == 6)
     instance_create(0, 0, obj_dialoguer)
     conversation = 7
 }
-if (conversation == 7 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 7 && instance_exists(OBJ_WRITER) == false)
 {
     conversation = 0
     global.interact = 0

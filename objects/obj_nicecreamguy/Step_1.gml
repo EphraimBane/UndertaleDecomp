@@ -37,7 +37,7 @@ if (conversation == 2 && j > 30)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 3
 }
-if (conversation == 3 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 3 && instance_exists(OBJ_WRITER) == false)
 {
     instance_create(0, 0, obj_golddisplay)
     global.interact = 1
@@ -66,7 +66,7 @@ if (myinteract == 3 && instance_exists(OBJ_WRITER))
     else
         image_speed = 0
 }
-if (myinteract == 0 || instance_exists(OBJ_WRITER) == 0)
+if (myinteract == 0 || instance_exists(OBJ_WRITER) == false)
 {
     image_speed = 0
     image_index = 0

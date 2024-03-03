@@ -19,7 +19,7 @@ if obj_time.right
 if obj_time.left
     wrong = 1
 stime += 1
-if (wrong == 1 && wrongval == 0 && instance_exists(OBJ_WRITER) == 0)
+if (wrong == 1 && wrongval == 0 && instance_exists(OBJ_WRITER) == false)
 {
     caster_set_pitch(fire, 0.8)
     caster_set_volume(fire, 0.55)
@@ -41,7 +41,7 @@ if (stir > 50 && sval == 0)
         event_user(0)
     sval += 1
 }
-if (stir > 100 && sval == 1 && instance_exists(OBJ_WRITER) == 0)
+if (stir > 100 && sval == 1 && instance_exists(OBJ_WRITER) == false)
 {
     caster_set_pitch(fire, 1)
     caster_set_volume(fire, 0.66)
@@ -64,7 +64,7 @@ if (stir > 150 && sval == 2)
         event_user(0)
     sval += 1
 }
-if (stir > 200 && sval == 3 && instance_exists(OBJ_WRITER) == 0)
+if (stir > 200 && sval == 3 && instance_exists(OBJ_WRITER) == false)
 {
     caster_set_pitch(fire, 1.2)
     caster_set_volume(fire, 0.78)
@@ -87,7 +87,7 @@ if (stir > 250 && sval == 4)
         event_user(0)
     sval += 1
 }
-if (stir > 300 && sval == 5 && instance_exists(OBJ_WRITER) == 0)
+if (stir > 300 && sval == 5 && instance_exists(OBJ_WRITER) == false)
 {
     caster_set_pitch(fire, 1.4)
     caster_set_volume(fire, 0.87)
@@ -102,7 +102,7 @@ if (stir > 300 && sval == 5 && instance_exists(OBJ_WRITER) == 0)
     gg = instance_create(0, 0, obj_dialoguer)
     gg.side = 1
 }
-if (stir > 360 && sval < 99 && instance_exists(OBJ_WRITER) == 0)
+if (stir > 360 && sval < 99 && instance_exists(OBJ_WRITER) == false)
 {
     stir = 360
     caster_stop(global.currentsong)
@@ -121,7 +121,7 @@ if (stir > 360 && sval < 99 && instance_exists(OBJ_WRITER) == 0)
     obj_undynedate_inside.con = 250
     instance_destroy()
 }
-if (stime > 500 && sval < 99 && instance_exists(OBJ_WRITER) == 0)
+if (stime > 500 && sval < 99 && instance_exists(OBJ_WRITER) == false)
 {
     sval = 101
     global.msc = 0
@@ -132,7 +132,7 @@ if (stime > 500 && sval < 99 && instance_exists(OBJ_WRITER) == 0)
     gg = instance_create(0, 0, obj_dialoguer)
     gg.side = 1
 }
-if (sval == 101 && instance_exists(OBJ_WRITER) == 0)
+if (sval == 101 && instance_exists(OBJ_WRITER) == false)
 {
     caster_stop(global.currentsong)
     caster_set_pitch(fire, 1.7)

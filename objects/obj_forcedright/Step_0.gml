@@ -57,7 +57,7 @@ if (t == 8)
     t = 9
     instance_create(0, 0, obj_dialoguer)
 }
-if (t == 9 && instance_exists(OBJ_WRITER) == 0)
+if (t == 9 && instance_exists(OBJ_WRITER) == false)
 {
     global.battlegroup = 25
     FL_AreaKillsPointer = KillsPointer_Invalid

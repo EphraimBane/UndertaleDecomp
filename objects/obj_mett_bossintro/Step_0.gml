@@ -87,7 +87,7 @@ if (con == 7)
     con = 7.1
     vol = 0.7
 }
-if (con == 7.1 && instance_exists(OBJ_WRITER) == 1)
+if (con == 7.1 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno > 6)
     {
@@ -96,7 +96,7 @@ if (con == 7.1 && instance_exists(OBJ_WRITER) == 1)
         caster_set_volume(presong, vol)
     }
 }
-if (con == 7.1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 7.1 && instance_exists(OBJ_WRITER) == false)
 {
     flasher = 1
     flashamt = 0
@@ -113,7 +113,7 @@ if (con == 11)
     scr_blcon((obj_mettb_body.x - 260), 60, 1)
     con = 12
 }
-if (con == 12 && instance_exists(OBJ_WRITER) == 0)
+if (con == 12 && instance_exists(OBJ_WRITER) == false)
 {
     global.monster[0] = false
     global.monster[1] = false

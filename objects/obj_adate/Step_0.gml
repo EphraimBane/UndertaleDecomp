@@ -6,7 +6,7 @@ if (cn == -1)
     instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
     cn = 0
 }
-if (cn == 0 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 0 && instance_exists(OBJ_WRITER) == false)
 {
     with (OBJ_WRITER)
         instance_destroy()
@@ -21,7 +21,7 @@ if (cn == 0 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xx - 250), yy, 1)
     cn = 2
 }
-if (cn == 2 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 2 && instance_exists(OBJ_WRITER) == false)
 {
     cn = 3
     alarm[4] = 60
@@ -47,7 +47,7 @@ if (cn == 5)
     scr_blcon((xx - 260), yy, 1)
     cn = 6
 }
-if (cn == 6 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 6 && instance_exists(OBJ_WRITER) == false)
 {
     cn = 6.1
     alarm[4] = 55
@@ -70,7 +70,7 @@ if (cn == 7.1)
     scr_blcon((xx - 260), yy, 1)
     cn = 8
 }
-if (cn == 8 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 8 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 1
     global.msc = 0
@@ -78,7 +78,7 @@ if (cn == 8 && instance_exists(OBJ_WRITER) == 0)
     instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
     cn = 9
 }
-if (cn == 9 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 9 && instance_exists(OBJ_WRITER) == false)
 {
     with (mfo)
         instance_destroy()
@@ -158,7 +158,7 @@ if (cn == 10)
         instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
     }
 }
-if (cn == 11 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 11 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 74
     global.faceemotion = 0
@@ -167,7 +167,7 @@ if (cn == 11 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xx - 260), yy, 1)
     cn = 12
 }
-if (cn == 12 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 12 && instance_exists(OBJ_WRITER) == false)
 {
     cn = 13
     alarm[4] = 90
@@ -190,7 +190,7 @@ if (cn == 18)
     cn = 19
     alarm[4] = 60
 }
-if (cn == 20 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 20 && instance_exists(OBJ_WRITER) == false)
 {
     with (mfo)
         instance_destroy()
@@ -202,7 +202,7 @@ if (cn == 20 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xx - 260), yy, 1)
     cn = 21
 }
-if (cn == 21 && instance_exists(OBJ_WRITER) == 1)
+if (cn == 21 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 1 && OBJ_WRITER.halt != false)
     {
@@ -243,7 +243,7 @@ if (cn == 24)
     scr_blcon((xx - 260), yy, 1)
     cn = 25
 }
-if (cn == 25 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 25 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 3
     alarm[4] = 100
@@ -262,7 +262,7 @@ if (cn == 27)
     scr_blcon((xx - 260), yy, 1)
     cn = 28
 }
-if (cn == 28 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 28 && instance_exists(OBJ_WRITER) == false)
 {
     al.hspeed = -8
     snd_play(snd_escaped)
@@ -319,7 +319,7 @@ if (cn == 32)
     scr_blcon((xx - 260), yy, 1)
     cn = 33
 }
-if (cn == 33 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 33 && instance_exists(OBJ_WRITER) == false)
 {
     mfo = instance_create(0, 0, obj_musfadeout)
     mfo.fadespeed = 0.04
@@ -346,7 +346,7 @@ if (cn == 35)
     cn = 36
     nowy = al.y
 }
-if (cn == 36 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 36 && instance_exists(OBJ_WRITER) == false)
 {
     al.x -= 10
     if (al.y > (nowy - 22))
@@ -396,7 +396,7 @@ if (cn == 41)
     scr_blcon((xxx + 100), (yyy + 20), 0)
     cn = 42
 }
-if (cn == 42 && instance_exists(OBJ_WRITER) == 1)
+if (cn == 42 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 6 && OBJ_WRITER.halt != false)
     {
@@ -443,7 +443,7 @@ if (cn == 45)
     scr_blcon((xxx + 100), (yyy + 20), 0)
     cn = 46
 }
-if (cn == 46 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 46 && instance_exists(OBJ_WRITER) == false)
 {
     mfo = instance_create(0, 0, obj_musfadeout)
     und.hspeed = 20
@@ -465,7 +465,7 @@ if (cn == 49)
     if (al.x < (trashcan.x - 240))
         cn = 50
 }
-if (cn == 50 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 50 && instance_exists(OBJ_WRITER) == false)
 {
     al.depth = 0
     al.x += 10
@@ -519,7 +519,7 @@ if (cn == 53)
     scr_blcon((xx - 260), yy, 1)
     cn = 54
 }
-if (cn == 54 && instance_exists(OBJ_WRITER) == 1)
+if (cn == 54 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 25 && OBJ_WRITER.halt != false)
     {
@@ -596,7 +596,7 @@ if (cn == 57)
     scr_blcon((xx - 260), yy, 1)
     cn = 58
 }
-if (cn == 58 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 58 && instance_exists(OBJ_WRITER) == false)
 {
     cn = 59
     alarm[4] = 10
@@ -643,7 +643,7 @@ if (cn == 63)
     scr_blcon((xx - 260), yy, 1)
     cn = 64
 }
-if (cn == 64 && instance_exists(OBJ_WRITER) == 1)
+if (cn == 64 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 3 && OBJ_WRITER.halt != false)
     {
@@ -682,7 +682,7 @@ if (cn == 70)
     scr_blcon((xx - 260), yy, 1)
     cn = 71
 }
-if (cn == 71 && instance_exists(OBJ_WRITER) == 1)
+if (cn == 71 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 2 && OBJ_WRITER.halt != false)
     {
@@ -729,14 +729,14 @@ if (cn == 74)
     scr_blcon((xx - 260), yy, 1)
     cn = 74.1
 }
-if (cn == 74.1 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 74.1 && instance_exists(OBJ_WRITER) == false)
 {
     cn = 74.2
     alarm[4] = 20
 }
 if (cn == 75.2)
     cn = 75
-if (cn == 75 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 75 && instance_exists(OBJ_WRITER) == false)
 {
     choice = 0
     choicer = 1
@@ -787,7 +787,7 @@ if (cn == 78)
     scr_blcon((xx - 260), yy, 1)
     cn = 79
 }
-if (cn == 79 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 79 && instance_exists(OBJ_WRITER) == false)
 {
     pitch = 0.75
     al.shake = 2
@@ -827,7 +827,7 @@ if (cn == 90)
     scr_blcon((xx - 260), yy, 1)
     cn = 91
 }
-if (cn == 91 && instance_exists(OBJ_WRITER) == 1)
+if (cn == 91 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 6 && OBJ_WRITER.halt != false)
     {
@@ -881,14 +881,14 @@ if (cn == 94)
     scr_blcon((xx - 260), yy, 1)
     cn = 94.1
 }
-if (cn == 94.1 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 94.1 && instance_exists(OBJ_WRITER) == false)
 {
     cn = 94.2
     alarm[4] = 20
 }
 if (cn == 95.2)
     cn = 95
-if (cn == 95 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 95 && instance_exists(OBJ_WRITER) == false)
 {
     choice = 0
     choicer = 1
@@ -942,7 +942,7 @@ if (cn == 98)
     scr_blcon((xx - 260), yy, 1)
     cn = 99
 }
-if (cn == 99 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 99 && instance_exists(OBJ_WRITER) == false)
 {
     pitch = 0.75
     al.shake = 2
@@ -971,7 +971,7 @@ if (cn == 110 && instance_exists(OBJ_WRITER))
         pitch += 0.01
     caster_set_pitch(global.currentsong, pitch)
 }
-if (cn == 110 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 110 && instance_exists(OBJ_WRITER) == false)
 {
     global.facechoice = 5
     with (obj_adate_ubody)
@@ -1016,7 +1016,7 @@ if (cn == 113)
     scr_blcon((xxx + 90), (yyy + 20), 0)
     cn = 113.1
 }
-if (cn == 113.1 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 113.1 && instance_exists(OBJ_WRITER) == false)
 {
     cn = 113.2
     alarm[4] = 5
@@ -1024,7 +1024,7 @@ if (cn == 113.1 && instance_exists(OBJ_WRITER) == 0)
 }
 if (cn == 114.2)
     cn = 114
-if (cn == 114 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 114 && instance_exists(OBJ_WRITER) == false)
 {
     xx = al.x
     yy = al.y
@@ -1036,7 +1036,7 @@ if (cn == 114 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xx - 250), yy, 1)
     cn = 115
 }
-if (cn == 115 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 115 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 39
     xxx = und.x
@@ -1050,7 +1050,7 @@ if (cn == 115 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xxx + 90), (yyy + 20), 0)
     cn = 116
 }
-if (cn == 116 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 116 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 74
     global.faceemotion = 1
@@ -1062,7 +1062,7 @@ if (cn == 116 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xx - 250), yy, 1)
     cn = 117
 }
-if (cn == 117 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 117 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 39
     xxx = und.x
@@ -1071,7 +1071,7 @@ if (cn == 117 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xxx + 90), (yyy + 20), 0)
     cn = 118
 }
-if (cn == 118 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 118 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 74
     global.faceemotion = 8
@@ -1082,7 +1082,7 @@ if (cn == 118 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xx - 250), yy, 1)
     cn = 119
 }
-if (cn == 119 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 119 && instance_exists(OBJ_WRITER) == false)
 {
     confession = caster_load("music/confession.ogg")
     global.currentsong = caster_loop(confession, 1, 1)
@@ -1093,7 +1093,7 @@ if (cn == 119 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xx - 250), yy, 1)
     cn = 120
 }
-if (cn == 120 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 120 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 39
     xxx = und.x
@@ -1102,7 +1102,7 @@ if (cn == 120 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xxx + 90), (yyy + 20), 0)
     cn = 121
 }
-if (cn == 121 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 121 && instance_exists(OBJ_WRITER) == false)
 {
     trashcan.depth = 90
     al.depth = -1
@@ -1115,7 +1115,7 @@ if (cn == 121 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xx - 250), yy, 1)
     cn = 122
 }
-if (cn == 122 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 122 && instance_exists(OBJ_WRITER) == false)
 {
     al.hspeed = -10
     cn = 121.1
@@ -1130,7 +1130,7 @@ if (cn == 122.1)
     scr_blcon_ofs((xx + 110), yy, 0, 6, 0)
     cn = 122.3
 }
-if (cn == 122.3 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 122.3 && instance_exists(OBJ_WRITER) == false)
 {
     al.hspeed = -10
     cn = 121.4
@@ -1145,7 +1145,7 @@ if (cn == 122.4)
     scr_blcon_ofs((xx + 110), yy, 0, 6, 0)
     cn = 122.5
 }
-if (cn == 122.5 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 122.5 && instance_exists(OBJ_WRITER) == false)
 {
     al.hspeed = -10
     cn = 121.6
@@ -1160,7 +1160,7 @@ if (cn == 122.6)
     scr_blcon_ofs((xx + 110), yy, 0, 6, 0)
     cn = 122.8
 }
-if (cn == 122.8 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 122.8 && instance_exists(OBJ_WRITER) == false)
 {
     al.hspeed = -9
     cn = 121.9
@@ -1176,7 +1176,7 @@ if (cn == 122.9)
     scr_blcon_ofs((xx + 110), yy, 0, 6, 0)
     cn = 125
 }
-if (cn == 125 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 125 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 39
     xxx = und.x
@@ -1185,7 +1185,7 @@ if (cn == 125 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xxx + 90), (yyy - 10), 0)
     cn = 127
 }
-if (cn == 127 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 127 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 74
     global.faceemotion = 5
@@ -1196,7 +1196,7 @@ if (cn == 127 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon_ofs((xx + 110), yy, 0, 6, 0)
     cn = 130
 }
-if (cn == 130 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 130 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 39
     xxx = und.x
@@ -1208,7 +1208,7 @@ if (cn == 130 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xxx + 90), (yyy - 10), 0)
     cn = 131
 }
-if (cn == 131 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 131 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 74
     global.faceemotion = 5
@@ -1217,7 +1217,7 @@ if (cn == 131 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon_ofs((xx + 110), yy, 0, 6, 0)
     cn = 132
 }
-if (cn == 132 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 132 && instance_exists(OBJ_WRITER) == false)
 {
     thrower.con = 1
     global.typer = 39
@@ -1229,7 +1229,7 @@ if (cn == 132 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xxx + 140), (yyy + 40), 0)
     cn = 133
 }
-if (cn == 133 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 133 && instance_exists(OBJ_WRITER) == false)
 {
     cn = 134
     alarm[4] = 30
@@ -1279,7 +1279,7 @@ if (cn == 139)
     scr_blcon((xxx + 90), (yyy - 10), 0)
     cn = 140
 }
-if (cn == 140 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 140 && instance_exists(OBJ_WRITER) == false)
 {
     trashcan.shake = 3
     cn = 141
@@ -1304,7 +1304,7 @@ if (cn == 144)
     scr_blcon((xx - 320), yy, 1)
     cn = 145
 }
-if (cn == 145 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 145 && instance_exists(OBJ_WRITER) == false)
 {
     global.msg[0] = scr_gettext("obj_adate_1574")
     global.typer = 39
@@ -1313,7 +1313,7 @@ if (cn == 145 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xxx + 90), (yyy - 10), 0)
     cn = 146
 }
-if (cn == 146 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 146 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 0
     caster_stop(global.currentsong)
@@ -1329,7 +1329,7 @@ if (cn == 148)
     scr_blcon((xxx + 90), (yyy + 120), 0)
     cn = 149
 }
-if (cn == 149 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 149 && instance_exists(OBJ_WRITER) == false)
 {
     pap.con = 2
     cn = 150
@@ -1346,7 +1346,7 @@ if (cn == 151)
         OBJ_WRITER.writingxend -= 8
     cn = 153
 }
-if (cn == 153 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 153 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 2
     global.msg[0] = scr_gettext("obj_adate_1622")
@@ -1354,7 +1354,7 @@ if (cn == 153 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xxx + 90), (yyy + 20), 0)
     cn = 155
 }
-if (cn == 155 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 155 && instance_exists(OBJ_WRITER) == false)
 {
     xx = trashcan.x
     yy = ((trashcan.y - (trashcan.sprite_height * 2)) + 20)
@@ -1365,7 +1365,7 @@ if (cn == 155 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xx - 80), (yy - 140), 2)
     cn = 156
 }
-if (cn == 156 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 156 && instance_exists(OBJ_WRITER) == false)
 {
     with (obj_musfadeout)
         instance_destroy()
@@ -1390,14 +1390,14 @@ if (cn == 158)
     scr_blcon((xxx + 90), (yyy - 20), 0)
     cn = 158.1
 }
-if (cn == 158.1 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 158.1 && instance_exists(OBJ_WRITER) == false)
 {
     alarm[4] = 15
     cn = 158.2
 }
 if (cn == 159.2)
     cn = 159
-if (cn == 159 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 159 && instance_exists(OBJ_WRITER) == false)
 {
     choice = 0
     choicer = 1
@@ -1444,13 +1444,13 @@ if (cn == 162)
     scr_blcon((xxx + 90), (yyy - 20), 0)
     cn = 163
 }
-if (cn == 163 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 163 && instance_exists(OBJ_WRITER) == false)
 {
     mfo = instance_create(0, 0, obj_musfadeout)
     cn = 164
     alarm[4] = 20
 }
-if (cn == 165 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 165 && instance_exists(OBJ_WRITER) == false)
 {
     if (choice == 0)
     {
@@ -1475,7 +1475,7 @@ if (cn == 165 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((xxx + 90), (yyy - 20), 0)
     cn = 166
 }
-if (cn == 166 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 166 && instance_exists(OBJ_WRITER) == false)
 {
     und.hspeed = 20
     cn = 167

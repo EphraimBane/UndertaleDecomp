@@ -175,7 +175,7 @@ if (global.interact == 0 && dogtimer == (1050 * factor))
 }
 if (con == 1)
 {
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         con = 0
         global.interact = 0

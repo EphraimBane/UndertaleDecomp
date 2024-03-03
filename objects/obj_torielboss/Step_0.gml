@@ -229,7 +229,7 @@ if (global.mnfight == 2)
         attacked = 1
     }
 }
-if (whatiheard == 3 && instance_exists(OBJ_WRITER) == 0)
+if (whatiheard == 3 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)
@@ -328,7 +328,7 @@ if (destroyed == 1)
     }
     global.facechange = 1
 }
-if (conversation == 99 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 99 && instance_exists(OBJ_WRITER) == false)
 {
     if instance_exists(OBJ_NOMSCWRITER)
     {

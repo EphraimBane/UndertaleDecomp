@@ -57,7 +57,7 @@ if (active == true)
         instance_create(0, 0, obj_dialoguer)
         con = 90
     }
-    if (con == 90 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 90 && instance_exists(OBJ_WRITER) == false)
     {
         global.interact = 0
         active = false
@@ -175,7 +175,7 @@ if (con == 17)
     dr = instance_create(0, 0, obj_dialoguer)
     dr.side = 0
 }
-if (con == 18 && instance_exists(OBJ_WRITER) == 1)
+if (con == 18 && instance_exists(OBJ_WRITER) == true)
 {
     if (conner == 0 && OBJ_WRITER.stringno == 1)
     {
@@ -183,7 +183,7 @@ if (con == 18 && instance_exists(OBJ_WRITER) == 1)
         conner = 1
     }
 }
-if (con == 18 && instance_exists(OBJ_WRITER) == 0)
+if (con == 18 && instance_exists(OBJ_WRITER) == false)
 {
     con = 19
     alarm[4] = 50
@@ -253,12 +253,12 @@ if (con == 31)
     gr = instance_create(0, 0, obj_dialoguer)
     gr.side = 0
 }
-if (con == 32 && instance_exists(OBJ_WRITER) == 0)
+if (con == 32 && instance_exists(OBJ_WRITER) == false)
 {
     con = 33
     alarm[4] = 40
 }
-if (con == 33 && instance_exists(OBJ_WRITER) == 0)
+if (con == 33 && instance_exists(OBJ_WRITER) == false)
 {
     muffet.image_index += 0.25
     if (muffet.image_index >= 5.75)
@@ -281,7 +281,7 @@ if (con == 35)
 }
 if (con == 36)
     con = 60
-if (con == 40 && instance_exists(OBJ_WRITER) == 0)
+if (con == 40 && instance_exists(OBJ_WRITER) == false)
 {
     ss1.image_speed = 0.25
     ss1.hspeed = -4

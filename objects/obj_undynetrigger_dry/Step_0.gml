@@ -46,7 +46,7 @@ if (con == 7)
     instance_create(0, 0, obj_dialoguer)
     con = 8
 }
-if (con == 8 && instance_exists(OBJ_WRITER) == 0)
+if (con == 8 && instance_exists(OBJ_WRITER) == false)
 {
     undyne.hspeed = 0.5
     undyne.image_speed = 0.1

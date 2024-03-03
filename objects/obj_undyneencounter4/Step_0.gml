@@ -181,7 +181,7 @@ if (con == 19 || con == 20)
         tempvol += 0.02
     caster_set_volume(tempmusic, tempvol)
 }
-if (con == 20 && instance_exists(OBJ_WRITER) == 0)
+if (con == 20 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 36
     global.msg[0] = scr_gettext("obj_undyneencounter4_275")

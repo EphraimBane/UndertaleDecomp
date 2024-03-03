@@ -22,7 +22,7 @@ if (menu == 0)
     menuc[2] = 0
     menuc[3] = 0
     menuc[4] = 0
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         global.msg[0] = scr_gettext("obj_shop2_234")
         if (mainmessage == 0)
@@ -76,7 +76,7 @@ if (menu == 1 || menu == 2)
     if (menu == 1)
     {
         menumax = 4
-        if (instance_exists(OBJ_WRITER) == 0)
+        if (instance_exists(OBJ_WRITER) == false)
         {
             if (sidemessage == 0)
                 global.msg[0] = scr_gettext("obj_shop2_287")
@@ -219,7 +219,7 @@ if (menu == 3)
         scr_shop_draw_talktitle(3, 0, scr_gettext("shop2_talk8_title"))
     }
     scr_shop_draw_talkmenu()
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         if (murder == 0)
             global.msg[0] = scr_gettext("obj_shop2_390")
@@ -255,7 +255,7 @@ if (menu == 4)
 {
     if (sell == 0)
         menu = 0
-    if (instance_exists(OBJ_WRITER) == 0 && selling == 0)
+    if (instance_exists(OBJ_WRITER) == false && selling == 0)
     {
         if (sell == 1)
         {
@@ -441,7 +441,7 @@ if (menu == 4)
             }
         }
     }
-    if (selling == 1 && instance_exists(OBJ_WRITER) == 0)
+    if (selling == 1 && instance_exists(OBJ_WRITER) == false)
     {
         if (sell == 2)
         {

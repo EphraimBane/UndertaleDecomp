@@ -46,7 +46,7 @@ if (con == 6)
     dia.side = 1
     con = 7
 }
-if (con == 7 && instance_exists(OBJ_WRITER) == 0)
+if (con == 7 && instance_exists(OBJ_WRITER) == false)
 {
     __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
     obj_mainchara.cutscene = true
@@ -70,7 +70,7 @@ if (con == 9)
     instance_create(0, 0, obj_dialoguer)
     con = 10
 }
-if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+if (con == 10 && instance_exists(OBJ_WRITER) == false)
 {
     con = 11
     alarm[4] = 40
@@ -82,7 +82,7 @@ if (con == 12)
     instance_create(0, 0, obj_dialoguer)
     con = 13
 }
-if (con == 13 && instance_exists(OBJ_WRITER) == 0)
+if (con == 13 && instance_exists(OBJ_WRITER) == false)
 {
     __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 5))
     if (__view_get(VIEW_PROP_CAM_X, 0) <= 4)
@@ -109,7 +109,7 @@ if (con == 17)
     instance_create(0, 0, obj_dialoguer)
     con = 18
 }
-if (con == 18 && instance_exists(OBJ_WRITER) == 0)
+if (con == 18 && instance_exists(OBJ_WRITER) == false)
 {
     racesong = caster_load("music/operatile.ogg")
     with (obj_mettaton_flightdress)
@@ -179,7 +179,7 @@ if (con == 32)
     instance_create(0, 0, obj_dialoguer)
     con = 33
 }
-if (con == 33 && instance_exists(OBJ_WRITER) == 0)
+if (con == 33 && instance_exists(OBJ_WRITER) == false)
 {
     con = 34
     alarm[4] = 40
@@ -197,12 +197,12 @@ if (con == 35)
     instance_create(0, 0, obj_dialoguer)
     con = 36
 }
-if (con == 36 && instance_exists(OBJ_WRITER) == 0)
+if (con == 36 && instance_exists(OBJ_WRITER) == false)
 {
     con = 37
     alarm[4] = 40
 }
-if (con == 37 && instance_exists(OBJ_WRITER) == 0)
+if (con == 37 && instance_exists(OBJ_WRITER) == false)
 {
     if (flame1.x < (obj_mainchara.x - 20))
         flame1.x += 1
@@ -215,12 +215,12 @@ if (con == 38)
     instance_create(0, 0, obj_dialoguer)
     con = 39
 }
-if (con == 39 && instance_exists(OBJ_WRITER) == 0)
+if (con == 39 && instance_exists(OBJ_WRITER) == false)
 {
     con = 40
     alarm[4] = 40
 }
-if (con == 40 && instance_exists(OBJ_WRITER) == 0)
+if (con == 40 && instance_exists(OBJ_WRITER) == false)
 {
     if (flame1.x < (obj_mainchara.x - 20))
         flame1.x += 0.5
@@ -233,12 +233,12 @@ if (con == 41)
     instance_create(0, 0, obj_dialoguer)
     con = 42
 }
-if (con == 42 && instance_exists(OBJ_WRITER) == 0)
+if (con == 42 && instance_exists(OBJ_WRITER) == false)
 {
     con = 43
     alarm[4] = 40
 }
-if (con == 43 && instance_exists(OBJ_WRITER) == 0)
+if (con == 43 && instance_exists(OBJ_WRITER) == false)
 {
     if (flame1.x < (obj_mainchara.x - 20))
         flame1.x += 0.5
@@ -251,12 +251,12 @@ if (con == 44)
     instance_create(0, 0, obj_dialoguer)
     con = 45
 }
-if (con == 45 && instance_exists(OBJ_WRITER) == 0)
+if (con == 45 && instance_exists(OBJ_WRITER) == false)
 {
     con = 46
     alarm[4] = 90
 }
-if (con == 46 && instance_exists(OBJ_WRITER) == 0)
+if (con == 46 && instance_exists(OBJ_WRITER) == false)
 {
     if (flame1.x < (obj_mainchara.x - 20))
         flame1.x += 0.5
@@ -269,7 +269,7 @@ if (con == 47)
     instance_create(0, 0, obj_dialoguer)
     con = 48
 }
-if (con == 48 && instance_exists(OBJ_WRITER) == 0)
+if (con == 48 && instance_exists(OBJ_WRITER) == false)
 {
     con = 49
     alarm[4] = 20
@@ -287,7 +287,7 @@ if (con == 50)
     instance_create(0, 0, obj_dialoguer)
     con = 51
 }
-if (con == 51 && instance_exists(OBJ_WRITER) == 0)
+if (con == 51 && instance_exists(OBJ_WRITER) == false)
 {
     snd_play(snd_noise)
     with (flame1)
@@ -306,7 +306,7 @@ if (con == 53)
     instance_create(0, 0, obj_dialoguer)
     con = 54
 }
-if (con == 54 && instance_exists(OBJ_WRITER) == 0)
+if (con == 54 && instance_exists(OBJ_WRITER) == false)
 {
     con = 55
     alarm[4] = 90
@@ -343,7 +343,7 @@ if (con == 56)
     instance_create(0, 0, obj_dialoguer)
     con = 55.1
 }
-if (con == 55.1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 55.1 && instance_exists(OBJ_WRITER) == false)
 {
     caster_free(racesong)
     con = 56.1
@@ -351,7 +351,7 @@ if (con == 55.1 && instance_exists(OBJ_WRITER) == 0)
     mett.vspeed = 3
     snd_play(snd_break2)
 }
-if (con == 57.1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 57.1 && instance_exists(OBJ_WRITER) == false)
 {
     con = 58
     global.battlegroup = 57
@@ -393,7 +393,7 @@ if (con == 61)
     instance_create(0, 0, obj_dialoguer)
     con = 62
 }
-if (con == 62 && instance_exists(OBJ_WRITER) == 0)
+if (con == 62 && instance_exists(OBJ_WRITER) == false)
 {
     if instance_exists(obj_mainchara)
     {
@@ -437,7 +437,7 @@ if (con == 77)
     instance_create(0, 0, obj_dialoguer)
     con = 78
 }
-if (con == 78 && instance_exists(OBJ_WRITER) == 0)
+if (con == 78 && instance_exists(OBJ_WRITER) == false)
 {
     snd_play(snd_noise)
     with (flame1)
@@ -462,7 +462,7 @@ if (con == 80)
     instance_create(0, 0, obj_dialoguer)
     con = 81
 }
-if (con == 81 && instance_exists(OBJ_WRITER) == 0)
+if (con == 81 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 5
     global.facechoice = 0

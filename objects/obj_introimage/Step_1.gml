@@ -1,6 +1,6 @@
 if (act == 1)
 {
-    if (instance_exists(OBJ_WRITER) == 0 && skip == false)
+    if (instance_exists(OBJ_WRITER) == false && skip == false)
     {
         skip = true
         fader = instance_create(0, 0, obj_unfader)

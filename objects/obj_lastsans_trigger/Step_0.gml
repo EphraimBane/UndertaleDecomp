@@ -119,12 +119,12 @@ if (con == 5)
     if (global.kills > 0)
         con = 5.1
 }
-if (con == 5.1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 5.1 && instance_exists(OBJ_WRITER) == false)
 {
     con = 4.2
     alarm[4] = 30
 }
-if (con == 5.2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 5.2 && instance_exists(OBJ_WRITER) == false)
 {
     global.currentsong = caster_load("music/chokedup.ogg")
     caster_loop(global.currentsong, 1, 1)
@@ -144,7 +144,7 @@ if (con == 5.2 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 10
 }
-if (con == 6 && instance_exists(OBJ_WRITER) == 0)
+if (con == 6 && instance_exists(OBJ_WRITER) == false)
 {
     ossafe_ini_open("undertale.ini")
     ml1 = ini_read_real("Sans", "MeetLv1", 0)
@@ -192,7 +192,7 @@ if (con == 6 && instance_exists(OBJ_WRITER) == 0)
         con = 26
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 7 && instance_exists(OBJ_WRITER) == 0)
+if (con == 7 && instance_exists(OBJ_WRITER) == false)
 {
     __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 1))
     if (__view_get(VIEW_PROP_CAM_X, 0) < 681)
@@ -212,7 +212,7 @@ if (con == 8)
     global.interact = 0
     instance_destroy()
 }
-if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+if (con == 10 && instance_exists(OBJ_WRITER) == false)
 {
     ossafe_ini_open("undertale.ini")
     ml2 = ini_read_real("Sans", "MeetLv2", 0)
@@ -231,7 +231,7 @@ if (con == 10 && instance_exists(OBJ_WRITER) == 0)
         alarm[4] = 60
     }
 }
-if (con == 12 && instance_exists(OBJ_WRITER) == 0)
+if (con == 12 && instance_exists(OBJ_WRITER) == false)
 {
     global.facechoice = 3
     global.faceemotion = 3
@@ -247,7 +247,7 @@ if (con == 12 && instance_exists(OBJ_WRITER) == 0)
     if (FL_PapyrusStatus == PapyrusStatus.Killed)
         con = 15
 }
-if (con == 15 && instance_exists(OBJ_WRITER) == 0)
+if (con == 15 && instance_exists(OBJ_WRITER) == false)
 {
     global.facechoice = 3
     global.faceemotion = 3
@@ -256,7 +256,7 @@ if (con == 15 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 16
 }
-if (con == 20 && instance_exists(OBJ_WRITER) == 0)
+if (con == 20 && instance_exists(OBJ_WRITER) == false)
 {
     global.msc = 0
     global.faceemotion = 4
@@ -267,7 +267,7 @@ if (con == 20 && instance_exists(OBJ_WRITER) == 0)
     caster_free(all)
     con = 7
 }
-if (con == 21 && instance_exists(OBJ_WRITER) == 0)
+if (con == 21 && instance_exists(OBJ_WRITER) == false)
 {
     global.msc = 0
     global.faceemotion = 4
@@ -278,7 +278,7 @@ if (con == 21 && instance_exists(OBJ_WRITER) == 0)
     caster_free(all)
     con = 7
 }
-if (con == 23 && instance_exists(OBJ_WRITER) == 0)
+if (con == 23 && instance_exists(OBJ_WRITER) == false)
 {
     ossafe_ini_open("undertale.ini")
     ml = ini_read_real("Sans", "MeetLv", 0)
@@ -366,7 +366,7 @@ if (con == 23 && instance_exists(OBJ_WRITER) == 0)
     caster_free(all)
     con = 7
 }
-if (con == 26 && instance_exists(OBJ_WRITER) == 0)
+if (con == 26 && instance_exists(OBJ_WRITER) == false)
 {
     ossafe_ini_open("undertale.ini")
     ml1 = ini_read_real("Sans", "MeetLv1", 0)
@@ -448,7 +448,7 @@ if (con == 26 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 30
 }
-if (con == 30 && instance_exists(OBJ_WRITER) == 1)
+if (con == 30 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 13 && pass == 0)
     {
@@ -472,7 +472,7 @@ if (con == 30 && instance_exists(OBJ_WRITER) == 1)
         ossafe_savedata_save()
     }
 }
-if (con == 30 && instance_exists(OBJ_WRITER) == 0)
+if (con == 30 && instance_exists(OBJ_WRITER) == false)
     con = 7
 if (con == 100)
 {
@@ -616,7 +616,7 @@ if (con == 100)
     }
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 101 && instance_exists(OBJ_WRITER) == 0)
+if (con == 101 && instance_exists(OBJ_WRITER) == false)
 {
     mc.image_index = 1
     mc.hspeed = 0.5
@@ -641,7 +641,7 @@ if (con == 105)
     instance_create(0, 0, obj_dialoguer)
     con = 106
 }
-if (con == 106 && instance_exists(OBJ_WRITER) == 0)
+if (con == 106 && instance_exists(OBJ_WRITER) == false)
 {
     mc.image_index = 1
     mc.hspeed = 0.5
@@ -663,7 +663,7 @@ if (con == 110)
     instance_create(0, 0, obj_dialoguer)
     con = 111
 }
-if (con == 111 && instance_exists(OBJ_WRITER) == 0)
+if (con == 111 && instance_exists(OBJ_WRITER) == false)
 {
     global.battlegroup = 95
     global.mercy = 1

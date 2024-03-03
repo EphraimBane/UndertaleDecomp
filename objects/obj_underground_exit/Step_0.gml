@@ -7,14 +7,14 @@ if (con == 1)
     global.facechoice = 0
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     obj_mainchara.y += 5
     global.facing = Direction.Down
     global.interact = 0
     con = 0
 }
-if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+if (con == 10 && instance_exists(OBJ_WRITER) == false)
 {
     con = 11
     vol = caster_get_volume(global.currentsong)

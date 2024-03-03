@@ -23,7 +23,7 @@ function trophy_unlock(_trophy_id)
 			text = info[1];
 		}
 	}
-	ds_map_set(global.trophy_state, trophy_id, 1)
+	ds_map_set(global.trophy_state, trophy_id, true)
 	
 	if (!global.decomp_vars.VanillaMode && global.decomp_vars.EnablePS4Trophies && global.osflavor != OSFlavors.Playstation)
 		save_trophies();

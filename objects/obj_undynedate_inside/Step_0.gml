@@ -11,7 +11,7 @@ if (con == 2)
     instance_create(0, 0, obj_dialoguer)
     con = 3
 }
-if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3 && instance_exists(OBJ_WRITER) == false)
 {
     papyrus.sprite_index = spr_papyrus_boneget
     papyrus.image_speed = 0.25
@@ -31,7 +31,7 @@ if (con == 4)
     instance_create(0, 0, obj_dialoguer)
     con = 5
 }
-if (con == 5 && instance_exists(OBJ_WRITER) == 0)
+if (con == 5 && instance_exists(OBJ_WRITER) == false)
 {
     undyne.vspeed = 3
     undyne.fun = true
@@ -61,7 +61,7 @@ if (con == 7.1)
     instance_create(0, 0, obj_dialoguer)
     con = 10
 }
-if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+if (con == 10 && instance_exists(OBJ_WRITER) == false)
 {
     undyne.image_speed = 0.25
     undyne.sprite_index = undyne.usprite
@@ -112,7 +112,7 @@ if (con == 10.5)
     instance_create(0, 0, obj_dialoguer)
     con = 12
 }
-if (con == 12 && instance_exists(OBJ_WRITER) == 0)
+if (con == 12 && instance_exists(OBJ_WRITER) == false)
 {
     papyrus.sprite_index = papyrus.rtsprite
     global.typer = 19
@@ -126,7 +126,7 @@ if (con == 12 && instance_exists(OBJ_WRITER) == 0)
     with (papyrus)
         scr_getideal((obj_undynewindow.x + 63), (obj_undynewindow.y + 10))
 }
-if (con == 13 && instance_exists(OBJ_WRITER) == 0)
+if (con == 13 && instance_exists(OBJ_WRITER) == false)
 {
     alarm[4] = 10
     con = 14
@@ -164,7 +164,7 @@ if (con == 19)
     con = 20
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 40 && instance_exists(OBJ_WRITER) == 0)
+if (con == 40 && instance_exists(OBJ_WRITER) == false)
 {
     with (papyrus)
         instance_destroy()
@@ -202,7 +202,7 @@ if (con == 43)
     instance_create(0, 0, obj_dialoguer)
     con = 44
 }
-if (con == 44 && instance_exists(OBJ_WRITER) == 0)
+if (con == 44 && instance_exists(OBJ_WRITER) == false)
 {
     con = 45
     papyrus.hspeed = -2
@@ -215,7 +215,7 @@ if (con == 44 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 45)
     papyrus.image_angle -= 6
-if (con == 45 && instance_exists(OBJ_WRITER) == 0)
+if (con == 45 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 1
     global.facing = Direction.Up
@@ -237,7 +237,7 @@ if (con == 45 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 50
 }
-if (con == 50 && instance_exists(OBJ_WRITER) == 0)
+if (con == 50 && instance_exists(OBJ_WRITER) == false)
 {
     undyne2 = instance_create(undyne.x, undyne.y, obj_npc_room)
     undyne2.sprite_index = spr_undyne_polite
@@ -274,12 +274,12 @@ if (con == 52)
     global.facing = Direction.Up
     obj_mainchara.y = 196
 }
-if (con == 52 && instance_exists(OBJ_WRITER) == 0)
+if (con == 52 && instance_exists(OBJ_WRITER) == false)
 {
     con = 51
     global.interact = 0
 }
-if (con == 60 && instance_exists(OBJ_WRITER) == 0 && global.interact == 0)
+if (con == 60 && instance_exists(OBJ_WRITER) == false && global.interact == 0)
 {
     global.interact = 1
     chair = scr_marker(obj_sign_room.x, obj_sign_room.y, obj_sign_room.sprite_index)
@@ -318,7 +318,7 @@ if (con == 64)
     instance_create(0, 0, obj_dialoguer)
     con = 65
 }
-if (con == 65 && instance_exists(OBJ_WRITER) == 0)
+if (con == 65 && instance_exists(OBJ_WRITER) == false)
 {
     undyne2 = instance_create(undyne.x, undyne.y, obj_undyne_actor)
     with (undyne)
@@ -415,7 +415,7 @@ if (con == 80)
     instance_create(0, 0, obj_dialoguer)
     con = 81
 }
-if (con == 81 && instance_exists(OBJ_WRITER) == 0)
+if (con == 81 && instance_exists(OBJ_WRITER) == false)
 {
     con = 82
     mcxp = obj_mainchara.x
@@ -460,7 +460,7 @@ if (con == 84)
     instance_create(0, 0, obj_dialoguer)
     con = 84.1
 }
-if (con == 84.1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 84.1 && instance_exists(OBJ_WRITER) == false)
 {
     caster_resume(global.currentsong)
     global.msg[0] = scr_gettext("obj_undynedate_inside_614")
@@ -468,12 +468,12 @@ if (con == 84.1 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 85
 }
-if (con == 85 && instance_exists(OBJ_WRITER) == 0)
+if (con == 85 && instance_exists(OBJ_WRITER) == false)
 {
     obj_undynespear_anim1.part = 1
     con = 86
 }
-if (con == 88 && instance_exists(OBJ_WRITER) == 0)
+if (con == 88 && instance_exists(OBJ_WRITER) == false)
 {
     instance_create(0, 0, obj_musfadeout)
     con = 88.1
@@ -504,7 +504,7 @@ if (con == 89.1)
     instance_create(0, 0, obj_dialoguer)
     con = 90
 }
-if (con == 90 && instance_exists(OBJ_WRITER) == 0)
+if (con == 90 && instance_exists(OBJ_WRITER) == false)
 {
     undyne.d = 1
     undyne.depth = (table.depth + 1)
@@ -544,7 +544,7 @@ if (con == 94)
     ggg.side = 1
     con = 95
 }
-if (con == 95 && instance_exists(OBJ_WRITER) == 0)
+if (con == 95 && instance_exists(OBJ_WRITER) == false)
 {
     with (obj_musfadeout)
         instance_destroy()
@@ -650,7 +650,7 @@ if (con == 103)
     de.side = 1
     con = 104
 }
-if (con == 104 && instance_exists(OBJ_WRITER) == 0)
+if (con == 104 && instance_exists(OBJ_WRITER) == false)
 {
     undyne.npcdir = 0
     undyne.fun = true
@@ -787,7 +787,7 @@ if (con == 124)
     instance_create(0, 0, obj_dialoguer)
     con = 125
 }
-if (con == 125 && instance_exists(OBJ_WRITER) == 0)
+if (con == 125 && instance_exists(OBJ_WRITER) == false)
 {
     undyne.hspeed = -2
     con = 126
@@ -850,7 +850,7 @@ if (con == 140)
     veg.image_index = 1
     con = 141
 }
-if (con == 141 && instance_exists(OBJ_WRITER) == 0)
+if (con == 141 && instance_exists(OBJ_WRITER) == false)
 {
     global.facing = Direction.Up
     undyne.sprite_index = undyne.utsprite
@@ -902,7 +902,7 @@ if (con == 150)
     instance_create(0, 0, obj_dialoguer)
     con = 151
 }
-if (con == 151 && instance_exists(OBJ_WRITER) == 0)
+if (con == 151 && instance_exists(OBJ_WRITER) == false)
 {
     FL_UndyneExpression = 0
     with (undyne)
@@ -950,7 +950,7 @@ if (con == 154)
         alarm[4] = 10
     }
 }
-if (con == 156 && instance_exists(OBJ_WRITER) == 0)
+if (con == 156 && instance_exists(OBJ_WRITER) == false)
 {
     global.facing = Direction.Left
     undyne.npcdir = 1
@@ -989,7 +989,7 @@ if (con == 199)
         visible = false
     con = 200
 }
-if (con == 200 && instance_exists(OBJ_WRITER) == 0)
+if (con == 200 && instance_exists(OBJ_WRITER) == false)
 {
     FL_AnimationIndex = 0
     global.msc = 0
@@ -1003,13 +1003,13 @@ if (con == 200 && instance_exists(OBJ_WRITER) == 0)
     undyne.sprite_index = undyne.utsprite
     global.facing = Direction.Up
 }
-if (con == 201 && instance_exists(OBJ_WRITER) == 0)
+if (con == 201 && instance_exists(OBJ_WRITER) == false)
 {
     pp = instance_create(0, 0, obj_potstir)
     pp.pot = pot
     con = 202
 }
-if (con == 210 && instance_exists(OBJ_WRITER) == 0)
+if (con == 210 && instance_exists(OBJ_WRITER) == false)
 {
     con = 211
     alarm[4] = 10
@@ -1083,7 +1083,7 @@ if (con == 216)
     instance_create(0, 0, obj_dialoguer)
     con = 217
 }
-if (con == 217 && instance_exists(OBJ_WRITER) == 0)
+if (con == 217 && instance_exists(OBJ_WRITER) == false)
 {
     ph = instance_create(0, 0, obj_potheat)
     pot2 = instance_create(pot.x, (pot.y + 3), obj_spaghot)
@@ -1093,7 +1093,7 @@ if (con == 217 && instance_exists(OBJ_WRITER) == 0)
     ph.pot = pot
     con = 218
 }
-if (con == 250 && instance_exists(OBJ_WRITER) == 0)
+if (con == 250 && instance_exists(OBJ_WRITER) == false)
 {
     caster_free(all)
     snd_play(snd_laz)
@@ -1192,7 +1192,7 @@ if (con == 259)
     instance_create(0, 0, obj_dialoguer)
     con = 260
 }
-if (con == 260 && instance_exists(OBJ_WRITER) == 0)
+if (con == 260 && instance_exists(OBJ_WRITER) == false)
 {
     undyne.sprite_index = undyne.utsprite
     global.facing = Direction.Up
@@ -1211,7 +1211,7 @@ if (con == 262)
     instance_create(0, 0, obj_dialoguer)
     con = 263
 }
-if (con == 263 && instance_exists(OBJ_WRITER) == 0)
+if (con == 263 && instance_exists(OBJ_WRITER) == false)
 {
     undyne.sprite_index = spr_undyne_ut
     global.faceemotion = 7
@@ -1226,14 +1226,14 @@ if (con == 263 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 264
 }
-if (con == 264 && instance_exists(OBJ_WRITER) == 0)
+if (con == 264 && instance_exists(OBJ_WRITER) == false)
 {
     caster_free(all)
     global.msg[0] = scr_gettext("obj_undynedate_inside_1490")
     instance_create(0, 0, obj_dialoguer)
     con = 265
 }
-if (con == 265 && instance_exists(OBJ_WRITER) == 0)
+if (con == 265 && instance_exists(OBJ_WRITER) == false)
 {
     global.mercy = 1
     global.battlegroup = 58
@@ -1255,7 +1255,7 @@ if (con == 268)
     snd_play(snd_bell)
     room_goto(room_water_undyneyard)
 }
-if (con == 300 && instance_exists(OBJ_WRITER) == 0)
+if (con == 300 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 0
     instance_create(0, 0, obj_musfadeout)
@@ -1364,7 +1364,7 @@ if (con == 326)
     dg = instance_create(0, 0, obj_dialoguer)
     dg.side = 1
 }
-if (con == 327 && instance_exists(OBJ_WRITER) == 0)
+if (con == 327 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 0
     with (undyne)
@@ -1392,7 +1392,7 @@ if (con == 331)
     dg = instance_create(0, 0, obj_dialoguer)
     dg.side = 1
 }
-if (con == 332 && instance_exists(OBJ_WRITER) == 0)
+if (con == 332 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 0
     undyne.npcdir = 1
@@ -1482,7 +1482,7 @@ if (con == 352)
     con = 352.5
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 352.5 && instance_exists(OBJ_WRITER) == 0)
+if (con == 352.5 && instance_exists(OBJ_WRITER) == false)
 {
     undyne.npcdir = 1
     undyne.fun = false
@@ -1536,7 +1536,7 @@ if (con == 362)
     con = 363
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 363 && instance_exists(OBJ_WRITER) == 0)
+if (con == 363 && instance_exists(OBJ_WRITER) == false)
 {
     con = 364
     alarm[4] = 90
@@ -1557,7 +1557,7 @@ if (con == 365)
     con = 366
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 366 && instance_exists(OBJ_WRITER) == 0)
+if (con == 366 && instance_exists(OBJ_WRITER) == false)
 {
     con = 366.1
     alarm[4] = 80
@@ -1579,12 +1579,12 @@ if (con == 367.1)
     con = 367
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 367 && instance_exists(OBJ_WRITER) == 0)
+if (con == 367 && instance_exists(OBJ_WRITER) == false)
 {
     con = 368
     alarm[4] = 60
 }
-if (con == 369 && instance_exists(OBJ_WRITER) == 0)
+if (con == 369 && instance_exists(OBJ_WRITER) == false)
 {
     FL_AnimationIndex = 0
     global.msg[0] = scr_gettext("obj_undynedate_inside_1898")
@@ -1609,7 +1609,7 @@ if (con == 369 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 370
 }
-if (con == 370 && instance_exists(OBJ_WRITER) == 0)
+if (con == 370 && instance_exists(OBJ_WRITER) == false)
 {
     con = 371
     alarm[4] = 70
@@ -1639,7 +1639,7 @@ if (con == 372)
     instance_create(0, 0, obj_dialoguer)
     con = 373
 }
-if (con == 373 && instance_exists(OBJ_WRITER) == 0)
+if (con == 373 && instance_exists(OBJ_WRITER) == false)
 {
     instance_create(0, 0, obj_musfadeout)
     con = 375
@@ -1666,7 +1666,7 @@ if (con == 380)
     con = 381
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 381 && instance_exists(OBJ_WRITER) == 0)
+if (con == 381 && instance_exists(OBJ_WRITER) == false)
 {
     undyne.y -= 15
     undyne.npcdir = 1

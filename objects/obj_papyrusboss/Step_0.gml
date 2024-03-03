@@ -33,7 +33,7 @@ if (control_check_pressed(InteractButton) && talkify == 0)
     if (alarm[5] > 5 && obj_lborder.x == global.idealborder[0] && alarm[6] < 0)
         alarm[5] = 2
 }
-if (talkify == 1 && instance_exists(OBJ_WRITER) == 0)
+if (talkify == 1 && instance_exists(OBJ_WRITER) == false)
 {
     alarm[5] = -2
     with (blconwd)
@@ -1120,7 +1120,7 @@ if (global.myfight == 4)
 }
 if (flirto > 0)
 {
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         if (flirto == 1)
         {

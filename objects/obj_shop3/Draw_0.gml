@@ -47,7 +47,7 @@ if (menu == 0)
     menuc[2] = 0
     menuc[3] = 0
     menuc[4] = 0
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         global.msg[0] = scr_gettext("obj_shop3_357")
         if (mainmessage == 0)
@@ -154,7 +154,7 @@ if (menu == 1 || menu == 2)
     if (menu == 1)
     {
         menumax = 4
-        if (instance_exists(OBJ_WRITER) == 0)
+        if (instance_exists(OBJ_WRITER) == false)
         {
             if (murder == 0)
             {
@@ -331,7 +331,7 @@ if (menu == 3)
         scr_shop_draw_talktitle(3, 0, scr_gettext("shop3_talk8_title"))
     }
     scr_shop_draw_talkmenu()
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         global.faceemotion = 0
         FL_AnimationIndex = 0
@@ -371,7 +371,7 @@ if (menu == 4)
 {
     if (sell == 0)
         menu = 0
-    if (instance_exists(OBJ_WRITER) == 0 && selling == 0)
+    if (instance_exists(OBJ_WRITER) == false && selling == 0)
     {
         if (sell == 1)
         {
@@ -608,7 +608,7 @@ if (menu == 4)
             event_user(3)
             con = 250
         }
-        if (instance_exists(OBJ_WRITER) == 0)
+        if (instance_exists(OBJ_WRITER) == false)
             instance_create(10, 110, OBJ_WRITER)
         selling = 1
     }
@@ -627,7 +627,7 @@ if (menu == 4)
         FL_AnimationIndex = 5
         alarm[4] = 30
     }
-    if (con == 6 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 6 && instance_exists(OBJ_WRITER) == false)
     {
         caster_play(mew, 0.5, 0.9)
         selling = 4
@@ -1851,7 +1851,7 @@ if (menu == 4)
         with (cattywriter)
             instance_destroy()
     }
-    if (selling == 1 && instance_exists(OBJ_WRITER) == 0)
+    if (selling == 1 && instance_exists(OBJ_WRITER) == false)
     {
         if (sell == 2)
         {

@@ -23,7 +23,7 @@ if (con == 3)
     instance_create(0, 0, obj_dialoguer)
     con = 6
 }
-if (con == 6 && instance_exists(OBJ_WRITER) == 0)
+if (con == 6 && instance_exists(OBJ_WRITER) == false)
 {
     FL_DisableRandomEncounters = 1
     caster_resume(global.currentsong)

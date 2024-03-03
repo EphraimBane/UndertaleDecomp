@@ -313,7 +313,7 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)
@@ -329,7 +329,7 @@ if (global.turntimer <= 2 && global.mnfight == 2)
     obj_heart.vspeed = 0
     global.mnfight = 3
 }
-if (global.mnfight == 5 && instance_exists(OBJ_WRITER) == 0)
+if (global.mnfight == 5 && instance_exists(OBJ_WRITER) == false)
 {
     if (saved == 1)
     {

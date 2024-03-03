@@ -1,1 +1,1 @@
-FL_TrueLabBorderEnabled = 1
+FL_TrueLabBorderEnabled = true

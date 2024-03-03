@@ -1,4 +1,4 @@
-if (instance_exists(OBJ_WRITER) == 0)
+if (instance_exists(OBJ_WRITER) == false)
 {
     obj_papyrusboss.truefight = 1
     with (blcon)

@@ -28,7 +28,7 @@ if (intro == 2 && x < 150)
     sprite_index = spr_papyrus_dt
     intro = 3
 }
-if (intro == 4 && instance_exists(OBJ_WRITER) == 0)
+if (intro == 4 && instance_exists(OBJ_WRITER) == false)
 {
     instance_create(0, 0, obj_battlerflowey)
     global.interact = 1

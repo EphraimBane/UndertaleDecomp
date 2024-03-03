@@ -1,4 +1,4 @@
-if (itemuse == 1 && instance_exists(OBJ_WRITER) == 0)
+if (itemuse == 1 && instance_exists(OBJ_WRITER) == false)
 {
     con = 50
     global.mnfight = 98
@@ -47,7 +47,7 @@ if (global.mnfight == 1)
         global.heard = 0
     }
 }
-if (blconactive == 1 && instance_exists(OBJ_WRITER) == 0)
+if (blconactive == 1 && instance_exists(OBJ_WRITER) == false)
 {
     blconactive = 0
     event_user(1)
@@ -285,7 +285,7 @@ if (con == 2)
 }
 if (con == 3)
     global.turntimer = 10
-if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3 && instance_exists(OBJ_WRITER) == false)
 {
     global.msg[0] = scr_gettext("obj_spiderb_774")
     global.myfight = -1
@@ -306,7 +306,7 @@ if (con == 50)
     event_user(3)
     con = 51
 }
-if (con == 51 && instance_exists(OBJ_WRITER) == 0)
+if (con == 51 && instance_exists(OBJ_WRITER) == false)
 {
     instance_create(720, 230, obj_telegramspider)
     con = 52
@@ -353,7 +353,7 @@ if (con == 53)
     event_user(3)
     con = 54
 }
-if (con == 54 && instance_exists(OBJ_WRITER) == 0)
+if (con == 54 && instance_exists(OBJ_WRITER) == false)
 {
     global.msg[0] = scr_gettext("obj_spiderb_859")
     with (obj_telegramspider)

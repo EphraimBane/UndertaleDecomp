@@ -14,7 +14,7 @@ if (con == 2)
     global.msg[0] = scr_gettext("obj_asriel_overworldanim_174")
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3 && instance_exists(OBJ_WRITER) == false)
 {
     con = 4
     alarm[4] = 90
@@ -52,14 +52,14 @@ if (con == 7)
     con = 7.1
     mvol = caster_get_volume(musicbox)
 }
-if (con == 7.1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 7.1 && instance_exists(OBJ_WRITER) == false)
 {
     mvol -= 0.02
     caster_set_volume(musicbox, mvol)
     if (mvol < -0.5)
         con = 8
 }
-if (con == 8 && instance_exists(OBJ_WRITER) == 0)
+if (con == 8 && instance_exists(OBJ_WRITER) == false)
 {
     alarm[3] = 60
     con = 9
@@ -166,7 +166,7 @@ if (con == 27)
     dl = instance_create(0, 0, obj_dialoguer)
     dl.side = 0
 }
-if (con == 28 && instance_exists(OBJ_WRITER) == 0)
+if (con == 28 && instance_exists(OBJ_WRITER) == false)
 {
     sprite_index = spr_asriel_lookdown
     mc.x = (x + 60)
@@ -240,7 +240,7 @@ if (con == 38 || con == 38.1)
         dl.side = 0
     }
 }
-if (con == 38.1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 38.1 && instance_exists(OBJ_WRITER) == false)
 {
     con = 38.2
     alarm[4] = 60
@@ -279,7 +279,7 @@ if (con == 41)
         alarm[4] = 50
     }
 }
-if (con == 50 && instance_exists(OBJ_WRITER) == 0)
+if (con == 50 && instance_exists(OBJ_WRITER) == false)
 {
     sprite_index = spr_asriel_r
     global.msg[0] = scr_gettext("obj_asriel_overworldanim_495")
@@ -295,7 +295,7 @@ if (con == 50 && instance_exists(OBJ_WRITER) == 0)
     dl.side = 1
     con = 50.1
 }
-if (con == 50.1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 50.1 && instance_exists(OBJ_WRITER) == false)
 {
     con = 49.2
     alarm[4] = 40
@@ -318,7 +318,7 @@ if (con == 50.3)
     dl.side = 1
     con = 52
 }
-if (con == 52 && instance_exists(OBJ_WRITER) == 0)
+if (con == 52 && instance_exists(OBJ_WRITER) == false)
 {
     vspeed = -0.25
     image_speed = 0.1
@@ -353,7 +353,7 @@ if (con == 59)
     dl.side = 1
     con = 60
 }
-if (con == 60 && instance_exists(OBJ_WRITER) == 0)
+if (con == 60 && instance_exists(OBJ_WRITER) == false)
 {
     con = 61
     alarm[4] = 40

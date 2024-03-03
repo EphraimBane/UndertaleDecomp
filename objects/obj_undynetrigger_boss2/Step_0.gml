@@ -13,7 +13,7 @@ if (con == 1)
     instance_create(0, 0, obj_dialoguer)
     con = 2
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     caster_free(all)
     global.currentsong = caster_load("music/undynefast.ogg")

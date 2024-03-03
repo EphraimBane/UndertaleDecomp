@@ -12,12 +12,12 @@ if (open == 1)
         draw_sprite_part_ext(spr_redacted_a, 0, 0, 0, 40, 20, (x + 10), (y + 10), 1, 1, c_white, disto)
     }
 }
-if (con == 1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1 && instance_exists(OBJ_WRITER) == false)
 {
     con = 2
     open = 1
 }
-if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3 && instance_exists(OBJ_WRITER) == false)
 {
     con = 4
     open = 2

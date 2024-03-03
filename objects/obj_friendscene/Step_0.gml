@@ -626,7 +626,7 @@ if (con == 59 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 1)
         pap.face = 8
 }
-if (con == 59 && instance_exists(OBJ_WRITER) == 0)
+if (con == 59 && instance_exists(OBJ_WRITER) == false)
 {
     con = 60
     alarm[4] = 1

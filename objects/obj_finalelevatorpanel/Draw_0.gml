@@ -21,7 +21,7 @@ if (con == 1)
     con = 2
     buffer = 5
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     buffer -= 1
     draw_set_color(c_white)

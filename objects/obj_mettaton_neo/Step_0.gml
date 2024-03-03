@@ -115,7 +115,7 @@ if (global.myfight == 4)
     if (global.mercyuse == 0)
         scr_mercystandard()
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
     scr_mercystandard()
 if (con == 21)
 {
@@ -156,7 +156,7 @@ if (con == 23)
     con = 24
     blc = scr_blcon_x((x + 180), (y + 20))
 }
-if (con == 24 && instance_exists(OBJ_WRITER) == 0)
+if (con == 24 && instance_exists(OBJ_WRITER) == false)
 {
     explode = caster_load("music/explosion.ogg")
     mypart1.fadewhite = 1

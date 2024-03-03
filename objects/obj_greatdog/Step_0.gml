@@ -245,7 +245,7 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (dogignore > 3 && instance_exists(OBJ_WRITER) == 0)
+if (dogignore > 3 && instance_exists(OBJ_WRITER) == false)
 {
     mercymod = 6666
     FL_GreaterDogStatus = DogStatus.Ignored

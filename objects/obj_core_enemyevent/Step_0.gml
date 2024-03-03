@@ -38,7 +38,7 @@ if (con == 2)
     con = 3
     scr_regulartext()
 }
-if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3 && instance_exists(OBJ_WRITER) == false)
 {
     obj_darkman_actor.vspeed = 3
     con = 4
@@ -51,7 +51,7 @@ if (con == 5)
     instance_create(0, 0, obj_dialoguer)
     con = 6
 }
-if (con == 6 && instance_exists(OBJ_WRITER) == 0)
+if (con == 6 && instance_exists(OBJ_WRITER) == false)
 {
     con = 7
     snd_play(snd_break2)
@@ -93,7 +93,7 @@ if (con == 12)
     instance_create(0, 0, obj_dialoguer)
     con = 13
 }
-if (con == 13 && instance_exists(OBJ_WRITER) == 0)
+if (con == 13 && instance_exists(OBJ_WRITER) == false)
 {
     con = 14
     global.plot = 179

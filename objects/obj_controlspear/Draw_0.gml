@@ -206,7 +206,7 @@ if (active == true)
     if (linebreak > 0)
         scr_drawtext_icons(24, 210, line2)
 }
-if (active == 2 && instance_exists(OBJ_WRITER) == 0)
+if (active == 2 && instance_exists(OBJ_WRITER) == false)
 {
     active = true
     buffer = 12

@@ -22,7 +22,7 @@ if (conversation == 1)
 }
 if (conversation == 2)
     global.facing = Direction.Right
-if (conversation == 2 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 2 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 0
     conversation = 0

@@ -78,7 +78,7 @@ if (control_check_pressed(InteractButton) && uncancel == 0)
 if (uncancel == 1)
 {
     alarm[5] = 100
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         alarm[5] = 1
         uncancel = 0
@@ -477,7 +477,7 @@ if (con == 4.1)
     scr_blcon_x(blconx, blcony)
     con = 5
 }
-if (con == 5 && instance_exists(OBJ_WRITER) == 0)
+if (con == 5 && instance_exists(OBJ_WRITER) == false)
 {
     global.msg[0] = scr_gettext("obj_undyneboss_1310")
     caster_loop(global.batmusic, 0.82, 1)
@@ -512,7 +512,7 @@ if (con == 51)
     obj_heart.x = (obj_uborder.y + 20)
     obj_heart.x = ((room_width / 2) - 8)
 }
-if (con == 51 && instance_exists(OBJ_WRITER) == 0)
+if (con == 51 && instance_exists(OBJ_WRITER) == false)
 {
     con = 50.1
     shakify = 3
@@ -530,13 +530,13 @@ if (con == 51.1)
     scr_blcon_x(blconx, blcony)
     con = 52
 }
-if (con == 53 && instance_exists(OBJ_WRITER) == 0)
+if (con == 53 && instance_exists(OBJ_WRITER) == false)
 {
     event_user(1)
     con = 54
     alarm[4] = 30
 }
-if (con == 52 && instance_exists(OBJ_WRITER) == 0)
+if (con == 52 && instance_exists(OBJ_WRITER) == false)
 {
     shakify = 0
     image_index = 0
@@ -562,7 +562,7 @@ if (con == 55)
     scr_blcon_x(blconx, blcony)
     con = 56
 }
-if (con == 56 && instance_exists(OBJ_WRITER) == 0)
+if (con == 56 && instance_exists(OBJ_WRITER) == false)
 {
     global.msg[0] = scr_gettext("obj_undyneboss_1410")
     global.myfight = 0
@@ -585,7 +585,7 @@ if (con == 60)
     scr_blcon_x(blconx, blcony)
     con = 61
 }
-if (con == 61 && instance_exists(OBJ_WRITER) == 0)
+if (con == 61 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 8
     with (obj_undynesiner2)
@@ -596,7 +596,7 @@ if (con == 61 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon_x(blconx, blcony)
     con = 62
 }
-if (con == 62 && instance_exists(OBJ_WRITER) == 0)
+if (con == 62 && instance_exists(OBJ_WRITER) == false)
 {
     with (obj_undynesiner2)
         event_user(1)
@@ -605,7 +605,7 @@ if (con == 62 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon_x(blconx, blcony)
     con = 63
 }
-if (con == 63 && instance_exists(OBJ_WRITER) == 0)
+if (con == 63 && instance_exists(OBJ_WRITER) == false)
 {
     con = 64
     global.typer = 42
@@ -615,7 +615,7 @@ if (con == 63 && instance_exists(OBJ_WRITER) == 0)
     global.msg[0] = scr_gettext("obj_undyneboss_1460")
     scr_blcon_x(blconx, blcony)
 }
-if (con == 65 && instance_exists(OBJ_WRITER) == 0)
+if (con == 65 && instance_exists(OBJ_WRITER) == false)
 {
     con = 66
     global.typer = 43
@@ -625,7 +625,7 @@ if (con == 65 && instance_exists(OBJ_WRITER) == 0)
     global.msg[0] = scr_gettext("obj_undyneboss_1470")
     scr_blcon_x(blconx, blcony)
 }
-if (con == 67 && instance_exists(OBJ_WRITER) == 0)
+if (con == 67 && instance_exists(OBJ_WRITER) == false)
 {
     con = 68
     global.typer = 44
@@ -635,7 +635,7 @@ if (con == 67 && instance_exists(OBJ_WRITER) == 0)
     global.msg[0] = scr_gettext("obj_undyneboss_1480")
     scr_blcon_x(blconx, blcony)
 }
-if (con == 69 && instance_exists(OBJ_WRITER) == 0)
+if (con == 69 && instance_exists(OBJ_WRITER) == false)
 {
     con = 70
     global.typer = 45
@@ -645,7 +645,7 @@ if (con == 69 && instance_exists(OBJ_WRITER) == 0)
     global.msg[0] = scr_gettext("obj_undyneboss_1490")
     scr_blcon_x(blconx, blcony)
 }
-if (con == 71 && instance_exists(OBJ_WRITER) == 0)
+if (con == 71 && instance_exists(OBJ_WRITER) == false)
 {
     global.vaporspeed = 0
     global.monstersprite = spr_undyneb_lastmelt

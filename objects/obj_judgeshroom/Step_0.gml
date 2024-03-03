@@ -68,7 +68,7 @@ if (con == 5)
     con = 6
     alarm[4] = 1
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     caster_stop(snd_mushroomdance)
     image_index = 0
@@ -87,7 +87,7 @@ if (con == 2 && instance_exists(OBJ_WRITER) == 0)
         alarm[4] = 40
     }
 }
-if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+if (con == 10 && instance_exists(OBJ_WRITER) == false)
 {
     talkedto += 1
     sprite_index = spr_mushroomdance_prep

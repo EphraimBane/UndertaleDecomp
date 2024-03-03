@@ -16,7 +16,7 @@ if (conversation == 1)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 2
 }
-if (conversation == 2 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 2 && instance_exists(OBJ_WRITER) == false)
 {
     conversation = 3
     xxblcon = instance_create((papyrus.x + 3), (papyrus.y - 12), obj_cosmeticblcon)
@@ -39,7 +39,7 @@ if (conversation == 4)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 6
 }
-if (conversation == 6 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 6 && instance_exists(OBJ_WRITER) == false)
 {
     instance_create(10, 0, obj_puzzlewall2)
     papyrus.sprite_index = papyrus.ltsprite
@@ -51,7 +51,7 @@ if (conversation == 6 && instance_exists(OBJ_WRITER) == 0)
     global.interact = 0
     solid = 0
 }
-if (conversation == 8 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 8 && instance_exists(OBJ_WRITER) == false)
     conversation = 22
 if (conversation == 22)
 {
@@ -86,7 +86,7 @@ if (conversation == 22)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 23
 }
-if (conversation == 23 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 23 && instance_exists(OBJ_WRITER) == false)
 {
     papyrus.hspeed = 5
     papyrus.fun = true

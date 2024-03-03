@@ -7,6 +7,7 @@ array_push(categories, new menu_category("General", "General decomp settings",
 		new menu_checkbox_option("Enable Switch Dog Shrine", "EnableSwitchDogShrine", "Enables the Switch Mew Mew Fight", global.decomp_vars.EnableSwitchDogShrine, true),
 		new menu_checkbox_option("PS4 Trophies", "EnablePS4Trophies", "Enables PS4 style trophies on all playforms", global.decomp_vars.EnablePS4Trophies, false),
 		new menu_checkbox_option("Custom Achievements", "EnableCustomAchievements", "Adds Achievments created by Vultu and Daniela", global.decomp_vars.EnableCustomAchievements, false),
+		new menu_holdbutton_option("Wipe Trophy Data", "Hold to wipe all trophy data", 30 * 3, wipeTrophyData) 
 		//new menu_checkbox_option("Enable Xbox Dog Shrine", "EnableXboxDogShrine", "Enables the Xbox Dog Shrine", global.decomp_vars.EnableXboxDogShrine, true)
 	]));
 	
@@ -20,8 +21,8 @@ array_push(categories, new menu_category("Audio", "Settings for adjusting audio"
 	
 array_push(categories, new menu_category("Battle", "General Battle Settings", 
 	[
-		new menu_checkbox_option("Remove Battle Icon Randomness", "RemoveBattleIconRandomness", "Removes/Overrides the random timer when a battle icon appears", global.decomp_vars.RemoveBattleIconRandomness, false),
-		new menu_slider_option("B. Icon Timer Override", "BattleIconRandomOverride", "Forces a consistent time for battles (in frames)", global.decomp_vars.BattleIconRandomOverride, 17, 15, 20, 1, 1),
+		new menu_checkbox_option("Remove ! Icon Randomness", "RemoveBattleIconRandomness", "Removes/Overrides the random timer when a battle icon appears", global.decomp_vars.RemoveBattleIconRandomness, false),
+		new menu_slider_option("! Icon Timer Override", "BattleIconRandomOverride", "Forces a consistent time for battles (in frames)", global.decomp_vars.BattleIconRandomOverride, 17, 15, 20, 1, 1),
 		new menu_checkbox_option("Demo Heart Fracture Delay", "DemoHeartFracture", "Restores the 500ms delay when the heart fractures", global.decomp_vars.DemoHeartFracture, true),
 		new menu_slider_option("Heart Fracture Delay", "DemoHeartFractureDelay", "Delay amount (in ms) for the heart fracture", global.decomp_vars.DemoHeartFractureDelay, 500, 250, 1000, 1, 10)
 	]));

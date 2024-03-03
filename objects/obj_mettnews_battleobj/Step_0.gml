@@ -119,7 +119,7 @@ if (con == 60)
     con = 90
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 90 && instance_exists(OBJ_WRITER) == 0)
+if (con == 90 && instance_exists(OBJ_WRITER) == false)
 {
     with (obj_mettnews_battleobj)
         b_buffer = 6

@@ -200,7 +200,7 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)
@@ -226,7 +226,7 @@ if (global.mnfight == 5)
         writer = instance_create((blcon.x + 15), (blcon.y + 10), OBJ_NOMSCWRITER)
         con = 3
     }
-    if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 3 && instance_exists(OBJ_WRITER) == false)
     {
         with (blcon)
             instance_destroy()
@@ -236,7 +236,7 @@ if (global.mnfight == 5)
         con = 4
         alarm[4] = 60
     }
-    if (con == 5 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 5 && instance_exists(OBJ_WRITER) == false)
     {
         if instance_exists(obj_bara01)
         {
@@ -250,7 +250,7 @@ if (global.mnfight == 5)
         writer = instance_create((blcon.x + 15), (blcon.y + 10), OBJ_NOMSCWRITER)
         con = 6
     }
-    if (con == 6 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 6 && instance_exists(OBJ_WRITER) == false)
     {
         shirtless = 1
         with (blcon)

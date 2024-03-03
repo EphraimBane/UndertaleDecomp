@@ -21,7 +21,7 @@ if (con == 2)
     instance_create(0, 0, obj_dialoguer)
     con = 3
 }
-if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+if (con == 10 && instance_exists(OBJ_WRITER) == false)
 {
     con = 11
     alarm[4] = 50
@@ -50,7 +50,7 @@ if (con == 16)
     instance_create(0, 0, obj_dialoguer)
     con = 17
 }
-if (con == 17 && instance_exists(OBJ_WRITER) == 0)
+if (con == 17 && instance_exists(OBJ_WRITER) == false)
 {
     caster_free(all)
     snd_play(snd_spearappear)
@@ -79,7 +79,7 @@ if (con == 19)
     instance_create(0, 0, obj_battler)
     con = 20
 }
-if (con == 40 && instance_exists(OBJ_WRITER) == 0)
+if (con == 40 && instance_exists(OBJ_WRITER) == false)
 {
     instance_create(obj_mainchara.x, (obj_mainchara.y + 15), obj_doorBmusicfade)
     con = 41

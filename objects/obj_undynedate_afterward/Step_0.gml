@@ -93,7 +93,7 @@ if (con == 2)
     }
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3 && instance_exists(OBJ_WRITER) == false)
 {
     FL_AnimationIndex = 2
     undyne.vspeed = 6

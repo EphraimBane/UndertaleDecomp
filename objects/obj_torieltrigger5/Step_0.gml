@@ -1,4 +1,4 @@
-if (conversation == 1 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 1 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 1
     conversation = 2
@@ -45,7 +45,7 @@ if instance_exists(obj_toroverworld3)
 }
 if instance_exists(obj_toroverworld3)
 {
-    if (conversation == 5 && instance_exists(OBJ_WRITER) == 0)
+    if (conversation == 5 && instance_exists(OBJ_WRITER) == false)
     {
         conversation = 6
         with (obj_toroverworld3)

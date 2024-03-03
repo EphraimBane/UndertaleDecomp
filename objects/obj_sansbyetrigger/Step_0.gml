@@ -1,4 +1,4 @@
-if (conversation == 2 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 2 && instance_exists(OBJ_WRITER) == false)
 {
     if (obj_mainchara.x > obj_sans_interactable1.x)
         obj_sans_interactable1.hspeed = -3
