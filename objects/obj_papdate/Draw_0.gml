@@ -73,6 +73,6 @@ if (choicer == 1)
             choice = 0
         snd_play(snd_squeak)
     }
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
         choicer = 2
 }

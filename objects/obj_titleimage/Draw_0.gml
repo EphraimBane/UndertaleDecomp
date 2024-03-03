@@ -16,7 +16,7 @@ if (d == 1)
 if (global.osflavor >= OSFlavors.Playstation)
     proceed = gamepad_button_check_any((obj_time.j_ch - 1))
 else
-    proceed = control_check_pressed(0)
+    proceed = control_check_pressed(InteractButton)
 if (ballamount == 3)
 {
     if keyboard_check_pressed(ord("L"))
@@ -40,7 +40,7 @@ if (ballamount == 0)
     if keyboard_check_pressed(ord("B"))
         ballamount = 1
 }
-if control_check_pressed(1)
+if control_check_pressed(CancelButton)
 {
     special_x += 1
     if (special_x >= 5)

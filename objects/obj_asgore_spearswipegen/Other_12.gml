@@ -1,6 +1,6 @@
 kk = instance_create((x + 172), (y + 56), obj_eyeflash)
 if (type[typeno] == 1)
-    kk.image_blend = 0xFFA914
+    kk.image_blend = c_soulblue
 if (type[typeno] == 2)
     kk.image_blend = c_orange
 if (typeno >= typeamt)

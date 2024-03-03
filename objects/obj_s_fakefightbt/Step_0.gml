@@ -1,7 +1,7 @@
 if (on == 1)
 {
     image_index = 1
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         if (con == 0)
         {

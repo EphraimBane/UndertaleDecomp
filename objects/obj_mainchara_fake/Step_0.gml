@@ -93,7 +93,7 @@ if obj_time.down
         }
     }
 }
-if control_check_pressed(0)
+if control_check_pressed(InteractButton)
     event_user(0)
 if (x < 0)
     x = 0

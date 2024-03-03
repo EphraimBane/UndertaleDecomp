@@ -7,6 +7,6 @@ if sprite_exists(global.awfultest)
 else
     ricardo = global.awfultest
 scr_setfont(fnt_main)
-draw_set_color(0xFFA914)
+draw_set_color(c_soulblue)
 draw_text(100, 400, string_hash_to_newline(ricardo))
 draw_sprite(spr_undynex_face_damage, 0, 200, 200)

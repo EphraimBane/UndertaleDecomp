@@ -1,5 +1,5 @@
 key_down_A = keyboard_check_pressed(ord("Z"));
-key_down_B = control_check_pressed(0);
+key_down_B = control_check_pressed(InteractButton);
 
 
 if (key_down_A && !key_down_B)
@@ -20,5 +20,5 @@ if (key_down_A)
 	draw_set_color(c_yellow)
 draw_rectangle(90, 90, 30, 30, false)
 
-control_clear(0);
+control_clear(InteractButton);
 keyboard_clear(ord("Z"))

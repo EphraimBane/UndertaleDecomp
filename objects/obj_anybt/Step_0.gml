@@ -5,6 +5,6 @@ if (on > 0)
 on -= 1
 if (on > 0)
 {
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
         event_user(0)
 }

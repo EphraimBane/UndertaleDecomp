@@ -115,7 +115,7 @@ if (cn == 6.1)
 }
 if (cn < 5.2 && joke == 0)
 {
-    if control_check_pressed(2)
+    if control_check_pressed(MenuButton)
     {
         if (cn == 5.1)
         {

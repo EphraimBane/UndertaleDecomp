@@ -43,7 +43,7 @@ if (using == 1)
     depth = (obj_mainchara.depth - 2)
     if (global.interact == 0)
     {
-        if (control_check_pressed(0) == 1)
+        if (control_check_pressed(InteractButton) == 1)
         {
             if (global.facing == Direction.Down)
             {

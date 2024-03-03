@@ -25,6 +25,8 @@ mouse_click_y = 0;
 show_collision = false;
 show_position = false;
 
+random_encounters = true;
+
 #macro COMMAND_CONSOLE_HISTORY_MAX 64
 #macro SCROLL_MIN_ENTRIES_SHOWN 6
 function activate() 

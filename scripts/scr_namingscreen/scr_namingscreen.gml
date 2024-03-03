@@ -88,7 +88,7 @@ function scr_namingscreen()
 	    }
 	    else
 	        scr_namingscreen_check(charname)
-	    var confirm = (control_check_pressed(0) && selected2 >= 0)
+	    var confirm = (control_check_pressed(InteractButton) && selected2 >= 0)
 	    if confirm
 	    {
 	        if allow
@@ -358,7 +358,7 @@ function scr_namingscreen()
 	    }
 	    until (selected_col < 0 || selected_row < 0 || string_length(charmap[selected_row, selected_col]) > 0);
 	    bks_f = 0
-	    confirm = control_check_pressed(0)
+	    confirm = control_check_pressed(InteractButton)
 	    if confirm
 	    {
 	        if (selected_row == -1)
@@ -375,7 +375,7 @@ function scr_namingscreen()
 	                    selected2 = 0
 	                }
 	            }
-	            control_clear(0)
+	            control_clear(InteractButton)
 	        }
 	        else if (selected_row == -2)
 	        {
@@ -412,12 +412,12 @@ function scr_namingscreen()
 	            charname += charmap[selected_row, selected_col]
 	        }
 	    }
-	    if (control_check_pressed(1) || bks_f == 1)
+	    if (control_check_pressed(CancelButton) || bks_f == 1)
 	    {
 	        s = string_length(charname)
 	        if (s > 0)
 	            charname = string_delete(charname, s, 1)
-	        control_clear(1)
+	        control_clear(CancelButton)
 	    }
 	    draw_set_color(c_white)
 	    draw_text(name_x, name_y, string_hash_to_newline(charname))
@@ -495,7 +495,7 @@ function scr_namingscreen()
 	            keyboard_clear(vk_down)
 	        }
 	        var action = -1
-	        if control_check_pressed(0)
+	        if control_check_pressed(InteractButton)
 	            action = selected3
 	        if (action == 0)
 	        {
@@ -517,7 +517,7 @@ function scr_namingscreen()
 	                r = 0.5
 	                q = 0
 	            }
-	            control_clear(0)
+	            control_clear(InteractButton)
 	        }
 	        if (action == 2)
 	        {
@@ -602,12 +602,12 @@ function scr_namingscreen()
 	            draw_set_color(c_yellow)
 	        draw_text(xx, yy2, string_hash_to_newline(scr_gettext("settings_name")))
 	        action = -1
-	        if control_check_pressed(0)
+	        if control_check_pressed(InteractButton)
 	            action = selected3
 	        if (action == 0)
 	        {
 	            naming = 1
-	            control_clear(1)
+	            control_clear(CancelButton)
 	        }
 	        if (action == 1)
 	        {

@@ -9,12 +9,12 @@ if (type == 0 || type == 1)
         if (type == 0)
             image_blend = c_white
         if (type == 1)
-            image_blend = 0xFFA914
+            image_blend = c_soulblue
         draw_sprite_part_ext(spr_s_bonebul_top, 0, le, 0, width, 6, (x + le), y, 1, 1, image_blend, 1)
         if (type == 0)
             draw_set_color(c_white)
         if (type == 1)
-            draw_set_color(0xFFA914)
+            draw_set_color(c_soulblue)
         ossafe_fill_rectangle(((x + 2) + rc_le), (y + 5), ((x + 8) - rc_cut), (global.idealborder[3] - 6))
         if (width > 0)
         {

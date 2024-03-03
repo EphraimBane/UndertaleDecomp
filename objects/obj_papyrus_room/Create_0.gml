@@ -27,7 +27,7 @@ if (room == room_tundra_town)
         instance_destroy()
         return;
     }
-    if (FL_PapyrusCallConvoCounter == 2 && global.flag[389] == 0)
+    if (FL_PapyrusCallConvoCounter == 2 && FL_UndyneDateStatus == 0)
     {
         instance_destroy()
         return;
@@ -37,7 +37,7 @@ if (room == room_tundra_town)
         instance_destroy()
         return;
     }
-    if (global.flag[389] >= 3)
+    if (FL_UndyneDateStatus >= 3)
         instance_create((x - 34), (y - 14), obj_undyne_friendc)
 }
 if (room == room_water_undyneyard)
@@ -47,7 +47,7 @@ if (room == room_water_undyneyard)
         d = 1
     if (FL_PapyrusDateCounter < 4)
         d = 1
-    if (global.flag[389] > 0)
+    if (FL_UndyneDateStatus > 0)
         d = 1
     if (d == 1)
     {

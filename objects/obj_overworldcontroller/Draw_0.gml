@@ -257,12 +257,12 @@ if (global.interact == 5)
         else
         {
             draw_text((xx + 85), (yy + 110), string_hash_to_newline(scr_gettext("save_menu_saved")))
-            if control_check_pressed(0)
+            if control_check_pressed(InteractButton)
             {
                 global.menuno = -1
                 global.interact = 0
                 global.menucoord[4] = 0
-                control_clear(0)
+                control_clear(InteractButton)
             }
         }
         if (keyboard_check_pressed(vk_left) || keyboard_check_pressed(vk_right))
@@ -277,26 +277,26 @@ if (global.interact == 5)
                 keyboard_clear(vk_right)
             }
         }
-        if (control_check_pressed(0) && global.menucoord[4] == 0)
+        if (control_check_pressed(InteractButton) && global.menucoord[4] == 0)
         {
             snd_play(snd_save)
             scr_save()
             global.menucoord[4] = 2
-            control_clear(0)
+            control_clear(InteractButton)
         }
-        if (control_check_pressed(0) && global.menucoord[4] == 1)
+        if (control_check_pressed(InteractButton) && global.menucoord[4] == 1)
         {
             global.menuno = -1
             global.interact = 0
             global.menucoord[4] = 0
-            control_clear(0)
+            control_clear(InteractButton)
         }
-        if control_check_pressed(1)
+        if control_check_pressed(CancelButton)
         {
             global.menuno = -1
             global.interact = 0
             global.menucoord[4] = 0
-            control_clear(1)
+            control_clear(CancelButton)
         }
     }
     if (global.menuno == 0)
@@ -346,7 +346,7 @@ if (global.interact == 5)
         if (global.menucoord[5] == 2)
             draw_sprite(spr_heartsmall, 0, ((104 + xx) + ((45 * global.menucoord[5]) + 15)), (heart_y + yy))
     }
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         if (global.menuno == 5)
         {
@@ -532,7 +532,7 @@ if (global.interact == 5)
             }
         }
     }
-    if (control_check_pressed(1) && buffer >= 0)
+    if (control_check_pressed(CancelButton) && buffer >= 0)
     {
         if (global.menuno == 0)
         {
@@ -560,7 +560,7 @@ if (global.interact == 5)
                 global.menucoord[5] -= 1
         }
     }
-    if control_check_pressed(2)
+    if control_check_pressed(MenuButton)
     {
         if (global.menuno == 0)
         {

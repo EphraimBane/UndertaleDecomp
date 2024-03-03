@@ -14,7 +14,7 @@ if (active == true)
     draw_set_alpha(1)
 }
 siner += 1
-if (done == 1 && control_check_pressed(0))
+if (done == 1 && control_check_pressed(InteractButton))
     done = 2
 if (hypefade <= 0)
     instance_destroy()

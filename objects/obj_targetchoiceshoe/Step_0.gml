@@ -17,7 +17,7 @@ if (xxx == 1)
 }
 if (image_speed == 0)
 {
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         mons = global.monsterinstance[global.mytarget]
         hspeed = 0

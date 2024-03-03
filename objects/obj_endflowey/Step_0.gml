@@ -81,7 +81,7 @@ if (con == 1)
                 {
                     if (FL_KilledMettaton == 0)
                     {
-                        if (global.flag[389] >= 3)
+                        if (FL_UndyneDateStatus >= 3)
                         {
                             if (FL_DatedAlphys >= 10)
                             {
@@ -132,7 +132,7 @@ if (con == 10)
     global.msg[20] = scr_gettext("obj_endflowey_208")
     if (ossafe_file_exists("file0") == 0)
         global.msg[20] = scr_gettext("obj_endflowey_211")
-    if (global.flag[389] >= 3)
+    if (FL_UndyneDateStatus >= 3)
         global.msg[21] = scr_gettext("obj_endflowey_216")
     else
         global.msg[21] = scr_gettext("obj_endflowey_219")

@@ -1,6 +1,6 @@
 if (act == 1)
 {
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         if (skip == false)
         {

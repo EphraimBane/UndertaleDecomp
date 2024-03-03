@@ -1,9 +1,9 @@
 if (obj_time.left && debuggo == 1)
 {
     angle -= 8
-    if control_check(1)
+    if control_check(CancelButton)
         angle -= 16
-    if control_check(0)
+    if control_check(InteractButton)
     {
         simg = instance_create(x, y, obj_spearafterimage)
         simg.originx = x
@@ -30,9 +30,9 @@ if (obj_time.left && debuggo == 1)
 if (obj_time.right && debuggo == 1)
 {
     angle += 8
-    if control_check(1)
+    if control_check(CancelButton)
         angle += 16
-    if control_check(0)
+    if control_check(InteractButton)
     {
         simg = instance_create(x, y, obj_spearafterimage)
         simg.originx = x

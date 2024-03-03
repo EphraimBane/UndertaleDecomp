@@ -20,18 +20,18 @@ if (cantype == 1)
             exc = 1
             backspace = 1
         }
-        if control_check_pressed(1)
+        if control_check_pressed(CancelButton)
             exc = 1
-        if control_check_pressed(0)
+        if control_check_pressed(InteractButton)
             exc = 1
         if keyboard_check_pressed(vk_escape)
             exc = 1
         if (exc == 0)
         {
             newchar = keyboard_lastchar
-            if (keyboard_check_pressed(ord("Z")) && (!control_check_pressed(0)))
+            if (keyboard_check_pressed(ord("Z")) && (!control_check_pressed(InteractButton)))
                 newchar = "z"
-            if (keyboard_check_pressed(ord("X")) && (!control_check_pressed(1)))
+            if (keyboard_check_pressed(ord("X")) && (!control_check_pressed(CancelButton)))
                 newchar = "x"
         }
     }

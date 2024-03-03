@@ -70,7 +70,7 @@ if (global.mnfight == 1)
         }
     }
 }
-if (control_check_pressed(0) && uncancel == 0)
+if (control_check_pressed(InteractButton) && uncancel == 0)
 {
     if (alarm[5] > 5 && obj_lborder.x == global.idealborder[0] && alarm[6] < 0)
         alarm[5] = 2
