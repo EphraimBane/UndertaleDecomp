@@ -6,7 +6,7 @@ if (con == 0)
     buffer += 1
     if (buffer >= 20)
     {
-        if control_check_pressed(0)
+        if control_check_pressed(InteractButton)
         {
             buffer = -10
             con = 1
@@ -23,7 +23,7 @@ if (con == 1)
     {
         if audio_is_playing(mus_st_happytown)
             draw_set_color(c_yellow)
-        else if (control_check_pressed(0) && gaster == 0)
+        else if (control_check_pressed(InteractButton) && gaster == 0)
         {
             audio_stop_all()
             audio_play_sound(mus_st_happytown, 50, true)
@@ -34,7 +34,7 @@ if (con == 1)
     {
         if audio_is_playing(mus_st_meatfactory)
             draw_set_color(c_yellow)
-        else if (control_check_pressed(0) && gaster == 0)
+        else if (control_check_pressed(InteractButton) && gaster == 0)
         {
             audio_stop_all()
             audio_play_sound(mus_st_meatfactory, 50, true)
@@ -45,7 +45,7 @@ if (con == 1)
     {
         if audio_is_playing(mus_st_troubledingle)
             draw_set_color(c_yellow)
-        else if (control_check_pressed(0) && gaster == 0)
+        else if (control_check_pressed(InteractButton) && gaster == 0)
         {
             audio_stop_all()
             audio_play_sound(mus_st_troubledingle, 50, true)
@@ -56,7 +56,7 @@ if (con == 1)
     {
         if audio_is_playing(mus_st_him)
             draw_set_color(c_yellow)
-        else if (control_check_pressed(0) && gaster == 0)
+        else if (control_check_pressed(InteractButton) && gaster == 0)
         {
             gaster = 1
             audio_stop_all()

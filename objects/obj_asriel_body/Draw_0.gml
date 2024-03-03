@@ -422,7 +422,7 @@ if (global.debug == true)
         if (aligncon == 3)
             aligncon = 4
     }
-    if control_check_pressed(2)
+    if control_check_pressed(MenuButton)
     {
         s_s = 1
         if (aligncon == 0)

@@ -19,14 +19,14 @@ if (x < fatalx)
 if (priority == 0)
 {
     image_index = 0
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         image_alpha = 1
         image_speed = 0.5
         obj_battlethingparent.check = id
         with (obj_battlethingparent)
             event_user(3)
-        control_clear(0)
+        control_clear(InteractButton)
         with (obj_targetparent)
             event_user(1)
     }

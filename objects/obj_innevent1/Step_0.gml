@@ -14,5 +14,5 @@ if (fadein == 2 && vol > 0)
         vol = 0
     }
 }
-if (control_check_pressed(0) && vol > 0.6)
+if (control_check_pressed(InteractButton) && vol > 0.6)
     fadein = 2

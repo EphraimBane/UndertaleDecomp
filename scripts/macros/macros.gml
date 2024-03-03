@@ -31,6 +31,7 @@ enum OSFlavors
 #macro VIEW_PROP_CAMERA 15
 #macro VIEW_PROP_SURFACE_ID 16
 #endregion
+
 // Vultu: Taken from https://tomat.dev/undertale/flags
 // Vultu: Anything not in that list was added by or Daniela
 // If any of this is wrong or misleading, please feel free to push a PR <3
@@ -423,6 +424,13 @@ enum OSFlavors
 #macro DimensionalBoxSize 11
 #macro InventorySize 8
 
+#macro InteractButton 0
+#macro CancelButton 1
+#macro MenuButton 3
+
+#macro c_soulblue 0xFFA914
+#macro c_altblue 0xFDC00E
+#macro c_pink 0xD4BBFF
 #endregion
 
 #region Enums

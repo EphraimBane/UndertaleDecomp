@@ -38,21 +38,21 @@ if (menu == 0)
             global.msg[0] = scr_gettext("obj_shop1_265")
         instance_create(0, 110, OBJ_WRITER)
     }
-    else if control_check_pressed(1)
+    else if control_check_pressed(CancelButton)
     {
         with (OBJ_WRITER)
         {
             if (halt == false)
                 stringpos = string_length(originalstring)
-            control_clear(1)
+            control_clear(CancelButton)
         }
     }
     menumax = 3
     scr_shop_draw_topmenu(murder != 0)
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         OBJ_WRITER.dfy = 1
-        control_clear(0)
+        control_clear(InteractButton)
         if (menuc[0] == 0)
             menu = 1
         if (menuc[0] == 1)
@@ -111,20 +111,20 @@ if (menu == 1 || menu == 2)
         if (global.language == "ja")
             hearty -= 2
         draw_sprite(spr_heartsmall, 0, 15, (hearty + (menuc[1] * 20)))
-        if control_check_pressed(0)
+        if control_check_pressed(InteractButton)
         {
             menu = 2
             OBJ_WRITER.dfy = 1
             if (menuc[1] == menumax)
                 menu = 0
         }
-        else if control_check_pressed(1)
+        else if control_check_pressed(CancelButton)
         {
             menu = 0
             OBJ_WRITER.dfy = 1
         }
         if (menu == 2)
-            control_clear(0)
+            control_clear(InteractButton)
         menuc[2] = 0
     }
     if (menu == 2)
@@ -147,15 +147,15 @@ if (menu == 1 || menu == 2)
         if (global.language == "ja")
             hearty -= 2
         draw_sprite(spr_heartsmall, 0, heartx, (hearty + (menuc[2] * 15)))
-        if control_check_pressed(1)
+        if control_check_pressed(CancelButton)
         {
             menu = 1
-            control_clear(1)
+            control_clear(CancelButton)
             sidemessage = 2
         }
-        else if control_check_pressed(0)
+        else if control_check_pressed(InteractButton)
         {
-            control_clear(0)
+            control_clear(InteractButton)
             if (menuc[2] == 0)
             {
                 scr_cost(itemcost[menuc[1]])
@@ -219,21 +219,21 @@ if (menu == 3)
             writerx += 2
         var writer = instance_create(writerx, 110, OBJ_WRITER)
     }
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         OBJ_WRITER.dfy = 1
         if (menuc[3] < menumax)
         {
             sell = (menuc[3] + 3)
-            control_clear(0)
+            control_clear(InteractButton)
             menu = 4
         }
         else
             menu = 0
     }
-    else if control_check_pressed(1)
+    else if control_check_pressed(CancelButton)
     {
-        control_clear(1)
+        control_clear(CancelButton)
         menu = 0
         OBJ_WRITER.dfy = 1
     }
@@ -341,13 +341,13 @@ if (menu == 4)
     }
     if instance_exists(OBJ_WRITER)
     {
-        if control_check_pressed(1)
+        if control_check_pressed(CancelButton)
         {
             with (OBJ_WRITER)
             {
                 if (halt == false)
                     stringpos = string_length(originalstring)
-                control_clear(1)
+                control_clear(CancelButton)
             }
         }
     }

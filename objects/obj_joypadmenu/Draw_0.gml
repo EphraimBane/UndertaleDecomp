@@ -35,7 +35,7 @@ if (menu_engage == 0)
         menu = 9
     if (buffer < 0)
     {
-        if control_check_pressed(0)
+        if control_check_pressed(InteractButton)
         {
             menu_engage = 1
             js_buffer = 1
@@ -93,9 +93,9 @@ for (i = 1; i < 4; i += 1)
     if (i == 1)
         itext = scr_gettext("joyconfig_button_confirm")
     if (i == 2)
-        itext = scr_gettext("joyconfig_button_cancel")
+        itext = scr_gettext("joyconfig_CancelButton")
     if (i == 3)
-        itext = scr_gettext("joyconfig_button_menu")
+        itext = scr_gettext("joyconfig_MenuButton")
     draw_text(20, (75 + ((i - 1) * vspacing)), string_hash_to_newline(itext))
     var xx = ((20 + string_width(string_hash_to_newline(itext))) + 10)
     if (xx > button_x)
@@ -155,7 +155,7 @@ if (menu == 1 && menu_engage == 1)
     }
     if (buffer < 0)
     {
-        if (control_check_pressed(0) || control_check_pressed(1))
+        if (control_check_pressed(InteractButton) || control_check_pressed(CancelButton))
             menu_engage = 0
     }
 }
@@ -208,7 +208,7 @@ if (menu == 2 && menu_engage == 1)
     }
     if (buffer < 0)
     {
-        if (control_check_pressed(0) || control_check_pressed(1))
+        if (control_check_pressed(InteractButton) || control_check_pressed(CancelButton))
             menu_engage = 0
     }
 }
@@ -258,7 +258,7 @@ if (menu == 3 && menu_engage == 1)
     }
     if (buffer < 0)
     {
-        if (control_check_pressed(0) || control_check_pressed(1))
+        if (control_check_pressed(InteractButton) || control_check_pressed(CancelButton))
             menu_engage = 0
     }
 }
@@ -288,7 +288,7 @@ if (menu == 5 && menu_engage == 1)
             global.analog_sense = 0.4
         if (global.analog_sense <= 0.02)
             global.analog_sense = 0.02
-        if (control_check_pressed(0) || control_check_pressed(1))
+        if (control_check_pressed(InteractButton) || control_check_pressed(CancelButton))
             menu_engage = 0
     }
 }
@@ -319,7 +319,7 @@ if (fun == true)
                 global.analog_sense_sense = 0.2
             if (global.analog_sense_sense <= 0.01)
                 global.analog_sense_sense = 0.01
-            if (control_check_pressed(0) || control_check_pressed(1))
+            if (control_check_pressed(InteractButton) || control_check_pressed(CancelButton))
                 menu_engage = 0
         }
     }

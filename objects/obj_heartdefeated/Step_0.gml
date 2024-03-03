@@ -3,7 +3,7 @@ if (dingus == 2)
     currentvol -= 0.02
     caster_set_volume(gameoversong, currentvol)
 }
-if control_check_pressed(0)
+if control_check_pressed(InteractButton)
     event_user(0)
 if (heartcon == 5)
 {

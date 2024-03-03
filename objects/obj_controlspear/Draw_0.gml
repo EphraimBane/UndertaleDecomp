@@ -113,7 +113,7 @@ if (active == true)
         everselect = 3
         mytext = ((scr_gettext("obj_controlspear_204") + "#") + scr_gettext("obj_controlspear_select"))
     }
-    if (control_check_pressed(0) && active == true && buffer < 1 && select != 0)
+    if (control_check_pressed(InteractButton) && active == true && buffer < 1 && select != 0)
     {
         global.facechoice = 5
         global.msc = 0

@@ -87,7 +87,7 @@ if (buffer > 3)
         draw_sprite(spr_heartsmall, 0, (((xx + boxofs) + 3) + heartofs), ((yy + 35) + (16 * c0y)))
     if (column == 1)
         draw_sprite(spr_heartsmall, 0, ((xx + 162) + heartofs), ((yy + 35) + (16 * c1y)))
-    if (control_check_pressed(0) && buffer > 6)
+    if (control_check_pressed(InteractButton) && buffer > 6)
     {
         if (column == 0)
         {
@@ -102,7 +102,7 @@ if (buffer > 3)
                 scr_storageshift(c1y, 0, boxno)
         }
     }
-    if control_check_pressed(1)
+    if control_check_pressed(CancelButton)
     {
         global.interact = 0
         if (spec == 1)

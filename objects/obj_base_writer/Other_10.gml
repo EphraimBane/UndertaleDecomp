@@ -8,13 +8,13 @@ if (halt == true)
 }
 else if (halt == 2)
 {
-    control_clear(0)
+    control_clear(InteractButton)
     instance_destroy()
 }
 else if (halt == 4)
 {
     global.myfight = 0
     global.mnfight = 1
-    control_clear(0)
+    control_clear(InteractButton)
     instance_destroy()
 }

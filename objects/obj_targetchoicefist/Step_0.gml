@@ -21,7 +21,7 @@ with (mons)
 if (image_speed >= 0.4 && punchtime < maxpunchtime)
 {
     punchtime += 1
-    if (control_check_pressed(0) && punches < maxpunches)
+    if (control_check_pressed(InteractButton) && punches < maxpunches)
     {
         if instance_exists(obj_pressZ)
         {
@@ -30,7 +30,7 @@ if (image_speed >= 0.4 && punchtime < maxpunchtime)
             obj_pressZ.alarm[1] = -1
         }
         punches += 1
-        control_clear(0)
+        control_clear(InteractButton)
         if (punches < maxpunches)
             instance_create((mons.x + random(wd)), (mons.y + random(mons.ht)), obj_lightpunch)
         if (punches == maxpunches)
@@ -58,7 +58,7 @@ if (image_speed >= 0.4 && punchtime < maxpunchtime)
 }
 if (image_speed == 0)
 {
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         mons = global.monsterinstance[global.mytarget]
         hspeed = 0

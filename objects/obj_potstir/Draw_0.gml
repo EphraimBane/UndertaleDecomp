@@ -5,7 +5,7 @@ ossafe_fill_rectangle((__view_get(VIEW_PROP_CAM_X, view_current) + 19), (__view_
 scr_setfont(fnt_maintext)
 draw_set_color(c_white)
 scr_drawtext_icons(30, 11, scr_gettext("obj_potstir_64"))
-if control_check_pressed(0)
+if control_check_pressed(InteractButton)
 {
     stir += 1
     pot.image_index += 1

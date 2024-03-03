@@ -186,7 +186,7 @@ if (back == true)
                     ch_color = 4235519
             }
             if (ch == 0)
-                ch_color2 = merge_color(c_white, 0xFFA914, abs(sin((siner / 2))))
+                ch_color2 = merge_color(c_white, c_soulblue, abs(sin((siner / 2))))
             if (ch == 1)
                 ch_color2 = merge_color(c_white, c_orange, abs(sin((siner / 2))))
             draw_sprite_ext(spr_sorrytail_curveback, 0, (x + (sin((tailsiner / 12)) * 44)), (y + 80), 2, 2, ((sin((tailsiner / 12)) * 60) - 60), ch_color2, 1)
@@ -208,7 +208,7 @@ if (back == true)
                     ch_color = 4235519
             }
             if (ch == 0)
-                ch_color2 = merge_color(c_white, 0xFFA914, abs(sin((siner / 2))))
+                ch_color2 = merge_color(c_white, c_soulblue, abs(sin((siner / 2))))
             if (ch == 1)
                 ch_color2 = merge_color(c_white, c_orange, abs(sin((siner / 2))))
             draw_sprite_ext(spr_sorrytail_curveback, 0, (x + (sin((tailsiner / 12)) * 44)), (y + 80), -2, 2, ((sin((tailsiner / 12)) * 60) + 60), ch_color2, 1)

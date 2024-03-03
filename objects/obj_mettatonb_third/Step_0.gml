@@ -35,7 +35,7 @@ if (global.mnfight == 1)
         talked = true
         global.heard = 0
     }
-    if control_check_pressed(1)
+    if control_check_pressed(CancelButton)
     {
         if instance_exists(OBJ_WRITER)
             OBJ_WRITER.stringpos = string_length(OBJ_WRITER.originalstring)
@@ -219,7 +219,7 @@ if (con == 6 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 6.1 && instance_exists(OBJ_WRITER))
 {
-    if control_check_pressed(1)
+    if control_check_pressed(CancelButton)
     {
         if instance_exists(OBJ_WRITER)
             OBJ_WRITER.stringpos = string_length(OBJ_WRITER.originalstring)

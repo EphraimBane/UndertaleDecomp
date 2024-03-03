@@ -11,7 +11,7 @@ if obj_time.left
     if (movement == 1)
     {
         x -= global.sp
-        if (control_check(1) == 1)
+        if (control_check(CancelButton) == 1)
             x += (global.sp / 2)
     }
 }
@@ -20,7 +20,7 @@ if obj_time.right
     if (movement == 1)
     {
         x += global.sp
-        if (control_check(1) == 1)
+        if (control_check(CancelButton) == 1)
             x += (global.sp / 2)
     }
 }
@@ -29,7 +29,7 @@ if obj_time.up
     if (movement == 1)
     {
         y -= global.sp
-        if (control_check(1) == 1)
+        if (control_check(CancelButton) == 1)
             x += (global.sp / 2)
     }
 }
@@ -38,7 +38,7 @@ if obj_time.down
     if (movement == 1)
     {
         y += global.sp
-        if (control_check(1) == 1)
+        if (control_check(CancelButton) == 1)
             x += (global.sp / 2)
     }
 }
@@ -65,7 +65,7 @@ if (deleteafter == 1 && instance_exists(blconwd) == 0)
     }
     deleteafter = 0
 }
-if (control_check_pressed(0) && movement == 1 && canpress == 1)
+if (control_check_pressed(InteractButton) && movement == 1 && canpress == 1)
 {
     if instance_exists(obj_papdate)
     {

@@ -7,7 +7,7 @@ if (active == true && win == 0)
         blt = 0
         if instance_exists(obj_shotguy)
             blt = 1
-        if (control_check_pressed(0) && ammo > 0 && buffer <= 0)
+        if (control_check_pressed(InteractButton) && ammo > 0 && buffer <= 0)
         {
             ammo -= 1
             buffer = 4
@@ -33,7 +33,7 @@ if (active == true && win == 0)
             buffer = 4
             event_user(3)
         }
-        if (control_check_pressed(1) && buffer <= 0 && instance_exists(obj_shotguy) == 0)
+        if (control_check_pressed(CancelButton) && buffer <= 0 && instance_exists(obj_shotguy) == 0)
         {
             active = false
             alarm[2] = 2

@@ -41,7 +41,7 @@ if (choicer == 1)
             snd_play(snd_squeak)
         }
     }
-    if (control_check_pressed(0) && buffer >= 12)
+    if (control_check_pressed(InteractButton) && buffer >= 12)
     {
         snd_play(snd_select)
         choicer = 0

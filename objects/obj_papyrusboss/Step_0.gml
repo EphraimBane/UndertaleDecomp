@@ -28,7 +28,7 @@ if (global.mnfight == 1)
         global.heard = 0
     }
 }
-if (control_check_pressed(0) && talkify == 0)
+if (control_check_pressed(InteractButton) && talkify == 0)
 {
     if (alarm[5] > 5 && obj_lborder.x == global.idealborder[0] && alarm[6] < 0)
         alarm[5] = 2

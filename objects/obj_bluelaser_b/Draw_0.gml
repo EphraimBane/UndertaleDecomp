@@ -1,5 +1,5 @@
 if (blue == 1)
-    draw_set_color(0xFFA914)
+    draw_set_color(c_soulblue)
 if (blue == 2)
     draw_set_color(c_orange)
 if (x <= global.idealborder[1] && x > global.idealborder[0])

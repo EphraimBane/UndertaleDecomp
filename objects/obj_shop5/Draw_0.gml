@@ -107,21 +107,21 @@ if (menu == 0)
         mainmessage = 1
         instance_create(0, 110, OBJ_WRITER)
     }
-    else if control_check_pressed(1)
+    else if control_check_pressed(CancelButton)
     {
         with (OBJ_WRITER)
         {
             if (halt == false)
                 stringpos = string_length(originalstring)
-            control_clear(1)
+            control_clear(CancelButton)
         }
     }
     menumax = 3
     scr_shop_draw_topmenu(0)
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         OBJ_WRITER.dfy = 1
-        control_clear(0)
+        control_clear(InteractButton)
         if (menuc[0] == 0)
             menu = 1
         if (menuc[0] == 1)
@@ -182,20 +182,20 @@ if (menu == 1 || menu == 2)
         if (global.language == "ja")
             hearty -= 2
         draw_sprite(spr_heartsmall, 0, 15, (hearty + (menuc[1] * 20)))
-        if control_check_pressed(0)
+        if control_check_pressed(InteractButton)
         {
             menu = 2
             OBJ_WRITER.dfy = 1
             if (menuc[1] == menumax)
                 menu = 0
         }
-        else if control_check_pressed(1)
+        else if control_check_pressed(CancelButton)
         {
             menu = 0
             OBJ_WRITER.dfy = 1
         }
         if (menu == 2)
-            control_clear(0)
+            control_clear(InteractButton)
         menuc[2] = 0
     }
     if (menu == 2)
@@ -214,15 +214,15 @@ if (menu == 1 || menu == 2)
         if (global.language == "ja")
             hearty -= 2
         draw_sprite(spr_heartsmall, 0, heartx, (hearty + (menuc[2] * 15)))
-        if control_check_pressed(1)
+        if control_check_pressed(CancelButton)
         {
             menu = 1
-            control_clear(1)
+            control_clear(CancelButton)
             sidemessage = 2
         }
-        else if control_check_pressed(0)
+        else if control_check_pressed(InteractButton)
         {
-            control_clear(0)
+            control_clear(InteractButton)
             if (menuc[2] == 0)
             {
                 scr_cost(itemcost[menuc[1]])
@@ -292,21 +292,21 @@ if (menu == 3)
             writerx += 2
         instance_create(writerx, 110, OBJ_WRITER)
     }
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         OBJ_WRITER.dfy = 1
         if (menuc[3] < menumax)
         {
             sell = (menuc[3] + 3)
-            control_clear(0)
+            control_clear(InteractButton)
             menu = 4
         }
         else
             menu = 0
     }
-    else if control_check_pressed(1)
+    else if control_check_pressed(CancelButton)
     {
-        control_clear(1)
+        control_clear(CancelButton)
         menu = 0
         OBJ_WRITER.dfy = 1
     }
@@ -434,13 +434,13 @@ if (menu == 4)
     }
     if instance_exists(OBJ_WRITER)
     {
-        if control_check_pressed(1)
+        if control_check_pressed(CancelButton)
         {
             with (OBJ_WRITER)
             {
                 if (halt == false)
                     stringpos = string_length(originalstring)
-                control_clear(1)
+                control_clear(CancelButton)
             }
         }
     }
@@ -627,7 +627,7 @@ if (menu == 5)
     draw_text(30, 210, string_hash_to_newline(scr_gettext("shop_exit_submenu")))
     draw_set_color(c_yellow)
     draw_text(200, 210, string_hash_to_newline(scr_gettext("shop5_sell_gold")))
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         joytimer = 0
         buffer = 3
@@ -658,7 +658,7 @@ if (menu == 5)
         else
             snd_play(snd_mtt9)
     }
-    if control_check_pressed(1)
+    if control_check_pressed(CancelButton)
     {
         menu = 0
         sellpos = 0
@@ -696,12 +696,12 @@ if (menu == 6)
         else
             sellpos2 = 0
     }
-    if (control_check_pressed(1) && buffer <= 0)
+    if (control_check_pressed(CancelButton) && buffer <= 0)
     {
         buffer = 1
         s_quit = 1
     }
-    if (control_check_pressed(0) && buffer <= 0)
+    if (control_check_pressed(InteractButton) && buffer <= 0)
     {
         if (sellpos2 == 1)
             s_quit = 1

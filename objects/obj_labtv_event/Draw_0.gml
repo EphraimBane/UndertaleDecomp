@@ -85,7 +85,7 @@ if (con == 2 && instance_exists(OBJ_WRITER) == 0)
                     heartx -= 1
             }
         }
-        if control_check_pressed(0)
+        if control_check_pressed(InteractButton)
         {
             con = 100
             if (heartx == 0 && hearty == 0)

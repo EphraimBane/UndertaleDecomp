@@ -376,7 +376,7 @@ if (con == 97 && instance_exists(obj_sadspider) == 0)
     global.monster[myself] = false
     instance_destroy()
 }
-if control_check_pressed(1)
+if control_check_pressed(CancelButton)
 {
     if instance_exists(blconwd)
     {
@@ -385,7 +385,7 @@ if control_check_pressed(1)
             if (global.typer != 10)
                 blconwd.stringpos = string_length(blconwd.originalstring)
         }
-        control_clear(1)
+        control_clear(CancelButton)
     }
 }
 if (global.debug == true)

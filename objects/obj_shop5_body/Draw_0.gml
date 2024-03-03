@@ -193,7 +193,7 @@ if (sellmenu == 1)
     draw_text(30, 210, string_hash_to_newline(scr_gettext("shop_exit_submenu")))
     draw_set_color(c_yellow)
     draw_text(200, 210, string_hash_to_newline("(9999 G)"))
-    if control_check_pressed(0)
+    if control_check_pressed(InteractButton)
     {
         buffer = 3
         if (sellpos == 8)
@@ -223,7 +223,7 @@ if (sellmenu == 2)
         else
             sellpos2 = 0
     }
-    if (control_check_pressed(0) && buffer <= 0)
+    if (control_check_pressed(InteractButton) && buffer <= 0)
     {
         if (sellpos2 == 1)
             sellmenu = 1
