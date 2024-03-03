@@ -162,7 +162,7 @@ function scr_draw_screen_border()
 	        border_id = 9
 	    if (room_id == room_water_undynefinal3 || room_id == room_fire_elevator || room_id == room_fire_finalelevator || room_id == room_fire_labelevator || room_id == room_truelab_elevatorinside || room_id == room_riverman_transition || room_id == room_dogshrine || room_id == room_dogshrine_ruined || room_id == room_dogshrine_mewmew)
 	        border_id = 3.5
-	    if (global.flag[479] == 0 && (room_id == room_truelab_elevator || room_id == room_truelab_hall1))
+	    if (FL_TrueLabBorderEnabled == 0 && (room_id == room_truelab_elevator || room_id == room_truelab_hall1))
 	        border_id = 3.5
 	    if (border_id != global.screen_border_state)
 	    {

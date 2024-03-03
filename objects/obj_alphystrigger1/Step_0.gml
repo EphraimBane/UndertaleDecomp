@@ -453,7 +453,7 @@ if (con == 70)
     global.interact = 1
 if (con == 71)
 {
-    FL_CalledAlready = 0
+    FL_PapyrusCalledAlready = 0
     alphys.sprite_index = alphys.lsprite
     global.msg[0] = scr_gettext("obj_alphystrigger1_566")
     global.msg[1] = scr_gettext("obj_alphystrigger1_567")

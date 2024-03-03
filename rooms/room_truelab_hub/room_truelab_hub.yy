@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "room_truelab_hub",
-  "creationCodeFile": "${project_dir}/rooms/room_truelab_hub/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/room_truelab_hub/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

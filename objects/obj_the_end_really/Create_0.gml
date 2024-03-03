@@ -3,7 +3,7 @@ if ossafe_file_exists("system_information_963")
     death = 1
 type = 0
 dogamt = 0
-if (global.flag[512] == 1)
+if (FL_FinalTorielChoice == Choices.Left)
     type = 1
 if (type == 0)
     noise = caster_load("music/intronoise.ogg")

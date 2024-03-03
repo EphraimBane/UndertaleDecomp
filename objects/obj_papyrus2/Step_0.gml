@@ -384,7 +384,7 @@ if (conversation == 54 && instance_exists(OBJ_WRITER) == 0)
 }
 if (conversation == 56)
 {
-    global.flag[291] = 1
+    FL_ElectricMazeSkipped = true
     global.interact = 1
     global.msc = 0
     papyrus.sprite_index = papyrus.dtsprite
@@ -392,8 +392,8 @@ if (conversation == 56)
     global.faceemotion = 0
     global.facechoice = 4
     global.typer = 19
-    global.msg[0] = scr_gettext("obj_papyrus2_601")
-    global.msg[1] = scr_gettext("obj_papyrus2_602")
+    global.msg[0] = scr_gettext("obj_papyrus2_601") //\\E3SIGH.../
+    global.msg[1] = scr_gettext("obj_papyrus2_602") //\\E3WHY COULDN'T WE GET&A HUMAN THAT LIKES&PUZZLES???/%%
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 57
 }

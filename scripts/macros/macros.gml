@@ -194,7 +194,8 @@ enum OSFlavors
 #macro FL_TundraKillsCounter global.flag[203]
 #macro FL_WaterfallKillsCounter global.flag[204]
 #macro FL_HotlandKillsCounter global.flag[205]
-// 206 - 220 Unused
+#macro FL_UnusedButChecked_206 global.flag[206]
+// 207 - 220 Unused
 #macro FL_RuinsGenocide global.flag[221]
 #macro FL_TundraGenocide global.flag[222]
 #macro FL_WaterfallGenocide global.flag[223]
@@ -233,17 +234,20 @@ enum OSFlavors
 #macro FL_EncounteredGlyde global.flag[282]
 #macro FL_CheckPapyrusKitchenAgain global.flag[283]
 #macro FL_UndyneSpearsAnger global.flag[284]
-// 285 - Set but never checked
+#macro FL_UncheckedButSet_285 global.flag[285] 
 #macro FL_TorielSMSConvoCounter global.flag[286]
 #macro FL_SMSConvoParameters global.flag[287]
 #macro FL_FailedBombDefusing global.flag[288]
 #macro FL_SteppedOnGreenTile global.flag[289]
-// 290 - 291 Unused
+#macro FL_NeutralPapyrusSpared global.flag[290]
+#macro FL_ElectricMazeSkipped global.flag[291]
+// 292 - 291 Unused
 #macro FL_DogShrineGDeposited global.flag[292]
 #macro FL_DogShrineGoldNeeded global.flag[293]
 #macro FL_DogShrineLevel global.flag[294]
-#macro FL_DogShrineUnknown global.flag[295] //TODO: THIS
-// 296 - 299 Unused
+#macro FL_DogShrineStateAcknowledged global.flag[295]
+#macro FL_DogShrineTrashChecked global.flag[296]
+// 297 - 299 Unused
 #macro FL_DimensionalBoxAItem1 global.flag[300]
 #macro FL_DimensionalBoxAItem2 global.flag[301]
 #macro FL_DimensionalBoxAItem3 global.flag[302]
@@ -373,7 +377,7 @@ enum OSFlavors
 #macro FL_RivermanDestination global.flag[459] // TODO: LOOK INTO THIS
 #macro FL_GotTemVillageHint global.flag[460]
 #macro FL_TemBoatVersion global.flag[461]
-#macro FL_CalledAlready global.flag[462] // TODO: LOOK INTO THIS
+#macro FL_PapyrusCalledAlready global.flag[462] // TODO: LOOK INTO THIS
 // 463 - 464 Unused
 #macro FL_IncludeUndyneInPapyrusCalls global.flag[465]
 // 466 - 469 Unused
@@ -381,7 +385,8 @@ enum OSFlavors
 // 471 - 474 Unused
 #macro FL_KilledFlowey global.flag[475]
 #macro FL_KilledAsgore global.flag[476]
-// 477 - 479 Unused
+// 477 - 478 Unused
+#macro FL_TrueLabBorderEnabled global.flag[479]
 #macro FL_CompletedTrueLab global.flag[480]
 // TODO: LOOK InTO THESE!!!!
 #macro FL_MemoryHeadStatus global.flag[481]
@@ -407,7 +412,7 @@ enum OSFlavors
 #macro FL_AsrielFightConvoCounter global.flag[501]
 #macro FL_ButItRefused global.flag[502]
 #macro FL_DreamedAsrielFight global.flag[503]
-// 504 - Unused
+#macro FL_AsrielTurnCounter global.flag[504]
 #macro FL_SavedUndyneLostSoul global.flag[505]
 #macro FL_SavedAlphysLostSoul global.flag[506]
 #macro FL_SavedPapyrusLostSoul global.flag[507]
@@ -415,7 +420,7 @@ enum OSFlavors
 #macro FL_ToggleFinalBeam global.flag[509]
 #macro FL_PlotOver global.flag[510] // TODO: Look into this !!!
 #macro FL_AsrielConvoCounter global.flag[511]
-#macro FL_FinalTorielChoice global.flag[512] // TODO: make this choice !!
+#macro FL_FinalTorielChoice global.flag[512]
 #endregion
 
 #region Macros
@@ -457,7 +462,10 @@ enum Choices
 	Burger = 2,
 	
 	RememberedName = 1,
-	DidntRememberName = 2
+	DidntRememberName = 2,
+	
+	Stayed = 0,
+	Left = 1,
 }
 
 enum Direction

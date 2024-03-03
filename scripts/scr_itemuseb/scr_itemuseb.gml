@@ -653,7 +653,7 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        break
 	    case 55:
 	        if (FL_DreamedAsrielFight == 1)
-	            global.msg[0] = scr_gettext("item_use_55_short")
+	            global.msg[0] = scr_gettext("item_use_55_short") //* The dream came true!
 	        FL_DreamedAsrielFight = 1
 	        instance_create(0, 0, obj_foodsound)
 	        scr_recoitem(17)

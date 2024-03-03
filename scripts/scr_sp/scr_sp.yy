@@ -5,7 +5,7 @@
   "isCompatibility": true,
   "isDnD": false,
   "parent": {
-    "name": "Battle",
-    "path": "folders/Scripts/Battle.yy",
+    "name": "Muffet",
+    "path": "folders/Scripts/Battle/Muffet.yy",
   },
 }

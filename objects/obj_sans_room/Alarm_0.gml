@@ -31,7 +31,7 @@ if (room == room_tundra8)
     global.msc = 235
 if (room == room_tundra9)
 {
-    if (global.flag[58] == 0)
+    if (FL_HarderPuzzleChoice == Choices.JuniorJumble)
     {
         global.msg[0] = scr_gettext("obj_sans_room_160")
         global.msg[1] = scr_gettext("obj_sans_room_161")

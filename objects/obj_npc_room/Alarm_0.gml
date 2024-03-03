@@ -444,9 +444,9 @@ if (room == room_water_temvillage)
     global.msg[0] = scr_gettext("obj_npc_room_817")
 if (room == room_water_trashzone1)
 {
-    if (global.flag[296] == 0)
+    if (FL_DogShrineTrashChecked == 0)
         global.msc = 952
-    if (global.flag[296] >= 1)
+    if (FL_DogShrineTrashChecked >= 1)
         global.msc = 960
 }
 mydialoguer = instance_create(0, 0, obj_dialoguer)

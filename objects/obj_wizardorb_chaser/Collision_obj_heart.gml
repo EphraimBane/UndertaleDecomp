@@ -9,10 +9,10 @@ if (heal == 1)
         if (global.hp > global.maxhp)
             global.hp = global.maxhp
     }
-    if (global.flag[393] != 0)
+    if (FL_UnusedMadjickSoundHandle != 0)
     {
-        caster_free(global.flag[393])
-        global.flag[393] = 0
+        caster_free(FL_UnusedMadjickSoundHandle)
+        FL_UnusedMadjickSoundHandle = 0
     }
     caster_resume(all)
     global.turntimer = -1

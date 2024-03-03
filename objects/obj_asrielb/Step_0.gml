@@ -169,8 +169,8 @@ if (global.mnfight == 2)
                 }
             }
             turns += 1
-            if (global.flag[504] < turns)
-                global.flag[504] = turns
+            if (FL_AsrielTurnCounter < turns)
+                FL_AsrielTurnCounter = turns
         }
         if (turns == 0 || turns == 4)
             global.msg[0] = scr_gettext("obj_asrielb_541")

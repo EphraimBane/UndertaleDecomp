@@ -1346,7 +1346,7 @@ function scr_battlegroup()
 	        global.monstertype[2] = 0
 	        if (!caster_is_playing(global.batmusic))
 	        {
-	            if (global.flag[501] == 0)
+	            if (FL_AsrielFightConvoCounter == 0)
 	                global.batmusic = caster_load("music/xpart.ogg")
 	            else
 	                global.batmusic = caster_load("music/xpart_2.ogg")
@@ -1367,7 +1367,7 @@ function scr_battlegroup()
 	        global.monstertype[2] = 0
 	        if (!caster_is_playing(global.batmusic))
 	        {
-	            if (global.flag[501] == 0)
+	            if (FL_AsrielFightConvoCounter == 0)
 	                global.batmusic = caster_load("music/xpart.ogg")
 	            else
 	                global.batmusic = caster_load("music/xpart_2.ogg")
@@ -1389,7 +1389,7 @@ function scr_battlegroup()
 	        global.monstertype[2] = 0
 	        if (!caster_is_playing(global.batmusic))
 	        {
-	            if (global.flag[501] == 0)
+	            if (FL_AsrielFightConvoCounter == 0)
 	                global.batmusic = caster_load("music/xpart.ogg")
 	            else
 	                global.batmusic = caster_load("music/xpart_2.ogg")
@@ -1410,7 +1410,7 @@ function scr_battlegroup()
 	        global.monstertype[2] = 0
 	        if (!caster_is_playing(global.batmusic))
 	        {
-	            if (global.flag[501] == 0)
+	            if (FL_AsrielFightConvoCounter == 0)
 	                global.batmusic = caster_load("music/xpart.ogg")
 	            else
 	                global.batmusic = caster_load("music/xpart_2.ogg")
@@ -1850,11 +1850,11 @@ function scr_battlegroup()
 	        global.monstertype[0] = 100
 	        global.monstertype[1] = 0
 	        global.monstertype[2] = 0
-	        FL_InBattle = 1
-	        FL_FightingAsriel = 1
+	        FL_InBattle = true
+	        FL_FightingAsriel = true
 	        if (!caster_is_playing(global.batmusic))
 	        {
-	            if (global.flag[501] == 0)
+	            if (FL_AsrielFightConvoCounter == 0)
 	                global.batmusic = caster_load("music/a2.ogg")
 	            else
 	                global.batmusic = caster_load("music/xpart_2.ogg")
@@ -1864,11 +1864,11 @@ function scr_battlegroup()
 	        global.battlelv = 0
 	        global.actfirst = 0
 	        global.extraintro = 0
-	        global.msg[0] = scr_gettext("scr_battlegroup_1787")
-	        if (global.flag[501] == 2)
-	            global.msg[0] = scr_gettext("scr_battlegroup_1789")
-	        if (global.flag[501] == 3)
-	            global.msg[0] = scr_gettext("scr_battlegroup_1791")
+	        global.msg[0] = scr_gettext("scr_battlegroup_1787") //* ASRIEL blocks the way!
+	        if (FL_AsrielFightConvoCounter == 2)
+	            global.msg[0] = scr_gettext("scr_battlegroup_1789") //* ASRIEL's SOUL was awakened&  by the power of your&  friends!
+	        if (FL_AsrielFightConvoCounter == 3)
+	            global.msg[0] = scr_gettext("scr_battlegroup_1791") //* It's time to say goodbye.
 	        global.border = 0
 	        SCR_BORDERSETUP()
 	        global.monsterinstance[0] = instance_create(320, 48, obj_asrielfinal)
