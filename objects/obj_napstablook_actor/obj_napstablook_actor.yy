@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Napstablook",
-    "path": "folders/Objects/Battle/Napstablook.yy",
+    "name": "Actor",
+    "path": "folders/Objects/Actor.yy",
   },
   "parentObjectId": {
     "name": "obj_readablesolid",

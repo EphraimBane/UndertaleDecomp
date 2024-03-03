@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Init",
-    "path": "folders/Scripts/Deprecated Functioned/Init.yy",
+    "path": "folders/Scripts/Deprecated Functions/Init.yy",
   },
 }
