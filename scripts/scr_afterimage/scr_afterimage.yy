@@ -5,7 +5,7 @@
   "isCompatibility": true,
   "isDnD": false,
   "parent": {
-    "name": "Unsure",
-    "path": "folders/Scripts/Unsure.yy",
+    "name": "Effect",
+    "path": "folders/Scripts/Effect.yy",
   },
 }
