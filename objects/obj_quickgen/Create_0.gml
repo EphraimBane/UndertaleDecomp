@@ -1,5 +1,5 @@
 siner = 0
-if (FL_QuickBattle == 1)
+if (FL_QuickBattleType == QuickBattleType.UndyneSpear)
 {
     firingspeed = 3
     alarm[0] = 1
@@ -7,7 +7,7 @@ if (FL_QuickBattle == 1)
     siner = 0
     global.turntimer = 45
 }
-if (FL_QuickBattle == 2 || FL_QuickBattle == 3)
+if (FL_QuickBattleType == QuickBattleType.Laser1 || FL_QuickBattleType == QuickBattleType.Laser2)
 {
     global.turntimer = 55
     for (i = 0; i < 3; i += 1)

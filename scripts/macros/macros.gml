@@ -116,7 +116,7 @@ enum OSFlavors
 #macro FL_ShyrenStatus global.flag[81]
 #macro FL_PapyrusSinkEventOccured global.flag[82]
 #macro FL_GotCouchGold global.flag[83]
-// global.flag[84] IDK what this does!
+#macro FL_WaterfallMushroomStatus global.flag[84] // This is unused
 #macro FL_HaveUmbrella global.flag[85]
 #macro FL_MusicStatueOn global.flag[86]
 // 87 Unused
@@ -289,7 +289,7 @@ enum OSFlavors
 #macro FL_DisableAlphysCalls global.flag[367]
 #macro FL_DisableAlphysStatuses global.flag[368]
 #macro FL_AlphysStatusConvoCounter global.flag[369]
-#macro FL_QuickBattle global.flag[370] // TODO: this isn't a bool
+#macro FL_QuickBattleType global.flag[370]
 #macro FL_Laser1Off global.flag[371]
 #macro FL_Laser2On global.flag[372]
 #macro FL_Laser2Off global.flag[373]
@@ -317,7 +317,7 @@ enum OSFlavors
 #macro FL_DefusedBombsCounter global.flag[395]
 #macro FL_FoughtMuffet global.flag[396] // TODO: This isn't a bool look into this
 #macro FL_KilledMuffet global.flag[397]
-#macro FL_CurrentElevatorFloor global.flag[398] // TODO: look into this (?)
+#macro FL_CurrentElevatorFloor global.flag[398]
 #macro FL_CompletedShootPuzzle3 global.flag[399]
 #macro FL_CompletedShootPuzzle4 global.flag[400]
 #macro FL_CalledPapyrusWithRoyalGuards global.flag[401]
@@ -806,5 +806,21 @@ enum HeartTransitionType
 {
 	Normal,
 	QuickBattle
+}
+enum QuickBattleType
+{
+	None,
+	UndyneSpear,
+	Laser1,
+	Laser2
+}
+enum CurrentElevatorFloor
+{
+	L1,
+	R1,
+	R2,
+	L2,
+	L3,
+	R3
 }
 #endregion

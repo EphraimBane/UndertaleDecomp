@@ -2425,73 +2425,73 @@ function SCR_TEXT()
 	        global.msg[0] = scr_gettext("SCR_TEXT_2502")
 	        break
 	    case 580:
-	        if (global.flag[84] == 4)
-	            global.msg[0] = scr_gettext("SCR_TEXT_2506")
-	        if (global.flag[84] == 5)
-	            global.msg[0] = scr_gettext("SCR_TEXT_2507")
-	        if (global.flag[84] < 2)
+	        if (FL_WaterfallMushroomStatus == 4)
+	            global.msg[0] = scr_gettext("SCR_TEXT_2506") //* My mind is running wild^1!&* I haven't felt like this&  in a long time.../%%
+	        if (FL_WaterfallMushroomStatus == 5)
+	            global.msg[0] = scr_gettext("SCR_TEXT_2507") //* Please leave./%%
+	        if (FL_WaterfallMushroomStatus < 2)
 	        {
-	            global.msg[0] = scr_gettext("SCR_TEXT_2510")
-	            global.msg[1] = scr_gettext("SCR_TEXT_2511")
-	            global.msg[2] = scr_gettext("SCR_TEXT_2512")
-	            global.msg[3] = scr_gettext("SCR_TEXT_2513")
-	            global.msg[4] = scr_gettext("SCR_TEXT_2514")
+	            global.msg[0] = scr_gettext("SCR_TEXT_2510") //* You..^1.&* You came from outside^1,&  didn't you?/
+	            global.msg[1] = scr_gettext("SCR_TEXT_2511") //* People like you are so&  rare.../
+	            global.msg[2] = scr_gettext("SCR_TEXT_2512") //* Please^1!* Stranger!/
+	            global.msg[3] = scr_gettext("SCR_TEXT_2513") //* Tell me about outside...?& &         Yes         No\\C
+	            global.msg[4] = scr_gettext("SCR_TEXT_2514") // 
 	        }
-	        if (global.flag[84] == 2)
-	            global.msg[0] = scr_gettext("SCR_TEXT_2518")
-	        if (global.flag[84] == 3)
+	        if (FL_WaterfallMushroomStatus == 2)
+	            global.msg[0] = scr_gettext("SCR_TEXT_2518") //* Well^1, what are you&  waiting for?/%%
+	        if (FL_WaterfallMushroomStatus == 3)
 	        {
-	            global.msg[0] = scr_gettext("SCR_TEXT_2522")
-	            global.msg[1] = scr_gettext("SCR_TEXT_2523")
-	            global.msg[2] = scr_gettext("SCR_TEXT_2524")
+	            global.msg[0] = scr_gettext("SCR_TEXT_2522") //* Oh^1!&* You're back!/
+	            global.msg[1] = scr_gettext("SCR_TEXT_2523") //* How's the room?& &         Different   Same\\C
+	            global.msg[2] = scr_gettext("SCR_TEXT_2524") // 
 	        }
 	        break
 	    case 581:
-	        if (global.flag[84] < 3)
+	        if (FL_WaterfallMushroomStatus < 3)
 	        {
 	            if (global.choice == 0)
 	            {
-	                global.msg[0] = scr_gettext("SCR_TEXT_2535")
-	                global.msg[1] = scr_gettext("SCR_TEXT_2536")
-	                global.msg[2] = scr_gettext("SCR_TEXT_2537")
-	                global.msg[3] = scr_gettext("SCR_TEXT_2538")
-	                global.msg[4] = scr_gettext("SCR_TEXT_2539")
-	                global.msg[5] = scr_gettext("SCR_TEXT_2540")
-	                global.msg[6] = scr_gettext("SCR_TEXT_2541")
-	                global.msg[7] = scr_gettext("SCR_TEXT_2542")
-	                global.msg[8] = scr_gettext("SCR_TEXT_2543")
-	                global.msg[9] = scr_gettext("SCR_TEXT_2544")
+	                global.msg[0] = scr_gettext("SCR_TEXT_2535") //* Huh^1?&* \"SURFACE\"^1?&* What do you mean?/
+	                global.msg[1] = scr_gettext("SCR_TEXT_2536") //* I just meant outside this&  room./
+	                global.msg[2] = scr_gettext("SCR_TEXT_2537") //* If you haven't noticed^1, my&  mycelium have bound me&  to the ground./
+	                global.msg[3] = scr_gettext("SCR_TEXT_2538") //* Please^1!&* Stranger!/
+	                global.msg[4] = scr_gettext("SCR_TEXT_2539") //* I'll make this simple./
+	                global.msg[5] = scr_gettext("SCR_TEXT_2540") //* I've spent my whole life&  in the same spot^1,&  in the same room./
+	                global.msg[6] = scr_gettext("SCR_TEXT_2541") //* But I've long wondered&  what lies inside the&  room to the right./
+	                global.msg[7] = scr_gettext("SCR_TEXT_2542") //* Long I've fantasized&  about entering^1, and&  changing my scenery.../
+	                global.msg[8] = scr_gettext("SCR_TEXT_2543") //* No..^1.&* Changing my LIFE!/
+	                global.msg[9] = scr_gettext("SCR_TEXT_2544") //* Please^1.&* Go and tell me what's&  inside./%%
 	                if (doak == 0)
 	                {
-	                    if (global.flag[84] == 0)
-	                        global.flag[84] = 2
+	                    if (FL_WaterfallMushroomStatus == 0)
+	                        FL_WaterfallMushroomStatus = 2
 	                    doak = 1
 	                }
 	            }
 	            if (global.choice == 1)
-	                global.msg[0] = scr_gettext("SCR_TEXT_2553")
+	                global.msg[0] = scr_gettext("SCR_TEXT_2553") //* Is everyone out there&  like you^1?&* How terrible./%%
 	        }
 	        else
 	        {
 	            if (global.choice == 0)
 	            {
-	                global.msg[0] = scr_gettext("SCR_TEXT_2561")
-	                global.msg[1] = scr_gettext("SCR_TEXT_2562")
-	                global.flag[84] = 4
+	                global.msg[0] = scr_gettext("SCR_TEXT_2561") //* Oh^1, that's a relief^1!/
+	                global.msg[1] = scr_gettext("SCR_TEXT_2562") //* That's all I need to&  continue my fantasies^1.&* Thank you^1, stranger./%%
+	                FL_WaterfallMushroomStatus = 4
 	            }
 	            if (global.choice == 1)
 	            {
-	                global.msg[0] = scr_gettext("SCR_TEXT_2567")
-	                global.msg[1] = scr_gettext("SCR_TEXT_2568")
-	                global.msg[2] = scr_gettext("SCR_TEXT_2569")
-	                global.msg[3] = scr_gettext("SCR_TEXT_2570")
-	                global.msg[4] = scr_gettext("SCR_TEXT_2571")
-	                global.flag[84] = 5
+	                global.msg[0] = scr_gettext("SCR_TEXT_2567") //* So it's the same./
+	                global.msg[1] = scr_gettext("SCR_TEXT_2568") //* The same.../
+	                global.msg[2] = scr_gettext("SCR_TEXT_2569") //* Same.../
+	                global.msg[3] = scr_gettext("SCR_TEXT_2570") //* .../
+	                global.msg[4] = scr_gettext("SCR_TEXT_2571") //* OK./%%
+	                FL_WaterfallMushroomStatus = 5
 	            }
 	        }
 	        break
 	    case 583:
-	        if (FL_HaveUmbrella == 0)
+	        if (FL_HaveUmbrella == false)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_2580")
 	            global.msg[1] = scr_gettext("SCR_TEXT_2581")
@@ -2505,7 +2505,7 @@ function SCR_TEXT()
 	    case 584:
 	        if (doak == 0)
 	        {
-	            if (FL_HaveUmbrella == 0)
+	            if (FL_HaveUmbrella == false)
 	            {
 	                if (global.choice == 0)
 	                {

@@ -23,35 +23,35 @@ if (con == 2 && instance_exists(OBJ_WRITER) == 0)
     ossafe_fill_rectangle((__view_get(VIEW_PROP_CAM_X, view_current) + 19), (__view_get(VIEW_PROP_CAM_Y, view_current) + 8), (__view_get(VIEW_PROP_CAM_X, view_current) + 301), (__view_get(VIEW_PROP_CAM_Y, view_current) + 77))
     draw_set_color(c_white)
     scr_setfont(fnt_maintext)
-    if (FL_CurrentElevatorFloor != 0)
+    if (FL_CurrentElevatorFloor != CurrentElevatorFloor.L1)
         draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 50), (__view_get(VIEW_PROP_CAM_Y, 0) + 15), string_hash_to_newline(scr_gettext("elevator_l1f")))
     else
         draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 50), (__view_get(VIEW_PROP_CAM_Y, 0) + 15), string_hash_to_newline(scr_gettext("elevator_cancel")))
-    if (FL_CurrentElevatorFloor != 1)
+    if (FL_CurrentElevatorFloor != CurrentElevatorFloor.R1)
         draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 160), (__view_get(VIEW_PROP_CAM_Y, 0) + 15), string_hash_to_newline(scr_gettext("elevator_r1f")))
     else
         draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 160), (__view_get(VIEW_PROP_CAM_Y, 0) + 15), string_hash_to_newline(scr_gettext("elevator_cancel")))
-    if (FL_CurrentElevatorFloor != 2)
+    if (FL_CurrentElevatorFloor != CurrentElevatorFloor.R2)
         draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 160), (__view_get(VIEW_PROP_CAM_Y, 0) + 35), string_hash_to_newline(scr_gettext("elevator_r2f")))
     else
         draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 160), (__view_get(VIEW_PROP_CAM_Y, 0) + 35), string_hash_to_newline(scr_gettext("elevator_cancel")))
     if (trigger > 0)
     {
-        if (FL_CurrentElevatorFloor != 3)
+        if (FL_CurrentElevatorFloor != CurrentElevatorFloor.L2)
             draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 50), (__view_get(VIEW_PROP_CAM_Y, 0) + 35), string_hash_to_newline(scr_gettext("elevator_l2f")))
         else
             draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 50), (__view_get(VIEW_PROP_CAM_Y, 0) + 35), string_hash_to_newline(scr_gettext("elevator_cancel")))
     }
     if (trigger > 0)
     {
-        if (FL_CurrentElevatorFloor != 4)
+        if (FL_CurrentElevatorFloor != CurrentElevatorFloor.L3)
             draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 50), (__view_get(VIEW_PROP_CAM_Y, 0) + 55), string_hash_to_newline(scr_gettext("elevator_l3f")))
         else
             draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 50), (__view_get(VIEW_PROP_CAM_Y, 0) + 55), string_hash_to_newline(scr_gettext("elevator_cancel")))
     }
     if (trigger > 1)
     {
-        if (FL_CurrentElevatorFloor != 5)
+        if (FL_CurrentElevatorFloor != CurrentElevatorFloor.R3)
             draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 160), (__view_get(VIEW_PROP_CAM_Y, 0) + 55), string_hash_to_newline(scr_gettext("elevator_r3f")))
         else
             draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 160), (__view_get(VIEW_PROP_CAM_Y, 0) + 55), string_hash_to_newline(scr_gettext("elevator_cancel")))
@@ -117,43 +117,43 @@ if (con == 2 && instance_exists(OBJ_WRITER) == 0)
             con = 5
             if (heartx == 0 && hearty == 0)
             {
-                if (FL_CurrentElevatorFloor != 0)
-                    FL_CurrentElevatorFloor = 0
+                if (FL_CurrentElevatorFloor != CurrentElevatorFloor.L1)
+                    FL_CurrentElevatorFloor = CurrentElevatorFloor.L1
                 else
                     con = 15
             }
             if (heartx == 1 && hearty == 0)
             {
-                if (FL_CurrentElevatorFloor != 1)
-                    FL_CurrentElevatorFloor = 1
+                if (FL_CurrentElevatorFloor != CurrentElevatorFloor.R1)
+                    FL_CurrentElevatorFloor = CurrentElevatorFloor.R1
                 else
                     con = 15
             }
             if (heartx == 1 && hearty == 1)
             {
-                if (FL_CurrentElevatorFloor != 2)
-                    FL_CurrentElevatorFloor = 2
+                if (FL_CurrentElevatorFloor != CurrentElevatorFloor.R2)
+                    FL_CurrentElevatorFloor = CurrentElevatorFloor.R2
                 else
                     con = 15
             }
             if (heartx == 0 && hearty == 1)
             {
-                if (FL_CurrentElevatorFloor != 3)
-                    FL_CurrentElevatorFloor = 3
+                if (FL_CurrentElevatorFloor != CurrentElevatorFloor.L2)
+                    FL_CurrentElevatorFloor = CurrentElevatorFloor.L2
                 else
                     con = 15
             }
             if (heartx == 0 && hearty == 2)
             {
-                if (FL_CurrentElevatorFloor != 4)
-                    FL_CurrentElevatorFloor = 4
+                if (FL_CurrentElevatorFloor != CurrentElevatorFloor.L3)
+                    FL_CurrentElevatorFloor = CurrentElevatorFloor.L3
                 else
                     con = 15
             }
             if (heartx == 1 && hearty == 2)
             {
-                if (FL_CurrentElevatorFloor != 5)
-                    FL_CurrentElevatorFloor = 5
+                if (FL_CurrentElevatorFloor != CurrentElevatorFloor.R3)
+                    FL_CurrentElevatorFloor = CurrentElevatorFloor.R3
                 else
                     con = 15
             }
