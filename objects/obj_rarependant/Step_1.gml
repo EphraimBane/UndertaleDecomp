@@ -44,7 +44,7 @@ if (con == 3)
 if (con == 5)
 {
     res = floor(random(5))
-    scr_itemget((29 + res))
+    scr_itemget((Items.DogResidue29 + res))
     global.interact = 0
     caster_stop(dogsong)
     caster_set_volume(global.currentsong, 0)

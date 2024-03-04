@@ -112,7 +112,7 @@ if (global.myfight == 2)
 }
 if (global.myfight == 4)
 {
-    if (global.mercyuse == 0)
+    if (global.mercyuse == false)
         scr_mercystandard()
 }
 if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
@@ -165,7 +165,7 @@ if (con == 24 && instance_exists(OBJ_WRITER) == false)
 }
 if (con == 26)
 {
-    FL_DisableRandomEncounters = 1
+    FL_DisableRandomEncounters = true
     caster_play(explode, 1, 1)
     if (scr_murderlv() >= 15)
     {

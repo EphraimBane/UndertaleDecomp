@@ -15,7 +15,7 @@ if (global.encounter > steps)
                 global.battlegroup = 78
             if (battlegroup < 6)
                 global.battlegroup = 77
-            if (FL_DisableRandomEncounters == 1 || FL_TruePacifist == true)
+            if (FL_DisableRandomEncounters == true || FL_TruePacifist == true)
                 instance_destroy()
             if (FL_HotlandBattleProgressCounter == 0)
                 global.battlegroup = 51

@@ -41,7 +41,7 @@ if (FL_TruePacifist == false)
         global.msg[1] = scr_gettext("obj_undyne_friendc_113")
         if (FL_UndynesLetterStatus == 1 || FL_UndynesLetterStatus == 2)
         {
-            scr_itemget(57)
+            scr_itemget(Items.UndynesLetterEX)
             if (noroom == 1)
             {
                 global.faceemotion = 1
@@ -67,7 +67,7 @@ if (FL_TruePacifist == false)
     }
     if (FL_DatedAlphys == 8)
     {
-        scr_itemget(56)
+        scr_itemget(Items.UndynesLetter)
         if (noroom == 1)
         {
             global.faceemotion = 9
@@ -93,7 +93,7 @@ if (FL_TruePacifist == false)
             global.msg[13] = scr_gettext("obj_undyne_friendc_168")
             global.msg[14] = scr_gettext("obj_undyne_friendc_169")
             FL_DatedAlphys = 9
-            FL_DisableRandomEncounters = 1
+            FL_DisableRandomEncounters = true
         }
     }
 }

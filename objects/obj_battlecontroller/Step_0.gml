@@ -149,7 +149,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                             else
                             {
                                 var pad = " "
-                                for (var i = 0; i < 8; i++)
+                                for (var i = 0; i < InventorySize; i++)
                                 {
                                     var len = 9
                                     if ((i % 2) == 0)
@@ -230,7 +230,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                 {
                     OBJ_WRITER.halt = 3
                     global.mercyuse = global.bmenucoord[4]
-                    if (global.mercyuse == 1)
+                    if (global.mercyuse == true)
                     {
                         scr_runaway()
                         global.talked = 90

@@ -143,7 +143,7 @@ if (global.myfight == 2)
                 if (whatiheard == 3)
                 {
                     global.msc = 0
-                    scr_itemget(54)
+                    scr_itemget(Items.BadMemory)
                     if (noroom == 0)
                         global.msg[0] = scr_gettext("obj_memoryhead_472")
                     if (noroom == 1)
@@ -207,7 +207,7 @@ if (global.myfight == 2)
 }
 if (global.myfight == 4)
 {
-    if (global.mercyuse == 0)
+    if (global.mercyuse == false)
     {
         scr_mercystandard()
         if (mercy < 0)

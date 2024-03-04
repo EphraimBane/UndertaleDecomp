@@ -147,7 +147,7 @@ enum OSFlavors
 #macro FL_GotTrashcanGlamburger global.flag[112]
 #macro FL_GotTrashcanGold global.flag[113]
 #macro FL_GotDagger global.flag[114]
-#macro FL_GotLocked global.flag[115]
+#macro FL_GotLocket global.flag[115]
 // 116 - 129 Unused
 #macro FL_SparedFroggit global.flag[130]
 #macro FL_SparedWhimsun global.flag[131]

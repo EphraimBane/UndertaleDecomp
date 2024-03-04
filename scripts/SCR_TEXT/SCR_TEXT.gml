@@ -654,7 +654,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    scr_itemget(17)
+	                    scr_itemget(Items.NiceCream)
 	                    if (noroom == 0)
 	                    {
 	                        global.gold -= 15
@@ -741,7 +741,7 @@ function SCR_TEXT()
 	                    if (doak == 0)
 	                    {
 	                        doak = 1
-	                        scr_itemget(17)
+	                        scr_itemget(Items.NiceCream)
 	                        if (noroom == 0)
 	                        {
 	                            if (FL_HaveUmbrella == 0)
@@ -776,7 +776,7 @@ function SCR_TEXT()
 	        {
 	            rem = 0
 	            g = 0
-	            for (n = 0; n < 8; n += 1)
+	            for (n = 0; n < InventorySize; n += 1)
 	            {
 	                if (g == 1)
 	                {
@@ -790,7 +790,7 @@ function SCR_TEXT()
 	                    g = 1
 	                }
 	            }
-	            scr_itemget(17)
+	            scr_itemget(Items.NiceCream)
 	            global.msg[0] = scr_gettext("SCR_TEXT_803")
 	        }
 	        if (global.choice == 1)
@@ -1008,7 +1008,7 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                scr_itemget(23)
+	                scr_itemget(Items.AbandonedQuiche)
 	            }
 	            if (noroom == 0)
 	            {
@@ -1041,7 +1041,7 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                scr_itemget(24)
+	                scr_itemget(Items.OldTutu)
 	            }
 	            if (noroom == 0)
 	            {
@@ -1080,7 +1080,7 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                scr_itemget(26)
+	                scr_itemget(Items.PunchCard)
 	            }
 	            if (noroom == 0)
 	            {
@@ -1118,7 +1118,7 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                scr_itemget(25)
+	                scr_itemget(Items.BalletShoes)
 	            }
 	            if (noroom == 0)
 	            {
@@ -1205,12 +1205,12 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                scr_itemget(36)
+	                scr_itemget(Items.InstantNoodles)
 	            }
 	            if (noroom == 0)
 	            {
 	                global.msg[0] = scr_gettext("SCR_TEXT_1258")
-	                FL_GotInstantNoodles = 1
+	                FL_GotInstantNoodles = true
 	            }
 	            if (noroom == 1)
 	                global.msg[0] = scr_gettext("SCR_TEXT_1261")
@@ -1219,7 +1219,7 @@ function SCR_TEXT()
 	            global.msg[0] = scr_gettext("SCR_TEXT_1265")
 	        break
 	    case 260:
-	        if (FL_GotFryingPan == 0)
+	        if (FL_GotFryingPan == false)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_1273")
 	            global.msg[1] = scr_gettext("SCR_TEXT_1274")
@@ -1235,12 +1235,12 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                scr_itemget(47)
+	                scr_itemget(Items.BurntPan)
 	            }
 	            if (noroom == 0)
 	            {
 	                global.msg[0] = scr_gettext("SCR_TEXT_1294")
-	                FL_GotFryingPan = 1
+	                FL_GotFryingPan = true
 	            }
 	            if (noroom == 1)
 	                global.msg[0] = scr_gettext("SCR_TEXT_1297")
@@ -1265,12 +1265,12 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                scr_itemget(46)
+	                scr_itemget(Items.StainedApron)
 	            }
 	            if (noroom == 0)
 	            {
 	                global.msg[0] = scr_gettext("SCR_TEXT_1329")
-	                FL_GotApron = 1
+	                FL_GotApron = true
 	            }
 	            if (noroom == 1)
 	                global.msg[0] = scr_gettext("SCR_TEXT_1332")
@@ -1279,7 +1279,7 @@ function SCR_TEXT()
 	            global.msg[0] = scr_gettext("SCR_TEXT_1336")
 	        break
 	    case 264:
-	        if (FL_GotTrashcanGlamburger == 0)
+	        if (FL_GotTrashcanGlamburger == false)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_1343")
 	            global.msg[1] = scr_gettext("SCR_TEXT_1344")
@@ -1295,12 +1295,12 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                scr_itemget(40)
+	                scr_itemget(Items.Glamburger)
 	            }
 	            if (noroom == 0)
 	            {
 	                global.msg[0] = scr_gettext("SCR_TEXT_1363")
-	                FL_GotTrashcanGlamburger = 1
+	                FL_GotTrashcanGlamburger = true
 	            }
 	            if (noroom == 1)
 	                global.msg[0] = scr_gettext("SCR_TEXT_1366")
@@ -1309,7 +1309,7 @@ function SCR_TEXT()
 	            global.msg[0] = scr_gettext("SCR_TEXT_1370")
 	        break
 	    case 266:
-	        if (FL_GotTrashcanGold == 0)
+	        if (FL_GotTrashcanGold == false)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_1378")
 	            global.msg[1] = scr_gettext("SCR_TEXT_1379")
@@ -1321,7 +1321,7 @@ function SCR_TEXT()
 	    case 267:
 	        if (global.choice == 0)
 	        {
-	            FL_GotTrashcanGold = 1
+	            FL_GotTrashcanGold = true
 	            if (doak == 0)
 	                global.gold += 100
 	            doak = 1
@@ -1351,16 +1351,16 @@ function SCR_TEXT()
 	                noroom = -1
 	                doak = 1
 	                if (scr_murderlv() >= 16)
-	                    scr_itemget(52)
+	                    scr_itemget(Items.RealKnife)
 	                else
-	                    scr_itemget(51)
+	                    scr_itemget(Items.WornDagger)
 	            }
 	            if (noroom == 0)
 	            {
 	                global.msg[0] = scr_gettext("SCR_TEXT_1431")
 	                if (scr_murderlv() >= 16)
 	                    global.msg[0] = scr_gettext("SCR_TEXT_1432")
-	                FL_GotDagger = 1
+	                FL_GotDagger = true
 	            }
 	            if (noroom == 1)
 	                global.msg[0] = scr_gettext("SCR_TEXT_1435")
@@ -1369,7 +1369,7 @@ function SCR_TEXT()
 	            global.msg[0] = scr_gettext("SCR_TEXT_1439")
 	        break
 	    case 270:
-	        if (FL_GotLocked == 0)
+	        if (FL_GotLocket == false)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_1446")
 	            global.msg[1] = scr_gettext("SCR_TEXT_1447")
@@ -1386,16 +1386,16 @@ function SCR_TEXT()
 	                noroom = -1
 	                doak = 1
 	                if (scr_murderlv() < 16)
-	                    scr_itemget(50)
+	                    scr_itemget(Items.HeartLocket)
 	                else
-	                    scr_itemget(53)
+	                    scr_itemget(Items.TheLocket)
 	            }
 	            if (noroom == 0)
 	            {
 	                global.msg[0] = scr_gettext("SCR_TEXT_1470")
 	                if (scr_murderlv() >= 16)
 	                    global.msg[0] = scr_gettext("SCR_TEXT_1471")
-	                FL_GotLocked = 1
+	                FL_GotLocket = true
 	            }
 	            if (noroom == 1)
 	                global.msg[0] = scr_gettext("SCR_TEXT_1474")
@@ -1433,7 +1433,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    scr_itemget(17)
+	                    scr_itemget(Items.NiceCream)
 	                    if (noroom == 0)
 	                    {
 	                        global.gold -= 12
@@ -1539,7 +1539,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    scr_itemget(1)
+	                    scr_itemget(Items.MonsterCandy)
 	                    if (noroom == 0)
 	                        FL_RuinsCandyTaken += 1
 	                }
@@ -1596,7 +1596,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    scr_itemget(5)
+	                    scr_itemget(Items.RockCandy)
 	                }
 	            }
 	        }
@@ -1624,7 +1624,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    scr_itemget(7)
+	                    scr_itemget(Items.SpiderDonut)
 	                    if (noroom == 0)
 	                    {
 	                        global.gold -= 7
@@ -1659,7 +1659,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    scr_itemget(10)
+	                    scr_itemget(Items.SpiderCider)
 	                    if (noroom == 0)
 	                    {
 	                        global.gold -= 18
@@ -1682,9 +1682,9 @@ function SCR_TEXT()
 	    case 518:
 	        if (doak == 0)
 	        {
-	            scr_itemget(12)
+	            scr_itemget(Items.FadedRibbon)
 	            if (noroom == 0)
-	                FL_GotRibbon = 1
+	                FL_GotRibbon = true
 	            doak = 1
 	        }
 	        global.msg[0] = scr_gettext("SCR_TEXT_1771")
@@ -1747,9 +1747,9 @@ function SCR_TEXT()
 	    case 523:
 	        if (doak == 0)
 	        {
-	            scr_itemget(13)
+	            scr_itemget(Items.ToyKnife)
 	            if (noroom == 0)
-	                FL_GotToyKnife = 1
+	                FL_GotToyKnife = true
 	            doak = 1
 	        }
 	        global.msg[0] = scr_gettext("SCR_TEXT_1817")
@@ -1791,7 +1791,7 @@ function SCR_TEXT()
 	        {
 	            if (doak == 0)
 	            {
-	                scr_itemget(63)
+	                scr_itemget(Items.SnailPie)
 	                if (noroom == 0)
 	                    FL_GotBScotchPie = 2
 	                doak = 1
@@ -2612,7 +2612,7 @@ function SCR_TEXT()
 	            {
 	                noroom = 0
 	                doak = 1
-	                scr_itemget(35)
+	                scr_itemget(Items.AstronautFood)
 	                if (noroom == 0)
 	                    FL_GotSpacefood += 1
 	            }
@@ -3426,9 +3426,9 @@ function SCR_TEXT()
 	                {
 	                    doak = 1
 	                    if (FL_HotDogConvoCounter != 1)
-	                        scr_itemget(38)
+	                        scr_itemget(Items.HotDog)
 	                    if (FL_HotDogConvoCounter == 1)
-	                        scr_itemget(39)
+	                        scr_itemget(Items.HotCat)
 	                    if (noroom == 0)
 	                    {
 	                        global.gold -= 30
@@ -4076,7 +4076,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    scr_itemget(10)
+	                    scr_itemget(Items.Unisicle)
 	                    if (noroom == 0)
 	                    {
 	                        global.gold -= 9999
@@ -4112,7 +4112,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    scr_itemget(7)
+	                    scr_itemget(Items.SpiderDonut)
 	                    if (noroom == 0)
 	                    {
 	                        global.gold -= 9999
@@ -4819,7 +4819,7 @@ function SCR_TEXT()
 	                if (doak == 0)
 	                {
 	                    doak = 1
-	                    scr_itemget(58)
+	                    scr_itemget(Items.PopatoChisps)
 	                    if (noroom == 0)
 	                    {
 	                        global.gold -= 25
@@ -5109,11 +5109,11 @@ function SCR_TEXT()
 	    case 861:
 	        if (global.choice == 0)
 	        {
-	            scr_itemremove(41)
+	            scr_itemremove(Items.SeaTea)
 	            if (removed == true)
 	            {
 	                global.gold += 99
-	                FL_DeliveredSeaTea = 1
+	                FL_DeliveredSeaTea = true
 	                global.msg[0] = scr_gettext("SCR_TEXT_5598")
 	                global.msg[1] = scr_gettext("SCR_TEXT_5599")
 	                global.msg[2] = scr_gettext("SCR_TEXT_5600")
@@ -5126,7 +5126,7 @@ function SCR_TEXT()
 	        break
 	    case 862:
 	        global.msg[0] = scr_gettext("SCR_TEXT_5614")
-	        if (FL_DeliveredCinnabun == 0)
+	        if (FL_DeliveredCinnabun == false)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_5617")
 	            global.msg[1] = scr_gettext("SCR_TEXT_5618")
@@ -5144,7 +5144,7 @@ function SCR_TEXT()
 	    case 863:
 	        if (global.choice == 0)
 	        {
-	            scr_itemremove(21)
+	            scr_itemremove(Items.CinnamonBun)
 	            if (removed == true)
 	            {
 	                global.gold += 99

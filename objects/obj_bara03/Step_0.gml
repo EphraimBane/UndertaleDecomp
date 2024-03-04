@@ -183,7 +183,7 @@ if (alphaup == 1 && image_alpha < 1)
     image_alpha += 0.05
 if (global.myfight == 4)
 {
-    if (global.mercyuse == 0)
+    if (global.mercyuse == false)
     {
         scr_mercystandard()
         if (mercy < 0)

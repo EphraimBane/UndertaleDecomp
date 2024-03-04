@@ -48,7 +48,7 @@ if (global.mnfight == 0)
                 var tempcheck = global.bmenuno
                 if (global.bmenucoord[3] == 0)
                 {
-                    if (global.item[1] != 0)
+                    if (global.item[1] != Items.Null)
                         global.bmenucoord[3] = 1
                     mv = 1
                 }
