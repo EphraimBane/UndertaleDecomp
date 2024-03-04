@@ -16,4 +16,5 @@ function set_default_decomp_vars()
 	global.decomp_vars.RemoveBattleIconRandomness = false;
 	global.decomp_vars.BattleIconRandomOverride = 17;
 	global.decomp_vars.FixInputLatency = true;
+	global.decomp_vars.WristProtector = true;
 }

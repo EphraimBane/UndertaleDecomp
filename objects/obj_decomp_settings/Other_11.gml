@@ -3,6 +3,7 @@ array_push(categories, new menu_category("General", "General decomp settings",
 	[
 		new menu_checkbox_option("Vanilla Mode", "VanillaMode", "Disables Everything if enabled", global.decomp_vars.VanillaMode, false),
 		new menu_checkbox_option("Enable Command Console", "DevConsoleEnabled", "Toggles the Command Console (bound to TAB)", global.decomp_vars.DevConsoleEnabled, true),
+		new menu_checkbox_option("Wrist Protector", "WristProtector", "Hold C to skip text", global.decomp_vars.WristProtector, true),
 		new menu_checkbox_option("Enable PS4/Vita Dog Shrine", "EnablePSDogShrine", "Enables the the Playstation Dog Shrine", global.decomp_vars.EnablePSDogShrine, true),
 		new menu_checkbox_option("Enable Switch Dog Shrine", "EnableSwitchDogShrine", "Enables the Switch Mew Mew Fight", global.decomp_vars.EnableSwitchDogShrine, true),
 		new menu_checkbox_option("PS4 Trophies", "EnablePS4Trophies", "Enables PS4 style trophies on all platforms", global.decomp_vars.EnablePS4Trophies, false),

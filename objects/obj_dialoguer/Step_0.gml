@@ -1,6 +1,6 @@
 if (instance_exists(writer) == 0)
     instance_destroy()
-else if control_check_pressed(CancelButton)
+else if (control_check_pressed(CancelButton) || (global.decomp_vars.WristProtector && !global.decomp_vars.VanillaMode && control_check(MenuButton)))
 {
     if (writer.halt == false)
     {
