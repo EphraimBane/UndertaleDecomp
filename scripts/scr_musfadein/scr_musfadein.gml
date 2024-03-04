@@ -1,6 +1,6 @@
 /// @func	scr_musfadein(fade_speed)
-/// @desc	Overwrites the music fade in speed in object "obj_musfadein".
-/// @param	{real}	fade_speed
+/// @desc	Fades in music.
+/// @param	{real}	fade_speed	Fading speed of the music.
 function scr_musfadein(_fade_speed)
 {
 	g = instance_create(0, 0, obj_musfadein)
