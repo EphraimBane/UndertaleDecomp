@@ -1,3 +1,5 @@
+/// @func	scr_phonename()
+/// @desc	Gets phone name using ID
 function scr_phonename()
 {
 	for (i = 0; i < 8; i += 1)

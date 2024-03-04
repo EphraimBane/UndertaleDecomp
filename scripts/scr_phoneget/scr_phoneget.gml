@@ -1,4 +1,7 @@
-function scr_phoneget()
+/// @func	scr_phoneget(phone_id)
+/// @desc	Gets phone id
+/// @arg	{real}	phone_id	ID of the phone name to grab
+function scr_phoneget(_phone_id)
 {
 	i = 0
 	loop = 1
@@ -7,7 +10,7 @@ function scr_phoneget()
 	{
 	    if (global.phone[i] == 0)
 	    {
-	        global.phone[i] = argument0
+	        global.phone[i] = _phone_id
 	        break
 	    }
 	    else if (i == 8)
