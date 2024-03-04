@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_loadcredits",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Ending",
-    "path": "folders/Scripts/Ending.yy",
+  "$GMScript":"",
+  "%Name":"scr_loadcredits",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_loadcredits",
+  "parent":{
+    "name":"Ending",
+    "path":"folders/Scripts/Ending.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

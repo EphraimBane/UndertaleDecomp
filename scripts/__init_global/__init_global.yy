@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "__init_global",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Init",
-    "path": "folders/Scripts/Deprecated Functions/Init.yy",
+  "$GMScript":"",
+  "%Name":"__init_global",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"__init_global",
+  "parent":{
+    "name":"Init",
+    "path":"folders/Scripts/Deprecated Functions/Init.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "attention_hackerz_no_2",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Unused",
-    "path": "folders/Scripts/Unused.yy",
+  "$GMScript":"",
+  "%Name":"attention_hackerz_no_2",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"attention_hackerz_no_2",
+  "parent":{
+    "name":"Unused",
+    "path":"folders/Scripts/Unused.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

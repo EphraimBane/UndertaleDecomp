@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_sbo",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Sans",
-    "path": "folders/Scripts/Battle/Sans.yy",
+  "$GMScript":"",
+  "%Name":"scr_sbo",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_sbo",
+  "parent":{
+    "name":"Sans",
+    "path":"folders/Scripts/Battle/Sans.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

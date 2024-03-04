@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "__background_set_colour",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Background",
-    "path": "folders/Scripts/Deprecated Functions/Background.yy",
+  "$GMScript":"",
+  "%Name":"__background_set_colour",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"__background_set_colour",
+  "parent":{
+    "name":"Background",
+    "path":"folders/Scripts/Deprecated Functions/Background.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

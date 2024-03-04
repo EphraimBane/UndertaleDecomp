@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_floweybodysave",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Omega Flowey",
-    "path": "folders/Scripts/Battle/Omega Flowey.yy",
+  "$GMScript":"",
+  "%Name":"scr_floweybodysave",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_floweybodysave",
+  "parent":{
+    "name":"Omega Flowey",
+    "path":"folders/Scripts/Battle/Omega Flowey.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

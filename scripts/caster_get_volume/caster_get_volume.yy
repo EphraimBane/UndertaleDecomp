@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "caster_get_volume",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Audio",
-    "path": "folders/Scripts/Common/Audio.yy",
+  "$GMScript":"",
+  "%Name":"caster_get_volume",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"caster_get_volume",
+  "parent":{
+    "name":"Audio",
+    "path":"folders/Scripts/Common/Audio.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

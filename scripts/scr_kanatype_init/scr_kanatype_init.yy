@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_kanatype_init",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Text",
-    "path": "folders/Scripts/Text.yy",
+  "$GMScript":"",
+  "%Name":"scr_kanatype_init",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_kanatype_init",
+  "parent":{
+    "name":"Text",
+    "path":"folders/Scripts/Text.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_waver_height",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Effect",
-    "path": "folders/Scripts/Drawing/Effect.yy",
+  "$GMScript":"",
+  "%Name":"scr_waver_height",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_waver_height",
+  "parent":{
+    "name":"Effect",
+    "path":"folders/Scripts/Drawing/Effect.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

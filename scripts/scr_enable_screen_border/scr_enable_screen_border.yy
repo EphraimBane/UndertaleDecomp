@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_enable_screen_border",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Drawing",
-    "path": "folders/Scripts/Drawing.yy",
+  "$GMScript":"",
+  "%Name":"scr_enable_screen_border",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_enable_screen_border",
+  "parent":{
+    "name":"Drawing",
+    "path":"folders/Scripts/Drawing.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

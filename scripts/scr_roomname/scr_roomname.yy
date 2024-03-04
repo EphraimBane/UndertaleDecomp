@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_roomname",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Extension",
-    "path": "folders/Scripts/Common/Extension.yy",
+  "$GMScript":"",
+  "%Name":"scr_roomname",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_roomname",
+  "parent":{
+    "name":"Extension",
+    "path":"folders/Scripts/Common/Extension.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

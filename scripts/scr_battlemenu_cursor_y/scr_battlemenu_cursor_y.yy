@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_battlemenu_cursor_y",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Battle",
-    "path": "folders/Scripts/Battle.yy",
+  "$GMScript":"",
+  "%Name":"scr_battlemenu_cursor_y",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_battlemenu_cursor_y",
+  "parent":{
+    "name":"Battle",
+    "path":"folders/Scripts/Battle.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

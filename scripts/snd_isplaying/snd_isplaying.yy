@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "snd_isplaying",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Audio",
-    "path": "folders/Scripts/Common/Audio.yy",
+  "$GMScript":"",
+  "%Name":"snd_isplaying",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"snd_isplaying",
+  "parent":{
+    "name":"Audio",
+    "path":"folders/Scripts/Common/Audio.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

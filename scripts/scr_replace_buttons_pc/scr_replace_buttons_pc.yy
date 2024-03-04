@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_replace_buttons_pc",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Common",
-    "path": "folders/Scripts/Common.yy",
+  "$GMScript":"",
+  "%Name":"scr_replace_buttons_pc",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_replace_buttons_pc",
+  "parent":{
+    "name":"Common",
+    "path":"folders/Scripts/Common.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
