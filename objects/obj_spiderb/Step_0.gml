@@ -13,7 +13,7 @@ if (global.mnfight == 3)
         with (obj_purpleheart)
             instance_destroy()
     }
-    if (purpletime == 1 && instance_exists(obj_signspider) == 0)
+    if (purpletime == 1 && instance_exists(obj_signspider) == false)
     {
         o = instance_create(650, 230, obj_signspider)
         o.signno = turnamt
@@ -371,7 +371,7 @@ if (con == 96)
     instance_create(660, 310, obj_sadspider)
     con = 97
 }
-if (con == 97 && instance_exists(obj_sadspider) == 0)
+if (con == 97 && instance_exists(obj_sadspider) == false)
 {
     global.monster[myself] = false
     instance_destroy()

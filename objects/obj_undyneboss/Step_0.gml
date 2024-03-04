@@ -677,7 +677,7 @@ if (died == 1)
     global.mercy = 1
 if (died == 1 && con >= 53 && con < 60)
 {
-    if (caster_is_playing(deadmusic1) == 0 && caster_is_playing(deadmusic2) == 0)
+    if (caster_is_playing(deadmusic1) == false && caster_is_playing(deadmusic2) == false)
         caster_loop(deadmusic2, 1, 1)
 }
 if (shakify > 0)

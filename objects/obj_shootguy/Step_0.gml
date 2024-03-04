@@ -41,7 +41,7 @@ if (active == true && win == 0)
             buffer = 15
             alarm[3] = 1
         }
-        if (ammo == 0 && instance_exists(obj_shotguy) == 0 && buffer <= 0 && active == true)
+        if (ammo == 0 && instance_exists(obj_shotguy) == false && buffer <= 0 && active == true)
         {
             if instance_exists(obj_targetguy)
             {

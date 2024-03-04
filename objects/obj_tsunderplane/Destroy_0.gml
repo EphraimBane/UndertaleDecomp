@@ -13,7 +13,7 @@ if (killed == 1)
     global.areapop[global.area] -= 1
     if (global.areapop[global.area] < 0)
         global.areapop[global.area] = 0
-    FL_KilledLast = 1
+    FL_KilledLast = true
 }
 if (killed == 0)
 {
@@ -26,6 +26,6 @@ if (killed == 0)
     ddd = instance_create(x, y, obj_spared)
     ddd.image_speed = 0
     ddd.image_index = 1
-    FL_SparedLast = 1
+    FL_SparedLast = true
 }
 global.monster[myself] = false

@@ -7,7 +7,7 @@ if (y > global.idealborder[2] && obj_time.up)
 if (y < (global.idealborder[3] - 16) && obj_time.down)
     y += 4
 shot = 0
-if (instance_exists(obj_heartshot) == 0 || charge < 0)
+if (instance_exists(obj_heartshot) == false || charge < 0)
     shot = 1
 if (keyboard_check_pressed(ord("Z")) && shot == 1)
 {

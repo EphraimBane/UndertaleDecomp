@@ -24,7 +24,7 @@ if (global.invc <= 0)
     else
     {
         taken = 0
-        if (instance_exists(obj_mettheart_4) == 0)
+        if (instance_exists(obj_mettheart_4) == false)
         {
             if (global.hp >= 24 && taken == 0)
             {

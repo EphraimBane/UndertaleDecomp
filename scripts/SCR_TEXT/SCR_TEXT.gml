@@ -382,14 +382,14 @@ function SCR_TEXT()
 	        global.msg[6] = scr_gettext("SCR_TEXT_373")
 	        break
 	    case 212:
-	        if (FL_KilledLast == 1)
+	        if (FL_KilledLast == true)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_379")
 	            global.msg[1] = scr_gettext("SCR_TEXT_380")
 	        }
-	        if (FL_SparedLast == 1)
+	        if (FL_SparedLast == true)
 	            global.msg[0] = scr_gettext("SCR_TEXT_384")
-	        if (FL_EscapedLast == 1)
+	        if (FL_EscapedLast == true)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_388")
 	            global.msg[1] = scr_gettext("SCR_TEXT_389")
@@ -399,7 +399,7 @@ function SCR_TEXT()
 	            global.msg[5] = scr_gettext("SCR_TEXT_393")
 	            global.msg[6] = scr_gettext("SCR_TEXT_394")
 	        }
-	        if (FL_BoredLast == 1)
+	        if (FL_BoredLast == true)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_398")
 	            global.msg[1] = scr_gettext("SCR_TEXT_399")
@@ -1774,7 +1774,7 @@ function SCR_TEXT()
 	            global.msg[0] = scr_gettext("SCR_TEXT_1835")
 	        break
 	    case 526:
-	        if (FL_Hardmode == 0)
+	        if (FL_Hardmode == false)
 	        {
 	            if (doak == 0)
 	            {

@@ -29,7 +29,7 @@ if (conversation == 2 && instance_exists(obj_toroverworld4))
 }
 if (global.plot == 6 && conversation == 3)
 {
-    if (FL_SparedLast == 1 || FL_EscapedLast == 1 || FL_KilledLast == 1 || FL_BoredLast == 1)
+    if (FL_SparedLast == true || FL_EscapedLast == true || FL_KilledLast == true || FL_BoredLast == true)
     {
         global.interact = 1
         alarm[7] = 15

@@ -22,7 +22,7 @@ if (global.mnfight == 1)
 {
     if (talked == true)
     {
-        if (instance_exists(blconwd) == 0)
+        if (instance_exists(blconwd) == false)
             event_user(2)
     }
     if (talked == false)
@@ -242,7 +242,7 @@ if (global.myfight == 2)
                         global.msg[2] = scr_gettext("obj_asrielfinal_554")
                         global.msg[3] = scr_gettext("obj_asrielfinal_555")
                         global.msg[4] = scr_gettext("obj_asrielfinal_556")
-                        if (ossafe_file_exists("file0") == 0)
+                        if (ossafe_file_exists("file0") == false)
                         {
                             global.msg[2] = scr_gettext("obj_asrielfinal_559")
                             global.msg[3] = scr_gettext("obj_asrielfinal_560")

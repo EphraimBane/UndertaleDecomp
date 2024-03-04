@@ -62,7 +62,7 @@ if (ucon > 0)
     {
         gen = instance_create(x, y, obj_ultimagen)
         gen.type = u_gen
-        if (instance_exists(obj_ultimatarget) == 0)
+        if (instance_exists(obj_ultimatarget) == false)
             target = instance_create(obj_heart.x, obj_heart.y, obj_ultimatarget)
         ucon = 5
         alarm[10] = 140
@@ -83,9 +83,9 @@ if (ucon > 0)
         }
     }
 }
-if (instance_exists(obj_ultimabullet) == 0)
+if (instance_exists(obj_ultimabullet) == false)
 {
-    if (instance_exists(obj_ultimatarget) == 0)
+    if (instance_exists(obj_ultimatarget) == false)
     {
         with (obj_ultimatarget)
             instance_destroy()

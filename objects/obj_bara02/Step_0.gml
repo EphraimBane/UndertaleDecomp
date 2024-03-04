@@ -81,7 +81,7 @@ if (global.mnfight == 2)
     {
         pop = scr_monstersum()
         global.turntimer = 180
-        if (instance_exists(obj_carrotstargen) == 0)
+        if (instance_exists(obj_carrotstargen) == false)
         {
             if (whatiheard == 1 && con == 0 && pop > 1)
                 mycommand = 80

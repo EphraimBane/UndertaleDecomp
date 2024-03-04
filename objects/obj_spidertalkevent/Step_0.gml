@@ -215,9 +215,9 @@ if (con == 22)
         instance_destroy()
     with (ss4)
         instance_destroy()
-    if (FL_KilledLast == 1)
+    if (FL_KilledLast == true)
     {
-        FL_KilledMuffet = 1
+        FL_KilledMuffet = true
         with (muffet)
             instance_destroy()
         with (obj_highspider)

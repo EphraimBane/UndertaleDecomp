@@ -82,7 +82,7 @@ if (global.mnfight == 2)
     if (attacked == 0 && pop == 1)
     {
         global.turntimer = 180
-        if (instance_exists(obj_bara03) == 0)
+        if (instance_exists(obj_bara03) == false)
         {
             if (mycommand >= 0 && mycommand <= 50)
             {

@@ -6,6 +6,6 @@ if (outside == 0)
         global.mnfight = 1
     outside = 1
     instance_destroy()
-    FL_BoredLast = 1
+    FL_BoredLast = true
     FL_DummyStatus = 3
 }

@@ -57,7 +57,7 @@ if (bullettype == 6)
     iii = instance_create(x, y, blt_gravbullet)
     if instance_exists(iii)
     {
-        if (instance_exists(obj_parsnik) == 0)
+        if (instance_exists(obj_parsnik) == false)
         {
             if (num == 4 && specgreen == 1)
             {

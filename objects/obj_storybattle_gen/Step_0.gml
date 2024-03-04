@@ -13,7 +13,7 @@ if (global.turntimer < 2)
     room_goto(global.currentroom)
     global.invc = 0
 }
-if (global.turntimer < 14 && instance_exists(obj_unfader) == 0)
+if (global.turntimer < 14 && instance_exists(obj_unfader) == false)
 {
     yyy = instance_create(0, 0, obj_unfader)
     yyy.tspeed = 0.08
@@ -45,7 +45,7 @@ if (con == 7 && instance_exists(OBJ_WRITER))
 }
 if (con == 8)
 {
-    if (instance_exists(blconwd2) == 0)
+    if (instance_exists(blconwd2) == false)
     {
         off = 1
         with (OBJ_WRITER)
@@ -78,7 +78,7 @@ if (con == 12 && instance_exists(OBJ_WRITER))
 }
 if (con == 13)
 {
-    if (instance_exists(blconwd2) == 0)
+    if (instance_exists(blconwd2) == false)
     {
         off = 1
         with (OBJ_WRITER)
@@ -122,7 +122,7 @@ if (con == 19 && instance_exists(OBJ_WRITER))
 }
 if (con == 20)
 {
-    if (instance_exists(blconwd3) == 0)
+    if (instance_exists(blconwd3) == false)
     {
         off = 1
         with (OBJ_WRITER)
@@ -155,7 +155,7 @@ if (con == 27 && instance_exists(OBJ_WRITER))
 }
 if (con == 28)
 {
-    if (instance_exists(blconwd2) == 0)
+    if (instance_exists(blconwd2) == false)
     {
         off = 1
         with (OBJ_WRITER)
@@ -199,7 +199,7 @@ if (con == 34 && instance_exists(OBJ_WRITER))
 }
 if (con == 35)
 {
-    if (instance_exists(blconwd3) == 0)
+    if (instance_exists(blconwd3) == false)
     {
         off = 1
         with (OBJ_WRITER)
@@ -232,7 +232,7 @@ if (con == 42 && instance_exists(OBJ_WRITER))
 }
 if (con == 43)
 {
-    if (instance_exists(blconwd2) == 0)
+    if (instance_exists(blconwd2) == false)
     {
         with (OBJ_WRITER)
             instance_destroy()
@@ -265,7 +265,7 @@ if (con == 46 && instance_exists(OBJ_WRITER))
 }
 if (con == 47)
 {
-    if (instance_exists(blconwd2) == 0)
+    if (instance_exists(blconwd2) == false)
     {
         with (OBJ_WRITER)
             instance_destroy()
@@ -452,7 +452,7 @@ if (con == 102 && instance_exists(OBJ_WRITER))
 }
 if (con == 103)
 {
-    if (instance_exists(blconwd2) == 0)
+    if (instance_exists(blconwd2) == false)
     {
         with (blcon2)
             instance_destroy()
@@ -596,7 +596,7 @@ if (con == 140 && activetimer == 15)
 }
 if (con == 141)
 {
-    if (instance_exists(blconwd2) == 0)
+    if (instance_exists(blconwd2) == false)
     {
         with (OBJ_WRITER)
             instance_destroy()
@@ -619,7 +619,7 @@ if (con == 141)
 }
 if (con == 142)
 {
-    if (instance_exists(blconwd3) == 0)
+    if (instance_exists(blconwd3) == false)
     {
         with (obj_blconsm)
             instance_destroy()
@@ -656,7 +656,7 @@ if (con == 154)
 }
 if (con == 155)
 {
-    if (instance_exists(blconwd3) == 0)
+    if (instance_exists(blconwd3) == false)
     {
         with (obj_blconwdflowey)
             instance_destroy()
@@ -680,7 +680,7 @@ if (con == 160 && activetimer == 15)
 }
 if (con == 161)
 {
-    if (instance_exists(blconwd2) == 0)
+    if (instance_exists(blconwd2) == false)
     {
         ossafe_ini_open("undertale.ini")
         ini_write_real("General", "Tale", 1)

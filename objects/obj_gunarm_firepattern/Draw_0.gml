@@ -6,7 +6,7 @@ yy = lengthdir_y(120, (image_angle - 90))
 l_timer -= 1
 if (l_timer > 0)
 {
-    if (caster_is_playing(sfx_t) == 0)
+    if (caster_is_playing(sfx_t) == false)
         caster_loop(sfx_t, 1, 1)
     draw_set_color(c_red)
     if (flash == true)

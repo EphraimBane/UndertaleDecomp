@@ -52,7 +52,7 @@ if (global.mnfight == 1)
 }
 if (say == 1)
 {
-    if (instance_exists(blconwd) == 0)
+    if (instance_exists(blconwd) == false)
     {
         event_user(1)
         say = 0
@@ -310,7 +310,7 @@ if (global.mnfight == 5)
             if (OBJ_WRITER.stringno == 4)
                 caster_set_volume(global.currentsong, 0)
         }
-        if (instance_exists(blconwd) == 0)
+        if (instance_exists(blconwd) == false)
         {
             with (obj_asriel_body)
                 transform = 1

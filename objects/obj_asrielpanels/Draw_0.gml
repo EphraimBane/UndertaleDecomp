@@ -54,7 +54,7 @@ if (active == true)
     qual = 0
     if (xtimer == 2263)
         qual = 1
-    if (caster_is_playing(global.batmusic) == 0 && caster_is_playing(global.batmusic2) == 0)
+    if (caster_is_playing(global.batmusic) == false && caster_is_playing(global.batmusic2) == false)
         qual = 1
     if (qual == 1)
     {

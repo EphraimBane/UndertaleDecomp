@@ -6,7 +6,7 @@ if (fade == 1)
 }
 if (image_xscale < 0.08)
     instance_destroy()
-if (instance_number(obj_targetparent) == 0 && hit == 0)
+if (instance_number(obj_targetparent) == false && hit == 0)
 {
     hit = 1
     if (myscore == 0)

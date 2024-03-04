@@ -476,6 +476,33 @@ enum Direction
 	Left
 }
 
+// Undyne Spear Directions
+enum SpearDir
+{
+	Left,
+	Right,
+	Down,
+	Up,
+	Random
+}
+
+// Undyne Spear types
+enum SpearType
+{
+	Normal,
+	Reverse,
+	Random
+}
+
+// Muffet Bullet Types
+enum SpBulletType
+{
+	Normal,
+	Donut,
+	Croissant,
+	TwoSpiders
+}
+
 enum Items
 {
 	// 00 - 09
