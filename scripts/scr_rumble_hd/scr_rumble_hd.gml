@@ -1,9 +1,11 @@
-function scr_rumble_hd()
+/// @func	scr_rumble_hd(_low_amp, _low_freq, _high_amp, _high_freq)
+/// @desc	Script to set Switch Controller vibrations.
+function scr_rumble_hd(_low_amp, _low_freq, _high_amp, _high_freq)
 {
-	var low_amp = argument0
-	var low_freq = argument1
-	var high_amp = argument2
-	var high_freq = argument3
+	var low_amp = _low_amp
+	var low_freq = _low_freq
+	var high_amp = _high_amp
+	var high_freq = _high_freq
 	if (os_type == os_switch)
 	{
 	    if switch_controller_vibration_permitted()

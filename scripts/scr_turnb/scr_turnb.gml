@@ -1,3 +1,5 @@
+/// @func	scr_turnb()
+/// @desc	Loads alternative player sprites.
 function scr_turnb()
 {
 	lsprite = spr_maincharal_b
