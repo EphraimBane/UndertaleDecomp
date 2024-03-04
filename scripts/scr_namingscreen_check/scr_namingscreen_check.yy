@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_namingscreen_check",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "UI",
-    "path": "folders/Scripts/UI.yy",
+  "$GMScript":"",
+  "%Name":"scr_namingscreen_check",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_namingscreen_check",
+  "parent":{
+    "name":"UI",
+    "path":"folders/Scripts/UI.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

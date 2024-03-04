@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_draw_background_ps4",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Drawing",
-    "path": "folders/Scripts/Drawing.yy",
+  "$GMScript":"",
+  "%Name":"scr_draw_background_ps4",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_draw_background_ps4",
+  "parent":{
+    "name":"Drawing",
+    "path":"folders/Scripts/Drawing.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

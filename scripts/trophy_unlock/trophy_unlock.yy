@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "trophy_unlock",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Playstation",
-    "path": "folders/Scripts/Console/Playstation.yy",
+  "$GMScript":"",
+  "%Name":"trophy_unlock",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"trophy_unlock",
+  "parent":{
+    "name":"Playstation",
+    "path":"folders/Scripts/Console/Playstation.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

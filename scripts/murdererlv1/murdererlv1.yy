@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "murdererlv1",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Info",
-    "path": "folders/Scripts/Common/Info.yy",
+  "$GMScript":"",
+  "%Name":"murdererlv1",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"murdererlv1",
+  "parent":{
+    "name":"Info",
+    "path":"folders/Scripts/Common/Info.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

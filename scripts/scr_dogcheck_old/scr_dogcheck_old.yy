@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_dogcheck_old",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Unused",
-    "path": "folders/Scripts/Unused.yy",
+  "$GMScript":"",
+  "%Name":"scr_dogcheck_old",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_dogcheck_old",
+  "parent":{
+    "name":"Unused",
+    "path":"folders/Scripts/Unused.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

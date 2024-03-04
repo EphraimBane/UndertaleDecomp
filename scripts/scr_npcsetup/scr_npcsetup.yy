@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_npcsetup",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "NPC",
-    "path": "folders/Scripts/NPC.yy",
+  "$GMScript":"",
+  "%Name":"scr_npcsetup",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_npcsetup",
+  "parent":{
+    "name":"NPC",
+    "path":"folders/Scripts/NPC.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
