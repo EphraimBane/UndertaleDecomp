@@ -6,7 +6,7 @@ wd = sprite_get_width(sprite_index)
 myvapor = global.vaporspeed
 if (myvapor == 0)
     snd_play(snd_vaporized)
-finishedreading = 0
+finishedreading = false
 mydata = scr_getvapordata()
 mychar = 0
 myread = 0

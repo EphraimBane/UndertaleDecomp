@@ -2,7 +2,7 @@ if instance_exists(obj_waterboardpuzzle1)
 {
     if (myinteract == 1 && using == 0 && obj_waterboardpuzzle1.waterboard == 0)
     {
-        if (snd_isplaying(snd_movemenu) == 0)
+        if (snd_isplaying(snd_movemenu) == false)
             snd_play(snd_movemenu)
         using = 1
         obj_waterboardpuzzle1.waterboard = 1

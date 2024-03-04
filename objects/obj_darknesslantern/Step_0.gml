@@ -1,6 +1,6 @@
 if (myinteract == 1 && glowtimer <= 0)
 {
-    if (snd_isplaying(snd_spearappear) == 0)
+    if (snd_isplaying(snd_spearappear) == false)
         snd_play(snd_spearappear)
     myinteract = 0
     glowtimer = 30

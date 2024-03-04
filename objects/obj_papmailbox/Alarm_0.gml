@@ -19,10 +19,10 @@ if (instance_exists(obj_papyrus_room) || instance_exists(obj_papyrus_houseoutsid
     if instance_exists(obj_undyne_friendc)
     {
         h = 0
-        scr_itemcheck(56)
+        scr_itemcheck(Items.UndynesLetter)
         if (haveit == true)
             h = 1
-        scr_itemcheck(57)
+        scr_itemcheck(Items.UndynesLetterEX)
         if (haveit == true)
             h = 1
         if (h == 1)

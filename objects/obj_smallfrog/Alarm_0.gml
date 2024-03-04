@@ -6,7 +6,7 @@ global.msg[2] = scr_gettext("obj_smallfrog_63")
 global.msg[3] = scr_gettext("obj_smallfrog_64")
 global.msg[4] = scr_gettext("obj_smallfrog_65")
 global.msg[5] = scr_gettext("obj_smallfrog_66")
-if (FL_Hardmode == 1)
+if (FL_Hardmode == true)
 {
     global.msg[0] = scr_gettext("obj_smallfrog_70")
     global.msg[1] = scr_gettext("obj_smallfrog_71")
@@ -38,7 +38,7 @@ if (room == room_ruins17)
         global.msg[2] = scr_gettext("obj_smallfrog_99")
         global.msg[3] = scr_gettext("obj_smallfrog_100")
     }
-    if (FL_Hardmode == 1)
+    if (FL_Hardmode == true)
     {
         global.msg[0] = scr_gettext("obj_smallfrog_105")
         global.msg[1] = scr_gettext("obj_smallfrog_106")

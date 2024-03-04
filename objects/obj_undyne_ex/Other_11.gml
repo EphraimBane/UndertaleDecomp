@@ -1,4 +1,4 @@
-if (green == 0)
+if (green == false)
 {
     alarm[10] = 10
     with (mypart1)

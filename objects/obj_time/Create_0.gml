@@ -145,7 +145,7 @@ if (global.osflavor >= OSFlavors.Playstation)
     {
         if (os_type == os_switch)
         {
-            if (switch_controller_support_show() == 0)
+            if (switch_controller_support_show() == false)
                 j_ch = (switch_controller_support_get_selected_id() + 1)
         }
         else

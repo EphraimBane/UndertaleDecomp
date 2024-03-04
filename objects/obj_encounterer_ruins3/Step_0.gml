@@ -3,7 +3,7 @@ if (global.encounter > steps)
     if (global.interact == 0)
     {
         scr_steps(290, 100, 20, 202)
-        if (FL_Hardmode == 1)
+        if (FL_Hardmode == true)
             scr_steps(120, 60, 20, 202)
         global.encounter = 0
         battlegroup = random(20)
@@ -17,7 +17,7 @@ if (global.encounter > steps)
             global.battlegroup = 9
         if (battlegroup > 18)
             global.battlegroup = 10
-        if (FL_Hardmode == 1)
+        if (FL_Hardmode == true)
         {
             if (battlegroup <= 5)
                 global.battlegroup = 125

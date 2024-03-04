@@ -1,6 +1,6 @@
 if (myinteract == 1)
 {
-    if (snd_isplaying(snd_movemenu) == 0)
+    if (snd_isplaying(snd_movemenu) == false)
         snd_play(snd_movemenu)
     if (image_index == 0)
     {

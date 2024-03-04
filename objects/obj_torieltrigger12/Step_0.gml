@@ -5,18 +5,18 @@ if (global.plot == 24 && dingus == 2)
     obj_toroverworld3.facing = Direction.Up
     obj_toroverworld3.direction = 90
 }
-if (conversation == 2 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 2 && instance_exists(obj_dialoguer) == false)
 {
     alarm[1] = 20
     FL_TorielStatus = TorielStatus.Fight
     conversation = 3
 }
-if (conversation == 9 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 9 && instance_exists(obj_dialoguer) == false)
 {
     global.interact = 0
     conversation = 10
 }
-if (conversation == 6 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 6 && instance_exists(obj_dialoguer) == false)
 {
     obj_toroverworld3.y += 10
     obj_toroverworld3.image_index = 0
@@ -35,13 +35,13 @@ if instance_exists(obj_toroverworld3)
         conversation = 7.7
     }
 }
-if (conversation == 7.5 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 7.5 && instance_exists(obj_dialoguer) == false)
 {
     with (obj_toroverworld3)
         path_start(path_torielwalkbasement3, 3, path_action_stop, 0)
     conversation = 7.6
 }
-if (conversation == 8 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 8 && instance_exists(obj_dialoguer) == false)
 {
     global.seriousbattle = 0
     global.interact = 0

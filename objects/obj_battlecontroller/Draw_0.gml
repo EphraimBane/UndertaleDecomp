@@ -66,13 +66,13 @@ if (global.language == "ja" && global.bmenuno >= 3 && global.bmenuno < 4 && glob
     var yy = (global.idealborder[2] + 20)
     var lineheader = scr_gettext("item_menub_header")
     i = 0
-    while (i < 3 && global.item[(first + i)] != 0)
+    while (i < 3 && global.item[(first + i)] != Items.Null)
     {
         draw_text(xx, (yy + (i * 36)), string_hash_to_newline((lineheader + global.itemnameb[(first + i)])))
         i++
     }
     var num_items = 8
-    while (num_items > 0 && global.item[(num_items - 1)] == 0)
+    while (num_items > 0 && global.item[(num_items - 1)] == Items.Null)
         num_items--
     if (num_items > 3)
     {

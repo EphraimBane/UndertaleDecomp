@@ -1,8 +1,8 @@
-FL_InBattle = 1
+FL_InBattle = true
 event_user(0)
 if (caster_is_playing(global.currentsong) != 1)
 {
-    FL_InBattle = 1
+    FL_InBattle = true
     if (FL_HotlandGenocide == 0)
     {
         global.currentsong = caster_load("music/core.ogg")

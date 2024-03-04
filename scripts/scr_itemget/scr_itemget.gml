@@ -9,7 +9,7 @@ function scr_itemget(_item)
 	global.item[8] = 999
 	while (loop == 1)
 	{
-	    if (global.item[i] == 0)
+	    if (global.item[i] == Items.Null)
 	    {
 	        global.item[i] = _item
 	        break

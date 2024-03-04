@@ -27,7 +27,7 @@ if (buffer > 3)
     {
         draw_set_color(c_white)
         draw_text((((xx + boxofs) + 3) + itemofs), ((yy + 30) + (i * 16)), string_hash_to_newline(global.itemname[i]))
-        if (global.item[i] == 0)
+        if (global.item[i] == Items.Null)
         {
             draw_set_color(c_red)
             draw_line(((((xx + boxofs) + 3) + itemofs) + 5), ((yy + 40) + (i * 16)), ((((xx + boxofs) + 3) + itemofs) + 95), ((yy + 40) + (i * 16)))

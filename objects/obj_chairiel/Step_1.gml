@@ -6,7 +6,7 @@ if (global.plot < 19.9)
         image_index = 0
     scr_npcdir(2)
 }
-if (global.plot == 19.9 && instance_exists(obj_dialoguer) == 0)
+if (global.plot == 19.9 && instance_exists(obj_dialoguer) == false)
 {
     sprite_index = spr_chairielgetup
     image_index = 0

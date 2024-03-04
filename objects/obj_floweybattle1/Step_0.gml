@@ -19,7 +19,7 @@ if instance_exists(OBJ_WRITER)
         }
     }
 }
-if (instance_exists(obj_winkstar) == 0)
+if (instance_exists(obj_winkstar) == false)
 {
     if (instance_exists(OBJ_WRITER) == false)
     {

@@ -1,10 +1,10 @@
 function scr_itemroom()
 {
-	itemfree = 8
+	itemfree = InventorySize
 	itemhold = 0
-	for (i = 0; i < 8; i += 1)
+	for (i = 0; i < InventorySize; i += 1)
 	{
-	    if (global.item[i] != 0)
+	    if (global.item[i] != Items.Null)
 	    {
 	        itemfree -= 1
 	        itemhold += 1

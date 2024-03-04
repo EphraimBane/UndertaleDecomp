@@ -26,7 +26,7 @@ for (i = 0; i < 10; i += 1)
 }
 global.interact = 1
 buffer -= 1
-if (control_check(CancelButton) == 0)
+if (control_check(CancelButton) == false)
     coff = 0
 if (buffer < 0)
 {

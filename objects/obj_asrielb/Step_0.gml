@@ -348,7 +348,7 @@ if (global.mnfight == 5)
     if (trcon == 7)
     {
         caster_free(all)
-        FL_InBattle = 1
+        FL_InBattle = true
         global.battlegroup = 256
         room_restart()
     }

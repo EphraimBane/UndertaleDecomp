@@ -1,4 +1,4 @@
-if (instance_exists(obj_flowey_writer) == 0 && con == 0)
+if (instance_exists(obj_flowey_writer) == false && con == 0)
 {
     con = 1
     alarm[4] = 10

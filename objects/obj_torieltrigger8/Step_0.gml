@@ -1,4 +1,4 @@
-if (conversation == 2 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 2 && instance_exists(obj_dialoguer) == false)
 {
     global.interact = 3
     obj_mainchara.y = 128

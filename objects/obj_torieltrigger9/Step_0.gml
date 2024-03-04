@@ -1,7 +1,7 @@
 dingus += 1
 if (global.plot == 21 && dingus == 2)
     instance_create(370, 90, obj_toroverworld3)
-if (conversation == 2 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 2 && instance_exists(obj_dialoguer) == false)
 {
     with (obj_toroverworld3)
         path_start(path_walkright, 4, path_action_stop, 0)

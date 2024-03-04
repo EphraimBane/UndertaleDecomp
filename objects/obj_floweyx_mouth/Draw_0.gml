@@ -2,7 +2,7 @@ onoff += 1
 if (onoff > 3)
     onoff = 0
 draw_set_color(c_black)
-if (instance_exists(obj_mouthbeam) == 0)
+if (instance_exists(obj_mouthbeam) == false)
 {
     if (mode == 0)
         ossafe_fill_rectangle(x, (y + 8), (x + 60), (y + 110))

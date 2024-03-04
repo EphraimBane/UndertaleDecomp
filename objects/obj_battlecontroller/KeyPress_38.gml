@@ -1,4 +1,4 @@
-if (keyboard_check_pressed(vk_down) == 0)
+if (keyboard_check_pressed(vk_down) == false)
 {
     if (global.mnfight == 0)
     {
@@ -65,7 +65,7 @@ if (keyboard_check_pressed(vk_down) == 0)
                     if (global.bmenucoord[3] == 0 || global.bmenucoord[3] == 1)
                     {
                         global.bmenucoord[3] += 2
-                        if (global.item[(tempcheck + 2)] == 0)
+                        if (global.item[(tempcheck + 2)] == Items.Null)
                             global.bmenucoord[3] -= 2
                         mv = 1
                     }

@@ -121,7 +121,7 @@ if (global.myfight == 2)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_napstablook_576")
-                if (FL_Hardmode == 1)
+                if (FL_Hardmode == true)
                     global.msg[0] = scr_gettext("obj_napstablook_579")
                 OBJ_WRITER.halt = 3
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)

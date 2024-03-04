@@ -130,7 +130,7 @@ function scr_monstersetup()
 	    global.monstermaxhp[myself] = 440
 	    global.monsterhp[myself] = 440
 	    global.monsteratk[myself] = 6
-	    if (FL_Hardmode == 1)
+	    if (FL_Hardmode == true)
 	        global.monsteratk[myself] = 8
 	    global.monsterdef[myself] = 1
 	    if (scr_murderlv() >= 1)

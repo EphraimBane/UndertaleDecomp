@@ -296,7 +296,7 @@ if (active == true)
         mon = woshua
         scr_drawtext_centered_scaled(col1_x, (mon.y - 70), scr_gettext("castroll_name_woshua"), namescale, namescale)
         scr_drawtext_centered_scaled(col1_x, (mon.y - 30), scr_gettext("castroll_extra_woshua"), 1, 1)
-        if (FL_SparedWoshua == 0)
+        if (FL_SparedWoshua == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col1_x, ((mon.y + 110) + info_yofs), scr_gettext("castroll_white_woshua"), infoscale, infoscale)
@@ -310,7 +310,7 @@ if (active == true)
         mon = temmie
         scr_drawtext_centered_scaled(col2_x, (mon.y - 70), scr_gettext("castroll_name_temmie"), namescale, namescale)
         scr_drawtext_centered_scaled(col2_x, (mon.y - 30), scr_gettext("castroll_extra_temmie"), 1, 1)
-        if (FL_SparedWoshua == 0)
+        if (FL_SparedTemmie == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col2_x, ((mon.y + 110) + info_yofs), scr_gettext("castroll_white_temmie"), infoscale, infoscale)

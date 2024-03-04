@@ -129,7 +129,7 @@ if (con == 18 && instance_exists(OBJ_WRITER) == false)
 }
 if (con == 20)
 {
-    if (instance_exists(obj_tileguy) == 0 && obj_mainchara.x > (room_width / 2))
+    if (instance_exists(obj_tileguy) == false && obj_mainchara.x > (room_width / 2))
     {
         global.interact = 1
         con = 75

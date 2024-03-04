@@ -17,7 +17,7 @@ else
     global.msg[4] = scr_gettext("obj_torieltrigger6_43")
     global.msg[5] = scr_gettext("obj_torieltrigger6_44")
     global.msg[6] = scr_gettext("obj_torieltrigger6_45")
-    if (FL_Hardmode == 1)
+    if (FL_Hardmode == true)
     {
         global.msg[0] = scr_gettext("obj_torieltrigger6_49")
         global.msg[1] = scr_gettext("obj_torieltrigger6_50")

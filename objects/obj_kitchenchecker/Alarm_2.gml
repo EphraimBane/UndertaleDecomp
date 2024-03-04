@@ -1,7 +1,7 @@
 if (obj_mainchara.bbox_top < 134)
 {
     level = 0
-    if (instance_exists(block[0]) == 0)
+    if (instance_exists(block[0]) == false)
     {
         block[0] = instance_create(160, 54, obj_solidthin)
         block[1] = instance_create(160, 77, obj_solidthin)
@@ -47,6 +47,6 @@ else
             dogdoor = noone
         }
     }
-    if (instance_exists(block[4]) == 0)
+    if (instance_exists(block[4]) == false)
         block[4] = instance_create(83, 90, obj_solidlong)
 }

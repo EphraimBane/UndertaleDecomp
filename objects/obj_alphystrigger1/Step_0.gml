@@ -441,7 +441,7 @@ if (con == 68)
     global.interact = 1
     alarm[4] = 14
 }
-if (con == 69.1 && instance_exists(obj_battler) == 0)
+if (con == 69.1 && instance_exists(obj_battler) == false)
 {
     global.mercy = 0
     global.interact = 1

@@ -60,7 +60,7 @@ if (con == 6 && instance_exists(OBJ_WRITER) == false)
 if (con == 8)
 {
     global.mercy = 1
-    FL_InBattle = 1
+    FL_InBattle = true
     global.battlegroup = 59
     instance_create(0, 0, obj_battler)
     con = 9

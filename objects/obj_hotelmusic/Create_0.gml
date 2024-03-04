@@ -1,4 +1,4 @@
-FL_InBattle = 0
+FL_InBattle = false
 event_user(0)
 played = 0
 if (caster_is_playing(global.currentsong) != 1)

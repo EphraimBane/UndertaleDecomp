@@ -207,7 +207,7 @@ if (con == 19)
     global.battlegroup = 80
     if (skip == true)
         global.battlegroup = 81
-    FL_InBattle = 0
+    FL_InBattle = false
     instance_create(0, 0, obj_battler)
     con = 20
     alarm[4] = 33
@@ -317,7 +317,7 @@ if (con == 50 && instance_exists(OBJ_WRITER) == false)
     caster_free(shkwv)
     global.mercy = 1
     global.battlegroup = 94
-    FL_InBattle = 0
+    FL_InBattle = false
     instance_create(0, 0, obj_battler)
     con = 51
     alarm[4] = 33

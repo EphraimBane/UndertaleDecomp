@@ -15,7 +15,7 @@ if (global.encounter > steps)
             global.battlegroup = 6
         if (battlegroup > 18)
             global.battlegroup = 9
-        if (FL_Hardmode == 1)
+        if (FL_Hardmode == true)
         {
             if (battlegroup <= 5)
                 global.battlegroup = 125

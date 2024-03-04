@@ -45,7 +45,7 @@ if (con == 4)
     scr_blcon_ofs((tor.x + 135), (tor.y - 30), 0, 6, 0)
     con = 5
 }
-if (con == 5 && instance_exists(obj_blconwideslave) == 0)
+if (con == 5 && instance_exists(obj_blconwideslave) == false)
 {
     con = 6
     asg = instance_create(-340, 60, obj_sadgore)
@@ -71,7 +71,7 @@ if (con == 8)
     obj_blconwideslave.sprite_index = spr_blconsm
     con = 9
 }
-if (con == 9 && instance_exists(obj_blconwideslave) == 0)
+if (con == 9 && instance_exists(obj_blconwideslave) == false)
 {
     global.typer = 8
     global.msg[0] = scr_gettext("obj_friendscene_236")
@@ -94,7 +94,7 @@ if (con == 10 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 5)
         asg.face = 4
 }
-if (con == 10 && instance_exists(obj_blconwideslave) == 0)
+if (con == 10 && instance_exists(obj_blconwideslave) == false)
 {
     asg.face = 5
     con = 11
@@ -118,7 +118,7 @@ if (con == 13 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 4)
         asg.face = 6
 }
-if (con == 13 && instance_exists(obj_blconwideslave) == 0)
+if (con == 13 && instance_exists(obj_blconwideslave) == false)
 {
     asg.face = 6
     con = 14
@@ -144,7 +144,7 @@ if (con == 16 && instance_exists(OBJ_WRITER))
         asg.face = 7
     }
 }
-if (con == 16 && instance_exists(obj_blconwideslave) == 0)
+if (con == 16 && instance_exists(obj_blconwideslave) == false)
 {
     con = 16.1
     alarm[4] = 10
@@ -198,7 +198,7 @@ if (con == 21 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 3)
         und.face = 17
 }
-if (con == 21 && instance_exists(obj_blconwideslave) == 0)
+if (con == 21 && instance_exists(obj_blconwideslave) == false)
 {
     con = 22
     global.typer = 8
@@ -208,7 +208,7 @@ if (con == 21 && instance_exists(obj_blconwideslave) == 0)
     scr_blcon_x((tor.x - 110), (tor.y - 40))
     obj_blconwideslave.sprite_index = spr_blconsm2
 }
-if (con == 22 && instance_exists(obj_blconwideslave) == 0)
+if (con == 22 && instance_exists(obj_blconwideslave) == false)
 {
     con = 23
     global.typer = 81
@@ -218,7 +218,7 @@ if (con == 22 && instance_exists(obj_blconwideslave) == 0)
     scr_blcon_x((und.x - 130), und.y)
     obj_blconwideslave.sprite_index = spr_blconsm2
 }
-if (con == 23 && instance_exists(obj_blconwideslave) == 0)
+if (con == 23 && instance_exists(obj_blconwideslave) == false)
 {
     und.face = 10
     global.faceemotion = 0
@@ -251,7 +251,7 @@ if (con == 26 && instance_exists(OBJ_WRITER))
         asg.face = 8
     }
 }
-if (con == 26 && instance_exists(obj_blconwideslave) == 0)
+if (con == 26 && instance_exists(obj_blconwideslave) == false)
 {
     global.faceemotion = 9
     con = 27
@@ -290,7 +290,7 @@ if (con == 31 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 3)
         al.face = 16
 }
-if (con == 31 && instance_exists(obj_blconwideslave) == 0)
+if (con == 31 && instance_exists(obj_blconwideslave) == false)
 {
     con = 32
     alarm[4] = 10
@@ -304,7 +304,7 @@ if (con == 33)
     obj_blconwideslave.sprite_index = spr_blconsm2
     con = 34
 }
-if (con == 34 && instance_exists(obj_blconwideslave) == 0)
+if (con == 34 && instance_exists(obj_blconwideslave) == false)
 {
     global.typer = 74
     global.msg[0] = scr_gettext("obj_friendscene_487")
@@ -323,7 +323,7 @@ if (con == 35 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 2)
         al.face = 4
 }
-if (con == 35 && instance_exists(obj_blconwideslave) == 0)
+if (con == 35 && instance_exists(obj_blconwideslave) == false)
 {
     al.face = 18
     global.faceemotion = 0
@@ -358,7 +358,7 @@ if (con == 37)
         alarm[4] = 10
     }
 }
-if (con == 39 && instance_exists(obj_blconwideslave) == 0)
+if (con == 39 && instance_exists(obj_blconwideslave) == false)
 {
     global.msc = 0
     global.typer = 22
@@ -381,7 +381,7 @@ if (con == 40 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 3)
         pap.face = 0
 }
-if (con == 40 && instance_exists(obj_blconwideslave) == 0)
+if (con == 40 && instance_exists(obj_blconwideslave) == false)
 {
     pap.face = 2
     global.typer = 8
@@ -390,7 +390,7 @@ if (con == 40 && instance_exists(obj_blconwideslave) == 0)
     obj_blconwideslave.sprite_index = spr_blconsm2
     con = 41
 }
-if (con == 41 && instance_exists(obj_blconwideslave) == 0)
+if (con == 41 && instance_exists(obj_blconwideslave) == false)
 {
     pap.face = 2
     global.typer = 22
@@ -415,7 +415,7 @@ if (con == 42 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 3)
         pap.face = 6
 }
-if (con == 42 && instance_exists(obj_blconwideslave) == 0)
+if (con == 42 && instance_exists(obj_blconwideslave) == false)
 {
     global.faceemotion = 0
     sans = instance_create(-108, 408, obj_sans_friendscene)
@@ -445,7 +445,7 @@ if (con == 45)
     obj_blconwideslave.depth = -1000
     OBJ_WRITER.depth = -2000
 }
-if (con == 46 && instance_exists(obj_blconwideslave) == 0)
+if (con == 46 && instance_exists(obj_blconwideslave) == false)
 {
     pap.face = 2
     global.typer = 8
@@ -456,7 +456,7 @@ if (con == 46 && instance_exists(obj_blconwideslave) == 0)
     OBJ_WRITER.depth = -2000
     con = 47
 }
-if (con == 47 && instance_exists(obj_blconwideslave) == 0)
+if (con == 47 && instance_exists(obj_blconwideslave) == false)
 {
     pap.face = 7
     global.faceemotion = 6
@@ -473,7 +473,7 @@ if (con == 47 && instance_exists(obj_blconwideslave) == 0)
     if (tor.x == 360 && tor.y == 352)
         con = 48
 }
-if (con == 48 && instance_exists(obj_blconwideslave) == 0)
+if (con == 48 && instance_exists(obj_blconwideslave) == false)
 {
     und.face = 13
     asg.face = 9
@@ -489,7 +489,7 @@ if (con == 48 && instance_exists(obj_blconwideslave) == 0)
     OBJ_WRITER.depth = -2000
     con = 49
 }
-if (con == 49 && instance_exists(obj_blconwideslave) == 0)
+if (con == 49 && instance_exists(obj_blconwideslave) == false)
 {
     global.typer = 80
     sans.face = 8
@@ -504,7 +504,7 @@ if (con == 49 && instance_exists(obj_blconwideslave) == 0)
     OBJ_WRITER.depth = -2000
     con = 50
 }
-if (con == 50 && instance_exists(obj_blconwideslave) == 0)
+if (con == 50 && instance_exists(obj_blconwideslave) == false)
 {
     asg.face = 10
     al.face = 4
@@ -518,7 +518,7 @@ if (con == 50 && instance_exists(obj_blconwideslave) == 0)
     OBJ_WRITER.depth = -2000
     con = 51
 }
-if (con == 51 && instance_exists(obj_blconwideslave) == 0)
+if (con == 51 && instance_exists(obj_blconwideslave) == false)
 {
     global.msg[0] = scr_gettext("obj_friendscene_717")
     global.msg[1] = scr_gettext("obj_friendscene_718")
@@ -531,7 +531,7 @@ if (con == 51 && instance_exists(obj_blconwideslave) == 0)
     OBJ_WRITER.depth = -2000
     con = 52
 }
-if (con == 52 && instance_exists(obj_blconwideslave) == 0)
+if (con == 52 && instance_exists(obj_blconwideslave) == false)
 {
     sans.face = 7
     global.typer = 8
@@ -543,7 +543,7 @@ if (con == 52 && instance_exists(obj_blconwideslave) == 0)
     OBJ_WRITER.depth = -2000
     con = 53
 }
-if (con == 53 && instance_exists(obj_blconwideslave) == 0)
+if (con == 53 && instance_exists(obj_blconwideslave) == false)
 {
     global.faceemotion = 14
     if (pap.x > 500)
@@ -572,7 +572,7 @@ if (con == 55 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 1)
         pap.face = 3
 }
-if (con == 55 && instance_exists(obj_blconwideslave) == 0)
+if (con == 55 && instance_exists(obj_blconwideslave) == false)
 {
     global.typer = 22
     pap.face = 3
@@ -587,7 +587,7 @@ if (con == 55 && instance_exists(obj_blconwideslave) == 0)
     OBJ_WRITER.depth = -2000
     con = 56
 }
-if (con == 56 && instance_exists(obj_blconwideslave) == 0)
+if (con == 56 && instance_exists(obj_blconwideslave) == false)
 {
     global.typer = 8
     pap.face = 0
@@ -598,7 +598,7 @@ if (con == 56 && instance_exists(obj_blconwideslave) == 0)
     OBJ_WRITER.depth = -2000
     con = 57
 }
-if (con == 57 && instance_exists(obj_blconwideslave) == 0)
+if (con == 57 && instance_exists(obj_blconwideslave) == false)
 {
     pap.face = 7
     global.typer = 22
@@ -611,7 +611,7 @@ if (con == 57 && instance_exists(obj_blconwideslave) == 0)
     OBJ_WRITER.depth = -2000
     con = 58
 }
-if (con == 58 && instance_exists(obj_blconwideslave) == 0)
+if (con == 58 && instance_exists(obj_blconwideslave) == false)
 {
     global.msg[0] = scr_gettext("obj_friendscene_819")
     global.msg[1] = scr_gettext("obj_friendscene_820")
@@ -633,7 +633,7 @@ if (con == 59 && instance_exists(OBJ_WRITER) == false)
     sans.face = 8
     global.faceemotion = 12
 }
-if (con == 61 && instance_exists(obj_blconwideslave) == 0)
+if (con == 61 && instance_exists(obj_blconwideslave) == false)
 {
     pap.face = 4
     global.typer = 22
@@ -647,7 +647,7 @@ if (con == 61 && instance_exists(obj_blconwideslave) == 0)
     OBJ_WRITER.depth = -2000
     con = 62
 }
-if (con == 62 && instance_exists(obj_blconwideslave) == 0)
+if (con == 62 && instance_exists(obj_blconwideslave) == false)
 {
     al.face = 18
     und.face = 4
@@ -663,7 +663,7 @@ if (con == 63 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 1)
         und.face = 11
 }
-if (con == 63 && instance_exists(obj_blconwideslave) == 0)
+if (con == 63 && instance_exists(obj_blconwideslave) == false)
 {
     global.typer = 74
     und.face = 18
@@ -696,7 +696,7 @@ if (con == 64 && instance_exists(OBJ_WRITER))
         und.face = 11
     }
 }
-if (con == 64 && instance_exists(obj_blconwideslave) == 0)
+if (con == 64 && instance_exists(obj_blconwideslave) == false)
 {
     global.typer = 81
     und.face = 18
@@ -711,7 +711,7 @@ if (con == 65 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 1)
         und.face = 11
 }
-if (con == 65 && instance_exists(obj_blconwideslave) == 0)
+if (con == 65 && instance_exists(obj_blconwideslave) == false)
 {
     leg = 1
     leg_r = 0
@@ -734,7 +734,7 @@ if (con == 67)
     blcon.sprite_index = spr_blconwdshrt_l
     con = 68
 }
-if (con == 68 && instance_exists(obj_blconwideslave) == 0)
+if (con == 68 && instance_exists(obj_blconwideslave) == false)
 {
     leg = 2
     global.faceemotion = 13
@@ -758,7 +758,7 @@ if (con == 69 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 4)
         und.face = 3
 }
-if (con == 69 && instance_exists(obj_blconwideslave) == 0)
+if (con == 69 && instance_exists(obj_blconwideslave) == false)
 {
     global.typer = 74
     al.face = 4
@@ -780,7 +780,7 @@ if (con == 70 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 3)
         al.face = 11
 }
-if (con == 70 && instance_exists(obj_blconwideslave) == 0)
+if (con == 70 && instance_exists(obj_blconwideslave) == false)
 {
     al.face = 18
     und.face = 19
@@ -798,7 +798,7 @@ if (con == 71 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 2)
         und.face = 14
 }
-if (con == 71 && instance_exists(obj_blconwideslave) == 0)
+if (con == 71 && instance_exists(obj_blconwideslave) == false)
 {
     con = 72
     alarm[4] = 90
@@ -830,7 +830,7 @@ if (con == 74)
     obj_blconwideslave.sprite_index = spr_blconsm
     con = 75
 }
-if (con == 75 && instance_exists(obj_blconwideslave) == 0)
+if (con == 75 && instance_exists(obj_blconwideslave) == false)
 {
     und.smooch = 0
     und.s_i = 0
@@ -844,7 +844,7 @@ if (con == 75 && instance_exists(obj_blconwideslave) == 0)
     scr_blcon_x((al.x - 40), (tor.y - 90))
     obj_blconwideslave.sprite_index = spr_blconabove
 }
-if (con == 76 && instance_exists(obj_blconwideslave) == 0)
+if (con == 76 && instance_exists(obj_blconwideslave) == false)
 {
     sans.face = 0
     pap.face = 0
@@ -865,7 +865,7 @@ if (con == 76 && instance_exists(obj_blconwideslave) == 0)
     OBJ_WRITER.depth = -2000
     con = 77
 }
-if (con == 77 && instance_exists(obj_blconwideslave) == 0 && sidecon == 2)
+if (con == 77 && instance_exists(obj_blconwideslave) == false && sidecon == 2)
 {
     con = 78
     alarm[4] = 40
@@ -885,7 +885,7 @@ if (con == 79)
     obj_blconwideslave.sprite_index = spr_blconabove
     con = 80
 }
-if (con == 80 && instance_exists(obj_blconwideslave) == 0)
+if (con == 80 && instance_exists(obj_blconwideslave) == false)
 {
     pap.face = 7
     global.typer = 22
@@ -896,7 +896,7 @@ if (con == 80 && instance_exists(obj_blconwideslave) == 0)
     obj_blconwideslave.sprite_index = spr_blconsm2
     con = 81
 }
-if (con == 81 && instance_exists(obj_blconwideslave) == 0)
+if (con == 81 && instance_exists(obj_blconwideslave) == false)
 {
     pap.face = 0
     global.typer = 83
@@ -908,7 +908,7 @@ if (con == 81 && instance_exists(obj_blconwideslave) == 0)
     obj_blconwideslave.sprite_index = spr_blconsm2
     con = 82
 }
-if (con == 82 && instance_exists(obj_blconwideslave) == 0)
+if (con == 82 && instance_exists(obj_blconwideslave) == false)
 {
     al.face = 9
     global.typer = 82
@@ -918,7 +918,7 @@ if (con == 82 && instance_exists(obj_blconwideslave) == 0)
     obj_blconwideslave.sprite_index = spr_blconabove
     con = 83
 }
-if (con == 83 && instance_exists(obj_blconwideslave) == 0)
+if (con == 83 && instance_exists(obj_blconwideslave) == false)
 {
     con = 84
     alarm[4] = 50
@@ -990,7 +990,7 @@ if (con == 91)
     scr_blcon_ofs((flowey.x + 105), (flowey.y - 20), 0, 6, 0)
     con = 92
 }
-if (con == 92 && instance_exists(obj_blconwideslave) == 0)
+if (con == 92 && instance_exists(obj_blconwideslave) == false)
 {
     flowey.con = 6
     alarm[4] = 60
@@ -1021,7 +1021,7 @@ if (con == 96)
     obj_blconwideslave.sprite_index = spr_blconabove
     con = 97
 }
-if (con == 97 && instance_exists(obj_blconwideslave) == 0)
+if (con == 97 && instance_exists(obj_blconwideslave) == false)
 {
     snd_play(snd_floweylaugh)
     with (gen)
@@ -1097,7 +1097,7 @@ if (con == 107)
     obj_blconwideslave.sprite_index = spr_blconabove
     con = 108
 }
-if (con == 108 && instance_exists(obj_blconwideslave) == 0)
+if (con == 108 && instance_exists(obj_blconwideslave) == false)
 {
     con = 109
     alarm[4] = 40
@@ -1122,7 +1122,7 @@ if (con == 111 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 1)
         tor2.face = 2
 }
-if (con == 111 && instance_exists(obj_blconwideslave) == 0)
+if (con == 111 && instance_exists(obj_blconwideslave) == false)
 {
     snd_play(snd_heal_c)
     global.hp += 1
@@ -1170,7 +1170,7 @@ if (con == 117)
     obj_blconwideslave.sprite_index = spr_blconbelow
     con = 118
 }
-if (con == 118 && instance_exists(obj_blconwideslave) == 0)
+if (con == 118 && instance_exists(obj_blconwideslave) == false)
 {
     snd_play(snd_heal_c)
     global.hp += 1
@@ -1182,7 +1182,7 @@ if (con == 118 && instance_exists(obj_blconwideslave) == 0)
     obj_blconwideslave.sprite_index = spr_blconbelow
     con = 119
 }
-if (con == 119 && instance_exists(obj_blconwideslave) == 0)
+if (con == 119 && instance_exists(obj_blconwideslave) == false)
 {
     snd_play(snd_heal_c)
     global.hp += 1
@@ -1195,7 +1195,7 @@ if (con == 119 && instance_exists(obj_blconwideslave) == 0)
     blcon.depth = -10
     con = 120
 }
-if (con == 120 && instance_exists(obj_blconwideslave) == 0)
+if (con == 120 && instance_exists(obj_blconwideslave) == false)
 {
     snd_play(snd_heal_c)
     global.hp += 1
@@ -1229,7 +1229,7 @@ if (con == 124)
     con = 125
     alarm[4] = 60
 }
-if (con == 126 && instance_exists(obj_blconwideslave) == 0)
+if (con == 126 && instance_exists(obj_blconwideslave) == false)
 {
     global.faceemotion = 14
     al2.face = 1
@@ -1246,7 +1246,7 @@ if (con == 127 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 1)
         al2.face = 2
 }
-if (con == 127 && instance_exists(obj_blconwideslave) == 0)
+if (con == 127 && instance_exists(obj_blconwideslave) == false)
 {
     snd_play(snd_heal_c)
     global.hp += 1
@@ -1258,7 +1258,7 @@ if (con == 127 && instance_exists(obj_blconwideslave) == 0)
     obj_blconwideslave.sprite_index = spr_blconbelow
     con = 128
 }
-if (con == 128 && instance_exists(obj_blconwideslave) == 0)
+if (con == 128 && instance_exists(obj_blconwideslave) == false)
 {
     global.faceemotion = 16
     snd_play(snd_heal_c)
@@ -1294,7 +1294,7 @@ if (con == 134)
     con = 135
     alarm[4] = 110
 }
-if (con == 136 && instance_exists(obj_blconwideslave) == 0)
+if (con == 136 && instance_exists(obj_blconwideslave) == false)
 {
     global.typer = 78
     skiptext = 0
@@ -1316,7 +1316,7 @@ if (con == 127 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 3)
         global.faceemotion = 20
 }
-if (con == 137 && instance_exists(obj_blconwideslave) == 0)
+if (con == 137 && instance_exists(obj_blconwideslave) == false)
 {
     caster_free(dontgiveup)
     snd_play(snd_noise)
@@ -1334,7 +1334,7 @@ if (con == 137 && instance_exists(obj_blconwideslave) == 0)
         event_user(0)
     trickblack = 1
 }
-if (con == 139 && instance_exists(obj_blconwideslave) == 0)
+if (con == 139 && instance_exists(obj_blconwideslave) == false)
 {
     global.typer = 77
     hellsfx = caster_load("music/f_destroyed3.ogg")
@@ -1345,7 +1345,7 @@ if (con == 139 && instance_exists(obj_blconwideslave) == 0)
     OBJ_WRITER.depth = (depth - 20)
     con = 140
 }
-if (con == 140 && instance_exists(obj_blconwideslave) == 0)
+if (con == 140 && instance_exists(obj_blconwideslave) == false)
 {
     caster_loop(hellsfx, 0.5, 0.6)
     pit = 0.8

@@ -2160,7 +2160,7 @@ function scr_papcall()
 	                global.msg[2] = scr_gettext("scr_papcall_2767")
 	            }
 	        }
-	        if (instance_exists(obj_sans_room) == 0)
+	        if (instance_exists(obj_sans_room) == false)
 	        {
 	            scr_papface(1, 3)
 	            global.msg[2] = scr_gettext("scr_papcall_2774")

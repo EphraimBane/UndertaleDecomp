@@ -107,7 +107,7 @@ if (global.mnfight == 2)
         global.turntimer = 160
         if (global.hp > 2 && conversation < 13)
         {
-            if (FL_Hardmode == 0)
+            if (FL_Hardmode == false)
             {
                 if (mycommand >= 0 && mycommand <= 20)
                 {
@@ -345,7 +345,7 @@ if (conversation == 99 && instance_exists(OBJ_WRITER) == false)
         with (obj_blconwdflowey)
             instance_destroy()
     }
-    if (FL_Hardmode == 0)
+    if (FL_Hardmode == false)
     {
         obj_battlecontroller.runaway = 1
         conversation = 56

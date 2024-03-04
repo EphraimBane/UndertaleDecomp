@@ -38,7 +38,7 @@ if (global.mnfight == 0)
         var tempcheck = (global.bmenucoord[3] + ((global.bmenuno - 3) * 8))
         if (global.language == "ja")
         {
-            if (tempcheck < 7 && global.item[(tempcheck + 1)] != 0)
+            if (tempcheck < 7 && global.item[(tempcheck + 1)] != Items.Null)
             {
                 if (global.bmenucoord[3] < 2)
                     global.bmenucoord[3] += 1
@@ -60,7 +60,7 @@ if (global.mnfight == 0)
                 if (global.bmenucoord[3] == 0 || global.bmenucoord[3] == 1)
                 {
                     global.bmenucoord[3] += 2
-                    if (global.item[(tempcheck + 2)] == 0)
+                    if (global.item[(tempcheck + 2)] == Items.Null)
                         global.bmenucoord[3] -= 2
                     mv = 1
                 }

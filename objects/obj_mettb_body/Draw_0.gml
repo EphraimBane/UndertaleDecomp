@@ -195,7 +195,7 @@ if (bodyopen == 1)
 else if (bodyimg > 0)
     bodyimg -= 0.25
 draw_sprite_ext(spr_mettb_upperbody, bodyimg, (((x + 72) + sin((siner / 3.5))) + ds1), ((((y - legh) + 134) + (cos((siner / 3.5)) * 2)) + ds2), 2, 2, 0, myblend, myalpha)
-if (instance_exists(obj_mettheart_parent) == 0 && instance_exists(obj_mettheart_burst) == 0 && heartdead == 0)
+if (instance_exists(obj_mettheart_parent) == false && instance_exists(obj_mettheart_burst) == false && heartdead == 0)
     draw_sprite_ext(spr_mettb_upperbodyheart, 0, ((((x + 72) + sin((siner / 3.5))) + 66) + ds1), (((((y - legh) + 134) + (cos((siner / 3.5)) * 2)) + 108) + ds2), 2, 2, 0, myblend, myalpha)
 if (endface == 0)
 {

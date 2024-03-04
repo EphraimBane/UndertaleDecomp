@@ -1,4 +1,4 @@
-FL_InBattle = 1
+FL_InBattle = true
 if (cl == 0)
 {
     battleno = choose(64, 65)

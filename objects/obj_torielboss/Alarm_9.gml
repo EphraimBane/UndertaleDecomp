@@ -1,6 +1,6 @@
-if (instance_exists(blconwriter) == 0)
+if (instance_exists(blconwriter) == false)
 {
-    if (FL_Hardmode == 0)
+    if (FL_Hardmode == false)
         alarm[10] = 2
     else
     {

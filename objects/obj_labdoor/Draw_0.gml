@@ -21,7 +21,7 @@ if (open == 1)
 }
 if (open == 0)
 {
-    if (instance_exists(s1) == 0)
+    if (instance_exists(s1) == false)
     {
         s1 = instance_create(x, (y + 40), obj_solidsmall)
         s2 = instance_create((x + 20), (y + 40), obj_solidsmall)

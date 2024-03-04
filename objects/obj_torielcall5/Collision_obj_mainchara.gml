@@ -16,7 +16,7 @@ if (global.interact == 0)
     global.msg[8] = scr_gettext("obj_torielcall5_98")
     global.msg[9] = scr_gettext("obj_torielcall5_99")
     global.msg[10] = scr_gettext("obj_torielcall5_100")
-    if (FL_Hardmode == 1)
+    if (FL_Hardmode == true)
     {
         global.msg[0] = scr_gettext("obj_torielcall5_104")
         global.msg[1] = scr_gettext("obj_torielcall5_105")

@@ -79,7 +79,7 @@ if (memory == 2 && credno >= 252)
     cb.type = 2
     memory = 3
 }
-if (memory == 3 && instance_exists(obj_creditboss) == 0)
+if (memory == 3 && instance_exists(obj_creditboss) == false)
 {
     alarm[5] = 60
     memory = 4

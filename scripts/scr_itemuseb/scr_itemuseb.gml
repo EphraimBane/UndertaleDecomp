@@ -339,7 +339,7 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        scr_itemshift(argument0, 0)
 	        break
 	    case 29:
-	        if (global.item[7] == 0)
+	        if (global.item[7] == Items.Null)
 	            global.msg[1] = scr_gettext("item_use_29a")
 	        else
 	            global.msg[1] = scr_gettext("item_use_29b")
@@ -353,12 +353,12 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        for (i = 0; i < 8; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
-	            if (global.item[i] == 0)
+	            if (global.item[i] == Items.Null)
 	                global.item[i] = rr
 	        }
 	        break
 	    case 30:
-	        if (global.item[7] == 0)
+	        if (global.item[7] == Items.Null)
 	            global.msg[1] = scr_gettext("item_use_29a")
 	        else
 	            global.msg[1] = scr_gettext("item_use_29b")
@@ -372,12 +372,12 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        for (i = 0; i < 8; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
-	            if (global.item[i] == 0)
+	            if (global.item[i] == Items.Null)
 	                global.item[i] = rr
 	        }
 	        break
 	    case 31:
-	        if (global.item[7] == 0)
+	        if (global.item[7] == Items.Null)
 	            global.msg[1] = scr_gettext("item_use_29a")
 	        else
 	            global.msg[1] = scr_gettext("item_use_29b")
@@ -391,12 +391,12 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        for (i = 0; i < 8; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
-	            if (global.item[i] == 0)
+	            if (global.item[i] == Items.Null)
 	                global.item[i] = rr
 	        }
 	        break
 	    case 32:
-	        if (global.item[7] == 0)
+	        if (global.item[7] == Items.Null)
 	            global.msg[1] = scr_gettext("item_use_29a")
 	        else
 	            global.msg[1] = scr_gettext("item_use_29b")
@@ -410,12 +410,12 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        for (i = 0; i < 8; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
-	            if (global.item[i] == 0)
+	            if (global.item[i] == Items.Null)
 	                global.item[i] = rr
 	        }
 	        break
 	    case 33:
-	        if (global.item[7] == 0)
+	        if (global.item[7] == Items.Null)
 	            global.msg[1] = scr_gettext("item_use_29a")
 	        else
 	            global.msg[1] = scr_gettext("item_use_29b")
@@ -429,12 +429,12 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        for (i = 0; i < 8; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
-	            if (global.item[i] == 0)
+	            if (global.item[i] == Items.Null)
 	                global.item[i] = rr
 	        }
 	        break
 	    case 34:
-	        if (global.item[7] == 0)
+	        if (global.item[7] == Items.Null)
 	            global.msg[1] = scr_gettext("item_use_29a")
 	        else
 	            global.msg[1] = scr_gettext("item_use_29b")
@@ -448,7 +448,7 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        for (i = 0; i < 8; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
-	            if (global.item[i] == 0)
+	            if (global.item[i] == Items.Null)
 	                global.item[i] = rr
 	        }
 	        break

@@ -1,4 +1,4 @@
-FL_InBattle = 1
+FL_InBattle = true
 if (global.encounter > steps)
 {
     if (global.phasing == 0)

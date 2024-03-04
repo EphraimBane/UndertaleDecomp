@@ -1,6 +1,6 @@
 if (conversation == 2 || conversation == 4)
 {
-    if (instance_exists(obj_dialoguer) == 0)
+    if (instance_exists(obj_dialoguer) == false)
     {
         global.interact = 1
         alarm[1] = 150
@@ -18,7 +18,7 @@ if (conversation == 2 || conversation == 4)
         conversation = 999
     }
 }
-if (conversation == 3 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 3 && instance_exists(obj_dialoguer) == false)
 {
     global.interact = 1
     obj_floweytalker1.sprite_index = spr_floweygrow

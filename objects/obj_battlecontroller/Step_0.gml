@@ -49,17 +49,17 @@ if (global.monster[0] == false)
 global.inv = 30
 if instance_exists(obj_undyne_ex)
     global.inv = (30 - global.lv)
-if (instance_exists(obj_spiderb) && global.armor != 44)
+if (instance_exists(obj_spiderb) && global.armor != Items.ButtyGlasses)
     global.inv += 20
-if (global.armor == 44)
+if (global.armor == Items.ButtyGlasses)
     global.inv += 30
-if (global.armor == 64)
+if (global.armor == Items.TemyArmor)
     global.inv += 15
-if (global.weapon == 45)
+if (global.weapon == Items.TornNotebook)
     global.inv += 15
 if (global.inv < 15)
     global.inv = 15
-if (global.armor == 46 || global.armor == 64)
+if (global.armor == Items.StainedApron || global.armor == Items.TemyArmor)
 {
     if (global.mnfight == 0 && global.myfight == 0)
     {
@@ -82,7 +82,7 @@ if (global.mnfight == 0 && global.myfight == 0)
     global.typer = 1
     if (active == true)
     {
-        if (control_check_pressed(CancelButton) == 0)
+        if (control_check_pressed(CancelButton) == false)
         {
             if control_check_pressed(InteractButton)
             {
@@ -136,7 +136,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                     }
                     if (global.bmenuno == 3)
                     {
-                        if (global.item[0] != 0)
+                        if (global.item[0] != Items.Null)
                         {
                             global.bmenucoord[3] = 0
                             scr_itemnameb()
@@ -336,7 +336,7 @@ if (active == true)
 {
     if (control_check_pressed(CancelButton) || (control_check(MenuButton) && global.decomp_vars.WristProtector && !global.decomp_vars.VanillaMode))
     {
-        if (global.mnfight == 0 && FL_CookedNoodles == 0)
+        if (global.mnfight == 0 && FL_CookedNoodles == false)
         {
             if (instance_number(OBJ_WRITER) > 0)
                 OBJ_WRITER.stringpos = string_length(OBJ_WRITER.originalstring)

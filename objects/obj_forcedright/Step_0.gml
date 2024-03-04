@@ -25,7 +25,7 @@ if (t == 4)
     t = 5
     instance_create(0, 0, obj_dialoguer)
 }
-if (t == 5 && instance_exists(obj_dialoguer) == 0)
+if (t == 5 && instance_exists(obj_dialoguer) == false)
 {
     caster_play(dogmeander, 1, 1.4)
     t = 6
@@ -101,7 +101,7 @@ if (global.plot == 50 && t == 12)
         scr_regulartext()
     }
 }
-if (t == 14 && instance_exists(obj_dialoguer) == 0)
+if (t == 14 && instance_exists(obj_dialoguer) == false)
 {
     vol = 99
     dog1.vspeed = 4

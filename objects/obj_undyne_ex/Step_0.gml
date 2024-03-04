@@ -256,7 +256,7 @@ if instance_exists(obj_boxsiner)
     obj_boxsiner.x = (obj_boxsiner.xstart + (sin((siner / 24)) * 40))
 if (global.myfight == 4)
 {
-    if (global.mercyuse == 0)
+    if (global.mercyuse == false)
     {
         mercied += 1
         scr_mercystandard()

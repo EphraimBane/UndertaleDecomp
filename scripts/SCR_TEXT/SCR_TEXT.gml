@@ -76,29 +76,29 @@ function SCR_TEXT()
 	            }
 	        }
 	        global.msg[0] += scr_gettext("battle_mercy_spare")
-	        if (global.mercy == 0)
+	        if (global.mercy == false)
 	            global.msg[0] += (" &\\W" + scr_gettext("battle_mercy_flee"))
 	        break
 	    case 9:
 	        global.msg[0] = (scr_gettext("item_menub_header") + global.itemnameb[0])
-	        if (global.item[1] != 0)
+	        if (global.item[1] != Items.Null)
 	            global.msg[0] += (scr_gettext("item_menub_header") + global.itemnameb[1])
 	        global.msg[0] += "&"
-	        if (global.item[2] != 0)
+	        if (global.item[2] != Items.Null)
 	            global.msg[0] += (scr_gettext("item_menub_header") + global.itemnameb[2])
-	        if (global.item[3] != 0)
+	        if (global.item[3] != Items.Null)
 	            global.msg[0] += (scr_gettext("item_menub_header") + global.itemnameb[3])
 	        global.msg[0] += ("&" + scr_gettext("item_menub_page1"))
 	        global.msg[1] = "%%%"
 	        break
 	    case 10:
 	        global.msg[0] = (scr_gettext("item_menub_header") + global.itemnameb[4])
-	        if (global.item[5] != 0)
+	        if (global.item[5] != Items.Null)
 	            global.msg[0] += (scr_gettext("item_menub_header") + global.itemnameb[5])
 	        global.msg[0] += "&"
-	        if (global.item[6] != 0)
+	        if (global.item[6] != Items.Null)
 	            global.msg[0] += (scr_gettext("item_menub_header") + global.itemnameb[6])
-	        if (global.item[7] != 0)
+	        if (global.item[7] != Items.Null)
 	            global.msg[0] += (scr_gettext("item_menub_header") + global.itemnameb[7])
 	        global.msg[0] += ("&" + scr_gettext("item_menub_page2"))
 	        global.msg[1] = "%%%"
@@ -292,9 +292,9 @@ function SCR_TEXT()
 	    case 31:
 	        if (global.choice == 0)
 	        {
-	            if (global.item[0] != 0 || FL_DimensionalBoxAItem1 != 0)
+	            if (global.item[0] != Items.Null || FL_DimensionalBoxAItem1 != Items.Null)
 	            {
-	                if (instance_exists(obj_itemswapper) == 0)
+	                if (instance_exists(obj_itemswapper) == false)
 	                    instance_create(0, 0, obj_itemswapper)
 	                global.msg[0] = scr_gettext("SCR_TEXT_270")
 	            }
@@ -338,7 +338,7 @@ function SCR_TEXT()
 	    case 204:
 	        global.msg[0] = scr_gettext("SCR_TEXT_318")
 	        global.msg[1] = scr_gettext("SCR_TEXT_319")
-	        if (FL_Hardmode == 1)
+	        if (FL_Hardmode == true)
 	        {
 	            global.msg[1] = scr_gettext("SCR_TEXT_322")
 	            global.msg[2] = scr_gettext("SCR_TEXT_323")
@@ -355,13 +355,13 @@ function SCR_TEXT()
 	        break
 	    case 207:
 	        global.msg[0] = scr_gettext("SCR_TEXT_339")
-	        if (FL_Hardmode == 1)
+	        if (FL_Hardmode == true)
 	            global.msg[0] = scr_gettext("SCR_TEXT_342")
 	        break
 	    case 208:
 	        global.msg[0] = scr_gettext("SCR_TEXT_347")
 	        global.msg[1] = scr_gettext("SCR_TEXT_348")
-	        if (FL_Hardmode == 1)
+	        if (FL_Hardmode == true)
 	            global.msg[0] = scr_gettext("SCR_TEXT_352")
 	        break
 	    case 209:
@@ -783,7 +783,7 @@ function SCR_TEXT()
 	                    n -= 1
 	                    g = 0
 	                }
-	                if (global.item[n] == 26 && rem < 3)
+	                if (global.item[n] == Items.PunchCard && rem < 3)
 	                {
 	                    scr_itemshift(n, 0)
 	                    rem += 1
@@ -1168,14 +1168,14 @@ function SCR_TEXT()
 	            {
 	                noroom = -1
 	                doak = 1
-	                scr_itemget(0)
-	                for (i = 0; i < 8; i += 1)
+	                scr_itemget(Items.Null)
+	                for (i = 0; i < InventorySize; i += 1)
 	                {
-	                    if (global.item[i] == 27)
+	                    if (global.item[i] == Items.AnnoyingDog)
 	                        noroom = 2
 	                }
 	            }
-	            if (noroom == 0)
+	            if (noroom == false)
 	            {
 	                global.msg[0] = scr_gettext("SCR_TEXT_1221")
 	                FL_GotArtifact = 1
@@ -1554,7 +1554,7 @@ function SCR_TEXT()
 	                    global.msg[0] = scr_gettext("SCR_TEXT_1626")
 	                if (FL_RuinsCandyTaken == 4)
 	                    global.msg[0] = scr_gettext("SCR_TEXT_1628")
-	                if (FL_RuinsCandyTaken == 3 && FL_Hardmode == 1)
+	                if (FL_RuinsCandyTaken == 3 && FL_Hardmode == true)
 	                {
 	                    global.msg[0] = scr_gettext("SCR_TEXT_1631")
 	                    FL_RuinsCandyTaken += 1
@@ -2077,7 +2077,7 @@ function SCR_TEXT()
 	        global.msg[1] = scr_gettext("SCR_TEXT_2131")
 	        if (global.choice == 0)
 	        {
-	            if (instance_exists(obj_starchecker) == 0)
+	            if (instance_exists(obj_starchecker) == false)
 	                instance_create(__view_get(VIEW_PROP_CAM_X, 0), __view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent), obj_starchecker)
 	        }
 	        break
@@ -2104,7 +2104,7 @@ function SCR_TEXT()
 	        global.msg[1] = scr_gettext("SCR_TEXT_2158")
 	        if (global.choice == 0)
 	        {
-	            if (instance_exists(obj_starchecker) == 0)
+	            if (instance_exists(obj_starchecker) == false)
 	                instance_create(__view_get(VIEW_PROP_CAM_X, 0), __view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent), obj_starchecker)
 	            obj_mainchara.dsprite = spr_maincharad_pranked
 	            obj_mainchara.lsprite = spr_maincharal_pranked
@@ -2117,13 +2117,13 @@ function SCR_TEXT()
 	        break
 	    case 553:
 	        armor = scr_gettext("papyrus_armor_0")
-	        if (global.armor == 4)
+	        if (global.armor == Items.Bandage)
 	            armor = scr_gettext("papyrus_armor_4")
-	        if (global.armor == 12)
+	        if (global.armor == Items.FadedRibbon)
 	            armor = scr_gettext("papyrus_armor_12")
-	        if (global.armor == 15)
+	        if (global.armor == Items.ManlyBandanna)
 	            armor = scr_gettext("papyrus_armor_15")
-	        if (global.armor == 24)
+	        if (global.armor == Items.OldTutu)
 	            armor = scr_gettext("papyrus_armor_24")
 	        FL_PapyrusArmorInquiry = global.armor
 	        global.msg[0] = scr_gettext("SCR_TEXT_2180", armor)
@@ -3252,7 +3252,7 @@ function SCR_TEXT()
 	        global.msg[1] = scr_gettext("SCR_TEXT_3488")
 	        if (global.choice == 0)
 	        {
-	            if (instance_exists(obj_paino) == 0)
+	            if (instance_exists(obj_paino) == false)
 	                instance_create(2, 2, obj_paino)
 	        }
 	        break
@@ -3384,7 +3384,7 @@ function SCR_TEXT()
 	        global.msg[0] = scr_gettext("SCR_TEXT_3630")
 	        global.msg[1] = scr_gettext("SCR_TEXT_3631")
 	        global.msg[2] = scr_gettext("SCR_TEXT_3632")
-	        if (FL_HotDogsOnHead > 0 && global.item[7] != 0)
+	        if (FL_HotDogsOnHead > 0 && global.item[7] != Items.AnnoyingDog)
 	        {
 	            if (instance_number(obj_hotdog) < 30)
 	            {
@@ -3404,7 +3404,7 @@ function SCR_TEXT()
 	            else
 	            {
 	                global.msg[0] = scr_gettext("SCR_TEXT_3653")
-	                if (FL_ReachedHotDogStackLimit == 0)
+	                if (FL_ReachedHotDogStackLimit == false)
 	                {
 	                    global.msg[0] = scr_gettext("SCR_TEXT_3656")
 	                    global.msg[1] = scr_gettext("SCR_TEXT_3657")
@@ -3412,7 +3412,7 @@ function SCR_TEXT()
 	                    global.msg[3] = scr_gettext("SCR_TEXT_3659")
 	                    global.msg[4] = scr_gettext("SCR_TEXT_3660")
 	                }
-	                FL_ReachedHotDogStackLimit = 1
+	                FL_ReachedHotDogStackLimit = true
 	            }
 	        }
 	        break
@@ -6613,7 +6613,7 @@ function SCR_TEXT()
 	    case 9999:
 	        i = 0
 	        fileid = file_text_open_read("testlines.txt")
-	        while (file_text_eof(fileid) == 0)
+	        while (file_text_eof(fileid) == false)
 	        {
 	            global.msg[i] = file_text_read_string(fileid)
 	            file_text_readln(fileid)

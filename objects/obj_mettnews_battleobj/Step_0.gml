@@ -11,7 +11,7 @@ if (con == 1)
         b_buffer = 50
     con = 2
     alarm[4] = 33
-    FL_InBattle = 1
+    FL_InBattle = true
     global.battlegroup = (69 + bombtype)
     instance_create(0, 0, obj_battler)
 }
@@ -28,7 +28,7 @@ if (con == 4)
 if (con == 5)
 {
     con = 90
-    FL_InBattle = 0
+    FL_InBattle = false
     FL_DefusedBombsCounter += 1
     anti = 0
     if instance_exists(obj_doomtimer)

@@ -571,7 +571,7 @@ if (con == 122)
     global.msg[0] = scr_gettext("obj_playmovement_821")
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 123 && instance_exists(obj_dialoguer) == 0)
+if (con == 123 && instance_exists(obj_dialoguer) == false)
 {
     mett.arm = 12
     blackbox = instance_create((obj_mainchara.x - 4), (obj_mainchara.y + 10), obj_npc_marker)

@@ -49,7 +49,7 @@ if (global.interact == 0)
 }
 if (cutscene == false)
 {
-    if (instance_exists(obj_shaker) == 0)
+    if (instance_exists(obj_shaker) == false)
     {
         __view_set(VIEW_PROP_CAM_X, 0, round(((x - (__view_get(VIEW_PROP_CAM_WIDTH, 0) / 2)) + 10)))
         __view_set(VIEW_PROP_CAM_Y, 0, round(((y - (__view_get(VIEW_PROP_CAM_HEIGHT, 0) / 2)) + 10)))

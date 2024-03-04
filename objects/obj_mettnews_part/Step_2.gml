@@ -1,4 +1,4 @@
-if (instance_exists(obj_shaker) == 0)
+if (instance_exists(obj_shaker) == false)
 {
     if (on == 1)
     {

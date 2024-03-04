@@ -1,6 +1,6 @@
 if (FL_DisableRandomEncounters == 1 || FL_TruePacifist == true)
     instance_destroy()
-FL_InBattle = 1
+FL_InBattle = true
 alldead = 0
 global.encounter = 0
 factor = 240

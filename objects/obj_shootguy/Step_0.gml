@@ -33,7 +33,7 @@ if (active == true && win == 0)
             buffer = 4
             event_user(3)
         }
-        if (control_check_pressed(CancelButton) && buffer <= 0 && instance_exists(obj_shotguy) == 0)
+        if (control_check_pressed(CancelButton) && buffer <= 0 && instance_exists(obj_shotguy) == false)
         {
             active = false
             alarm[2] = 2

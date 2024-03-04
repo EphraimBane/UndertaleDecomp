@@ -7,7 +7,7 @@ if (conversation == 0 && (obj_mainchara.x > 140 || obj_mainchara.y < 170))
     instance_create(0, 0, obj_dialoguer)
     conversation = 1
 }
-if (conversation == 1 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 1 && instance_exists(obj_dialoguer) == false)
 {
     global.interact = 0
     conversation = 2
@@ -54,7 +54,7 @@ if instance_exists(obj_toroverworld4)
             instance_destroy()
     }
 }
-if (conversation == 4 && global.plot == 5 && instance_exists(obj_shaker) == 0)
+if (conversation == 4 && global.plot == 5 && instance_exists(obj_shaker) == false)
 {
     if instance_exists(obj_torinteractable2)
     {
@@ -73,7 +73,7 @@ if (conversation == 4 && global.plot == 5 && instance_exists(obj_shaker) == 0)
     instance_create(0, 0, obj_dialoguer)
     conversation = 5
 }
-if (conversation == 5 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 5 && instance_exists(obj_dialoguer) == false)
 {
     conversation = 6
     global.interact = 0

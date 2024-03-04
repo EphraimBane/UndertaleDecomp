@@ -44,7 +44,7 @@ if obj_time.down
 }
 if (global.hp < 1)
     scr_gameoverb()
-if (deleteafter == 1 && instance_exists(blconwd) == 0)
+if (deleteafter == 1 && instance_exists(blconwd) == false)
 {
     alarm[3] = 10
     if instance_exists(blcon)

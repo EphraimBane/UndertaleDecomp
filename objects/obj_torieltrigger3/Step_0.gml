@@ -7,7 +7,7 @@ if (conversation == 1 && instance_exists(obj_toroverworld4))
     instance_create(0, 0, obj_dialoguer)
     conversation = 1.5
 }
-if (conversation == 1.5 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 1.5 && instance_exists(obj_dialoguer) == false)
 {
     with (tor)
         path_start(path_torielwalk4, 4, path_action_stop, 0)
@@ -38,7 +38,7 @@ if (global.plot == 6 && conversation == 3)
 }
 if (conversation == 4)
     global.interact = 1
-if (conversation == 6 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 6 && instance_exists(obj_dialoguer) == false)
 {
     with (tor3)
         path_start(path_torielwalk4_2, 3, path_action_stop, 0)

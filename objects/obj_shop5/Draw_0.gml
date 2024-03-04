@@ -126,7 +126,7 @@ if (menu == 0)
             menu = 1
         if (menuc[0] == 1)
         {
-            if (global.item[0] != 0)
+            if (global.item[0] != Items.Null)
                 menu = 5
             else
             {
@@ -707,7 +707,7 @@ if (menu == 6)
             s_quit = 1
         else
         {
-            if (global.item[sellpos] != 22)
+            if (global.item[sellpos] != Items.TemmieFlakes)
                 FL_TemSellParameter1 -= 1
             joytimer = 90
             global.faceemotion = 6
@@ -718,9 +718,9 @@ if (menu == 6)
             if (thanks > 8)
                 thanks = 8
             sold[(8 - thanks)] = 1
-            if (global.item[sellpos] == 0 && sellpos > 0)
+            if (global.item[sellpos] == Items.Null && sellpos > 0)
                 sellpos -= 1
-            if (global.item[0] != 0)
+            if (global.item[0] != Items.Null)
                 menu = 5
             else
                 menu = 0

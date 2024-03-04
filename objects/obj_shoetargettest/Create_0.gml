@@ -6,13 +6,13 @@ thensc = 0
 fatalx = (274 + x)
 wherex = -50
 type = 0
-if (global.weapon == 25)
+if (global.weapon == Items.BalletShoes)
     type = 0
-if (global.weapon == 47)
+if (global.weapon == Items.BurntPan)
     type = 1
-if (global.weapon == 49)
+if (global.weapon == Items.EmptyGun)
     type = 2
-if (global.weapon == 45)
+if (global.weapon == Items.TornNotebook)
     type = 3
 num = 3
 if (type == 0)
