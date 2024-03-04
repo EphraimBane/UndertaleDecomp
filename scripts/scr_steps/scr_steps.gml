@@ -1,21 +1,21 @@
-/// @func	scr_steps(unknown1, unknown2, unknown3, area_kills_pointer)
-/// @desc	Unsure?? Need to look into this is a TODO
-function scr_steps(_unknown1, _unknown2, _unknown3, _area_kills_pointer)
+/// @func	scr_steps(_base_steps, _random_steps, _population, _area_kills_pointer)
+/// @desc	Calculates when to start an encounter based on the rooms "base steps" and "random steps". Does extra math depending on how many monsters have been killed.
+function scr_steps(_base_steps, _random_steps, _population, _area_kills_pointer)
 {
 	FL_AreaKillsPointer = _area_kills_pointer
-	if ((_unknown3 - global.flag[_area_kills_pointer]) > 0)
+	if ((_population - global.flag[_area_kills_pointer]) > 0)
 	{
-	    populationfactor = (_unknown3 / (_unknown3 - global.flag[_area_kills_pointer]))
+	    populationfactor = (_population / (_population - global.flag[_area_kills_pointer]))
 	    if (populationfactor > 8)
 	        populationfactor = 8
-	    steps = ((_unknown1 + round(random(_unknown2))) * populationfactor)
+	    steps = ((_base_steps + round(random(_random_steps))) * populationfactor)
 	}
 	else
 	{
 	    if (alldead == 0 || alldead == 1)
 	        steps = 20
 	    else
-	        steps = ((_unknown1 + round((_unknown2 / 2))) * 5)
+	        steps = ((_base_steps + round((_random_steps / 2))) * 5)
 	    if (alldead == 0)
 	        alldead = 1
 	}
