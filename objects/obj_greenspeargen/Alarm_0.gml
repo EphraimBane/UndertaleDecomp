@@ -22,6 +22,8 @@ if (speartype[spearno] == 2)
 b.speedmod = speedmod[spearno]
 b.site = speardir[spearno]
 spearno += 1
+if (alarm[0] == 0) // Vultu: Added this because gamemaker doesn't like alarms being set to 0
+	alarm[0] = 1;  // anymore, this appears to have the exact same behavior as before
 if (spearno > spearmax)
 {
     alarm[0] = -1
