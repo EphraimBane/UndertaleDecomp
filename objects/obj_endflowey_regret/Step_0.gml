@@ -10,7 +10,7 @@ if (con == 1)
     instance_create(writerx, writery, OBJ_WRITER)
     con = 1.1
 }
-if (con == 1.1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1.1 && instance_exists(OBJ_WRITER) == false)
 {
     con = 0.9
     alarm[4] = 60
@@ -27,7 +27,7 @@ if (con == 1.9)
     instance_create(writerx, writery, OBJ_WRITER)
     con = 0.2
 }
-if (con == 0.2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 0.2 && instance_exists(OBJ_WRITER) == false)
 {
     con = 1.2
     alarm[4] = 70
@@ -70,7 +70,7 @@ if (con == 2.2)
     instance_create(writerx, writery, OBJ_WRITER)
     con = 0.3
 }
-if (con == 0.3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 0.3 && instance_exists(OBJ_WRITER) == false)
 {
     con = 1.3
     alarm[4] = 70
@@ -95,7 +95,7 @@ if (con == 2.3)
     instance_create(writerx, writery, OBJ_WRITER)
     con = 2
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     flowey = 3
     con = 3

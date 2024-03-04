@@ -1,5 +1,5 @@
 scr_depth(0, 0, 0, 0, 0)
-if (carry == 1 && instance_exists(OBJ_WRITER) == 0)
+if (carry == 1 && instance_exists(OBJ_WRITER) == false)
 {
     if (FL_TruePacifist == false)
         scr_musfadepause(0.05)

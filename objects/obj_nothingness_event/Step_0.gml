@@ -13,7 +13,7 @@ if (con == 1)
     con = 2
     writer = instance_create(10, 150, OBJ_WRITER)
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     con = 3
     alarm[4] = 180
@@ -26,7 +26,7 @@ if (con == 4)
     con = 5
     writer = instance_create(10, 150, OBJ_WRITER)
 }
-if (con == 5 && instance_exists(OBJ_WRITER) == 0)
+if (con == 5 && instance_exists(OBJ_WRITER) == false)
 {
     if ossafe_file_exists("system_information_962")
         ossafe_file_delete("system_information_962")

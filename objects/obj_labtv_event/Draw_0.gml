@@ -18,7 +18,7 @@ if (con == 1)
     con = 2
     buffer = 5
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     buffer -= 1
     draw_set_color(c_white)
@@ -193,7 +193,7 @@ if (con == 21)
     hhvol = 0.7
     con = 22
 }
-if (con == 22 && instance_exists(OBJ_WRITER) == 0)
+if (con == 22 && instance_exists(OBJ_WRITER) == false)
 {
     hhvol -= 0.04
     caster_set_volume(hh, hhvol)
@@ -225,7 +225,7 @@ if (con == 31)
     hhvol = 0.7
     con = 32
 }
-if (con == 32 && instance_exists(OBJ_WRITER) == 0)
+if (con == 32 && instance_exists(OBJ_WRITER) == false)
 {
     hhvol -= 0.04
     caster_set_volume(hh, hhvol)
@@ -263,7 +263,7 @@ if (con == 41)
     hhvol = 0.7
     con = 42
 }
-if (con == 42 && instance_exists(OBJ_WRITER) == 0)
+if (con == 42 && instance_exists(OBJ_WRITER) == false)
 {
     hhvol -= 0.04
     caster_set_volume(hh, hhvol)
@@ -296,7 +296,7 @@ if (con == 51)
     hhvol = 0.7
     con = 52
 }
-if (con == 52 && instance_exists(OBJ_WRITER) == 0)
+if (con == 52 && instance_exists(OBJ_WRITER) == false)
 {
     hhvol -= 0.04
     caster_set_volume(hh, hhvol)
@@ -332,7 +332,7 @@ if (con == 61)
     hhvol = 0.7
     con = 62
 }
-if (con == 62 && instance_exists(OBJ_WRITER) == 0)
+if (con == 62 && instance_exists(OBJ_WRITER) == false)
 {
     hhvol -= 0.04
     caster_set_volume(hh, hhvol)

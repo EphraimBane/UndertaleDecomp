@@ -131,6 +131,9 @@ else
 			case MenuOptionTypes.Slider:
 				draw_slider(__x, __y, option, cat_bounds, color);
 				break;
+			case MenuOptionTypes.HoldButton:
+				draw_hold_timer(__x, __y, option, cat_bounds, color);
+				break;
 		}
 	}
 }

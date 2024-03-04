@@ -6,7 +6,7 @@ if (FL_TruePacifist == true)
 }
 if (FL_Hardmode == 1 && (!scr_hardmodename(global.charname)))
     FL_Hardmode = 0
-FL_CalledAlready = 0
+FL_PapyrusCalledAlready = 0
 if ((x % 3) == 2)
     x += 1
 if ((x % 3) == 1)

@@ -190,7 +190,7 @@ if (STOPPER == 0)
             con = 21
         }
     }
-    if (instance_exists(OBJ_WRITER) == 0 && con == 21)
+    if (instance_exists(OBJ_WRITER) == false && con == 21)
     {
         active = true
         con = 4

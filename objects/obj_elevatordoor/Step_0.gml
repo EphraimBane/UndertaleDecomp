@@ -56,7 +56,7 @@ if (con == 41)
     scr_regulartext()
     con = 42
 }
-if (con == 42 && instance_exists(OBJ_WRITER) == 0)
+if (con == 42 && instance_exists(OBJ_WRITER) == false)
 {
     buffer = 4
     con = 43

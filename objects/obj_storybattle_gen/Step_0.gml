@@ -705,7 +705,7 @@ if (con == 300)
     scr_blcon_x((floweyx + 90), (floweyy - 10))
     con = 301
 }
-if (con == 301 && instance_exists(OBJ_WRITER) == 0)
+if (con == 301 && instance_exists(OBJ_WRITER) == false)
 {
     off = 1
     con = 302
@@ -962,7 +962,7 @@ if (con == 381 && instance_exists(OBJ_WRITER))
     if (con == 381 && OBJ_WRITER.stringno == 1)
         caster_free(global.currentsong)
 }
-if (con == 381 && instance_exists(OBJ_WRITER) == 0)
+if (con == 381 && instance_exists(OBJ_WRITER) == false)
 {
     caster_free(all)
     con = 382
@@ -991,7 +991,7 @@ if (con == 384 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 5)
         global.faceemotion = 10
 }
-if (con == 384 && instance_exists(OBJ_WRITER) == 0)
+if (con == 384 && instance_exists(OBJ_WRITER) == false)
     off = 1
 if (con == 390)
 {

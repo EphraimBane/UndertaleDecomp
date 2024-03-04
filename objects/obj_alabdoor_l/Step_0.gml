@@ -31,13 +31,13 @@ if (myinteract == 1)
         myinteract = 2
     }
 }
-if (myinteract == 2 && instance_exists(OBJ_WRITER) == 0)
+if (myinteract == 2 && instance_exists(OBJ_WRITER) == false)
 {
     buffer = 4
     myinteract = 0
     global.interact = 0
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     for (i = 0; i < 9; i += 1)
     {
@@ -50,7 +50,7 @@ if (con == 2 && instance_exists(OBJ_WRITER) == 0)
     con = 2.1
     alarm[4] = 40
 }
-if (con == 3.1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3.1 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 47
     global.facechoice = 0
@@ -66,7 +66,7 @@ if (con == 3.1 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 3
 }
-if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3 && instance_exists(OBJ_WRITER) == false)
 {
     con = 3.2
     alarm[4] = 30
@@ -115,7 +115,7 @@ if (con == 8)
     instance_create(0, 0, obj_dialoguer)
     con = 9
 }
-if (con == 9 && instance_exists(OBJ_WRITER) == 0)
+if (con == 9 && instance_exists(OBJ_WRITER) == false)
 {
     instance_create(0, 0, obj_battlerflowey)
     con = 10

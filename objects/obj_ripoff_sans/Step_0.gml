@@ -94,17 +94,17 @@ if (global.myfight == 2)
                 with (obj_monsterparent)
                     totalmercy += 1
                 mercyno += 1
-                global.msg[0] = scr_gettext("obj_ripoff_sans_486")
-                global.msg[1] = scr_gettext("obj_ripoff_sans_487")
+                global.msg[0] = scr_gettext("obj_ripoff_sans_486") //* You asked the Lost Soul to&  take a break from fighting&  with you.../
+                global.msg[1] = scr_gettext("obj_ripoff_sans_487") //* It seems like it wants to./^
                 if (totalmercy >= 3)
                 {
-                    global.msg[1] = scr_gettext("obj_ripoff_sans_490")
-                    obj_ripoff_papyrus.saved = 1
+                    global.msg[1] = scr_gettext("obj_ripoff_sans_490") //* It nods its head solemnly..^1.&* Seems like it will!/%%
+                    obj_ripoff_papyrus.saved = true
                     global.mnfight = 5
                     if (obj_ripoff_papyrus.mercyno == 0)
                     {
-                        global.msg[1] = scr_gettext("obj_ripoff_sans_496")
-                        global.msg[2] = scr_gettext("obj_ripoff_sans_497")
+                        global.msg[1] = scr_gettext("obj_ripoff_sans_496") //* Suddenly^1, its memories are&  flooding back!/
+                        global.msg[2] = scr_gettext("obj_ripoff_sans_497") //"* Seeing how nicely you treated&  its brother^1, the other Lost&  Soul remembers^1, too!/%%
                     }
                 }
                 OBJ_WRITER.halt = 3
@@ -119,17 +119,17 @@ if (global.myfight == 2)
                 with (obj_monsterparent)
                     totalmercy += 1
                 mercyno += 1
-                global.msg[0] = scr_gettext("obj_ripoff_sans_516")
-                global.msg[1] = scr_gettext("obj_ripoff_sans_517")
+                global.msg[0] = scr_gettext("obj_ripoff_sans_516") //* You told the Lost Soul a&  bad pun about skeletons./
+                global.msg[1] = scr_gettext("obj_ripoff_sans_517") //* He seems to love it..^1.&* But the other Lost Soul seems&  to hate it./^
                 if (totalmercy >= 3)
                 {
-                    global.msg[1] = scr_gettext("obj_ripoff_sans_520")
-                    obj_ripoff_papyrus.saved = 1
+                    global.msg[1] = scr_gettext("obj_ripoff_sans_520") //* Suddenly^1, the memories are&  flooding back!/%%
+                    obj_ripoff_papyrus.saved = true
                     global.mnfight = 5
                     if (obj_ripoff_papyrus.mercyno == 0)
                     {
-                        global.msg[1] = scr_gettext("obj_ripoff_sans_526")
-                        global.msg[2] = scr_gettext("obj_ripoff_sans_527")
+                        global.msg[1] = scr_gettext("obj_ripoff_sans_526") //* Suddenly^1, its memories are&  flooding back!/
+                        global.msg[2] = scr_gettext("obj_ripoff_sans_527") //* Seeing how nicely you treated&  its brother^1, the other Lost&  Soul remembers^1, too!/%%
                     }
                 }
                 OBJ_WRITER.halt = 3
@@ -148,7 +148,7 @@ if (global.myfight == 2)
                 if (totalmercy >= 3)
                 {
                     global.msg[1] = scr_gettext("obj_ripoff_sans_546")
-                    obj_ripoff_papyrus.saved = 1
+                    obj_ripoff_papyrus.saved = true
                     global.mnfight = 5
                     if (obj_ripoff_papyrus.mercyno == 0)
                     {
@@ -167,20 +167,20 @@ if (global.myfight == 2)
                 with (obj_monsterparent)
                     totalmercy += 1
                 mercyno += 1
-                if (global.flag[58] == 0)
-                    global.msg[0] = scr_gettext("obj_ripoff_sans_571")
-                if (global.flag[58] == 1)
-                    global.msg[0] = scr_gettext("obj_ripoff_sans_576")
-                global.msg[1] = scr_gettext("obj_ripoff_sans_579")
+                if (FL_HarderPuzzleChoice == Choices.JuniorJumble)
+                    global.msg[0] = scr_gettext("obj_ripoff_sans_571") //* You tell the Lost Soul you&  think that jumble is&  tougher than crosswords.
+                if (FL_HarderPuzzleChoice == Choices.WordSearch)
+                    global.msg[0] = scr_gettext("obj_ripoff_sans_576") //* You tell the Lost Soul you&  think that crosswords&  are tougher than jumble./
+                global.msg[1] = scr_gettext("obj_ripoff_sans_579") //* It seems to have some dim&  recollection of this&  fact.../^
                 if (totalmercy >= 3)
                 {
-                    global.msg[1] = scr_gettext("obj_ripoff_sans_583")
-                    obj_ripoff_papyrus.saved = 1
+                    global.msg[1] = scr_gettext("obj_ripoff_sans_583") //* It nods its head^1, like it&  knew this without question...!/%%
+                    obj_ripoff_papyrus.saved = true
                     global.mnfight = 5
                     if (obj_ripoff_papyrus.mercyno == 0)
                     {
-                        global.msg[1] = scr_gettext("obj_ripoff_sans_589")
-                        global.msg[2] = scr_gettext("obj_ripoff_sans_590")
+                        global.msg[1] = scr_gettext("obj_ripoff_sans_589") //* Suddenly^1, its memories are&  flooding back!/
+                        global.msg[2] = scr_gettext("obj_ripoff_sans_590") //* The other Lost Soul remembers&  this conversation^1, too!/%%
                     }
                 }
                 OBJ_WRITER.halt = 3
@@ -201,7 +201,7 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)

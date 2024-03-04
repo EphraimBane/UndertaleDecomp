@@ -95,7 +95,7 @@ if (room == room_ruins13 && x > 400)
         }
     }
 }
-if (instance_exists(OBJ_WRITER) == 0)
+if (instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 1
     mydialoguer = instance_create(0, 0, obj_dialoguer)

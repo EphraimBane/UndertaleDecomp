@@ -196,7 +196,7 @@ if (global.mnfight == 5)
         writer = instance_create((blcon.x + 15), (blcon.y + 10), OBJ_NOMSCWRITER)
         con = 3
     }
-    if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 3 && instance_exists(OBJ_WRITER) == false)
     {
         with (mypart1)
             shaker = 0
@@ -215,7 +215,7 @@ if (global.mnfight == 5)
         global.msg[5] = scr_gettext("obj_bara01_637")
         scr_blcon_x((blconx + 50), blcony)
     }
-    if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 4 && instance_exists(OBJ_WRITER) == false)
     {
         caster_pause(conmusic)
         con = 5
@@ -230,7 +230,7 @@ if (global.mnfight == 5)
             writer = instance_create((blcon.x + 15), (blcon.y + 10), OBJ_NOMSCWRITER)
         }
     }
-    if (con == 5 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 5 && instance_exists(OBJ_WRITER) == false)
     {
         with (mypart1)
             event_user(2)
@@ -251,7 +251,7 @@ if (global.mnfight == 5)
         writer = instance_create((blcon.x + 15), (blcon.y + 10), OBJ_NOMSCWRITER)
         con = 6
     }
-    if (con == 6 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 6 && instance_exists(OBJ_WRITER) == false)
     {
         with (blcon)
             instance_destroy()
@@ -266,7 +266,7 @@ if (global.mnfight == 5)
             writer = instance_create((blcon.x + 15), (blcon.y + 10), OBJ_NOMSCWRITER)
         }
     }
-    if (con == 7 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 7 && instance_exists(OBJ_WRITER) == false)
     {
         with (mypart1)
             shaker = 2
@@ -278,7 +278,7 @@ if (global.mnfight == 5)
         writer = instance_create((blcon.x + 15), (blcon.y + 10), OBJ_NOMSCWRITER)
         con = 8
     }
-    if (con == 8 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 8 && instance_exists(OBJ_WRITER) == false)
     {
         with (mypart1)
             shaker = 0
@@ -298,7 +298,7 @@ if (global.mnfight == 5)
             writer = instance_create((blcon.x + 15), (blcon.y + 10), OBJ_NOMSCWRITER)
         }
     }
-    if (con == 9 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 9 && instance_exists(OBJ_WRITER) == false)
     {
         with (mypart1)
             shaker = 0
@@ -311,7 +311,7 @@ if (global.mnfight == 5)
         writer = instance_create((blcon.x + 15), (blcon.y + 10), OBJ_NOMSCWRITER)
         con = 10
     }
-    if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 10 && instance_exists(OBJ_WRITER) == false)
     {
         with (blcon)
             instance_destroy()
@@ -337,7 +337,7 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)

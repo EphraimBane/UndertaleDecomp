@@ -4,13 +4,14 @@ var dir_y = obj_time.up - obj_time.down;
 var btn_0 = control_check(InteractButton);
 var btn_1 = control_check(CancelButton);
 var btn_2 = control_check(MenuButton);
-control_clear(InteractButton);
-control_clear(CancelButton);
-control_clear(MenuButton);
+//control_clear(InteractButton);
+//control_clear(CancelButton);
+//control_clear(MenuButton);
 
 if (hover_category == -1)
 {
 	slider_hold_timer = 0;
+	button_hold_timer = 0;
 	if (dir_y == -1)
 		hover_category = 0;
 	
@@ -26,6 +27,7 @@ if (hover_category == -1)
 if (selected_category == -1)
 {
 	slider_hold_timer = 0;
+	button_hold_timer = 0;
 	if (dir_x != prev_dir_x && ((hover_category + dir_x) < array_length(categories)))
 		hover_category += dir_x;
 	
@@ -36,7 +38,6 @@ if (selected_category == -1)
 	{
 		selected_category = hover_category;
 		hover_option = 0;
-		control_clear(InteractButton);
 	}
 }
 else
@@ -44,10 +45,16 @@ else
 	if (dir_y != prev_dir_y && dir_y != 0 && ((hover_option - dir_y) > -1) && ((hover_option - dir_y) < array_length(categories[selected_category].options)))
 	{
 		slider_hold_timer = 0;
+		button_hold_timer = 0;
 		hover_option -= dir_y;
 	}
 	var cat = categories[selected_category];
 	var hover_op = cat.options[hover_option];
+	
+	// Vultu: Move this here so it's look prettier
+	if (hover_op.type == MenuOptionTypes.HoldButton && hover_op.holdtimer == button_hold_timer && hover_op.callbackFunction != noone)
+		button_hold_timer = 0;
+		
 	if (dir_x != 0)
 	{
 		if (hover_op.type == MenuOptionTypes.Slider)
@@ -80,6 +87,19 @@ else
 	}
 	else
 		slider_hold_timer = 0;
+		
+	if (btn_0)
+	{
+		switch (hover_op.type)
+		{
+			case MenuOptionTypes.HoldButton:
+				if (button_hold_timer < hover_op.holdtimer)
+					button_hold_timer++;
+				break;
+		}
+	}
+	else
+		button_hold_timer = 0;
 	
 	if (btn_0 && !prev_button_0)
 	{
@@ -102,10 +122,14 @@ else
 		selected_category = -1;
 		hover_option = -1;
 		slider_hold_timer = 0;
+		button_hold_timer = 0;
 	}
 	
-	if (btn_2 && !prev_button_2)
+	if (btn_2 && !prev_button_2 && hover_op.type != MenuOptionTypes.HoldButton)
 		hover_op.value = hover_op.defaultValue;
+		
+	if (hover_op.type == MenuOptionTypes.HoldButton && hover_op.holdtimer == button_hold_timer && hover_op.callbackFunction != noone)
+		script_execute(hover_op.callbackFunction);
 	
 }
 

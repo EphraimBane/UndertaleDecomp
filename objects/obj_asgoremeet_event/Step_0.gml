@@ -51,7 +51,7 @@ if (con == 11)
     }
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 12 && instance_exists(OBJ_WRITER) == 0)
+if (con == 12 && instance_exists(OBJ_WRITER) == false)
 {
     asg.image_speed = 0.2
     con = 13
@@ -70,7 +70,7 @@ if (con == 16)
     con = 17
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 17 && instance_exists(OBJ_WRITER) == 0)
+if (con == 17 && instance_exists(OBJ_WRITER) == false)
 {
     con = 18
     alarm[4] = 20
@@ -96,7 +96,7 @@ if (con == 23)
     instance_create(0, 0, obj_dialoguer)
     con = 24
 }
-if (con == 24 && instance_exists(OBJ_WRITER) == 0)
+if (con == 24 && instance_exists(OBJ_WRITER) == false)
 {
     con = 24.1
     caster_free(all)
@@ -125,7 +125,7 @@ if (con == 26)
     instance_create(0, 0, obj_dialoguer)
     con = 27
 }
-if (con == 27 && instance_exists(OBJ_WRITER) == 0)
+if (con == 27 && instance_exists(OBJ_WRITER) == false)
 {
     asg.sprite_index = asg.rsprite
     con = 28
@@ -148,7 +148,7 @@ if (con == 31)
     instance_create(0, 0, obj_dialoguer)
     con = 32
 }
-if (con == 32 && instance_exists(OBJ_WRITER) == 0)
+if (con == 32 && instance_exists(OBJ_WRITER) == false)
 {
     con = 33
     alarm[4] = 60
@@ -184,7 +184,7 @@ if (con == 40)
     instance_create(0, 0, obj_dialoguer)
     con = 41
 }
-if (con == 41 && instance_exists(OBJ_WRITER) == 0)
+if (con == 41 && instance_exists(OBJ_WRITER) == false)
 {
     asg.sprite_index = asg.lsprite
     con = 42
@@ -205,7 +205,7 @@ if (con == 45)
     instance_create(0, 0, obj_dialoguer)
     con = 46
 }
-if (con == 46 && instance_exists(OBJ_WRITER) == 0)
+if (con == 46 && instance_exists(OBJ_WRITER) == false)
 {
     asg.sprite_index = asg.usprite
     asg.image_speed = 0.25
@@ -230,7 +230,7 @@ if (con == 48)
         con = 49
     }
 }
-if (con == 99 && instance_exists(OBJ_WRITER) == 0)
+if (con == 99 && instance_exists(OBJ_WRITER) == false)
 {
     asg.sprite_index = asg.rtsprite
     con = 100
@@ -257,7 +257,7 @@ if (con == 103)
     instance_create(0, 0, obj_dialoguer)
     con = 111
 }
-if (con == 111 && instance_exists(OBJ_WRITER) == 0)
+if (con == 111 && instance_exists(OBJ_WRITER) == false)
 {
     global.battlegroup = 100
     global.mercy = 1

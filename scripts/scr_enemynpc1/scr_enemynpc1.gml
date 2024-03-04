@@ -1,7 +1,7 @@
 function scr_enemynpc1()
 {
 	if (global.plot > 100 && FL_TundraKillsCounter == 0)
-	    return 1;
+	    return true;
 	else
-	    return 0;
+	    return false;
 }

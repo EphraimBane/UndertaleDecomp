@@ -83,7 +83,7 @@ if (con == 8)
     x = 170
     y = 138
 }
-if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+if (con == 10 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 0
     FL_SnowyAmalgamEvent = 2

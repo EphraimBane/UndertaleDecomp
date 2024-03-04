@@ -1,8 +1,10 @@
+/// @func	scr_loadendsong()
+/// @desc	Loads the ending songs if they haven't been already
 function scr_loadendsong()
 {
 	if (!global.endsong_loaded)
 	{
-	    global.endsong_loaded = 1
+	    global.endsong_loaded = true
 	    global.endsong[0] = caster_load("music/end/cast_1.ogg")
 	    global.endsong[1] = caster_load("music/end/cast_2.ogg")
 	    global.endsong[2] = caster_load("music/end/cast_3.ogg")

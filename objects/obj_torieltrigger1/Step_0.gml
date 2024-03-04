@@ -1,4 +1,4 @@
-if (conversation == 1 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 1 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 1
     conversation = 2
@@ -18,7 +18,7 @@ if instance_exists(obj_toroverworld3)
         alarm[4] = 20
     }
 }
-if (conversation == 3 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 3 && instance_exists(OBJ_WRITER) == false)
 {
     conversation = 4
     global.interact = 0

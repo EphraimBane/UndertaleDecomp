@@ -39,7 +39,7 @@ if (con == 5)
     ge.side = 1
     con = 6
 }
-if (con == 6 && instance_exists(OBJ_WRITER) == 0)
+if (con == 6 && instance_exists(OBJ_WRITER) == false)
     con = 7
 if (con == 7)
 {

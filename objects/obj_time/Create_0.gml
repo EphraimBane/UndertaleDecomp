@@ -31,7 +31,7 @@ if (os_type == os_switch && (!variable_global_exists("switchlogin")))
 if (os_type == os_switch)
 {
     switch_controller_support_set_defaults()
-    switch_controller_support_set_singleplayer_only(1)
+    switch_controller_support_set_singleplayer_only(true)
     switch_controller_set_supported_styles(7)
     missing_controller_timeout = 0
 }
@@ -52,7 +52,7 @@ try_up = 0
 try_down = 0
 try_left = 0
 try_right = 0
-canquit = 1
+canquit = true
 h_skip = 0
 j_xpos = 0
 j_ypos = 0

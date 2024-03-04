@@ -21,7 +21,7 @@ if (global.interact == 0 && con == 1)
     scr_regulartext()
     global.interact = 1
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     FL_HaveWater = 0
     global.interact = 0

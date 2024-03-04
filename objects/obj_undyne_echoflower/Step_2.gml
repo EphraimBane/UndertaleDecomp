@@ -1,4 +1,4 @@
-if (con == 1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1 && instance_exists(OBJ_WRITER) == false)
 {
     undyne = instance_create(520, 80, obj_undynea_actor)
     undyne.direction = 0
@@ -57,7 +57,7 @@ if (con == 13)
     instance_create(0, 0, obj_dialoguer)
     con = 14
 }
-if (con == 14 && instance_exists(OBJ_WRITER) == 0)
+if (con == 14 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 1
     con = 15
@@ -153,7 +153,7 @@ if (con == 22)
     mkid.image_speed = 0.2
     mkid.sprite_index = mkid.dtsprite
 }
-if (con == 23 && instance_exists(OBJ_WRITER) == 0)
+if (con == 23 && instance_exists(OBJ_WRITER) == false)
 {
     mkid.image_speed = 0
     mkid.sprite_index = mkid.dsprite
@@ -193,7 +193,7 @@ if (con == 33)
     scr_regulartext()
     con = 34
 }
-if (con == 34 && instance_exists(OBJ_WRITER) == 0)
+if (con == 34 && instance_exists(OBJ_WRITER) == false)
 {
     mkid.image_speed = 0
     mkid.sprite_index = mkid.lsprite
@@ -226,7 +226,7 @@ if (con == 42)
     scr_regulartext()
     con = 43
 }
-if (con == 43 && instance_exists(OBJ_WRITER) == 0)
+if (con == 43 && instance_exists(OBJ_WRITER) == false)
 {
     undyne.sprite_index = undyne.rsprite
     undyne.hspeed = 3
@@ -254,7 +254,7 @@ if (con == 47)
     scr_regulartext()
     con = 48
 }
-if (con == 48 && instance_exists(OBJ_WRITER) == 0)
+if (con == 48 && instance_exists(OBJ_WRITER) == false)
 {
     if (undyne.x < (__view_get(VIEW_PROP_CAM_X, 0) - 100))
     {

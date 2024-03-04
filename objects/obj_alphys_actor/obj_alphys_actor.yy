@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "NPC - OLD!! SORT THESR",
-    "path": "folders/Objects/Overworld/NPC - OLD!! SORT THESR.yy",
+    "name": "Actor",
+    "path": "folders/Objects/Actor.yy",
   },
   "parentObjectId": null,
   "persistent": false,

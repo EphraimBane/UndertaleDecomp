@@ -1,11 +1,14 @@
-function scr_moveideal()
+/// @func					scr_moveideal(value)
+/// @desc					Moves the caller along both axis
+/// @param	{real}	value	The amount to move
+function scr_moveideal(_value)
 {
-	if (argument0 > 0)
+	if (_value > 0)
 	{
-	    if (idealstep < argument0)
+	    if (idealstep < _value)
 	        idealstep += 1
-	    idealxdist = ((idealxx2 - x) / argument0)
-	    idealydist = ((idealyy2 - y) / argument0)
+	    idealxdist = ((idealxx2 - x) / _value)
+	    idealydist = ((idealyy2 - y) / _value)
 	    x += (idealxdist * idealstep)
 	    y += (idealydist * idealstep)
 	}

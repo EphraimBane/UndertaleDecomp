@@ -21,10 +21,10 @@ if (caster_is_playing(global.currentsong) != 1)
     }
 }
 doglevel = FL_DogShrineLevel
-if (doglevel == 1 && FL_DogShrineUnknown == 1)
-    FL_DogShrineUnknown = 2
+if (doglevel == 1 && FL_DogShrineStateAcknowledged == 1)
+    FL_DogShrineStateAcknowledged = 2
 if (doglevel == 15)
-    FL_DogShrineUnknown = 6
+    FL_DogShrineStateAcknowledged = 6
 if (FL_DogShrineGDeposited >= FL_DogShrineGoldNeeded)
     FL_DogShrineGDeposited = 0
 if (FL_DogShrineLevel == 0)

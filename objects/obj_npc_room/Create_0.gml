@@ -12,7 +12,7 @@ if (room == room_water5A)
 if (room == room_water3A)
 {
     sprite_index = spr_tutu
-    if (FL_GotTutu == 1)
+    if (FL_GotTutu == true)
         instance_destroy()
 }
 if (room == room_water_savepoint1)
@@ -21,7 +21,7 @@ if (room == room_water_shoe)
 {
     sprite_index = spr_balletshoes
     visible = false
-    if (FL_GotBalletShoes == 1)
+    if (FL_GotBalletShoes == true)
         instance_destroy()
 }
 if (room == room_tundra_sanshouse)
@@ -208,6 +208,14 @@ if (room == room_water_temvillage)
 if (room == room_water_trashzone1)
 {
     sprite_index = spr_ds_donationbox_trash
-    if ((global.osflavor != OSFlavors.Playstation && global.osflavor != OSFlavors.Switch) || scr_murderlv() < 9)
-        instance_destroy()
+	if (!global.decomp_vars.VanillaMode && (global.decomp_vars.EnableSwitchDogShrine || global.decomp_vars.EnablePSDogShrine))
+	{
+		// Vultu: do nothing
+	}
+	else
+	{
+		// Vultu: This is non decomp code
+		if ((global.osflavor != OSFlavors.Playstation && global.osflavor != OSFlavors.Switch) || scr_murderlv() < 9)
+			instance_destroy()
+	}
 }

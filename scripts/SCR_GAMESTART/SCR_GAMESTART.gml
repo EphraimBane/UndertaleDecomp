@@ -67,7 +67,7 @@ function SCR_GAMESTART()
 	FL_DimensionalBoxAItem3 = Items.Null;
 	FL_DimensionalBoxAItem4 = Items.Null;
 	FL_DimensionalBoxAItem5 = Items.Null;
-	global.flag[512] = 0
+	FL_FinalTorielChoice = Choices.Stayed
 	global.idealborder[0] = 0
 	global.idealborder[1] = 0
 	global.idealborder[2] = 0

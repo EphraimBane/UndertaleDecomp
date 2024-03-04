@@ -236,7 +236,7 @@ if (active == true && instance_exists(obj_mainchara))
         instance_create(0, 0, obj_dialoguer)
         cn = 34
     }
-    if (cn == 34 && instance_exists(OBJ_WRITER) == 0)
+    if (cn == 34 && instance_exists(OBJ_WRITER) == false)
     {
         mkid.hspeed = 6
         mkid.myinteract = 0

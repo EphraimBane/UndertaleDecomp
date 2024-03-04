@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Event",
+    "path": "folders/Objects/Event.yy",
   },
   "parentObjectId": {
     "name": "obj_superdrophole",

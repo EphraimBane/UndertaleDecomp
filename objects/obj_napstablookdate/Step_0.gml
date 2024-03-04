@@ -32,14 +32,14 @@ if (con == 7)
     scr_regulartext()
     con = 8
 }
-if (con == 8 && instance_exists(OBJ_WRITER) == 0)
+if (con == 8 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 0
     con = 9
     if (FL_NapstablookSpared <= 0)
         nap.direction = 90
 }
-if (con == 11 && instance_exists(OBJ_WRITER) == 0)
+if (con == 11 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 1
     nap.direction = 180
@@ -55,7 +55,7 @@ if (con == 13)
     scr_regulartext()
     con = 14
 }
-if (con == 14 && instance_exists(OBJ_WRITER) == 0)
+if (con == 14 && instance_exists(OBJ_WRITER) == false)
 {
     nap.hspeed = -2
     con = 15
@@ -105,7 +105,7 @@ if (con == 26)
     instance_create(0, 0, obj_dialoguer)
     con = 27
 }
-if (con == 27 && instance_exists(OBJ_WRITER) == 0)
+if (con == 27 && instance_exists(OBJ_WRITER) == false)
 {
     con = 28
     alarm[4] = 90
@@ -116,7 +116,7 @@ if (con == 29)
     instance_create(0, 0, obj_dialoguer)
     con = 30
 }
-if (con == 30 && instance_exists(OBJ_WRITER) == 0)
+if (con == 30 && instance_exists(OBJ_WRITER) == false)
 {
     with (nap)
     {
@@ -167,7 +167,7 @@ if (con == 38)
     con = 39
     buffer = 10
 }
-if (con == 39 && instance_exists(OBJ_WRITER) == 0)
+if (con == 39 && instance_exists(OBJ_WRITER) == false)
 {
     get_mcx = obj_mainchara.x
     get_mcy = obj_mainchara.y
@@ -218,7 +218,7 @@ if (con == 42)
     scr_regulartext()
     con = 44
 }
-if (con == 44 && instance_exists(OBJ_WRITER) == 0)
+if (con == 44 && instance_exists(OBJ_WRITER) == false)
 {
     con = 45
     with (obj_napstablook_cd)
@@ -240,7 +240,7 @@ if (con == 82)
     con = 85
     alarm[4] = 150
 }
-if (con == 86 && instance_exists(OBJ_WRITER) == 0)
+if (con == 86 && instance_exists(OBJ_WRITER) == false)
 {
     with (nap)
         instance_destroy()

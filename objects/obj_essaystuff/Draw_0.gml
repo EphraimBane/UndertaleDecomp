@@ -864,7 +864,7 @@ if (con == 1)
     blcon = instance_create((obj_mettatonex.x + 200), obj_mettatonex.y, obj_blconwdflowey)
     blconwd = instance_create((blcon.x + 20), (blcon.y - 10), OBJ_NOMSCWRITER)
 }
-if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4 && instance_exists(OBJ_WRITER) == false)
 {
     obj_mettatonex.attacked = 0
     with (blcon)

@@ -68,7 +68,7 @@ if (conversation == 5.1 && instance_exists(OBJ_WRITER))
         conversation = 6
     }
 }
-if (conversation == 6 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 6 && instance_exists(OBJ_WRITER) == false)
 {
     p3 = instance_create(papyrus.x, papyrus.y, obj_papyrus_room)
     with (papyrus)
@@ -113,7 +113,7 @@ if (conversation == 11)
     instance_create(0, 0, obj_dialoguer)
     conversation = 12
 }
-if (conversation == 12 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 12 && instance_exists(OBJ_WRITER) == false)
 {
     papyrus.npcdir = 1
     with (papyrus)

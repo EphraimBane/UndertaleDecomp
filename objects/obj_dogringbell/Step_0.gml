@@ -52,7 +52,7 @@ if (conversation == 4)
     conversation = 7
     td += 1
 }
-if (conversation == 7 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 7 && instance_exists(OBJ_WRITER) == false)
 {
     vspeed = 1
     alarm[0] = 20

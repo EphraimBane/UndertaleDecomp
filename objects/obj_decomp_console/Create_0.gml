@@ -15,6 +15,7 @@ commands_history_index = -1;
 commands_textbox = "";
 
 scroll_offset = 0;
+scroll_input_counter = 0;
 
 command_name = "";
 prev_dir_x = 0;
@@ -29,12 +30,13 @@ random_encounters = true;
 
 #macro COMMAND_CONSOLE_HISTORY_MAX 64
 #macro SCROLL_MIN_ENTRIES_SHOWN 6
+#macro POPUP_MAX_ELEMENTS 10
+
 function activate() 
 {
 	trace("Activating Console");
 	active = true;
 	reset_input();
-	commands_history = array_create(0);
 }
 
 function deactivate() 
@@ -42,7 +44,6 @@ function deactivate()
 	trace("Deactivating Console");
 	active = false;
 	reset_input();
-	commands_history = array_create(0);
 }
 
 

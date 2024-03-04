@@ -29,7 +29,7 @@ if (con == 5)
     con = 6
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 6 && instance_exists(OBJ_WRITER) == 0)
+if (con == 6 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 0
     con = 7
@@ -66,7 +66,7 @@ if (con == 7 && obj_mainchara.x > (nowx + 200) && global.interact == 0)
     con = 8
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 8 && instance_exists(OBJ_WRITER) == 0)
+if (con == 8 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 0
     con = 9
@@ -87,7 +87,7 @@ if (con == 9 && obj_mainchara.x > (nowx + 200) && global.interact == 0)
     con = 10
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+if (con == 10 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 0
     con = 11
@@ -113,7 +113,7 @@ if (con == 52)
     con = 53
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 53 && instance_exists(OBJ_WRITER) == 0)
+if (con == 53 && instance_exists(OBJ_WRITER) == false)
 {
     global.facing = Direction.Left
     con = 54
@@ -138,12 +138,12 @@ if (con == 55)
     con = 56
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 56 && instance_exists(OBJ_WRITER) == 1)
+if (con == 56 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 6)
         al.sprite_index = al.usprite
 }
-if (con == 56 && instance_exists(OBJ_WRITER) == 0)
+if (con == 56 && instance_exists(OBJ_WRITER) == false)
 {
     obj_alphys_npc.sprite_index = spr_alphys_l_sad2
     con = 57
@@ -167,7 +167,7 @@ if (con == 58)
     con = 59
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 59 && instance_exists(OBJ_WRITER) == 0)
+if (con == 59 && instance_exists(OBJ_WRITER) == false)
 {
     con = 60
     alarm[4] = 30
@@ -193,12 +193,12 @@ if (con == 63)
     con = 64
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 64 && instance_exists(OBJ_WRITER) == 0)
+if (con == 64 && instance_exists(OBJ_WRITER) == false)
 {
     con = 65
     alarm[4] = 30
 }
-if (con == 66 && instance_exists(OBJ_WRITER) == 0)
+if (con == 66 && instance_exists(OBJ_WRITER) == false)
 {
     obj_alphys_npc.sprite_index = spr_alphys_l_sad2
     follow = 0
@@ -229,7 +229,7 @@ if (con == 69)
     con = 70
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 70 && instance_exists(OBJ_WRITER) == 0)
+if (con == 70 && instance_exists(OBJ_WRITER) == false)
 {
     al.hspeed = -4
     al.image_speed = 0.3334

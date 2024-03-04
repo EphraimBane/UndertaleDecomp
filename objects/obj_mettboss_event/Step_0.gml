@@ -46,7 +46,7 @@ if (con == 4.1)
     instance_create(0, 0, obj_dialoguer)
     con = 4.2
 }
-if (con == 4.5 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4.5 && instance_exists(OBJ_WRITER) == false)
 {
     con = 4.4
     alarm[4] = 20
@@ -64,7 +64,7 @@ if (con == 5.4)
     skip = true
     con = 5.5
 }
-if (con == 5.5 && instance_exists(OBJ_WRITER) == 0)
+if (con == 5.5 && instance_exists(OBJ_WRITER) == false)
 {
     caster_stop(all)
     snd_play(snd_item)
@@ -72,16 +72,16 @@ if (con == 5.5 && instance_exists(OBJ_WRITER) == 0)
     con = 4.6
     alarm[4] = 80
 }
-if (con == 5.6 && instance_exists(OBJ_WRITER) == 0)
+if (con == 5.6 && instance_exists(OBJ_WRITER) == false)
 {
     global.msg[0] = scr_gettext("obj_mettboss_event_187")
     instance_create(0, 0, obj_dialoguer)
     con = 5.7
     babytimer = 500
 }
-if (con == 5.7 && instance_exists(OBJ_WRITER) == 0)
+if (con == 5.7 && instance_exists(OBJ_WRITER) == false)
     con = 19
-if (con == 6 && instance_exists(OBJ_WRITER) == 0)
+if (con == 6 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 27
     global.msc = 0
@@ -129,7 +129,7 @@ if (con == 6 && instance_exists(OBJ_WRITER) == 0)
     if (murder == 1)
         con = 30
 }
-if (con == 7 && instance_exists(OBJ_WRITER) == 0)
+if (con == 7 && instance_exists(OBJ_WRITER) == false)
 {
     caster_free(all)
     mtsong2 = caster_load("music/mettafly.ogg")
@@ -155,7 +155,7 @@ if (con == 11)
     instance_create(0, 0, obj_dialoguer)
     con = 13
 }
-if (con == 13 && instance_exists(OBJ_WRITER) == 0)
+if (con == 13 && instance_exists(OBJ_WRITER) == false)
 {
     snd_play(snd_spearappear)
     sixtyon = 1
@@ -170,7 +170,7 @@ if (con == 13 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 14
 }
-if (con == 14 && instance_exists(OBJ_WRITER) == 0)
+if (con == 14 && instance_exists(OBJ_WRITER) == false)
 {
     babytimer = 0
     scr = instance_create(0, 0, obj_scrollaway_event)
@@ -178,7 +178,7 @@ if (con == 14 && instance_exists(OBJ_WRITER) == 0)
     con = 15
     alarm[4] = 90
 }
-if (con == 16 && instance_exists(OBJ_WRITER) == 0)
+if (con == 16 && instance_exists(OBJ_WRITER) == false)
 {
     caster_play(mtsong2, 0.7, 1)
     global.msc = 0
@@ -192,7 +192,7 @@ if (con == 16 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con > 14 && murder == 0)
     babytimer += 1
-if (con == 17 && instance_exists(OBJ_WRITER) == 0)
+if (con == 17 && instance_exists(OBJ_WRITER) == false)
 {
     if (babytimer > 300)
     {
@@ -225,7 +225,7 @@ if (con == 21)
     instance_create(0, 0, obj_mettdestroyed_event)
     instance_destroy()
 }
-if (con == 30 && instance_exists(OBJ_WRITER) == 0)
+if (con == 30 && instance_exists(OBJ_WRITER) == false)
 {
     obj_mainchara.visible = false
     mc = scr_marker(obj_mainchara.x, obj_mainchara.y, spr_maincharau)
@@ -258,7 +258,7 @@ if (con == 34)
     con = 35
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 35 && instance_exists(OBJ_WRITER) == 0)
+if (con == 35 && instance_exists(OBJ_WRITER) == false)
 {
     with (mc)
         image_index = 1
@@ -283,7 +283,7 @@ if (con == 39)
     con = 40
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 40 && instance_exists(OBJ_WRITER) == 0)
+if (con == 40 && instance_exists(OBJ_WRITER) == false)
 {
     caster_free(all)
     shkwv = caster_load("music/f_destroyed2.ogg")
@@ -310,7 +310,7 @@ if (con == 49)
     caster_set_pitch(shkwv, pt)
     caster_set_volume(shkwv, vol)
 }
-if (con == 50 && instance_exists(OBJ_WRITER) == 0)
+if (con == 50 && instance_exists(OBJ_WRITER) == false)
 {
     with (brt)
         instance_destroy()

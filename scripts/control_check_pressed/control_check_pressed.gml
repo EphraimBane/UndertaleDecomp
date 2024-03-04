@@ -4,7 +4,7 @@ function control_check_pressed(_control)
 {
 	if (obj_decomp_console.active)
 		return false;
-		
+	
 	if (global.decomp_vars.FixInputLatency)
 	{
 		// Vultu: Actual help with figuring out what the fuck this was goes to OceanBagel

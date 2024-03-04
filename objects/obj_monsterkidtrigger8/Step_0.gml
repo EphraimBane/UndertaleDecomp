@@ -15,7 +15,7 @@ if (con == 3)
     scr_regulartext()
     con = 4
 }
-if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4 && instance_exists(OBJ_WRITER) == false)
 {
     con = 5
     global.plot = 120

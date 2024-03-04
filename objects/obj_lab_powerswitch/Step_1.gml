@@ -46,7 +46,7 @@ if (con == 9)
     instance_create(0, 0, obj_dialoguer)
     con = 10
 }
-if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+if (con == 10 && instance_exists(OBJ_WRITER) == false)
 {
     con = 11
     alarm[4] = 20
@@ -84,7 +84,7 @@ if (con == 14)
     d.side = 0
     con = 15
 }
-if (instance_exists(OBJ_WRITER) == 0 && con == 15)
+if (instance_exists(OBJ_WRITER) == false && con == 15)
 {
     i = 0
     repeat (4)
@@ -172,7 +172,7 @@ if (con == 21 && instance_exists(OBJ_WRITER))
     if (sn == 8 || sn == 13)
         al.sprite_index = spr_alphys_r_sad
 }
-if (con == 21 && instance_exists(OBJ_WRITER) == 0)
+if (con == 21 && instance_exists(OBJ_WRITER) == false)
 {
     i = 0
     repeat (4)
@@ -206,7 +206,7 @@ if (con == 25)
     ds.side = 0
     con = 26
 }
-if (con == 26 && instance_exists(OBJ_WRITER) == 0)
+if (con == 26 && instance_exists(OBJ_WRITER) == false)
 {
     al.vspeed = 3
     al.sprite_index = al.dsprite

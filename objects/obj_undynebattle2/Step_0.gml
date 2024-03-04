@@ -135,7 +135,7 @@ if (con == 4.1)
 }
 if (con == 4.2)
     scr_textskip()
-if (con == 4.2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4.2 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 8
     global.msg[0] = scr_gettext("obj_undynebattle2_599")
@@ -191,7 +191,7 @@ if (con == 21.2)
 }
 if (con == 23)
     scr_textskip()
-if (con == 23 && instance_exists(OBJ_WRITER) == 0)
+if (con == 23 && instance_exists(OBJ_WRITER) == false)
 {
     mypart1.off = 1
     if (mypart1.noanim == 1)
@@ -229,7 +229,7 @@ if (con == 24)
 }
 if (con == 25)
     scr_textskip()
-if (con == 25 && instance_exists(OBJ_WRITER) == 0)
+if (con == 25 && instance_exists(OBJ_WRITER) == false)
 {
     con = 26
     alarm[4] = 15
@@ -254,7 +254,7 @@ if (con == 29)
     FL_UndyneDateStatus = 3
     room_goto(room_water_undyneyard)
 }
-if (con == 80 && instance_exists(OBJ_WRITER) == 0)
+if (con == 80 && instance_exists(OBJ_WRITER) == false)
 {
     snd_play(snd_laz)
     global.damage = 1
@@ -269,7 +269,7 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)

@@ -7,6 +7,7 @@ gen = instance_create(0, 0, obj_greenspeargen)
 if instance_exists(gen)
     gen.rating = rating
 i = 0
+
 if (lesson == -51)
 {
     scr_sr(4, 0, 0, 0)

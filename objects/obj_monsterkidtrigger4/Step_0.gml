@@ -14,7 +14,7 @@ if (con == 1)
     scr_regulartext()
     con = 2
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     con = 3
     FL_InteractedWithGarbageSavepoint = 1

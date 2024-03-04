@@ -30,7 +30,7 @@ if (active != 2)
 else
     sprite_index = spr_lasermachine_off
 draw_set_alpha(1)
-if (ex == 1 && instance_exists(OBJ_WRITER) == 0)
+if (ex == 1 && instance_exists(OBJ_WRITER) == false)
 {
     alarm[3] = 1
     ex = 0

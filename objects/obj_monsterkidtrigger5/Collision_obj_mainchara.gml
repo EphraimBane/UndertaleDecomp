@@ -17,7 +17,7 @@ if (con == 0 && global.interact == 0 && FL_InteractedWithGarbageSavepoint < 4)
     global.msg[1] = scr_gettext("obj_monsterkidtrigger5_92")
     scr_regulartext()
 }
-if (con == 1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1 && instance_exists(OBJ_WRITER) == false)
 {
     if (obj_mainchara.y > 908)
         obj_mainchara.y = 908

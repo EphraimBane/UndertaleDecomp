@@ -17,7 +17,7 @@ if (myinteract == 3)
         myinteract = 0
     }
 }
-if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 1
     instance_create(obj_mainchara.x, (obj_mainchara.y + 20), obj_door_t)

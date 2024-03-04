@@ -32,7 +32,7 @@ if (con == 3.1)
     d = instance_create(0, 0, obj_dialoguer)
     d.side = 0
 }
-if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4 && instance_exists(OBJ_WRITER) == false)
 {
     mc = scr_marker(obj_mainchara.x, obj_mainchara.y, spr_maincharar)
     mc.image_speed = 0.25
@@ -61,7 +61,7 @@ if (con == 7)
     instance_create(0, 0, obj_dialoguer)
     con = 8
 }
-if (con == 8 && instance_exists(OBJ_WRITER) == 0)
+if (con == 8 && instance_exists(OBJ_WRITER) == false)
 {
     mett.hspeed = 8
     con = 9

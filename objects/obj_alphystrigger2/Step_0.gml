@@ -17,7 +17,7 @@ if (con > 0)
         con = 2
         instance_create(0, 0, obj_dialoguer)
     }
-    if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 2 && instance_exists(OBJ_WRITER) == false)
     {
         alphys.image_speed = 0.334
         if (obj_mainchara.x > alphys.x)
@@ -88,19 +88,19 @@ if (con > 0)
         instance_create(0, 0, obj_dialoguer)
         con = 8
     }
-    if (con == 8 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 8 && instance_exists(OBJ_WRITER) == false)
     {
         con = 9
         alarm[4] = 15
     }
-    if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 10 && instance_exists(OBJ_WRITER) == false)
     {
         blc = instance_create((alphys.x + 8), (alphys.y - 5), obj_cosmeticblcon)
         snd_play(snd_b)
         alarm[4] = 30
         con = 11
     }
-    if (con == 12 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 12 && instance_exists(OBJ_WRITER) == false)
     {
         with (blc)
             instance_destroy()
@@ -110,7 +110,7 @@ if (con > 0)
         instance_create(0, 0, obj_dialoguer)
         con = 13
     }
-    if (con == 13 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 13 && instance_exists(OBJ_WRITER) == false)
     {
         if (obj_mainchara.x > alphys.x)
             alphys.direction = 180
@@ -174,7 +174,7 @@ if (con > 0)
         scr_phoneget(220)
         scr_phoneget(221)
     }
-    if (con == 19 && instance_exists(OBJ_WRITER) == 1)
+    if (con == 19 && instance_exists(OBJ_WRITER) == true)
     {
         if (OBJ_WRITER.stringno == 11 && slid == 0)
         {
@@ -183,7 +183,7 @@ if (con > 0)
             slid = 1
         }
     }
-    if (con == 19 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 19 && instance_exists(OBJ_WRITER) == false)
     {
         con = 20
         if (obj_mainchara.x > alphys.x)

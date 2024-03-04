@@ -25,7 +25,7 @@ if (room == room_tundra8)
         mydialoguer = instance_create(0, 0, obj_dialoguer)
     }
 }
-if (room == room_water_nicecream && instance_exists(OBJ_WRITER) == 0)
+if (room == room_water_nicecream && instance_exists(OBJ_WRITER) == false)
 {
     if (FL_NiceCreamBusiness == 0)
     {

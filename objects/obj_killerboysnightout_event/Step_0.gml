@@ -15,7 +15,7 @@ if (con == 1.1)
     scr_regulartext()
     con = 2
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     global.battlegroup = 49
     global.mercy = 1

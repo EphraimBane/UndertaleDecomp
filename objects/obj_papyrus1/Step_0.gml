@@ -27,7 +27,7 @@ if (conversation == 1)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 2
 }
-if (conversation == 2 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 2 && instance_exists(OBJ_WRITER) == false)
 {
     caster_loop(global.currentsong, 0.6, 1)
     conversation = 3
@@ -65,7 +65,7 @@ if (conversation == 5)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 6
 }
-if (conversation == 6 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 6 && instance_exists(OBJ_WRITER) == false)
 {
     papyrus.sprite_index = papyrus.lsprite
     sans.sprite_index = sans.lsprite
@@ -108,7 +108,7 @@ if (conversation == 10)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 11
 }
-if (conversation == 11 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 11 && instance_exists(OBJ_WRITER) == false)
 {
     __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 4))
     if (__view_get(VIEW_PROP_CAM_X, 0) >= 0)
@@ -130,7 +130,7 @@ if (conversation == 12)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 13
 }
-if (conversation == 13 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 13 && instance_exists(OBJ_WRITER) == false)
 {
     obj_mainchara.cutscene = false
     __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
@@ -142,7 +142,7 @@ if (conversation == 13 && instance_exists(OBJ_WRITER) == 0)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 14
 }
-if (conversation == 14 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 14 && instance_exists(OBJ_WRITER) == false)
 {
     xxblcon = instance_create((papyrus.x + 3), (papyrus.y - 12), obj_cosmeticblcon)
     sans.sprite_index = sans.dtsprite
@@ -160,7 +160,7 @@ if (conversation == 16)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 17
 }
-if (conversation == 17 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 17 && instance_exists(OBJ_WRITER) == false)
 {
     global.msc = 0
     global.typer = 19
@@ -173,7 +173,7 @@ if (conversation == 17 && instance_exists(OBJ_WRITER) == 0)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 18
 }
-if (conversation == 18 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 18 && instance_exists(OBJ_WRITER) == false)
 {
     global.msc = 0
     global.typer = 17
@@ -185,7 +185,7 @@ if (conversation == 18 && instance_exists(OBJ_WRITER) == 0)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 19
 }
-if (conversation == 19 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 19 && instance_exists(OBJ_WRITER) == false)
 {
     global.msc = 0
     global.typer = 19
@@ -223,7 +223,7 @@ if (conversation == 19 && instance_exists(OBJ_WRITER) == 0)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 20
 }
-if (conversation == 20 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 20 && instance_exists(OBJ_WRITER) == false)
 {
     global.msc = 0
     global.typer = 19
@@ -236,7 +236,7 @@ if (conversation == 20 && instance_exists(OBJ_WRITER) == 0)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 21
 }
-if (conversation == 21 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 21 && instance_exists(OBJ_WRITER) == false)
 {
     alarm[3] = 30
     ppp = instance_create(0, 0, obj_musfadeout)
@@ -258,7 +258,7 @@ if (conversation == 22)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 23
 }
-if (conversation == 23 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 23 && instance_exists(OBJ_WRITER) == false)
 {
     alarm[3] = 30
     sans.sprite_index = sans.rsprite

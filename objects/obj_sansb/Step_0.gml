@@ -462,7 +462,7 @@ if (global.myfight == 4)
             mercy_death = 1
     }
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)
@@ -505,7 +505,7 @@ if (con == 2)
     con = 3
     scr_blcon_x((x + 120), y)
 }
-if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3 && instance_exists(OBJ_WRITER) == false)
 {
     con = 5
     alarm[4] = 10
@@ -562,7 +562,7 @@ if (con == 10)
     scr_blcon_x((x + 120), (y - 30))
     blcon.sprite_index = spr_blconsm
 }
-if (con == 11 && instance_exists(OBJ_WRITER) == 0)
+if (con == 11 && instance_exists(OBJ_WRITER) == false)
 {
     with (obj_sansb_body)
         fac = 1

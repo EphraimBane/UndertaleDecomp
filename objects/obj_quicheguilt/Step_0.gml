@@ -11,7 +11,7 @@ if (global.inbattle == false)
         guilt = 2
         global.interact = 1
     }
-    if (guilt == 2 && instance_exists(OBJ_WRITER) == 0)
+    if (guilt == 2 && instance_exists(OBJ_WRITER) == false)
     {
         global.interact = 0
         instance_destroy()

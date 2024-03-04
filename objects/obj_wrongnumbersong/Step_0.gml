@@ -19,7 +19,7 @@ if (con == 1.1)
     instance_create(0, 0, obj_dialoguer)
     con = 2
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     wrns = caster_loop(mus_wrongnumbersong, 0.8, 1)
     global.msg[0] = scr_gettext("obj_wrongnumbersong_107")
@@ -29,14 +29,14 @@ if (con == 2 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 3
 }
-if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3 && instance_exists(OBJ_WRITER) == false)
 {
     caster_stop(wrns)
     global.msg[0] = scr_gettext("obj_wrongnumbersong_118")
     instance_create(0, 0, obj_dialoguer)
     con = 4
 }
-if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4 && instance_exists(OBJ_WRITER) == false)
 {
     caster_resume(global.currentsong)
     con = 5

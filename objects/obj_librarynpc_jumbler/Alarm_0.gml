@@ -4,12 +4,12 @@ global.typer = 5
 global.facechoice = 0
 global.faceemotion = 0
 global.msg[0] = scr_gettext("obj_librarynpc_jumbler_70")
-if (global.flag[58] == 0)
+if (FL_HarderPuzzleChoice == Choices.JuniorJumble)
 {
     global.msg[0] = scr_gettext("obj_librarynpc_jumbler_73")
     global.msg[1] = scr_gettext("obj_librarynpc_jumbler_74")
 }
-if (global.flag[58] == 1)
+if (FL_HarderPuzzleChoice == Choices.WordSearch)
 {
     global.msg[0] = scr_gettext("obj_librarynpc_jumbler_78")
     global.msg[1] = scr_gettext("obj_librarynpc_jumbler_79")
@@ -21,12 +21,12 @@ if (global.plot >= 122)
 }
 if (FL_TruePacifist == true)
 {
-    if (global.flag[58] == 0)
+    if (FL_HarderPuzzleChoice == Choices.JuniorJumble)
     {
         global.msg[0] = scr_gettext("obj_librarynpc_jumbler_92")
         global.msg[1] = scr_gettext("obj_librarynpc_jumbler_93")
     }
-    if (global.flag[58] == 1)
+    if (FL_HarderPuzzleChoice == Choices.WordSearch)
     {
         global.msg[0] = scr_gettext("obj_librarynpc_jumbler_97")
         global.msg[1] = scr_gettext("obj_librarynpc_jumbler_98")

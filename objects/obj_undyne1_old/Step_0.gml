@@ -218,7 +218,7 @@ if (con == 17)
     instance_create(0, 0, obj_dialoguer)
     con = 18
 }
-if (con == 18 && instance_exists(OBJ_WRITER) == 0)
+if (con == 18 && instance_exists(OBJ_WRITER) == false)
 {
     mkid.hspeed = 4
     mkid.myinteract = 0

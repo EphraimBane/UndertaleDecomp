@@ -12,7 +12,7 @@ if (myinteract == 3)
         myinteract = 0
     }
 }
-if (con == 1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1 && instance_exists(OBJ_WRITER) == false)
 {
     obj_mainchara.cutscene = true
     __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
@@ -67,7 +67,7 @@ if (con == 7)
     m1 = 0
     m2 = 0
 }
-if (con == 8 && instance_exists(OBJ_WRITER) == 0)
+if (con == 8 && instance_exists(OBJ_WRITER) == false)
 {
     if (m1 == 0)
     {

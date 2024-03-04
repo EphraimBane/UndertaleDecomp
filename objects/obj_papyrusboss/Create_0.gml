@@ -49,7 +49,7 @@ if (FL_PapyrusStatus == PapyrusStatus.DefeatedOnce)
     FL_PapyrusStatus = PapyrusStatus.DefeatedTwice
 if (FL_PapyrusStatus == PapyrusStatus.Spared)
     FL_PapyrusStatus = PapyrusStatus.DefeatedOnce
-FL_FoughtPapyrus = 1
+FL_FoughtPapyrus = true
 blcon_textofs = 15
 if (global.language == "ja")
     blcon_textofs += 11
@@ -59,12 +59,12 @@ murder = 0
 if (scr_murderlv() >= 7)
 {
     murder = 1
-    global.flag[290] = 1
+    FL_NeutralPapyrusSpared = true
     global.monsterdef[myself] = -20000
     dontcancel = 0
     alarm[8] = -2
     bonetalk3 = 2
     mercymod = 8000
 }
-blcon = 8589458454
+blcon = 8589458454 // Vultu: TODO: What is this??
 blconwd = 584589485934

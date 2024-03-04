@@ -40,7 +40,7 @@ if (global.hurtanim[myself] == 1)
     alarm[3] = global.damagetimer
     global.hurtanim[myself] = 3
 }
-if (global.hurtanim[myself] == 2 && hurtsies == 0 && instance_exists(OBJ_WRITER) == 0)
+if (global.hurtanim[myself] == 2 && hurtsies == 0 && instance_exists(OBJ_WRITER) == false)
 {
     alarm[7] = 30
     hurtsies = 1
@@ -571,13 +571,13 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)
         instance_destroy()
 }
-if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4 && instance_exists(OBJ_WRITER) == false)
 {
     with (blcon)
         instance_destroy()
@@ -587,7 +587,7 @@ if (con == 4 && instance_exists(OBJ_WRITER) == 0)
     con = 5
     mycommand = random(100)
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     with (blcon)
         instance_destroy()
@@ -597,7 +597,7 @@ if (con == 2 && instance_exists(OBJ_WRITER) == 0)
     snd_play(snd_damage)
     alarm[8] = 30
 }
-if (talko == 3 && instance_exists(OBJ_WRITER) == 0)
+if (talko == 3 && instance_exists(OBJ_WRITER) == false)
 {
     with (blcon)
         instance_destroy()
@@ -610,13 +610,13 @@ if (talko == 3 && instance_exists(OBJ_WRITER) == 0)
         global.msg[0] = scr_gettext("obj_maddummy_1259")
     }
 }
-if (talko == 2 && instance_exists(OBJ_WRITER) == 0)
+if (talko == 2 && instance_exists(OBJ_WRITER) == false)
 {
     with (blcon)
         instance_destroy()
     talko = 1
 }
-if (talko == 1 && instance_exists(OBJ_WRITER) == 0)
+if (talko == 1 && instance_exists(OBJ_WRITER) == false)
 {
     hurtsies = 2
     alarm[7] = 2
@@ -679,7 +679,7 @@ if (con2 == 6)
 }
 if (con2 == 7)
 {
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         with (mypart1)
         {
@@ -862,7 +862,7 @@ if (con2 == 21)
 if (con2 == 22)
 {
     global.turntimer = 999
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         with (blcon)
             instance_destroy()
@@ -1003,7 +1003,7 @@ if (con2 == 30)
 }
 if (con2 == 31)
 {
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         with (blcon)
             instance_destroy()

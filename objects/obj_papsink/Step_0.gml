@@ -38,7 +38,7 @@ if (myinteract == 3 && conversation == 0)
         myinteract = 0
     }
 }
-if (conversation == 1 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 1 && instance_exists(OBJ_WRITER) == false)
 {
     pap = obj_papyrusparent
     caster_pause(global.currentsong)
@@ -88,7 +88,7 @@ if (conversation == 9)
     instance_create(0, 0, obj_dialoguer)
     conversation = 10
 }
-if (conversation == 10 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 10 && instance_exists(OBJ_WRITER) == false)
 {
     thedog.sprite_index = spr_tobydogscoot_small
     thedog.depth = 10000
@@ -105,7 +105,7 @@ if (conversation == 10.5)
     conversation = 10.6
     alarm[2] = 20
 }
-if (conversation == 11.6 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 11.6 && instance_exists(OBJ_WRITER) == false)
 {
     thedog.vspeed = 4
     thedog.hspeed = 1
@@ -138,7 +138,7 @@ if (conversation == 13.1)
     tt.side = 0
     conversation = 14
 }
-if (conversation == 14 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 14 && instance_exists(OBJ_WRITER) == false)
 {
     obj_sansdoor.image_index = 1
     caster_play(mus_dooropen, 1, 1)
@@ -163,7 +163,7 @@ if (conversation == 18)
     tt.side = 0
     conversation = 19
 }
-if (conversation == 19 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 19 && instance_exists(OBJ_WRITER) == false)
 {
     conversation = 0
     myinteract = 0

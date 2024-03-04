@@ -23,7 +23,7 @@ if (alarm[5] > 0)
 }
 if (global.mnfight == 1)
 {
-    if (talked == true && instance_exists(OBJ_WRITER) == 0)
+    if (talked == true && instance_exists(OBJ_WRITER) == false)
     {
         alarm[5] = 1
         talked = 2
@@ -143,7 +143,7 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)
@@ -176,7 +176,7 @@ if (con == 5)
     scr_blcon((mypart1.x - 320), (mypart1.y - 120), 1)
     con = 6
 }
-if (con == 6 && instance_exists(OBJ_WRITER) == 0)
+if (con == 6 && instance_exists(OBJ_WRITER) == false)
 {
     shblcon = instance_create((phone.x + 10), phone.y, obj_blconsm)
     shblcon.sprite_index = spr_shockblcon2
@@ -189,7 +189,7 @@ if (con == 6 && instance_exists(OBJ_WRITER) == 0)
     instance_create((phone.x - 100), (phone.y - 140), OBJ_WRITER)
     con = 7
 }
-if (con == 7 && instance_exists(OBJ_WRITER) == 0)
+if (con == 7 && instance_exists(OBJ_WRITER) == false)
 {
     global.msg[0] = scr_gettext("obj_mettatonb_second_662")
     FL_YellowButtonStatus = YellowButtonStatus.Available
@@ -279,7 +279,7 @@ if (con == 25.5)
     scr_blcon((mypart1.x - 320), (mypart1.y - 120), 1)
     con = 26
 }
-if (con == 26 && instance_exists(OBJ_WRITER) == 0)
+if (con == 26 && instance_exists(OBJ_WRITER) == false)
 {
     global.msg[0] = scr_gettext("obj_mettatonb_second_757")
     scr_blcon((mypart1.x - 320), (mypart1.y - 120), 1)

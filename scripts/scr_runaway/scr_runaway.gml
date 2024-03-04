@@ -11,7 +11,7 @@ function scr_runaway()
 	}
 	if instance_exists(obj_undyneboss)
 	    runvalue = 100
-	if (FL_Hardmode == 0)
+	if (FL_Hardmode == false)
 	{
 	    if (global.armor == Items.Bandage)
 	        runvalue = 100

@@ -49,16 +49,34 @@ if (prev_dir_y != dir_y && dir_y != 0)
 	}
 }
 
-if (prev_dir_x != dir_x && dir_x != 0)
+if (dir_x != 0)
 {
-	if (dir_x == 1)
+	if (prev_dir_x != dir_x)
 	{
-		scroll_offset = min(scroll_offset + 1, max(array_length(history) - SCROLL_MIN_ENTRIES_SHOWN, 0));
+		scroll_input_counter = 0;
 	}
-	else if (dir_x == -1)
+	else
 	{
-		scroll_offset = max(scroll_offset - 1, 0);
+		scroll_input_counter += dir_x;
 	}
+	
+	var should_scroll = (scroll_input_counter == 0 || (abs(scroll_input_counter) >= 15 && scroll_input_counter % 4 == 0));
+	
+	if (should_scroll)
+	{	
+		if (dir_x == 1)
+		{
+			scroll_offset = min(scroll_offset + 1, max(array_length(history) - SCROLL_MIN_ENTRIES_SHOWN, 0));
+		}
+		else if (dir_x == -1)
+		{
+			scroll_offset = max(scroll_offset - 1, 0);
+		}
+	}
+}
+else
+{
+	scroll_input_counter = 0;
 }
 
 input_text = keyboard_string;

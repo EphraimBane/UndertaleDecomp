@@ -32,7 +32,7 @@ if (con == 22)
     global.msg[0] = scr_gettext("obj_sansdate3_116")
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 30 && instance_exists(OBJ_WRITER) == 0)
+if (con == 30 && instance_exists(OBJ_WRITER) == false)
 {
     global.msg[0] = scr_gettext("obj_sansdate3_124")
     global.msg[1] = scr_gettext("obj_sansdate3_125")
@@ -46,13 +46,13 @@ if (con == 30 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 31
 }
-if (con == 31 && instance_exists(OBJ_WRITER) == 0)
+if (con == 31 && instance_exists(OBJ_WRITER) == false)
 {
     sans.sprite_index = spr_sans_u
     con = 32
     alarm[4] = 80
 }
-if (con == 33 && instance_exists(OBJ_WRITER) == 0)
+if (con == 33 && instance_exists(OBJ_WRITER) == false)
 {
     sans.sprite_index = spr_sans_r
     global.faceemotion = 3
@@ -62,13 +62,13 @@ if (con == 33 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 34
 }
-if (con == 34 && instance_exists(OBJ_WRITER) == 0)
+if (con == 34 && instance_exists(OBJ_WRITER) == false)
 {
     sans.sprite_index = spr_sans_u
     con = 34.5
     alarm[4] = 80
 }
-if (con == 35.5 && instance_exists(OBJ_WRITER) == 0)
+if (con == 35.5 && instance_exists(OBJ_WRITER) == false)
 {
     sans.sprite_index = spr_sans_r
     global.faceemotion = 0
@@ -110,13 +110,13 @@ if (con == 35.5 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 36
 }
-if (con == 36 && instance_exists(OBJ_WRITER) == 0)
+if (con == 36 && instance_exists(OBJ_WRITER) == false)
 {
     sans.sprite_index = spr_sans_u
     con = 37
     alarm[4] = 80
 }
-if (con == 38 && instance_exists(OBJ_WRITER) == 0)
+if (con == 38 && instance_exists(OBJ_WRITER) == false)
 {
     sans.sprite_index = spr_sans_r
     global.faceemotion = 1
@@ -135,7 +135,7 @@ if (con == 38 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 39
 }
-if (con == 39 && instance_exists(OBJ_WRITER) == 0)
+if (con == 39 && instance_exists(OBJ_WRITER) == false)
 {
     sans.sprite_index = spr_sans_u
     con = 40
@@ -149,7 +149,7 @@ if (con == 40)
         vol -= 0.01
     caster_set_volume(global.currentsong, vol)
 }
-if (con == 41 && instance_exists(OBJ_WRITER) == 0)
+if (con == 41 && instance_exists(OBJ_WRITER) == false)
 {
     sans.sprite_index = spr_sans_r
     caster_pause(global.currentsong)
@@ -161,13 +161,13 @@ if (con == 41 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 42
 }
-if (con == 42 && instance_exists(OBJ_WRITER) == 0)
+if (con == 42 && instance_exists(OBJ_WRITER) == false)
 {
     sans.sprite_index = spr_sans_u
     con = 43
     alarm[4] = 60
 }
-if (con == 44 && instance_exists(OBJ_WRITER) == 0)
+if (con == 44 && instance_exists(OBJ_WRITER) == false)
 {
     global.faceemotion = 4
     global.typer = 21
@@ -175,7 +175,7 @@ if (con == 44 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 45
 }
-if (con == 45 && instance_exists(OBJ_WRITER) == 0)
+if (con == 45 && instance_exists(OBJ_WRITER) == false)
 {
     caster_resume(global.currentsong)
     con = 46
@@ -187,7 +187,7 @@ if (con == 46)
         vol += 0.01
     caster_set_volume(global.currentsong, vol)
 }
-if (con == 47 && instance_exists(OBJ_WRITER) == 0)
+if (con == 47 && instance_exists(OBJ_WRITER) == false)
 {
     sans.sprite_index = spr_sans_r
     global.faceemotion = 1
@@ -211,7 +211,7 @@ if (con == 47 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 48
 }
-if (con == 48 && instance_exists(OBJ_WRITER) == 0)
+if (con == 48 && instance_exists(OBJ_WRITER) == false)
 {
     sans.sprite_index = spr_sans_u
     con = 49
@@ -225,7 +225,7 @@ if (con == 50)
     instance_create(0, 0, obj_dialoguer)
     con = 51
 }
-if (con == 51 && instance_exists(OBJ_WRITER) == 0)
+if (con == 51 && instance_exists(OBJ_WRITER) == false)
 {
     sans.sprite_index = spr_sans_u
     con = 51.1
@@ -264,7 +264,7 @@ if (con == 53)
     instance_create(0, 0, obj_dialoguer)
     con = 54
 }
-if (con == 54 && instance_exists(OBJ_WRITER) == 0)
+if (con == 54 && instance_exists(OBJ_WRITER) == false)
 {
     sans.sprite_index = spr_sans_l
     sans.image_speed = 0.2

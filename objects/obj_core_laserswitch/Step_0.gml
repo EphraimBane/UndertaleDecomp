@@ -65,7 +65,7 @@ if (pcon == 40)
         scr_regulartext()
     }
 }
-if (pcon == 41 && instance_exists(OBJ_WRITER) == 0)
+if (pcon == 41 && instance_exists(OBJ_WRITER) == false)
 {
     global.plot = 181
     pcon = 42

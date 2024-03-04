@@ -19,5 +19,5 @@ if (tums <= 15)
 {
     snd_play(snd_squeak)
     if (room == room_water_undynebridge)
-        global.flag[285] = 1
+        FL_UncheckedButSet_285 = 1
 }

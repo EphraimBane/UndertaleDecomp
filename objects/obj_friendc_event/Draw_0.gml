@@ -24,14 +24,14 @@ if (con == 1.9 && instance_exists(OBJ_WRITER))
     obj_mainchara.visible = false
     global.interact = 1
 }
-if (con == 1.9 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1.9 && instance_exists(OBJ_WRITER) == false)
 {
     con = 1.8
     alarm[4] = 70
 }
 if (con == 2.8)
     con = 2
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     mc.visible = true
     caster_loop(global.currentsong, 1, 0.95)
@@ -97,7 +97,7 @@ if (con == 9)
     dd.side = 1
     con = 10
 }
-if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+if (con == 10 && instance_exists(OBJ_WRITER) == false)
 {
     with (obj_toriel_friendc)
         direction = 270

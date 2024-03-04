@@ -18,7 +18,7 @@ if (con == 1)
     if (quickskip == 1)
         con = 130
 }
-if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3 && instance_exists(OBJ_WRITER) == false)
 {
     FL_AnimationIndex = 1
     snd_play(snd_noise)
@@ -74,7 +74,7 @@ if (con == 5)
     d.side = 0
     con = 6
 }
-if (con == 6 && instance_exists(OBJ_WRITER) == 0)
+if (con == 6 && instance_exists(OBJ_WRITER) == false)
 {
     caster_loop(news, 0.9, 1)
     con = 7
@@ -92,7 +92,7 @@ if (con == 6 && instance_exists(OBJ_WRITER) == 0)
     dg = instance_create(0, 0, obj_dialoguer)
     dg.side = 0
 }
-if (con == 7 && instance_exists(OBJ_WRITER) == 0)
+if (con == 7 && instance_exists(OBJ_WRITER) == false)
 {
     FL_AnimationIndex = 2
     global.interact = 0
@@ -138,7 +138,7 @@ if (con == 61 && instance_exists(OBJ_WRITER))
         caster_pause(news)
     }
 }
-if (con == 61 && instance_exists(OBJ_WRITER) == 0)
+if (con == 61 && instance_exists(OBJ_WRITER) == false)
 {
     snd_play(snd_noise)
     with (dog)
@@ -185,7 +185,7 @@ if (con == 66 && instance_exists(OBJ_WRITER))
         caster_pause(news)
     }
 }
-if (con == 66 && instance_exists(OBJ_WRITER) == 0)
+if (con == 66 && instance_exists(OBJ_WRITER) == false)
 {
     snd_play(snd_noise)
     with (water)
@@ -218,7 +218,7 @@ if (con == 70)
     gr.side = 0
     con = 71
 }
-if (con == 71 && instance_exists(OBJ_WRITER) == 0)
+if (con == 71 && instance_exists(OBJ_WRITER) == false)
 {
     caster_pause(news)
     snd_play(snd_noise)
@@ -269,7 +269,7 @@ if (con == 76 && instance_exists(OBJ_WRITER))
         caster_pause(news)
     }
 }
-if (con == 76 && instance_exists(OBJ_WRITER) == 0)
+if (con == 76 && instance_exists(OBJ_WRITER) == false)
 {
     snd_play(snd_noise)
     with (basketball)
@@ -304,7 +304,7 @@ if (con == 80)
     gr.side = 0
     con = 81
 }
-if (con == 81 && instance_exists(OBJ_WRITER) == 0)
+if (con == 81 && instance_exists(OBJ_WRITER) == false)
 {
     caster_pause(news)
     snd_play(snd_noise)
@@ -343,7 +343,7 @@ if (con == 85)
     gr.side = 0
     con = 86
 }
-if (con == 86 && instance_exists(OBJ_WRITER) == 0)
+if (con == 86 && instance_exists(OBJ_WRITER) == false)
 {
     caster_pause(news)
     snd_play(snd_noise)
@@ -365,7 +365,7 @@ if (con == 88)
     gr.side = 0
     con = 100
 }
-if (con == 100 && instance_exists(OBJ_WRITER) == 0)
+if (con == 100 && instance_exists(OBJ_WRITER) == false)
 {
     water.sprite_index = water.bombsprite
     script.sprite_index = script.bombsprite
@@ -423,7 +423,7 @@ if (con == 107)
     dg = instance_create(0, 0, obj_dialoguer)
     dg.side = 0
 }
-if (con == 108 && instance_exists(OBJ_WRITER) == 0)
+if (con == 108 && instance_exists(OBJ_WRITER) == false)
 {
     snd_play(snd_noise)
     dog.sprite_index = dog.bombsprite
@@ -432,7 +432,7 @@ if (con == 108 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 110)
     con = 116
-if (con == 112 && instance_exists(OBJ_WRITER) == 0)
+if (con == 112 && instance_exists(OBJ_WRITER) == false)
 {
     snd_play(snd_noise)
     present.sprite_index = present.bombsprite
@@ -454,14 +454,14 @@ if (con == 116)
     dg = instance_create(0, 0, obj_dialoguer)
     dg.side = 0
 }
-if (con == 118 && instance_exists(OBJ_WRITER) == 0)
+if (con == 118 && instance_exists(OBJ_WRITER) == false)
 {
     snd_play(snd_noise)
     basketball.sprite_index = basketball.bombsprite
     con = 119
     alarm[4] = 20
 }
-if (con == 122 && instance_exists(OBJ_WRITER) == 0)
+if (con == 122 && instance_exists(OBJ_WRITER) == false)
 {
     snd_play(snd_noise)
     present.sprite_index = present.bombsprite
@@ -477,7 +477,7 @@ if (con == 125)
     dg.side = 0
     con = 125.1
 }
-if (con == 125.1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 125.1 && instance_exists(OBJ_WRITER) == false)
 {
     wordfall = instance_create((__view_get(VIEW_PROP_CAM_X, 0) + 20), (__view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent) + 20), obj_wordfall)
     global.typer = 5
@@ -487,7 +487,7 @@ if (con == 125.1 && instance_exists(OBJ_WRITER) == 0)
     dg.side = 0
     con = 126
 }
-if (con == 126 && instance_exists(OBJ_WRITER) == 0)
+if (con == 126 && instance_exists(OBJ_WRITER) == false)
 {
     bigbomb = scr_marker(340, 80, spr_bigbomb)
     bigbomb.depth = 500000
@@ -498,7 +498,7 @@ if (con == 126 && instance_exists(OBJ_WRITER) == 0)
     dg.side = 0
     con = 127
 }
-if (con == 127 && instance_exists(OBJ_WRITER) == 0)
+if (con == 127 && instance_exists(OBJ_WRITER) == false)
 {
     global.facing = Direction.Up
     __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
@@ -529,7 +529,7 @@ if (con == 128)
     with (dog)
         gtfo = 0
 }
-if (con == 129 && instance_exists(OBJ_WRITER) == 0)
+if (con == 129 && instance_exists(OBJ_WRITER) == false)
 {
     if instance_exists(game)
     {
@@ -616,7 +616,7 @@ if (con > 129)
         }
     }
 }
-if (con == 130 && instance_exists(OBJ_WRITER) == 0)
+if (con == 130 && instance_exists(OBJ_WRITER) == false)
 {
     caster_free(all)
     global.mercy = 1
@@ -634,7 +634,7 @@ if (con == 130 && instance_exists(OBJ_WRITER) == 0)
     con = 131
     snd_play(snd_phone)
 }
-if (con == 131 && instance_exists(OBJ_WRITER) == 0)
+if (con == 131 && instance_exists(OBJ_WRITER) == false)
 {
     if (quickskip == 0)
     {
@@ -752,7 +752,7 @@ if (con == 165 && instance_exists(OBJ_WRITER))
         conner = 2
     }
 }
-if (con == 165 && instance_exists(OBJ_WRITER) == 0)
+if (con == 165 && instance_exists(OBJ_WRITER) == false)
 {
     con = 166
     alarm[4] = 80
@@ -792,7 +792,7 @@ if (con == 169)
     dg.side = 1
     con = 170
 }
-if (con == 170 && instance_exists(OBJ_WRITER) == 0)
+if (con == 170 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 47
     mett.hspeed = 4
@@ -836,7 +836,7 @@ if (con == 170 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 171
 }
-if (con == 171 && instance_exists(OBJ_WRITER) == 0)
+if (con == 171 && instance_exists(OBJ_WRITER) == false)
 {
     flowey = instance_create(40, 300, obj_stalkerflowey)
     obj_mainchara.cutscene = false

@@ -15,7 +15,7 @@ if (FL_GotArtifact == 0)
             FL_GotArtifact = 2
     }
 }
-if (con == 1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1 && instance_exists(OBJ_WRITER) == false)
 {
     myinteract = 0
     global.interact = 1

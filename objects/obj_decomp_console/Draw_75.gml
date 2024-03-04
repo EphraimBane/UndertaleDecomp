@@ -144,6 +144,7 @@ if (carat_visible)
 draw_text_transformed(input_text_x, input_text_y, input_text, 1.0, 1.0, 0);
 
 var valid_command_name = false;
+var cmd_and_args = string_split(input_text, " ", true);
 
 if (command_name != "")
 {
@@ -156,13 +157,36 @@ if (command_name != "")
 		
 	draw_text(input_text_x + ((string_pos(command_name, input_text) - 1) * char_width), input_text_y, command_name);
 	
+	// Hints
+	
+	var hint_offset = string_width(input_text);
+	
+	// Draw inline argument name hints
+	var arguments = getCommandArguments(command_name);
+	var argument_index = array_length(cmd_and_args) - 1;
+	
+	if (argument_index < array_length(arguments) && !string_ends_with(input_text, " "))
+	{
+		// Add some space
+		hint_offset += string_width(" ");
+	}
+	
+	draw_set_color(c_gray);
+	for (var i = argument_index; i < array_length(arguments); i++)
+	{
+		draw_text(input_text_x + hint_offset, input_text_y, arguments[i]);
+		hint_offset += string_width(arguments[i]) + string_width(" ");
+	}
+	
 	// Draw inline help text
 	var help_text = getCommandHelpText(command_name);
 	
 	if (help_text != "")
 	{
+		hint_offset += 3 * string_width(" ");
 		draw_set_color(c_gray);
-		draw_text(input_text_x + string_width(input_text + string_repeat("  ", 3)), input_text_y, help_text);
+		draw_text(input_text_x + hint_offset, input_text_y, help_text);
+		hint_offset += string_width(help_text) + string_width(" ");
 	}
 	
 	draw_set_color(c_white);
@@ -172,47 +196,81 @@ if (command_name != "")
 
 #region Popout
 
-if (command_name != "" && !valid_command_name)
+var popout_elements = array_create(0);
+
+// Check if we can show command popups
+if (array_length(cmd_and_args) == 1 && !string_ends_with(input_text, " "))
 {
-	var matching_cmds = array_create(0);
-	var rect_width = 0;
-	var rect_height = 0;
-	
-	for (var i = 0; i < array_length(commands) && array_length(matching_cmds) <= 6; i++)
+	for (var i = 0; i < array_length(commands) && array_length(popout_elements) <= POPUP_MAX_ELEMENTS; i++)
 	{
 		if (string_starts_with(commands[i].displayName, command_name))
 		{
-			array_push(matching_cmds, commands[i].displayName);
-			rect_width = max(rect_width, string_width(commands[i].displayName));
-			rect_height += char_height;
+			array_push(popout_elements, commands[i].displayName);
 		}
 	}
-	
-	if (array_length(matching_cmds) > 0)
-	{
-		var popout_border = 2;
-		var popout_pad = 2;
-		
-		var popout_x = bounds_rect.x + popout_border;
-		var popout_y = bounds_rect.bottom + char_height + popout_border;
-		var popout_width = popout_x + rect_width + 2 * popout_pad;
-		var popout_height = popout_y + rect_height + 2 * popout_pad;
+}
 
-		var border_x = popout_x - popout_border - popout_pad;
-		var border_y = popout_y - popout_border - popout_pad;
-		var border_right = popout_x + rect_width + popout_border + 2 * popout_pad;
-		var border_bottom = popout_y + rect_height + popout_border + 2 * popout_pad;
+// Check if we can show argument popups
+if (valid_command_name)
+{
+	var arg_value = cmd_and_args[array_length(cmd_and_args) - 1];
+	var argument_index = array_length(cmd_and_args) - 2;
 	
-		draw_set_color(c_white);
-		ossafe_fill_rectangle(border_x, border_y, border_right, border_bottom);
-		draw_set_color(c_black);
-		ossafe_fill_rectangle(popout_x, popout_y, popout_width, popout_height);
-		draw_set_color(c_white);
+	if (string_ends_with(input_text, " "))
+	{
+		// Look at the upcoming argument instead
+		arg_value = "";
+		argument_index += 1;
+	}
 	
-		for (var i = 0; i < array_length(matching_cmds); i++)
+	var command = getCommandDefIndex(command_name);
+	
+	if (0 <= argument_index && argument_index < array_length(commands[command].argumentHints))
+	{
+		for (var i = 0; i < array_length(commands[command].argumentHints[argument_index]) && array_length(popout_elements) <= POPUP_MAX_ELEMENTS; i++)
 		{
-			draw_text(popout_x + popout_pad, popout_y + popout_pad + (i * char_height), matching_cmds[i]);
+			if (string_starts_with(commands[command].argumentHints[argument_index][i], arg_value))
+			{
+				array_push(popout_elements, commands[command].argumentHints[argument_index][i]);
+			}
 		}
+	}
+}
+
+// Show popup elements if any
+if (array_length(popout_elements) > 0)
+{
+	var rect_width = 0;
+	var rect_height = 0;
+	
+	for (var i = 0; i < array_length(popout_elements); i++)
+	{
+		rect_width = max(rect_width, string_width(popout_elements[i]));
+		rect_height += char_height;
+	}
+	
+	var popout_border = 2;
+	var popout_pad = 2;
+		
+	var popout_x = bounds_rect.x + popout_border;
+	var popout_y = bounds_rect.bottom + char_height + popout_border;
+	var popout_width = popout_x + rect_width + 2 * popout_pad;
+	var popout_height = popout_y + rect_height + 2 * popout_pad;
+
+	var border_x = popout_x - popout_border - popout_pad;
+	var border_y = popout_y - popout_border - popout_pad;
+	var border_right = popout_x + rect_width + popout_border + 2 * popout_pad;
+	var border_bottom = popout_y + rect_height + popout_border + 2 * popout_pad;
+	
+	draw_set_color(c_white);
+	ossafe_fill_rectangle(border_x, border_y, border_right, border_bottom);
+	draw_set_color(c_black);
+	ossafe_fill_rectangle(popout_x, popout_y, popout_width, popout_height);
+	draw_set_color(c_white);
+	
+	for (var i = 0; i < array_length(popout_elements); i++)
+	{
+		draw_text(popout_x + popout_pad, popout_y + popout_pad + (i * char_height), popout_elements[i]);
 	}
 }
 

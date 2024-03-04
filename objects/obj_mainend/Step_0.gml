@@ -118,7 +118,7 @@ if (con == 4)
     instance_create(0, 0, obj_dialoguer)
     con = 5
 }
-if (con == 5 && instance_exists(OBJ_WRITER) == 0)
+if (con == 5 && instance_exists(OBJ_WRITER) == false)
 {
     con = 6
     global.typer = 19
@@ -252,7 +252,7 @@ if (con == 5 && instance_exists(OBJ_WRITER) == 0)
     }
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 6 && instance_exists(OBJ_WRITER) == 0)
+if (con == 6 && instance_exists(OBJ_WRITER) == false)
 {
     FL_AlphysExpression = 0
     con = 8
@@ -345,7 +345,7 @@ if (con == 6 && instance_exists(OBJ_WRITER) == 0)
     }
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 7 && instance_exists(OBJ_WRITER) == 0)
+if (con == 7 && instance_exists(OBJ_WRITER) == false)
 {
     FL_AlphysExpression = 0
     con = 8
@@ -402,7 +402,7 @@ if (con == 7 && instance_exists(OBJ_WRITER) == 0)
     global.msg[47] = scr_gettext("obj_mainend_588")
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 8 && instance_exists(OBJ_WRITER) == 0)
+if (con == 8 && instance_exists(OBJ_WRITER) == false)
 {
     con = 9
     mf = instance_create(0, 0, obj_musfadeout)
@@ -413,7 +413,7 @@ if (con == 8 && instance_exists(OBJ_WRITER) == 0)
     global.msg[0] = scr_gettext("obj_mainend_612")
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 9 && instance_exists(OBJ_WRITER) == 0)
+if (con == 9 && instance_exists(OBJ_WRITER) == false)
 {
     con = 10
     alarm[4] = 150
@@ -435,7 +435,7 @@ if (con == 11)
     else if (global.savedata_async_id == -1)
         game_restart()
 }
-if (con == 21 && instance_exists(OBJ_WRITER) == 0)
+if (con == 21 && instance_exists(OBJ_WRITER) == false)
 {
     global.facechoice = 3
     global.faceemotion = 3
@@ -481,7 +481,7 @@ if (con == 21 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 22
 }
-if (con == 22 && instance_exists(OBJ_WRITER) == 0)
+if (con == 22 && instance_exists(OBJ_WRITER) == false)
 {
     if (FL_PapyrusStatus != PapyrusStatus.Killed)
     {
@@ -538,9 +538,9 @@ if (con == 23 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 14)
         caster_stop(global.currentsong)
 }
-if (con == 23 && instance_exists(OBJ_WRITER) == 0)
+if (con == 23 && instance_exists(OBJ_WRITER) == false)
     con = 8
-if (con == 31 && instance_exists(OBJ_WRITER) == 0)
+if (con == 31 && instance_exists(OBJ_WRITER) == false)
 {
     global.facechoice = 3
     global.faceemotion = 1
@@ -618,7 +618,7 @@ if (con == 32 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 18)
         caster_stop(global.currentsong)
 }
-if (con == 32 && instance_exists(OBJ_WRITER) == 0)
+if (con == 32 && instance_exists(OBJ_WRITER) == false)
     con = 8
 if (con == 41)
 {
@@ -637,7 +637,7 @@ if (con == 41)
     instance_create(0, 0, obj_dialoguer)
     con = 42
 }
-if (con == 42 && instance_exists(OBJ_WRITER) == 0)
+if (con == 42 && instance_exists(OBJ_WRITER) == false)
 {
     caster_play(global.currentsong, 0.7, 0.95)
     global.typer = 27
@@ -709,7 +709,7 @@ if (con == 43 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 27)
         caster_resume(global.currentsong)
 }
-if (con == 43 && instance_exists(OBJ_WRITER) == 0)
+if (con == 43 && instance_exists(OBJ_WRITER) == false)
     con = 8
 if (con == 51)
 {

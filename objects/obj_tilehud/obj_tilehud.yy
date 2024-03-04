@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Tile Puzzle",
+    "path": "folders/Objects/Overworld/Tile Puzzle.yy",
   },
   "parentObjectId": null,
   "persistent": false,

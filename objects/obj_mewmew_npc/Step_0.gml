@@ -23,7 +23,7 @@ if (myinteract == 3)
         myinteract = 0
     }
 }
-if (con == 1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1 && instance_exists(OBJ_WRITER) == false)
 {
     global.currentroom = room_tundra_sanshouse
     scr_tempsave()

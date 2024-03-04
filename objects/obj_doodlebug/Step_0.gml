@@ -127,5 +127,5 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (mercymod == 222222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222222 && instance_exists(OBJ_WRITER) == false)
     instance_destroy()

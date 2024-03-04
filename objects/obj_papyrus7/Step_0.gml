@@ -24,7 +24,7 @@ if (conversation == 1.5)
     else
         conversation = 2
 }
-if (conversation == 2 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 2 && instance_exists(OBJ_WRITER) == false)
 {
     conversation = 3
     xxblcon = instance_create((papyrus.x + 3), (papyrus.y - 12), obj_cosmeticblcon)
@@ -44,7 +44,7 @@ if (conversation == 4)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 6
 }
-if (conversation == 6 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 6 && instance_exists(OBJ_WRITER) == false)
 {
     dtrapa = instance_create((x + 20), y, obj_dtrapfire)
     dcannon = scr_marker((x + 170), 240, spr_dtrapcannon)
@@ -87,7 +87,7 @@ if (conversation == 8)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 9
 }
-if (conversation == 9 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 9 && instance_exists(OBJ_WRITER) == false)
 {
     alarm[4] = 120
     conversation = 10
@@ -107,7 +107,7 @@ if (conversation == 11)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 12
 }
-if (conversation == 12 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 12 && instance_exists(OBJ_WRITER) == false)
 {
     papyrus.sprite_index = papyrus.ltsprite
     sans.sprite_index = sans.ltsprite
@@ -165,7 +165,7 @@ if (conversation == 14)
     mydialoguer = instance_create(0, 0, obj_dialoguer)
     conversation = 15
 }
-if (conversation == 15 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 15 && instance_exists(OBJ_WRITER) == false)
 {
     dtrapa.alarm[1] = 1
     alarm[4] = 60
@@ -194,7 +194,7 @@ if (conversation == 16.5)
     conversation = 15.7
     mydialoguer = instance_create(0, 0, obj_dialoguer)
 }
-if (conversation == 15.7 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 15.7 && instance_exists(OBJ_WRITER) == false)
 {
     xxblcon = instance_create((papyrus.x + 3), (papyrus.y - 12), obj_cosmeticblcon)
     alarm[0] = 30
@@ -219,7 +219,7 @@ if (conversation == 17)
     instance_create(0, 0, obj_dialoguer)
     conversation = 18
 }
-if (conversation == 18 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 18 && instance_exists(OBJ_WRITER) == false)
 {
     conversation = 19
     instance_create(0, 0, obj_musfadeout)

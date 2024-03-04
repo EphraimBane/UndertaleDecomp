@@ -1,6 +1,6 @@
 scr_depth(0, 0, 0, 0, 0)
 scr_npc_anim()
-if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+if (con == 10 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 1
     con = 10.1

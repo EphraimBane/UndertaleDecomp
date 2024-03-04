@@ -33,7 +33,7 @@ if (con == 2)
 }
 if (con == 3)
     global.interact = 1
-if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 1
     race = caster_load("music/race.ogg")
@@ -55,7 +55,7 @@ if (con == 5)
 }
 if (con == 6)
     global.interact = 1
-if (con == 6 && instance_exists(OBJ_WRITER) == 0)
+if (con == 6 && instance_exists(OBJ_WRITER) == false)
 {
     bringback = 0
     caster_loop(race, 1, 1)
@@ -70,7 +70,7 @@ if (con == 6 && instance_exists(OBJ_WRITER) == 0)
     snail[2].image_speed = 0.25
     con = 7
 }
-if (con == 7 && instance_exists(OBJ_WRITER) == 0)
+if (con == 7 && instance_exists(OBJ_WRITER) == false)
 {
     if (control_check_pressed(InteractButton) && blcontimer <= 15)
     {
@@ -225,7 +225,7 @@ if (con == 11)
 }
 if (con == 12)
     buffer = 8
-if (con == 12 && instance_exists(OBJ_WRITER) == 0)
+if (con == 12 && instance_exists(OBJ_WRITER) == false)
 {
     bringback = 1
     global.interact = 0

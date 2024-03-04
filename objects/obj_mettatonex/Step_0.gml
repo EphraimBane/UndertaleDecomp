@@ -34,7 +34,7 @@ if (global.mnfight == 1)
         global.heard = 0
     }
 }
-if (talked == 2 && instance_exists(OBJ_WRITER) == 0)
+if (talked == 2 && instance_exists(OBJ_WRITER) == false)
     event_user(1)
 if (global.hurtanim[myself] == 1)
 {
@@ -225,7 +225,7 @@ if (con == 52)
     con = 53
     scr_blcon_x((x + 180), (y + 20))
 }
-if (con == 53 && instance_exists(OBJ_WRITER) == 0)
+if (con == 53 && instance_exists(OBJ_WRITER) == false)
 {
     con = 54
     alarm[4] = 45
@@ -235,7 +235,7 @@ if (con == 54)
     with (mypart1)
         dsf -= 0.012
 }
-if (con == 55 && instance_exists(OBJ_WRITER) == 0)
+if (con == 55 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 54
     with (mypart1)
@@ -244,7 +244,7 @@ if (con == 55 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon_x((x + 180), (y + 20))
     con = 56
 }
-if (con == 56 && instance_exists(OBJ_WRITER) == 0)
+if (con == 56 && instance_exists(OBJ_WRITER) == false)
 {
     explode = caster_load("music/explosion.ogg")
     mypart1.fadewhite = 1
@@ -283,14 +283,14 @@ if (con == 91 && instance_exists(OBJ_WRITER))
     vol -= 0.02
     caster_set_volume(global.batmusic, vol)
 }
-if (con == 91 && instance_exists(OBJ_WRITER) == 0)
+if (con == 91 && instance_exists(OBJ_WRITER) == false)
 {
     caster_stop(global.batmusic)
     snd_play(snd_phone)
     con = 93
     alarm[4] = 50
 }
-if (con == 94 && instance_exists(OBJ_WRITER) == 0)
+if (con == 94 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 51
     global.msc = 0
@@ -299,7 +299,7 @@ if (con == 94 && instance_exists(OBJ_WRITER) == 0)
     con = 95
     scr_blcon_x((x + 180), (y + 20))
 }
-if (con == 95 && instance_exists(OBJ_WRITER) == 0)
+if (con == 95 && instance_exists(OBJ_WRITER) == false)
 {
     shblcon = instance_create(530, 200, obj_blconsm)
     shblcon.sprite_index = spr_shockblcon2
@@ -319,7 +319,7 @@ if (con == 95 && instance_exists(OBJ_WRITER) == 0)
     instance_create(420, 60, OBJ_WRITER)
     con = 96
 }
-if (con == 96 && instance_exists(OBJ_WRITER) == 0)
+if (con == 96 && instance_exists(OBJ_WRITER) == false)
 {
     with (obj_blconsm)
         instance_destroy()
@@ -332,7 +332,7 @@ if (con == 96 && instance_exists(OBJ_WRITER) == 0)
     con = 97
     scr_blcon_x((x + 180), (y + 20))
 }
-if (con == 97 && instance_exists(OBJ_WRITER) == 0)
+if (con == 97 && instance_exists(OBJ_WRITER) == false)
 {
     snd_play(snd_phone)
     shblcon = instance_create(530, 200, obj_blconsm)
@@ -342,7 +342,7 @@ if (con == 97 && instance_exists(OBJ_WRITER) == 0)
     instance_create(420, 60, OBJ_WRITER)
     con = 98
 }
-if (con == 98 && instance_exists(OBJ_WRITER) == 0)
+if (con == 98 && instance_exists(OBJ_WRITER) == false)
 {
     snd_play(snd_phone)
     shblcon = instance_create(560, 200, obj_blconsm)
@@ -354,7 +354,7 @@ if (con == 98 && instance_exists(OBJ_WRITER) == 0)
     instance_create(450, 60, OBJ_WRITER)
     con = 99
 }
-if (con == 99 && instance_exists(OBJ_WRITER) == 0)
+if (con == 99 && instance_exists(OBJ_WRITER) == false)
 {
     snd_play(snd_phone)
     shblcon = instance_create(520, 200, obj_blconsm)
@@ -366,7 +366,7 @@ if (con == 99 && instance_exists(OBJ_WRITER) == 0)
     instance_create(410, 60, OBJ_WRITER)
     con = 100
 }
-if (con == 100 && instance_exists(OBJ_WRITER) == 0)
+if (con == 100 && instance_exists(OBJ_WRITER) == false)
 {
     con = 101
     alarm[4] = 30
@@ -423,7 +423,7 @@ if (con == 103 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 25)
         caster_set_volume(sadmett, 0)
 }
-if (con == 103 && instance_exists(OBJ_WRITER) == 0)
+if (con == 103 && instance_exists(OBJ_WRITER) == false)
 {
     impact = caster_load("music/create.ogg")
     caster_play(impact, 1, 0.8)

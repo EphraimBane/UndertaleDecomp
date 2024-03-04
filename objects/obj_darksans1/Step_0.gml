@@ -33,7 +33,7 @@ if (conversation == 0)
         instance_create(0, 0, obj_dialoguer)
     }
 }
-if (conversation == 1 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 1 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 1
     obj_mainchara.sprite_index = spr_maincharad
@@ -49,7 +49,7 @@ if (sprite_index == spr_sans_r_darkhand && conversation == 4 && image_index == 2
     image_speed = 0
     conversation = 5
 }
-if (conversation == 6 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 6 && instance_exists(OBJ_WRITER) == false)
 {
     obj_mainchara.visible = false
     mainact = instance_create(obj_mainchara.x, obj_mainchara.y, obj_mainchara_actor)
@@ -74,7 +74,7 @@ if (conversation == 7 && x >= 2440)
     if (murder == 1)
         conversation = 50
 }
-if (conversation == 8 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 8 && instance_exists(OBJ_WRITER) == false)
 {
     obj_mainchara_actor.vspeed = -1
     obj_mainchara.vspeed = -1
@@ -135,7 +135,7 @@ if (conversation == 11)
         conversation = 12
     }
 }
-if (conversation == 12 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 12 && instance_exists(OBJ_WRITER) == false)
 {
     obj_papyrus_actor_mad.fun = true
     obj_papyrus_actor_mad.sprite_index = spr_papyrus_mad1
@@ -151,7 +151,7 @@ if (conversation == 12 && instance_exists(OBJ_WRITER) == 0)
     global.msg[4] = scr_gettext("obj_darksans1_484")
     instance_create(0, 0, obj_dialoguer)
 }
-if (conversation == 13 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 13 && instance_exists(OBJ_WRITER) == false)
 {
     obj_papyrus_actor_mad.fun = true
     obj_papyrus_actor_mad.sprite_index = spr_papyrus_cape
@@ -167,7 +167,7 @@ if (conversation == 13 && instance_exists(OBJ_WRITER) == 0)
     global.msg[5] = scr_gettext("obj_darksans1_501")
     instance_create(0, 0, obj_dialoguer)
 }
-if (conversation == 14 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 14 && instance_exists(OBJ_WRITER) == false)
 {
     obj_papyrus_actor_mad.fun = false
     obj_papyrus_actor_mad.sprite_index = spr_papyrus_lt
@@ -180,7 +180,7 @@ if (conversation == 14 && instance_exists(OBJ_WRITER) == 0)
     global.msg[1] = scr_gettext("obj_darksans1_515")
     instance_create(0, 0, obj_dialoguer)
 }
-if (conversation == 15 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 15 && instance_exists(OBJ_WRITER) == false)
 {
     obj_papyrus_actor_mad.fun = true
     obj_papyrus_actor_mad.sprite_index = spr_papyrus_mad2
@@ -197,7 +197,7 @@ if (conversation == 15 && instance_exists(OBJ_WRITER) == 0)
     global.msg[5] = scr_gettext("obj_darksans1_533")
     instance_create(0, 0, obj_dialoguer)
 }
-if (conversation == 16 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 16 && instance_exists(OBJ_WRITER) == false)
 {
     conversation = 18
     alarm[6] = 10
@@ -267,7 +267,7 @@ if (conversation == 23)
     conversation = 24
     instance_create(0, 0, obj_dialoguer)
 }
-if (conversation == 24 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 24 && instance_exists(OBJ_WRITER) == false)
 {
     obj_papyrus_actor_mad.image_speed = 0.5
     obj_papyrus_actor_mad.sprite_index = obj_papyrus_actor_mad.rsprite
@@ -299,7 +299,7 @@ if (conversation == 26)
         conversation = 27
     }
 }
-if (conversation == 27 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 27 && instance_exists(OBJ_WRITER) == false)
 {
     obj_papyrus_actor_mad.hspeed = 1
     obj_papyrus_actor_mad.sprite_index = spr_papyrus_r
@@ -321,7 +321,7 @@ if (conversation == 28)
         conversation = 29
     }
 }
-if (conversation == 29 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 29 && instance_exists(OBJ_WRITER) == false)
 {
     obj_mainchara.y -= 60
     rememberx = obj_mainchara.x
@@ -350,7 +350,7 @@ if (conversation == 30 && instance_exists(obj_mainchara))
         instance_destroy()
     }
 }
-if (conversation == 50 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 50 && instance_exists(OBJ_WRITER) == false)
 {
     hh = instance_create(0, 0, obj_musfadeout)
     hh.fadespeed = 0.01
@@ -370,7 +370,7 @@ if (conversation == 52)
     instance_create(0, 0, obj_dialoguer)
     conversation = 53
 }
-if (conversation == 53 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 53 && instance_exists(OBJ_WRITER) == false)
 {
     sprite_index = spr_sans_r
     pap = instance_create(room_width, (y - 12), obj_papyrus_actor_mad)
@@ -403,7 +403,7 @@ if (conversation == 54)
         conversation = 55
     }
 }
-if (conversation == 55 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 55 && instance_exists(OBJ_WRITER) == false)
 {
     obj_papyrus_actor_mad.image_speed = 0.5
     obj_papyrus_actor_mad.sprite_index = spr_papyrus_r
@@ -426,7 +426,7 @@ if (conversation == 56)
         conversation = 58
     }
 }
-if (conversation == 58 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 58 && instance_exists(OBJ_WRITER) == false)
 {
     obj_mainchara.facing = Direction.Down
     global.facing = Direction.Down

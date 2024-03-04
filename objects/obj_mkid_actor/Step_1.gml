@@ -113,7 +113,7 @@ if (follow == 10.1)
     instance_create(x, y, obj_dialoguer)
     follow = 10
 }
-if (follow == 10 && instance_exists(OBJ_WRITER) == 0)
+if (follow == 10 && instance_exists(OBJ_WRITER) == false)
 {
     sprite_index = dsprite
     global.interact = 0

@@ -214,7 +214,7 @@ if (global.myfight == 2)
         }
     }
 }
-if (whatiheard == 3 && instance_exists(OBJ_WRITER) == 0 && dunk == 0)
+if (whatiheard == 3 && instance_exists(OBJ_WRITER) == false && dunk == 0)
 {
     blconx = instance_create((x + 95), (y - 25), obj_blconsm)
     global.msg[0] = scr_gettext("obj_tembattle_617")
@@ -223,7 +223,7 @@ if (whatiheard == 3 && instance_exists(OBJ_WRITER) == 0 && dunk == 0)
     global.typer = 2
     blconxwd = instance_create((blconx.x + 15), (blconx.y + 10), OBJ_NOMSCWRITER)
 }
-if (dunk == 1 && instance_exists(OBJ_WRITER) == 0)
+if (dunk == 1 && instance_exists(OBJ_WRITER) == false)
 {
     with (blconx)
         instance_destroy()
@@ -244,7 +244,7 @@ if (dunk == 1 && instance_exists(OBJ_WRITER) == 0)
     dunk = 2
     global.myfight = 999
 }
-if (dunk == 2 && instance_exists(OBJ_WRITER) == 0)
+if (dunk == 2 && instance_exists(OBJ_WRITER) == false)
 {
     with (blconx)
         instance_destroy()
@@ -257,7 +257,7 @@ if (dunk == 2 && instance_exists(OBJ_WRITER) == 0)
     blconxwd = instance_create((blconx.x + 15), (blconx.y + 10), OBJ_NOMSCWRITER)
     dunk = 3
 }
-if (dunk == 3 && instance_exists(OBJ_WRITER) == 0)
+if (dunk == 3 && instance_exists(OBJ_WRITER) == false)
 {
     with (blconx)
         instance_destroy()
@@ -273,7 +273,7 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
 {
     global.myfight = 4
     scr_mercystandard()

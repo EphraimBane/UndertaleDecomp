@@ -11,9 +11,9 @@ if (cn == -1)
     instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
     cn = 0
 }
-if (cn == 0 && instance_exists(OBJ_WRITER) == 1)
+if (cn == 0 && instance_exists(OBJ_WRITER) == true)
     face_index = 0
-if (cn == 0 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 0 && instance_exists(OBJ_WRITER) == false)
 {
     caster_loop(datemusic, 1, 1)
     global.faceemotion = 0
@@ -31,7 +31,7 @@ if (cn == 0 && instance_exists(OBJ_WRITER) == 0)
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
     cn = 1
 }
-if (cn == 1 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 1 && instance_exists(OBJ_WRITER) == false)
 {
     with (blcon)
         instance_destroy()
@@ -83,7 +83,7 @@ if (cn == 4)
 }
 if (cn == 5.1)
 {
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         if instance_exists(blcon)
         {
@@ -152,7 +152,7 @@ if (cn < 5.2 && joke == 0)
         graph6.friction = 0.1
     }
 }
-if (cn == 6 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 6 && instance_exists(OBJ_WRITER) == false)
 {
     if instance_exists(blcon)
     {
@@ -180,7 +180,7 @@ if (cn == 6 && instance_exists(OBJ_WRITER) == 0)
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
     cn = 7
 }
-if (cn == 7 && instance_exists(OBJ_WRITER) == 1)
+if (cn == 7 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 6 && OBJ_WRITER.halt != false)
     {
@@ -238,7 +238,7 @@ if (cn == 10)
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
     cn = 11
 }
-if (cn == 11 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 11 && instance_exists(OBJ_WRITER) == false)
 {
     if instance_exists(blcon)
     {
@@ -264,7 +264,7 @@ if (cn == 12)
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
     cn = 13
 }
-if (cn == 13 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 13 && instance_exists(OBJ_WRITER) == false)
 {
     caster_loop(datetense, 1, 1)
     cn = 14
@@ -298,7 +298,7 @@ if (cn == 13 && instance_exists(OBJ_WRITER) == 0)
         global.msg[8] = scr_gettext("obj_papdate_389")
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
 }
-if (cn == 14 && instance_exists(OBJ_WRITER) == 1)
+if (cn == 14 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 8 && OBJ_WRITER.halt != false)
     {
@@ -396,7 +396,7 @@ if (cn == 20)
     }
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
 }
-if (cn == 20.1 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 20.1 && instance_exists(OBJ_WRITER) == false)
 {
     friendgraph.y = 64
     friendgraph.ideallength = 50
@@ -421,7 +421,7 @@ if (cn == 20.2)
     cn = 20.3
     alarm[2] = 20
 }
-if (cn == 21.3 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 21.3 && instance_exists(OBJ_WRITER) == false)
 {
     if instance_exists(blcon)
     {
@@ -442,7 +442,7 @@ if (cn == 23)
     global.msg[1] = scr_gettext("obj_papdate_521")
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
 }
-if (cn == 24 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 24 && instance_exists(OBJ_WRITER) == false)
 {
     cn = 25
     caster_loop(datefight, 0.85, 1)
@@ -469,7 +469,7 @@ if (cn == 24 && instance_exists(OBJ_WRITER) == 0)
     global.msg[8] = scr_gettext("obj_papdate_547")
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
 }
-if (cn == 25 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 25 && instance_exists(OBJ_WRITER) == false)
 {
     if (instance_exists(blcon) == 1)
     {
@@ -487,7 +487,7 @@ if (cn == 27)
     cn = 28
     alarm[2] = 30
 }
-if (cn == 29 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 29 && instance_exists(OBJ_WRITER) == false)
 {
     hspeed = 0
     blcon = instance_create((x + 145), (y + 22), obj_blconwdflowey)
@@ -495,7 +495,7 @@ if (cn == 29 && instance_exists(OBJ_WRITER) == 0)
     global.msg[0] = scr_gettext("obj_papdate_573")
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
 }
-if (cn == 30 && instance_exists(OBJ_WRITER) == 1)
+if (cn == 30 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.halt != false)
     {
@@ -547,7 +547,7 @@ if (cn == 34)
         global.msg[1] = scr_gettext("obj_papdate_618")
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
 }
-if (cn == 35 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 35 && instance_exists(OBJ_WRITER) == false)
 {
     friendgraph.y = 64
     friendgraph.vspeed = 0
@@ -605,7 +605,7 @@ if (cn == 40)
     global.msg[2] = scr_gettext("obj_papdate_669")
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
 }
-if (cn == 41 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 41 && instance_exists(OBJ_WRITER) == false)
 {
     cn = 42
     caster_loop(datetense, 1, 1)
@@ -619,14 +619,14 @@ if (cn == 41 && instance_exists(OBJ_WRITER) == 0)
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
     friendgraph.ideallength = 80
 }
-if (cn == 42 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 42 && instance_exists(OBJ_WRITER) == false)
 {
     textskip = 0
     global.idealborder[2] += 35
     cn = 43
     alarm[2] = 15
 }
-if (cn == 44 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 44 && instance_exists(OBJ_WRITER) == false)
 {
     friendgraph.vspeed = -8
     if instance_exists(blcon)
@@ -662,7 +662,7 @@ if (cn == 47)
     global.msg[3] = scr_gettext("obj_papdate_724")
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
 }
-if (cn == 48 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 48 && instance_exists(OBJ_WRITER) == false)
 {
     with (blcon)
         instance_destroy()
@@ -681,7 +681,7 @@ if (cn == 49)
     global.msg[4] = scr_gettext("obj_papdate_744")
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
 }
-if (cn == 50 && instance_exists(OBJ_WRITER) == 1)
+if (cn == 50 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.halt != false && OBJ_WRITER.stringno == 3)
     {
@@ -735,7 +735,7 @@ if (cn == 53)
         blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
     }
 }
-if (cn == 54 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 54 && instance_exists(OBJ_WRITER) == false)
 {
     if instance_exists(blcon)
     {
@@ -754,7 +754,7 @@ if (cn == 56)
     blcon = instance_create((x + 145), (y + 22), obj_blconwdflowey)
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
 }
-if (cn == 57 && instance_exists(OBJ_WRITER) == 1)
+if (cn == 57 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.halt != false)
     {
@@ -818,7 +818,7 @@ if (cn == 60)
     blcon = instance_create((x + 145), (y + 22), obj_blconwdflowey)
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
 }
-if (cn == 61 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 61 && instance_exists(OBJ_WRITER) == false)
 {
     friendgraph.hspeed = 10
     if (friendgraph.x > 90)
@@ -839,7 +839,7 @@ if (cn >= 61)
     if (friendgraph.x > 70)
         friendgraph.hspeed = 0
 }
-if (cn == 62 && instance_exists(OBJ_WRITER) == 1)
+if (cn == 62 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.halt != false && OBJ_WRITER.stringno == 5)
     {
@@ -902,7 +902,7 @@ if (cn == 66.5 && instance_exists(OBJ_WRITER))
     if (friendgraph.x > 90)
         friendgraph.hspeed = 0
 }
-if (cn == 66.5 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 66.5 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 22
     if instance_exists(iii)
@@ -928,7 +928,7 @@ if (cn == 66.5 && instance_exists(OBJ_WRITER) == 0)
     blcon = instance_create((x + 145), (y + 22), obj_blconwdflowey)
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
 }
-if (cn == 67 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 67 && instance_exists(OBJ_WRITER) == false)
 {
     cn = 68
     friendgraph.ideallength = 100
@@ -1033,7 +1033,7 @@ if (cn == 75)
     myw = instance_create(60, writery, OBJ_WRITER)
     myw.depth = -100000
 }
-if (cn == 76 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 76 && instance_exists(OBJ_WRITER) == false)
 {
     g.image_alpha = 1
     g.tspeed = -0.05
@@ -1108,7 +1108,7 @@ if (cn == 78)
     blcon = instance_create((x + 145), (y + 22), obj_blconwdflowey)
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
 }
-if (cn == 79 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 79 && instance_exists(OBJ_WRITER) == false)
 {
     with (blcon)
         instance_destroy()
@@ -1135,7 +1135,7 @@ if (cn == 83)
     blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_WRITER)
     cn = 84
 }
-if (cn == 84 && instance_exists(OBJ_WRITER) == 0)
+if (cn == 84 && instance_exists(OBJ_WRITER) == false)
 {
     hspeed = 30
     with (blcon)

@@ -334,7 +334,7 @@ if (global.mnfight == 0 && global.myfight == 0)
 }
 if (active == true)
 {
-    if control_check_pressed(CancelButton)
+    if (control_check_pressed(CancelButton) || (control_check(MenuButton) && global.decomp_vars.WristProtector && !global.decomp_vars.VanillaMode))
     {
         if (global.mnfight == 0 && FL_CookedNoodles == 0)
         {
@@ -390,7 +390,7 @@ if (global.myfight == 4)
     if (runaway == 0)
     {
         obj_heart.x = -200
-        if (instance_exists(OBJ_WRITER) == 0)
+        if (instance_exists(OBJ_WRITER) == false)
         {
             global.myfight = 0
             global.mnfight = 1

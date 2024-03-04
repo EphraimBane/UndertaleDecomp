@@ -1,4 +1,4 @@
-if (t == 1 && instance_exists(OBJ_WRITER) == 0)
+if (t == 1 && instance_exists(OBJ_WRITER) == false)
 {
     exception = 0
     if (exception == 0)

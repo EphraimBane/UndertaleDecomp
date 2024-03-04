@@ -284,7 +284,7 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)
@@ -309,7 +309,7 @@ if (songcon == 3)
     snd_play(snd_break2)
     songcon = -1
 }
-if (songcon == 2 && instance_exists(OBJ_WRITER) == 0)
+if (songcon == 2 && instance_exists(OBJ_WRITER) == false)
 {
     global.heard = 0
     global.mercy = 1
@@ -326,7 +326,7 @@ if (songcon == 2 && instance_exists(OBJ_WRITER) == 0)
     caster_loop(global.batmusic, 0.8, 0.95)
     global.msg[0] = scr_gettext("obj_asrielfinal_648")
 }
-if (gocon == 1 && instance_exists(OBJ_WRITER) == 0)
+if (gocon == 1 && instance_exists(OBJ_WRITER) == false)
 {
     if (gotimer == 0)
         instance_create(0, 0, obj_screenwhiter)
@@ -348,7 +348,7 @@ if (savecon_a > 0)
         vol = 0
         caster_free(global.batmusic)
     }
-    if (savecon_a == 1 && instance_exists(OBJ_WRITER) == 0)
+    if (savecon_a == 1 && instance_exists(OBJ_WRITER) == false)
     {
         savecon_a = 2
         blcon = instance_create(400, 50, obj_blconwdflowey)

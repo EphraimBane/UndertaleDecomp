@@ -118,7 +118,7 @@ if (won == 9999)
         scr_regulartext()
         won = 99
     }
-    if (won == 99 && instance_exists(OBJ_WRITER) == 0)
+    if (won == 99 && instance_exists(OBJ_WRITER) == false)
     {
         global.interact = 0
         caster_set_volume(global.currentsong, vol1)

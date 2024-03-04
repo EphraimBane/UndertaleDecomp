@@ -79,7 +79,7 @@ if instance_exists(obj_mainchara)
                 on = 4
         }
     }
-    if (con == 7 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 7 && instance_exists(OBJ_WRITER) == false)
     {
         global.interact = 0
         onion.follow = 1
@@ -141,7 +141,7 @@ if instance_exists(obj_mainchara)
             event_user(2)
         instance_create(0, 0, obj_dialoguer)
     }
-    if (con == 11 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 11 && instance_exists(OBJ_WRITER) == false)
     {
         global.interact = 0
         con = 10
@@ -158,7 +158,7 @@ if instance_exists(obj_mainchara)
                 follow = 0
         }
     }
-    if (con == 15 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 15 && instance_exists(OBJ_WRITER) == false)
     {
         con = 16
         global.interact = 0

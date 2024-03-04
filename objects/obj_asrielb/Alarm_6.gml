@@ -47,7 +47,7 @@ if (turns == 13)
     global.msg[1] = scr_gettext("obj_asrielb_312")
 }
 xx = 0
-if (turns < global.flag[504])
+if (turns < FL_AsrielTurnCounter)
     xx = 1
 global.typer = 86
 blconwd = instance_create((blcon.x + 25), (blcon.y + 10), OBJ_NOMSCWRITER)

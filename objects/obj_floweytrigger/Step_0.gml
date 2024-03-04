@@ -1,4 +1,4 @@
-if (conversation == 1 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 1 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 3
     alarm[0] = 1
@@ -16,7 +16,7 @@ if (conversation == 3.5 && instance_exists(obj_torface) == 0)
     alarm[3] = 15
     conversation = 4
 }
-if (conversation == 20 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 20 && instance_exists(OBJ_WRITER) == false)
 {
     mus = instance_create(0, 0, obj_musfadeout)
     global.interact = 1
@@ -30,7 +30,7 @@ if (conversation == 20 && instance_exists(OBJ_WRITER) == 0)
     flow_m.image_speed = 0.25
     conversation = 21
 }
-if (conversation == 21 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 21 && instance_exists(OBJ_WRITER) == false)
 {
     if (flow_m.image_index >= 5)
     {
@@ -39,7 +39,7 @@ if (conversation == 21 && instance_exists(OBJ_WRITER) == 0)
         alarm[4] = 50
     }
 }
-if (conversation == 22.2 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 22.2 && instance_exists(OBJ_WRITER) == false)
 {
     global.plot = 1
     with (flow_m)

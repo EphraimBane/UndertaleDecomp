@@ -25,7 +25,7 @@ if (con == 2 || con == 3 || con == 4)
     x += (random(1) - 0.5)
     y += (random(1.2) - 0.5)
 }
-if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4 && instance_exists(OBJ_WRITER) == false)
 {
     con = 5
     alarm[4] = 90

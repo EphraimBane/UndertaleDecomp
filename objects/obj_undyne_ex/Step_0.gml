@@ -56,7 +56,7 @@ if (global.mnfight == 1)
 if (uncancel == 1)
 {
     alarm[5] = 100
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         alarm[5] = 1
         uncancel = 0
@@ -296,7 +296,7 @@ if (con == 52)
     global.msg[10] = scr_gettext("obj_undyne_ex_873")
     scr_blcon_x(blconx, blcony)
 }
-if (con == 53 && instance_exists(OBJ_WRITER) == 0)
+if (con == 53 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 95
     global.msg[0] = scr_gettext("obj_undyne_ex_881")
@@ -306,7 +306,7 @@ if (con == 53 && instance_exists(OBJ_WRITER) == 0)
     with (mypart1)
         instance_destroy()
 }
-if (con == 54 && instance_exists(OBJ_WRITER) == 0)
+if (con == 54 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 96
     global.msg[0] = scr_gettext("obj_undyne_ex_893")
@@ -314,7 +314,7 @@ if (con == 54 && instance_exists(OBJ_WRITER) == 0)
     con = 71
     scr_blcon_x(blconx, blcony)
 }
-if (con == 71 && instance_exists(OBJ_WRITER) == 0)
+if (con == 71 && instance_exists(OBJ_WRITER) == false)
 {
     global.monstersprite = melter.sprite_index
     global.vaporspeed = 0

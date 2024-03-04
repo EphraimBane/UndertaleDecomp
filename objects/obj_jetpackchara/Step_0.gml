@@ -110,7 +110,7 @@ if (con == 13)
     ggg.side = 0
     con = 14
 }
-if (con == 14 && instance_exists(OBJ_WRITER) == 0)
+if (con == 14 && instance_exists(OBJ_WRITER) == false)
 {
     mett.x += 8
     if (mett.x > 800)
@@ -222,7 +222,7 @@ if (con == 33)
     if (mett.x < 580)
         mett.x += 4
 }
-if (con == 33 && instance_exists(OBJ_WRITER) == 0)
+if (con == 33 && instance_exists(OBJ_WRITER) == false)
 {
     FL_FailedJetpackSegment = 1
     global.typer = 27
@@ -248,7 +248,7 @@ if (con == 34 && instance_exists(OBJ_WRITER))
     if (mett.y < 240)
         mett.y += 5
 }
-if (con == 34 && instance_exists(OBJ_WRITER) == 0)
+if (con == 34 && instance_exists(OBJ_WRITER) == false)
 {
     with (mett)
         vspeed = -4

@@ -56,9 +56,9 @@ if (q == 9 && alarm[4] < 140 && con == 0)
 if (con == 1)
 {
     go = 0
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
         go = 1
-    if (instance_exists(OBJ_WRITER) == 1)
+    if (instance_exists(OBJ_WRITER) == true)
     {
         if (OBJ_WRITER.stringno == 5)
             go = 1
@@ -87,7 +87,7 @@ if (con == 3)
     sprite_index = spr_alphyshelper_excited2
     scr_blcon((obj_mettatonb_body.x + 95), (obj_mettatonb_body.y - 100), 3)
 }
-if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4 && instance_exists(OBJ_WRITER) == false)
 {
     image_speed = 0.2
     sprite_index = spr_alphyshelper_shock2
@@ -179,7 +179,7 @@ if (con == 7)
         shake = 1
     scr_blcon((obj_mettatonb_body.x + 95), (obj_mettatonb_body.y - 100), 3)
 }
-if (con == 20 && instance_exists(OBJ_WRITER) == 1)
+if (con == 20 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 2)
         sprite_index = spr_alphyshelper_confused
@@ -188,7 +188,7 @@ if (con == 20 && instance_exists(OBJ_WRITER) == 1)
     if (OBJ_WRITER.stringno == 8)
         sprite_index = spr_alphyshelper_confused
 }
-if (con == 20 && instance_exists(OBJ_WRITER) == 0)
+if (con == 20 && instance_exists(OBJ_WRITER) == false)
 {
     con = 21
     sprite_index = spr_alphyshelper
@@ -198,7 +198,7 @@ if (con == 20 && instance_exists(OBJ_WRITER) == 0)
     global.msg[2] = scr_gettext("obj_questionasker_693")
     scr_blcon((x - 10), (y - 120), 2)
 }
-if (con == 21 && instance_exists(OBJ_WRITER) == 0)
+if (con == 21 && instance_exists(OBJ_WRITER) == false)
 {
     sprite_index = spr_alphyshelper_embarrass
     global.typer = 51
@@ -210,7 +210,7 @@ if (con == 21 && instance_exists(OBJ_WRITER) == 0)
     con = 22
     scr_blcon((obj_mettatonb_body.x + 95), (obj_mettatonb_body.y - 100), 3)
 }
-if (con == 22 && instance_exists(OBJ_WRITER) == 0)
+if (con == 22 && instance_exists(OBJ_WRITER) == false)
 {
     sprite_index = spr_alphyshelper
     caster_pause(global.batmusic)
@@ -225,14 +225,14 @@ if (con == 24)
     global.msg[0] = scr_gettext("obj_questionasker_725")
     scr_blcon((obj_mettatonb_body.x + 95), (obj_mettatonb_body.y - 100), 3)
 }
-if (con == 30 && instance_exists(OBJ_WRITER) == 0)
+if (con == 30 && instance_exists(OBJ_WRITER) == false)
 {
     with (obj_mettatonb_body)
         event_user(1)
     alarm[7] = 20
     con = 31
 }
-if (con == 32 && instance_exists(OBJ_WRITER) == 0)
+if (con == 32 && instance_exists(OBJ_WRITER) == false)
 {
     shake = 0
     obj_mettatonb_body.arms = spr_mettatonb_arms2
@@ -258,7 +258,7 @@ if (con == 32 && instance_exists(OBJ_WRITER) == 0)
     con = 34
     scr_blcon((obj_mettatonb_body.x - 320), (obj_mettatonb_body.y - 120), 1)
 }
-if (con == 34 && instance_exists(OBJ_WRITER) == 0)
+if (con == 34 && instance_exists(OBJ_WRITER) == false)
 {
     obj_mettatonb_body.arms = spr_none
     con = 35

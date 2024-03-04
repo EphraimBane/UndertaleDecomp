@@ -99,7 +99,7 @@ if (global.mnfight == 2)
 }
 if (whatiheard == 0)
 {
-    if (instance_exists(OBJ_WRITER) == 0)
+    if (instance_exists(OBJ_WRITER) == false)
     {
         global.mnfight = 1
         global.myfight = 0

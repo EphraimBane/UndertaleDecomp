@@ -2425,73 +2425,73 @@ function SCR_TEXT()
 	        global.msg[0] = scr_gettext("SCR_TEXT_2502")
 	        break
 	    case 580:
-	        if (global.flag[84] == 4)
-	            global.msg[0] = scr_gettext("SCR_TEXT_2506")
-	        if (global.flag[84] == 5)
-	            global.msg[0] = scr_gettext("SCR_TEXT_2507")
-	        if (global.flag[84] < 2)
+	        if (FL_WaterfallMushroomStatus == 4)
+	            global.msg[0] = scr_gettext("SCR_TEXT_2506") //* My mind is running wild^1!&* I haven't felt like this&  in a long time.../%%
+	        if (FL_WaterfallMushroomStatus == 5)
+	            global.msg[0] = scr_gettext("SCR_TEXT_2507") //* Please leave./%%
+	        if (FL_WaterfallMushroomStatus < 2)
 	        {
-	            global.msg[0] = scr_gettext("SCR_TEXT_2510")
-	            global.msg[1] = scr_gettext("SCR_TEXT_2511")
-	            global.msg[2] = scr_gettext("SCR_TEXT_2512")
-	            global.msg[3] = scr_gettext("SCR_TEXT_2513")
-	            global.msg[4] = scr_gettext("SCR_TEXT_2514")
+	            global.msg[0] = scr_gettext("SCR_TEXT_2510") //* You..^1.&* You came from outside^1,&  didn't you?/
+	            global.msg[1] = scr_gettext("SCR_TEXT_2511") //* People like you are so&  rare.../
+	            global.msg[2] = scr_gettext("SCR_TEXT_2512") //* Please^1!* Stranger!/
+	            global.msg[3] = scr_gettext("SCR_TEXT_2513") //* Tell me about outside...?& &         Yes         No\\C
+	            global.msg[4] = scr_gettext("SCR_TEXT_2514") // 
 	        }
-	        if (global.flag[84] == 2)
-	            global.msg[0] = scr_gettext("SCR_TEXT_2518")
-	        if (global.flag[84] == 3)
+	        if (FL_WaterfallMushroomStatus == 2)
+	            global.msg[0] = scr_gettext("SCR_TEXT_2518") //* Well^1, what are you&  waiting for?/%%
+	        if (FL_WaterfallMushroomStatus == 3)
 	        {
-	            global.msg[0] = scr_gettext("SCR_TEXT_2522")
-	            global.msg[1] = scr_gettext("SCR_TEXT_2523")
-	            global.msg[2] = scr_gettext("SCR_TEXT_2524")
+	            global.msg[0] = scr_gettext("SCR_TEXT_2522") //* Oh^1!&* You're back!/
+	            global.msg[1] = scr_gettext("SCR_TEXT_2523") //* How's the room?& &         Different   Same\\C
+	            global.msg[2] = scr_gettext("SCR_TEXT_2524") // 
 	        }
 	        break
 	    case 581:
-	        if (global.flag[84] < 3)
+	        if (FL_WaterfallMushroomStatus < 3)
 	        {
 	            if (global.choice == 0)
 	            {
-	                global.msg[0] = scr_gettext("SCR_TEXT_2535")
-	                global.msg[1] = scr_gettext("SCR_TEXT_2536")
-	                global.msg[2] = scr_gettext("SCR_TEXT_2537")
-	                global.msg[3] = scr_gettext("SCR_TEXT_2538")
-	                global.msg[4] = scr_gettext("SCR_TEXT_2539")
-	                global.msg[5] = scr_gettext("SCR_TEXT_2540")
-	                global.msg[6] = scr_gettext("SCR_TEXT_2541")
-	                global.msg[7] = scr_gettext("SCR_TEXT_2542")
-	                global.msg[8] = scr_gettext("SCR_TEXT_2543")
-	                global.msg[9] = scr_gettext("SCR_TEXT_2544")
+	                global.msg[0] = scr_gettext("SCR_TEXT_2535") //* Huh^1?&* \"SURFACE\"^1?&* What do you mean?/
+	                global.msg[1] = scr_gettext("SCR_TEXT_2536") //* I just meant outside this&  room./
+	                global.msg[2] = scr_gettext("SCR_TEXT_2537") //* If you haven't noticed^1, my&  mycelium have bound me&  to the ground./
+	                global.msg[3] = scr_gettext("SCR_TEXT_2538") //* Please^1!&* Stranger!/
+	                global.msg[4] = scr_gettext("SCR_TEXT_2539") //* I'll make this simple./
+	                global.msg[5] = scr_gettext("SCR_TEXT_2540") //* I've spent my whole life&  in the same spot^1,&  in the same room./
+	                global.msg[6] = scr_gettext("SCR_TEXT_2541") //* But I've long wondered&  what lies inside the&  room to the right./
+	                global.msg[7] = scr_gettext("SCR_TEXT_2542") //* Long I've fantasized&  about entering^1, and&  changing my scenery.../
+	                global.msg[8] = scr_gettext("SCR_TEXT_2543") //* No..^1.&* Changing my LIFE!/
+	                global.msg[9] = scr_gettext("SCR_TEXT_2544") //* Please^1.&* Go and tell me what's&  inside./%%
 	                if (doak == 0)
 	                {
-	                    if (global.flag[84] == 0)
-	                        global.flag[84] = 2
+	                    if (FL_WaterfallMushroomStatus == 0)
+	                        FL_WaterfallMushroomStatus = 2
 	                    doak = 1
 	                }
 	            }
 	            if (global.choice == 1)
-	                global.msg[0] = scr_gettext("SCR_TEXT_2553")
+	                global.msg[0] = scr_gettext("SCR_TEXT_2553") //* Is everyone out there&  like you^1?&* How terrible./%%
 	        }
 	        else
 	        {
 	            if (global.choice == 0)
 	            {
-	                global.msg[0] = scr_gettext("SCR_TEXT_2561")
-	                global.msg[1] = scr_gettext("SCR_TEXT_2562")
-	                global.flag[84] = 4
+	                global.msg[0] = scr_gettext("SCR_TEXT_2561") //* Oh^1, that's a relief^1!/
+	                global.msg[1] = scr_gettext("SCR_TEXT_2562") //* That's all I need to&  continue my fantasies^1.&* Thank you^1, stranger./%%
+	                FL_WaterfallMushroomStatus = 4
 	            }
 	            if (global.choice == 1)
 	            {
-	                global.msg[0] = scr_gettext("SCR_TEXT_2567")
-	                global.msg[1] = scr_gettext("SCR_TEXT_2568")
-	                global.msg[2] = scr_gettext("SCR_TEXT_2569")
-	                global.msg[3] = scr_gettext("SCR_TEXT_2570")
-	                global.msg[4] = scr_gettext("SCR_TEXT_2571")
-	                global.flag[84] = 5
+	                global.msg[0] = scr_gettext("SCR_TEXT_2567") //* So it's the same./
+	                global.msg[1] = scr_gettext("SCR_TEXT_2568") //* The same.../
+	                global.msg[2] = scr_gettext("SCR_TEXT_2569") //* Same.../
+	                global.msg[3] = scr_gettext("SCR_TEXT_2570") //* .../
+	                global.msg[4] = scr_gettext("SCR_TEXT_2571") //* OK./%%
+	                FL_WaterfallMushroomStatus = 5
 	            }
 	        }
 	        break
 	    case 583:
-	        if (FL_HaveUmbrella == 0)
+	        if (FL_HaveUmbrella == false)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_2580")
 	            global.msg[1] = scr_gettext("SCR_TEXT_2581")
@@ -2505,7 +2505,7 @@ function SCR_TEXT()
 	    case 584:
 	        if (doak == 0)
 	        {
-	            if (FL_HaveUmbrella == 0)
+	            if (FL_HaveUmbrella == false)
 	            {
 	                if (global.choice == 0)
 	                {
@@ -5370,44 +5370,44 @@ function SCR_TEXT()
 	        }
 	        break
 	    case 950:
-	        global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5913")
-	        global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5914")
+	        global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5913") //* (Dog Shrine.)/
+	        global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5914") //* (Donate?)& &         Dognate     Dognot\\C
 	        global.msg[2] = " "
-	        if (FL_DogShrineUnknown >= 1)
-	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5919", string(FL_DogShrineGDeposited), string(FL_DogShrineGoldNeeded))
-	        if (FL_DogShrineUnknown == 2 && FL_DogShrineLevel == 1)
+	        if (FL_DogShrineStateAcknowledged >= 1)
+	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5919", string(FL_DogShrineGDeposited), string(FL_DogShrineGoldNeeded)) //* (\\[1] of \\[2]G in the box.)& &         Dognate     Dognot\\C
+	        if (FL_DogShrineStateAcknowledged == 2 && FL_DogShrineLevel == 1)
 	        {
-	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5924")
-	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5925")
-	            global.msg[2] = scr_gettext("SCR_TEXT_dogshrine_5919", string(FL_DogShrineGDeposited), string(FL_DogShrineGoldNeeded))
+	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5924") //"* (Looks like the money was used&  to buy some fairy lights.)/
+	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5925") //* (It was kind of dark in here.)/
+	            global.msg[2] = scr_gettext("SCR_TEXT_dogshrine_5919", string(FL_DogShrineGDeposited), string(FL_DogShrineGoldNeeded)) //* (\\[1] of \\[2]G in the box.)& &         Dognate     Dognot\\C
 	            global.msg[3] = " "
-	            FL_DogShrineUnknown = 3
+	            FL_DogShrineStateAcknowledged = 3
 	        }
-	        if (FL_DogShrineUnknown == 3 && FL_DogShrineLevel == 5)
+	        if (FL_DogShrineStateAcknowledged == 3 && FL_DogShrineLevel == 5)
 	        {
-	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5933")
-	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5919", string(FL_DogShrineGDeposited), string(FL_DogShrineGoldNeeded))
+	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5933") //* (Looks like the money was used&  to increase the size of the&  shrine.)/
+	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5919", string(FL_DogShrineGDeposited), string(FL_DogShrineGoldNeeded)) //* (\\[1] of \\[2]G in the box.)& &         Dognate     Dognot\\C
 	            global.msg[2] = " "
-	            FL_DogShrineUnknown = 4
+	            FL_DogShrineStateAcknowledged = 4
 	        }
-	        if (FL_DogShrineUnknown == 4 && FL_DogShrineLevel == 10)
+	        if (FL_DogShrineStateAcknowledged == 4 && FL_DogShrineLevel == 10)
 	        {
-	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5941")
-	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5942")
-	            global.msg[2] = scr_gettext("SCR_TEXT_dogshrine_5943")
-	            global.msg[3] = scr_gettext("SCR_TEXT_dogshrine_5944")
-	            global.msg[4] = scr_gettext("SCR_TEXT_dogshrine_5919", string(FL_DogShrineGDeposited), string(FL_DogShrineGoldNeeded))
+	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5941") //* (The donation box slot is even&  bigger now.)/
+	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5942") //* (You should be able to donate&  even more at once!)/
+	            global.msg[2] = scr_gettext("SCR_TEXT_dogshrine_5943") //* (... actually^1, it looks like&  the sides of the slot are&  just painted on...)/
+	            global.msg[3] = scr_gettext("SCR_TEXT_dogshrine_5944") //* (Seems you'll still have to&  donate just 1G at a time...)/
+	            global.msg[4] = scr_gettext("SCR_TEXT_dogshrine_5919", string(FL_DogShrineGDeposited), string(FL_DogShrineGoldNeeded)) //* (\\[1] of \\[2]G in the box.)& &         Dognate     Dognot\\C
 	            global.msg[5] = " "
-	            FL_DogShrineUnknown = 5
+	            FL_DogShrineStateAcknowledged = 5
 	        }
-	        if (FL_DogShrineUnknown >= 6)
+	        if (FL_DogShrineStateAcknowledged >= 6)
 	        {
-	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5954")
-	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5955")
+	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5954") //* (The donation box is sealed.)/
+	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5955") //"* (There was seemingly no point&  to all of this...)/%
 	            if (FL_TruePacifist == true)
 	            {
-	                global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5958")
-	                global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5959")
+	                global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5958") //* (Since your adventure is over^1,&  you can reminisce about how&  useful the Dog Shrine was...)/
+	                global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5959") //* (... it wasn't useful at all.)/%
 	            }
 	        }
 	        break
@@ -5432,7 +5432,7 @@ function SCR_TEXT()
 	                        global.gold -= 1
 	                        FL_DogShrineGDeposited += 1
 	                        global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5993")
-	                        if (FL_DogShrineUnknown == 0)
+	                        if (FL_DogShrineStateAcknowledged == 0)
 	                        {
 	                            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_5997")
 	                            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_5998")
@@ -5446,8 +5446,8 @@ function SCR_TEXT()
 	                        }
 	                    }
 	                }
-	                if (FL_DogShrineUnknown == 0)
-	                    FL_DogShrineUnknown = 1
+	                if (FL_DogShrineStateAcknowledged == 0)
+	                    FL_DogShrineStateAcknowledged = 1
 	            }
 	            if (global.choice == 1)
 	                global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6015")
@@ -5455,24 +5455,24 @@ function SCR_TEXT()
 	        }
 	        break
 	    case 952:
-	        global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6024")
+	        global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6024") //* (Donation box.)& &         Use It      Do not\\C
 	        global.msg[1] = " "
 	        break
 	    case 953:
 	        if (global.choice == 0)
 	        {
-	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6031")
-	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_6032")
-	            global.flag[296] = 1
+	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6031") //* (... hand can't fit inside.)/
+	            global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_6032") //* (Check it again to try&  donating.)/%
+	            FL_DogShrineTrashChecked = 1
 	        }
 	        if (global.choice == 1)
-	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6037")
+	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6037") //* (Right.)/%
 	        break
 	    case 955:
-	        global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6045")
-	        global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_6046")
-	        global.msg[2] = scr_gettext("SCR_TEXT_dogshrine_6047")
-	        global.msg[3] = scr_gettext("SCR_TEXT_dogshrine_6048")
+	        global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6045") //* (The boombox is playing...)&* (An upbeat song.)/
+	        global.msg[1] = scr_gettext("SCR_TEXT_dogshrine_6046") //* (It's having a psychological&  effect on your desire to&  donate.)/
+	        global.msg[2] = scr_gettext("SCR_TEXT_dogshrine_6047") //* (... It's not clear what kind&  of effect that is.)/
+	        global.msg[3] = scr_gettext("SCR_TEXT_dogshrine_6048") //* (Change the track?)& &         Change      Do not\\C
 	        global.msg[4] = " "
 	        break
 	    case 956:
@@ -5483,21 +5483,21 @@ function SCR_TEXT()
 	        if (global.choice == 0)
 	        {
 	            caster_set_pitch(global.currentsong, p2)
-	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6059")
+	            global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6059") //* (Huh!?)&* (The next track is just the&  same but faster...!?)/%
 	        }
 	        if (global.choice == 1)
 	        {
 	            if (p == 1)
-	                global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6065")
+	                global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6065") //* (You see no reason to&  change it.)/%
 	            else
 	            {
 	                caster_set_pitch(global.currentsong, 1)
-	                global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6070")
+	                global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6070") //* (You returned the song&  to normal.)/%
 	            }
 	        }
 	        break
 	    case 960:
-	        global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6076", string(FL_DogShrineGDeposited))
+	        global.msg[0] = scr_gettext("SCR_TEXT_dogshrine_6076", string(FL_DogShrineGDeposited)) //* (\\[1]G inside.)& &         Donate      Do not\\C
 	        global.msg[1] = " "
 	        break
 	    case 961:

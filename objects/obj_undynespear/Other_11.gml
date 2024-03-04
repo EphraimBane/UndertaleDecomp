@@ -3,7 +3,7 @@ if (active == true)
     global.border = 3
     FL_InBattle = true
     FL_TypeHeartTransition = HeartTransitionType.QuickBattle
-    FL_QuickBattle = 1
+    FL_QuickBattleType = QuickBattleType.UndyneSpear
     SCR_BORDERSETUP()
     instance_create(0, 0, obj_battlerquick)
     obj_undynespear.active = 2

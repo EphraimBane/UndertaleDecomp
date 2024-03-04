@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "View",
-    "path": "folders/Scripts/Deprecated Functioned/View.yy",
+    "path": "folders/Scripts/Deprecated Functions/View.yy",
   },
 }

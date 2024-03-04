@@ -86,25 +86,25 @@ with (obj_undynetrigger_boss)
         g.side = 1
         con = 10
     }
-    if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 10 && instance_exists(OBJ_WRITER) == false)
     {
         global.msg[0] = scr_gettext("obj_undynetrigger_boss_199")
         event_user(1)
         con = 11
     }
-    if (con == 11 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 11 && instance_exists(OBJ_WRITER) == false)
     {
         global.msg[0] = scr_gettext("obj_undynetrigger_boss_206")
         event_user(1)
         con = 12
     }
-    if (con == 12 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 12 && instance_exists(OBJ_WRITER) == false)
     {
         global.msg[0] = scr_gettext("obj_undynetrigger_boss_213")
         event_user(1)
         con = 13
     }
-    if (con == 13 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 13 && instance_exists(OBJ_WRITER) == false)
     {
         global.msg[0] = scr_gettext("obj_undynetrigger_boss_220")
         event_user(1)
@@ -307,7 +307,7 @@ with (obj_undynetrigger_boss)
         g.side = 1
         con = 25
     }
-    if (con == 25 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 25 && instance_exists(OBJ_WRITER) == false)
     {
         obj_mainchara.visible = true
         obj_mainchara.y = rememberyyy
@@ -337,7 +337,7 @@ with (obj_undynetrigger_boss)
         g = instance_create(0, 0, obj_dialoguer)
         g.side = 1
     }
-    if (con == 51 && instance_exists(OBJ_WRITER) == 0)
+    if (con == 51 && instance_exists(OBJ_WRITER) == false)
     {
         undyne.sprite_index = undyne.rsprite
         con = 52

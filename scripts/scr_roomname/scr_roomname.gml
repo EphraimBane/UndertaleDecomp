@@ -1,4 +1,8 @@
-function scr_roomname()
+/// @func						scr_roomname(room)
+/// @desc						Returns the name of a given room
+/// @param		{Asset.GMRoom}	room
+/// @returns	{string}
+function scr_roomname(_room)
 {
 	if (argument0 == room_start)
 	    return scr_gettext("roomname_0");

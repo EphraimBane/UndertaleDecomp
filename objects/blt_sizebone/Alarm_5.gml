@@ -1,4 +1,4 @@
-if (instance_exists(OBJ_WRITER) == 0)
+if (instance_exists(OBJ_WRITER) == false)
 {
     with (blcon)
         instance_destroy()
@@ -6,5 +6,5 @@ if (instance_exists(OBJ_WRITER) == 0)
     alarm[6] = 50
     snd_play(snd_txtasg)
 }
-if (instance_exists(OBJ_WRITER) == 1)
+if (instance_exists(OBJ_WRITER) == true)
     alarm[5] = 2

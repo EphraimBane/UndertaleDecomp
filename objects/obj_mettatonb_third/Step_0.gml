@@ -23,7 +23,7 @@ if (alarm[5] > 0)
 }
 if (global.mnfight == 1)
 {
-    if (talked == true && instance_exists(OBJ_WRITER) == 0)
+    if (talked == true && instance_exists(OBJ_WRITER) == false)
     {
         alarm[5] = 1
         talked = 2
@@ -162,7 +162,7 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)
@@ -196,7 +196,7 @@ if (con == 3)
     con = 5
     alarm[4] = 30
 }
-if (con == 6 && instance_exists(OBJ_WRITER) == 0)
+if (con == 6 && instance_exists(OBJ_WRITER) == false)
 {
     shblcon = instance_create((phone.x + 10), phone.y, obj_blconsm)
     shblcon.sprite_index = spr_shockblcon2
@@ -225,7 +225,7 @@ if (con == 6.1 && instance_exists(OBJ_WRITER))
             OBJ_WRITER.stringpos = string_length(OBJ_WRITER.originalstring)
     }
 }
-if (con == 6.1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 6.1 && instance_exists(OBJ_WRITER) == false)
 {
     con = 5.2
     alarm[4] = 20
@@ -238,7 +238,7 @@ if (con == 6.2)
         instance_destroy()
     obj_heart.shot = 1
 }
-if (con == 7 && instance_exists(OBJ_WRITER) == 0)
+if (con == 7 && instance_exists(OBJ_WRITER) == false)
 {
     global.msg[0] = scr_gettext("obj_mettatonb_third_688")
     FL_MettatonTurnStatus = MettatonTurnStatus.CanTurn
@@ -272,7 +272,7 @@ if (con == 13)
     obj_heart.movement = -1
     con = 14
 }
-if (con == 40 && instance_exists(OBJ_WRITER) == 0)
+if (con == 40 && instance_exists(OBJ_WRITER) == false)
 {
     global.mnfight = -1
     global.myfight = -1
@@ -283,7 +283,7 @@ if (con == 40 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((mypart1.x - 320), (mypart1.y - 120), 1)
     con = 41
 }
-if (con == 41 && instance_exists(OBJ_WRITER) == 0)
+if (con == 41 && instance_exists(OBJ_WRITER) == false)
 {
     mypart1.behind = 1
     global.msg[0] = scr_gettext("obj_mettatonb_third_831")
@@ -291,7 +291,7 @@ if (con == 41 && instance_exists(OBJ_WRITER) == 0)
     scr_blcon((mypart1.x - 320), (mypart1.y - 120), 1)
     con = 42
 }
-if (con == 42 && instance_exists(OBJ_WRITER) == 0)
+if (con == 42 && instance_exists(OBJ_WRITER) == false)
 {
     caster_free(all)
     mypart1.behind = 2
@@ -310,7 +310,7 @@ if (con == 44)
     cc = caster_load("music/computer.ogg")
     pit = 0.8
 }
-if (con == 46 && instance_exists(OBJ_WRITER) == 0)
+if (con == 46 && instance_exists(OBJ_WRITER) == false)
 {
     mypart1.behind = 3
     mypart1.trueanim = 0.1
@@ -383,7 +383,7 @@ if (con_2 == 1)
     scr_blcon((mypart1.x - 320), (mypart1.y - 120), 1)
     con_2 = 2
 }
-if (con_2 == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con_2 == 2 && instance_exists(OBJ_WRITER) == false)
 {
     global.msg[0] = scr_gettext("obj_mettatonb_third_952")
     con_2 = -1

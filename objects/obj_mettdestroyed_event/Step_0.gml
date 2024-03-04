@@ -28,7 +28,7 @@ if (con == 4)
     instance_create(0, 0, obj_dialoguer)
     con = 5
 }
-if (con == 5 && instance_exists(OBJ_WRITER) == 0)
+if (con == 5 && instance_exists(OBJ_WRITER) == false)
 {
     al = instance_create((obj_mainchara.x + 40), (obj_mainchara.y + 75), obj_alphys_npc)
     al.sprite_index = al.usprite
@@ -53,7 +53,7 @@ if (con == 9)
     con = 10
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 10 && instance_exists(OBJ_WRITER) == 0)
+if (con == 10 && instance_exists(OBJ_WRITER) == false)
 {
     al.vspeed = -3.5
     al.hspeed = -4
@@ -76,7 +76,7 @@ if (con == 14)
     con = 15
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 15 && instance_exists(OBJ_WRITER) == 0)
+if (con == 15 && instance_exists(OBJ_WRITER) == false)
 {
     con = 16
     alarm[4] = 80
@@ -111,7 +111,7 @@ if (con == 19)
     con = 20
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 20 && instance_exists(OBJ_WRITER) == 0)
+if (con == 20 && instance_exists(OBJ_WRITER) == false)
 {
     al.sprite_index = al.utsprite
     __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)

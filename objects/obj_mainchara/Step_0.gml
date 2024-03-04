@@ -31,10 +31,10 @@ if (global.inbattle == true)
     if (global.specialbattle == 0)
         global.interact = 0
     depth = 100
-    if (FL_AreaKillsPointer != 0)
+    if (FL_AreaKillsPointer != KillsPointer_Invalid)
     {
         if (FL_KillsCounter != global.kills)
-            global.flag[FL_AreaKillsPointer] += (global.kills - FL_KillsCounter)
+            FL_AreaKillsPointer += (global.kills - FL_KillsCounter)
     }
 }
 if obj_time.left
@@ -143,13 +143,13 @@ if obj_time.down
 }
 if control_check_pressed(InteractButton)
     event_user(0)
-if control_check_pressed(BUTTON_MENU)
+if control_check_pressed(MenuButton)
     event_user(2)
 with (collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_doorparent, 0, 0))
     event_user(9)
-if (instance_exists(obj_battler) == 0)
+if (instance_exists(obj_battler) == false)
 {
     scr_depth()
-    if (FL_HaveUmbrella == 1 && dsprite == spr_maincharad_umbrella)
+    if (FL_HaveUmbrella == true && dsprite == spr_maincharad_umbrella)
         depth = (50000 - ((y * 10) + 300))
 }

@@ -168,7 +168,7 @@ if (conversation == 14 && instance_exists(OBJ_WRITER))
     else
         papyrus.sprite_index = spr_papyrus_shadowl
 }
-if (conversation == 14 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 14 && instance_exists(OBJ_WRITER) == false)
 {
     alarm[4] = 40
     conversation = 15
@@ -177,20 +177,20 @@ if (conversation == 14 && instance_exists(OBJ_WRITER) == 0)
 }
 if (conversation == 15)
     global.interact = 1
-if (conversation == 16 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 16 && instance_exists(OBJ_WRITER) == false)
 {
     obj_mainchara.x = chara.x
     global.interact = 1
     myinteract = 3
     global.seriousbattle = 0
     global.battlegroup = 27
-    FL_AreaKillsPointer = 0
+    FL_AreaKillsPointer = KillsPointer_Invalid
     global.mercy = 1
     instance_create(0, 0, obj_battler)
     conversation = 17
     obj_fogmaker.s = 1
 }
-if (FL_FoughtPapyrus == 1 && conversation == 17 && instance_exists(OBJ_WRITER) == 0)
+if (FL_FoughtPapyrus == 1 && conversation == 17 && instance_exists(OBJ_WRITER) == false)
 {
     room_persistent = false
     global.mercy = 0
@@ -291,7 +291,7 @@ if (conversation == 22.5 && global.msc == 541)
     conversation = 21.6
     alarm[4] = 10
 }
-if (conversation == 22.6 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 22.6 && instance_exists(OBJ_WRITER) == false)
 {
     global.msc = 0
     global.msg[0] = scr_gettext("obj_papyrus8_414")
@@ -321,7 +321,7 @@ if (conversation == 22.7)
     }
     caster_set_volume(global.currentsong, volly)
 }
-if (conversation == 22.8 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 22.8 && instance_exists(OBJ_WRITER) == false)
 {
     caster_resume(global.currentsong)
     caster_set_volume(global.currentsong, 0.5)
@@ -340,7 +340,7 @@ if (conversation == 22.8 && instance_exists(OBJ_WRITER) == 0)
     FL_PapyrusDateCounter = 1
     conversation = 23
 }
-if (conversation == 23 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 23 && instance_exists(OBJ_WRITER) == false)
 {
     papyrus.sprite_index = papyrus.lsprite
     papyrus.image_speed = 0.5
@@ -373,7 +373,7 @@ if (conversation == 27)
     global.interact = 0
     instance_destroy()
 }
-if (conversation == 90 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 90 && instance_exists(OBJ_WRITER) == false)
 {
     global.currentsong = caster_load("music/papyrusboss.ogg")
     caster_loop(global.currentsong, 0.8, 0.2)
@@ -410,7 +410,7 @@ if (conversation == 94)
     instance_create(0, 0, obj_dialoguer)
     conversation = 95
 }
-if (conversation == 95 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 95 && instance_exists(OBJ_WRITER) == false)
 {
     conversation = 96
     alarm[4] = 15
@@ -437,7 +437,7 @@ if (conversation == 99)
     instance_create(0, 0, obj_dialoguer)
     conversation = 100
 }
-if (conversation == 100 && instance_exists(OBJ_WRITER) == 0)
+if (conversation == 100 && instance_exists(OBJ_WRITER) == false)
 {
     conversation = 101
     alarm[4] = 30

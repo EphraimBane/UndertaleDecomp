@@ -21,12 +21,12 @@ if (con == 1.2)
     global.msg[0] = scr_gettext("obj_monsterkidtrigger7_124")
     scr_regulartext()
 }
-if (con == 1.3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1.3 && instance_exists(OBJ_WRITER) == false)
 {
     con = 2
     alarm[4] = 50
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     if (vol > 0)
         vol -= 0.02
@@ -116,7 +116,7 @@ if (con == 14)
     }
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 15 && instance_exists(OBJ_WRITER) == 0)
+if (con == 15 && instance_exists(OBJ_WRITER) == false)
 {
     mkid.sprite_index = mkid.rsprite
     con = 16
@@ -192,7 +192,7 @@ if (con == 27)
     scr_regulartext()
     con = 28
 }
-if (con == 28 && instance_exists(OBJ_WRITER) == 0)
+if (con == 28 && instance_exists(OBJ_WRITER) == false)
 {
     undyne = instance_create((__view_get(VIEW_PROP_CAM_X, obj_backgrounder_parent) - 40), 82, obj_undynea_actor)
     undyne.sprite_index = undyne.rsprite
@@ -253,7 +253,7 @@ if (con == 35)
         scr_regulartext()
         global.interact = 1
     }
-    if (mkidtalk == 1 && instance_exists(OBJ_WRITER) == 0)
+    if (mkidtalk == 1 && instance_exists(OBJ_WRITER) == false)
     {
         global.interact = 0
         mkidtalk = 2
@@ -291,7 +291,7 @@ if (con == 50)
     scr_regulartext()
     con = 51
 }
-if (con == 51 && instance_exists(OBJ_WRITER) == 0)
+if (con == 51 && instance_exists(OBJ_WRITER) == false)
 {
     mkid.vspeed = 0.5
     con = 50.1
@@ -366,12 +366,12 @@ if (con == 70)
     scr_regulartext()
     con = 71
 }
-if (con == 71 && instance_exists(OBJ_WRITER) == 0)
+if (con == 71 && instance_exists(OBJ_WRITER) == false)
 {
     FL_MonsterKidSavedStatus = MonsterKidSavedStatus.SavedByPlayer
     con = 72
 }
-if (con == 72 && instance_exists(OBJ_WRITER) == 0)
+if (con == 72 && instance_exists(OBJ_WRITER) == false)
 {
     con = 73
     idealxview = round(((obj_mainchara.x - (__view_get(VIEW_PROP_CAM_WIDTH, 0) / 2)) + (obj_mainchara.sprite_width / 2)))
@@ -491,7 +491,7 @@ if (con == 94)
     scr_regulartext()
     con = 95
 }
-if (con == 95 && instance_exists(OBJ_WRITER) == 0)
+if (con == 95 && instance_exists(OBJ_WRITER) == false)
 {
     con = 96
     alarm[4] = 30
@@ -557,7 +557,7 @@ if (con == 105)
     con = 106
     scr_regulartext()
 }
-if (con == 106 && instance_exists(OBJ_WRITER) == 0)
+if (con == 106 && instance_exists(OBJ_WRITER) == false)
 {
     con = 107
     alarm[4] = 20
@@ -590,7 +590,7 @@ if (con == 114)
     scr_regulartext()
     con = 115
 }
-if (con == 115 && instance_exists(OBJ_WRITER) == 0)
+if (con == 115 && instance_exists(OBJ_WRITER) == false)
 {
     mkid.hspeed = -4
     mkid.image_speed = 0.5
@@ -626,12 +626,12 @@ if (con == 117)
         instance_destroy()
     }
 }
-if (con == 150 && instance_exists(OBJ_WRITER) == 1)
+if (con == 150 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 6)
         global.facing = Direction.Up
 }
-if (con == 150 && instance_exists(OBJ_WRITER) == 0)
+if (con == 150 && instance_exists(OBJ_WRITER) == false)
 {
     global.facing = Direction.Left
     obj_mainchara.hspeed = -2
@@ -682,7 +682,7 @@ if (con == 157 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 4)
         mkid.sprite_index = spr_mkid_rt
 }
-if (con == 157 && instance_exists(OBJ_WRITER) == 0)
+if (con == 157 && instance_exists(OBJ_WRITER) == false)
 {
     mkid.sprite_index = spr_mkid_rt
     global.battlegroup = 91
@@ -731,7 +731,7 @@ if (con == 161.1)
 }
 if (con == 162)
     global.interact = 1
-if (con == 162 && instance_exists(OBJ_WRITER) == 0)
+if (con == 162 && instance_exists(OBJ_WRITER) == false)
 {
     mkid.hspeed = -4
     mkid.image_speed = 0.5

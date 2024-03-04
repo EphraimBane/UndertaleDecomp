@@ -45,7 +45,7 @@ if (con == 1)
     instance_create(0, 0, obj_dialoguer)
     con = 2
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     with (mkid)
     {
@@ -75,7 +75,7 @@ if (con == 4)
         }
     }
 }
-if (instance_exists(OBJ_WRITER) == 0 && con == 5)
+if (instance_exists(OBJ_WRITER) == false && con == 5)
 {
     con = 6
     trophy_unlock("rain")
@@ -84,7 +84,7 @@ if (instance_exists(OBJ_WRITER) == 0 && con == 5)
         sprite_index = rsprite
     x = 60
 }
-if (con == 7 && instance_exists(OBJ_WRITER) == 0)
+if (con == 7 && instance_exists(OBJ_WRITER) == false)
 {
     con = 8
     mkid.follow = 0

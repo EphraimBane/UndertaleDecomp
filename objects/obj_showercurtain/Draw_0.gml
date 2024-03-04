@@ -55,7 +55,7 @@ if (myinteract == 1 && FL_ShowerCurtainAmalgamEvent == 1)
     instance_create(0, 0, obj_dialoguer)
     FL_ShowerCurtainAmalgamEvent = 2
 }
-if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4 && instance_exists(OBJ_WRITER) == false)
 {
     con = 10
     global.interact = 0
@@ -70,7 +70,7 @@ if (myinteract == 1 && FL_ShowerCurtainAmalgamEvent >= 2)
     global.msg[0] = scr_gettext("obj_showercurtain_248")
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 12 && instance_exists(OBJ_WRITER) == 0)
+if (con == 12 && instance_exists(OBJ_WRITER) == false)
 {
     con = 10
     global.interact = 0

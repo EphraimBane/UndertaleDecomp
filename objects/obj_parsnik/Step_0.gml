@@ -126,7 +126,7 @@ if (global.mnfight == 2)
     }
     whatiheard = -1
 }
-if (whatiheard == 1 && instance_exists(OBJ_WRITER) == 0)
+if (whatiheard == 1 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 8)
@@ -196,7 +196,7 @@ if (global.myfight == 4)
             instance_destroy()
     }
 }
-if (mercymod == 222 && instance_exists(OBJ_WRITER) == 0)
+if (mercymod == 222 && instance_exists(OBJ_WRITER) == false)
 {
     scr_mercystandard()
     if (mercy < 0)

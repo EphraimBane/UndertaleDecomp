@@ -23,7 +23,7 @@ if (con == 3)
     instance_create(0, 0, obj_dialoguer)
     con = 4
 }
-if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4 && instance_exists(OBJ_WRITER) == false)
 {
     pap.thisy = pap.y
     con = 5
@@ -51,13 +51,13 @@ if (con == 8)
     global.typer = 17
     global.facechoice = 3
     global.faceemotion = 0
-    global.msg[0] = scr_gettext("obj_outsideworld_event_158")
-    global.msg[1] = scr_gettext("obj_outsideworld_event_159")
-    global.msg[2] = scr_gettext("obj_outsideworld_event_160")
+    global.msg[0] = scr_gettext("obj_outsideworld_event_158") //\\E0* welp./
+    global.msg[1] = scr_gettext("obj_outsideworld_event_159") //\\E1* someone's gotta keep&  him from getting&  into trouble./
+    global.msg[2] = scr_gettext("obj_outsideworld_event_160") //\\E2* see you guys./%%
     instance_create(0, 0, obj_dialoguer)
     con = 9
 }
-if (con == 9 && instance_exists(OBJ_WRITER) == 0)
+if (con == 9 && instance_exists(OBJ_WRITER) == false)
 {
     sans.y += 2
     sans.sprite_index = spr_sans_d
@@ -79,7 +79,7 @@ if (con == 11)
     instance_create(0, 0, obj_dialoguer)
     con = 12
 }
-if (con == 12 && instance_exists(OBJ_WRITER) == 0)
+if (con == 12 && instance_exists(OBJ_WRITER) == false)
 {
     con = 13
     alarm[4] = 3
@@ -110,7 +110,7 @@ if (con == 16)
     instance_create(0, 0, obj_dialoguer)
     con = 17
 }
-if (con == 17 && instance_exists(OBJ_WRITER) == 0)
+if (con == 17 && instance_exists(OBJ_WRITER) == false)
 {
     con = 18
     alarm[4] = 3
@@ -141,7 +141,7 @@ if (con == 21)
     instance_create(0, 0, obj_dialoguer)
     con = 22
 }
-if (con == 22 && instance_exists(OBJ_WRITER) == 0)
+if (con == 22 && instance_exists(OBJ_WRITER) == false)
 {
     con = 23
     alarm[4] = 120
@@ -161,7 +161,7 @@ if (con == 24)
     instance_create(0, 0, obj_dialoguer)
     con = 25
 }
-if (con == 25 && instance_exists(OBJ_WRITER) == 0)
+if (con == 25 && instance_exists(OBJ_WRITER) == false)
 {
     asg.sprite_index = spr_asgore_r
     asg.image_speed = 0.25
@@ -189,7 +189,7 @@ if (con == 29)
     global.msg[0] = scr_gettext("obj_outsideworld_event_309")
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 30 && instance_exists(OBJ_WRITER) == 0)
+if (con == 30 && instance_exists(OBJ_WRITER) == false)
 {
     con = 31
     tor.sprite_index = spr_toriel_u
@@ -210,28 +210,28 @@ if (con == 35)
     instance_create(0, 0, obj_dialoguer)
     con = 36
 }
-if (con == 100 && instance_exists(OBJ_WRITER) == 0)
+if (con == 100 && instance_exists(OBJ_WRITER) == false)
 {
-    global.flag[512] = 0
+    FL_FinalTorielChoice = Choices.Stayed
     global.msc = 0
     global.facechoice = 1
     global.faceemotion = 8
     global.typer = 4
-    global.msg[0] = scr_gettext("obj_outsideworld_event_344")
-    global.msg[1] = scr_gettext("obj_outsideworld_event_345")
-    global.msg[2] = scr_gettext("obj_outsideworld_event_346")
-    global.msg[3] = scr_gettext("obj_outsideworld_event_347")
-    global.msg[4] = scr_gettext("obj_outsideworld_event_348")
-    global.msg[5] = scr_gettext("obj_outsideworld_event_349")
-    global.msg[6] = scr_gettext("obj_outsideworld_event_350")
-    global.msg[7] = scr_gettext("obj_outsideworld_event_351")
-    global.msg[8] = scr_gettext("obj_outsideworld_event_352")
-    global.msg[9] = scr_gettext("obj_outsideworld_event_353")
-    global.msg[10] = scr_gettext("obj_outsideworld_event_354")
+    global.msg[0] = scr_gettext("obj_outsideworld_event_344") //* What?/
+    global.msg[1] = scr_gettext("obj_outsideworld_event_345") //\\E1* Frisk.../
+    global.msg[2] = scr_gettext("obj_outsideworld_event_346") //\\E0* You really are a&  funny child./
+    global.msg[3] = scr_gettext("obj_outsideworld_event_347") //\\E1* If you had said that&  earlier^1, none of this&  would have happened./
+    global.msg[4] = scr_gettext("obj_outsideworld_event_348") //\\E0* It is a good thing&  you took so long to&  change your mind./
+    global.msg[5] = scr_gettext("obj_outsideworld_event_349") //* Hee hee hee./
+    global.msg[6] = scr_gettext("obj_outsideworld_event_350") //* Well..^1.&* I suppose./
+    global.msg[7] = scr_gettext("obj_outsideworld_event_351") //* If you really do&  not have any other&  place to go.../
+    global.msg[8] = scr_gettext("obj_outsideworld_event_352") //* I will do my best to&  take care of you^1, for&  as long as you need./
+    global.msg[9] = scr_gettext("obj_outsideworld_event_353") //* All right?/
+    global.msg[10] = scr_gettext("obj_outsideworld_event_354") //* Now^1, come along./%%
     instance_create(0, 0, obj_dialoguer)
     con = 101
 }
-if (con == 101 && instance_exists(OBJ_WRITER) == 0)
+if (con == 101 && instance_exists(OBJ_WRITER) == false)
 {
     tor.x -= 16
     tor.sprite_index = spr_toriel_handhold_r
@@ -241,11 +241,11 @@ if (con == 101 && instance_exists(OBJ_WRITER) == 0)
 }
 if (con == 103)
 {
-    global.msg[0] = scr_gettext("obj_outsideworld_event_372")
+    global.msg[0] = scr_gettext("obj_outsideworld_event_372") //* Everyone is waiting&  for us!/%%
     con = 104
     instance_create(0, 0, obj_dialoguer)
 }
-if (con == 104 && instance_exists(OBJ_WRITER) == 0)
+if (con == 104 && instance_exists(OBJ_WRITER) == false)
 {
     tor.x += 2
     tor.image_speed = 0.125
@@ -268,16 +268,16 @@ if (con == 105)
         do_room_goto = true
     }
 }
-if (con == 200 && instance_exists(OBJ_WRITER) == 0)
+if (con == 200 && instance_exists(OBJ_WRITER) == false)
 {
     global.msc = 0
     global.facechoice = 1
     global.faceemotion = 2
     global.typer = 4
-    global.msg[0] = scr_gettext("obj_outsideworld_event_413")
-    global.msg[1] = scr_gettext("obj_outsideworld_event_414")
-    global.msg[2] = scr_gettext("obj_outsideworld_event_415")
-    global.msg[3] = scr_gettext("obj_outsideworld_event_416")
+    global.msg[0] = scr_gettext("obj_outsideworld_event_413") //\\E1* Ah./
+    global.msg[1] = scr_gettext("obj_outsideworld_event_414") //\\E0* ... I see./
+    global.msg[2] = scr_gettext("obj_outsideworld_event_415") //\\E1* .../
+    global.msg[3] = scr_gettext("obj_outsideworld_event_416") //\\E0* Well^1, I hope that&  I am not keeping&  you./%%
     instance_create(0, 0, obj_dialoguer)
     con = 201
 }
@@ -288,7 +288,7 @@ if (con == 201 && instance_exists(OBJ_WRITER))
     if (OBJ_WRITER.stringno == 3)
         tor.sprite_index = spr_toriel_l
 }
-if (con == 201 && instance_exists(OBJ_WRITER) == 0)
+if (con == 201 && instance_exists(OBJ_WRITER) == false)
 {
     tor.sprite_index = spr_toriel_u
     con = 203
@@ -325,14 +325,14 @@ if (con == 210)
 }
 if (con == 212)
 {
-    global.flag[512] = 1
+    FL_FinalTorielChoice = Choices.Left
     global.faceemotion = 0
-    global.msg[0] = scr_gettext("obj_outsideworld_event_478")
-    global.msg[1] = scr_gettext("obj_outsideworld_event_479")
+    global.msg[0] = scr_gettext("obj_outsideworld_event_478") //* Frisk./
+    global.msg[1] = scr_gettext("obj_outsideworld_event_479") //* \"See you around.\"/%%
     instance_create(0, 0, obj_dialoguer)
     con = 213
 }
-if (con == 213 && instance_exists(OBJ_WRITER) == 0)
+if (con == 213 && instance_exists(OBJ_WRITER) == false)
 {
     tor.sprite_index = spr_toriel_l
     con = 214

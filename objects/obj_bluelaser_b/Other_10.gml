@@ -17,7 +17,7 @@ if instance_exists(obj_fakeheart)
 }
 if instance_exists(obj_heart)
     scr_damagestandard(blue, 3, 0, 0, 0)
-if (FL_QuickBattle == 2 && FL_Laser2On == 0 && global.hp == 0)
+if (FL_QuickBattleType == QuickBattleType.Laser1 && FL_Laser2On == 0 && global.hp == 0)
 {
     global.hp = 1
     global.invc = 60

@@ -15,12 +15,12 @@ if (con == 0 && switches == 2 && obj_mainchara.x < 390 && obj_mainchara.x > 380 
     con = 0.1
     alarm[4] = 28
 }
-if (con == 1.1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1.1 && instance_exists(OBJ_WRITER) == false)
 {
     con = 2
     global.interact = 0
 }
-if (con == 2 && obj_mainchara.x < 280 && global.interact == 0 && switches < 3 && won == 0 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && obj_mainchara.x < 280 && global.interact == 0 && switches < 3 && won == 0 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 1
     global.facechoice = 6
@@ -67,7 +67,7 @@ if (con == 3 || con == 1 || con == 0.1 || con == 1.1)
         }
     }
 }
-if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3 && instance_exists(OBJ_WRITER) == false)
 {
     con = 4
     global.interact = 0

@@ -53,7 +53,7 @@ if (myinteract == 3)
         myinteract = 0
     }
 }
-if (con == 1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1 && instance_exists(OBJ_WRITER) == false)
 {
     global.facing = Direction.Down
     snd_play(snd_escaped)
@@ -61,19 +61,19 @@ if (con == 1 && instance_exists(OBJ_WRITER) == 0)
     alarm[4] = 60
     global.interact = 1
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     global.facing = Direction.Down
     global.interact = 1
 }
-if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3 && instance_exists(OBJ_WRITER) == false)
 {
     global.msg[0] = scr_gettext("obj_artclass_sign_281")
     global.msg[1] = scr_gettext("obj_artclass_sign_282")
     scr_regulartext()
     con = 4
 }
-if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4 && instance_exists(OBJ_WRITER) == false)
 {
     snd_play(snd_arrow)
     sory = scr_marker((obj_mainchara.x - 10), 240, spr_sorry_u)

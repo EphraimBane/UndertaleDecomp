@@ -14,9 +14,9 @@ if (check == 1 && global.interact == 0)
     global.border = 20
     FL_InBattle = false
     FL_TypeHeartTransition = HeartTransitionType.QuickBattle
-    FL_QuickBattle = 2
+    FL_QuickBattleType = QuickBattleType.Laser1
     if (room == room_fire_core4 || room == room_fire_core5)
-        FL_QuickBattle = 3
+        FL_QuickBattleType = QuickBattleType.Laser2
     SCR_BORDERSETUP()
     instance_create(0, 0, obj_battlerquick)
     obj_bluelaser_o.active = false

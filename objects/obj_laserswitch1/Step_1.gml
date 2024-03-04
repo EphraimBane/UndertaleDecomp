@@ -1,4 +1,4 @@
-if (FL_QuickBattle == 2 && global.hp == 1 && FL_Laser2On == 0 && con == 0 && global.interact == 0 && FL_DisableAlphysCalls == 0 && global.plot < 184)
+if (FL_QuickBattleType == QuickBattleType.Laser1 && global.hp == 1 && FL_Laser2On == 0 && con == 0 && global.interact == 0 && FL_DisableAlphysCalls == false && global.plot < 184)
 {
     global.msc = 0
     global.msg[0] = scr_gettext("obj_laserswitch1_119")
@@ -10,7 +10,7 @@ if (FL_QuickBattle == 2 && global.hp == 1 && FL_Laser2On == 0 && con == 0 && glo
     global.interact = 1
     con = 0.5
 }
-if (con == 0.5 && instance_exists(OBJ_WRITER) == 1)
+if (con == 0.5 && instance_exists(OBJ_WRITER) == true)
 {
     if instance_exists(obj_bluelaser_o)
     {
@@ -18,7 +18,7 @@ if (con == 0.5 && instance_exists(OBJ_WRITER) == 1)
         obj_bluelaser_o.alarm[0] = 30
     }
 }
-if (con == 0.5 && instance_exists(OBJ_WRITER) == 0)
+if (con == 0.5 && instance_exists(OBJ_WRITER) == false)
 {
     sc = instance_create(0, 0, obj_soundcombo)
     with (sc)
@@ -61,7 +61,7 @@ if (con == 0.6)
         scr_regulartext()
     }
 }
-if (con == 1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1 && instance_exists(OBJ_WRITER) == false)
 {
     sc = instance_create(0, 0, obj_soundcombo)
     with (sc)
@@ -70,7 +70,7 @@ if (con == 1 && instance_exists(OBJ_WRITER) == 0)
         sound2 = snd_spearappear
         alarm[1] = 8
     }
-    FL_Laser2On = 1
+    FL_Laser2On = true
     global.interact = 0
     event_user(0)
     con = 2

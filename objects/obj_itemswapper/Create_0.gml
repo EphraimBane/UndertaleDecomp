@@ -7,4 +7,4 @@ column = 0
 boxtype = 0
 buffer = 0
 spec = 0
-boxno = 300
+boxno = DimensionBoxAItemStart

@@ -36,7 +36,7 @@ if (con == 4)
     con = 5
     alarm[4] = 120
 }
-if (con == 6 && instance_exists(OBJ_WRITER) == 0 && global.interact == 0)
+if (con == 6 && instance_exists(OBJ_WRITER) == false && global.interact == 0)
 {
     unbuffer += 1
     with (obj_mainchara)
@@ -48,7 +48,7 @@ else if (con == 6)
     with (obj_mainchara)
         uncan = 0
 }
-if (con == 6 && instance_exists(OBJ_WRITER) == 0 && global.interact == 0 && unbuffer >= 4)
+if (con == 6 && instance_exists(OBJ_WRITER) == false && global.interact == 0 && unbuffer >= 4)
 {
     with (obj_mainchara)
         uncan = 1
@@ -72,7 +72,7 @@ if (con == 6 && instance_exists(OBJ_WRITER) == 0 && global.interact == 0 && unbu
     scr_regulartext()
     con = 7
 }
-if (con == 7 && instance_exists(OBJ_WRITER) == 0)
+if (con == 7 && instance_exists(OBJ_WRITER) == false)
 {
     alarm[7] = 5
     global.plot = 112
@@ -145,7 +145,7 @@ if (con == 20)
     con = 21
     global.phasing = 0
 }
-if (con == 21 && instance_exists(OBJ_WRITER) == 0)
+if (con == 21 && instance_exists(OBJ_WRITER) == false)
 {
     mkid.direction = 180
     mkid.fun = false

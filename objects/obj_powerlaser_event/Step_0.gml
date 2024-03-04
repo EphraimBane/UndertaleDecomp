@@ -44,12 +44,12 @@ if (con == 10)
     scr_regulartext()
     con = 11
 }
-if (con == 11 && instance_exists(OBJ_WRITER) == 1)
+if (con == 11 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 12 && powered == 0)
         event_user(1)
 }
-if (con == 11 && instance_exists(OBJ_WRITER) == 0)
+if (con == 11 && instance_exists(OBJ_WRITER) == false)
 {
     ff = instance_create(20, 80, obj_kitchenforcefield)
     ff.image_yscale = 5
@@ -71,7 +71,7 @@ if (con == 13)
     scr_regulartext()
     con = 14
 }
-if (con == 14 && instance_exists(OBJ_WRITER) == 0)
+if (con == 14 && instance_exists(OBJ_WRITER) == false)
 {
     event_user(2)
     con = 15
@@ -91,7 +91,7 @@ if (con == 16)
     instance_create(0, 0, obj_dialoguer)
     con = 17
 }
-if (con == 17 && instance_exists(OBJ_WRITER) == 0)
+if (con == 17 && instance_exists(OBJ_WRITER) == false)
 {
     remhp = global.hp
     global.interact = 0
@@ -131,7 +131,7 @@ if (con == 18)
 }
 if (con == 19 && hptalk == 1)
     global.interact = 1
-if (con == 19 && instance_exists(OBJ_WRITER) == 0 && hptalk == 1)
+if (con == 19 && instance_exists(OBJ_WRITER) == false && hptalk == 1)
 {
     hptalk = 2
     global.interact = 0
@@ -164,7 +164,7 @@ if (con == 22)
     instance_create(60, 120, obj_stalkerflowey)
     global.plot = 184
 }
-if (con == 23 && instance_exists(OBJ_WRITER) == 0)
+if (con == 23 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 0
     con = 24

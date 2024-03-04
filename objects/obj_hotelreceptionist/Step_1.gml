@@ -1,6 +1,6 @@
 scr_depth(0, 0, 0, 0, 0)
 scr_npc_anim()
-if (con == 1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1 && instance_exists(OBJ_WRITER) == false)
 {
     global.hp = global.maxhp
     if (global.lv == 1)

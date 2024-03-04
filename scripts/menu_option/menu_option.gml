@@ -1,6 +1,7 @@
 enum MenuOptionTypes {
 	CheckBox,
-	Slider
+	Slider,
+	HoldButton
 }
 /// @func	menu_checkbox_option(displayName, varName, about, value, defaultValue, [callbackFunction])
 /// @arg	{String}	displayName			The name to display in the menu
@@ -18,6 +19,20 @@ function menu_checkbox_option(_displayName, _varName, _about, _value, _defaultVa
 	defaultValue = _defaultValue;
 	callbackFunction = _callbackFunction;
 	type = MenuOptionTypes.CheckBox;
+}
+
+/// @func	menu_holdbutton_option(displayName, about, holdtimer, [callbackFunction])
+/// @arg	{String}	displayName			The name to display in the menu
+/// @arg	{String}	about				The info to display in the about box in the menu
+/// @arg	{real}		holdtimer		How long the user needs to hold the button for it to active
+/// @arg	{Function}  callbackFunction	The function to call when data is changed
+function menu_holdbutton_option(_displayName, _about, _holdtimer, _callbackFunction = noone) constructor
+{
+	displayName = _displayName;
+	about = _about;
+	holdtimer = _holdtimer;
+	callbackFunction = _callbackFunction;
+	type = MenuOptionTypes.HoldButton;
 }
 
 /// @func	menu_slider_option(displayName, varName, about, value, min, max, [baseSpeed], [fastSpeed], [callbackFunction])

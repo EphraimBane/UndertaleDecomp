@@ -281,7 +281,7 @@ if (t == 0 && global.interact == 0)
         global.msg[10] = scr_gettext("obj_phonecall_room_508")
         global.msg[11] = scr_gettext("obj_phonecall_room_509")
         global.plot = 131
-        FL_CalledAlready = 0
+        FL_PapyrusCalledAlready = 0
         if (FL_DisableAlphysCalls == 1)
             donotcall = 1
     }

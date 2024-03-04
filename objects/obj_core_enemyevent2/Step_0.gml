@@ -5,7 +5,7 @@ if (con == 1)
     dm2 = instance_create(180, 100, obj_darkman_actor)
     con = 6
 }
-if (con == 6 && instance_exists(OBJ_WRITER) == 0)
+if (con == 6 && instance_exists(OBJ_WRITER) == false)
 {
     con = 7
     snd_play(snd_break2)
@@ -60,7 +60,7 @@ if (con == 12)
     instance_create(0, 0, obj_dialoguer)
     con = 13
 }
-if (con == 13 && instance_exists(OBJ_WRITER) == 0)
+if (con == 13 && instance_exists(OBJ_WRITER) == false)
 {
     con = 14
     FL_GotAlphysAdvice4 = 1

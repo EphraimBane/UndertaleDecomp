@@ -1,3 +1,5 @@
+/// @func	scr_msgup()
+/// @desc	Grabs the next message and writes it
 function scr_msgup()
 {
 	global.msc += 1

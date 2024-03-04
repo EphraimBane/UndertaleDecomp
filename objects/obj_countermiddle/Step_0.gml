@@ -41,7 +41,7 @@ if (con == 3)
     instance_create(0, 0, obj_dialoguer)
     con = 4
 }
-if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4 && instance_exists(OBJ_WRITER) == false)
 {
     with (obj_cookshowevent)
         caster_stop(bossa)

@@ -5,7 +5,7 @@ if (con == 1)
     con = 1.1
     scr_regulartext()
 }
-if (con == 1.1 && instance_exists(OBJ_WRITER) == 0)
+if (con == 1.1 && instance_exists(OBJ_WRITER) == false)
 {
     global.facing = Direction.Right
     dragon = scr_marker(545, 310, spr_royalguard_dragon_l)
@@ -42,7 +42,7 @@ if (con == 3)
     scr_regulartext()
     con = 4
 }
-if (con == 4 && instance_exists(OBJ_WRITER) == 0)
+if (con == 4 && instance_exists(OBJ_WRITER) == false)
 {
     with (dragon)
         sprite_index = spr_royalguard_dragon_r
@@ -81,10 +81,10 @@ if (con == 10)
     scr_regulartext()
     con = 11
 }
-if (con == 11 && instance_exists(OBJ_WRITER) == 1)
+if (con == 11 && instance_exists(OBJ_WRITER) == true)
 {
 }
-if (con == 11 && instance_exists(OBJ_WRITER) == 0)
+if (con == 11 && instance_exists(OBJ_WRITER) == false)
 {
     with (rabbit)
         sprite_index = spr_royalguard_rabbit_l
@@ -104,7 +104,7 @@ if (con == 13)
     con = 14
     scr_regulartext()
 }
-if (con == 14 && instance_exists(OBJ_WRITER) == 1)
+if (con == 14 && instance_exists(OBJ_WRITER) == true)
 {
     if (OBJ_WRITER.stringno == 2)
     {
@@ -117,7 +117,7 @@ if (con == 14 && instance_exists(OBJ_WRITER) == 1)
             sprite_index = spr_royalguard_rabbit_l
     }
 }
-if (con == 14 && instance_exists(OBJ_WRITER) == 0)
+if (con == 14 && instance_exists(OBJ_WRITER) == false)
 {
     global.battlegroup = 49
     global.mercy = 1

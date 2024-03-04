@@ -10,7 +10,7 @@ if (con == 1)
     instance_create(0, 0, obj_dialoguer)
     con = 2
 }
-if (con == 2 && instance_exists(OBJ_WRITER) == 0)
+if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     global.typer = 79
     global.msg[0] = scr_gettext("obj_labelevator_b_131")
@@ -22,7 +22,7 @@ if (con == 2 && instance_exists(OBJ_WRITER) == 0)
     instance_create(0, 0, obj_dialoguer)
     con = 3
 }
-if (con == 3 && instance_exists(OBJ_WRITER) == 0)
+if (con == 3 && instance_exists(OBJ_WRITER) == false)
 {
     rect = 1
     snd_play(snd_spearappear)

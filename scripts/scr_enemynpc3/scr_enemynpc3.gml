@@ -4,14 +4,14 @@ function scr_enemynpc3()
 	{
 	    if (FL_TruePacifist == true || FL_DisableRandomEncounters == 1)
 	    {
-	        if (FL_HotlandKillsCounter == 0 && global.flag[206] == 0)
-	            return 1;
+	        if (FL_HotlandKillsCounter == 0 && FL_UnusedButChecked_206 == 0)
+	            return true;
 	        else
-	            return 0;
+	            return false;
 	    }
 	    else
-	        return 0;
+	        return false;
 	}
 	else
-	    return 0;
+	    return false;
 }
