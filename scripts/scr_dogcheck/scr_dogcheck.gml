@@ -1,3 +1,5 @@
+/// @func	scr_dogcheck()
+/// @desc	Runs in scr_load. Sends you to room "room_of_dog" (aka Dog Check), when loading a save file that is saved in an "invalid room".
 function scr_dogcheck()
 {
 	dogcheck = 1

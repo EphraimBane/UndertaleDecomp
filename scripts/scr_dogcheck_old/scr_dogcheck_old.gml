@@ -1,3 +1,5 @@
+/// @func	scr_dogcheck_old()
+/// @desc	Unused older version of scr_dogcheck. A massive "if" list of what rooms are valid to load a save file in.
 function scr_dogcheck_old()
 {
 	dogcheck = 0
@@ -187,7 +189,7 @@ function scr_dogcheck_old()
 	    dogcheck = 1
 	if (global.currentroom == room_fire_dock)
 	    dogcheck = 1
-	if (global.currentroom == 365)
+	if (global.currentroom == 365) // Daniela: no room name here, just a number. Potentionally a room that was deleted later on in development?
 	    dogcheck = 1
 	if (global.currentroom == room_fire3)
 	    dogcheck = 1
@@ -229,7 +231,7 @@ function scr_dogcheck_old()
 	    dogcheck = 1
 	if (global.currentroom == room_fire10)
 	    dogcheck = 1
-	if (global.currentroom == 366)
+	if (global.currentroom == 366) // Daniela: no room name here, just a number. Potentionally a room that was deleted later on in development?
 	    dogcheck = 1
 	if (global.currentroom == room_fire_mewmew2)
 	    dogcheck = 1
@@ -265,7 +267,7 @@ function scr_dogcheck_old()
 	    dogcheck = 1
 	if (global.currentroom == room_fire_multitile)
 	    dogcheck = 1
-	if (global.currentroom == 362)
+	if (global.currentroom == 362) // Daniela: no room name here, just a number. Potentionally a room that was deleted later on in development?
 	    dogcheck = 1
 	if (global.currentroom == room_fire_core1)
 	    dogcheck = 1
@@ -341,7 +343,7 @@ function scr_dogcheck_old()
 	    dogcheck = 1
 	if (global.currentroom == room_fire_core_warrior)
 	    dogcheck = 1
-	if (global.currentroom == 370)
+	if (global.currentroom == 370) // Daniela: no room name here, just a number. Potentionally a room that was deleted later on in development?
 	    dogcheck = 1
 	if (global.currentroom == room_fire_core_topright)
 	    dogcheck = 1
@@ -495,7 +497,7 @@ function scr_dogcheck_old()
 	    dogcheck = 1
 	if (global.currentroom == room_flowey_endchoice)
 	    dogcheck = 1
-	if (global.currentroom == 363)
+	if (global.currentroom == 363) // Daniela: no room name here, just a number. Potentionally a room that was deleted later on in development?
 	    dogcheck = 1
 	if (global.currentroom == room_emptywhite)
 	    dogcheck = 1
@@ -504,6 +506,6 @@ function scr_dogcheck_old()
 	if (global.currentroom == room_water20)
 	    dogcheck = 1
 	dogcheck = 1
-	if (dogcheck == 0)
+	if (dogcheck == 0) // Daniela: this code never gets executed because dogcheck always gets set to 1 anyways.
 	    room_goto(room_of_dog)
 }
