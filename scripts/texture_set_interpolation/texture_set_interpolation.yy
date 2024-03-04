@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "texture_set_interpolation",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Drawing",
-    "path": "folders/Scripts/Drawing.yy",
+  "$GMScript":"",
+  "%Name":"texture_set_interpolation",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"texture_set_interpolation",
+  "parent":{
+    "name":"Drawing",
+    "path":"folders/Scripts/Drawing.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -6,22 +6,22 @@ if (global.monster[0] == false)
     {
         if (global.monster[2] == false)
         {
-            if (won == 0)
+            if (won == false)
             {
-                won = 1
+                won = true
                 global.xp += global.xpreward[3]
                 global.gold += global.goldreward[3]
                 tlvl = global.lv
                 scr_levelup()
-                if (FL_InBattle == 0)
+                if (FL_InBattle == false)
                 {
                     caster_stop(global.batmusic)
                     caster_free(global.batmusic)
                 }
-                global.msg[0] = scr_gettext("obj_battlecontroller_286", string(global.xpreward[3]), string(global.goldreward[3]))
+                global.msg[0] = scr_gettext("obj_battlecontroller_286", string(global.xpreward[3]), string(global.goldreward[3])) //* YOU WON!&* You earned \\[1] EXP and \\[2] gold.
                 if (tlvl != global.lv)
                 {
-                    global.msg[0] += scr_gettext("obj_battlecontroller_287")
+                    global.msg[0] += scr_gettext("obj_battlecontroller_287") //&* Your LOVE increased.
                     snd_play(snd_levelup)
                 }
                 global.msg[0] += "/%"

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "control_check",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Control",
-    "path": "folders/Scripts/Common/Control.yy",
+  "$GMScript":"",
+  "%Name":"control_check",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"control_check",
+  "parent":{
+    "name":"Control",
+    "path":"folders/Scripts/Common/Control.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

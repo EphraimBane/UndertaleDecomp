@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_torcall",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Call",
-    "path": "folders/Scripts/Call.yy",
+  "$GMScript":"",
+  "%Name":"scr_torcall",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_torcall",
+  "parent":{
+    "name":"Call",
+    "path":"folders/Scripts/Call.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

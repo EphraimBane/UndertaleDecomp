@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "command_register",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Console",
-    "path": "folders/Scripts/Decomp/Console.yy",
+  "$GMScript":"",
+  "%Name":"command_register",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"command_register",
+  "parent":{
+    "name":"Console",
+    "path":"folders/Scripts/Decomp/Console.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

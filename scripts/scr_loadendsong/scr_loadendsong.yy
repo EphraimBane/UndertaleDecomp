@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_loadendsong",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Ending",
-    "path": "folders/Scripts/Ending.yy",
+  "$GMScript":"",
+  "%Name":"scr_loadendsong",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_loadendsong",
+  "parent":{
+    "name":"Ending",
+    "path":"folders/Scripts/Ending.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

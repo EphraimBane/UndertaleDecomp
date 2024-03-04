@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "substr",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Extension",
-    "path": "folders/Scripts/Common/Extension.yy",
+  "$GMScript":"",
+  "%Name":"substr",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"substr",
+  "parent":{
+    "name":"Extension",
+    "path":"folders/Scripts/Common/Extension.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

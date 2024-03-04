@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_colorcycle",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "Effect",
-    "path": "folders/Scripts/Effect.yy",
+  "$GMScript":"",
+  "%Name":"scr_colorcycle",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_colorcycle",
+  "parent":{
+    "name":"Effect",
+    "path":"folders/Scripts/Effect.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

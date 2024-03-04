@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "decomp_gamestart",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Decomp",
-    "path": "folders/Scripts/Decomp.yy",
+  "$GMScript":"",
+  "%Name":"decomp_gamestart",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"decomp_gamestart",
+  "parent":{
+    "name":"Decomp",
+    "path":"folders/Scripts/Decomp.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
