@@ -60,7 +60,7 @@ if (global.mnfight == 2)
     {
         global.turntimer = 100
         if (mycommand >= 0 && mycommand <= 50)
-            scr_rotategen(10, 20, 634, obj_heart.x, (obj_heart.y + 42))
+            scr_rotategen(10, 20, blt_butterfly1, obj_heart.x, (obj_heart.y + 42))
         else
             gen = instance_create(0, 0, obj_butterfly2gen)
         gen.myself = myself
