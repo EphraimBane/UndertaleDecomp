@@ -14,7 +14,8 @@ global.decomp_vars = {
 	RestoreSFXPan : true,
 	RemoveBattleIconRandomness : false,
 	BattleIconRandomOverride : 0,
-	FixInputLatency : true
+	FixInputLatency : true,
+	WristProtector : true
 }
 
 #macro trace show_debug_message

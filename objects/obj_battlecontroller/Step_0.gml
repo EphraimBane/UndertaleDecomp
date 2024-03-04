@@ -334,7 +334,7 @@ if (global.mnfight == 0 && global.myfight == 0)
 }
 if (active == true)
 {
-    if control_check_pressed(CancelButton)
+    if (control_check_pressed(CancelButton) || (control_check(MenuButton) && global.decomp_vars.WristProtector && !global.decomp_vars.VanillaMode))
     {
         if (global.mnfight == 0 && FL_CookedNoodles == 0)
         {
