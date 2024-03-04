@@ -1,5 +1,9 @@
-/// @func	scr_rumble_hd(_low_amp, _low_freq, _high_amp, _high_freq)
-/// @desc	Script to set Switch Controller vibrations.
+/// @func			scr_rumble_hd(_low_amp, _low_freq, _high_amp, _high_freq)
+/// @desc			Script to set Switch Controller vibrations.
+/// @param	{real}	low_amp		The low amplitude
+/// @param	{real}	low_freq	The low frequency
+/// @param	{real}	high_amp	The high amplitude
+/// @param	{real}	high_freq	The high frequency
 function scr_rumble_hd(_low_amp, _low_freq, _high_amp, _high_freq)
 {
 	var low_amp = _low_amp
