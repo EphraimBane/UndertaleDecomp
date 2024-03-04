@@ -1,7 +1,9 @@
+/// @func	scr_attack()
+/// @desc	Chooses what Battle "Target" to use depending on the currently equiped Weapon.
 function scr_attack()
 {
-	if (global.weapon == 3 || global.weapon == 13 || global.weapon == 14 || global.weapon == 51 || global.weapon == 52)
+	if (global.weapon == Items.Stick || global.weapon == Items.ToyKnife || global.weapon == Items.ToughGlove || global.weapon == Items.WornDagger || global.weapon == Items.RealKnife)
 	    instance_create((global.idealborder[0] + 6), (global.idealborder[2] + 6), obj_target)
-	if (global.weapon == 25 || global.weapon == 49 || global.weapon == 47 || global.weapon == 45)
+	if (global.weapon == Items.BalletShoes || global.weapon == Items.EmptyGun || global.weapon == Items.BurntPan || global.weapon == Items.TornNotebook)
 	    instance_create((global.idealborder[0] + 6), (global.idealborder[2] + 6), obj_shoetargettest)
 }
