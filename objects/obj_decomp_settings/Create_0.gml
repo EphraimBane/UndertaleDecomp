@@ -81,10 +81,10 @@ function wipeSaveData()
 		file_delete("file9");
 	if (file_exists("undertale.ini"))
 		file_delete("undertale.ini");
-	if (file_exists("sys_info_962"))
-		file_delete("sys_info_962");
-	if (file_exists("sys_info_963"))
-		file_delete("sys_info_963");
+	if (file_exists("system_information_962"))
+		file_delete("system_information_962");
+	if (file_exists("system_information_963"))
+		file_delete("system_information_962");
 }
 #endregion
 
@@ -152,7 +152,7 @@ function draw_hold_timer(_x, _y, _option, _catbox_bounds, _text_color)
 	var text_height = string_height("A");
 	
 	
-	if (button_hold_timer == 0)
+	if (button_hold_timer == 0 || _text_color == c_white)
 		return;
 		
 	draw_set_halign(fa_left);
