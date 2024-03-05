@@ -1,6 +1,6 @@
 if (global.interact == 0 && uncan == 0)
 {
-    if (instance_exists(obj_itemswapper) == 0)
+    if (instance_exists(obj_itemswapper) == false)
     {
         if (global.facing == Direction.Right)
         {

@@ -136,7 +136,7 @@ if (dcon > 0)
     }
     if (dcon == 10)
     {
-        if (instance_exists(tw) == 0)
+        if (instance_exists(tw) == false)
         {
             dcon = 11
             alarm[4] = 30
@@ -195,7 +195,7 @@ if (dcon > 0)
     }
     if (dcon == 15)
     {
-        if (instance_exists(tw2) == 0)
+        if (instance_exists(tw2) == false)
         {
             with (obj_floweydmgwriter)
                 instance_destroy()
@@ -311,7 +311,7 @@ if (dcon > 0)
                 }
             }
         }
-        if (instance_exists(obj_flowey_writer) == 0)
+        if (instance_exists(obj_flowey_writer) == false)
         {
             obj_spinbullet_huge.depth = 30
             ap = instance_create((obj_vsflowey_heart.x + 45), (obj_vsflowey_heart.y + 8), obj_centeract_parent)
@@ -365,7 +365,7 @@ if (dcon > 0)
                 }
             }
         }
-        if (instance_exists(obj_flowey_writer) == 0)
+        if (instance_exists(obj_flowey_writer) == false)
         {
             with (obj_floweyx_tv)
                 tvmode = 20
@@ -400,7 +400,7 @@ if (dcon > 0)
     }
     if (dcon == 43)
     {
-        if (instance_exists(obj_flowey_writer) == 0)
+        if (instance_exists(obj_flowey_writer) == false)
         {
             global.faceemotion = 3
             fileset = 5
@@ -422,7 +422,7 @@ if (dcon > 0)
     }
     if (dcon == 47)
     {
-        if (instance_exists(obj_flowey_writer) == 0)
+        if (instance_exists(obj_flowey_writer) == false)
         {
             with (obj_floweybodyparent)
                 frozen = true
@@ -447,7 +447,7 @@ if (dcon > 0)
     }
     if (dcon == 50)
     {
-        if (instance_exists(obj_flowey_writer) == 0)
+        if (instance_exists(obj_flowey_writer) == false)
         {
             with (obj_floweyx_tv)
                 tvmode = 99
@@ -477,7 +477,7 @@ if (dcon > 0)
     }
     if (dcon == 51)
     {
-        if (instance_exists(obj_flowey_writer) == 0)
+        if (instance_exists(obj_flowey_writer) == false)
         {
             with (obj_floweyx_tv)
                 tvmode = 100

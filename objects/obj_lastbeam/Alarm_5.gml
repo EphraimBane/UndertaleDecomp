@@ -1,5 +1,5 @@
 snd_play(snd_hurt1)
-if (instance_exists(obj_shaker) == 0)
+if (instance_exists(obj_shaker) == false)
     instance_create(0, 0, obj_shaker)
 if (hits == 0)
     global.hp = 1

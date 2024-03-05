@@ -14,7 +14,7 @@ if (room == room_asrielroom_final)
     }
     if (x >= (-10 + (room_width / 2)))
     {
-        if (FL_GotLocked == 0)
+        if (FL_GotLocket == 0)
             global.msc = 270
         else
             global.msc = 272

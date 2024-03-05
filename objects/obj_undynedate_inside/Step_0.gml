@@ -1033,7 +1033,7 @@ if (con == 213)
     {
         spear2.vspeed = -12
         snd_play(snd_spearrise)
-        if (instance_exists(obj_shaker) == 0)
+        if (instance_exists(obj_shaker) == false)
             scr_shake(2, 2, 2)
         stab += 1
         if (stab >= 2)
@@ -1240,7 +1240,7 @@ if (con == 265 && instance_exists(OBJ_WRITER) == false)
     instance_create(0, 0, obj_battler)
     con = 266
 }
-if (con == 266 && instance_exists(obj_battler) == 0)
+if (con == 266 && instance_exists(obj_battler) == false)
 {
     con = 267
     room_persistent = false

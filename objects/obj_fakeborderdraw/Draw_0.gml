@@ -120,7 +120,7 @@ if (pattern == 1)
     if (con == 1)
     {
         xx += 1
-        if (xx >= 140 && instance_exists(obj_spiderbulletgen) == 1)
+        if (xx >= 140 && instance_exists(obj_spiderbulletgen) == true)
         {
             with (obj_spiderbulletgen)
                 instance_destroy()

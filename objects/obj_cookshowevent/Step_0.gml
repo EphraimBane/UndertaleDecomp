@@ -110,7 +110,7 @@ if (con == 15)
     instance_create(0, 0, obj_dialoguer)
     con = 16
 }
-if (con == 16 && instance_exists(obj_dialoguer) == 0)
+if (con == 16 && instance_exists(obj_dialoguer) == false)
 {
     mett2 = instance_create(mett.x, mett.y, obj_mettaton_npc)
     with (mett)

@@ -1,4 +1,4 @@
-if (conversation == 1 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 1 && instance_exists(obj_dialoguer) == false)
 {
     conversation = 2
     with (obj_toroverworld3)
@@ -30,7 +30,7 @@ if (instance_exists(obj_toroverworld3) && conversation == 2)
         conversation = 3
     }
 }
-if (conversation == 3 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 3 && instance_exists(obj_dialoguer) == false)
 {
     alarm[5] = 90
     with (obj_toroverworld3)
@@ -41,7 +41,7 @@ if (conversation == 3 && instance_exists(obj_dialoguer) == 0)
     alarm[1] = 10
     conversation = 4
 }
-if (conversation == 5 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 5 && instance_exists(obj_dialoguer) == false)
 {
     obj_toroverworld3.usprite = spr_toriel_u
     global.interact = 0

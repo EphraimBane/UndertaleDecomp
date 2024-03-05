@@ -5,7 +5,7 @@ if (global.plot == 23 && dingus == 2)
     obj_toroverworld3.facing = Direction.Up
     obj_toroverworld3.direction = 90
 }
-if (conversation == 2 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 2 && instance_exists(obj_dialoguer) == false)
 {
     with (obj_toroverworld3)
         path_start(path_walkup, 4, path_action_stop, 0)

@@ -510,7 +510,7 @@ if (con == 204 && instance_exists(OBJ_WRITER) == false)
 }
 if (global.myfight == 4)
 {
-    if (global.mercyuse == 0)
+    if (global.mercyuse == false)
     {
         con = 99
         global.myfight = -99

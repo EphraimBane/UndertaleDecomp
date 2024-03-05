@@ -4,5 +4,5 @@ if (x <= obj_target.x)
     hspeed = (global.attackspeed + random(global.attackspeedr))
 if (x > (obj_target.x + obj_target.sprite_width))
     hspeed = (-((global.attackspeed + random(global.attackspeedr))))
-if (global.weapon == 13)
+if (global.weapon == Items.ToyKnife)
     hspeed *= 1.25

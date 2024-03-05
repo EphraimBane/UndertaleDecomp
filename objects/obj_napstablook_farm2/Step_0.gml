@@ -9,7 +9,7 @@ if (myinteract == 1 && buffer <= 0)
 }
 if (myinteract == 3)
 {
-    if (instance_exists(mydialoguer) == 0)
+    if (instance_exists(mydialoguer) == false)
     {
         if (con == 0)
             global.interact = 0

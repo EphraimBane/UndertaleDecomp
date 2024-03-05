@@ -28,8 +28,8 @@ if (con == 4)
     global.mercy = 0
     global.interact = 0
     caster_resume(global.currentsong)
-    if (FL_KilledLast == 1)
-        FL_KilledRoyalGuards = 1
+    if (FL_KilledLast == true)
+        FL_KilledRoyalGuards = true
     con = 17
     global.plot = 164
     with (obj_npc_marker)

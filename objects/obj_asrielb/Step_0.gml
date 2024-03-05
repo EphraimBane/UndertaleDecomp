@@ -52,7 +52,7 @@ if (global.mnfight == 1)
 }
 if (say == 1)
 {
-    if (instance_exists(blconwd) == 0)
+    if (instance_exists(blconwd) == false)
     {
         event_user(1)
         say = 0
@@ -244,7 +244,7 @@ if (global.myfight == 2)
             {
                 global.msc = 0
                 repeat (8)
-                    scr_itemget(55)
+                    scr_itemget(Items.Dream)
                 global.msg[0] = scr_gettext("obj_asrielb_614")
                 global.msg[1] = scr_gettext("obj_asrielb_615")
                 if (dreamed > 0)
@@ -268,7 +268,7 @@ if (global.myfight == 2)
 }
 if (global.myfight == 4)
 {
-    if (global.mercyuse == 0)
+    if (global.mercyuse == false)
     {
         scr_mercystandard()
         if (mercy < 0)
@@ -310,7 +310,7 @@ if (global.mnfight == 5)
             if (OBJ_WRITER.stringno == 4)
                 caster_set_volume(global.currentsong, 0)
         }
-        if (instance_exists(blconwd) == 0)
+        if (instance_exists(blconwd) == false)
         {
             with (obj_asriel_body)
                 transform = 1
@@ -348,7 +348,7 @@ if (global.mnfight == 5)
     if (trcon == 7)
     {
         caster_free(all)
-        FL_InBattle = 1
+        FL_InBattle = true
         global.battlegroup = 256
         room_restart()
     }

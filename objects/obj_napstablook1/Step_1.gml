@@ -1,5 +1,5 @@
 scr_depth(0, 0, 0, 0, 0)
-if (talkedto == 1 && global.choice == 0 && instance_exists(obj_dialoguer) == 0)
+if (talkedto == 1 && global.choice == 0 && instance_exists(obj_dialoguer) == false)
 {
     global.battlegroup = 20
     FL_AreaKillsPointer = KillsPointer_Invalid
@@ -12,7 +12,7 @@ if (global.plot == 10.3)
     alarm[4] = 2
     global.plot = 10.35
 }
-if (global.plot == 10.4 && instance_exists(obj_dialoguer) == 0)
+if (global.plot == 10.4 && instance_exists(obj_dialoguer) == false)
 {
     image_alpha -= 0.05
     if (image_alpha < 0.1)

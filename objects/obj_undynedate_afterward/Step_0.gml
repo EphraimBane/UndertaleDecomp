@@ -40,7 +40,7 @@ if (con == 2)
         d = 1
     if (d == 0)
     {
-        scr_itemget(56)
+        scr_itemget(Items.UndynesLetter)
         if (noroom == 0)
         {
             global.msg[0] = scr_gettext("obj_undynedate_afterward_140")
@@ -67,7 +67,7 @@ if (con == 2)
             global.msg[21] = scr_gettext("obj_undynedate_afterward_161")
             global.msg[22] = scr_gettext("obj_undynedate_afterward_162")
             global.msg[23] = scr_gettext("obj_undynedate_afterward_163")
-            FL_DisableRandomEncounters = 1
+            FL_DisableRandomEncounters = true
             FL_DatedAlphys = 9
         }
         else
@@ -88,7 +88,7 @@ if (con == 2)
             global.msg[13] = scr_gettext("obj_undynedate_afterward_182")
             global.msg[14] = scr_gettext("obj_undynedate_afterward_183")
             FL_DatedAlphys = 8
-            FL_DisableRandomEncounters = 1
+            FL_DisableRandomEncounters = true
         }
     }
     instance_create(0, 0, obj_dialoguer)

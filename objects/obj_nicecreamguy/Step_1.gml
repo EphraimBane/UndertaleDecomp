@@ -1,4 +1,4 @@
-if (conversation == 1 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 1 && instance_exists(obj_dialoguer) == false)
 {
     global.interact = 1
     image_index = 0

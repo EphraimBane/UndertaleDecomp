@@ -13,7 +13,7 @@ else
 charge -= 1
 if (shot == 1 && control_check_pressed(InteractButton) && global.mnfight == 2)
 {
-    if (instance_number(obj_heartshot) == 0 || charge < 0)
+    if (instance_number(obj_heartshot) == false || charge < 0)
     {
         charge = 14
         instance_create((x + 4), (y + 2), obj_heartshot)
@@ -86,7 +86,7 @@ if (jumpstage == 2 && movement == 2)
 {
     if (global.osflavor == OSFlavors.PC)
     {
-        if (keyboard_check_direct(vk_up) == 0 && vspeed <= -1)
+        if (keyboard_check_direct(vk_up) == false && vspeed <= -1)
             vspeed = -1
     }
     if (global.osflavor != OSFlavors.PC)
@@ -107,7 +107,7 @@ if (jumpstage == 2 && movement == 11)
 {
     if (global.osflavor == OSFlavors.PC)
     {
-        if (keyboard_check_direct(vk_left) == 0 && hspeed <= -1)
+        if (keyboard_check_direct(vk_left) == false && hspeed <= -1)
             hspeed = -1
     }
     if (global.osflavor != OSFlavors.PC)
@@ -128,7 +128,7 @@ if (jumpstage == 2 && movement == 12)
 {
     if (global.osflavor == OSFlavors.PC)
     {
-        if (keyboard_check_direct(vk_down) == 0 && vspeed >= 1)
+        if (keyboard_check_direct(vk_down) == false && vspeed >= 1)
             vspeed = 1
     }
     if (global.osflavor != OSFlavors.PC)
@@ -149,7 +149,7 @@ if (jumpstage == 2 && movement == 13)
 {
     if (global.osflavor == OSFlavors.PC)
     {
-        if (keyboard_check_direct(vk_right) == 0 && hspeed >= 1)
+        if (keyboard_check_direct(vk_right) == false && hspeed >= 1)
             hspeed = 1
     }
     if (global.osflavor != OSFlavors.PC)
@@ -209,11 +209,11 @@ if instance_exists(obj_battlecontroller)
 {
     if (obj_battlecontroller.runaway == 1 && x < -20)
     {
-        if (instance_exists(obj_unfader) == 0)
+        if (instance_exists(obj_unfader) == false)
             instance_create(0, 0, obj_unfader)
         if (x < -60)
         {
-            if (FL_InBattle == 0)
+            if (FL_InBattle == false)
             {
                 caster_stop(global.batmusic)
                 caster_free(global.batmusic)

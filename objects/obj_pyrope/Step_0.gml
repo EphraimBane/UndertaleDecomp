@@ -172,7 +172,7 @@ if (global.myfight == 2)
                     global.msg[0] = scr_gettext("obj_pyrope_556")
                 if (heat > 2)
                     global.msg[0] = scr_gettext("obj_pyrope_557")
-                if (heat == 1 && instance_exists(obj_heatwaver) == 0)
+                if (heat == 1 && instance_exists(obj_heatwaver) == false)
                     instance_create(0, 0, obj_heatwaver)
                 if (heat > 1 && instance_exists(obj_heatwaver))
                 {
@@ -199,7 +199,7 @@ if (global.myfight == 2)
 }
 if (global.myfight == 4)
 {
-    if (global.mercyuse == 0)
+    if (global.mercyuse == false)
     {
         scr_mercystandard()
         if (mercy < 0)

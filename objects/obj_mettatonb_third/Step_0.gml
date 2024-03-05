@@ -155,7 +155,7 @@ if (whatiheard == 3 && flex == 3 && instance_exists(OBJ_WRITER))
 }
 if (global.myfight == 4)
 {
-    if (global.mercyuse == 0)
+    if (global.mercyuse == false)
     {
         scr_mercystandard()
         if (mercy < 0)

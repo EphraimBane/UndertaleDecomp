@@ -1,2 +1,2 @@
-if (instance_exists(dt) == 0)
+if (instance_exists(dt) == false)
     instance_destroy()

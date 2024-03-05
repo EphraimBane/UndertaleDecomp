@@ -11,7 +11,7 @@ if (refuse != 2)
         ender = 1
     if (buffer > 30)
     {
-        if (instance_exists(obj_blockbullet) == 0 && instance_exists(obj_blockbullet2) == 0)
+        if (instance_exists(obj_blockbullet) == false && instance_exists(obj_blockbullet2) == false)
         {
             if instance_exists(obj_greenspeargen)
             {

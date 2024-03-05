@@ -1,4 +1,4 @@
-if (instance_exists(myobject) == 0)
+if (instance_exists(myobject) == false)
 {
     instance_destroy()
     return;

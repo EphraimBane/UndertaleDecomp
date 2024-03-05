@@ -3,7 +3,7 @@ if (active == true)
     hit = 1
     if (blue == 1)
     {
-        if (scr_blueat() == 0)
+        if (scr_blueat() == false)
             hit = 0
     }
     if (global.invc < 1 && hit == 1)

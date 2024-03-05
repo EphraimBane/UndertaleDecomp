@@ -1,4 +1,4 @@
-if (finishedreading == 1)
+if (finishedreading == true)
     instance_destroy()
-if (line > 10 && instance_exists(obj_blkpxltall) == 0)
+if (line > 10 && instance_exists(obj_blkpxltall) == false)
     instance_destroy()

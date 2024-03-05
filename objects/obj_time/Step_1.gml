@@ -150,7 +150,7 @@ else if (os_type == os_switch)
             missing_controller_timeout = (current_time + 2000)
         else if (current_time >= missing_controller_timeout)
         {
-            if (switch_controller_support_show() == 0)
+            if (switch_controller_support_show() == false)
             {
                 j_ch = (switch_controller_support_get_selected_id() + 1)
                 missing_controller_timeout = 0
@@ -400,7 +400,7 @@ if (canquit == 1)
 {
     if (global.debug == true)
     {
-        if (keyboard_check_pressed(ord("R")) && instance_exists(obj_essaystuff) == 0)
+        if (keyboard_check_pressed(ord("R")) && instance_exists(obj_essaystuff) == false)
         {
             debug_r += 1
             if (debug_r > 5)
@@ -414,7 +414,7 @@ if (canquit == 1)
     if keyboard_check(vk_escape)
     {
         quit += 1
-        if (instance_exists(obj_quittingmessage) == 0)
+        if (instance_exists(obj_quittingmessage) == false)
             instance_create(0, 0, obj_quittingmessage)
     }
     else

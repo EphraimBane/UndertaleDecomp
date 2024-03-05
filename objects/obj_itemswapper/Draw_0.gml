@@ -23,11 +23,11 @@ if (buffer > 3)
     scr_setfont(fnt_maintext)
     draw_set_color(c_white)
     scr_itemname()
-    for (i = 0; i < 8; i += 1)
+    for (i = 0; i < InventorySize; i += 1)
     {
         draw_set_color(c_white)
         draw_text((((xx + boxofs) + 3) + itemofs), ((yy + 30) + (i * 16)), string_hash_to_newline(global.itemname[i]))
-        if (global.item[i] == 0)
+        if (global.item[i] == Items.Null)
         {
             draw_set_color(c_red)
             draw_line(((((xx + boxofs) + 3) + itemofs) + 5), ((yy + 40) + (i * 16)), ((((xx + boxofs) + 3) + itemofs) + 95), ((yy + 40) + (i * 16)))

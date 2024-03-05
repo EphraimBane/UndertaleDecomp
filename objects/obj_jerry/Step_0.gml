@@ -153,7 +153,7 @@ if (global.myfight == 2 && ditch == 0)
 }
 if (global.myfight == 4 && ditch == 0)
 {
-    if (global.mercyuse == 0)
+    if (global.mercyuse == false)
     {
         scr_mercystandard()
         if (mercy < 0)

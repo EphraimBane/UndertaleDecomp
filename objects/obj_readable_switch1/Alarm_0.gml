@@ -11,7 +11,7 @@ if (global.plot < 5)
         global.msg[0] = scr_gettext("obj_readable_switch1_65")
         global.msg[1] = scr_gettext("obj_readable_switch1_66")
         global.msg[2] = scr_gettext("obj_readable_switch1_67")
-        if (FL_Hardmode == 1)
+        if (FL_Hardmode == true)
             global.msg[0] = scr_gettext("obj_readable_switch1_71")
     }
     else

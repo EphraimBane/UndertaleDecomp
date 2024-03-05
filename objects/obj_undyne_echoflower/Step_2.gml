@@ -132,7 +132,7 @@ if (con == 18.4)
     b.claptimer = 4
     con = 20
 }
-if (con == 20 && instance_exists(obj_battler) == 0)
+if (con == 20 && instance_exists(obj_battler) == false)
 {
     mkid.visible = true
     mkid.vspeed = 4

@@ -7,7 +7,7 @@ if (conversation == 1 && instance_exists(OBJ_WRITER) == false)
 }
 if (conversation == 3 && instance_exists(obj_torface))
     conversation = 3.5
-if (conversation == 3.5 && instance_exists(obj_torface) == 0)
+if (conversation == 3.5 && instance_exists(obj_torface) == false)
 {
     room_persistent = false
     global.specialbattle = 0

@@ -36,7 +36,7 @@ if (active == true && instance_exists(obj_mainchara))
     }
     if (cn == 0.2)
     {
-        if (instance_number(obj_speartilefake) == 0)
+        if (instance_number(obj_speartilefake) == false)
         {
             cn = 0.3
             alarm[4] = 20

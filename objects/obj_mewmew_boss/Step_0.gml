@@ -321,7 +321,7 @@ if (global.myfight == 2)
 }
 if (global.myfight == 4)
 {
-    if (global.mercyuse == 0 && true_battle == 3)
+    if (global.mercyuse == false && true_battle == 3)
     {
         global.myfight = 10
         true_con = 20

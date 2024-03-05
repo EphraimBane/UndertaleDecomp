@@ -1,4 +1,4 @@
-if (instance_exists(writer) == 0)
+if (instance_exists(writer) == false)
     instance_destroy()
 else if (control_check_pressed(CancelButton) || (global.decomp_vars.WristProtector && !global.decomp_vars.VanillaMode && control_check(MenuButton)))
 {
@@ -22,7 +22,7 @@ if (global.facechange == 1 && global.facechoice == 0)
         writer.writingx = writer.x
         writer.writingxend = writer.writingxend_base
     }
-    if (instance_exists(obj_face) == 1)
+    if (instance_exists(obj_face) == true)
     {
         with (obj_face)
             instance_destroy()

@@ -2,7 +2,7 @@ if (go == 1)
 {
     if (side == 0 && (y + sprite_height) > 400)
     {
-        if (instance_exists(obj_shaker) == 0)
+        if (instance_exists(obj_shaker) == false)
         {
             snd_play(snd_impact)
             scr_shake(2, 2, 2)
@@ -15,7 +15,7 @@ if (go == 1)
     }
     if (side == 1 && y < 250)
     {
-        if (instance_exists(obj_shaker) == 0)
+        if (instance_exists(obj_shaker) == false)
         {
             snd_play(snd_impact)
             scr_shake(2, 2, 2)

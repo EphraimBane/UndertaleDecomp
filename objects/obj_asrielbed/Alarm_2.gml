@@ -27,7 +27,7 @@ if (global.plot >= 24 && jump < 5)
 }
 if (jump == 5)
     alarm[2] = 2
-if (instance_exists(obj_dialoguer) == 0)
+if (instance_exists(obj_dialoguer) == false)
 {
     jump = 6
     __background_set(0, 1, c_black)

@@ -86,7 +86,7 @@ if (global.mnfight == 2)
             if (outside == 0)
             {
                 global.msg[0] = scr_gettext("obj_dummymonster_400")
-                FL_BoredLast = 1
+                FL_BoredLast = true
                 alarm[7] = 2
                 global.mnfight = 2
                 global.typer = 1
@@ -109,7 +109,7 @@ if (whatiheard == 3)
 {
     if (instance_exists(OBJ_WRITER) == false)
     {
-        FL_SparedLast = 1
+        FL_SparedLast = true
         global.monster[myself] = false
     }
 }
@@ -146,6 +146,6 @@ if (global.myfight == 2)
 }
 if (global.myfight == 4)
 {
-    if (global.mercyuse == 0)
+    if (global.mercyuse == false)
         scr_mercystandard()
 }

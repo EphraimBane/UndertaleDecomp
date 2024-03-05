@@ -44,7 +44,7 @@ if (bounces < 7)
 }
 if (bounces > pb)
 {
-    if (instance_exists(obj_vsflowey_shaker) == 0)
+    if (instance_exists(obj_vsflowey_shaker) == false)
     {
         instance_create(0, 0, obj_vsflowey_shaker)
         snd_play(snd_impact)

@@ -123,7 +123,7 @@ if (con == 14 || con == 15)
 {
     tspeed += tgrav
     global.border = 0
-    FL_InBattle = 0
+    FL_InBattle = false
     FL_TypeHeartTransition = HeartTransitionType.Normal
     SCR_BORDERSETUP()
     tile_layer_shift(1000010, 1, tspeed)

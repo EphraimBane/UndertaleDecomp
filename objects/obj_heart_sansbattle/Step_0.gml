@@ -77,7 +77,7 @@ if (jumpstage == 2 && movement == 2)
 {
     if (global.osflavor == OSFlavors.PC)
     {
-        if (keyboard_check_direct(vk_up) == 0 && vspeed <= -1)
+        if (keyboard_check_direct(vk_up) == false && vspeed <= -1)
             vspeed = -1
     }
     if (global.osflavor != OSFlavors.PC)
@@ -98,7 +98,7 @@ if (jumpstage == 2 && movement == 11)
 {
     if (global.osflavor == OSFlavors.PC)
     {
-        if (keyboard_check_direct(vk_left) == 0 && hspeed <= -1)
+        if (keyboard_check_direct(vk_left) == false && hspeed <= -1)
             hspeed = -1
     }
     if (global.osflavor != OSFlavors.PC)
@@ -119,7 +119,7 @@ if (jumpstage == 2 && movement == 12)
 {
     if (global.osflavor == OSFlavors.PC)
     {
-        if (keyboard_check_direct(vk_down) == 0 && vspeed >= 1)
+        if (keyboard_check_direct(vk_down) == false && vspeed >= 1)
             vspeed = 1
     }
     if (global.osflavor != OSFlavors.PC)
@@ -140,7 +140,7 @@ if (jumpstage == 2 && movement == 13)
 {
     if (global.osflavor == OSFlavors.PC)
     {
-        if (keyboard_check_direct(vk_right) == 0 && hspeed >= 1)
+        if (keyboard_check_direct(vk_right) == false && hspeed >= 1)
             hspeed = 1
     }
     if (global.osflavor != OSFlavors.PC)

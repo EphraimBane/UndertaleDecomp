@@ -34,7 +34,7 @@ if (q == 8 && quiztimer < 300)
 {
     if ((quiztimer % 2) == 0)
         mettamt += 1
-    if (instance_exists(obj_mettatonnn_writer) == 0 && phase == 2)
+    if (instance_exists(obj_mettatonnn_writer) == false && phase == 2)
         instance_create(x, y, obj_mettatonnn_writer)
 }
 if (q == 9 && alarm[4] < 140 && con == 0)

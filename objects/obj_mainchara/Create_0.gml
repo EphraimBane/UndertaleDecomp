@@ -4,7 +4,7 @@ if (FL_TruePacifist == true)
     if (FL_SMSConvoParameters <= FL_TorielSMSConvoCounter)
         FL_SMSConvoParameters = (FL_TorielSMSConvoCounter + 1)
 }
-if (FL_Hardmode == 1 && (!scr_hardmodename(global.charname)))
+if (FL_Hardmode == true && (!scr_hardmodename(global.charname)))
     FL_Hardmode = 0
 FL_PapyrusCalledAlready = 0
 if ((x % 3) == 2)

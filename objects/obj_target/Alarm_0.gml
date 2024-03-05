@@ -1,6 +1,6 @@
-if (global.weapon == 3)
+if (global.weapon == Items.Stick)
     instance_create((x - 16), y, obj_targetchoice)
-if (global.weapon == 13 || global.weapon == 45 || global.weapon == 51 || global.weapon == 52)
+if (global.weapon == Items.ToyKnife || global.weapon == Items.TornNotebook || global.weapon == Items.WornDagger || global.weapon == Items.RealKnife)
 {
     r = round(random(1))
     if (r == 0)
@@ -8,7 +8,7 @@ if (global.weapon == 13 || global.weapon == 45 || global.weapon == 51 || global.
     if (r == 1)
         instance_create((x + 570), y, obj_targetchoice)
 }
-if (global.weapon == 14 || global.weapon == 47)
+if (global.weapon == Items.ToughGlove || global.weapon == Items.BurntPan)
 {
     r = round(random(1))
     if (r == 0)

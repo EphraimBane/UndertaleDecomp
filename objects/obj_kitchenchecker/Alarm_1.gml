@@ -23,5 +23,5 @@ if instance_exists(block[0])
         dogdoor = noone
     }
 }
-if (instance_exists(block[4]) == 0)
+if (instance_exists(block[4]) == false)
     block[4] = instance_create(83, 90, obj_solidlong)

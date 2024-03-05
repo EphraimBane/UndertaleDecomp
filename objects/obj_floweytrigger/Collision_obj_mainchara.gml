@@ -72,7 +72,7 @@ if (global.plot == 0)
         ini_write_real("Flowey", "Met1", (g + 1))
         ossafe_ini_close()
         ossafe_savedata_save()
-        if (instance_exists(obj_dialoguer) == 0)
+        if (instance_exists(obj_dialoguer) == false)
             instance_create(0, 0, obj_dialoguer)
     }
     else

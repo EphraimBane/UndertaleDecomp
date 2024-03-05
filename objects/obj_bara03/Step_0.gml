@@ -81,7 +81,7 @@ if (global.mnfight == 2)
     {
         pop = scr_monstersum()
         global.turntimer = 180
-        if (instance_exists(obj_carrotstargen) == 0)
+        if (instance_exists(obj_carrotstargen) == false)
         {
             if (whatiheard == 1 && con == 0 && pop > 1)
                 mycommand = 80
@@ -183,7 +183,7 @@ if (alphaup == 1 && image_alpha < 1)
     image_alpha += 0.05
 if (global.myfight == 4)
 {
-    if (global.mercyuse == 0)
+    if (global.mercyuse == false)
     {
         scr_mercystandard()
         if (mercy < 0)

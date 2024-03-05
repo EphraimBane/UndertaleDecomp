@@ -16,7 +16,7 @@ if (con == 2.5)
 }
 if (con == 5)
 {
-    if (instance_exists(obj_floweyfly) == 0)
+    if (instance_exists(obj_floweyfly) == false)
     {
         caster_stop(snd_buzzing)
         alarm[4] = 8

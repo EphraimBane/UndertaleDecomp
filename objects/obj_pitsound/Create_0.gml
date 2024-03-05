@@ -1,5 +1,5 @@
 siner = 0
-FL_InBattle = 0
+FL_InBattle = false
 event_user(0)
 if (FL_TruePacifist == true)
     return;

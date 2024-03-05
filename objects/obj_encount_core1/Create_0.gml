@@ -1,6 +1,6 @@
-if (FL_DisableRandomEncounters == 1 || FL_TruePacifist == true)
+if (FL_DisableRandomEncounters == true || FL_TruePacifist == true)
     instance_destroy()
-FL_InBattle = 1
+FL_InBattle = true
 alldead = 0
 global.encounter = 0
 factor = 240
@@ -10,5 +10,5 @@ if (FL_CoreBattleProgressCounter < 2 && FL_CoreBattleProgressCounter2 < 4)
 if (scr_murderlv() >= 12)
     factor = 70
 scr_steps(factor, 50, 40, 205)
-if (scr_enemynpc3() == 1)
+if (scr_enemynpc3() == true)
     instance_destroy()

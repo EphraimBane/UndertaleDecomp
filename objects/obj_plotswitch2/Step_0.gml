@@ -11,6 +11,6 @@ if (myinteract == 1 && global.plot <= 4.5)
     snd_play(snd_screenshake)
     global.interact = 99
 }
-if (instance_exists(obj_shaker) == 0 && global.interact == 99)
+if (instance_exists(obj_shaker) == false && global.interact == 99)
     global.interact = 0
 image_index = on

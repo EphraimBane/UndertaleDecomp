@@ -6,7 +6,7 @@ if (fade == 1)
 }
 if (image_xscale < 0.08)
     instance_destroy()
-if (instance_number(obj_targetparent) == 0 && hit == 0)
+if (instance_number(obj_targetparent) == false && hit == 0)
 {
     hit = 1
     if (myscore == 0)
@@ -37,7 +37,7 @@ if (instance_number(obj_targetparent) == 0 && hit == 0)
             trgtest.ht = ht
             trgtest.wd = wd
         }
-        if (global.weapon == 25)
+        if (global.weapon == Items.BalletShoes)
         {
             instance_create((mons.x + (wd / 2)), (mons.y + (ht / 2)), obj_strongpunch)
             if (critter == 1)
@@ -47,7 +47,7 @@ if (instance_number(obj_targetparent) == 0 && hit == 0)
             }
             global.damagetimer = 10
         }
-        if (global.weapon == 49)
+        if (global.weapon == Items.EmptyGun)
         {
             instance_create((mons.x + (wd / 2)), (mons.y + (ht / 2)), obj_gunshot_stab)
             if (critter == 1)
@@ -57,7 +57,7 @@ if (instance_number(obj_targetparent) == 0 && hit == 0)
             }
             global.damagetimer = 20
         }
-        if (global.weapon == 47)
+        if (global.weapon == Items.BurntPan)
         {
             instance_create((mons.x + (wd / 2)), (mons.y + (ht / 2)), obj_frypan_impact)
             if (critter == 1)
@@ -67,7 +67,7 @@ if (instance_number(obj_targetparent) == 0 && hit == 0)
             }
             global.damagetimer = 20
         }
-        if (global.weapon == 45)
+        if (global.weapon == Items.TornNotebook)
         {
             instance_create((mons.x + (wd / 2)), (mons.y + (ht / 2)), obj_notebook_attackanim)
             if (critter == 1)

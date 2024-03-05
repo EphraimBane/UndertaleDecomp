@@ -9,7 +9,7 @@ if (CoolHell == 0)
         alarm[5] = (55 + random(10))
         event_user(1)
     }
-    else if (instance_exists(obj_6book_act) == 0)
+    else if (instance_exists(obj_6book_act) == false)
     {
         CoolHell = 1
         act = instance_create(rx, ry, obj_6book_act)

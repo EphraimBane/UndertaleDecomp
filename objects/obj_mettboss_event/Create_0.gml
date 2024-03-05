@@ -1,5 +1,5 @@
 tile_layer_hide(999995)
-FL_InBattle = 0
+FL_InBattle = false
 if (global.plot > 197)
 {
     instance_destroy()

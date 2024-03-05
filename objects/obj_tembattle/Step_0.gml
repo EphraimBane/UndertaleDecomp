@@ -132,7 +132,7 @@ if (global.myfight == 2)
             }
             if (whatiheard == 1)
             {
-                scr_itemcheck(22)
+                scr_itemcheck(Items.TemmieFlakes)
                 if (haveit == false)
                 {
                     global.msc = 0
@@ -167,7 +167,7 @@ if (global.myfight == 2)
             }
             if (whatiheard == 4)
             {
-                FL_SparedWoshua = 1
+                FL_SparedTemmie = true
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_tembattle_573")
                 OBJ_WRITER.halt = 3
@@ -180,12 +180,12 @@ if (global.myfight == 2)
             {
                 i = 0
                 n = 0
-                repeat (8)
+                repeat (InventorySize)
                 {
-                    if (global.item[i] == 22)
+                    if (global.item[i] == Items.TemmieFlakes)
                     {
                         n = 1
-                        FL_SparedWoshua = 1
+                        FL_SparedTemmie = true
                     }
                     else
                         i += 1
@@ -266,7 +266,7 @@ if (dunk == 3 && instance_exists(OBJ_WRITER) == false)
 }
 if (global.myfight == 4)
 {
-    if (global.mercyuse == 0)
+    if (global.mercyuse == false)
     {
         scr_mercystandard()
         if (mercy < 0)

@@ -500,7 +500,7 @@ function scr_namingscreen()
 	        if (action == 0)
 	        {
 	            caster_free(all)
-	            if (ossafe_file_exists("file0") == 0)
+	            if (ossafe_file_exists("file0") == false)
 	                room_goto_next()
 	            else
 	                scr_load()

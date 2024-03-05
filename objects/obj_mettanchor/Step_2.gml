@@ -1,7 +1,7 @@
 if (FL_AnimationIndex <= 9 && FL_AnimationIndex > 0)
     j = FL_AnimationIndex
 sprite_index = mysprite[(j - 1)]
-if (instance_exists(obj_shaker) == 0)
+if (instance_exists(obj_shaker) == false)
 {
     if (on == 1)
     {

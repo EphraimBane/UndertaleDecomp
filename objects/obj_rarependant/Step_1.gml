@@ -1,17 +1,17 @@
 scr_depth(0, 0, 0, 0, 0)
 if (FL_GotArtifact == 0)
 {
-    hasdog = 0
-    for (i = 0; i < 8; i += 1)
+    hasdog = false
+    for (i = 0; i < InventorySize; i += 1)
     {
-        if (global.item[i] == 27)
+        if (global.item[i] == Items.AnnoyingDog)
             hasdog = 1
     }
-    if (hasdog == 0)
+    if (hasdog == true)
     {
-        noroom = 0
-        scr_itemget(27)
-        if (noroom != 1)
+        noroom = false
+        scr_itemget(Items.AnnoyingDog)
+        if (noroom != true)
             FL_GotArtifact = 2
     }
 }
@@ -44,7 +44,7 @@ if (con == 3)
 if (con == 5)
 {
     res = floor(random(5))
-    scr_itemget((29 + res))
+    scr_itemget((Items.DogResidue29 + res))
     global.interact = 0
     caster_stop(dogsong)
     caster_set_volume(global.currentsong, 0)

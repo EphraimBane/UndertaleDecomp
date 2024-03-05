@@ -15,11 +15,11 @@ if (global.turntimer <= 0)
 }
 if (specialtimer == 1)
 {
-    if (instance_exists(obj_mettfodder) == 0 && global.turntimer > 9)
+    if (instance_exists(obj_mettfodder) == false && global.turntimer > 9)
         global.turntimer = 9
 }
 if (specialtimer == 2)
 {
-    if (instance_exists(obj_plusbomb) == 0 && global.turntimer > 9)
+    if (instance_exists(obj_plusbomb) == false && global.turntimer > 9)
         global.turntimer = 9
 }

@@ -315,7 +315,7 @@ function scr_battlegroup()
 	        global.actfirst = 0
 	        global.extraintro = 0
 	        global.msg[0] = scr_gettext("scr_battlegroup_297")
-	        if (FL_Hardmode == 1)
+	        if (FL_Hardmode == true)
 	            global.msg[0] = scr_gettext("scr_battlegroup_299")
 	        global.monsterinstance[0] = instance_create(266, 106, obj_napstablook)
 	        break

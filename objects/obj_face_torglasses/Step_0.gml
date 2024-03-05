@@ -1,2 +1,2 @@
-if (instance_exists(obj_torbody) == 0)
+if (instance_exists(obj_torbody) == false)
     instance_destroy()

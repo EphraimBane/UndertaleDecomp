@@ -82,7 +82,7 @@ if (global.mnfight == 2)
     if (attacked == 0 && pop == 1)
     {
         global.turntimer = 180
-        if (instance_exists(obj_carrotstargen) == 0)
+        if (instance_exists(obj_carrotstargen) == false)
         {
             if (mycommand >= 0 && mycommand <= 50)
             {
@@ -330,7 +330,7 @@ if (global.mnfight == 5)
 }
 if (global.myfight == 4)
 {
-    if (global.mercyuse == 0)
+    if (global.mercyuse == false)
     {
         scr_mercystandard()
         if (mercy < 0)

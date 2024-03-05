@@ -67,7 +67,7 @@ if (global.interact == 5)
         var xx0 = xx
         if (global.language == "ja")
             xx0 -= 2
-        if (global.item[0] == 0)
+        if (global.item[0] == Items.Null)
             draw_set_color(c_gray)
         if (global.menuchoice[0] == 1)
             draw_text((42 + xx0), (84 + yy), string_hash_to_newline(scr_gettext("field_menu_item")))
@@ -131,7 +131,7 @@ if (global.interact == 5)
         draw_text(stat_x, df_y, string_hash_to_newline(scr_gettext("stat_menu_df", string((global.df - 10)), string(global.adef))))
         draw_text(stat_x, weapon_y, string_hash_to_newline(scr_gettext("stat_menu_weapon", scr_gettext(("item_name_" + string(global.weapon))))))
         var armorname = scr_gettext(("item_name_" + string(global.armor)))
-        if (global.armor == 64)
+        if (global.armor == Items.TemyArmor)
             armorname = scr_gettext("stat_armor_temmie")
         draw_text(stat_x, armor_y, string_hash_to_newline(scr_gettext("stat_menu_armor", armorname)))
         draw_text(stat_x, gold_y, string_hash_to_newline(scr_gettext("stat_menu_gold")))
@@ -365,43 +365,43 @@ if (global.interact == 5)
             {
                 global.menuno = 9
                 dontthrow = 0
-                if (global.item[global.menucoord[1]] != 23 && global.item[global.menucoord[1]] != 27 && global.item[global.menucoord[1]] != 54 && global.item[global.menucoord[1]] != 56 && global.item[global.menucoord[1]] != 57)
+                if (global.item[global.menucoord[1]] != Items.AbandonedQuiche && global.item[global.menucoord[1]] != Items.AnnoyingDog && global.item[global.menucoord[1]] != 54 && global.item[global.menucoord[1]] != Items.BadMemory && global.item[global.menucoord[1]] != Items.UndynesLetterEX)
                     scr_writetext(12, "x", 0, 0)
                 else
                 {
-                    if (global.item[global.menucoord[1]] == 23)
+                    if (global.item[global.menucoord[1]] == Items.AbandonedQuiche)
                         scr_writetext(23, "x", 0, 0)
-                    if (global.item[global.menucoord[1]] == 27)
+                    if (global.item[global.menucoord[1]] == Items.AnnoyingDog)
                     {
-                        scr_writetext(0, scr_gettext("item_drop_27"), 0, 0)
+                        scr_writetext(0, scr_gettext("item_drop_27"), 0, 0) //* (You put the dog on the&  ground.)/%%
                         if instance_exists(obj_rarependant)
                         {
                             with (obj_rarependant)
                                 con = 1
                         }
                     }
-                    if (global.item[global.menucoord[1]] == 54)
+                    if (global.item[global.menucoord[1]] == Items.BadMemory)
                     {
-                        scr_writetext(0, scr_gettext("item_drop_54"), 0, 0)
+                        scr_writetext(0, scr_gettext("item_drop_54"), 0, 0) //* (You threw the Bad Memory&  away.^1)&* (But it came back.)/%%
                         dontthrow = 1
                     }
-                    if (global.item[global.menucoord[1]] == 56)
+                    if (global.item[global.menucoord[1]] == Items.UndynesLetter)
                     {
                         if (!instance_exists(obj_undyne_friendc))
                         {
-                            scr_writetext(0, scr_gettext("item_drop_56"), 0, 0)
+                            scr_writetext(0, scr_gettext("item_drop_56"), 0, 0) //* (Despite what seems like&  common sense^1, you threw&  away the letter.)/%%
                             FL_UndynesLetterStatus = 1
                         }
                         else
                         {
                             global.faceemotion = 1
-                            scr_writetext(0, scr_gettext("item_drop_56_undyne"), 5, 37)
+                            scr_writetext(0, scr_gettext("item_drop_56_undyne"), 5, 37) //* Hey^1! Don't throw that&  away^1! Just deliver it!/%%
                             dontthrow = 1
                         }
                     }
-                    if (global.item[global.menucoord[1]] == 57)
+                    if (global.item[global.menucoord[1]] == Items.UndynesLetterEX)
                     {
-                        scr_writetext(0, scr_gettext("item_drop_57"), 0, 0)
+                        scr_writetext(0, scr_gettext("item_drop_57"), 0, 0) //* (The letter is too powerful to&  throw away.^1)&* (It gets the better of you.)/%%
                         dontthrow = 1
                     }
                 }
@@ -452,7 +452,7 @@ if (global.interact == 5)
         }
         if (global.menuno == 1)
         {
-            if (global.item[0] != 0)
+            if (global.item[0] != Items.Null)
             {
                 global.menucoord[1] = 0
                 scr_itemname()
@@ -503,7 +503,7 @@ if (global.interact == 5)
         {
             if (global.menucoord[1] != 7)
             {
-                if (global.item[(global.menucoord[1] + 1)] != 0)
+                if (global.item[(global.menucoord[1] + 1)] != Items.Null)
                     global.menucoord[1] += 1
             }
         }
@@ -511,7 +511,7 @@ if (global.interact == 5)
         {
             if (global.menucoord[3] != 7)
             {
-                if (global.phone[(global.menucoord[3] + 1)] != 0)
+                if (global.phone[(global.menucoord[3] + 1)] != Items.Null)
                     global.menucoord[3] += 1
             }
         }
@@ -519,7 +519,7 @@ if (global.interact == 5)
         {
             if (global.menucoord[6] != 7)
             {
-                if (global.item[(global.menucoord[6] + 1)] != 0)
+                if (global.item[(global.menucoord[6] + 1)] != Items.Null)
                     global.menucoord[6] += 1
             }
         }
@@ -576,7 +576,7 @@ if (global.interact == 5)
             snd_play(snd_squeak)
     }
 }
-if (global.menuno == 9 && instance_exists(obj_dialoguer) == 0)
+if (global.menuno == 9 && instance_exists(obj_dialoguer) == false)
 {
     global.menuno = -1
     global.interact = 0

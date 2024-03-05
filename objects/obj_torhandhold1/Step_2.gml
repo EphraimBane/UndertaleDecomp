@@ -15,7 +15,7 @@ if (path_position == 1 && conversation == 0)
     visible = false
     conversation = 2
 }
-if (conversation == 3 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 3 && instance_exists(obj_dialoguer) == false)
 {
     with (tor)
         path_start(path_walkright, 3, path_action_stop, 0)

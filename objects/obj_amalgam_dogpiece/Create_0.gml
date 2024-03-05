@@ -1,4 +1,4 @@
-if (instance_exists(obj_amalgam_dogevent) == 0)
+if (instance_exists(obj_amalgam_dogevent) == false)
     instance_destroy()
 else
 {

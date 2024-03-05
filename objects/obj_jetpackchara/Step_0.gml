@@ -131,7 +131,7 @@ if (con == 16)
     ggg.side = 0
     con = 17
 }
-if (con == 17 && instance_exists(obj_dialoguer) == 0)
+if (con == 17 && instance_exists(obj_dialoguer) == false)
 {
     mett.x += 8
     obj_counterscroller.fakev = -3

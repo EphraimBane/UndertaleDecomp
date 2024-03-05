@@ -25,7 +25,7 @@ if (conversation == 3 && instance_exists(obj_toroverworld4))
         instance_create(160, 100, obj_stalkerflowey)
     }
 }
-if (conversation == 4 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 4 && instance_exists(obj_dialoguer) == false)
 {
     instance_create(0, 0, obj_tordogcall)
     with (tor)

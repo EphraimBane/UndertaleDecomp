@@ -70,7 +70,7 @@ if (global.hurtanim[myself] == 5)
 }
 if (global.mnfight == 2)
 {
-    if (attacked == 0)
+    if (attacked == false)
     {
         pop = scr_monstersum()
         attacked = 1
@@ -194,7 +194,7 @@ if (global.myfight == 2)
 }
 if (global.myfight == 4)
 {
-    if (global.mercyuse == 0)
+    if (global.mercyuse == false)
     {
         scr_mercystandard()
         if (mercy < 0)

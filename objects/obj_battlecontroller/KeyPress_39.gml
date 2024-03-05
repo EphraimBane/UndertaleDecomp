@@ -48,7 +48,7 @@ if (global.mnfight == 0)
                 var tempcheck = global.bmenuno
                 if (global.bmenucoord[3] == 0)
                 {
-                    if (global.item[1] != 0)
+                    if (global.item[1] != Items.Null)
                         global.bmenucoord[3] = 1
                     mv = 1
                 }
@@ -56,7 +56,7 @@ if (global.mnfight == 0)
                 {
                     if (global.bmenucoord[3] == 1)
                     {
-                        if (global.item[4] != 0)
+                        if (global.item[4] != Items.Null)
                         {
                             global.bmenucoord[3] = 0
                             global.bmenuno = 3.5
@@ -68,7 +68,7 @@ if (global.mnfight == 0)
                 }
                 if (global.bmenucoord[3] == 2)
                 {
-                    if (global.item[3] != 0)
+                    if (global.item[3] != Items.Null)
                         global.bmenucoord[3] = 3
                     mv = 1
                 }
@@ -76,7 +76,7 @@ if (global.mnfight == 0)
                 {
                     if (global.bmenucoord[3] == 3)
                     {
-                        if (global.item[6] != 0)
+                        if (global.item[6] != Items.Null)
                         {
                             global.bmenucoord[3] = 2
                             global.bmenuno = 3.5
@@ -104,7 +104,7 @@ if (global.mnfight == 0)
                 {
                     if (global.bmenucoord[3] == 0)
                     {
-                        if (global.item[5] != 0)
+                        if (global.item[5] != Items.Null)
                             global.bmenucoord[3] = 1
                         else
                         {
@@ -127,7 +127,7 @@ if (global.mnfight == 0)
                 {
                     if (global.bmenucoord[3] == 2)
                     {
-                        if (global.item[7] != 0)
+                        if (global.item[7] != Items.Null)
                             global.bmenucoord[3] = 3
                         else
                         {

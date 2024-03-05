@@ -276,7 +276,7 @@ if (menu == 1 || menu == 2)
 if (menu == 3)
 {
     menumax = 4
-    if (FL_TruePacifist != 1)
+    if (FL_TruePacifist != true)
     {
         if (FL_BurgerPantsGirlsConvoCounter < 2)
             scr_shop_draw_talktitle(0, 0, scr_gettext("shop3_talk1a_title"))
@@ -377,7 +377,7 @@ if (menu == 4)
         {
             if (murder == 0)
             {
-                scr_itemcheck(40)
+                scr_itemcheck(Items.Glamburger)
                 if (haveit == false)
                 {
                     global.msg[0] = scr_gettext("obj_shop3_650")
@@ -391,9 +391,9 @@ if (menu == 4)
                     event_user(2)
                 }
             }
-            else if (FL_RobbedCore == 0)
+            else if (FL_RobbedCore == false)
             {
-                FL_RobbedCore = 1
+                FL_RobbedCore = true
                 global.gold += 5
                 global.msg[0] = scr_gettext("obj_shop3_668")
                 event_user(2)
@@ -423,7 +423,7 @@ if (menu == 4)
         }
         if (sell == 3)
         {
-            if (FL_BurgerPantsGirlsConvoCounter != 2 && FL_BurgerPantsGirlsConvoCounter != 4 && FL_BurgerPantsGirlsConvoCounter != 6 && FL_BurgerPantsGirlsConvoCounter != 7 && FL_TruePacifist != 1)
+            if (FL_BurgerPantsGirlsConvoCounter != 2 && FL_BurgerPantsGirlsConvoCounter != 4 && FL_BurgerPantsGirlsConvoCounter != 6 && FL_BurgerPantsGirlsConvoCounter != 7 && FL_TruePacifist != true)
             {
                 con = 4
                 global.msg[0] = scr_gettext("obj_shop3_710")
@@ -655,7 +655,7 @@ if (menu == 4)
     }
     if (con == 11)
     {
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -675,7 +675,7 @@ if (menu == 4)
     }
     if (con == 13)
     {
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -699,7 +699,7 @@ if (menu == 4)
             con = 17
         }
     }
-    if (con == 17 && instance_exists(cattywriter) == 0)
+    if (con == 17 && instance_exists(cattywriter) == false)
     {
         caster_pause(shopmus)
         with (brattywriter)
@@ -720,7 +720,7 @@ if (menu == 4)
     }
     if (con == 20)
     {
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -731,7 +731,7 @@ if (menu == 4)
     if (con == 22)
     {
         selling = 4
-        if (instance_exists(brattywriter) == 0)
+        if (instance_exists(brattywriter) == false)
         {
             global.msg[0] = scr_gettext("obj_shop3_1055")
             global.msg[1] = scr_gettext("obj_shop3_1056")
@@ -755,7 +755,7 @@ if (menu == 4)
     }
     if (con == 41)
     {
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -776,7 +776,7 @@ if (menu == 4)
     }
     if (con == 43)
     {
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -797,7 +797,7 @@ if (menu == 4)
     }
     if (con == 46)
     {
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -816,7 +816,7 @@ if (menu == 4)
             con = 48
         }
     }
-    if (con == 48 && instance_exists(cattywriter) == 0)
+    if (con == 48 && instance_exists(cattywriter) == false)
     {
         with (brattywriter)
             instance_destroy()
@@ -851,7 +851,7 @@ if (menu == 4)
     if (con == 52)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -872,7 +872,7 @@ if (menu == 4)
     if (con == 54)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -890,7 +890,7 @@ if (menu == 4)
             con = 56
         }
     }
-    if (con == 56 && instance_exists(cattywriter) == 0)
+    if (con == 56 && instance_exists(cattywriter) == false)
     {
         with (brattywriter)
             instance_destroy()
@@ -910,7 +910,7 @@ if (menu == 4)
     if (con == 61)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -931,7 +931,7 @@ if (menu == 4)
     if (con == 62.1)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -952,7 +952,7 @@ if (menu == 4)
     if (con == 62.3)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -982,7 +982,7 @@ if (menu == 4)
             }
         }
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1003,7 +1003,7 @@ if (menu == 4)
     if (con == 67)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1021,7 +1021,7 @@ if (menu == 4)
             con = 70
         }
     }
-    if (con == 70 && instance_exists(cattywriter) == 0)
+    if (con == 70 && instance_exists(cattywriter) == false)
     {
         with (brattywriter)
             instance_destroy()
@@ -1042,7 +1042,7 @@ if (menu == 4)
     if (con == 76)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1061,7 +1061,7 @@ if (menu == 4)
             con = 78
         }
     }
-    if (con == 78 && instance_exists(cattywriter) == 0)
+    if (con == 78 && instance_exists(cattywriter) == false)
     {
         with (brattywriter)
             instance_destroy()
@@ -1082,7 +1082,7 @@ if (menu == 4)
     if (con == 83)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1104,7 +1104,7 @@ if (menu == 4)
     if (con == 85)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1123,7 +1123,7 @@ if (menu == 4)
             con = 87
         }
     }
-    if (con == 87 && instance_exists(cattywriter) == 0)
+    if (con == 87 && instance_exists(cattywriter) == false)
     {
         with (brattywriter)
             instance_destroy()
@@ -1140,7 +1140,7 @@ if (menu == 4)
             con = 111
         }
     }
-    if (con == 111 && instance_exists(cattywriter) == 0)
+    if (con == 111 && instance_exists(cattywriter) == false)
     {
         with (brattywriter)
             instance_destroy()
@@ -1152,7 +1152,7 @@ if (menu == 4)
     if (con == 112)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             global.msg[0] = scr_gettext("obj_shop3_1504")
             event_user(2)
@@ -1170,7 +1170,7 @@ if (menu == 4)
             con = 114
         }
     }
-    if (con == 114 && instance_exists(cattywriter) == 0)
+    if (con == 114 && instance_exists(cattywriter) == false)
     {
         with (brattywriter)
             instance_destroy()
@@ -1190,7 +1190,7 @@ if (menu == 4)
     if (con == 121)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1212,7 +1212,7 @@ if (menu == 4)
     if (con == 123)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1234,7 +1234,7 @@ if (menu == 4)
     if (con == 126)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1256,7 +1256,7 @@ if (menu == 4)
     if (con == 128)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1267,14 +1267,14 @@ if (menu == 4)
             con = 129
         }
     }
-    if (con == 129 && instance_exists(brattywriter) == 0)
+    if (con == 129 && instance_exists(brattywriter) == false)
     {
         with (cattywriter)
             instance_destroy()
         con = 0
         selling = 1
     }
-    if (con == 130 && instance_exists(cattywriter) == 0)
+    if (con == 130 && instance_exists(cattywriter) == false)
     {
         with (brattywriter)
             instance_destroy()
@@ -1294,7 +1294,7 @@ if (menu == 4)
     if (con == 141)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1317,7 +1317,7 @@ if (menu == 4)
     if (con == 143)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1340,7 +1340,7 @@ if (menu == 4)
     if (con == 160)
     {
         selling = 4
-        if (instance_exists(brattywriter) == 0)
+        if (instance_exists(brattywriter) == false)
         {
             FL_AnimationIndex = 5
             global.msg[0] = scr_gettext("obj_shop3_1707")
@@ -1355,7 +1355,7 @@ if (menu == 4)
     if (con == 161)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1368,7 +1368,7 @@ if (menu == 4)
     if (con == 162)
     {
         selling = 4
-        if (instance_exists(brattywriter) == 0)
+        if (instance_exists(brattywriter) == false)
         {
             global.msg[0] = scr_gettext("obj_shop3_1735")
             global.msg[1] = scr_gettext("obj_shop3_1736")
@@ -1401,7 +1401,7 @@ if (menu == 4)
     if (con == 171)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1423,7 +1423,7 @@ if (menu == 4)
     if (con == 173)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1456,7 +1456,7 @@ if (menu == 4)
     if (con == 181)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1481,7 +1481,7 @@ if (menu == 4)
     if (con == 183)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             global.faceemotion = 7
             with (brattywriter)
@@ -1516,7 +1516,7 @@ if (menu == 4)
     if (con == 191)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             global.faceemotion = 7
             with (brattywriter)
@@ -1540,7 +1540,7 @@ if (menu == 4)
     if (con == 193)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1563,7 +1563,7 @@ if (menu == 4)
     if (con == 195)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1598,7 +1598,7 @@ if (menu == 4)
     if (con == 203)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1627,7 +1627,7 @@ if (menu == 4)
     if (con == 205)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1649,7 +1649,7 @@ if (menu == 4)
     if (con == 207)
     {
         selling = 4
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1695,7 +1695,7 @@ if (menu == 4)
     }
     if (con == 252)
     {
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1715,7 +1715,7 @@ if (menu == 4)
     }
     if (con == 254)
     {
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1735,7 +1735,7 @@ if (menu == 4)
     }
     if (con == 256)
     {
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1755,7 +1755,7 @@ if (menu == 4)
     }
     if (con == 258)
     {
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1775,7 +1775,7 @@ if (menu == 4)
     }
     if (con == 260)
     {
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()
@@ -1795,7 +1795,7 @@ if (menu == 4)
     }
     if (con == 262)
     {
-        if (instance_exists(cattywriter) == 0)
+        if (instance_exists(cattywriter) == false)
         {
             with (brattywriter)
                 instance_destroy()

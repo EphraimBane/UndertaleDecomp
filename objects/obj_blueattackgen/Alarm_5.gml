@@ -1,4 +1,4 @@
-if (instance_exists(blt_sizebone) == 0 && global.invc < 1)
+if (instance_exists(blt_sizebone) == false && global.invc < 1)
 {
     global.msg[0] = scr_gettext("obj_blueattackgen_90")
     global.msg[1] = scr_gettext("obj_blueattackgen_91")

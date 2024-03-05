@@ -43,7 +43,7 @@ if (con == 8)
     if (FL_PreCastleUnknown4 == 3)
         global.battlegroup = 67
     con = 9
-    FL_InBattle = 1
+    FL_InBattle = true
     instance_create(0, 0, obj_battler)
     alarm[4] = 34
 }

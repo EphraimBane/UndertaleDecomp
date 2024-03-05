@@ -21,7 +21,7 @@ strumpet = bbox_top
 trumpet = bbox_left
 if (global.inbattle == true)
 {
-    if (FL_InBattle == 0)
+    if (FL_InBattle == false)
     {
         instance_create(0, 0, obj_musfadein)
         caster_resume(global.currentsong)

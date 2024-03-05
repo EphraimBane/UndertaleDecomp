@@ -7,7 +7,7 @@ if (conversation == 1 && instance_exists(obj_toroverworld4))
     instance_create(0, 0, obj_dialoguer)
     conversation = 1.5
 }
-if (conversation == 1.5 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 1.5 && instance_exists(obj_dialoguer) == false)
 {
     with (tor)
         path_start(path_torielwalk4, 4, path_action_stop, 0)
@@ -29,7 +29,7 @@ if (conversation == 2 && instance_exists(obj_toroverworld4))
 }
 if (global.plot == 6 && conversation == 3)
 {
-    if (FL_SparedLast == 1 || FL_EscapedLast == 1 || FL_KilledLast == 1 || FL_BoredLast == 1)
+    if (FL_SparedLast == true || FL_EscapedLast == true || FL_KilledLast == true || FL_BoredLast == true)
     {
         global.interact = 1
         alarm[7] = 15
@@ -38,7 +38,7 @@ if (global.plot == 6 && conversation == 3)
 }
 if (conversation == 4)
     global.interact = 1
-if (conversation == 6 && instance_exists(obj_dialoguer) == 0)
+if (conversation == 6 && instance_exists(obj_dialoguer) == false)
 {
     with (tor3)
         path_start(path_torielwalk4_2, 3, path_action_stop, 0)

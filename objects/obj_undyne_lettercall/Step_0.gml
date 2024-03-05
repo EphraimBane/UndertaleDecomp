@@ -25,7 +25,7 @@ if (con == 3)
 }
 if (con == 6 && instance_exists(OBJ_WRITER) == false)
 {
-    FL_DisableRandomEncounters = 1
+    FL_DisableRandomEncounters = true
     caster_resume(global.currentsong)
     if (FL_DatedAlphys < 8)
         FL_DatedAlphys = 8

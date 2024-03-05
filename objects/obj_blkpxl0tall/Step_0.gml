@@ -1,2 +1,2 @@
-if (instance_exists(obj_whtpxlgrav) == 0)
+if (instance_exists(obj_whtpxlgrav) == false)
     instance_destroy()

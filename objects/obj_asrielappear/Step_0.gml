@@ -47,12 +47,12 @@ if (con == 1)
             obj_blconwideslave.sprite_index = spr_blconsm
     }
 }
-if (con == 1.1 && instance_exists(obj_blconwideslave) == 0)
+if (con == 1.1 && instance_exists(obj_blconwideslave) == false)
 {
     con = 1.2
     alarm[4] = 50
 }
-if (con == 2.2 && instance_exists(obj_blconwideslave) == 0)
+if (con == 2.2 && instance_exists(obj_blconwideslave) == false)
 {
     sprite_index = spr_kidasriel_front
     x += 2
@@ -86,7 +86,7 @@ if (con == 5)
         obj_blconwideslave.sprite_index = spr_blconsm
     con = 6
 }
-if (con == 6 && instance_exists(obj_blconwideslave) == 0)
+if (con == 6 && instance_exists(obj_blconwideslave) == false)
 {
     con = 7
     alarm[4] = 10
@@ -126,7 +126,7 @@ if (con == 14)
     global.battlegroup = 255
     global.mercy = 1
     global.hp = global.maxhp
-    FL_InBattle = 0
+    FL_InBattle = false
     global.seriousbattle = 1
     room_goto(room_battle)
 }
