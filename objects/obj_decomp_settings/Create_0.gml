@@ -69,6 +69,23 @@ function wipeTrophyData()
 	}
 	save_trophies();
 }
+
+function wipeSaveData()
+{
+	// Daniela: im sure there probably is a easier way to do this but im lazy and this works fine enough
+	if (file_exists("file0"))
+		file_delete("file0");
+	if (file_exists("file8"))
+		file_delete("file8");
+	if (file_exists("file9"))
+		file_delete("file9");
+	if (file_exists("undertale.ini"))
+		file_delete("undertale.ini");
+	if (file_exists("sys_info_962"))
+		file_delete("sys_info_962");
+	if (file_exists("sys_info_963"))
+		file_delete("sys_info_963");
+}
 #endregion
 
 event_user(1);
