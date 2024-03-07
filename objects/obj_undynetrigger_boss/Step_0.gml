@@ -138,7 +138,7 @@ with (obj_undynetrigger_boss)
         undyne.image_index = 0
         undyne.image_speed = 0
         fakedrawer = 0
-        __view_set(VIEW_PROP_CAM_Y, 1, 0)
+        __view_set(VIEW_PROP_VISIBLE, 1, false)
         __view_set(VIEW_PROP_CAM_HEIGHT, 1, 240)
         __view_set(VIEW_PROP_CAM_WIDTH, 1, 320)
         __view_set(VIEW_PROP_CAM_X, 1, 0)
