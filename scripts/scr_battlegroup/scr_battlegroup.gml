@@ -1,6 +1,6 @@
 function scr_battlegroup()
 {
-	global.monster[0] = 0t
+	global.monster[0] = 0
 	global.monster[1] = 0
 	global.monster[2] = 0
 	global.monster[3] = 0
@@ -57,7 +57,7 @@ function scr_battlegroup()
 	    
 		// Froggit
 		case 4:
-	        global.monstertype[0] = 4
+	        global.monstertype[0] = MonsterType.Froggit
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -71,7 +71,7 @@ function scr_battlegroup()
 	    
 		// Whimsun
 		case 5:
-	        global.monstertype[0] = 5
+	        global.monstertype[0] = MonsterType.Whimsun
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -85,8 +85,8 @@ function scr_battlegroup()
 	    
 		// Froggit, Whimsun
 		case 6:
-	        global.monstertype[0] = 4
-	        global.monstertype[1] = 5
+	        global.monstertype[0] = MonsterType.Froggit
+	        global.monstertype[1] = MonsterType.Whimsun
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -100,7 +100,7 @@ function scr_battlegroup()
 	    
 		// Moldsmal
 		case 7:
-	        global.monstertype[0] = 6
+	        global.monstertype[0] = MonsterType.Moldsmal_1
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -114,9 +114,9 @@ function scr_battlegroup()
 	    
 		// Triple Moldsmal
 		case 8:
-	        global.monstertype[0] = 6
-	        global.monstertype[1] = 6
-	        global.monstertype[2] = 6
+	        global.monstertype[0] = MonsterType.Moldsmal_1
+	        global.monstertype[1] = MonsterType.Moldsmal_1
+	        global.monstertype[2] = MonsterType.Moldsmal_1
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
 	        global.msc = (global.battlegroup + 3000)
@@ -132,8 +132,8 @@ function scr_battlegroup()
 	    
 		// Double Froggit
 		case 9:
-	        global.monstertype[0] = 4
-	        global.monstertype[1] = 4
+	        global.monstertype[0] = MonsterType.Froggit
+	        global.monstertype[1] = MonsterType.Froggit
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -148,8 +148,8 @@ function scr_battlegroup()
 	    
 		// Double Moldsmal
 		case 10:
-	        global.monstertype[0] = 6
-	        global.monstertype[1] = 6
+	        global.monstertype[0] = MonsterType.Moldsmal_1
+	        global.monstertype[1] = MonsterType.Moldsmal_1
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -164,8 +164,8 @@ function scr_battlegroup()
 	    
 		// Moldsmal, Migosp
 		case 11:
-	        global.monstertype[0] = 6
-	        global.monstertype[1] = 7
+	        global.monstertype[0] = MonsterType.Moldsmal_1
+	        global.monstertype[1] = MonsterType.Migosp
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -180,8 +180,8 @@ function scr_battlegroup()
 	    
 		// Migosp, Vegetoid
 		case 12:
-	        global.monstertype[0] = 7
-	        global.monstertype[1] = 8
+	        global.monstertype[0] = MonsterType.Migosp
+	        global.monstertype[1] = MonsterType.Vegetoid
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -196,7 +196,7 @@ function scr_battlegroup()
 	    
 		// Loox
 		case 13:
-	        global.monstertype[0] = 9
+	        global.monstertype[0] = MonsterType.Loox
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -260,8 +260,8 @@ function scr_battlegroup()
 	    
 		// Double Loox
 		case 17:
-	        global.monstertype[0] = 9
-	        global.monstertype[1] = 9
+	        global.monstertype[0] = MonsterType.Loox
+	        global.monstertype[1] = MonsterType.Loox
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -276,7 +276,7 @@ function scr_battlegroup()
 	    
 		// Vegetoid
 		case 18:
-	        global.monstertype[0] = 8
+	        global.monstertype[0] = MonsterType.Vegetoid
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -305,7 +305,7 @@ function scr_battlegroup()
 	    
 		// Napstablook
 		case 20:
-	        global.monstertype[0] = 11
+	        global.monstertype[0] = MonsterType.Napstablook
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/ghostbattle.ogg")
@@ -322,7 +322,7 @@ function scr_battlegroup()
 	    
 		// Loox (Unused)
 		case 21:
-	        global.monstertype[0] = 9
+	        global.monstertype[0] = MonsterType.Loox
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -337,7 +337,7 @@ function scr_battlegroup()
 	    
 		// Toriel
 		case 22:
-	        global.monstertype[0] = 10
+	        global.monstertype[0] = MonsterType.Toriel
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/boss1.ogg")
@@ -354,7 +354,7 @@ function scr_battlegroup()
 		
 		// Doggo
 		case 23:
-	        global.monstertype[0] = 13
+	        global.monstertype[0] = MonsterType.Doggo
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -369,7 +369,7 @@ function scr_battlegroup()
 	    
 		// Lesser Dog
 		case 24:
-	        global.monstertype[0] = 14
+	        global.monstertype[0] = MonsterType.LesserDog
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -384,8 +384,8 @@ function scr_battlegroup()
 	    
 		// Dogamy, Dogaressa
 		case 25:
-	        global.monstertype[0] = 15
-	        global.monstertype[1] = 16
+	        global.monstertype[0] = MonsterType.Dogamy
+	        global.monstertype[1] = MonsterType.Dogaressa
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -400,7 +400,7 @@ function scr_battlegroup()
 	    
 		// Greater Dog
 		case 26:
-	        global.monstertype[0] = 17
+	        global.monstertype[0] = MonsterType.GreaterDog
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/dogsong.ogg")
@@ -415,7 +415,7 @@ function scr_battlegroup()
 	    
 		// Papyrus (Boss)
 		case 27:
-	        global.monstertype[0] = 25
+	        global.monstertype[0] = MonsterType.Papyrus
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        if (FL_PapyrusStatus < PapyrusStatus.Spared)
@@ -443,7 +443,7 @@ function scr_battlegroup()
 	    
 		// Gyftrot
 		case 28:
-	        global.monstertype[0] = 22
+	        global.monstertype[0] = MonsterType.Gyftrot
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -460,7 +460,7 @@ function scr_battlegroup()
 		
 		// Chilldrake/Snowdrake
 		case 30:
-	        global.monstertype[0] = 18
+	        global.monstertype[0] = MonsterType.Snowdrake
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -483,8 +483,8 @@ function scr_battlegroup()
 	    
 		// Double Chilldrake (Unused)
 		case 31:
-	        global.monstertype[0] = 18
-	        global.monstertype[1] = 18
+	        global.monstertype[0] = MonsterType.Snowdrake
+	        global.monstertype[1] = MonsterType.Snowdrake
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -499,7 +499,7 @@ function scr_battlegroup()
 	    
 		// Icecap
 		case 32:
-	        global.monstertype[0] = 19
+	        global.monstertype[0] = MonsterType.IceCap
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -514,8 +514,8 @@ function scr_battlegroup()
 	    
 		// Icecap, Chilldrake/Snowdrake (Unused)
 		case 33:
-	        global.monstertype[0] = 19
-	        global.monstertype[1] = 18
+	        global.monstertype[0] = MonsterType.IceCap
+	        global.monstertype[1] = MonsterType.Snowdrake
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -539,7 +539,7 @@ function scr_battlegroup()
 	    
 		// Jerry (Unused)
 		case 34:
-	        global.monstertype[0] = 21
+	        global.monstertype[0] = MonsterType.Jerry
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -554,8 +554,8 @@ function scr_battlegroup()
 	    
 		// Icecap, Jerry
 		case 35:
-	        global.monstertype[0] = 19
-	        global.monstertype[1] = 21
+	        global.monstertype[0] = MonsterType.IceCap
+	        global.monstertype[1] = MonsterType.Jerry
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -570,9 +570,9 @@ function scr_battlegroup()
 	    
 		// Icecap, Jerry, Chilldrake/Snowdrake
 		case 36:
-	        global.monstertype[0] = 19
-	        global.monstertype[1] = 21
-	        global.monstertype[2] = 18
+	        global.monstertype[0] = MonsterType.IceCap
+	        global.monstertype[1] = MonsterType.Jerry
+	        global.monstertype[2] = MonsterType.Snowdrake
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
 	        global.msc = 0
@@ -597,7 +597,7 @@ function scr_battlegroup()
 		
 		// Aaron
 		case 40:
-	        global.monstertype[0] = 23
+	        global.monstertype[0] = MonsterType.Aaron
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -612,7 +612,7 @@ function scr_battlegroup()
 	    
 		// Temmie
 		case 41:
-	        global.monstertype[0] = 24
+	        global.monstertype[0] = MonsterType.Temmie
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -627,8 +627,8 @@ function scr_battlegroup()
 	    
 		// Moldsmal, Moldbygg
 		case 42:
-	        global.monstertype[0] = 12
-	        global.monstertype[1] = 26
+	        global.monstertype[0] = MonsterType.Moldsmal_2
+	        global.monstertype[1] = MonsterType.Moldbygg
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -643,7 +643,7 @@ function scr_battlegroup()
 	    
 		// Woshua
 		case 43:
-	        global.monstertype[0] = 28
+	        global.monstertype[0] = MonsterType.Woshua
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -658,7 +658,7 @@ function scr_battlegroup()
 	    
 		// Shyren
 		case 44:
-	        global.monstertype[0] = 29
+	        global.monstertype[0] = MonsterType.Shyren
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -673,7 +673,7 @@ function scr_battlegroup()
 	    
 		// Mad Dummy
 		case 45:
-	        global.monstertype[0] = 31
+	        global.monstertype[0] = MonsterType.MadDummy
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/dummybattle.ogg")
@@ -688,8 +688,8 @@ function scr_battlegroup()
 	    
 		// Aaron, Woshua (Spooky Music Cutscene)
 		case 46:
-	        global.monstertype[0] = 23
-	        global.monstertype[1] = 28
+	        global.monstertype[0] = MonsterType.Aaron
+	        global.monstertype[1] = MonsterType.Woshua
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
 	        global.battlelv = 0
@@ -704,7 +704,7 @@ function scr_battlegroup()
 	    
 		// Undyne (Boss)
 		case 47:
-	        global.monstertype[0] = 32
+	        global.monstertype[0] = MonsterType.Undyne
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/undyneboss.ogg")
@@ -720,7 +720,7 @@ function scr_battlegroup()
 		
 		// Mettaton Quiz
 		case 48:
-	        global.monstertype[0] = 33
+	        global.monstertype[0] = MonsterType.Mettaton_Quiz
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/mettatonbattle.ogg")
@@ -736,8 +736,8 @@ function scr_battlegroup()
 	    
 		// Royal Guards
 		case 49:
-	        global.monstertype[0] = 34
-	        global.monstertype[1] = 35
+	        global.monstertype[0] = MonsterType.RG_01
+	        global.monstertype[1] = MonsterType.RG_02
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -752,7 +752,7 @@ function scr_battlegroup()
 	    
 		// Tsunderplane
 		case 50:
-	        global.monstertype[0] = 36
+	        global.monstertype[0] = MonsterType.Tsunderplane
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -767,7 +767,7 @@ function scr_battlegroup()
 	    
 		// Vulkin
 		case 51:
-	        global.monstertype[0] = 37
+	        global.monstertype[0] = MonsterType.Vulkin
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -782,7 +782,7 @@ function scr_battlegroup()
 	    
 		// Pyrope
 		case 52:
-	        global.monstertype[0] = 38
+	        global.monstertype[0] = MonsterType.Pyrope
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
@@ -799,8 +799,8 @@ function scr_battlegroup()
 		
 		// Double Moldsmal
 		case 53:
-	        global.monstertype[0] = 12
-	        global.monstertype[1] = 12
+	        global.monstertype[0] = MonsterType.Moldsmal_2
+	        global.monstertype[1] = MonsterType.Moldsmal_2
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -815,8 +815,8 @@ function scr_battlegroup()
 	    
 		// Woshua, Aaron
 		case 54:
-	        global.monstertype[0] = 28
-	        global.monstertype[1] = 23
+	        global.monstertype[0] = MonsterType.Woshua
+	        global.monstertype[1] = MonsterType.Aaron
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -831,8 +831,8 @@ function scr_battlegroup()
 	    
 		// Woshua, Moldbygg
 		case 55:
-	        global.monstertype[0] = 28
-	        global.monstertype[1] = 26
+	        global.monstertype[0] = MonsterType.Woshua
+	        global.monstertype[1] = MonsterType.Moldbygg
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -862,7 +862,7 @@ function scr_battlegroup()
 		
 		// Muffet (Boss)
 	    case 56:
-	        global.monstertype[0] = 39
+	        global.monstertype[0] = MonsterType.Muffet
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/spider.ogg")
@@ -877,7 +877,7 @@ function scr_battlegroup()
 	    
 		// Mettaton (Second Encounter)
 		case 57:
-	        global.monstertype[0] = 40
+	        global.monstertype[0] = MonsterType.Mettaton_TilePuzzle
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/mettatonbattle.ogg")
@@ -894,7 +894,7 @@ function scr_battlegroup()
 		
 		// Undyne (Date Fight)
 		case 58:
-	        global.monstertype[0] = 41
+	        global.monstertype[0] = MonsterType.Undyne_Date
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/undyneboss.ogg")
@@ -911,7 +911,7 @@ function scr_battlegroup()
 		
 		// Madjick
 		case 59:
-	        global.monstertype[0] = 42
+	        global.monstertype[0] = MonsterType.Madjick
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
@@ -924,7 +924,7 @@ function scr_battlegroup()
 	    
 		// Knight Knight
 		case 60:
-	        global.monstertype[0] = 43
+	        global.monstertype[0] = MonsterType.KnightKnight
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
@@ -937,7 +937,7 @@ function scr_battlegroup()
 	    
 		// Final Froggit (Unused)
 		case 61:
-	        global.monstertype[0] = 44
+	        global.monstertype[0] = MonsterType.FinalFroggit
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
@@ -950,7 +950,7 @@ function scr_battlegroup()
 	    
 		// Astigmatism
 		case 62:
-	        global.monstertype[0] = 45
+	        global.monstertype[0] = MonsterType.Astigmatism
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
@@ -963,7 +963,7 @@ function scr_battlegroup()
 	    
 		// Whimsalot (Unused)
 		case 63:
-	        global.monstertype[0] = 46
+	        global.monstertype[0] = MonsterType.Whimsalot
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
@@ -976,8 +976,8 @@ function scr_battlegroup()
 	    
 		// Whimsalot, Final Froggit
 		case 64:
-	        global.monstertype[0] = 46
-	        global.monstertype[1] = 44
+	        global.monstertype[0] = MonsterType.Whimsalot
+	        global.monstertype[1] = MonsterType.FinalFroggit
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
 	        global.battlelv = 0
@@ -990,8 +990,8 @@ function scr_battlegroup()
 	    
 		// Whimsalot, Astigmatism
 		case 65:
-	        global.monstertype[0] = 46
-	        global.monstertype[1] = 45
+	        global.monstertype[0] = MonsterType.Whimsalot
+	        global.monstertype[1] = MonsterType.Astigmatism
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
 	        global.battlelv = 0
@@ -1004,8 +1004,8 @@ function scr_battlegroup()
 	    
 		// Final Froggit, Astigmatism
 		case 66:
-	        global.monstertype[0] = 44
-	        global.monstertype[1] = 45
+	        global.monstertype[0] = MonsterType.FinalFroggit
+	        global.monstertype[1] = MonsterType.Astigmatism
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
 	        global.battlelv = 0
@@ -1018,9 +1018,9 @@ function scr_battlegroup()
 	    
 		// Final Froggit, Astigmatism, Whimsalot
 		case 67:
-	        global.monstertype[0] = 44
-	        global.monstertype[1] = 45
-	        global.monstertype[2] = 46
+	        global.monstertype[0] = MonsterType.FinalFroggit
+	        global.monstertype[1] = MonsterType.Astigmatism
+	        global.monstertype[2] = MonsterType.Whimsalot
 	        global.msc = 0
 	        global.battlelv = 0
 	        global.actfirst = 0
@@ -1033,8 +1033,8 @@ function scr_battlegroup()
 	    
 		// Knight Knight, Madjick
 		case 68:
-	        global.monstertype[0] = 43
-	        global.monstertype[1] = 42
+	        global.monstertype[0] = MonsterType.KnightKnight
+	        global.monstertype[1] = MonsterType.Madjick
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
 	        global.battlelv = 0
@@ -1049,7 +1049,7 @@ function scr_battlegroup()
 		
 		// Bomb (Unused)
 		case 69:
-	        global.monstertype[0] = 47
+	        global.monstertype[0] = MonsterType.Bomb
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
@@ -1062,7 +1062,7 @@ function scr_battlegroup()
 	    
 		// Dog Bomb
 		case 70:
-	        global.monstertype[0] = 47
+	        global.monstertype[0] = MonsterType.Bomb
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
@@ -1072,15 +1072,15 @@ function scr_battlegroup()
 	        global.msg[0] = scr_gettext("scr_battlegroup_1029")
 	        global.monsterinstance[0] = instance_create(256, 180, obj_battlebomb)
 	        global.monstername[0] = scr_gettext("monstername_47a")
-	        global.monsterinstance[0].bombtype = 1
-	        global.monsterinstance[0].mypart1.type = 1
-	        global.monsterinstance[0].mypart1.bombtype = 1
+	        global.monsterinstance[0].bombtype = BombType.Dog
+	        global.monsterinstance[0].mypart1.type = BombType.Dog
+	        global.monsterinstance[0].mypart1.bombtype = BombType.Dog
 	        global.monsterinstance[0].mypart1.sprite_index = spr_tobdog_sleep_firebattle
 	        break
 	    
 		// Water Glass Bomb
 		case 71:
-	        global.monstertype[0] = 47
+	        global.monstertype[0] = MonsterType.Bomb
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
@@ -1090,15 +1090,15 @@ function scr_battlegroup()
 	        global.msg[0] = scr_gettext("scr_battlegroup_1049")
 	        global.monsterinstance[0] = instance_create(256, 180, obj_battlebomb)
 	        global.monstername[0] = scr_gettext("monstername_47b")
-	        global.monsterinstance[0].bombtype = 2
-	        global.monsterinstance[0].mypart1.type = 2
-	        global.monsterinstance[0].mypart1.bombtype = 2
+	        global.monsterinstance[0].bombtype = BombType.ExtremelyAgileGlassOfWater
+	        global.monsterinstance[0].mypart1.type = BombType.ExtremelyAgileGlassOfWater
+	        global.monsterinstance[0].mypart1.bombtype = BombType.ExtremelyAgileGlassOfWater
 	        global.monsterinstance[0].mypart1.sprite_index = spr_waterglass_battle
 	        break
 	    
 		// Script Bomb
 		case 72:
-	        global.monstertype[0] = 47
+	        global.monstertype[0] = MonsterType.Bomb
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
@@ -1108,14 +1108,14 @@ function scr_battlegroup()
 	        global.msg[0] = scr_gettext("scr_battlegroup_1068")
 	        global.monsterinstance[0] = instance_create(256, 100, obj_battlebomb)
 	        global.monstername[0] = scr_gettext("monstername_47c")
-	        global.monsterinstance[0].bombtype = 3
-	        global.monsterinstance[0].mypart1.type = 3
-	        global.monsterinstance[0].mypart1.bombtype = 3
+	        global.monsterinstance[0].bombtype = BombType.Script
+	        global.monsterinstance[0].mypart1.type = BombType.Script
+	        global.monsterinstance[0].mypart1.bombtype = BombType.Script
 	        break
 	    
 		// Basketball Bomb
 		case 73:
-	        global.monstertype[0] = 47
+	        global.monstertype[0] = MonsterType.Bomb
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
@@ -1125,14 +1125,14 @@ function scr_battlegroup()
 	        global.msg[0] = scr_gettext("scr_battlegroup_1088")
 	        global.monsterinstance[0] = instance_create(256, 80, obj_battlebomb)
 	        global.monstername[0] = scr_gettext("monstername_47d")
-	        global.monsterinstance[0].bombtype = 4
-	        global.monsterinstance[0].mypart1.type = 4
-	        global.monsterinstance[0].mypart1.bombtype = 4
+	        global.monsterinstance[0].bombtype = BombType.Basketball
+	        global.monsterinstance[0].mypart1.type = BombType.Basketball
+	        global.monsterinstance[0].mypart1.bombtype = BombType.Basketball
 	        break
 	    
 		// Present Bomb
 		case 74:
-	        global.monstertype[0] = 47
+	        global.monstertype[0] = MonsterType.Bomb
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
@@ -1142,14 +1142,14 @@ function scr_battlegroup()
 	        global.msg[0] = scr_gettext("scr_battlegroup_1107")
 	        global.monsterinstance[0] = instance_create(250, 100, obj_battlebomb)
 	        global.monstername[0] = scr_gettext("monstername_47e")
-	        global.monsterinstance[0].bombtype = 5
-	        global.monsterinstance[0].mypart1.type = 5
-	        global.monsterinstance[0].mypart1.bombtype = 5
+	        global.monsterinstance[0].bombtype = BombType.Present
+	        global.monsterinstance[0].mypart1.type = BombType.Present
+	        global.monsterinstance[0].mypart1.bombtype = BombType.Present
 	        break
 	    
 		// Game Bomb
 		case 75:
-	        global.monstertype[0] = 47
+	        global.monstertype[0] = MonsterType.Bomb
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
@@ -1159,15 +1159,15 @@ function scr_battlegroup()
 	        global.msg[0] = scr_gettext("scr_battlegroup_1126")
 	        global.monsterinstance[0] = instance_create(256, 100, obj_battlebomb)
 	        global.monstername[0] = scr_gettext("monstername_47f")
-	        global.monsterinstance[0].bombtype = 6
-	        global.monsterinstance[0].mypart1.type = 6
-	        global.monsterinstance[0].mypart1.bombtype = 6
+	        global.monsterinstance[0].bombtype = BombType.Game
+	        global.monsterinstance[0].mypart1.type = BombType.Game
+	        global.monsterinstance[0].mypart1.bombtype = BombType.Game
 	        break
 	    
 		// Royale Guards (RG 04, RG 03, Unused)
 		case 76:
-	        global.monstertype[0] = 49
-	        global.monstertype[1] = 48
+	        global.monstertype[0] = MonsterType.RG_04
+	        global.monstertype[1] = MonsterType.RG_03
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -1182,8 +1182,8 @@ function scr_battlegroup()
 	    
 		// Tsunderplane, Vulkin
 		case 77:
-	        global.monstertype[0] = 36
-	        global.monstertype[1] = 37
+	        global.monstertype[0] = MonsterType.Tsunderplane
+	        global.monstertype[1] = MonsterType.Vulkin
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -1198,8 +1198,8 @@ function scr_battlegroup()
 	    
 		// Double Pyrope
 		case 78:
-	        global.monstertype[0] = 38
-	        global.monstertype[1] = 38
+	        global.monstertype[0] = MonsterType.Pyrope
+	        global.monstertype[1] = MonsterType.Pyrope
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -1277,7 +1277,7 @@ function scr_battlegroup()
 	    
 		// Reaper Bird
 		case 83:
-	        global.monstertype[0] = 54
+	        global.monstertype[0] = MonsterType.ReaperBird
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/amalgam.ogg")
@@ -1292,7 +1292,7 @@ function scr_battlegroup()
 	    
 		// Snowdrakes Mother
 		case 84:
-	        global.monstertype[0] = 55
+	        global.monstertype[0] = MonsterType.Amalgamate
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/snowy.ogg")
@@ -1307,9 +1307,9 @@ function scr_battlegroup()
 	    
 		// Triple Memoryhead
 		case 85:
-	        global.monstertype[0] = 56
-	        global.monstertype[1] = 56
-	        global.monstertype[2] = 56
+	        global.monstertype[0] = MonsterType.Memoryhead
+	        global.monstertype[1] = MonsterType.Memoryhead
+	        global.monstertype[2] = MonsterType.Memoryhead
 	        global.batmusic = caster_load("music/amalgam.ogg")
 	        caster_loop(global.batmusic, 0.8, 1)
 	        global.msc = 0
@@ -1324,7 +1324,7 @@ function scr_battlegroup()
 	    
 		// Endogeny
 		case 86:
-	        global.monstertype[0] = 57
+	        global.monstertype[0] = MonsterType.Endogeny
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/sfx_woofenstein_loop.ogg")
@@ -1341,7 +1341,7 @@ function scr_battlegroup()
 		
 		// Undyne (Lost Soul)
 		case 87:
-	        global.monstertype[0] = 58
+	        global.monstertype[0] = MonsterType.LostSoul_Undyne
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        if (!caster_is_playing(global.batmusic))
@@ -1362,8 +1362,8 @@ function scr_battlegroup()
 	    
 		// Papyrus, Sans (Lost Soul)
 		case 88:
-	        global.monstertype[0] = 60
-	        global.monstertype[1] = 61
+	        global.monstertype[0] = MonsterType.LostSoul_Papyrus
+	        global.monstertype[1] = MonsterType.LostSoul_Sans
 	        global.monstertype[2] = MonsterType.NotSet
 	        if (!caster_is_playing(global.batmusic))
 	        {
@@ -1384,7 +1384,7 @@ function scr_battlegroup()
 	    
 		// Alphys (Lost Soul)
 		case 89:
-	        global.monstertype[0] = 59
+	        global.monstertype[0] = MonsterType.LostSoul_Alphys
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        if (!caster_is_playing(global.batmusic))
@@ -1405,8 +1405,8 @@ function scr_battlegroup()
 	    
 		// Toriel, Asgore (Lost Soul)
 		case 90:
-	        global.monstertype[0] = 62
-	        global.monstertype[1] = 63
+	        global.monstertype[0] = MonsterType.LostSoul_Toriel
+	        global.monstertype[1] = MonsterType.LostSoul_Asgore
 	        global.monstertype[2] = MonsterType.NotSet
 	        if (!caster_is_playing(global.batmusic))
 	        {
@@ -1429,7 +1429,7 @@ function scr_battlegroup()
 		
 		// Monster Kid
 		case 91:
-	        global.monstertype[0] = 64
+	        global.monstertype[0] = MonsterType.MonsterKid
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/prebattle1.ogg")
@@ -1444,7 +1444,7 @@ function scr_battlegroup()
 	    
 		// Undyne (Genocide Boss)
 		case 92:
-	        global.monstertype[0] = 65
+	        global.monstertype[0] = MonsterType.UndyneTheUndying
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/x_undyne.ogg")
@@ -1459,7 +1459,7 @@ function scr_battlegroup()
 	    
 		// Glad Dummy
 		case 93:
-	        global.monstertype[0] = 66
+	        global.monstertype[0] = MonsterType.GladDummy
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/prebattle1.ogg")
@@ -1474,7 +1474,7 @@ function scr_battlegroup()
 	    
 		// Mettaton NEO
 		case 94:
-	        global.monstertype[0] = 67
+	        global.monstertype[0] = MonsterType.MettatonNEO
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/mettaton_neo.ogg")
@@ -1491,7 +1491,7 @@ function scr_battlegroup()
 		case 95:
 	        with (obj_battlebg)
 	            instance_destroy()
-	        global.monstertype[0] = 68
+	        global.monstertype[0] = MonsterType.Sans
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/zz_megalovania.ogg")
@@ -1507,7 +1507,7 @@ function scr_battlegroup()
 		
 		// Asgore (Intro)
 		case 100:
-	        global.monstertype[0] = 52
+	        global.monstertype[0] = MonsterType.Asgore
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.msc = 0
@@ -1522,7 +1522,7 @@ function scr_battlegroup()
 	    
 		// Asgore (Boss)
 		case 101:
-	        global.monstertype[0] = 52
+	        global.monstertype[0] = MonsterType.Asgore
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/vsasgore.ogg")
@@ -1541,8 +1541,8 @@ function scr_battlegroup()
 		
 		// Final Froggit, Astigmatism
 		case 120:
-	        global.monstertype[0] = 70
-	        global.monstertype[1] = 71
+	        global.monstertype[0] = MonsterType.FinalFroggit_Hardmode
+	        global.monstertype[1] = MonsterType.Astigmatism_Hardmode
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle2.ogg")
 	        caster_loop(global.batmusic, 0.75, 1)
@@ -1557,8 +1557,8 @@ function scr_battlegroup()
 	    
 		// Final Froggit, Migospel
 		case 121:
-	        global.monstertype[0] = 70
-	        global.monstertype[1] = 73
+	        global.monstertype[0] = MonsterType.FinalFroggit_Hardmode
+	        global.monstertype[1] = MonsterType.Migospel
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle2.ogg")
 	        caster_loop(global.batmusic, 0.75, 1)
@@ -1573,7 +1573,7 @@ function scr_battlegroup()
 	    
 		// Parsnik
 		case 122:
-	        global.monstertype[0] = 75
+	        global.monstertype[0] = MonsterType.Parsnik
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle2.ogg")
@@ -1588,8 +1588,8 @@ function scr_battlegroup()
 	    
 		// Double Moldessa
 		case 123:
-	        global.monstertype[0] = 74
-	        global.monstertype[1] = 74
+	        global.monstertype[0] = MonsterType.Moldessa
+	        global.monstertype[1] = MonsterType.Moldessa
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle2.ogg")
 	        caster_loop(global.batmusic, 0.75, 1)
@@ -1604,9 +1604,9 @@ function scr_battlegroup()
 	    
 		// Triple Moldessa
 		case 124:
-	        global.monstertype[0] = 74
-	        global.monstertype[1] = 74
-	        global.monstertype[2] = 74
+	        global.monstertype[0] = MonsterType.Moldessa
+	        global.monstertype[1] = MonsterType.Moldessa
+	        global.monstertype[2] = MonsterType.Moldessa
 	        global.batmusic = caster_load("music/battle2.ogg")
 	        caster_loop(global.batmusic, 0.75, 1)
 	        global.msc = 0
@@ -1621,8 +1621,8 @@ function scr_battlegroup()
 	    
 		// Final Froggit, Whimsalot
 		case 125:
-	        global.monstertype[0] = 70
-	        global.monstertype[1] = 72
+	        global.monstertype[0] = MonsterType.FinalFroggit_Hardmode
+	        global.monstertype[1] = MonsterType.Whimsalot_Hardmode
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle2.ogg")
 	        caster_loop(global.batmusic, 0.75, 1)
@@ -1637,7 +1637,7 @@ function scr_battlegroup()
 	    
 		// Final Froggit
 		case 126:
-	        global.monstertype[0] = 70
+	        global.monstertype[0] = MonsterType.FinalFroggit_Hardmode
 	        global.monstertype[1] = MonsterType.NotSet
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle2.ogg")
@@ -1652,8 +1652,8 @@ function scr_battlegroup()
 	    
 		// Whimsalot, Parsnik (Unused)
 		case 127:
-	        global.monstertype[0] = 72
-	        global.monstertype[1] = 75
+	        global.monstertype[0] = MonsterType.Whimsalot_Hardmode
+	        global.monstertype[1] = MonsterType.Parsnik
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle2.ogg")
 	        caster_loop(global.batmusic, 0.75, 1)
@@ -1668,8 +1668,8 @@ function scr_battlegroup()
 	    
 		// Moldessa, Migospel
 		case 128:
-	        global.monstertype[0] = 74
-	        global.monstertype[1] = 73
+	        global.monstertype[0] = MonsterType.Moldessa
+	        global.monstertype[1] = MonsterType.Migospel
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle2.ogg")
 	        caster_loop(global.batmusic, 0.75, 1)
@@ -1684,8 +1684,8 @@ function scr_battlegroup()
 	    
 		// Parsnik, Migospel
 		case 129:
-	        global.monstertype[0] = 75
-	        global.monstertype[1] = 73
+	        global.monstertype[0] = MonsterType.Parsnik
+	        global.monstertype[1] = MonsterType.Migospel
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle2.ogg")
 	        caster_loop(global.batmusic, 0.75, 1)
@@ -1717,7 +1717,7 @@ function scr_battlegroup()
 		// Parsnik, Astigmatism (Unused)
 		case 131:
 	        global.monstertype[0] = MonsterType.Parsnik
-	        global.monstertype[1] = MonsterType.Astigmatism_2
+	        global.monstertype[1] = MonsterType.Astigmatism_Hardmode
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle2.ogg")
 	        caster_loop(global.batmusic, 0.75, 1)
@@ -1732,8 +1732,8 @@ function scr_battlegroup()
 	    
 		// Double Astigmatism
 		case 132:
-	        global.monstertype[0] = MonsterType.Astigmatism_2
-	        global.monstertype[1] = MonsterType.Astigmatism_2
+	        global.monstertype[0] = MonsterType.Astigmatism_Hardmode
+	        global.monstertype[1] = MonsterType.Astigmatism_Hardmode
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle2.ogg")
 	        caster_loop(global.batmusic, 0.75, 1)
@@ -1748,7 +1748,7 @@ function scr_battlegroup()
 	    
 		// Astigmatism, Migospel, Moldessa (Unused)
 		case 133:
-	        global.monstertype[0] = MonsterType.Astigmatism_2
+	        global.monstertype[0] = MonsterType.Astigmatism_Hardmode
 	        global.monstertype[1] = MonsterType.Migospel
 	        global.monstertype[2] = MonsterType.Moldessa
 	        global.batmusic = caster_load("music/battle2.ogg")
@@ -1765,7 +1765,7 @@ function scr_battlegroup()
 	    
 		// Whimsalot, Parsnik, Moldessa (Unused)
 		case 134:
-	        global.monstertype[0] = MonsterType.Astigmatism_2 // Vultu: This isn't incorrect, toby just made an error
+	        global.monstertype[0] = MonsterType.Astigmatism_Hardmode // Vultu: This isn't incorrect, toby just made an error
 	        global.monstertype[1] = MonsterType.Parsnik
 	        global.monstertype[2] = MonsterType.Moldessa
 	        global.batmusic = caster_load("music/battle2.ogg")

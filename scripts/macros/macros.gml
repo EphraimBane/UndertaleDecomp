@@ -756,6 +756,17 @@ enum BurgerPantsStatus
 	Talked
 }
 
+enum BombType
+{
+	NotSet,
+	Dog,
+	ExtremelyAgileGlassOfWater,
+	Script,
+	Basketball,
+	Present,
+	Game
+}
+
 enum MonsterType
 {
 	NotSet,
@@ -786,15 +797,15 @@ enum MonsterType
 	Aaron,
 	Temmie,
 	Papyrus,
-	Moldsmal_3,
-	// Empty
+	Moldbygg,
+	// 27 Unused
 	Woshua = 28,
 	Shyren,
 	// 30 - 39
 	Agent,
 	MadDummy,
-	Undyne_1,
-	Mettaton_1,
+	Undyne,
+	Mettaton_Quiz,
 	RG_01,
 	RG_02,
 	Tsunderplane,
@@ -802,13 +813,13 @@ enum MonsterType
 	Pyrope,
 	Muffet,
 	// 40 - 49
-	Mettaton_2,
-	Undyne_2,
+	Mettaton_TilePuzzle,
+	Undyne_Date,
 	Madjick,
 	KnightKnight,
-	FinalFroggit_1,
-	Astigmatism_1,
-	Whimsalot_1,
+	FinalFroggit,
+	Astigmatism,
+	Whimsalot,
 	Bomb,
 	RG_03,
 	RG_04,
@@ -829,14 +840,14 @@ enum MonsterType
 	LostSoul_Toriel,
 	LostSoul_Asgore,
 	MonsterKid,
-	UndyneUndying,
+	UndyneTheUndying,
 	GladDummy,
 	MettatonNEO,
 	Sans,
 	// 70 - 77
-	FinalFroggit_2 = 70,
-	Astigmatism_2,
-	Whimsalot_2,
+	FinalFroggit_Hardmode = 70,
+	Astigmatism_Hardmode,
+	Whimsalot_Hardmode,
 	Migospel,
 	Moldessa,
 	Parsnik,
