@@ -52,7 +52,7 @@ enum OSFlavors
 #macro FL_InBattle global.flag[15]
 #macro FL_TypeHeartTransition global.flag[16]
 #macro FL_UnknownBoolean17 global.flag[17]
-#macro FL_UnknownBoolean18 global.flag[18]
+#macro FL_UndyneZoomCutscene global.flag[18]
 // 19 Unused
 #macro FL_AnimationIndex global.flag[20]
 #macro FL_CookedNoodles global.flag[21]
@@ -319,7 +319,7 @@ enum OSFlavors
 #macro FL_UnusedMadjickSoundHandle global.flag[393] // Vultu: Apparently Madjick's orb used to have a sound?
 // 394 - Unused
 #macro FL_DefusedBombsCounter global.flag[395]
-#macro FL_FoughtMuffet global.flag[396] // TODO: This isn't a bool look into this
+#macro FL_MuffetUnknown global.flag[396] // TODO: This isn't a bool look into this
 #macro FL_KilledMuffet global.flag[397]
 #macro FL_CurrentElevatorFloor global.flag[398]
 #macro FL_CompletedShootPuzzle3 global.flag[399]
@@ -756,13 +756,24 @@ enum BurgerPantsStatus
 	Talked
 }
 
+enum BombType
+{
+	NotSet,
+	Dog,
+	ExtremelyAgileGlassOfWater,
+	Script,
+	Basketball,
+	Present,
+	Game
+}
+
 enum MonsterType
 {
-	// 1 - 9
-	TestFroggit = 1,
+	NotSet,
+	TestFroggit,
 	Dummy,
-	Froggit_1,
-	Froggit_2,
+	Tutorial_Froggit,
+	Froggit,
 	Whimsun,
 	Moldsmal_1,
 	Migosp,
@@ -786,15 +797,15 @@ enum MonsterType
 	Aaron,
 	Temmie,
 	Papyrus,
-	Moldsmal_3,
-	// Empty
+	Moldbygg,
+	// 27 Unused
 	Woshua = 28,
 	Shyren,
 	// 30 - 39
 	Agent,
 	MadDummy,
-	Undyne_1,
-	Mettaton_1,
+	Undyne,
+	Mettaton_Quiz,
 	RG_01,
 	RG_02,
 	Tsunderplane,
@@ -802,13 +813,13 @@ enum MonsterType
 	Pyrope,
 	Muffet,
 	// 40 - 49
-	Mettaton_2,
-	Undyne_2,
+	Mettaton_TilePuzzle,
+	Undyne_Date,
 	Madjick,
 	KnightKnight,
-	FinalFroggit_1,
-	Astigmatism_1,
-	Whimsalot_1,
+	FinalFroggit,
+	Astigmatism,
+	Whimsalot,
 	Bomb,
 	RG_03,
 	RG_04,
@@ -829,14 +840,14 @@ enum MonsterType
 	LostSoul_Toriel,
 	LostSoul_Asgore,
 	MonsterKid,
-	UndyneUndying,
+	UndyneTheUndying,
 	GladDummy,
 	MettatonNEO,
 	Sans,
 	// 70 - 77
-	FinalFroggit_2 = 70,
-	Astigmatism_2,
-	Whimsalot_2,
+	FinalFroggit_Hardmode = 70,
+	Astigmatism_Hardmode,
+	Whimsalot_Hardmode,
 	Migospel,
 	Moldessa,
 	Parsnik,

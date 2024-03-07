@@ -144,7 +144,7 @@ with (obj_undynetrigger_boss)
         __view_set(VIEW_PROP_CAM_X, 1, 0)
         __view_set(VIEW_PROP_CAM_Y, 1, 60)
         __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
-        FL_UnknownBoolean18 = false
+        FL_UndyneZoomCutscene = false
         __view_set(VIEW_PROP_CAM_X, 0, 0)
         __view_set(VIEW_PROP_CAM_Y, 0, 60)
         __view_set(VIEW_PROP_CAM_HEIGHT, 0, 240)

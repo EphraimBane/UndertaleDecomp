@@ -40,7 +40,7 @@ function scr_monstersetup()
 	    global.itemrewardid = 0
 	    global.itemrewardchance = 0
 	}
-	if (global.monstertype[myself] == MonsterType.Froggit_1)
+	if (global.monstertype[myself] == MonsterType.Tutorial_Froggit)
 	{
 	    global.monstername[myself] = scr_gettext("monstername_3")
 	    global.monstermaxhp[myself] = 20
@@ -52,7 +52,7 @@ function scr_monstersetup()
 	    global.itemrewardid = 1
 	    global.itemrewardchance = 50
 	}
-	if (global.monstertype[myself] == MonsterType.Froggit_2)
+	if (global.monstertype[myself] == MonsterType.Froggit)
 	{
 	    global.monstername[myself] = scr_gettext("monstername_4")
 	    global.monstermaxhp[myself] = 30
@@ -322,7 +322,7 @@ function scr_monstersetup()
 	    global.itemrewardid = 0
 	    global.itemrewardchance = 0
 	}
-	if (global.monstertype[myself] == MonsterType.Moldsmal_3)
+	if (global.monstertype[myself] == MonsterType.Moldbygg)
 	{
 	    global.monstername[myself] = scr_gettext("monstername_26")
 	    global.monstermaxhp[myself] = 70
@@ -382,7 +382,7 @@ function scr_monstersetup()
 	    global.itemrewardid = 0
 	    global.itemrewardchance = 0
 	}
-	if (global.monstertype[myself] == MonsterType.Undyne_1)
+	if (global.monstertype[myself] == MonsterType.Undyne)
 	{
 	    global.monstername[myself] = scr_gettext("monstername_32")
 	    global.monstermaxhp[myself] = 1500
@@ -394,7 +394,7 @@ function scr_monstersetup()
 	    global.itemrewardid = 0
 	    global.itemrewardchance = 0
 	}
-	if (global.monstertype[myself] == MonsterType.Mettaton_1)
+	if (global.monstertype[myself] == MonsterType.Mettaton_Quiz)
 	{
 	    global.monstername[myself] = scr_gettext("monstername_33")
 	    global.monstermaxhp[myself] = 9999
@@ -478,7 +478,7 @@ function scr_monstersetup()
 	    global.itemrewardid = 0
 	    global.itemrewardchance = 0
 	}
-	if (global.monstertype[myself] == MonsterType.Mettaton_2)
+	if (global.monstertype[myself] == MonsterType.Mettaton_TilePuzzle)
 	{
 	    global.monstername[myself] = scr_gettext("monstername_40")
 	    global.monstermaxhp[myself] = 9999
@@ -490,7 +490,7 @@ function scr_monstersetup()
 	    global.itemrewardid = 0
 	    global.itemrewardchance = 0
 	}
-	if (global.monstertype[myself] == MonsterType.Undyne_2)
+	if (global.monstertype[myself] == MonsterType.Undyne_Date)
 	{
 	    global.monstername[myself] = scr_gettext("monstername_41")
 	    global.monstermaxhp[myself] = 1500
@@ -526,7 +526,7 @@ function scr_monstersetup()
 	    global.itemrewardid = 0
 	    global.itemrewardchance = 0
 	}
-	if (global.monstertype[myself] == MonsterType.FinalFroggit_1)
+	if (global.monstertype[myself] == MonsterType.FinalFroggit)
 	{
 	    global.monstername[myself] = scr_gettext("monstername_44")
 	    global.monstermaxhp[myself] = 100
@@ -538,7 +538,7 @@ function scr_monstersetup()
 	    global.itemrewardid = 0
 	    global.itemrewardchance = 0
 	}
-	if (global.monstertype[myself] == MonsterType.Astigmatism_1)
+	if (global.monstertype[myself] == MonsterType.Astigmatism)
 	{
 	    global.monstername[myself] = scr_gettext("monstername_45")
 	    global.monstermaxhp[myself] = 120
@@ -550,7 +550,7 @@ function scr_monstersetup()
 	    global.itemrewardid = 0
 	    global.itemrewardchance = 0
 	}
-	if (global.monstertype[myself] == MonsterType.Whimsalot_1)
+	if (global.monstertype[myself] == MonsterType.Whimsalot)
 	{
 	    global.monstername[myself] = scr_gettext("monstername_46")
 	    global.monstermaxhp[myself] = 95
@@ -778,7 +778,7 @@ function scr_monstersetup()
 	    global.itemrewardid = 0
 	    global.itemrewardchance = 0
 	}
-	if (global.monstertype[myself] == MonsterType.UndyneUndying)
+	if (global.monstertype[myself] == MonsterType.UndyneTheUndying)
 	{
 	    global.monstername[myself] = scr_gettext("monstername_65")
 	    global.monstermaxhp[myself] = 23000
@@ -826,7 +826,7 @@ function scr_monstersetup()
 	    global.itemrewardid = 0
 	    global.itemrewardchance = 0
 	}
-	if (global.monstertype[myself] == MonsterType.FinalFroggit_2)
+	if (global.monstertype[myself] == MonsterType.FinalFroggit_Hardmode)
 	{
 	    global.monstername[myself] = scr_gettext("monstername_70")
 	    global.monstermaxhp[myself] = 32
@@ -838,7 +838,7 @@ function scr_monstersetup()
 	    global.itemrewardid = 0
 	    global.itemrewardchance = 0
 	}
-	if (global.monstertype[myself] == MonsterType.Astigmatism_2)
+	if (global.monstertype[myself] == MonsterType.Astigmatism_Hardmode)
 	{
 	    global.monstername[myself] = scr_gettext("monstername_71")
 	    global.monstermaxhp[myself] = 50
@@ -850,7 +850,7 @@ function scr_monstersetup()
 	    global.itemrewardid = 1
 	    global.itemrewardchance = 50
 	}
-	if (global.monstertype[myself] == MonsterType.Whimsalot_2)
+	if (global.monstertype[myself] == MonsterType.Whimsalot_Hardmode)
 	{
 	    global.monstername[myself] = scr_gettext("monstername_72")
 	    global.monstermaxhp[myself] = 20
