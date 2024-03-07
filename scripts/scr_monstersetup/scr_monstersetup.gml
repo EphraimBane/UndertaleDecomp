@@ -550,7 +550,7 @@ function scr_monstersetup()
 	    global.itemrewardid = 0
 	    global.itemrewardchance = 0
 	}
-	if (global.monstertype[myself] == MonsterType.Whimsalot_1)
+	if (global.monstertype[myself] == MonsterType.Whimsalot)
 	{
 	    global.monstername[myself] = scr_gettext("monstername_46")
 	    global.monstermaxhp[myself] = 95
