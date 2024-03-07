@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"GlobalInit",
+  "%Name":"GLOBALINIT",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"GlobalInit",
+  "name":"GLOBALINIT",
   "parent":{
-    "name":"Init",
-    "path":"folders/Scripts/Common/Init.yy",
+    "name":"Common",
+    "path":"folders/Scripts/Common.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
