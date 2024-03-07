@@ -139,10 +139,10 @@ if (global.myfight == 2)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_gyftrot_534")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 1)
             {
@@ -173,10 +173,10 @@ if (global.myfight == 2)
                 }
                 if (googly == 1)
                     global.msg[0] = scr_gettext("obj_gyftrot_554")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 if (googly == 1)
                 {
                     googly = 0
@@ -228,10 +228,10 @@ if (global.myfight == 2)
                 }
                 else
                     global.msg[0] = scr_gettext("obj_gyftrot_586")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 4)
             {
@@ -272,10 +272,10 @@ if (global.myfight == 2)
                     if (giftgiven == 2)
                         global.msg[0] = scr_gettext("obj_gyftrot_626")
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
         }
         global.heard = 1

@@ -1,6 +1,6 @@
 function scr_itemrewrite()
 {
-	OBJ_WRITER.halt = 3
+	obj_writer_set_halt(3)
 	OBJ_INSTAWRITER.halt = 3
 	if (global.bmenuno == 3)
 	    global.msc = 9

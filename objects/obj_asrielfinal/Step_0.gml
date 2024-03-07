@@ -149,7 +149,7 @@ if (global.myfight == 2)
                 {
                     global.msc = 0
                     savecon_a = 1
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     global.msg[0] = scr_gettext("obj_asrielfinal_468")
                     global.msg[1] = scr_gettext("obj_asrielfinal_469")
                     global.msg[2] = scr_gettext("obj_asrielfinal_470")
@@ -159,7 +159,7 @@ if (global.myfight == 2)
                     global.msg[6] = scr_gettext("obj_asrielfinal_474")
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                     whatiheard = 9
                 }
             }
@@ -175,10 +175,10 @@ if (global.myfight == 2)
                     }
                     else
                         event_user(1)
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                     whatiheard = 9
                 }
                 if (whatiheard == 3)
@@ -191,10 +191,10 @@ if (global.myfight == 2)
                     }
                     else
                         event_user(1)
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                 }
                 if (whatiheard == 1 || whatiheard == 4)
                 {
@@ -206,10 +206,10 @@ if (global.myfight == 2)
                     }
                     else
                         event_user(1)
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                 }
                 if (whatiheard == 2 || whatiheard == 5)
                 {
@@ -221,10 +221,10 @@ if (global.myfight == 2)
                     }
                     else
                         event_user(1)
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                 }
             }
             if (FL_AsrielFightConvoCounter == 0)
@@ -252,11 +252,11 @@ if (global.myfight == 2)
                         global.msg[6] = scr_gettext("obj_asrielfinal_564")
                         global.msg[7] = scr_gettext("obj_asrielfinal_565")
                         global.msg[8] = scr_gettext("obj_asrielfinal_566")
-                        OBJ_WRITER.halt = 3
+                        obj_writer_set_halt(3)
                         iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                         iii.depth = -1020
                         with (iii)
-                            halt = false
+                            halt = 0
                         whatiheard = 9
                     }
                     else
@@ -264,10 +264,10 @@ if (global.myfight == 2)
                         global.tempvalue[12] += 1
                         global.msc = 0
                         global.msg[0] = scr_gettext("obj_asrielfinal_577")
-                        OBJ_WRITER.halt = 3
+                        obj_writer_set_halt(3)
                         iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                         with (iii)
-                            halt = false
+                            halt = 0
                     }
                 }
             }

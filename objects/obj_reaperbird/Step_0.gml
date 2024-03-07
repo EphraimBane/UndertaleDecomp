@@ -139,29 +139,29 @@ if (global.myfight == 2)
                 if (mercymod < 100)
                 {
                     global.msc = 0
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     global.msg[0] = scr_gettext("obj_reaperbird_488", string(global.monsteratk[myself]), string(global.monsterdef[myself]))
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                     global.msg[0] = scr_gettext("obj_reaperbird_492", string(global.monsteratk[myself]), string(global.monsterdef[myself]))
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                     global.msg[0] = scr_gettext("obj_reaperbird_496", string(global.monsteratk[myself]), string(global.monsterdef[myself]))
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                     whatiheard = 9
                 }
                 else
                 {
                     global.msc = 0
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     global.msg[0] = scr_gettext("obj_reaperbird_505")
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                 }
             }
             if (whatiheard == 3)
@@ -178,10 +178,10 @@ if (global.myfight == 2)
                     global.monstername[myself] = scr_gettext("monstername_54b")
                     global.msg[0] = scr_gettext("obj_reaperbird_523")
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 1)
             {
@@ -197,10 +197,10 @@ if (global.myfight == 2)
                     global.monstername[myself] = scr_gettext("monstername_54b")
                     global.msg[0] = scr_gettext("obj_reaperbird_545")
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 4)
             {
@@ -208,20 +208,20 @@ if (global.myfight == 2)
                 global.msg[0] = scr_gettext("obj_reaperbird_557")
                 if (xclean == 1)
                     global.msg[0] = scr_gettext("obj_reaperbird_559")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 xclean = 1
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 2)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_reaperbird_569")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 5)
             {
@@ -237,10 +237,10 @@ if (global.myfight == 2)
                     global.monstername[myself] = scr_gettext("monstername_54b")
                     global.msg[0] = scr_gettext("obj_reaperbird_588")
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             global.heard = 1
         }

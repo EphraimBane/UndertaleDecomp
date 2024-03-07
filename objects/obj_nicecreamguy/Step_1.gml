@@ -61,7 +61,7 @@ if (conversation == 3 && instance_exists(OBJ_WRITER) == false)
 }
 if (myinteract == 3 && instance_exists(OBJ_WRITER))
 {
-    if (OBJ_WRITER.halt == false)
+    if (OBJ_WRITER.halt == 0)
         image_speed = 0.2
     else
         image_speed = 0

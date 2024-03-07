@@ -104,16 +104,16 @@ if (global.myfight == 2)
                 global.msc = 0
                 global.msg[0] = "* You say some raunchy&things to those frogs.&Jeeeez!/"
                 global.msg[1] = "* There's definitely some&sort of reaction./^"
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 3)
             {
                 global.myfight = 0
                 global.mnfight = 1
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
             }
             if (whatiheard == 0)
             {
@@ -121,26 +121,26 @@ if (global.myfight == 2)
                 global.bmenuno = 6
                 global.msc = 0
                 global.msg[0] = "* What's your favorite color?& &    * Red           * Orange"
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 6)
             {
                 global.msc = 0
                 global.msg[0] = "* Do robots dream of&electric sex?/^"
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
             }
             if (whatiheard == 7)
             {
                 global.msc = 0
                 global.msg[0] = "* I hate programming this./^"
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             global.heard = 1
         }

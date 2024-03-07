@@ -154,10 +154,10 @@ if (global.myfight == 2)
                     global.msg[0] = scr_gettext("obj_moldsmalx_484")
                 if (stage == 1)
                     global.msg[0] = scr_gettext("obj_moldsmalx_486")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 3)
             {
@@ -166,10 +166,10 @@ if (global.myfight == 2)
                     global.msg[0] = scr_gettext("obj_moldsmalx_495")
                 if (stage == 1)
                     global.msg[0] = scr_gettext("obj_moldsmalx_497")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 1)
             {
@@ -187,10 +187,10 @@ if (global.myfight == 2)
                         obj_woshua.clean = 0
                     }
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 4)
             {
@@ -202,10 +202,10 @@ if (global.myfight == 2)
                     FL_SparedMoldsmalx = 1
                     global.msg[0] = scr_gettext("obj_moldsmalx_530")
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 mercymod = 200
             }
             global.heard = 1

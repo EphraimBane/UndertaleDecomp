@@ -2,7 +2,7 @@ if (image_index == 0)
 {
     if instance_exists(OBJ_WRITER)
     {
-        if (OBJ_WRITER.halt == false)
+        if (OBJ_WRITER.halt == 0)
             instance_change(obj_face_torieltalk, true)
     }
 }

@@ -107,10 +107,10 @@ if (global.myfight == 2)
                         global.msg[2] = scr_gettext("obj_ripoff_sans_497") //"* Seeing how nicely you treated&  its brother^1, the other Lost&  Soul remembers^1, too!/%%
                     }
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 whatiheard = 9
             }
             if (whatiheard == 3)
@@ -132,10 +132,10 @@ if (global.myfight == 2)
                         global.msg[2] = scr_gettext("obj_ripoff_sans_527") //* Seeing how nicely you treated&  its brother^1, the other Lost&  Soul remembers^1, too!/%%
                     }
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 1)
             {
@@ -156,10 +156,10 @@ if (global.myfight == 2)
                         global.msg[2] = scr_gettext("obj_ripoff_sans_553")
                     }
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 4)
             {
@@ -183,10 +183,10 @@ if (global.myfight == 2)
                         global.msg[2] = scr_gettext("obj_ripoff_sans_590") //* The other Lost Soul remembers&  this conversation^1, too!/%%
                     }
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             global.heard = 1
         }

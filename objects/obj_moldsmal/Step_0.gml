@@ -110,20 +110,20 @@ if (global.myfight == 2)
                 global.msg[0] = scr_gettext("obj_moldsmal_412")
                 if (global.monsteratk[myself] > 6)
                     global.msg[0] = scr_gettext("obj_moldsmal_413")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 3)
             {
                 FL_SparedMoldsmal = 1
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_moldsmal_422")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 mercymod = 101
             }
             if (whatiheard == 1)
@@ -131,10 +131,10 @@ if (global.myfight == 2)
                 FL_SparedMoldsmal = 1
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_moldsmal_434")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 mercymod = 101
             }
             global.heard = 1

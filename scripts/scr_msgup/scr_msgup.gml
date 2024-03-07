@@ -17,6 +17,6 @@ function scr_msgup()
 	    n += 1
 	}
 	originalstring = scr_replace_buttons_pc(mystring[0])
-	halt = false
+	halt = 0
 	alarm[0] = textspeed
 }

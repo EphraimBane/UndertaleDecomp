@@ -3,7 +3,7 @@ scr_battlegroup(0, 0, 0, 0, 0)
 global.mercyuse = -1
 global.inbattle = true
 global.itemused = 0
-FL_FightingSans = 0
+FL_FightingSans = false
 runaway = 0
 global.msg[4] = global.msg[0]
 if (global.actfirst == 0 && global.extraintro == 0)

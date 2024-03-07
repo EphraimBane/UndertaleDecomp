@@ -210,7 +210,7 @@ while (n <= stringpos)
     }
     else if (ch == "/")
     {
-        halt = true
+        halt = 1
         var nextch = string_char_at(originalstring, (n + 1))
         if (nextch == "%")
             halt = 2

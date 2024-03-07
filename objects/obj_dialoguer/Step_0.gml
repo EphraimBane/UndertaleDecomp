@@ -2,7 +2,7 @@ if (instance_exists(writer) == false)
     instance_destroy()
 else if (control_check_pressed(CancelButton) || (global.decomp_vars.WristProtector && !global.decomp_vars.VanillaMode && control_check(MenuButton)))
 {
-    if (writer.halt == false)
+    if (writer.halt == 0)
     {
         if (global.typer != 10)
         {

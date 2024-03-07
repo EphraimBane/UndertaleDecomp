@@ -84,7 +84,9 @@ function wipeSaveData()
 	if (file_exists("system_information_962"))
 		file_delete("system_information_962");
 	if (file_exists("system_information_963"))
-		file_delete("system_information_962");
+		file_delete("system_information_963");
+		
+	SCR_GAMESTART();
 }
 #endregion
 

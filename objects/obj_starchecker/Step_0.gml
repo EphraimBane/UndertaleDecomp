@@ -17,7 +17,7 @@ if (bbox_top < ybound)
     y = yprevious
 if (buffer == 1)
 {
-    if (control_check_pressed(InteractButton) == 1 || control_check_pressed(CancelButton) == 1)
+    if (control_check_pressed(InteractButton) == true || control_check_pressed(CancelButton) == true)
         dest = 1
 }
 if (dest == 1)

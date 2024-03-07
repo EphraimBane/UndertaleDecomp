@@ -9,7 +9,7 @@ if (global.faceemotion == 9 && FL_UndyneExpression == 2)
     sprite_index = spr_face_undyne9_3
 if instance_exists(OBJ_WRITER)
 {
-    if (OBJ_WRITER.halt != false)
+    if (OBJ_WRITER.halt != 0)
     {
         image_speed = 0
         image_index = 0

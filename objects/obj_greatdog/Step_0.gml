@@ -130,10 +130,10 @@ if (global.myfight == 2)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_greatdog_466")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 1)
             {
@@ -146,10 +146,10 @@ if (global.myfight == 2)
                     global.msg[1] = scr_gettext("obj_greatdog_483")
                     close = 1
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 2)
             {
@@ -162,10 +162,10 @@ if (global.myfight == 2)
                 }
                 if (dogignore == 4)
                     global.msg[0] = scr_gettext("obj_greatdog_501")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (pet > 0)
                 global.monsterdef[myself] = -20
@@ -205,10 +205,10 @@ if (global.myfight == 2)
                 }
                 if (close == 0)
                     global.msg[0] = scr_gettext("obj_greatdog_549")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 4)
             {
@@ -227,10 +227,10 @@ if (global.myfight == 2)
                 if (pet == 0)
                     global.msg[0] = scr_gettext("obj_greatdog_573")
                 global.msc = 0
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             global.heard = 1
         }

@@ -177,7 +177,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                 if (global.bmenuno == 1)
                 {
                     global.mytarget = global.bmenucoord[1]
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     OBJ_INSTAWRITER.halt = 3
                     global.myfight = 1
                     obj_heart.x = -200
@@ -191,7 +191,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                     global.mntrg = global.monsterinstance[global.mytarget]
                     with (global.mntrg)
                         whatiheard = global.talked
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     OBJ_INSTAWRITER.halt = 3
                     snd_play(snd_select)
                     global.myfight = 2
@@ -201,7 +201,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                 if (global.bmenuno == 2)
                 {
                     global.mytarget = global.bmenucoord[1]
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     OBJ_INSTAWRITER.halt = 3
                     global.bmenuno = 10
                     global.msc = (1000 + global.monstertype[global.mytarget])
@@ -215,7 +215,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                 {
                     if (obj_time.right == 0 && obj_time.left == 0)
                     {
-                        OBJ_WRITER.halt = 3
+                        obj_writer_set_halt(3)
                         itempos = (global.bmenucoord[3] + ((global.bmenuno - 3) * 8))
                         thisitemid = global.item[itempos]
                         scr_itemuseb(itempos, thisitemid)
@@ -228,7 +228,7 @@ if (global.mnfight == 0 && global.myfight == 0)
                 }
                 if (global.bmenuno == 4)
                 {
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     global.mercyuse = global.bmenucoord[4]
                     if (global.mercyuse == true)
                     {
@@ -250,7 +250,7 @@ if (global.mnfight == 0 && global.myfight == 0)
         {
             if (global.bmenuno != 0 && global.bmenuno < 6)
             {
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 OBJ_INSTAWRITER.halt = 3
                 global.bmenuno = 0
                 global.typer = 1
@@ -261,7 +261,7 @@ if (global.mnfight == 0 && global.myfight == 0)
             }
             if (global.bmenuno == 10)
             {
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 OBJ_INSTAWRITER.halt = 3
                 global.bmenuno = 2
                 global.typer = 1
@@ -281,7 +281,7 @@ if (global.mnfight == 0 && global.myfight == 0)
             }
             if (global.bmenuno == 11)
             {
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 OBJ_INSTAWRITER.halt = 3
                 global.bmenuno = 3
                 global.typer = 1
@@ -379,7 +379,7 @@ if (global.myfight == 3)
                 with (global.monsterinstance[global.mytarget])
                     whatiheard = global.talked
                 obj_heart.x = -200
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 global.myfight = 2
             }
         }

@@ -145,10 +145,10 @@ if (global.myfight == 2)
             {
                 global.msc = 0
                 global.msg[0] = (((("* RG 03 " + string(global.monsteratk[myself])) + " ATK ") + string(global.monsterdef[myself])) + " DEF&* Royal Guard member with&  stuffy armor./^")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 whatiheard = 9
             }
             if (whatiheard == 1)
@@ -161,19 +161,19 @@ if (global.myfight == 2)
                     if instance_exists(obj_bara01)
                         obj_bara01.whatiheard = 12
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 3)
             {
                 global.msc = 0
                 global.msg[0] = "* You tell RG 03 that she&  should stand up for herself./^"
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             global.heard = 1
         }

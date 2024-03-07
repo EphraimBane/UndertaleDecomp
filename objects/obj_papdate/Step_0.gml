@@ -182,7 +182,7 @@ if (cn == 6 && instance_exists(OBJ_WRITER) == false)
 }
 if (cn == 7 && instance_exists(OBJ_WRITER) == true)
 {
-    if (OBJ_WRITER.stringno == 6 && OBJ_WRITER.halt != false)
+    if (OBJ_WRITER.stringno == 6 && OBJ_WRITER.halt != 0)
     {
         choice = 0
         choicer = 1
@@ -190,7 +190,7 @@ if (cn == 7 && instance_exists(OBJ_WRITER) == true)
         global.msg[0] = scr_gettext("obj_papdate_302")
         iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
         with (iii)
-            halt = false
+            halt = 0
         cn = 8
     }
 }
@@ -300,7 +300,7 @@ if (cn == 13 && instance_exists(OBJ_WRITER) == false)
 }
 if (cn == 14 && instance_exists(OBJ_WRITER) == true)
 {
-    if (OBJ_WRITER.stringno == 8 && OBJ_WRITER.halt != false)
+    if (OBJ_WRITER.stringno == 8 && OBJ_WRITER.halt != 0)
     {
         choice = 0
         choicer = 1
@@ -308,7 +308,7 @@ if (cn == 14 && instance_exists(OBJ_WRITER) == true)
         global.msg[0] = scr_gettext("obj_papdate_404")
         iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
         with (iii)
-            halt = false
+            halt = 0
         cn = 15
     }
 }
@@ -497,7 +497,7 @@ if (cn == 29 && instance_exists(OBJ_WRITER) == false)
 }
 if (cn == 30 && instance_exists(OBJ_WRITER) == true)
 {
-    if (OBJ_WRITER.halt != false)
+    if (OBJ_WRITER.halt != 0)
     {
         choice = 0
         choicer = 1
@@ -505,7 +505,7 @@ if (cn == 30 && instance_exists(OBJ_WRITER) == true)
         global.msg[0] = scr_gettext("obj_papdate_586")
         iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
         with (iii)
-            halt = false
+            halt = 0
         cn = 31
     }
 }
@@ -683,7 +683,7 @@ if (cn == 49)
 }
 if (cn == 50 && instance_exists(OBJ_WRITER) == true)
 {
-    if (OBJ_WRITER.halt != false && OBJ_WRITER.stringno == 3)
+    if (OBJ_WRITER.halt != 0 && OBJ_WRITER.stringno == 3)
     {
         choice = 0
         choicer = 1
@@ -691,7 +691,7 @@ if (cn == 50 && instance_exists(OBJ_WRITER) == true)
         global.msg[0] = scr_gettext("obj_papdate_756")
         iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
         with (iii)
-            halt = false
+            halt = 0
         cn = 51
     }
 }
@@ -756,7 +756,7 @@ if (cn == 56)
 }
 if (cn == 57 && instance_exists(OBJ_WRITER) == true)
 {
-    if (OBJ_WRITER.halt != false)
+    if (OBJ_WRITER.halt != 0)
     {
         choice = 0
         choicer = 1
@@ -764,7 +764,7 @@ if (cn == 57 && instance_exists(OBJ_WRITER) == true)
         global.msg[0] = scr_gettext("obj_papdate_815")
         iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
         with (iii)
-            halt = false
+            halt = 0
         cn = 58
     }
 }
@@ -841,7 +841,7 @@ if (cn >= 61)
 }
 if (cn == 62 && instance_exists(OBJ_WRITER) == true)
 {
-    if (OBJ_WRITER.halt != false && OBJ_WRITER.stringno == 5)
+    if (OBJ_WRITER.halt != 0 && OBJ_WRITER.stringno == 5)
     {
         if (friendgraph.x > 90)
             friendgraph.hspeed = 0
@@ -851,7 +851,7 @@ if (cn == 62 && instance_exists(OBJ_WRITER) == true)
         global.msg[0] = scr_gettext("obj_papdate_885")
         iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
         with (iii)
-            halt = false
+            halt = 0
         cn = 63
     }
 }
@@ -894,7 +894,7 @@ if (cn == 65)
     global.msg[2] = scr_gettext("obj_papdate_913")
     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
     with (iii)
-        halt = false
+        halt = 0
 }
 if (cn == 66.5 && instance_exists(OBJ_WRITER))
 {

@@ -106,19 +106,19 @@ if (global.myfight == 2)
             {
                 global.msc = 0
                 global.msg[0] = "* DOGE - ATK 7 DEF 5&* Pronounced \"dohj.\" Soft j^1.&* Seems like she wants a walk./^"
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 1)
             {
                 global.msc = 0
                 global.msg[0] = "* You tried to bathe Doge^2,&  but she's perfectly clean.../^"
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 2)
             {
@@ -126,30 +126,30 @@ if (global.myfight == 2)
                 {
                     global.msc = 0
                     global.msg[0] = "* You go on a short walk with&  the Doge./^"
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                     mercymod = 20
                 }
                 else
                 {
                     global.msc = 0
                     global.msg[0] = "* The Doge seems all tuckered&  out./^"
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                 }
             }
             if (whatiheard == 3)
             {
                 global.msc = 0
                 global.msg[0] = "* You called Doge over.&* Doge came close./^"
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 if (mercymod == 0)
                     mercymod = 10
             }
@@ -157,10 +157,10 @@ if (global.myfight == 2)
             {
                 global.msc = 0
                 global.msg[0] = "* Dry a dry doge?&* Your mind boggles at this&  impossibility./^"
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 5)
             {
@@ -168,20 +168,20 @@ if (global.myfight == 2)
                 {
                     global.msc = 0
                     global.msg[0] = "* You pet the Doge.&* What a good Doge./^"
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                     mercymod = 100
                 }
                 else
                 {
                     global.msc = 0
                     global.msg[0] = "* Doge seems too dangerous&  to pet..^1.&* For now./^"
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                 }
             }
             global.heard = 1

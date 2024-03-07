@@ -1,6 +1,6 @@
 if instance_exists(OBJ_WRITER)
 {
-    if (OBJ_WRITER.halt == false)
+    if (OBJ_WRITER.halt == 0)
         face_speed = 0.25
     else
     {

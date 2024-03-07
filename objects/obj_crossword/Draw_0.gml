@@ -8,7 +8,7 @@ else
     depth = 100000
 if (cross == 1 && cancel == 1)
 {
-    if (control_check_pressed(InteractButton) == 1 || control_check_pressed(CancelButton) == 1)
+    if (control_check_pressed(InteractButton) == true || control_check_pressed(CancelButton) == true)
     {
         cancel = 0
         cross = 0

@@ -1,6 +1,6 @@
 function scr_npcsetup()
 {
-	halt = false
+	halt = 0
 	myinteract = 0
 	stopped = 1
 	movementtype = argument0

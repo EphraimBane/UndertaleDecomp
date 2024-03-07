@@ -2,7 +2,7 @@ d = 0
 go = 0
 if instance_exists(OBJ_WRITER)
 {
-    if (OBJ_WRITER.halt == false)
+    if (OBJ_WRITER.halt == 0)
         go = 1
 }
 if (pos >= 6)

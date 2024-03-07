@@ -134,10 +134,10 @@ if (global.myfight == 2)
                 {
                     global.msc = 0
                     global.msg[0] = scr_gettext("obj_memoryhead_461")
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                     whatiheard = 9
                 }
                 if (whatiheard == 3)
@@ -148,19 +148,19 @@ if (global.myfight == 2)
                         global.msg[0] = scr_gettext("obj_memoryhead_472")
                     if (noroom == 1)
                         global.msg[0] = scr_gettext("obj_memoryhead_474")
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                 }
                 if (whatiheard == 1)
                 {
                     global.msc = 0
                     global.msg[0] = scr_gettext("obj_memoryhead_484", string((global.at + global.wstrength)), string((global.df + global.adef)))
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                 }
                 if (whatiheard == 4)
                 {
@@ -171,10 +171,10 @@ if (global.myfight == 2)
                         coherent = 1
                         global.monstername[myself] = scr_gettext("monstername_56b")
                     }
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                 }
             }
             else
@@ -183,10 +183,10 @@ if (global.myfight == 2)
                 {
                     global.msc = 0
                     global.msg[0] = scr_gettext("obj_memoryhead_511")
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                     whatiheard = 9
                 }
                 if (whatiheard == 3)

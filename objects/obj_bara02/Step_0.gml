@@ -153,10 +153,10 @@ if (global.myfight == 2)
                     global.msg[0] = scr_gettext("obj_bara02_567")
                     global.msg[1] = scr_gettext("obj_bara02_568")
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 whatiheard = 9
             }
             if (whatiheard == 1)
@@ -171,19 +171,19 @@ if (global.myfight == 2)
                     if instance_exists(obj_bara01)
                         obj_bara01.whatiheard = 12
                 }
-                OBJ_WRITER.halt = 3
+				obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 3)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_bara02_597")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             global.heard = 1
         }

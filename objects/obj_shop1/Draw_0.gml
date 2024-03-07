@@ -42,7 +42,7 @@ if (menu == 0)
     {
         with (OBJ_WRITER)
         {
-            if (halt == false)
+            if (halt == 0)
                 stringpos = string_length(originalstring)
             control_clear(CancelButton)
         }
@@ -345,7 +345,7 @@ if (menu == 4)
         {
             with (OBJ_WRITER)
             {
-                if (halt == false)
+                if (halt == 0)
                     stringpos = string_length(originalstring)
                 control_clear(CancelButton)
             }

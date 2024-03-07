@@ -998,10 +998,10 @@ if (global.myfight == 2)
                 global.msg[0] = scr_gettext("obj_papyrusboss_1645")
                 if (murder == 1)
                     global.msg[0] = scr_gettext("obj_papyrusboss_1647")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 1)
             {
@@ -1035,7 +1035,7 @@ if (global.myfight == 2)
                         halt = 3
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                 }
             }
             if (whatiheard == 3)
@@ -1079,7 +1079,7 @@ if (global.myfight == 2)
                         halt = 3
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                 }
             }
             if (whatiheard == 6)
@@ -1133,7 +1133,7 @@ if (flirto > 0)
                 halt = 3
             iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
             with (iii)
-                halt = false
+                halt = 0
             with (sblcon)
                 instance_destroy()
         }

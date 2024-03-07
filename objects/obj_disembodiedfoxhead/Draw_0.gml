@@ -1,6 +1,6 @@
 if (myinteract > 0 && instance_exists(OBJ_WRITER))
 {
-    if (OBJ_WRITER.halt == false)
+    if (OBJ_WRITER.halt == 0)
         animanim += 0.2
     siner += 0.5
 }

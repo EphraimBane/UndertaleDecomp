@@ -6,7 +6,7 @@ function scr_npc_anim()
 	    if instance_exists(OBJ_WRITER)
 	    {
 	        image_speed = 0.2
-	        if (OBJ_WRITER.halt != false)
+	        if (OBJ_WRITER.halt != 0)
 	            tt = 1
 	    }
 	    else
