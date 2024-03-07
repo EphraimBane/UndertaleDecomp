@@ -96,10 +96,10 @@ if (global.myfight == 2)
                 global.msg[0] = scr_gettext("obj_doodlebug_368")
                 if (specialmessage == 1)
                     global.msg[0] = scr_gettext("obj_doodlebug_371")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 whatiheard = 9
             }
             if (whatiheard == 3)
@@ -109,10 +109,10 @@ if (global.myfight == 2)
                 with (mypart1)
                     boat = 2
                 mercymod = 222222
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             global.heard = 1
         }

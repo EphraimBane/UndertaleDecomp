@@ -117,10 +117,10 @@ if (global.myfight == 2)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_icecap_396")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 1)
             {
@@ -135,19 +135,19 @@ if (global.myfight == 2)
                     global.msg[0] = scr_gettext("obj_icecap_412")
                     global.msg[1] = scr_gettext("obj_icecap_413")
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 3)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_icecap_422")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 4)
             {
@@ -170,10 +170,10 @@ if (global.myfight == 2)
                         global.monster[1] = true
                     instance_destroy()
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             global.heard = 1
         }

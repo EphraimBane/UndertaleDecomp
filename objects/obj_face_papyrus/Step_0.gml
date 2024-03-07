@@ -20,7 +20,7 @@ if (global.faceemotion == 9 && sprite_index != spr_face_papyruscool)
     sprite_index = spr_face_papyruscool
 if instance_exists(OBJ_WRITER)
 {
-    if (OBJ_WRITER.halt != false)
+    if (OBJ_WRITER.halt != 0)
         image_speed = 0
     else
         image_speed = 0.25

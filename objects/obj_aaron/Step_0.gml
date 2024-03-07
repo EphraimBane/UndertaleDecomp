@@ -130,10 +130,10 @@ if (global.myfight == 2)
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_aaron_502")
                 global.msg[1] = scr_gettext("obj_aaron_503")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 whatiheard = 9
             }
             if (whatiheard == 1)
@@ -146,10 +146,10 @@ if (global.myfight == 2)
                     global.msg[0] = scr_gettext("obj_aaron_514")
                     mercymod = 222
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 3)
             {
@@ -168,10 +168,10 @@ if (global.myfight == 2)
                 flex += 1
                 if (global.at < 150)
                     global.at += 15
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 global.monsteratk[myself] += 1
             }
             global.heard = 1

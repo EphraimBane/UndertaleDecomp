@@ -2,7 +2,7 @@ with (obj_shop3)
 {
     if (instance_exists(brattywriter) && obj_shopkeeper_bratty.face == 0)
     {
-        if (brattywriter.halt == false)
+        if (brattywriter.halt == 0)
             obj_shopkeeper_bratty.banim += 0.25
         else
             obj_shopkeeper_bratty.banim = 0

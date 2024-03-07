@@ -131,19 +131,19 @@ if (global.myfight == 2 && ditch == 0)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_jerry_442")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 3)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_jerry_450")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 ditch = 1
                 thisturn = global.turn
             }

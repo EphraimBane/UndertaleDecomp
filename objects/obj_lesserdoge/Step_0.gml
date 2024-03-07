@@ -123,10 +123,10 @@ if (global.myfight == 2)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_lesserdoge_449")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 1 || whatiheard == 2 || whatiheard == 3 || whatiheard == 4 || whatiheard == 5)
             {
@@ -173,10 +173,10 @@ if (global.myfight == 2)
                     global.msg[0] = scr_gettext("obj_lesserdoge_476")
                 if (mercymod > 100)
                     FL_SparedLesserDog = 1
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 mercymod += 50
             }
         }

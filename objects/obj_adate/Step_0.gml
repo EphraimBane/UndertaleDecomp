@@ -204,7 +204,7 @@ if (cn == 20 && instance_exists(OBJ_WRITER) == false)
 }
 if (cn == 21 && instance_exists(OBJ_WRITER) == true)
 {
-    if (OBJ_WRITER.stringno == 1 && OBJ_WRITER.halt != false)
+    if (OBJ_WRITER.stringno == 1 && OBJ_WRITER.halt != 0)
     {
         choice = 0
         choicer = 1
@@ -212,7 +212,7 @@ if (cn == 21 && instance_exists(OBJ_WRITER) == true)
         global.msg[0] = scr_gettext("obj_adate_367")
         iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
         with (iii)
-            halt = false
+            halt = 0
         cn = 22
     }
 }
@@ -398,7 +398,7 @@ if (cn == 41)
 }
 if (cn == 42 && instance_exists(OBJ_WRITER) == true)
 {
-    if (OBJ_WRITER.stringno == 6 && OBJ_WRITER.halt != false)
+    if (OBJ_WRITER.stringno == 6 && OBJ_WRITER.halt != 0)
     {
         al.shake = 2
         choice = 0
@@ -407,7 +407,7 @@ if (cn == 42 && instance_exists(OBJ_WRITER) == true)
         global.msg[0] = scr_gettext("obj_adate_576")
         iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
         with (iii)
-            halt = false
+            halt = 0
         cn = 43
     }
 }
@@ -521,7 +521,7 @@ if (cn == 53)
 }
 if (cn == 54 && instance_exists(OBJ_WRITER) == true)
 {
-    if (OBJ_WRITER.stringno == 25 && OBJ_WRITER.halt != false)
+    if (OBJ_WRITER.stringno == 25 && OBJ_WRITER.halt != 0)
     {
         choice = 0
         choicer = 1
@@ -529,7 +529,7 @@ if (cn == 54 && instance_exists(OBJ_WRITER) == true)
         global.msg[0] = scr_gettext("obj_adate_708")
         iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
         with (iii)
-            halt = false
+            halt = 0
         cn = 55
     }
 }
@@ -609,7 +609,7 @@ if (cn == 60)
     global.msg[0] = scr_gettext("obj_adate_794")
     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
     with (iii)
-        halt = false
+        halt = 0
     cn = 61
 }
 if (cn == 61 && choicer == 2)
@@ -645,7 +645,7 @@ if (cn == 63)
 }
 if (cn == 64 && instance_exists(OBJ_WRITER) == true)
 {
-    if (OBJ_WRITER.stringno == 3 && OBJ_WRITER.halt != false)
+    if (OBJ_WRITER.stringno == 3 && OBJ_WRITER.halt != 0)
     {
         choice = 0
         choicer = 1
@@ -653,7 +653,7 @@ if (cn == 64 && instance_exists(OBJ_WRITER) == true)
         global.msg[0] = scr_gettext("obj_adate_844")
         iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
         with (iii)
-            halt = false
+            halt = 0
         cn = 65
     }
 }
@@ -684,7 +684,7 @@ if (cn == 70)
 }
 if (cn == 71 && instance_exists(OBJ_WRITER) == true)
 {
-    if (OBJ_WRITER.stringno == 2 && OBJ_WRITER.halt != false)
+    if (OBJ_WRITER.stringno == 2 && OBJ_WRITER.halt != 0)
     {
         choice = 0
         choicer = 1
@@ -692,7 +692,7 @@ if (cn == 71 && instance_exists(OBJ_WRITER) == true)
         global.msg[0] = scr_gettext("obj_adate_884")
         iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
         with (iii)
-            halt = false
+            halt = 0
         cn = 72
     }
 }
@@ -744,7 +744,7 @@ if (cn == 75 && instance_exists(OBJ_WRITER) == false)
     global.msg[0] = scr_gettext("obj_adate_941")
     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
     with (iii)
-        halt = false
+        halt = 0
     cn = 76
 }
 if (cn == 76 && choicer == 2)
@@ -829,7 +829,7 @@ if (cn == 90)
 }
 if (cn == 91 && instance_exists(OBJ_WRITER) == true)
 {
-    if (OBJ_WRITER.stringno == 6 && OBJ_WRITER.halt != false)
+    if (OBJ_WRITER.stringno == 6 && OBJ_WRITER.halt != 0)
     {
         choice = 0
         choicer = 1
@@ -837,7 +837,7 @@ if (cn == 91 && instance_exists(OBJ_WRITER) == true)
         global.msg[0] = scr_gettext("obj_adate_1043")
         iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
         with (iii)
-            halt = false
+            halt = 0
         cn = 92
     }
 }
@@ -896,7 +896,7 @@ if (cn == 95 && instance_exists(OBJ_WRITER) == false)
     global.msg[0] = scr_gettext("obj_adate_1108")
     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
     with (iii)
-        halt = false
+        halt = 0
     cn = 96
 }
 if (cn == 96 && choicer == 2)
@@ -1405,7 +1405,7 @@ if (cn == 159 && instance_exists(OBJ_WRITER) == false)
     global.msg[0] = scr_gettext("obj_adate_1688")
     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
     with (iii)
-        halt = false
+        halt = 0
     cn = 160
 }
 if (cn == 160 && choicer == 2)

@@ -1,7 +1,7 @@
 d = 0
 if instance_exists(OBJ_WRITER)
 {
-    if (OBJ_WRITER.halt == false)
+    if (OBJ_WRITER.halt == 0)
     {
         d = 1
         image_speed = 0.2

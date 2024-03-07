@@ -4,7 +4,7 @@ if (myinteract > 0)
     sprite_index = spr_muffet_buysell
     if instance_exists(OBJ_WRITER)
     {
-        if (OBJ_WRITER.halt == false)
+        if (OBJ_WRITER.halt == 0)
             image_speed = 0.1
     }
 }

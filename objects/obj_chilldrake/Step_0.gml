@@ -132,10 +132,10 @@ if (global.myfight == 2)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_chilldrake_518")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 1)
             {
@@ -143,10 +143,10 @@ if (global.myfight == 2)
                 gg = floor(random(6))
                 if (gg <= 6)
                     global.msg[0] = scr_gettext("obj_chilldrake_527")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 mercymod = -10
                 if (gg == 7)
                     mercymod = 222
@@ -162,10 +162,10 @@ if (global.myfight == 2)
                     global.msg[0] = scr_gettext("obj_chilldrake_539")
                 if (joketold == 1)
                     global.msg[0] = scr_gettext("obj_chilldrake_540")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 4)
             {
@@ -179,10 +179,10 @@ if (global.myfight == 2)
                     scr_withallmonster(0, 20)
                     whatiheard = 19
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             global.heard = 1
         }

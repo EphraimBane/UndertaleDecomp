@@ -139,20 +139,20 @@ if (global.myfight == 2)
                 global.msg[0] = scr_gettext("obj_bara01_558")
                 if (scr_murderlv() >= 12 && FL_SparedSpecific == 0)
                     global.msg[0] = scr_gettext("obj_bara01_561")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 whatiheard = 9
             }
             if (whatiheard == 1)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_bara01_571")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 3)
             {
@@ -160,10 +160,10 @@ if (global.myfight == 2)
                 global.msg[0] = scr_gettext("obj_bara01_581")
                 if (shake == 1)
                     toldhim = 1
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             global.heard = 1
         }
@@ -241,7 +241,7 @@ if (global.mnfight == 5)
         global.msg[0] = scr_gettext("obj_bara01_663")
         global.msg[1] = scr_gettext("obj_bara01_664")
         global.msg[2] = scr_gettext("obj_bara01_665")
-        if (FL_CalledPapyrusWithRoyalGuards == 1)
+        if (FL_CalledPapyrusWithRoyalGuards == true)
         {
             global.msg[2] = scr_gettext("obj_bara01_668")
             global.msg[3] = scr_gettext("obj_bara01_669")

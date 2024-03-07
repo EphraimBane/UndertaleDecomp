@@ -1,7 +1,7 @@
 scr_depth(0, 0, 0, 0, 0)
 if (global.interact < 1)
 {
-    if (halt == true)
+    if (halt == 1)
     {
         speed = memoryspeed
         image_speed = memoryispeed
@@ -24,7 +24,7 @@ if (global.interact < 1)
         image_speed = 0
         image_index = 0
         speed = 0
-        halt = false
+        halt = 0
         stopped = 1
         movementalarm[0] = (30 + round(random(20)))
     }
@@ -37,7 +37,7 @@ else if (stopped == 0)
         image_speed = 0
     speed = 0
     stopped = 1
-    halt = true
+    halt = 1
 }
 if (myinteract == 1)
 {

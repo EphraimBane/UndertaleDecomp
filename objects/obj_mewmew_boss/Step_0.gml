@@ -279,10 +279,10 @@ if (global.myfight == 2)
                 global.msg[0] = scr_gettext("obj_mewmew_boss_336")
                 if (true_battle >= 1)
                     global.msg[0] = scr_gettext("obj_mewmew_boss_338")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 global.myfight = 8
             }
             if (whatiheard == 3)
@@ -310,10 +310,10 @@ if (global.myfight == 2)
                     global.myfight = 9
                     true_con = 0
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             global.heard = 1
         }
@@ -403,7 +403,7 @@ if (global.myfight == 9)
                 global.msg[0] = " %%"
             iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
             with (iii)
-                halt = false
+                halt = 0
             true_con = 2
         }
     }

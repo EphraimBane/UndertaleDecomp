@@ -146,10 +146,10 @@ if (global.myfight == 2)
                 global.msg[0] = scr_gettext("obj_endogeny_403")
                 if (mercymod == 999999)
                     global.msg[0] = scr_gettext("obj_endogeny_404")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 whatiheard = 9
             }
             if (whatiheard == 1)
@@ -165,19 +165,19 @@ if (global.myfight == 2)
                     caster_set_pitch(global.batmusic, 0.9)
                     close = 1
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 2)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_endogeny_435")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 3)
             {
@@ -223,10 +223,10 @@ if (global.myfight == 2)
                 }
                 if (close == 0)
                     global.msg[0] = scr_gettext("obj_endogeny_491")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 4)
             {
@@ -248,10 +248,10 @@ if (global.myfight == 2)
                 if (pet == 0)
                     global.msg[0] = scr_gettext("obj_endogeny_518")
                 global.msc = 0
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             global.heard = 1
         }

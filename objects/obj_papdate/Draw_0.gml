@@ -38,7 +38,7 @@ if (global.facechoice != 3)
     draw_sprite_ext(sprite_index, image_index, x, y, 2, 2, 0, c_white, 1)
 if instance_exists(OBJ_WRITER)
 {
-    if (OBJ_WRITER.halt == false)
+    if (OBJ_WRITER.halt == 0)
         face_speed = 0.25
     else
     {

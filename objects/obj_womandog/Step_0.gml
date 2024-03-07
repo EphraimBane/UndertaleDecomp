@@ -116,10 +116,10 @@ if (global.myfight == 2)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_womandog_496")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 1)
             {
@@ -138,10 +138,10 @@ if (global.myfight == 2)
                     global.msg[0] = scr_gettext("obj_womandog_508")
                 if (scr_monstersum() == 1)
                     global.msg[0] = scr_gettext("obj_womandog_509")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 if (smell == 1)
                     obj_dogeparent.smell = 2
             }
@@ -165,10 +165,10 @@ if (global.myfight == 2)
                         FL_SparedDogCouple = 1
                     }
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 4)
             {
@@ -177,10 +177,10 @@ if (global.myfight == 2)
                 global.msg[1] = scr_gettext("obj_womandog_534")
                 if (smell == 0)
                     obj_dogeparent.smell = 1
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             global.heard = 1
         }

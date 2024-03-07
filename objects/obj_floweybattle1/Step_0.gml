@@ -1,7 +1,7 @@
 SCR_BORDERSETUP(0, 0, 0, 0, 0)
 if instance_exists(OBJ_WRITER)
 {
-    if (OBJ_WRITER.halt != false)
+    if (OBJ_WRITER.halt != 0)
     {
         image_speed = 0
         image_index = 0
@@ -130,7 +130,7 @@ if (instance_exists(obj_winkstar) == false)
 if (conversation == 9.5)
 {
     alarm[7] = 80
-    OBJ_WRITER.halt = 3
+    obj_writer_set_halt(3)
     with (blcon)
         instance_destroy()
     conversation = 9.6

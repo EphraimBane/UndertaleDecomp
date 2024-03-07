@@ -79,7 +79,7 @@ if (menu == 0)
     {
         with (OBJ_WRITER)
         {
-            if (halt == false)
+            if (halt == 0)
                 stringpos = string_length(originalstring)
             control_clear(CancelButton)
         }
@@ -1810,7 +1810,7 @@ if (menu == 4)
     {
         with (brattywriter)
             instance_destroy()
-        cattywriter.halt = true
+        cattywriter.halt = 1
         with (cattywriter)
             event_user(0)
         con = 901
@@ -1837,7 +1837,7 @@ if (menu == 4)
         {
             with (OBJ_WRITER)
             {
-                if (halt == false)
+                if (halt == 0)
                     stringpos = string_length(originalstring)
                 control_clear(CancelButton)
             }

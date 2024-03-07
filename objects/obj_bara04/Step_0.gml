@@ -137,10 +137,10 @@ if (global.myfight == 2)
             {
                 global.msc = 0
                 global.msg[0] = (((("* RG 04 " + string(global.monsteratk[myself])) + " ATK ") + string(global.monsterdef[myself])) + " DEF&* Royal Guard member.&* Protective of her armor./^")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 whatiheard = 9
             }
             if (whatiheard == 1)
@@ -152,10 +152,10 @@ if (global.myfight == 2)
                     global.msg[0] = "* You touch RG 04's glove softly.&* She nods and begins to&  take it off./^"
                     toldhim = 1
                 }
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 3)
             {
@@ -163,10 +163,10 @@ if (global.myfight == 2)
                 global.msg[0] = "* You tell RG 04 to remember&  what being friends is about./^"
                 if (shake == 1)
                     toldhim = 1
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             global.heard = 1
         }

@@ -103,29 +103,29 @@ if (global.myfight == 2)
             {
                 global.msc = 0
                 global.msg[0] = "* FROGGIT - ATK 4 DEF 5&* Life is difficult for&  this enemy./^"
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 3)
             {
                 global.msc = 0
                 global.msg[0] = "* Froggit didn't understand&  what you said^1, but was&  flattered anyway./^"
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 mercymod = 30
             }
             if (whatiheard == 1)
             {
                 global.msc = 0
                 global.msg[0] = "* Froggit didn't understand&  what you said^1, but was&  scared anyway./^"
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 mercymod = 30
             }
             global.heard = 1

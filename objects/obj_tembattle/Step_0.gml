@@ -124,10 +124,10 @@ if (global.myfight == 2)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_tembattle_527")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 whatiheard = 9
             }
             if (whatiheard == 1)
@@ -137,10 +137,10 @@ if (global.myfight == 2)
                 {
                     global.msc = 0
                     global.msg[0] = scr_gettext("obj_tembattle_539")
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                 }
                 else
                 {
@@ -148,7 +148,7 @@ if (global.myfight == 2)
                     global.myfight = 3
                     global.bmenuno = 6
                     global.msg[0] = scr_gettext("obj_tembattle_550")
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_INSTAWRITER)
                 }
             }
@@ -159,10 +159,10 @@ if (global.myfight == 2)
                 flex += 1
                 if (global.at < 150)
                     global.at += 7
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 global.monsteratk[myself] += 1
             }
             if (whatiheard == 4)
@@ -170,10 +170,10 @@ if (global.myfight == 2)
                 FL_SparedTemmie = true
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_tembattle_573")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 mercymod = -10
             }
             if (whatiheard == 6)

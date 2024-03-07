@@ -23,7 +23,7 @@ function scr_runaway()
 	    obj_heart.hspeed = -3
 	    obj_heart.sprite_index = spr_heartgtfo
 	    obj_heart.image_speed = 0.5
-	    OBJ_WRITER.halt = 3
+	    obj_writer_set_halt(3)
 	    global.xp += global.xpreward[3]
 	    global.gold += global.goldreward[3]
 	    tlvl = global.lv

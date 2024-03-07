@@ -144,10 +144,10 @@ if (global.myfight == 2)
                     global.msg[0] = scr_gettext("obj_shyren_503")
                 if (encourage > 1)
                     global.msg[0] = scr_gettext("obj_shyren_504")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 whatiheard = 9
             }
             if (whatiheard == 1)
@@ -181,10 +181,10 @@ if (global.myfight == 2)
                 encourage += 1
                 emotion = 1
                 global.monsterdef[myself] = -150
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
                 mercymod = 140
             }
             if (whatiheard == 3)
@@ -200,10 +200,10 @@ if (global.myfight == 2)
                     global.msg[1] = scr_gettext("obj_shyren_541")
                 }
                 creep = 1
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 4)
             {
@@ -211,10 +211,10 @@ if (global.myfight == 2)
                 global.msg[0] = scr_gettext("obj_shyren_550")
                 if (encourage > 1)
                     global.msg[0] = scr_gettext("obj_shyren_551")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             global.heard = 1
         }

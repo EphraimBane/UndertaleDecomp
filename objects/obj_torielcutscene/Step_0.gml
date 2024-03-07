@@ -16,7 +16,7 @@ if (x < ((room_width / 2) - (sprite_width / 2)))
 alarm[0] = 20
 if instance_exists(OBJ_WRITER)
 {
-    if (OBJ_WRITER.halt == false)
+    if (OBJ_WRITER.halt == 0)
         image_speed = 0.2
     else
     {

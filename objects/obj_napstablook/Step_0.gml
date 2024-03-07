@@ -123,10 +123,10 @@ if (global.myfight == 2)
                 global.msg[0] = scr_gettext("obj_napstablook_576")
                 if (FL_Hardmode == true)
                     global.msg[0] = scr_gettext("obj_napstablook_579")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 3)
             {
@@ -145,10 +145,10 @@ if (global.myfight == 2)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_napstablook_603")
-                OBJ_WRITER.halt = 3
+                obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                 with (iii)
-                    halt = false
+                    halt = 0
             }
             if (whatiheard == 4)
             {
@@ -171,10 +171,10 @@ if (global.myfight == 2)
                         global.msg[0] = scr_gettext("obj_napstablook_623")
                     if (mercymod == -200)
                         global.msg[0] = scr_gettext("obj_napstablook_624")
-                    OBJ_WRITER.halt = 3
+                    obj_writer_set_halt(3)
                     iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
                     with (iii)
-                        halt = false
+                        halt = 0
                     mercymod += 100
                 }
             }

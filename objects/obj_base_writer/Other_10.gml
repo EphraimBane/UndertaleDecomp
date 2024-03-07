@@ -1,9 +1,9 @@
-if (halt == true)
+if (halt == 1)
 {
     stringno++
     originalstring = scr_replace_buttons_pc(mystring[stringno])
     stringpos = 0
-    halt = false
+    halt = 0
     alarm[0] = textspeed
 }
 else if (halt == 2)
