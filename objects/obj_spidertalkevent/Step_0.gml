@@ -62,8 +62,8 @@ if (active == true)
         global.interact = 0
         active = false
         x += 90
-        FL_FoughtMuffet += 1
-        con = FL_FoughtMuffet
+        FL_MuffetUnknown += 1
+        con = FL_MuffetUnknown
         if (con == 6)
             pausewait = 1
     }

@@ -40,7 +40,7 @@ function scr_monstersetup()
 	    global.itemrewardid = 0
 	    global.itemrewardchance = 0
 	}
-	if (global.monstertype[myself] == MonsterType.Froggit_1)
+	if (global.monstertype[myself] == MonsterType.Tutorial_Froggit)
 	{
 	    global.monstername[myself] = scr_gettext("monstername_3")
 	    global.monstermaxhp[myself] = 20
