@@ -12,7 +12,7 @@ if (con == 1)
     con = 2
     alarm[4] = 33
     FL_InBattle = true
-    global.battlegroup = (69 + bombtype)
+    global.battlegroup = (MonsterType.Bomb + bombtype)
     instance_create(0, 0, obj_battler)
 }
 if (con == 3)
@@ -52,21 +52,21 @@ if (con == 7)
     global.typer = 47
     global.msg[0] = scr_gettext("obj_mettnews_battleobj_199")
     global.msc = 0
-    if (bombtype == 1 || bombtype == 2 || bombtype == 4)
+    if (bombtype == BombType.Dog || bombtype == BombType.ExtremelyAgileGlassOfWater || bombtype == BombType.Basketball)
     {
         global.msg[0] = scr_gettext("obj_mettnews_battleobj_204")
         global.msg[1] = scr_gettext("obj_mettnews_battleobj_205")
     }
-    if (bombtype == 3)
+    if (bombtype == BombType.Script)
     {
         global.msg[0] = scr_gettext("obj_mettnews_battleobj_209")
         global.msg[1] = scr_gettext("obj_mettnews_battleobj_210")
     }
-    if (bombtype == 5)
+    if (bombtype == BombType.Present)
         global.msg[0] = scr_gettext("obj_mettnews_battleobj_214")
-    if (bombtype == 6)
+    if (bombtype == BombType.Game)
         global.msg[0] = scr_gettext("obj_mettnews_battleobj_218")
-    if (FL_FailedBombDefusing == 1)
+    if (FL_FailedBombDefusing == true)
     {
         global.faceemotion = 1
         global.msg[0] = scr_gettext("obj_mettnews_battleobj_223")
@@ -83,17 +83,17 @@ if (con == 60)
     ex = 0
     if (ex == 0)
         global.msc = 0
-    if (instance_exists(obj_mettnewsevent.newdog) && bombtype != 1)
+    if (instance_exists(obj_mettnewsevent.newdog) && bombtype != BombType.Dog)
         ex = 1
-    if (instance_exists(obj_mettnewsevent.newwater) && bombtype != 2)
+    if (instance_exists(obj_mettnewsevent.newwater) && bombtype != BombType.ExtremelyAgileGlassOfWater)
         ex = 2
-    if (instance_exists(obj_mettnewsevent.newscript) && bombtype != 3)
+    if (instance_exists(obj_mettnewsevent.newscript) && bombtype != BombType.Script)
         ex = 3
-    if (instance_exists(obj_mettnewsevent.newbasketball) && bombtype != 4)
+    if (instance_exists(obj_mettnewsevent.newbasketball) && bombtype != BombType.Basketball)
         ex = 4
-    if (instance_exists(obj_mettnewsevent.newpresent) && bombtype != 5)
+    if (instance_exists(obj_mettnewsevent.newpresent) && bombtype != BombType.Present)
         ex = 5
-    if (instance_exists(obj_mettnewsevent.newgame) && bombtype != 6)
+    if (instance_exists(obj_mettnewsevent.newgame) && bombtype != BombType.Game)
         ex = 6
     global.msg[0] = scr_gettext("obj_mettnews_battleobj_246")
     if (ex == 1)
@@ -111,7 +111,7 @@ if (con == 60)
         global.msg[0] = scr_gettext("obj_mettnews_battleobj_265")
     if (ex == 6)
         global.msg[0] = scr_gettext("obj_mettnews_battleobj_269")
-    if (FL_FailedBombDefusing == 1)
+    if (FL_FailedBombDefusing == true)
     {
         global.faceemotion = 1
         global.msg[0] = scr_gettext("obj_mettnews_battleobj_275")
@@ -126,7 +126,7 @@ if (con == 90 && instance_exists(OBJ_WRITER) == false)
     global.interact = 0
     instance_destroy()
 }
-if (bombtype == 2)
+if (bombtype == BombType.ExtremelyAgileGlassOfWater)
 {
     if (cc == 0)
     {
@@ -142,7 +142,7 @@ if (bombtype == 2)
             speed = 0
     }
 }
-if (bombtype == 3)
+if (bombtype == BombType.Script)
 {
     if (cc == 0)
     {
@@ -154,7 +154,7 @@ if (bombtype == 3)
     if (x > xstart)
         hspeed = -5
 }
-if (bombtype == 4)
+if (bombtype == BombType.Basketball)
 {
     if (cc == 0)
     {

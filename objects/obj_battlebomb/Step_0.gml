@@ -85,7 +85,7 @@ if (global.mnfight == 2)
         gotimer = 3
         if (mycommand >= 0)
             global.msg[0] = scr_gettext("obj_battlebomb_485")
-        if (bombtype == 1)
+        if (bombtype == BombType.Dog)
             global.msg[0] = scr_gettext("obj_battlebomb_486")
         global.turntimer = -1
         global.mnfight = 3
@@ -102,17 +102,17 @@ if (global.myfight == 2)
             {
                 global.msc = 0
                 global.msg[0] = scr_gettext("obj_battlebomb_513")
-                if (bombtype == 1)
+                if (bombtype == BombType.Dog)
                     global.msg[0] = scr_gettext("obj_battlebomb_514")
-                if (bombtype == 2)
+                if (bombtype == BombType.ExtremelyAgileGlassOfWater)
                     global.msg[0] = scr_gettext("obj_battlebomb_515")
-                if (bombtype == 3)
+                if (bombtype == BombType.Script)
                     global.msg[0] = scr_gettext("obj_battlebomb_516")
-                if (bombtype == 4)
+                if (bombtype == BombType.Basketball)
                     global.msg[0] = scr_gettext("obj_battlebomb_517")
-                if (bombtype == 5)
+                if (bombtype == BombType.Present)
                     global.msg[0] = scr_gettext("obj_battlebomb_518")
-                if (bombtype == 6)
+                if (bombtype == BombType.Game)
                     global.msg[0] = scr_gettext("obj_battlebomb_519")
                 obj_writer_set_halt(3)
                 iii = instance_create(global.idealborder[0], global.idealborder[2], OBJ_WRITER)
@@ -128,7 +128,7 @@ if (global.myfight == 2)
                 if (mypart1.got == 1)
                 {
                     global.msg[0] = scr_gettext("obj_battlebomb_541")
-                    if (bombtype == 1)
+                    if (bombtype == BombType.Dog)
                         global.msg[0] = scr_gettext("obj_battlebomb_542")
                     mypart1.type = 99
                     mypart1.defuse = 1
