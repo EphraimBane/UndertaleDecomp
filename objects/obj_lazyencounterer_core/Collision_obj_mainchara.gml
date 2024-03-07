@@ -8,7 +8,7 @@ if (cl == 0)
         battleno = 65
     if (FL_CoreBattleProgressCounter == 2)
         battleno = 68
-    if (FL_PreCastleUnknown2 == 1 && battleno == 68)
+    if (FL_CoreWarriorsSwitchState == true && battleno == 68)
         battleno = 61
     global.battlegroup = battleno
     global.border = 0

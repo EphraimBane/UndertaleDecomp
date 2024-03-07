@@ -250,19 +250,19 @@ if (con == 15)
 if (con == 16)
 {
     global.border = 0
-    global.msg[0] = scr_gettext("obj_dummytrigger_344")
-    global.msg[1] = scr_gettext("obj_dummytrigger_345")
-    global.msg[2] = scr_gettext("obj_dummytrigger_346")
-    global.msg[3] = scr_gettext("obj_dummytrigger_347")
-    global.msg[4] = scr_gettext("obj_dummytrigger_348")
-    global.msg[5] = scr_gettext("obj_dummytrigger_349")
-    global.msg[6] = scr_gettext("obj_dummytrigger_350")
-    if (FL_NapstablookSpared == 0)
+    global.msg[0] = scr_gettext("obj_dummytrigger_344") //* well..^1.&* i'm going to head home&  now.../
+    global.msg[1] = scr_gettext("obj_dummytrigger_345") //* oh..^1. umm..^1.&* feel free to \"come&  with\" if you want.../
+    global.msg[2] = scr_gettext("obj_dummytrigger_346") //* but no pressure.../
+    global.msg[3] = scr_gettext("obj_dummytrigger_347") //* i understand if you're&  busy.../
+    global.msg[4] = scr_gettext("obj_dummytrigger_348") //* it's fine.../
+    global.msg[5] = scr_gettext("obj_dummytrigger_349") //* no worries.../
+    global.msg[6] = scr_gettext("obj_dummytrigger_350") //* just thought i'd&  offer.../%%
+    if (FL_NapstablookStatus == NapstablookStatus.NotSet)
     {
-        global.msg[0] = scr_gettext("obj_dummytrigger_354")
-        global.msg[1] = scr_gettext("obj_dummytrigger_355")
-        global.msg[2] = scr_gettext("obj_dummytrigger_356")
-        global.msg[3] = scr_gettext("obj_dummytrigger_357")
+        global.msg[0] = scr_gettext("obj_dummytrigger_354") //* well..^1.&* i'm going to head home&  now.../
+        global.msg[1] = scr_gettext("obj_dummytrigger_355") //* just warning you.../
+        global.msg[2] = scr_gettext("obj_dummytrigger_356") //* so you don't accidentally&  follow me to my&  house.../
+        global.msg[3] = scr_gettext("obj_dummytrigger_357") //* you probably wouldn't&  like that.../%%
     }
     scr_regulartext()
     if instance_exists(obj_dialoguer)

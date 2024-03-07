@@ -22,7 +22,7 @@ if (con == 7)
     global.msg[0] = scr_gettext("obj_napstablookdate_158")
     global.msg[1] = scr_gettext("obj_napstablookdate_159")
     global.msg[2] = scr_gettext("obj_napstablookdate_160")
-    if (FL_NapstablookSpared > 0)
+    if (FL_NapstablookStatus > NapstablookStatus.Killed)
     {
         global.msg[0] = scr_gettext("obj_napstablookdate_163")
         global.msg[1] = scr_gettext("obj_napstablookdate_164")
@@ -36,7 +36,7 @@ if (con == 8 && instance_exists(OBJ_WRITER) == false)
 {
     global.interact = 0
     con = 9
-    if (FL_NapstablookSpared <= 0)
+    if (FL_NapstablookStatus <= NapstablookStatus.Killed)
         nap.direction = 90
 }
 if (con == 11 && instance_exists(OBJ_WRITER) == false)

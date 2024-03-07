@@ -1,22 +1,22 @@
-if (on == 0)
+if (on == false)
 {
-    if (heartdraw == 1)
+    if (heartdraw == true)
     {
-        heartdraw = 0
-        on = 1
+        heartdraw = false
+        on = true
         clap += 1
     }
 }
-if (on == 0)
+if (on == false)
 {
-    if (heartdraw == 0)
+    if (heartdraw == false)
     {
         snd_play(snd_noise)
-        on = 1
-        heartdraw = 1
+        on = true
+        heartdraw = true
     }
 }
-on = 0
+on = false
 if (clap > 2)
 {
     if (global.battlegroup == 200)

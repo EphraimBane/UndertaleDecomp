@@ -2725,7 +2725,7 @@
     {"id":{"name":"draw_state","path":"scripts/draw_state/draw_state.yy",},},
     {"id":{"name":"gamepad_button_check_any","path":"scripts/gamepad_button_check_any/gamepad_button_check_any.yy",},},
     {"id":{"name":"getCommandDefIndex","path":"scripts/getCommandDefIndex/getCommandDefIndex.yy",},},
-    {"id":{"name":"GlobalInit","path":"scripts/GlobalInit/GlobalInit.yy",},},
+    {"id":{"name":"GLOBALINIT","path":"scripts/GLOBALINIT/GLOBALINIT.yy",},},
     {"id":{"name":"instance_create","path":"scripts/instance_create/instance_create.yy",},},
     {"id":{"name":"joystick_buttons","path":"scripts/joystick_buttons/joystick_buttons.yy",},},
     {"id":{"name":"joystick_check_button","path":"scripts/joystick_check_button/joystick_check_button.yy",},},

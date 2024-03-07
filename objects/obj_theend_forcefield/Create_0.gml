@@ -1,10 +1,10 @@
 con = 0
 ended = 0
-if (FL_PreCastleUnknown1 == 1)
+if (FL_CompletedShootPuzzleCore == true)
     ended = 1
-if (FL_PreCastleUnknown2 == 1)
+if (FL_CoreWarriorsSwitchState == true)
     ended = 1
-if (FL_PreCastleUnknown3 == 1)
+if (FL_CoreForcefieldOff == true)
     ended = 1
 if (ended == 0)
 {

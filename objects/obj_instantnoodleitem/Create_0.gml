@@ -1,5 +1,5 @@
 con = 1
-FL_CookedNoodles = 1
+FL_CookedNoodles = true
 global.msg[1] = scr_gettext("obj_instantnoodleitem_30")
 global.msg[2] = scr_gettext("obj_instantnoodleitem_31")
 global.msg[3] = scr_gettext("obj_instantnoodleitem_32")

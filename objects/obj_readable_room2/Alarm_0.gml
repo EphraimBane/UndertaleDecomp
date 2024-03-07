@@ -55,13 +55,13 @@ if (room == room_torielroom)
         global.msg[0] = scr_gettext("obj_readable_room2_127")
         global.msg[1] = scr_gettext("obj_readable_room2_128")
         global.msg[2] = scr_gettext("obj_readable_room2_129")
-        FL_KnowWaterSausage = 1
+        FL_KnowWaterSausage = true
     }
 }
 if (room == room_torhouse3)
 {
     global.msg[0] = scr_gettext("obj_readable_room2_135")
-    if (FL_KnowWaterSausage == 1)
+    if (FL_KnowWaterSausage == true)
         global.msg[0] = scr_gettext("obj_readable_room2_136")
 }
 if (room == room_kitchen)

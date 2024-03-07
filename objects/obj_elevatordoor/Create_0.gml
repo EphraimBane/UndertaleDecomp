@@ -34,7 +34,7 @@ if (room == room_fire_core1)
         ok = 1
     if (ok == 1)
         con = 43
-    if (FL_PreCastleUnknown1 == 1 || FL_PreCastleUnknown2 == 1 || FL_PreCastleUnknown3 == 1)
+    if (FL_CompletedShootPuzzleCore == true || FL_CoreWarriorsSwitchState == true || FL_CoreForcefieldOn == 1)
         con = 0
 }
 if (room == room_fire_core_premett)

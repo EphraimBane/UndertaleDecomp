@@ -25,7 +25,7 @@ hoped = 0
 dreamed = 0
 say = 0
 FL_AnimationIndex = 0
-turns = (global.flag[504] - 3)
+turns = (FL_AsrielTurnCounter - 3)
 if (turns < 0)
     turns = 0
 trcon = 0

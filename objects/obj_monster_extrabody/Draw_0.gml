@@ -15,7 +15,7 @@ if (active == true)
     {
         siner += 1
         draw_sprite_ext(spr_napstabattle_leg, floor((siner / 4)), (x - 2), (y - 6), 2, 2, 0, c_white, 1)
-        if (y < (__view_get(VIEW_PROP_CAM_Y, 0) + 240) && FL_NapstablookSpared > 0)
+        if (y < (__view_get(VIEW_PROP_CAM_Y, 0) + 240) && FL_NapstablookStatus > NapstablookStatus.NotSet)
         {
             siner2 += 1
             draw_sprite_ext(spr_blookhat, 5, (x + 34), (y - 32), 2, 2, 0, c_white, (siner2 / 100))

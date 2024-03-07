@@ -309,13 +309,13 @@ if (con == 18)
     instance_create(0, 0, obj_persistentfader)
     con = 19
     global.entrance = 24
-    if (FL_RivermanDestination == 1)
+    if (FL_RivermanDestination == RiverManDestinations.Snowdin)
         room_goto(room_tundra_dock)
-    if (FL_RivermanDestination == 2)
+    if (FL_RivermanDestination == RiverManDestinations.Waterfall)
         room_goto(room_water_dock)
-    if (FL_RivermanDestination == 3)
+    if (FL_RivermanDestination == RiverManDestinations.Hotland)
         room_goto(room_fire_dock)
-    if (FL_RivermanDestination == 0)
+    if (FL_RivermanDestination == RiverManDestinations.Invalid)
         room_goto(room_fire_dock)
 }
 if (con == 50)

@@ -76,15 +76,15 @@ if (win == 1 && active == true)
     if (wintimer > 100)
     {
         if (room == room_fire_shootguy_1)
-            FL_CompletedShootPuzzle2 = 1
+            FL_CompletedShootPuzzle2 = true
         if (room == room_fire_shootguy_2)
-            FL_CompletedShootPuzzle1 = 1
+            FL_CompletedShootPuzzle1 = true
         if (room == room_fire_shootguy_3)
-            FL_CompletedShootPuzzle3 = 1
+            FL_CompletedShootPuzzle3 = true
         if (room == room_fire_shootguy_4)
-            FL_CompletedShootPuzzle4 = 1
+            FL_CompletedShootPuzzle4 = true
         if (room == room_fire_shootguy_5)
-            FL_PreCastleUnknown1 = 1
+            FL_CompletedShootPuzzleCore = true
         global.interact = 0
         wintimer = 0
         win = 2

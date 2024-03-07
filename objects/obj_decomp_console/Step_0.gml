@@ -81,6 +81,9 @@ else
 
 input_text = keyboard_string;
 
+if (string_ends_with(input_text, "\n"))
+	input_text = substr(input_text, 0, strlen(input_text) - 2);
+	
 command_name = "";
 
 // Parse input

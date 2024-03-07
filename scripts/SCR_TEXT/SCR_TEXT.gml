@@ -25,7 +25,7 @@ function SCR_TEXT()
 	            {
 	                if (FL_NameColor == NameColors.Yellow)
 	                    adder = "\\Y"
-	                if (FL_NameColor == 2)
+	                if (FL_NameColor == NameColors.Pink)
 	                    adder = "\\p"
 	            }
 	            global.msg[0] = adder
@@ -40,7 +40,7 @@ function SCR_TEXT()
 	                scr_mercystandard()
 	            if (global.monsterinstance[1].mercy < 0 && FL_NameColor == NameColors.Yellow)
 	                global.msg[0] += "\\Y"
-	            if (global.monsterinstance[1].mercy < 0 && FL_NameColor == 2)
+	            if (global.monsterinstance[1].mercy < 0 && FL_NameColor == NameColors.Pink)
 	                global.msg[0] += "\\p"
 	            global.msg[0] += (scr_gettext("battle_name_header") + global.monstername[1])
 	            if (global.monstertype[1] == global.monstertype[0])
@@ -53,7 +53,7 @@ function SCR_TEXT()
 	                scr_mercystandard()
 	            if (global.monsterinstance[2].mercy < 0 && FL_NameColor == NameColors.Yellow)
 	                global.msg[0] += "\\Y"
-	            if (global.monsterinstance[2].mercy < 0 && FL_NameColor == 2)
+	            if (global.monsterinstance[2].mercy < 0 && FL_NameColor == NameColors.Pink)
 	                global.msg[0] += "\\p"
 	            global.msg[0] += (scr_gettext("battle_name_header") + global.monstername[2])
 	            if (global.monstertype[2] == global.monstertype[1])
@@ -71,7 +71,7 @@ function SCR_TEXT()
 	                    scr_mercystandard()
 	                if (global.monsterinstance[i].mercy < 0 && FL_NameColor == NameColors.Yellow)
 	                    global.msg[0] = "\\Y"
-	                if (global.monsterinstance[i].mercy < 0 && FL_NameColor == 2)
+	                if (global.monsterinstance[i].mercy < 0 && FL_NameColor == NameColors.Pink)
 	                    global.msg[0] = "\\p"
 	            }
 	        }
@@ -992,7 +992,7 @@ function SCR_TEXT()
 	        }
 	        break
 	    case 246:
-	        if (FL_GotQuiche == 0)
+	        if (FL_GotQuiche == false)
 	        {
 	            global.msg[0] = scr_gettext("SCR_TEXT_1024")
 	            global.msg[1] = scr_gettext("SCR_TEXT_1025")
@@ -1013,7 +1013,7 @@ function SCR_TEXT()
 	            if (noroom == 0)
 	            {
 	                global.msg[0] = scr_gettext("SCR_TEXT_1045")
-	                FL_GotQuiche = 1
+	                FL_GotQuiche = true
 	            }
 	            if (noroom == 1)
 	            {
@@ -4302,32 +4302,32 @@ function SCR_TEXT()
 	    case 771:
 	        if (global.choice == 0)
 	        {
-	            global.msg[0] = scr_gettext("SCR_TEXT_4678")
+	            global.msg[0] = scr_gettext("SCR_TEXT_4678") //* Where will we go today?& &         Error       Error\\C
 	            if (room == room_fire_dock)
-	                global.msg[0] = scr_gettext("SCR_TEXT_4680")
+	                global.msg[0] = scr_gettext("SCR_TEXT_4680") //* Where will we go today?& &         Snowdin     Waterfall\\C
 	            if (room == room_water_dock)
-	                global.msg[0] = scr_gettext("SCR_TEXT_4682")
+	                global.msg[0] = scr_gettext("SCR_TEXT_4682") //* Where will we go today?& &         Snowdin     Hotland\\C
 	            if (room == room_tundra_dock)
-	                global.msg[0] = scr_gettext("SCR_TEXT_4684")
-	            global.msg[1] = scr_gettext("SCR_TEXT_4686")
+	                global.msg[0] = scr_gettext("SCR_TEXT_4684") //* Where will we go today?& &         Waterfall   Hotland\\C
+	            global.msg[1] = scr_gettext("SCR_TEXT_4686") // 
 	        }
 	        if (global.choice == 1)
-	            global.msg[0] = scr_gettext("SCR_TEXT_4691")
+	            global.msg[0] = scr_gettext("SCR_TEXT_4691") //* Then perhaps another time^1.&* Or perhaps not^1.&* It doesn't really matter./%%
 	        break
 	    case 772:
 	        if (global.choice == 0)
 	        {
 	            if (room == room_fire_dock || room == room_water_dock)
-	                FL_RivermanDestination = 1
+	                FL_RivermanDestination = RiverManDestinations.Snowdin
 	            if (room == room_tundra_dock)
-	                FL_RivermanDestination = 2
+	                FL_RivermanDestination = RiverManDestinations.Waterfall
 	        }
 	        if (global.choice == 1)
 	        {
 	            if (room == room_tundra_dock || room == room_water_dock)
-	                FL_RivermanDestination = 3
+	                FL_RivermanDestination = RiverManDestinations.Hotland
 	            if (room == room_fire_dock)
-	                FL_RivermanDestination = 2
+	                FL_RivermanDestination = RiverManDestinations.Waterfall
 	        }
 	        if instance_exists(obj_dogboat_thing)
 	            obj_dogboat_thing.con = 0.1
@@ -6482,7 +6482,7 @@ function SCR_TEXT()
 	        global.msg[7] = scr_gettext("SCR_TEXT_6938")
 	        break
 	    case 1504:
-	        FL_CalledTorielMom = 1
+	        FL_CalledTorielMom = true
 	        global.msg[0] = scr_gettext("SCR_TEXT_6943")
 	        global.msg[1] = scr_gettext("SCR_TEXT_6944")
 	        global.msg[2] = scr_gettext("SCR_TEXT_6945")

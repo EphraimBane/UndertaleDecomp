@@ -71,7 +71,7 @@ function scr_load()
 	    global.area = 0
 	if (global.currentroom >= room_tundra_garage)
 	    global.area = 1
-	FL_PlayRainSound = 0
+	FL_PlayRainSound = false
 	FL_RainSoundVolume = 0
 	FL_RainDeepVolume = 0
 	FL_RainSoundHandle = 0
