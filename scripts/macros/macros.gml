@@ -77,7 +77,7 @@ enum OSFlavors
 #macro FL_TorielFlirtedCount global.flag[41]
 #macro FL_CalledTorielMom global.flag[42]
 #macro FL_RuinsSwitchesPressedCount global.flag[43]
-#macro FL_DisobeyedToriel global.flag[44]
+#macro FL_DisobeyedTorielCount global.flag[44]
 #macro FL_TorielStatus global.flag[45]
 #macro FL_ChoiceFlavor global.flag[46]
 #macro FL_TundraCreepyStatus global.flag[47]
@@ -339,10 +339,10 @@ enum OSFlavors
 #macro FL_GotAlphysAdvice2 global.flag[415]
 #macro FL_GotAlphysAdvice3 global.flag[416]
 #macro FL_GotAlphysAdvice4 global.flag[417]
-#macro FL_PreCastleUnknown1 global.flag[418] // TODO: look into this!!
-#macro FL_PreCastleUnknown2 global.flag[419] // TODO: look into this!!
-#macro FL_PreCastleUnknown3 global.flag[420] // TODO: look into this!!
-#macro FL_PreCastleUnknown4 global.flag[421] // TODO: look into this!!
+#macro FL_CompletedShootPuzzleCore global.flag[418]
+#macro FL_CoreWarriorsSwitchState global.flag[419]
+#macro FL_CoreForcefieldOff global.flag[420]
+#macro FL_CoreWarriorsState global.flag[421]
 // 422 - Unused
 #macro FL_CoreBattleProgressCounter global.flag[423]
 #macro FL_MettatonTurnStatus global.flag[424]
@@ -374,7 +374,7 @@ enum OSFlavors
 #macro FL_EarlyStoryParam2 global.flag[456]
 #macro FL_ToldAsgoreReady global.flag[457]
 #macro FL_ExperienceCosmicGarbage global.flag[458]
-#macro FL_RivermanDestination global.flag[459] // TODO: LOOK INTO THIS
+#macro FL_RivermanDestination global.flag[459]
 #macro FL_GotTemVillageHint global.flag[460]
 #macro FL_TemBoatVersion global.flag[461]
 #macro FL_PapyrusCalledAlready global.flag[462] // TODO: LOOK INTO THIS
@@ -476,6 +476,13 @@ enum Direction
 	Left
 }
 
+enum RiverManDestinations
+{
+	Invalid,
+	Snowdin,
+	Waterfall,
+	Hotland
+}
 // Undyne Spear Directions
 enum SpearDir
 {

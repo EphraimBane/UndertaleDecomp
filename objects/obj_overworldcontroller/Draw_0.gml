@@ -429,11 +429,11 @@ if (global.interact == 5)
         if (global.menuno == 7)
         {
             global.menuno = 9
-            scr_itemget(global.flag[(global.menucoord[7] + 300)])
+            scr_itemget(global.flag[(global.menucoord[7] + DimensionBoxAItemStart)])
             if (noroom == 0)
             {
                 scr_writetext(17, "x", 0, 0)
-                scr_storageshift(global.menucoord[7], 0, 300)
+                scr_storageshift(global.menucoord[7], 0, DimensionBoxAItemStart)
             }
             else
                 scr_writetext(18, "x", 0, 0)

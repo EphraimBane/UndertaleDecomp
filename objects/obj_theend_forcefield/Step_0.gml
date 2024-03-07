@@ -1,4 +1,4 @@
-if (ended == 0 && FL_PreCastleUnknown3 == 0)
+if (ended == 0 && FL_CoreForcefieldOff == false)
 {
     timer += 1
     if (timer > 1800 && global.interact == 0)
@@ -10,7 +10,7 @@ if (ended == 0 && FL_PreCastleUnknown3 == 0)
         }
         ended = 5
         snd_play(snd_impact)
-        FL_PreCastleUnknown3 = 1
+        FL_CoreForcefieldOff = true
     }
 }
 if (ended == 5)

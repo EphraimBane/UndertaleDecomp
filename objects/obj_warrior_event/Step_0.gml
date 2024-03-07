@@ -1,19 +1,19 @@
-if (obj_mainchara.x > 220 && FL_PreCastleUnknown4 == 0 && con == 0 && global.interact == 0)
+if (obj_mainchara.x > 220 && FL_CoreWarriorsState == 0 && con == 0 && global.interact == 0)
 {
     global.interact = 1
-    FL_PreCastleUnknown4 = 1
+    FL_CoreWarriorsState = 1
     con = 5
 }
-if (obj_mainchara.x > 360 && FL_PreCastleUnknown4 == 1 && con == 0 && global.interact == 0)
+if (obj_mainchara.x > 360 && FL_CoreWarriorsState == 1 && con == 0 && global.interact == 0)
 {
     global.interact = 1
-    FL_PreCastleUnknown4 = 2
+    FL_CoreWarriorsState = 2
     con = 5
 }
-if (obj_mainchara.x > 480 && FL_PreCastleUnknown4 == 2 && con == 0 && global.interact == 0)
+if (obj_mainchara.x > 480 && FL_CoreWarriorsState == 2 && con == 0 && global.interact == 0)
 {
     global.interact = 1
-    FL_PreCastleUnknown4 = 3
+    FL_CoreWarriorsState = 3
     con = 5
 }
 if (con == 5)
@@ -36,11 +36,11 @@ if (con == 6)
 if (con == 8)
 {
     global.mercy = 1
-    if (FL_PreCastleUnknown4 == 1)
+    if (FL_CoreWarriorsState == 1)
         global.battlegroup = 64
-    if (FL_PreCastleUnknown4 == 2)
+    if (FL_CoreWarriorsState == 2)
         global.battlegroup = 68
-    if (FL_PreCastleUnknown4 == 3)
+    if (FL_CoreWarriorsState == 3)
         global.battlegroup = 67
     con = 9
     FL_InBattle = true

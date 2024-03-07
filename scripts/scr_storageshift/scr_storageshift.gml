@@ -9,5 +9,5 @@ function scr_storageshift(_item_index, _item, _box_flag_offset)
 	for (i = _item_index; i < (DimensionalBoxSize - 1); i += 1)
 	    global.flag[(i + _box_flag_offset)] = global.flag[((i + _box_flag_offset) + 1)]
 	scr_itemnameb()
-	scr_storagename(300)
+	scr_storagename(DimensionBoxAItemStart)
 }

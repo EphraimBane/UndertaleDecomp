@@ -14,15 +14,15 @@ wintimer = 0
 idealammo = 0
 restart = false
 rstype = 0
-if (room == room_fire_shootguy_1 && FL_CompletedShootPuzzle2 == 1)
+if (room == room_fire_shootguy_1 && FL_CompletedShootPuzzle2 == true)
     win = 1
-if (room == room_fire_shootguy_2 && FL_CompletedShootPuzzle1 == 1)
+if (room == room_fire_shootguy_2 && FL_CompletedShootPuzzle1 == true)
     win = 1
-if (room == room_fire_shootguy_3 && FL_CompletedShootPuzzle3 == 1)
+if (room == room_fire_shootguy_3 && FL_CompletedShootPuzzle3 == true)
     win = 1
-if (room == room_fire_shootguy_4 && FL_CompletedShootPuzzle4 == 1)
+if (room == room_fire_shootguy_4 && FL_CompletedShootPuzzle4 == true)
     win = 1
-if (room == room_fire_shootguy_5 && FL_PreCastleUnknown1 == 1)
+if (room == room_fire_shootguy_5 && FL_CompletedShootPuzzleCore == true)
     win = 1
 if (room == room_fire_shootguy_3)
 {

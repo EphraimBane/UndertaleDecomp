@@ -194,7 +194,7 @@ with (obj_undynetrigger_boss)
         q = 0
         if (global.kills > 0)
             q = 1
-        if (global.kills == 1 && FL_UndyneTriggerOverride == 1)
+        if (global.kills == 1 && FL_UndyneTriggerOverride == true)
             q = 0
         if (global.kills == 0)
             q = 0

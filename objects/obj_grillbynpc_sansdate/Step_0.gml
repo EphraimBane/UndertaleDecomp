@@ -54,7 +54,7 @@ if (con == 6)
     image_speed = 0
     sprite_index = ltsprite
     con = 7.1
-    if (FL_DogCoupleStatus != 1)
+    if (FL_DogCoupleStatus != DogStatus.Killed)
     {
         obj_grillbynpc_womandog.image_speed = 0.25
         obj_grillbynpc_mandog.image_speed = 0.25
@@ -71,7 +71,7 @@ if (con == 7.1)
 }
 if (con == 7.2 && instance_exists(OBJ_WRITER) == false)
 {
-    if (FL_DogCoupleStatus != 1)
+    if (FL_DogCoupleStatus != DogStatus.Killed)
     {
         with (obj_grillbynpc_womandog)
             image_speed = 0

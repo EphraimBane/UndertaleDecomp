@@ -11,4 +11,4 @@ killed = 0
 global.heard = 0
 takedamage = 0
 mercymod = 3
-FL_TutorialFroggitEncountered = 1
+FL_TutorialFroggitEncountered = true

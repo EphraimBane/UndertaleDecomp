@@ -40,7 +40,7 @@ if (scr_murderlv() >= 2 && FL_SparedSpecific == 0)
                 global.msg[0] = scr_gettext("obj_savepoint_99")
             if (FL_SnowdrakeStatus == SnowdrakeStatus.Killed && pop <= 0)
                 global.msg[0] = scr_gettext("obj_savepoint_101")
-            if (pop <= 0 && FL_SnowdrakeStatus != 2)
+            if (pop <= 0 && FL_SnowdrakeStatus != SnowdrakeStatus.Killed)
                 global.msg[0] = scr_gettext("obj_savepoint_103")
         }
     }
