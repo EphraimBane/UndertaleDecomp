@@ -4,7 +4,7 @@ global.typer = 5
 global.facechoice = 0
 global.faceemotion = 0
 global.msg[0] = scr_gettext("obj_napstablook_actor_114")
-if (FL_NapstablookSpared > 0 && FL_CurrentNapstablookSong == 0)
+if (FL_NapstablookStatus > NapstablookStatus.NotSet && FL_CurrentNapstablookSong == 0)
 {
     global.msg[0] = scr_gettext("obj_napstablook_actor_119")
     global.msg[1] = scr_gettext("obj_napstablook_actor_120")
@@ -39,13 +39,13 @@ if (FL_TruePacifist == true)
             global.msg[0] = scr_gettext("obj_napstablook_actor_157")
             global.msg[1] = scr_gettext("obj_napstablook_actor_158")
         }
-        if (FL_NapstablookSpared > 0)
+        if (FL_NapstablookStatus > NapstablookStatus.NotSet)
         {
             global.msg[2] = scr_gettext("obj_napstablook_actor_163")
             global.msg[3] = scr_gettext("obj_napstablook_actor_164")
             global.msg[4] = scr_gettext("obj_napstablook_actor_165")
         }
-        if (FL_NapstablookSpared <= 0)
+        if (FL_NapstablookStatus <= NapstablookStatus.NotSet)
         {
             global.msg[2] = scr_gettext("obj_napstablook_actor_171")
             global.msg[3] = scr_gettext("obj_napstablook_actor_172")

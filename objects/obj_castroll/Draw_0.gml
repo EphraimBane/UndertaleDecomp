@@ -115,7 +115,7 @@ if (active == true)
         mon = napstablook
         scr_drawtext_centered_scaled(330, (mon.y - 70), scr_gettext("castroll_name_napstablook"), namescale, namescale)
         scr_drawtext_centered_scaled(330, (mon.y - 30), scr_gettext("castroll_by_toby"), 1, 1)
-        if (FL_NapstablookSpared == 0)
+        if (FL_NapstablookStatus == NapstablookStatus.NotSet)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(330, ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_napstablook"), infoscale, infoscale)

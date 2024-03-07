@@ -1045,7 +1045,7 @@ if (con2 == 36)
     global.msg[2] = scr_gettext("obj_maddummy_1656")
     global.msg[3] = scr_gettext("obj_maddummy_1657")
     global.msg[4] = scr_gettext("obj_maddummy_1658")
-    if (FL_NapstablookSpared == 0)
+    if (FL_NapstablookStatus == NapstablookStatus.NotSet)
     {
         global.msg[3] = scr_gettext("obj_maddummy_1663")
         global.msg[4] = scr_gettext("obj_maddummy_1664")

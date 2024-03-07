@@ -9,7 +9,7 @@ if instance_exists(OBJ_WRITER)
     {
         caster_resume(global.batmusic)
         con = 3
-        FL_CookedNoodles = 0
+        FL_CookedNoodles = false
         with (OBJ_WRITER)
             instance_destroy()
         global.msg[0] = scr_gettext("obj_instantnoodleitem_85")

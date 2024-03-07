@@ -65,7 +65,7 @@ function scr_namingscreen()
 	        with (obj_time)
 	            time = 0
 	        if scr_hardmodename(charname)
-	            FL_Hardmode = 1
+	            FL_Hardmode = true
 	        room_goto_next()
 	    }
 	}

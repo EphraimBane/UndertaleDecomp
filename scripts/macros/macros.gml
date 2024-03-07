@@ -70,7 +70,7 @@ enum OSFlavors
 #macro FL_PushedRock3 global.flag[33]
 #macro FL_RuinsCandyTaken global.flag[34]
 #macro FL_PushedRock4 global.flag[35]
-#macro FL_NapstablookSpared global.flag[36]
+#macro FL_NapstablookStatus global.flag[36]
 #macro FL_WaitedOnTorielCall global.flag[37]
 // 38 - 39 Unused
 #macro FL_TorielGreetedCount global.flag[40]
@@ -577,6 +577,13 @@ enum Items
 	HushPuppy,
 	SnailPie,
 	TemyArmor
+}
+
+enum NapstablookStatus
+{
+    NotSet,
+    Spared,
+    Killed
 }
 
 enum DummyStatus 
