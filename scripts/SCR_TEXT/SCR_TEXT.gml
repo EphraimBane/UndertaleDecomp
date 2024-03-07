@@ -25,7 +25,7 @@ function SCR_TEXT()
 	            {
 	                if (FL_NameColor == NameColors.Yellow)
 	                    adder = "\\Y"
-	                if (FL_NameColor == 2)
+	                if (FL_NameColor == NameColors.Pink)
 	                    adder = "\\p"
 	            }
 	            global.msg[0] = adder
@@ -40,7 +40,7 @@ function SCR_TEXT()
 	                scr_mercystandard()
 	            if (global.monsterinstance[1].mercy < 0 && FL_NameColor == NameColors.Yellow)
 	                global.msg[0] += "\\Y"
-	            if (global.monsterinstance[1].mercy < 0 && FL_NameColor == 2)
+	            if (global.monsterinstance[1].mercy < 0 && FL_NameColor == NameColors.Pink)
 	                global.msg[0] += "\\p"
 	            global.msg[0] += (scr_gettext("battle_name_header") + global.monstername[1])
 	            if (global.monstertype[1] == global.monstertype[0])
@@ -53,7 +53,7 @@ function SCR_TEXT()
 	                scr_mercystandard()
 	            if (global.monsterinstance[2].mercy < 0 && FL_NameColor == NameColors.Yellow)
 	                global.msg[0] += "\\Y"
-	            if (global.monsterinstance[2].mercy < 0 && FL_NameColor == 2)
+	            if (global.monsterinstance[2].mercy < 0 && FL_NameColor == NameColors.Pink)
 	                global.msg[0] += "\\p"
 	            global.msg[0] += (scr_gettext("battle_name_header") + global.monstername[2])
 	            if (global.monstertype[2] == global.monstertype[1])
@@ -71,7 +71,7 @@ function SCR_TEXT()
 	                    scr_mercystandard()
 	                if (global.monsterinstance[i].mercy < 0 && FL_NameColor == NameColors.Yellow)
 	                    global.msg[0] = "\\Y"
-	                if (global.monsterinstance[i].mercy < 0 && FL_NameColor == 2)
+	                if (global.monsterinstance[i].mercy < 0 && FL_NameColor == NameColors.Pink)
 	                    global.msg[0] = "\\p"
 	            }
 	        }
