@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"bg_tempfiretile",
   "bboxMode":0,
-  "bbox_bottom":39,
+  "bbox_bottom":59,
   "bbox_left":0,
   "bbox_right":39,
   "bbox_top":0,
@@ -14,9 +14,9 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"337589dd-5470-45cc-8e75-c0ae50c5fbdb","name":"337589dd-5470-45cc-8e75-c0ae50c5fbdb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
-  "height":40,
+  "gridX":20,
+  "gridY":20,
+  "height":60,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"92e06110-759e-4fc7-8c50-5bac5715b246","blendMode":0,"displayName":"default","isLocked":false,"name":"92e06110-759e-4fc7-8c50-5bac5715b246","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
