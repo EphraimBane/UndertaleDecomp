@@ -1,12 +1,12 @@
-if (bombtype == 1)
+if (bombtype == BombType.Dog)
     sprite_index = spr_tobdog_sleep_fire
-if (bombtype == 2)
+if (bombtype == BombType.ExtremelyAgileGlassOfWater)
     sprite_index = spr_glassofwater
-if (bombtype == 3)
+if (bombtype == BombType.Script)
     sprite_index = spr_script
-if (bombtype == 4)
+if (bombtype == BombType.Basketball)
     sprite_index = spr_basketball_bomb
-if (bombtype == 5)
+if (bombtype == BombType.Present)
     sprite_index = spr_regpresent
-if (bombtype == 6)
+if (bombtype == BombType.Game)
     sprite_index = spr_videogame

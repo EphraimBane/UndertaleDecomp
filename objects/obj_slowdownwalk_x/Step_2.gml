@@ -1,9 +1,9 @@
 if (sl == 1)
 {
     fc = 2
-    if (global.tempvalue[11] == 0 && FL_FoughtMuffet == 5)
+    if (global.tempvalue[11] == 0 && FL_MuffetUnknown == 5)
         doom = 1
-    if (FL_FoughtMuffet == 6)
+    if (FL_MuffetUnknown == 6)
         doom = 2
     if (doom == 1)
     {

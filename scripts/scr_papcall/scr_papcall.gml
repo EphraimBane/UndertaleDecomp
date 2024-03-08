@@ -3176,7 +3176,7 @@ function scr_papcall()
 	                global.msg[14] = scr_gettext("scr_papcall_4005")
 	                global.msg[15] = scr_gettext("scr_papcall_4006")
 	                global.msg[16] = scr_gettext("scr_papcall_4007")
-	                FL_CalledPapyrusWithRoyalGuards = 1
+	                FL_CalledPapyrusWithRoyalGuards = true
 	                if (FL_PapyrusCalledAlready > 0)
 	                {
 	                    scr_undface(1, 2)

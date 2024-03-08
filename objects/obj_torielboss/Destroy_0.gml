@@ -1,5 +1,5 @@
 scr_monsterdefeat(0, 0, 0, 0, 0)
-global.monster[0] = true
+global.monster[0] = 1
 with (obj_battlecontroller)
     visible = false
 global.xp += 150

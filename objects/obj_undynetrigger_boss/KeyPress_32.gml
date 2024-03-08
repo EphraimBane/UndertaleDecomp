@@ -6,7 +6,7 @@ if (global.debug == true)
         caster_loop(undyne, 1, 1)
         playthesong = 1
     }
-    FL_UnknownBoolean18 = true
+    FL_UndyneZoomCutscene = true
     fakedrawer = 1
     instance_create(0, 0, obj_flasher)
     scr_shake(3, 3, 2)

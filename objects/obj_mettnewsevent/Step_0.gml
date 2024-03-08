@@ -647,15 +647,15 @@ if (con == 131 && instance_exists(OBJ_WRITER) == false)
     else
         newdog = instance_create(400, 300, obj_mettnews_battleobj)
     newwater = instance_create(430, 400, obj_mettnews_battleobj)
-    newwater.bombtype = 2
+    newwater.bombtype = BombType.ExtremelyAgileGlassOfWater
     newscript = instance_create(680, 420, obj_mettnews_battleobj)
-    newscript.bombtype = 3
+    newscript.bombtype = BombType.Script
     newbasketball = instance_create(340, 100, obj_mettnews_battleobj)
-    newbasketball.bombtype = 4
+    newbasketball.bombtype = BombType.Basketball
     newpresent = instance_create(650, 100, obj_mettnews_battleobj)
-    newpresent.bombtype = 5
+    newpresent.bombtype = BombType.Present
     newgame = instance_create(210, 500, obj_mettnews_battleobj)
-    newgame.bombtype = 6
+    newgame.bombtype = BombType.Game
     newticker = instance_create(__view_get(VIEW_PROP_CAM_X, 0), (__view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent) + 200), obj_mettnews_ticker)
     newticker.on = 1
     newticker.doom = 1

@@ -16,7 +16,7 @@ function SCR_TEXT()
 	        break
 	    case 3:
 	        global.msg[0] = " "
-	        if (global.monster[0] == true)
+	        if (global.monster[0] == 1)
 	        {
 	            with (global.monsterinstance[0])
 	                scr_mercystandard()
@@ -34,7 +34,7 @@ function SCR_TEXT()
 	                global.msg[0] += scr_gettext("battle_name_a")
 	        }
 	        global.msg[0] += "\\W &"
-	        if (global.monster[1] == true)
+	        if (global.monster[1] == 1)
 	        {
 	            with (global.monsterinstance[1])
 	                scr_mercystandard()
@@ -47,7 +47,7 @@ function SCR_TEXT()
 	                global.msg[0] += scr_gettext("battle_name_b")
 	        }
 	        global.msg[0] += "\\W &"
-	        if (global.monster[2] == true)
+	        if (global.monster[2] == 1)
 	        {
 	            with (global.monsterinstance[2])
 	                scr_mercystandard()
