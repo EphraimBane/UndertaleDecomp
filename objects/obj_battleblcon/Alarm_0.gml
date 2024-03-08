@@ -20,7 +20,7 @@ if (battle == 1)
 }
 if (battle == 2)
 {
-    if (instance_exists(obj_battlerstory) == falsr)
+    if (instance_exists(obj_battlerstory) == false)
         instance_create(0, 0, obj_battlerstory)
 }
 instance_destroy()
