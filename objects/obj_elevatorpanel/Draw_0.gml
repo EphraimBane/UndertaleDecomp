@@ -18,46 +18,46 @@ if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     buffer -= 1
     draw_set_color(c_white)
-    ossafe_fill_rectangle((camera_get_view_x(view_camera[view_current]) + 16), (camera_get_view_y(view_camera[view_current]) + 5), (camera_get_view_x(view_camera[view_current]) + 304), (camera_get_view_y(view_camera[view_current]) + 80))
+    ossafe_fill_rectangle((camera_current_x + 16), (camera_current_y + 5), (camera_current_x + 304), (camera_current_y + 80))
     draw_set_color(c_black)
-    ossafe_fill_rectangle((camera_get_view_x(view_camera[view_current]) + 19), (camera_get_view_y(view_camera[view_current]) + 8), (camera_get_view_x(view_camera[view_current]) + 301), (camera_get_view_y(view_camera[view_current]) + 77))
+    ossafe_fill_rectangle((camera_current_x + 19), (camera_current_y + 8), (camera_current_x + 301), (camera_current_y + 77))
     draw_set_color(c_white)
     scr_setfont(fnt_maintext)
     if (FL_CurrentElevatorFloor != CurrentElevatorFloor.L1)
-        draw_text((camera_get_view_x(view_camera[0]) + 50), (camera_get_view_y(view_camera[0]) + 15), string_hash_to_newline(scr_gettext("elevator_l1f")))
+        draw_text((camera_0_x + 50), (camera_0_y + 15), string_hash_to_newline(scr_gettext("elevator_l1f")))
     else
-        draw_text((camera_get_view_x(view_camera[0]) + 50), (camera_get_view_y(view_camera[0]) + 15), string_hash_to_newline(scr_gettext("elevator_cancel")))
+        draw_text((camera_0_x + 50), (camera_0_y + 15), string_hash_to_newline(scr_gettext("elevator_cancel")))
     if (FL_CurrentElevatorFloor != CurrentElevatorFloor.R1)
-        draw_text((camera_get_view_x(view_camera[0]) + 160), (camera_get_view_y(view_camera[0]) + 15), string_hash_to_newline(scr_gettext("elevator_r1f")))
+        draw_text((camera_0_x + 160), (camera_0_y + 15), string_hash_to_newline(scr_gettext("elevator_r1f")))
     else
-        draw_text((camera_get_view_x(view_camera[0]) + 160), (camera_get_view_y(view_camera[0]) + 15), string_hash_to_newline(scr_gettext("elevator_cancel")))
+        draw_text((camera_0_x + 160), (camera_0_y + 15), string_hash_to_newline(scr_gettext("elevator_cancel")))
     if (FL_CurrentElevatorFloor != CurrentElevatorFloor.R2)
-        draw_text((camera_get_view_x(view_camera[0]) + 160), (camera_get_view_y(view_camera[0]) + 35), string_hash_to_newline(scr_gettext("elevator_r2f")))
+        draw_text((camera_0_x + 160), (camera_0_y + 35), string_hash_to_newline(scr_gettext("elevator_r2f")))
     else
-        draw_text((camera_get_view_x(view_camera[0]) + 160), (camera_get_view_y(view_camera[0]) + 35), string_hash_to_newline(scr_gettext("elevator_cancel")))
+        draw_text((camera_0_x + 160), (camera_0_y + 35), string_hash_to_newline(scr_gettext("elevator_cancel")))
     if (trigger > 0)
     {
         if (FL_CurrentElevatorFloor != CurrentElevatorFloor.L2)
-            draw_text((camera_get_view_x(view_camera[0]) + 50), (camera_get_view_y(view_camera[0]) + 35), string_hash_to_newline(scr_gettext("elevator_l2f")))
+            draw_text((camera_0_x + 50), (camera_0_y + 35), string_hash_to_newline(scr_gettext("elevator_l2f")))
         else
-            draw_text((camera_get_view_x(view_camera[0]) + 50), (camera_get_view_y(view_camera[0]) + 35), string_hash_to_newline(scr_gettext("elevator_cancel")))
+            draw_text((camera_0_x + 50), (camera_0_y + 35), string_hash_to_newline(scr_gettext("elevator_cancel")))
     }
     if (trigger > 0)
     {
         if (FL_CurrentElevatorFloor != CurrentElevatorFloor.L3)
-            draw_text((camera_get_view_x(view_camera[0]) + 50), (camera_get_view_y(view_camera[0]) + 55), string_hash_to_newline(scr_gettext("elevator_l3f")))
+            draw_text((camera_0_x + 50), (camera_0_y + 55), string_hash_to_newline(scr_gettext("elevator_l3f")))
         else
-            draw_text((camera_get_view_x(view_camera[0]) + 50), (camera_get_view_y(view_camera[0]) + 55), string_hash_to_newline(scr_gettext("elevator_cancel")))
+            draw_text((camera_0_x + 50), (camera_0_y + 55), string_hash_to_newline(scr_gettext("elevator_cancel")))
     }
     if (trigger > 1)
     {
         if (FL_CurrentElevatorFloor != CurrentElevatorFloor.R3)
-            draw_text((camera_get_view_x(view_camera[0]) + 160), (camera_get_view_y(view_camera[0]) + 55), string_hash_to_newline(scr_gettext("elevator_r3f")))
+            draw_text((camera_0_x + 160), (camera_0_y + 55), string_hash_to_newline(scr_gettext("elevator_r3f")))
         else
-            draw_text((camera_get_view_x(view_camera[0]) + 160), (camera_get_view_y(view_camera[0]) + 55), string_hash_to_newline(scr_gettext("elevator_cancel")))
+            draw_text((camera_0_x + 160), (camera_0_y + 55), string_hash_to_newline(scr_gettext("elevator_cancel")))
     }
-    var heart_xpos = (camera_get_view_x(view_camera[0]) + 30)
-    var heart_ypos = (camera_get_view_y(view_camera[0]) + 20)
+    var heart_xpos = (camera_0_x + 30)
+    var heart_ypos = (camera_0_y + 20)
     if (global.language == "ja")
         heart_ypos -= 2
     draw_sprite(spr_heartsmall, 0, (heart_xpos + (heartx * 110)), (heart_ypos + (20 * hearty)))
@@ -178,8 +178,8 @@ if (con == 9)
 {
     caster_play(snd_elecdoor_shut, 1, 1)
     elev = caster_load("music/elevator.ogg")
-    xx = camera_get_view_x(view_camera[0])
-    yy = camera_get_view_y(view_camera[0])
+    xx = camera_0_x
+    yy = camera_0_y
     siner = 0
     con = 10
     intense = 0.5

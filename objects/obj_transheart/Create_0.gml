@@ -1,5 +1,5 @@
-xx = camera_get_view_x(view_camera[view_current])
-yy = camera_get_view_y(view_camera[view_current])
+xx = camera_current_x
+yy = camera_current_y
 mode = 0
 alarm[0] = 0
 mychoicex = (xx + 20)

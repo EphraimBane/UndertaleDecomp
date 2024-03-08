@@ -7,13 +7,13 @@ if (con == 20)
     sans.image_speed = 0
     with (obj_mainchara)
     {
-        __view_set(VIEW_PROP_CAM_X, 0, round(((x - (camera_get_view_width(view_camera[0]) / 2)) + 10)))
-        __view_set(VIEW_PROP_CAM_Y, 0, round(((y - (camera_get_view_height(view_camera[0]) / 2)) + 10)))
+        __view_set(VIEW_PROP_CAM_X, 0, round(((x - (camera_0_width / 2)) + 10)))
+        __view_set(VIEW_PROP_CAM_Y, 0, round(((y - (camera_0_height / 2)) + 10)))
     }
     obj_mainchara.cutscene = true
     camera_set_view_target(view_camera[0], noone)
-    idealx = camera_get_view_x(view_camera[0])
-    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) - 40))
+    idealx = camera_0_x
+    __view_set(VIEW_PROP_CAM_X, 0, (camera_0_x - 40))
     if (global.interact == 0)
         global.interact = 1
     global.msc = 0
@@ -278,7 +278,7 @@ if (con == 56)
     alarm[4] = 40
 }
 if (con == 57)
-    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) + 1))
+    camera_set_view_pos(view_camera[0], (camera_0_x + 1), camera_0_y)
 if (con == 58)
 {
     __view_set(VIEW_PROP_CAM_X, 0, idealx)

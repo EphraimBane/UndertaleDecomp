@@ -1,4 +1,4 @@
-x = (camera_get_view_x(view_camera[0]) + 350)
+x = (camera_0_x + 350)
 mode = 0
 hspeed = 0
 siner = 0

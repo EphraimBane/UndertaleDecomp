@@ -1,4 +1,4 @@
-draw_sprite(sprite_index, image_index, camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]))
+draw_sprite(sprite_index, image_index, camera_0_x, camera_0_y)
 if (buffer == 1 && control_check_pressed(CancelButton) == true)
     buffer = 2
 if (buffer == 1 && control_check_pressed(InteractButton) == true)

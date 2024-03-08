@@ -7,7 +7,7 @@ scrollspeed[5] = 0.8
 scrollspeed[6] = 0.9
 for (i = 0; i < 7; i += 1)
 {
-    xxx = camera_get_view_x(view_camera[0])
+    xxx = camera_0_x
     if (xxx > (room_width - 320))
         xxx = (room_width - 320)
     if (xxx >= 0)

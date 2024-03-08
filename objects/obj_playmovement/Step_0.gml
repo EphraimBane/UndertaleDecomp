@@ -14,10 +14,10 @@ if (con == 1)
 }
 if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
-    __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) - 3))
+    __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y - 3))
     if (obj_mainchara.y < 238)
         obj_mainchara.y += 0.5
-    if (camera_get_view_y(view_camera[0]) <= 0)
+    if (camera_0_y <= 0)
     {
         con = 9
         alarm[4] = 30
@@ -187,7 +187,7 @@ if (con == 28)
     con = 29
 }
 if (con == 29)
-    __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) + 1))
+    __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y + 1))
 if (con == 30)
 {
     mett.vspeed = 0
@@ -627,7 +627,7 @@ if (con == 243)
     con = 244
 }
 if (con == 244)
-    __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) + 4))
+    __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y + 4))
 if (con == 245)
 {
     mett2 = instance_create(mett.x, mett.y, obj_mettaton_dress2)

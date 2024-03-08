@@ -5,8 +5,8 @@ if (con == 11 || con == 12)
     if (whited >= 1 && con == 11)
     {
         con = 12
-        camera_set_view_pos(view_camera[0], 0,  camera_get_view_y(view_camera[0]))
-        camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0]), 0)
+        camera_set_view_pos(view_camera[0], 0,  camera_0_y)
+        camera_set_view_pos(view_camera[0], camera_0_x, 0)
     }
     draw_set_alpha(whited)
     draw_set_color(c_white)

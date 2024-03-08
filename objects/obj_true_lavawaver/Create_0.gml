@@ -1,5 +1,5 @@
-x = (camera_get_view_x(view_camera[0]) - 40)
-y = (camera_get_view_y(view_camera[0]) - 40)
+x = (camera_0_x - 40)
+y = (camera_0_y - 40)
 init_band = 0
 a = 0
 b = 0

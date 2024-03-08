@@ -15,7 +15,7 @@ if (active == true)
     {
         siner += 1
         draw_sprite_ext(spr_napstabattle_leg, floor((siner / 4)), (x - 2), (y - 6), 2, 2, 0, c_white, 1)
-        if (y < (camera_get_view_y(view_camera[0]) + 240) && FL_NapstablookStatus > NapstablookStatus.NotSet)
+        if (y < (camera_0_y + 240) && FL_NapstablookStatus > NapstablookStatus.NotSet)
         {
             siner2 += 1
             draw_sprite_ext(spr_blookhat, 5, (x + 34), (y - 32), 2, 2, 0, c_white, (siner2 / 100))
@@ -25,7 +25,7 @@ if (active == true)
     {
         siner += 1
         gosp = spr_migosp
-        if (y < (camera_get_view_y(view_camera[0]) + 240))
+        if (y < (camera_0_y + 240))
             gosp = spr_migosphappy
         if (siner < 15)
             draw_sprite(gosp, 0, x, y)
@@ -61,7 +61,7 @@ if (active == true)
     {
         siner += 1
         draw_sprite(spr_lesserdoge, floor((siner / 10)), x, y)
-        if (y < (camera_get_view_y(view_camera[0]) + 240))
+        if (y < (camera_0_y + 240))
         {
             if (FL_LesserDogStatus == DogStatus.MaxNeckSize)
                 mercymod += 2
@@ -79,7 +79,7 @@ if (active == true)
     }
     if (type == 13)
     {
-        if (y < (camera_get_view_y(view_camera[0]) + 240))
+        if (y < (camera_0_y + 240))
         {
             part1.sprite_index = spr_movedogeheadb
             part1.image_speed = 0.1
@@ -87,7 +87,7 @@ if (active == true)
     }
     if (type == 17)
     {
-        if (y < (camera_get_view_y(view_camera[0]) + 240))
+        if (y < (camera_0_y + 240))
         {
             if (emotion == 1)
                 emotion = 2
@@ -95,7 +95,7 @@ if (active == true)
     }
     if (type == 19)
     {
-        if (y < (camera_get_view_y(view_camera[0]) + 260))
+        if (y < (camera_0_y + 260))
         {
             if (msx.stage == 0)
                 msx.stage = 1
@@ -103,7 +103,7 @@ if (active == true)
     }
     if (type == 20)
     {
-        if (y < (camera_get_view_y(view_camera[0]) + 240))
+        if (y < (camera_0_y + 240))
         {
             global.faceemotion = 3
             dummy.rotmod += 0.04
@@ -112,7 +112,7 @@ if (active == true)
     }
     if (type == 21)
     {
-        if (y < (camera_get_view_y(view_camera[0]) + 240) && bd == 0)
+        if (y < (camera_0_y + 240) && bd == 0)
         {
             bd = 1
             with (bara1)
@@ -121,12 +121,12 @@ if (active == true)
     }
     if (type == 22)
     {
-        if (y < (camera_get_view_y(view_camera[0]) + 240))
+        if (y < (camera_0_y + 240))
             obj_vulkinbody.face = 411
     }
     if (type == 27)
     {
-        if (y < (camera_get_view_y(view_camera[0]) + 300))
+        if (y < (camera_0_y + 300))
         {
             siner2 += 1
             if (siner2 > 25)
@@ -137,7 +137,7 @@ if (active == true)
     }
     if (type == 30)
     {
-        if (y < (camera_get_view_y(view_camera[0]) + 260))
+        if (y < (camera_0_y + 260))
         {
             if (eye.anim < 230)
                 eye.anim = 235
@@ -147,7 +147,7 @@ if (active == true)
     }
     if (type == 31)
     {
-        if (y < (camera_get_view_y(view_camera[0]) + 200))
+        if (y < (camera_0_y + 200))
         {
             if (aa.mega == 0)
             {
@@ -161,12 +161,12 @@ if (active == true)
     }
     if (type == 32)
     {
-        if (y < (camera_get_view_y(view_camera[0]) + 200))
+        if (y < (camera_0_y + 200))
             aa.stretchup = 2
     }
     if (type == 33)
     {
-        if (y < (camera_get_view_y(view_camera[0]) + 200))
+        if (y < (camera_0_y + 200))
         {
             graze = 3
             aa.fader = 1
@@ -174,7 +174,7 @@ if (active == true)
     }
     if (type == 34)
     {
-        if (y < (camera_get_view_y(view_camera[0]) + 200))
+        if (y < (camera_0_y + 200))
         {
             if (aa.melting == 0)
                 aa.melting = 1
@@ -194,7 +194,7 @@ if (active == true)
         }
         draw_sprite_ext(spr_boss_mewmew_idle, siner, (x - 35), (y + 15), 2, 2, 0, c_white, image_alpha)
         draw_sprite_ext(spr_boss_mewmew_face, siner2, ((x + 62) - 35), ((y + 18) + 15), 2, 2, 0, c_white, image_alpha)
-        if (y < (camera_get_view_y(view_camera[0]) + 200))
+        if (y < (camera_0_y + 200))
         {
             siner2 = 1
             if (FL_MadMewMewStatus == MadMewMewStatus.Killed)

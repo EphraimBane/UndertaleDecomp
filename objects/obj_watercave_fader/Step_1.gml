@@ -1,6 +1,6 @@
-if (camera_get_view_x(view_camera[0]) > 0)
+if (camera_0_x > 0)
 {
-    a = (oalpha - (camera_get_view_x(view_camera[0]) / top))
+    a = (oalpha - (camera_0_x / top))
     if (a > 0)
         image_alpha = a
     else

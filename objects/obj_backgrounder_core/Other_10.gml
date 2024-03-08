@@ -1,6 +1,6 @@
 y = 0
-if (camera_get_view_x(view_camera[0]) >= 0)
-    x = (floor((camera_get_view_x(view_camera[0]) - (camera_get_view_x(view_camera[0]) * scrollspeed))) + 150)
-gg = (room_width - camera_get_view_width(view_camera[0]))
-if (camera_get_view_x(view_camera[0]) >= gg)
+if (camera_0_x >= 0)
+    x = (floor((camera_0_x - (camera_0_x * scrollspeed))) + 150)
+gg = (room_width - camera_0_width)
+if (camera_0_x >= gg)
     x = (floor((gg - (gg * scrollspeed))) + 150)

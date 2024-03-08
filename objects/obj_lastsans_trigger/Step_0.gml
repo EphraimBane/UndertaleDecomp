@@ -2,7 +2,7 @@ if (con == 1)
 {
     m = instance_create(0, 0, obj_musfadeout)
     m.fadespeed = 0.03
-    remx = camera_get_view_x(view_camera[0])
+    remx = camera_0_x
     obj_mainchara.cutscene = true
     camera_set_view_target(view_camera[0], noone)
     obj_mainchara.x = 800
@@ -23,16 +23,16 @@ if (con == 1.5)
     con = 2
 if (con == 2)
 {
-    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) + 1))
-    if (camera_get_view_x(view_camera[0]) >= 680 && ss == 0)
+    camera_set_view_pos(view_camera[0], (camera_0_x + 1), camera_0_y)
+    if (camera_0_x >= 680 && ss == 0)
     {
         ss = 1
         sans = scr_marker(920, obj_mainchara.y, spr_sans_l_dark)
         sans.depth = 1500
     }
     if (sf2 >= 3 && murder == 1)
-        __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) + 3))
-    if (camera_get_view_x(view_camera[0]) >= 750)
+        camera_set_view_pos(view_camera[0], (camera_0_x + 3), camera_0_y)
+    if (camera_0_x >= 750)
     {
         con = 3
         __view_set(VIEW_PROP_CAM_X, 0, 750)
@@ -194,13 +194,13 @@ if (con == 6 && instance_exists(OBJ_WRITER) == false)
 }
 if (con == 7 && instance_exists(OBJ_WRITER) == false)
 {
-    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) - 1))
-    if (camera_get_view_x(view_camera[0]) < 681)
+    camera_set_view_pos(view_camera[0], (camera_0_x - 1), camera_0_y)
+    if (camera_0_x < 681)
     {
         with (sans)
             instance_destroy()
     }
-    if (camera_get_view_x(view_camera[0]) <= remx)
+    if (camera_0_x <= remx)
         con = 8
 }
 if (con == 8)

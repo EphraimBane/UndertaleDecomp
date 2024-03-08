@@ -1,3 +1,3 @@
 g = (10 + random(6))
-hspeed = ((((camera_get_view_x(view_camera[0]) + (idealspot * 20)) + 10) - x) / g)
+hspeed = ((((camera_0_x + (idealspot * 20)) + 10) - x) / g)
 alarm[2] = g

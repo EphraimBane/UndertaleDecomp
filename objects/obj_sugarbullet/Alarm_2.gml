@@ -1,2 +1,2 @@
 hspeed = 0
-x = ((camera_get_view_x(view_camera[0]) + (idealspot * 20)) + 10)
+x = ((camera_0_x + (idealspot * 20)) + 10)

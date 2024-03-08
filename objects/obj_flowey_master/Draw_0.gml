@@ -166,8 +166,8 @@ if (dcon > 0)
         caster_play(sfx_glock, 1, 1)
         with (obj_flowey_writer)
             instance_destroy()
-        camera_set_view_pos(view_camera[0], 0,  camera_get_view_y(view_camera[0]))
-        camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0]), 0)
+        camera_set_view_pos(view_camera[0], 0,  camera_0_y)
+        camera_set_view_pos(view_camera[0], camera_0_x, 0)
         with (obj_vsflowey_shaker)
             instance_destroy()
         with (obj_floweybodyparent)
@@ -577,8 +577,8 @@ if (introcon > 0)
             mus_intro = caster_load("music/f_intro.ogg")
             caster_play(mus_intro, 1, 1)
         }
-        __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) + 480))
-        ny = camera_get_view_y(view_camera[0])
+        __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y + 480))
+        ny = camera_0_y
         hy = obj_vsflowey_heart.y
         obj_vsflowey_heart.y += 480
         __background_set_colour(c_maroon)
@@ -620,7 +620,7 @@ if (introcon > 0)
         alarm[5] = 70
         if (introskip == 1)
             alarm[5] = 1
-        camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0]), 0)
+        camera_set_view_pos(view_camera[0], camera_0_x, 0)
         obj_vsflowey_heart.y = floor(obj_vsflowey_heart.y)
     }
     if (introcon == 5)
@@ -664,8 +664,8 @@ if (introcon > 0)
     {
         with (sh)
             instance_destroy()
-        camera_set_view_pos(view_camera[0], 0,  camera_get_view_y(view_camera[0]))
-        camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0]), 0)
+        camera_set_view_pos(view_camera[0], 0,  camera_0_y)
+        camera_set_view_pos(view_camera[0], camera_0_x, 0)
         obj_floweyx_mouth.laugh = 0
         obj_floweyx_tv.tvmode = 21
         introcon = 11

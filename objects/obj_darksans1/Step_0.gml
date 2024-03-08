@@ -201,9 +201,9 @@ if (conversation == 16 && instance_exists(OBJ_WRITER) == false)
 {
     conversation = 18
     alarm[6] = 10
-    rememberxview = camera_get_view_x(view_camera[view_current])
-    rememberyview = camera_get_view_y(view_camera[view_current])
-    __view_set(VIEW_PROP_CAM_TARGET, view_current, noone)
+    rememberxview = camera_current_x
+    rememberyview = camera_current_y
+    camera_set_view_target(camera_current, noone)
     obj_mainchara.cutscene = true
 }
 if (conversation == 17)
@@ -211,22 +211,22 @@ if (conversation == 17)
 }
 if (conversation == 18)
 {
-    if ((x + (sprite_width / 2)) > (camera_get_view_x(view_camera[view_current]) + (camera_get_view_width(view_camera[view_current]) / 2)))
-        __view_set(VIEW_PROP_CAM_X, view_current, (camera_get_view_x(view_camera[view_current]) + 3))
-    if ((y + (sprite_height / 2)) > (camera_get_view_y(view_camera[view_current]) + (camera_get_view_height(view_camera[view_current]) / 2)))
-        __view_set(VIEW_PROP_CAM_Y, view_current, (camera_get_view_y(view_camera[view_current]) + 9))
-    __view_set(VIEW_PROP_CAM_HEIGHT, view_current, (camera_get_view_height(view_camera[view_current]) - 12))
-    __view_set(VIEW_PROP_CAM_WIDTH, view_current, (camera_get_view_width(view_camera[view_current]) - 16))
+    if ((x + (sprite_width / 2)) > (camera_current_x + (camera_current_width / 2)))
+        __view_set(VIEW_PROP_CAM_X, view_current, (camera_current_x + 3))
+    if ((y + (sprite_height / 2)) > (camera_current_y + (camera_get_view_height / 2)))
+        __view_set(VIEW_PROP_CAM_Y, view_current, (camera_current_y + 9))
+    __view_set(VIEW_PROP_CAM_HEIGHT, view_current, (camera_get_view_height - 12))
+    __view_set(VIEW_PROP_CAM_WIDTH, view_current, (camera_current_width - 16))
     alarm[7] = 30
 }
 if (conversation == 20)
 {
-    if (camera_get_view_x(view_camera[view_current]) > rememberxview)
-        __view_set(VIEW_PROP_CAM_X, view_current, (camera_get_view_x(view_camera[view_current]) - 3))
-    if (camera_get_view_y(view_camera[view_current]) > rememberyview)
-        __view_set(VIEW_PROP_CAM_Y, view_current, (camera_get_view_y(view_camera[view_current]) - 9))
-    __view_set(VIEW_PROP_CAM_HEIGHT, view_current, (camera_get_view_height(view_camera[view_current]) + 12))
-    __view_set(VIEW_PROP_CAM_WIDTH, view_current, (camera_get_view_width(view_camera[view_current]) + 16))
+    if (camera_current_x > rememberxview)
+        __view_set(VIEW_PROP_CAM_X, view_current, (camera_current_x - 3))
+    if (camera_current_y > rememberyview)
+        __view_set(VIEW_PROP_CAM_Y, view_current, (camera_current_y - 9))
+    __view_set(VIEW_PROP_CAM_HEIGHT, view_current, (camera_get_view_height + 12))
+    __view_set(VIEW_PROP_CAM_WIDTH, view_current, (camera_current_width + 16))
 }
 if (conversation == 21)
 {
@@ -315,7 +315,7 @@ if (conversation == 28)
         global.facechoice = 3
         global.typer = 17
         global.msg[0] = scr_gettext("obj_darksans1_666")
-        __view_set(VIEW_PROP_CAM_TARGET, view_current, obj_mainchara)
+        camera_set_view_target(camera_current, obj_mainchara)
         obj_mainchara.cutscene = false
         instance_create(0, 0, obj_dialoguer)
         conversation = 29
@@ -420,7 +420,7 @@ if (conversation == 56)
         global.facechoice = 3
         global.typer = 17
         global.msg[0] = scr_gettext("obj_darksans1_780")
-        __view_set(VIEW_PROP_CAM_TARGET, view_current, obj_mainchara)
+        camera_set_view_target(camera_current, obj_mainchara)
         obj_mainchara.cutscene = false
         instance_create(0, 0, obj_dialoguer)
         conversation = 58

@@ -50,7 +50,7 @@ if (con == 5)
     global.msc = 0
     global.typer = 5
     global.msg[0] = scr_gettext("obj_napstablook_farm2_270")
-    instance_create((camera_get_view_x(view_camera[0]) + 60), 20, OBJ_WRITER)
+    instance_create((camera_0_x + 60), 20, OBJ_WRITER)
     con = 6
 }
 if (con == 6)
@@ -60,7 +60,7 @@ if (con == 6 && instance_exists(OBJ_WRITER) == false)
     bringback = 0
     caster_loop(race, 1, 1)
     global.msg[0] = scr_gettext("obj_napstablook_farm2_284")
-    instance_create((camera_get_view_x(view_camera[0]) + 60), 20, OBJ_WRITER)
+    instance_create((camera_0_x + 60), 20, OBJ_WRITER)
     defaultspeed = -0.13
     snail[0].hspeed = defaultspeed
     snail[0].image_speed = 0.25
@@ -165,7 +165,7 @@ if (con == 8)
     caster_free(race)
     snd_play(snd_select)
     global.msg[0] = scr_gettext("obj_napstablook_farm2_374")
-    instance_create((camera_get_view_x(view_camera[0]) + 60), 20, OBJ_WRITER)
+    instance_create((camera_0_x + 60), 20, OBJ_WRITER)
     caster_resume(global.currentsong)
     global.msc = 0
     snail[0].hspeed = 0

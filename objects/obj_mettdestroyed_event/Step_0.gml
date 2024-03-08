@@ -4,7 +4,7 @@ if (con == 1)
         visible = false
     with (brokemett)
         visible = true
-    __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) + 20))
+    __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y + 20))
     con = 2
     alarm[4] = 50
 }
@@ -120,7 +120,7 @@ if (con == 20 && instance_exists(OBJ_WRITER) == false)
     alarm[4] = 30
 }
 if (con == 21)
-    __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) + 2))
+    __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y + 2))
 if (con == 22)
 {
     obj_mainchara.cutscene = false

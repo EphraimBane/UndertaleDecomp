@@ -1,5 +1,5 @@
-xx = camera_get_view_x(view_camera[0])
-yy = camera_get_view_y(view_camera[0])
+xx = camera_0_x
+yy = camera_0_y
 part1 = instance_create(xx, (yy + 20), obj_mettnews_part)
 part1.sprite_index = spr_mettbg_part1
 part2 = instance_create((xx + 93), (yy + 20), obj_mettnews_part)

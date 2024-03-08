@@ -387,14 +387,14 @@ if (con == 100 && instance_exists(OBJ_WRITER) == false)
 if (con == 105)
 {
 	
-    if (camera_get_view_x(view_camera[0]) > 240)
-        __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) - 3))
-    if (camera_get_view_x(view_camera[0]) < 210)
-        __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) + 3))
-    if (camera_get_view_y(view_camera[0]) < 140)
-        __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) + 3))
-    if (camera_get_view_y(view_camera[0]) > 150)
-        __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) - 3))
+    if (camera_0_x > 240)
+        camera_set_view_pos(view_camera[0],  (camera_0_x - 3), camera_0_y)
+    if (camera_0_x < 210)
+        camera_set_view_pos(view_camera[0], (camera_0_x + 3), camera_0_y)
+    if (camera_0_y < 140)
+        __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y + 3))
+    if (camera_0_y > 150)
+        __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y - 3))
 }
 if (con == 104)
 {
@@ -480,7 +480,7 @@ if (con == 125)
 }
 if (con == 125.1 && instance_exists(OBJ_WRITER) == false)
 {
-    wordfall = instance_create((camera_get_view_x(view_camera[0]) + 20), (camera_get_view_y(view_camera[0]) + 20), obj_wordfall)
+    wordfall = instance_create((camera_0_x + 20), (camera_0_y + 20), obj_wordfall)
     global.typer = 5
     global.msg[0] = scr_gettext("obj_mettnewsevent_694")
     global.msg[1] = scr_gettext("obj_mettnewsevent_695")
@@ -503,10 +503,10 @@ if (con == 127 && instance_exists(OBJ_WRITER) == false)
 {
     global.facing = Direction.Up
 	camera_set_view_target(view_camera[0], noone)
-    if (camera_get_view_y(view_camera[0]) > 40)
+    if (camera_0_y > 40)
     {
         obj_mettanchor.y -= 15
-        __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) - 10))
+        __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y - 10))
     }
     else
         con = 128
@@ -562,22 +562,22 @@ if (con == 129 && instance_exists(OBJ_WRITER) == false)
     go = 0
     xx = obj_mainchara.x
     yy = obj_mainchara.y
-    if (camera_get_view_x(view_camera[0]) < round(((xx - (camera_get_view_width(view_camera[0]) / 2)) + 10)))
-        __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) + 5))
-    if (camera_get_view_x(view_camera[0]) > round(((xx - (camera_get_view_width(view_camera[0]) / 2)) + 10)))
-        __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) - 5))
-    if (abs((camera_get_view_x(view_camera[0]) - round(((xx - (camera_get_view_width(view_camera[0]) / 2)) + 10)))) < 6)
+    if (camera_0_x < round(((xx - (camera_0_width / 2)) + 10)))
+        __view_set(VIEW_PROP_CAM_X, 0, (camera_0_x + 5))
+    if (camera_0_x > round(((xx - (camera_0_width / 2)) + 10)))
+        __view_set(VIEW_PROP_CAM_X, 0, (camera_0_x - 5))
+    if (abs((camera_0_x - round(((xx - (camera_0_width / 2)) + 10)))) < 6)
     {
-        __view_set(VIEW_PROP_CAM_X, 0, round(((xx - (camera_get_view_width(view_camera[0]) / 2)) + 10)))
+        __view_set(VIEW_PROP_CAM_X, 0, round(((xx - (camera_0_width / 2)) + 10)))
         go += 1
     }
-    if (camera_get_view_y(view_camera[0]) < round(((yy - (camera_get_view_height(view_camera[0]) / 2)) + 10)))
-        __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) + 5))
-    if (camera_get_view_y(view_camera[0]) > round(((yy - (camera_get_view_height(view_camera[0]) / 2)) + 10)))
-        __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) - 5))
-    if (abs((camera_get_view_y(view_camera[0]) - round(((yy - (camera_get_view_height(view_camera[0]) / 2)) + 10)))) < 6)
+    if (camera_0_y < round(((yy - (camera_0_height / 2)) + 10)))
+        __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y + 5))
+    if (camera_0_y > round(((yy - (camera_0_height / 2)) + 10)))
+        __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y - 5))
+    if (abs((camera_0_y - round(((yy - (camera_0_height / 2)) + 10)))) < 6)
     {
-        __view_set(VIEW_PROP_CAM_Y, 0, round(((yy - (camera_get_view_height(view_camera[0]) / 2)) + 10)))
+        __view_set(VIEW_PROP_CAM_Y, 0, round(((yy - (camera_0_height / 2)) + 10)))
         go += 1
     }
     if (go == 2)
@@ -657,7 +657,7 @@ if (con == 131 && instance_exists(OBJ_WRITER) == false)
     newpresent.bombtype = BombType.Present
     newgame = instance_create(210, 500, obj_mettnews_battleobj)
     newgame.bombtype = BombType.Game
-    newticker = instance_create(camera_get_view_x(view_camera[0]), (camera_get_view_y(view_camera[0]) + 200), obj_mettnews_ticker)
+    newticker = instance_create(camera_0_x, (camera_0_y + 200), obj_mettnews_ticker)
     newticker.on = 1
     newticker.doom = 1
     newticker.voff = 40
@@ -695,7 +695,7 @@ if (con == 162)
     }
     with (newticker)
         instance_destroy()
-    mett = instance_create((camera_get_view_x(view_camera[0]) + 340), (camera_get_view_y(view_camera[0]) + 70), obj_mettanchor)
+    mett = instance_create((camera_0_x + 340), (camera_0_y + 70), obj_mettanchor)
     FL_AnimationIndex = 8
     mett.on = 2
     if instance_exists(obj_musfadeout)
@@ -859,5 +859,5 @@ if (con == 171 && instance_exists(OBJ_WRITER) == false)
     scr_tempsave()
     instance_destroy()
 }
-if (camera_get_view_y(view_camera[0]) <= 0)
-    camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0]), 0)
+if (camera_0_y <= 0)
+    camera_set_view_pos(view_camera[0], camera_0_x, 0)

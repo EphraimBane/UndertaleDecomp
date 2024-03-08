@@ -9,10 +9,8 @@ fakedrawer = 1
 instance_create(0, 0, obj_flasher)
 scr_shake(3, 3, 2)
 camera_set_view_target(view_camera[0], object_index)
-__view_set(VIEW_PROP_CAM_X_BORDER, 0, 160)
-__view_set(VIEW_PROP_CAM_Y_BORDER, 0, 100)
-__view_set(VIEW_PROP_CAM_WIDTH, 0, 160)
-__view_set(VIEW_PROP_CAM_HEIGHT, 0, 120)
+camera_set_view_border(view_camera[0], 160, 100)
+camera_set_view_size(view_camera[0], 160, 120)
 snd_play(snd_damage)
 global.typer = 37
 global.msc = 0

@@ -122,7 +122,7 @@ if (con > 0)
     }
     if (con == 14)
     {
-        if (alphys.x > ((camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])) + 30) || alphys.x < (camera_get_view_x(view_camera[0]) - 30))
+        if (alphys.x > ((camera_0_x + camera_0_width) + 30) || alphys.x < (camera_0_x - 30))
         {
             caster_pause(global.currentsong)
             alphys.speed = 0

@@ -1,4 +1,4 @@
-yy = camera_get_view_y(view_camera[0])
+yy = camera_0_y
 if (yy < 0)
     yy = 0
 if (yy > (room_height - 240))

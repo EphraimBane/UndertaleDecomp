@@ -1,13 +1,13 @@
 if (con == 1)
 {
     con = 2
-    nowx = camera_get_view_x(view_camera[0])
+    nowx = camera_0_x
     obj_mainchara.cutscene = true
 }
 if (con == 2)
 {
-    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) + 3))
-    if (camera_get_view_x(view_camera[0]) >= (nowx + 78))
+    camera_set_view_pos(view_camera[0], (camera_0_x + 3), camera_0_y)
+    if (camera_0_x >= (nowx + 78))
     {
         __view_set(VIEW_PROP_CAM_X, 0, (nowx + 78))
         con = 2.1
@@ -69,8 +69,8 @@ if (con == 8 && instance_exists(OBJ_WRITER) == false)
 }
 if (con == 10)
 {
-    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) - 2))
-    if (camera_get_view_x(view_camera[0]) <= (nowx + 20))
+    __view_set(VIEW_PROP_CAM_X, 0, (camera_0_x - 2))
+    if (camera_0_x <= (nowx + 20))
         con = 11
 }
 if (con == 11)

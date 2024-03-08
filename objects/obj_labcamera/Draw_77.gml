@@ -1,6 +1,6 @@
 if (drawnlab == 1 && global.entrance != 3)
     sprite_delete(lab)
-charax = ((obj_mainchara.x - camera_get_view_x(view_camera[0])) * 2)
+charax = ((obj_mainchara.x - camera_0_x) * 2)
 charay = (obj_mainchara.y * 2)
 var xx = (charax - 10)
 var yy = (charay - 5)

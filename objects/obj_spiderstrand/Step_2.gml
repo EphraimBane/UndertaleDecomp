@@ -1,10 +1,10 @@
-myview = camera_get_view_x(view_camera[0])
-gg = (room_width - camera_get_view_width(view_camera[0]))
+myview = camera_0_x
+gg = (room_width - camera_0_width)
 if (myview < 0)
     myview = 0
-if (camera_get_view_x(view_camera[0]) <= 0)
+if (camera_0_x <= 0)
     x = xhome
-if (camera_get_view_x(view_camera[0]) > 0)
-    x = (xhome + floor((camera_get_view_x(view_camera[0]) - (camera_get_view_x(view_camera[0]) * scrollspeed))))
-if (camera_get_view_x(view_camera[0]) >= gg)
+if (camera_0_x > 0)
+    x = (xhome + floor((camera_0_x - (camera_0_x * scrollspeed))))
+if (camera_0_x >= gg)
     x = (xhome + floor((gg - (gg * scrollspeed))))

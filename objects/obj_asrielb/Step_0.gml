@@ -340,8 +340,8 @@ if (global.mnfight == 5)
     }
     if (trcon == 3)
     {
-        camera_set_view_pos(view_camera[0], 0,  camera_get_view_y(view_camera[0]))
-        camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0]), 0)
+        camera_set_view_pos(view_camera[0], 0,  camera_0_y)
+        camera_set_view_pos(view_camera[0], camera_0_x, 0)
         trcon = 6
         alarm[10] = 150
     }
