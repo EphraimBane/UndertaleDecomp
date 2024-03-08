@@ -4,8 +4,8 @@ __background_set(3, 1, (__background_get(3, 1) - 0.25))
 __background_set(3, 0, (__background_get(3, 0) - 0.1))
 if (timer < 5)
 {
-    if (__view_get(VIEW_PROP_CAM_Y, 0) > 0)
-        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 3))
+    if (view_yview(0) > 0)
+        __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) - 3))
     else
         __view_set(VIEW_PROP_CAM_Y, 0, 0)
 }
@@ -89,8 +89,8 @@ if (timer > 240)
 }
 if (timer >= 260)
 {
-    __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 4))
-    if (__view_get(VIEW_PROP_CAM_Y, 0) >= 194)
+    __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) + 4))
+    if (view_yview(0) >= 194)
     {
         global.cast_type = 1
         room_goto(room_end_castroll)

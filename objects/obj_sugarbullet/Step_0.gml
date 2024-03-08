@@ -5,9 +5,9 @@ if (size < 1)
 image_xscale = size
 image_yscale = size
 image_angle += ang
-if (y > (__view_get(VIEW_PROP_CAM_Y, 0) + 250))
+if (y > (view_yview(0) + 250))
     instance_destroy()
-if (x < (__view_get(VIEW_PROP_CAM_X, 0) - 10))
+if (x < (view_xview(0) - 10))
     instance_destroy()
-if (x > (__view_get(VIEW_PROP_CAM_X, 0) + 320))
+if (x > (view_xview(0) + 320))
     instance_destroy()

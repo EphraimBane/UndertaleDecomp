@@ -31,5 +31,5 @@ if (dx >= 120 && global.inbattle == false && global.interact == 0)
         instance_destroy()
     }
 }
-if (__view_get(VIEW_PROP_CAM_Y, 0) <= 0)
+if (view_yview(0) <= 0)
     __view_set(VIEW_PROP_CAM_Y, 0, 0)

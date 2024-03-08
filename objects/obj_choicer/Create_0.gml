@@ -1,16 +1,16 @@
 alarm[1] = 3
 canchoose = 0
-add = __view_get(VIEW_PROP_CAM_X, view_current)
+add = view_xview(view_current)
 x0 = (89 + add)
 x1 = (185 + add)
 x = x0
-y = (210 + __view_get(VIEW_PROP_CAM_Y, view_current))
+y = (210 + view_yview(view_current))
 d = -1
 if instance_exists(obj_dialoguer)
     d = obj_dialoguer.side
 if (room != room_fire_operatest)
 {
-    if (obj_mainchara.y > (__view_get(VIEW_PROP_CAM_Y, view_current) + 130) || d == 0)
+    if (obj_mainchara.y > (view_yview(view_current) + 130) || d == 0)
         y -= 155
 }
 mychoice = 0

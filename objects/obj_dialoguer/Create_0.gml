@@ -1,8 +1,8 @@
 count = 0
 side = 0
 global.facechange = 1
-xx = __view_get(VIEW_PROP_CAM_X, view_current)
-yy = __view_get(VIEW_PROP_CAM_Y, view_current)
+xx = view_xview(view_current)
+yy = view_yview(view_current)
 if instance_exists(obj_mainchara)
 {
     if (obj_mainchara.y > (yy + 130))

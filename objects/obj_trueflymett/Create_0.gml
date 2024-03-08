@@ -1,4 +1,4 @@
-x = (__view_get(VIEW_PROP_CAM_X, 0) + 350)
+x = (view_xview(0) + 350)
 mode = 0
 hspeed = 0
 siner = 0

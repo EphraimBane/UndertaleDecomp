@@ -98,7 +98,7 @@ if (con == 13 && instance_exists(OBJ_WRITER) == false)
 }
 if (con == 14)
 {
-    conf = instance_create(((obj_mainchara.x - 5) + random(20)), (__view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent) - 2), obj_confetti)
+    conf = instance_create(((obj_mainchara.x - 5) + random(20)), (view_yview(0) - 2), obj_confetti)
     conf.hspeed = (-1 + random(2))
 }
 if (con == 15)
@@ -237,8 +237,8 @@ if (con == 33)
 }
 if (con == 33 && instance_exists(OBJ_WRITER) == false)
 {
-    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 4))
-    if (__view_get(VIEW_PROP_CAM_X, 0) > 318)
+    __view_set(VIEW_PROP_CAM_X, 0, (view_xview(0) + 4))
+    if (view_xview(0) > 318)
         con = 34
 }
 if (con == 34)
@@ -256,8 +256,8 @@ if (con == 38)
 }
 if (con == 39)
 {
-    if (__view_get(VIEW_PROP_CAM_X, 0) > 0)
-        __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 16))
+    if (view_xview(0) > 0)
+        __view_set(VIEW_PROP_CAM_X, 0, (view_xview(0) - 16))
 }
 if (con == 40)
 {
@@ -284,8 +284,8 @@ if (con == 50)
 }
 if (con == 51)
 {
-    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 3))
-    if (__view_get(VIEW_PROP_CAM_X, 0) >= 320)
+    __view_set(VIEW_PROP_CAM_X, 0, (view_xview(0) + 3))
+    if (view_xview(0) >= 320)
     {
         __view_set(VIEW_PROP_CAM_X, 0, 320)
         con = 52
@@ -402,13 +402,13 @@ if (con == 65 && instance_exists(OBJ_WRITER) == false)
 }
 if (con == 66)
 {
-    __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 5))
-    if (chara.y >= (__view_get(VIEW_PROP_CAM_Y, 0) + 205))
-        chara.y = (__view_get(VIEW_PROP_CAM_Y, 0) + 205)
-    if (__view_get(VIEW_PROP_CAM_Y, 0) <= 90)
+    __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) - 5))
+    if (chara.y >= (view_yview(0) + 205))
+        chara.y = (view_yview(0) + 205)
+    if (view_yview(0) <= 90)
     {
         __view_set(VIEW_PROP_CAM_Y, 0, 90)
-        chara.y = (__view_get(VIEW_PROP_CAM_Y, 0) + 205)
+        chara.y = (view_yview(0) + 205)
         con = 67
         obj_counterscroller.fakev = 3
         obj_counterscroller.mode = 1
