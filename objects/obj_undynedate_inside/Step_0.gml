@@ -1103,7 +1103,7 @@ if (con == 250 && instance_exists(OBJ_WRITER) == false)
 }
 if (con == 252)
 {
-    blk = instance_create((__view_get(VIEW_PROP_CAM_X, obj_backgrounder_parent) - 2), -2, obj_npc_marker)
+    blk = instance_create((view_xview(0) - 2), -2, obj_npc_marker)
     blk.depth = (wht.depth - 2)
     blk.image_alpha = 0
     blk.visible = true

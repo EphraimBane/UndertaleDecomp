@@ -151,7 +151,7 @@ if (con == 6)
 }
 if (con == 7)
 {
-    if (x < (__view_get(VIEW_PROP_CAM_X, 0) + 120))
+    if (x < (view_xview(0) + 120))
     {
         con = 8
         hspeed = 0

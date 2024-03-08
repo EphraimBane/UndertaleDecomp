@@ -1,2 +1,2 @@
-if (y > (__view_get(VIEW_PROP_CAM_Y, 0) + 250))
+if (y > (view_yview(0) + 250))
     instance_destroy()

@@ -577,8 +577,8 @@ if (introcon > 0)
             mus_intro = caster_load("music/f_intro.ogg")
             caster_play(mus_intro, 1, 1)
         }
-        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 480))
-        ny = __view_get(VIEW_PROP_CAM_Y, 0)
+        __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) + 480))
+        ny = view_yview(0)
         hy = obj_vsflowey_heart.y
         obj_vsflowey_heart.y += 480
         __background_set_colour(c_maroon)

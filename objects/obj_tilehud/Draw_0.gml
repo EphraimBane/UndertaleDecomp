@@ -1,6 +1,6 @@
-if (con == 0 && y >= __view_get(VIEW_PROP_CAM_Y, 0))
+if (con == 0 && y >= view_yview(0))
 {
-    y = __view_get(VIEW_PROP_CAM_Y, 0)
+    y = view_yview(0)
     vspeed = 0
     friction = 0
     con = 1

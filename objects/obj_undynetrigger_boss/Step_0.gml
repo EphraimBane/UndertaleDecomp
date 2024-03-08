@@ -30,8 +30,8 @@ with (obj_undynetrigger_boss)
     }
     if (con == 3)
     {
-        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 4))
-        if (__view_get(VIEW_PROP_CAM_Y, 0) < 80)
+        __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) - 4))
+        if (view_yview(0) < 80)
             con = 4
     }
     if (con == 4)
@@ -311,8 +311,8 @@ with (obj_undynetrigger_boss)
     {
         obj_mainchara.visible = true
         obj_mainchara.y = rememberyyy
-        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 8))
-        if (__view_get(VIEW_PROP_CAM_Y, 0) >= yy)
+        __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) + 8))
+        if (view_yview(0) >= yy)
         {
             save = instance_create(220, 660, obj_savepoint)
             __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
