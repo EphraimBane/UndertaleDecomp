@@ -1,5 +1,5 @@
-xx = __view_get(VIEW_PROP_CAM_X, view_current)
-yy = __view_get(VIEW_PROP_CAM_Y, view_current)
+xx = camera_get_view_x(view_camera[view_current])
+yy = camera_get_view_y(view_camera[view_current])
 mode = 0
 alarm[0] = 0
 mychoicex = (xx + 20)

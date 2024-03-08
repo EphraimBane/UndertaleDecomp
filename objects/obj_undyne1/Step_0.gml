@@ -9,12 +9,12 @@ if (con == 1)
     obj_mainchara.cutscene = true
     con = 1.5
     alarm[4] = 10
-    originy = __view_get(VIEW_PROP_CAM_Y, 0)
+    originy = camera_get_view_y(view_camera[0])
 }
 if (con == 2.5)
 {
-    if (__view_get(VIEW_PROP_CAM_Y, 0) > 80)
-        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 2))
+    if (camera_get_view_y(view_camera[0]) > 80)
+        __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) - 2))
     else if (FL_PapyrusStatus != PapyrusStatus.Killed)
     {
         papyrus.hspeed = 2
@@ -133,8 +133,8 @@ if (con == 5 && instance_exists(OBJ_WRITER) == false)
 }
 if (con == 5.1)
 {
-    if (__view_get(VIEW_PROP_CAM_Y, 0) < originy)
-        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 2))
+    if (camera_get_view_y(view_camera[0]) < originy)
+        __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) + 2))
     else
         con = 5.2
 }
@@ -160,8 +160,8 @@ if (con == 7.1)
 }
 if (con == 7.2)
 {
-    if (__view_get(VIEW_PROP_CAM_Y, 0) > 80)
-        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 10))
+    if (camera_get_view_y(view_camera[0]) > 80)
+        __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) - 10))
     else
         con = 8
 }
@@ -308,8 +308,8 @@ if (con == 26)
 }
 if (con == 27)
 {
-    if (__view_get(VIEW_PROP_CAM_Y, 0) < originy)
-        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 2))
+    if (camera_get_view_y(view_camera[0]) < originy)
+        __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) + 2))
     else
         con = 28
 }

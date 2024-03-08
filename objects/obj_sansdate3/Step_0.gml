@@ -7,13 +7,13 @@ if (con == 20)
     sans.image_speed = 0
     with (obj_mainchara)
     {
-        __view_set(VIEW_PROP_CAM_X, 0, round(((x - (__view_get(VIEW_PROP_CAM_WIDTH, 0) / 2)) + 10)))
-        __view_set(VIEW_PROP_CAM_Y, 0, round(((y - (__view_get(VIEW_PROP_CAM_HEIGHT, 0) / 2)) + 10)))
+        __view_set(VIEW_PROP_CAM_X, 0, round(((x - (camera_get_view_width(view_camera[0]) / 2)) + 10)))
+        __view_set(VIEW_PROP_CAM_Y, 0, round(((y - (camera_get_view_height(view_camera[0]) / 2)) + 10)))
     }
     obj_mainchara.cutscene = true
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
-    idealx = __view_get(VIEW_PROP_CAM_X, 0)
-    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 40))
+    camera_set_view_target(view_camera[0], noone)
+    idealx = camera_get_view_x(view_camera[0])
+    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) - 40))
     if (global.interact == 0)
         global.interact = 1
     global.msc = 0
@@ -278,12 +278,12 @@ if (con == 56)
     alarm[4] = 40
 }
 if (con == 57)
-    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 1))
+    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) + 1))
 if (con == 58)
 {
     __view_set(VIEW_PROP_CAM_X, 0, idealx)
     global.facing = Direction.Down
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    camera_set_view_target(view_camera[0], obj_mainchara)
     obj_mainchara.cutscene = false
     global.interact = 0
     con = 59

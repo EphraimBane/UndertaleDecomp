@@ -8,13 +8,13 @@ if (instance_exists(obj_mainchara) && init_band == 0)
         x = 500
     init_band = 1
 }
-if (__view_get(VIEW_PROP_CAM_X, 0) > (x + 60))
+if (camera_get_view_x(view_camera[0]) > (x + 60))
     x += 20
-if (__view_get(VIEW_PROP_CAM_X, 0) < (x + 20))
+if (camera_get_view_x(view_camera[0]) < (x + 20))
     x -= 20
-if (__view_get(VIEW_PROP_CAM_Y, 0) > (y + 70))
+if (camera_get_view_y(view_camera[0]) > (y + 70))
     y += 40
-if (__view_get(VIEW_PROP_CAM_Y, 0) < (y + 10))
+if (camera_get_view_y(view_camera[0]) < (y + 10))
     y -= 40
 if (x < -40)
     x = -40

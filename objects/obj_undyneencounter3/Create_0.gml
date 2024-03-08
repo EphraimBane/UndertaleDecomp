@@ -1,5 +1,5 @@
 obj_mainchara.cutscene = true
-__view_set(VIEW_PROP_CAM_Y, 0, 0)
+camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0]), 0)
 cn = 0
 active = false
 if (global.plot < 114)

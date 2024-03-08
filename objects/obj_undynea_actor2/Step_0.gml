@@ -15,21 +15,21 @@ if (fun == false)
             snd_play(snd_undynestep)
     }
 }
-gg = (room_width - __view_get(VIEW_PROP_CAM_WIDTH, 0))
-hh = (room_height - __view_get(VIEW_PROP_CAM_HEIGHT, 0))
-if (__view_get(VIEW_PROP_CAM_X, 0) >= 0)
+gg = (room_width - camera_get_view_width(view_camera[0]))
+hh = (room_height - camera_get_view_height(view_camera[0]))
+if (camera_get_view_x(view_camera[0]) >= 0)
 {
-    x = (xhome + floor((__view_get(VIEW_PROP_CAM_X, 0) - (__view_get(VIEW_PROP_CAM_X, 0) * scrollspeed))))
+    x = (xhome + floor((camera_get_view_x(view_camera[0]) - (camera_get_view_x(view_camera[0]) * scrollspeed))))
     g = (x - xprevious)
 }
-if (__view_get(VIEW_PROP_CAM_X, 0) >= gg)
+if (camera_get_view_x(view_camera[0]) >= gg)
 {
     x = (xhome + floor((gg - (gg * scrollspeed))))
     g = (x - xprevious)
 }
-if (__view_get(VIEW_PROP_CAM_Y, 0) >= 0)
-    y = (yhome + floor((__view_get(VIEW_PROP_CAM_Y, 0) - (__view_get(VIEW_PROP_CAM_Y, 0) * scrollspeed))))
-if (__view_get(VIEW_PROP_CAM_Y, 0) >= hh)
+if (camera_get_view_y(view_camera[0]) >= 0)
+    y = (yhome + floor((camera_get_view_y(view_camera[0]) - (camera_get_view_y(view_camera[0]) * scrollspeed))))
+if (camera_get_view_y(view_camera[0]) >= hh)
     y = (yhome + floor((hh - (hh * scrollspeed))))
 xhome += hhspeed
 yhome += vhspeed

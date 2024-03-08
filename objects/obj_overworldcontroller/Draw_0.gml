@@ -4,8 +4,8 @@ if (global.interact == 5)
     currentmenu = global.menuno
     if (global.menuno < 6)
         currentspot = global.menucoord[global.menuno]
-    xx = __view_get(VIEW_PROP_CAM_X, view_current)
-    yy = (__view_get(VIEW_PROP_CAM_Y, view_current) + 10)
+    xx = camera_get_view_x(view_camera[view_current])
+    yy = (camera_get_view_y(view_camera[view_current]) + 10)
     moveyy = yy
     if (obj_mainchara.y > (yy + 120))
         moveyy += 135

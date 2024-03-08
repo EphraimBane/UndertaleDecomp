@@ -1,7 +1,7 @@
 f_test = 1
 g_heart = 0
 rememberx = obj_mainchara.x
-rememberview = __view_get(VIEW_PROP_CAM_X, 0)
+rememberview = camera_get_view_x(view_camera[0])
 __view_set(VIEW_PROP_CAM_X, 0, 300)
 obj_mainchara.x = 300
 size = 1
@@ -55,12 +55,12 @@ if (global.entrance == 2)
 {
     repeat (5)
     {
-        if (x < (room_width - __view_get(VIEW_PROP_CAM_WIDTH, 0)))
+        if (x < (room_width - camera_get_view_width(view_camera[0])))
         {
             x += 350
             xhome += 350
         }
-        if (x > (room_width - __view_get(VIEW_PROP_CAM_WIDTH, 0)))
+        if (x > (room_width - camera_get_view_width(view_camera[0])))
         {
             x -= 350
             xhome -= 350

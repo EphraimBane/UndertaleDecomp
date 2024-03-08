@@ -48,10 +48,10 @@ if (con == 6)
 }
 if (con == 7 && instance_exists(OBJ_WRITER) == false)
 {
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    camera_set_view_target(view_camera[0], noone)
     obj_mainchara.cutscene = true
-    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 5))
-    if (__view_get(VIEW_PROP_CAM_X, 0) >= 96)
+    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) + 5))
+    if (camera_get_view_x(view_camera[0]) >= 96)
     {
         __view_set(VIEW_PROP_CAM_X, 0, 100)
         con = 8
@@ -84,10 +84,10 @@ if (con == 12)
 }
 if (con == 13 && instance_exists(OBJ_WRITER) == false)
 {
-    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 5))
-    if (__view_get(VIEW_PROP_CAM_X, 0) <= 4)
+    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) - 5))
+    if (camera_get_view_x(view_camera[0]) <= 4)
     {
-        __view_set(VIEW_PROP_CAM_X, 0, 0)
+        camera_set_view_pos(view_camera[0], 0,  camera_get_view_y(view_camera[0]))
         con = 14
         alarm[4] = 20
     }
@@ -123,7 +123,7 @@ if (con == 18 && instance_exists(OBJ_WRITER) == false)
     flavor = 0
     global.phasing = 0
     obj_mainchara.cutscene = false
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    camera_set_view_target(view_camera[0], obj_mainchara)
     global.interact = 0
     con = 20
 }
@@ -156,10 +156,10 @@ if (con == 30)
         with (obj_tileguy)
             instance_destroy()
     }
-    if (flame1.x < (__view_get(VIEW_PROP_CAM_X, 0) - 20))
-        flame1.x = (__view_get(VIEW_PROP_CAM_X, 0) - 20)
-    if (flame2.x > (__view_get(VIEW_PROP_CAM_X, 0) + __view_get(VIEW_PROP_CAM_WIDTH, 0)))
-        flame2.x = (__view_get(VIEW_PROP_CAM_X, 0) + __view_get(VIEW_PROP_CAM_WIDTH, 0))
+    if (flame1.x < (camera_get_view_x(view_camera[0]) - 20))
+        flame1.x = (camera_get_view_x(view_camera[0]) - 20)
+    if (flame2.x > (camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])))
+        flame2.x = (camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]))
     con = 31
     alarm[4] = 60
 }
@@ -370,7 +370,7 @@ if (con == 59)
             instance_destroy()
     }
     obj_mainchara.cutscene = false
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    camera_set_view_target(view_camera[0], obj_mainchara)
     global.interact = 1
     if (global.interact == 0)
         global.interact = 1

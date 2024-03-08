@@ -1,5 +1,5 @@
-x = (__view_get(VIEW_PROP_CAM_X, 0) - 103)
-y = (__view_get(VIEW_PROP_CAM_Y, 0) + 40)
+x = (camera_get_view_x(view_camera[0]) - 103)
+y = (camera_get_view_y(view_camera[0]) + 40)
 hspeed = 8
 friction = 0.3
 con = 0

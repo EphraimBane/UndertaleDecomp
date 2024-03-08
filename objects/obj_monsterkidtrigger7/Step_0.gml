@@ -1,9 +1,9 @@
 if (con == 1)
 {
-    mkid = instance_create((__view_get(VIEW_PROP_CAM_X, obj_backgrounder_parent) - 40), obj_mainchara.y, obj_mkid_actor)
+    mkid = instance_create((camera_get_view_x(view_camera[0]) - 40), obj_mainchara.y, obj_mkid_actor)
     mkid.image_speed = 0
     obj_mainchara.cutscene = true
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    camera_set_view_target(view_camera[0], noone)
     mkid.sprite_index = mkid.rsprite
     con = 0.1
     alarm[4] = 2
@@ -31,7 +31,7 @@ if (con == 2 && instance_exists(OBJ_WRITER) == false)
     if (vol > 0)
         vol -= 0.02
     caster_set_volume(global.currentsong, vol)
-    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 2))
+    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) - 2))
 }
 if (con == 3)
 {
@@ -194,7 +194,7 @@ if (con == 27)
 }
 if (con == 28 && instance_exists(OBJ_WRITER) == false)
 {
-    undyne = instance_create((__view_get(VIEW_PROP_CAM_X, obj_backgrounder_parent) - 40), 82, obj_undynea_actor)
+    undyne = instance_create((camera_get_view_x(view_camera[0]) - 40), 82, obj_undynea_actor)
     undyne.sprite_index = undyne.rsprite
     undyne.hspeed = 2
     undyne.image_speed = 0.2
@@ -222,8 +222,8 @@ if (con == 34)
     global.interact = 0
     con = 35
     FL_UnknownBoolean17 = true
-    doorb = instance_create((__view_get(VIEW_PROP_CAM_X, obj_backgrounder_parent) - 20), (obj_mainchara.y + 10), obj_doorB)
-    doora = instance_create(((__view_get(VIEW_PROP_CAM_X, 0) + __view_get(VIEW_PROP_CAM_WIDTH, obj_backgrounder_parent)) + 20), (obj_mainchara.y + 10), obj_doorA)
+    doorb = instance_create((camera_get_view_x(view_camera[0]) - 20), (obj_mainchara.y + 10), obj_doorB)
+    doora = instance_create(((camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])) + 20), (obj_mainchara.y + 10), obj_doorA)
     undynetimer = 0
     finaltimer = 0
     mkidtalk = 0
@@ -374,10 +374,10 @@ if (con == 71 && instance_exists(OBJ_WRITER) == false)
 if (con == 72 && instance_exists(OBJ_WRITER) == false)
 {
     con = 73
-    idealxview = round(((obj_mainchara.x - (__view_get(VIEW_PROP_CAM_WIDTH, 0) / 2)) + (obj_mainchara.sprite_width / 2)))
-    if (idealxview >= (room_width - __view_get(VIEW_PROP_CAM_WIDTH, 0)))
-        idealxview = ((room_width - __view_get(VIEW_PROP_CAM_WIDTH, 0)) - 2)
-    if (__view_get(VIEW_PROP_CAM_X, 0) > idealxview)
+    idealxview = round(((obj_mainchara.x - (camera_get_view_width(view_camera[0]) / 2)) + (obj_mainchara.sprite_width / 2)))
+    if (idealxview >= (room_width - camera_get_view_width(view_camera[0])))
+        idealxview = ((room_width - camera_get_view_width(view_camera[0])) - 2)
+    if (camera_get_view_x(view_camera[0]) > idealxview)
         xdir = 0
     else
         xdir = 1
@@ -386,14 +386,14 @@ if (con == 72 && instance_exists(OBJ_WRITER) == false)
 if (con == 74)
 {
     if (xdir == 1)
-        __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 4))
+        __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) + 4))
     else
-        __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 4))
-    if (abs((__view_get(VIEW_PROP_CAM_X, 0) - idealxview)) <= 5)
+        __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) - 4))
+    if (abs((camera_get_view_x(view_camera[0]) - idealxview)) <= 5)
     {
         with (mkid)
             instance_destroy()
-        __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+        camera_set_view_target(view_camera[0], obj_mainchara)
         obj_mainchara.cutscene = false
         with (doora)
             instance_destroy()
@@ -415,7 +415,7 @@ if (con == 80)
 }
 if (con == 82)
 {
-    if (undyne.x > (__view_get(VIEW_PROP_CAM_X, 0) + 20))
+    if (undyne.x > (camera_get_view_x(view_camera[0]) + 20))
     {
         undyne.hspeed = -1
         undyne.image_speed = 0.12
@@ -596,8 +596,8 @@ if (con == 115 && instance_exists(OBJ_WRITER) == false)
     mkid.image_speed = 0.5
     mkid.sprite_index = mkid.lsprite
     con = 116
-    idealxview = round(((obj_mainchara.x - (__view_get(VIEW_PROP_CAM_WIDTH, 0) / 2)) + (obj_mainchara.sprite_width / 2)))
-    if (__view_get(VIEW_PROP_CAM_X, 0) > idealxview)
+    idealxview = round(((obj_mainchara.x - (camera_get_view_width(view_camera[0]) / 2)) + (obj_mainchara.sprite_width / 2)))
+    if (camera_get_view_x(view_camera[0]) > idealxview)
         xdir = 0
     else
         xdir = 1
@@ -606,14 +606,14 @@ if (con == 115 && instance_exists(OBJ_WRITER) == false)
 if (con == 117)
 {
     if (xdir == 1)
-        __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 2))
+        __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) + 2))
     else
-        __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 2))
-    if (abs((__view_get(VIEW_PROP_CAM_X, 0) - idealxview)) <= 2)
+        __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) - 2))
+    if (abs((camera_get_view_x(view_camera[0]) - idealxview)) <= 2)
     {
         with (mkid)
             instance_destroy()
-        __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+        camera_set_view_target(view_camera[0], obj_mainchara)
         obj_mainchara.cutscene = false
         with (doora)
             instance_destroy()
@@ -703,7 +703,7 @@ if (con == 159)
 if (con == 160)
 {
     obj_mainchara.cutscene = false
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    camera_set_view_target(view_camera[0], obj_mainchara)
     con = 160.1
     global.interact = 1
     alarm[4] = 30

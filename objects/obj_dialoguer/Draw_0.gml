@@ -1,6 +1,6 @@
 if (side == 0)
 {
-    yy = __view_get(VIEW_PROP_CAM_Y, view_current)
+    yy = camera_get_view_y(view_camera[view_current])
     if instance_exists(writer)
     {
         if (writer.writingy > (yy + 80))
@@ -12,13 +12,13 @@ if (side == 0)
             obj_face.y -= 155
     }
     draw_set_color(c_white)
-    draw_rectangle((__view_get(VIEW_PROP_CAM_X, view_current) + 16), (__view_get(VIEW_PROP_CAM_Y, view_current) + 5), (__view_get(VIEW_PROP_CAM_X, view_current) + 304), (__view_get(VIEW_PROP_CAM_Y, view_current) + 80), false)
+    draw_rectangle((camera_get_view_x(view_camera[view_current]) + 16), (camera_get_view_y(view_camera[view_current]) + 5), (camera_get_view_x(view_camera[view_current]) + 304), (camera_get_view_y(view_camera[view_current]) + 80), false)
     draw_set_color(c_black)
-    draw_rectangle((__view_get(VIEW_PROP_CAM_X, view_current) + 19), (__view_get(VIEW_PROP_CAM_Y, view_current) + 8), (__view_get(VIEW_PROP_CAM_X, view_current) + 301), (__view_get(VIEW_PROP_CAM_Y, view_current) + 77), false)
+    draw_rectangle((camera_get_view_x(view_camera[view_current]) + 19), (camera_get_view_y(view_camera[view_current]) + 8), (camera_get_view_x(view_camera[view_current]) + 301), (camera_get_view_y(view_camera[view_current]) + 77), false)
 }
 else
 {
-    yy = __view_get(VIEW_PROP_CAM_Y, view_current)
+    yy = camera_get_view_y(view_camera[view_current])
     if instance_exists(writer)
     {
         if (writer.writingy < (yy + 80))
@@ -30,8 +30,8 @@ else
             obj_face.y += 155
     }
     draw_set_color(c_white)
-    draw_rectangle((__view_get(VIEW_PROP_CAM_X, view_current) + 16), (__view_get(VIEW_PROP_CAM_Y, view_current) + 160), (__view_get(VIEW_PROP_CAM_X, view_current) + 304), (__view_get(VIEW_PROP_CAM_Y, view_current) + 235), false)
+    draw_rectangle((camera_get_view_x(view_camera[view_current]) + 16), (camera_get_view_y(view_camera[view_current]) + 160), (camera_get_view_x(view_camera[view_current]) + 304), (camera_get_view_y(view_camera[view_current]) + 235), false)
     draw_set_color(c_black)
-    draw_rectangle((__view_get(VIEW_PROP_CAM_X, view_current) + 19), (__view_get(VIEW_PROP_CAM_Y, view_current) + 163), (__view_get(VIEW_PROP_CAM_X, view_current) + 301), (__view_get(VIEW_PROP_CAM_Y, view_current) + 232), false)
+    draw_rectangle((camera_get_view_x(view_camera[view_current]) + 19), (camera_get_view_y(view_camera[view_current]) + 163), (camera_get_view_x(view_camera[view_current]) + 301), (camera_get_view_y(view_camera[view_current]) + 232), false)
 }
 count = 1

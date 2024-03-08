@@ -21,14 +21,14 @@ if (con == 5)
 }
 if (con == 7)
 {
-    remy = __view_get(VIEW_PROP_CAM_Y, 0)
+    remy = camera_get_view_y(view_camera[0])
     obj_mainchara.cutscene = true
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    camera_set_view_target(view_camera[0], noone)
     con = 8
     alarm[4] = 90
 }
 if (con == 8)
-    __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 1))
+    __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) - 1))
 if (con == 9)
 {
     con = 10
@@ -215,13 +215,13 @@ if (con == 46 && instance_exists(OBJ_WRITER) == false)
 }
 if (con == 48)
 {
-    if (__view_get(VIEW_PROP_CAM_Y, 0) < remy)
-        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 2))
+    if (camera_get_view_y(view_camera[0]) < remy)
+        __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) + 2))
     else
     {
         __view_set(VIEW_PROP_CAM_Y, 0, remy)
         obj_mainchara.cutscene = false
-        __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+        camera_set_view_target(view_camera[0], obj_mainchara)
         global.interact = 0
         with (asg)
             instance_destroy()
