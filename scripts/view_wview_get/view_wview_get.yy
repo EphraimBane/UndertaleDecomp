@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"view_wview",
+  "%Name":"view_wview_get",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"view_wview",
+  "name":"view_wview_get",
   "parent":{
     "name":"View",
     "path":"folders/Scripts/Deprecated Wrapper/View.yy",

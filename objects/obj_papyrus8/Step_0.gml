@@ -14,7 +14,7 @@ if (conversation == 1)
     global.interact = 1
     papyrus.sprite_index = papyrus.ltsprite
     obj_mainchara.cutscene = true
-    camera = view_xview(0)
+    camera = view_xview_get(0)
     conversation = 2
     global.border = 0
     if (global.hp < global.maxhp)
@@ -22,8 +22,8 @@ if (conversation == 1)
 }
 if (conversation == 2)
 {
-    if (view_xview(0) < (camera + 100))
-        __view_set(VIEW_PROP_CAM_X, 0, (view_xview(0) + 3))
+    if (view_xview_get(0) < (camera + 100))
+        view_xview_set(0, (view_xview_get(0) + 3))
     else
         conversation = 3
 }
@@ -359,8 +359,8 @@ if (conversation == 25)
         mmm = instance_create(0, 0, obj_musfadeout)
         mmm.fadespeed = 0.02
     }
-    if (view_xview(0) > camera)
-        __view_set(VIEW_PROP_CAM_X, 0, (view_xview(0) - 3))
+    if (view_xview_get(0) > camera)
+        view_xview_set(0, (view_xview_get(0) - 3))
     else
     {
         obj_mainchara.cutscene = false

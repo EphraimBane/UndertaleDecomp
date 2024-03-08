@@ -201,8 +201,8 @@ if (conversation == 16 && instance_exists(OBJ_WRITER) == false)
 {
     conversation = 18
     alarm[6] = 10
-    rememberxview = view_xview(view_current)
-    rememberyview = view_yview(view_current)
+    rememberxview = view_xview_get(view_current)
+    rememberyview = view_yview_get(view_current)
     __view_set(VIEW_PROP_CAM_TARGET, view_current, noone)
     obj_mainchara.cutscene = true
 }
@@ -211,22 +211,22 @@ if (conversation == 17)
 }
 if (conversation == 18)
 {
-    if ((x + (sprite_width / 2)) > (view_xview(view_current) + (view_wview(view_current) / 2)))
-        __view_set(VIEW_PROP_CAM_X, view_current, (view_xview(view_current) + 3))
-    if ((y + (sprite_height / 2)) > (view_yview(view_current) + (view_hview(view_current) / 2)))
-        __view_set(VIEW_PROP_CAM_Y, view_current, (view_yview(view_current) + 9))
-    __view_set(VIEW_PROP_CAM_HEIGHT, view_current, (view_hview(view_current) - 12))
-    __view_set(VIEW_PROP_CAM_WIDTH, view_current, (view_wview(view_current) - 16))
+    if ((x + (sprite_width / 2)) > (view_xview_get(view_current) + (view_wview_get(view_current) / 2)))
+        view_xview_set(view_current, (view_xview_get(view_current) + 3))
+    if ((y + (sprite_height / 2)) > (view_yview_get(view_current) + (view_hview_get(view_current) / 2)))
+        view_yview_set(view_current, (view_yview_get(view_current) + 9))
+    view_hview_set(view_current, (view_hview_get(view_current) - 12))
+    view_wview_set(view_current, (view_wview_get(view_current) - 16))
     alarm[7] = 30
 }
 if (conversation == 20)
 {
-    if (view_xview(view_current) > rememberxview)
-        __view_set(VIEW_PROP_CAM_X, view_current, (view_xview(view_current) - 3))
-    if (view_yview(view_current) > rememberyview)
-        __view_set(VIEW_PROP_CAM_Y, view_current, (view_yview(view_current) - 9))
-    __view_set(VIEW_PROP_CAM_HEIGHT, view_current, (view_hview(view_current) + 12))
-    __view_set(VIEW_PROP_CAM_WIDTH, view_current, (view_wview(view_current) + 16))
+    if (view_xview_get(view_current) > rememberxview)
+        view_xview_set(view_current, (view_xview_get(view_current) - 3))
+    if (view_yview_get(view_current) > rememberyview)
+        view_yview_set(view_current, (view_yview_get(view_current) - 9))
+    view_hview_set(view_current, (view_hview_get(view_current) + 12))
+    view_wview_set(view_current, (view_wview_get(view_current) + 16))
 }
 if (conversation == 21)
 {

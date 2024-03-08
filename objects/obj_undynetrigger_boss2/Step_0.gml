@@ -1,6 +1,6 @@
 if (con == 1)
 {
-    undyne = scr_marker(150, (view_yview(0) - 230), spr_undynedive)
+    undyne = scr_marker(150, (view_yview_get(0) - 230), spr_undynedive)
     undyne.image_speed = 0.334
     global.typer = 37
     global.msc = 0

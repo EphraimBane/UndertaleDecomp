@@ -1,4 +1,4 @@
-x = (view_xview(0) + 350)
+x = (view_xview_get(0) + 350)
 mode = 0
 hspeed = 0
 siner = 0

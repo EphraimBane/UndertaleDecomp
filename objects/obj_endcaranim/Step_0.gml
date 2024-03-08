@@ -4,10 +4,10 @@ __background_set(3, 1, (__background_get(3, 1) - 0.25))
 __background_set(3, 0, (__background_get(3, 0) - 0.1))
 if (timer < 5)
 {
-    if (view_yview(0) > 0)
-        __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) - 3))
+    if (view_yview_get(0) > 0)
+        view_yview_set(0, (view_yview_get(0) - 3))
     else
-        __view_set(VIEW_PROP_CAM_Y, 0, 0)
+        view_yview_set(0, 0)
 }
 bgx -= 4
 tile_layer_shift(1000000, -4, 0)
@@ -89,8 +89,8 @@ if (timer > 240)
 }
 if (timer >= 260)
 {
-    __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) + 4))
-    if (view_yview(0) >= 194)
+    view_yview_set(0, (view_yview_get(0) + 4))
+    if (view_yview_get(0) >= 194)
     {
         global.cast_type = 1
         room_goto(room_end_castroll)

@@ -18,7 +18,7 @@ for (i = 0; i < 10; i += 1)
     w = round(w)
     var bottom = (room_height - cw)
     var top = (((room_height - cw) - w) + 1)
-    ossafe_fill_rectangle((view_xview(0) - 10), bottom, (view_xview(0) + 330), top)
+    ossafe_fill_rectangle((view_xview_get(0) - 10), bottom, (view_xview_get(0) + 330), top)
     cw += w
 }
 draw_set_alpha(1)

@@ -1001,8 +1001,8 @@ if (cn == 75)
     friendgraph.x = 999
     papyrus = caster_load("music/papyrus.ogg")
     cn = 76
-    __view_set(VIEW_PROP_CAM_WIDTH, 0, 320)
-    __view_set(VIEW_PROP_CAM_HEIGHT, 0, 240)
+    view_wview_set(0, 320)
+    view_hview_set(0, 240)
     global.typer = 22
     if (FL_PapyrusFightFlirt == 1)
     {
@@ -1039,8 +1039,8 @@ if (cn == 76 && instance_exists(OBJ_WRITER) == false)
     g.tspeed = -0.05
     cn = 77
     alarm[2] = 20
-    __view_set(VIEW_PROP_CAM_HEIGHT, 0, 480)
-    __view_set(VIEW_PROP_CAM_WIDTH, 0, 640)
+    view_hview_set(0, 480)
+    view_wview_set(0, 640)
 }
 if (cn == 78)
 {

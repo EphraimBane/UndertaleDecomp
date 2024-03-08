@@ -51,7 +51,7 @@ if (conversation == 22.2 && instance_exists(OBJ_WRITER) == false)
 }
 if (conversation == 23)
 {
-    temptor = scr_marker(146, (view_yview(0) - 60), spr_toriel_d)
+    temptor = scr_marker(146, (view_yview_get(0) - 60), spr_toriel_d)
     temptor.image_speed = 0.25
     temptor.vspeed = 2
     global.currentsong = caster_load("music/toriel.ogg")

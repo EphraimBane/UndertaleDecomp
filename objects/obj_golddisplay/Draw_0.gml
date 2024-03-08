@@ -1,5 +1,5 @@
-xx = view_xview(view_current)
-yy = (view_yview(view_current) + 10)
+xx = view_xview_get(view_current)
+yy = (view_yview_get(view_current) + 10)
 f = 188
 yf = 8
 draw_set_color(c_white)

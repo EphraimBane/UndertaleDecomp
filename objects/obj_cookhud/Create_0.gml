@@ -1,5 +1,5 @@
-x = (view_xview(0) - 103)
-y = (view_yview(0) + 40)
+x = (view_xview_get(0) - 103)
+y = (view_yview_get(0) + 40)
 hspeed = 8
 friction = 0.3
 con = 0

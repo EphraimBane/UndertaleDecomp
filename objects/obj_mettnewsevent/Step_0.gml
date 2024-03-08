@@ -386,14 +386,14 @@ if (con == 100 && instance_exists(OBJ_WRITER) == false)
 }
 if (con == 105)
 {
-    if (view_xview(0) > 240)
-        __view_set(VIEW_PROP_CAM_X, 0, (view_xview(0) - 3))
-    if (view_xview(0) < 210)
-        __view_set(VIEW_PROP_CAM_X, 0, (view_xview(0) + 3))
-    if (view_yview(0) < 140)
-        __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) + 3))
-    if (view_yview(0) > 150)
-        __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) - 3))
+    if (view_xview_get(0) > 240)
+        view_xview_set(0, (view_xview_get(0) - 3))
+    if (view_xview_get(0) < 210)
+        view_xview_set(0, (view_xview_get(0) + 3))
+    if (view_yview_get(0) < 140)
+        view_yview_set(0, (view_yview_get(0) + 3))
+    if (view_yview_get(0) > 150)
+        view_yview_set(0, (view_yview_get(0) - 3))
 }
 if (con == 104)
 {
@@ -479,7 +479,7 @@ if (con == 125)
 }
 if (con == 125.1 && instance_exists(OBJ_WRITER) == false)
 {
-    wordfall = instance_create((view_xview(0) + 20), (view_yview(0) + 20), obj_wordfall)
+    wordfall = instance_create((view_xview_get(0) + 20), (view_yview_get(0) + 20), obj_wordfall)
     global.typer = 5
     global.msg[0] = scr_gettext("obj_mettnewsevent_694")
     global.msg[1] = scr_gettext("obj_mettnewsevent_695")
@@ -502,10 +502,10 @@ if (con == 127 && instance_exists(OBJ_WRITER) == false)
 {
     global.facing = Direction.Up
     __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
-    if (view_yview(0) > 40)
+    if (view_yview_get(0) > 40)
     {
         obj_mettanchor.y -= 15
-        __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) - 10))
+        view_yview_set(0, (view_yview_get(0) - 10))
     }
     else
         con = 128
@@ -561,22 +561,22 @@ if (con == 129 && instance_exists(OBJ_WRITER) == false)
     go = 0
     xx = obj_mainchara.x
     yy = obj_mainchara.y
-    if (view_xview(0) < round(((xx - (view_wview(0) / 2)) + 10)))
-        __view_set(VIEW_PROP_CAM_X, 0, (view_xview(0) + 5))
-    if (view_xview(0) > round(((xx - (view_wview(0) / 2)) + 10)))
-        __view_set(VIEW_PROP_CAM_X, 0, (view_xview(0) - 5))
-    if (abs((view_xview(0) - round(((xx - (view_wview(0) / 2)) + 10)))) < 6)
+    if (view_xview_get(0) < round(((xx - (view_wview_get(0) / 2)) + 10)))
+        view_xview_set(0, (view_xview_get(0) + 5))
+    if (view_xview_get(0) > round(((xx - (view_wview_get(0) / 2)) + 10)))
+        view_xview_set(0, (view_xview_get(0) - 5))
+    if (abs((view_xview_get(0) - round(((xx - (view_wview_get(0) / 2)) + 10)))) < 6)
     {
-        __view_set(VIEW_PROP_CAM_X, 0, round(((xx - (view_wview(0) / 2)) + 10)))
+        view_xview_set(0, round(((xx - (view_wview_get(0) / 2)) + 10)))
         go += 1
     }
-    if (view_yview(0) < round(((yy - (view_hview(0) / 2)) + 10)))
-        __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) + 5))
-    if (view_yview(0) > round(((yy - (view_hview(0) / 2)) + 10)))
-        __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) - 5))
-    if (abs((view_yview(0) - round(((yy - (view_hview(0) / 2)) + 10)))) < 6)
+    if (view_yview_get(0) < round(((yy - (view_hview_get(0) / 2)) + 10)))
+        view_yview_set(0, (view_yview_get(0) + 5))
+    if (view_yview_get(0) > round(((yy - (view_hview_get(0) / 2)) + 10)))
+        view_yview_set(0, (view_yview_get(0) - 5))
+    if (abs((view_yview_get(0) - round(((yy - (view_hview_get(0) / 2)) + 10)))) < 6)
     {
-        __view_set(VIEW_PROP_CAM_Y, 0, round(((yy - (view_hview(0) / 2)) + 10)))
+        view_yview_set(0, round(((yy - (view_hview_get(0) / 2)) + 10)))
         go += 1
     }
     if (go == 2)
@@ -656,7 +656,7 @@ if (con == 131 && instance_exists(OBJ_WRITER) == false)
     newpresent.bombtype = BombType.Present
     newgame = instance_create(210, 500, obj_mettnews_battleobj)
     newgame.bombtype = BombType.Game
-    newticker = instance_create(view_xview(0), (view_yview(0) + 200), obj_mettnews_ticker)
+    newticker = instance_create(view_xview_get(0), (view_yview_get(0) + 200), obj_mettnews_ticker)
     newticker.on = 1
     newticker.doom = 1
     newticker.voff = 40
@@ -694,7 +694,7 @@ if (con == 162)
     }
     with (newticker)
         instance_destroy()
-    mett = instance_create((view_xview(0) + 340), (view_yview(0) + 70), obj_mettanchor)
+    mett = instance_create((view_xview_get(0) + 340), (view_yview_get(0) + 70), obj_mettanchor)
     FL_AnimationIndex = 8
     mett.on = 2
     if instance_exists(obj_musfadeout)
@@ -858,5 +858,5 @@ if (con == 171 && instance_exists(OBJ_WRITER) == false)
     scr_tempsave()
     instance_destroy()
 }
-if (view_yview(0) <= 0)
-    __view_set(VIEW_PROP_CAM_Y, 0, 0)
+if (view_yview_get(0) <= 0)
+    view_yview_set(0, 0)

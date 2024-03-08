@@ -1,7 +1,7 @@
-y = (view_yview(0) + 40)
-if (con == 0 && x >= view_xview(0))
+y = (view_yview_get(0) + 40)
+if (con == 0 && x >= view_xview_get(0))
 {
-    x = view_xview(0)
+    x = view_xview_get(0)
     hspeed = 0
     friction = 0
     con = 1

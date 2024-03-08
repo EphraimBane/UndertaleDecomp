@@ -84,8 +84,8 @@ if (con == 10 || con == 11)
     {
         if (shaked < 1)
             shaked = 1
-        __view_set(VIEW_PROP_CAM_X, 0, ((0 + random(shaked)) - random(shaked)))
-        __view_set(VIEW_PROP_CAM_Y, 0, ((0 + random(shaked)) - random(shaked)))
+        view_xview_set(0, ((0 + random(shaked)) - random(shaked)))
+        view_yview_set(0, ((0 + random(shaked)) - random(shaked)))
     }
 }
 if (powered == 1)

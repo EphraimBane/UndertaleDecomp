@@ -30,8 +30,8 @@ with (obj_undynetrigger_boss)
     }
     if (con == 3)
     {
-        __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) - 4))
-        if (view_yview(0) < 80)
+        view_yview_set(0, (view_yview_get(0) - 4))
+        if (view_yview_get(0) < 80)
             con = 4
     }
     if (con == 4)
@@ -108,7 +108,7 @@ with (obj_undynetrigger_boss)
     {
         global.msg[0] = scr_gettext("obj_undynetrigger_boss_220")
         event_user(1)
-        __view_set(VIEW_PROP_CAM_ANGLE, 0, 0)
+        view_angle_set(0, 0)
         con = 14
     }
     if (con == 14)
@@ -139,16 +139,16 @@ with (obj_undynetrigger_boss)
         undyne.image_speed = 0
         fakedrawer = 0
         __view_set(VIEW_PROP_VISIBLE, 1, false)
-        __view_set(VIEW_PROP_CAM_HEIGHT, 1, 240)
-        __view_set(VIEW_PROP_CAM_WIDTH, 1, 320)
-        __view_set(VIEW_PROP_CAM_X, 1, 0)
-        __view_set(VIEW_PROP_CAM_Y, 1, 60)
+        view_hview_set(1, 240)
+        view_wview_set(1, 320)
+        view_xview_set(1, 0)
+        view_yview_set(1, 60)
         __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
         FL_UndyneZoomCutscene = false
-        __view_set(VIEW_PROP_CAM_X, 0, 0)
-        __view_set(VIEW_PROP_CAM_Y, 0, 60)
-        __view_set(VIEW_PROP_CAM_HEIGHT, 0, 240)
-        __view_set(VIEW_PROP_CAM_WIDTH, 0, 320)
+        view_xview_set(0, 0)
+        view_yview_set(0, 60)
+        view_hview_set(0, 240)
+        view_wview_set(0, 320)
         alarm[4] = 20
     }
     if (con == 18)
@@ -311,8 +311,8 @@ with (obj_undynetrigger_boss)
     {
         obj_mainchara.visible = true
         obj_mainchara.y = rememberyyy
-        __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) + 8))
-        if (view_yview(0) >= yy)
+        view_yview_set(0, (view_yview_get(0) + 8))
+        if (view_yview_get(0) >= yy)
         {
             save = instance_create(220, 660, obj_savepoint)
             __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)

@@ -97,7 +97,7 @@ if (instance_exists(OBJ_WRITER) == false && con == 15)
 }
 if (con == 16)
 {
-    if (am[0].y > (view_yview(0) + 300))
+    if (am[0].y > (view_yview_get(0) + 300))
     {
         con = 20
         i = 0

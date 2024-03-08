@@ -1,8 +1,8 @@
 if instance_exists(obj_time)
 {
-    var scale = (view_wview(view_current) / 640)
+    var scale = (view_wview_get(view_current) / 640)
     if (obj_time.quit > 0)
-        draw_sprite_ext(sprite_index, image_index, view_xview(view_current), view_yview(view_current), scale, scale, 0, c_white, image_alpha)
+        draw_sprite_ext(sprite_index, image_index, view_xview_get(view_current), view_yview_get(view_current), scale, scale, 0, c_white, image_alpha)
     else
         instance_destroy()
 }

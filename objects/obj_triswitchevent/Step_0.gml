@@ -43,22 +43,22 @@ if (con == 3 || con == 1 || con == 0.1 || con == 1.1)
     {
         if (donkeykongismyfavoritemarvelsuperhero == 0)
         {
-            wrx = (OBJ_WRITER.writingx - view_xview(0))
-            dgx = (obj_dialoguer.x - view_xview(0))
+            wrx = (OBJ_WRITER.writingx - view_xview_get(0))
+            dgx = (obj_dialoguer.x - view_xview_get(0))
             donkeykongismyfavoritemarvelsuperhero = 1
         }
         if (donkeykongismyfavoritemarvelsuperhero == 1)
         {
-            OBJ_WRITER.myx = (view_xview(0) + wrx)
-            OBJ_WRITER.writingx = (view_xview(0) + wrx)
+            OBJ_WRITER.myx = (view_xview_get(0) + wrx)
+            OBJ_WRITER.writingx = (view_xview_get(0) + wrx)
             if instance_exists(obj_face)
             {
-                obj_face.x = (view_xview(0) + 24)
-                OBJ_WRITER.myx = ((view_xview(0) + wrx) + 58)
-                OBJ_WRITER.writingx = ((view_xview(0) + wrx) + 58)
+                obj_face.x = (view_xview_get(0) + 24)
+                OBJ_WRITER.myx = ((view_xview_get(0) + wrx) + 58)
+                OBJ_WRITER.writingx = ((view_xview_get(0) + wrx) + 58)
             }
-            obj_dialoguer.xx = view_xview(0)
-            obj_dialoguer.x = (view_xview(0) + dgx)
+            obj_dialoguer.xx = view_xview_get(0)
+            obj_dialoguer.x = (view_xview_get(0) + dgx)
         }
         if (con == 3 && OBJ_WRITER.stringno == 2)
         {

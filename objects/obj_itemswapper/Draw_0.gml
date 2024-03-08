@@ -5,8 +5,8 @@ if (buffer > 3)
     boxno = DimensionBoxAItemStart
     if (boxtype == 1)
         boxno = DimensionBoxBItemStart
-    xx = view_xview(view_current)
-    yy = (view_yview(view_current) + 6)
+    xx = view_xview_get(view_current)
+    yy = (view_yview_get(view_current) + 6)
     var boxofs = 8
     var heartofs = 9
     var itemofs = 23

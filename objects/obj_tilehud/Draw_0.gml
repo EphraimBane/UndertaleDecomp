@@ -1,6 +1,6 @@
-if (con == 0 && y >= view_yview(0))
+if (con == 0 && y >= view_yview_get(0))
 {
-    y = view_yview(0)
+    y = view_yview_get(0)
     vspeed = 0
     friction = 0
     con = 1

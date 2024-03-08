@@ -133,7 +133,7 @@ if (con == 6)
 {
     obj_mainchara.cutscene = true
     __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
-    __view_set(VIEW_PROP_CAM_X, 0, 0)
+    view_xview_set(0, 0)
     x = 340
     global.facing = Direction.Left
     global.interact = 1
@@ -151,7 +151,7 @@ if (con == 6)
 }
 if (con == 7)
 {
-    if (x < (view_xview(0) + 120))
+    if (x < (view_xview_get(0) + 120))
     {
         con = 8
         hspeed = 0
@@ -322,7 +322,7 @@ if (con == 50)
 {
     obj_mainchara.cutscene = true
     __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
-    __view_set(VIEW_PROP_CAM_X, 0, 0)
+    view_xview_set(0, 0)
     x = 340
     global.facing = Direction.Left
     global.interact = 1

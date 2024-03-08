@@ -4,7 +4,7 @@ if instance_exists(obj_multitileevent)
 {
     if (middle == 1)
     {
-        xx = view_xview(0)
+        xx = view_xview_get(0)
         if (xx < 0)
             xx = 0
         if (x < (xx + 60))

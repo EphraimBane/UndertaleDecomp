@@ -1,5 +1,5 @@
-stayx = (xstart - view_xview(0))
-stayy = (ystart - view_yview(0))
+stayx = (xstart - view_xview_get(0))
+stayy = (ystart - view_yview_get(0))
 on = 1
 ang = (1 + (random(2) * choose(1, -1)))
 if (ang > 0)

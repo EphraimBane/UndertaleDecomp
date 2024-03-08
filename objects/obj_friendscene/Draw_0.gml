@@ -79,8 +79,8 @@ if (trickblack == 1)
 }
 if (lastwhite == 1)
 {
-    __view_set(VIEW_PROP_CAM_X, 0, ((0 + random((2 + (wht * 2)))) - random((2 - (wht * 2)))))
-    __view_set(VIEW_PROP_CAM_Y, 0, ((0 + random((2 + (wht * 2)))) - random((2 - (wht * 2)))))
+    view_xview_set(0, ((0 + random((2 + (wht * 2)))) - random((2 - (wht * 2)))))
+    view_yview_set(0, ((0 + random((2 + (wht * 2)))) - random((2 - (wht * 2)))))
     wht += 0.003
     draw_set_alpha(wht)
     draw_set_color(c_white)

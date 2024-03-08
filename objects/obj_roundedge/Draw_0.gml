@@ -4,8 +4,8 @@ if (part == 0)
     part = 1
 wp = (w0 / part)
 hp = (h0 / part)
-lside = view_xview(0)
-rside = (view_xview(0) + view_wview(0))
+lside = view_xview_get(0)
+rside = (view_xview_get(0) + view_wview_get(0))
 side = 0
 curx = 0
 size = 1

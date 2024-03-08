@@ -159,15 +159,15 @@ if (con == 19)
         x -= 4
     if (x >= 467 && x <= 473)
         x = 470
-    if (view_yview(0) < 240)
-        __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) + 6))
+    if (view_yview_get(0) < 240)
+        view_yview_set(0, (view_yview_get(0) + 6))
     else
-        __view_set(VIEW_PROP_CAM_Y, 0, 240)
-    if (view_yview(0) == 240 && x == 470 && y == 367)
+        view_yview_set(0, 240)
+    if (view_yview_get(0) == 240 && x == 470 && y == 367)
     {
         with (mett)
             instance_destroy()
-        __view_set(VIEW_PROP_CAM_Y, 0, 240)
+        view_yview_set(0, 240)
         con = 20
     }
 }

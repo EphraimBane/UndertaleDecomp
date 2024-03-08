@@ -1,5 +1,5 @@
-xx = view_xview(view_current)
-yy = view_yview(view_current)
+xx = view_xview_get(view_current)
+yy = view_yview_get(view_current)
 mode = 0
 mychoicex = (xx + 20)
 mychoicey = (yy + 223)

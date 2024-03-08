@@ -48,8 +48,8 @@ if (active == true)
     {
         if (ar.image_alpha > 0.02)
             ar.image_alpha -= 0.1
-        if (view_yview(0) > 10)
-            __view_set(VIEW_PROP_CAM_Y, 0, (view_yview(0) - 5))
+        if (view_yview_get(0) > 10)
+            view_yview_set(0, (view_yview_get(0) - 5))
         else
             cn = 2
     }

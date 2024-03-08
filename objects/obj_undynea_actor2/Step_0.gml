@@ -15,21 +15,21 @@ if (fun == false)
             snd_play(snd_undynestep)
     }
 }
-gg = (room_width - view_wview(0))
-hh = (room_height - view_hview(0))
-if (view_xview(0) >= 0)
+gg = (room_width - view_wview_get(0))
+hh = (room_height - view_hview_get(0))
+if (view_xview_get(0) >= 0)
 {
-    x = (xhome + floor((view_xview(0) - (view_xview(0) * scrollspeed))))
+    x = (xhome + floor((view_xview_get(0) - (view_xview_get(0) * scrollspeed))))
     g = (x - xprevious)
 }
-if (view_xview(0) >= gg)
+if (view_xview_get(0) >= gg)
 {
     x = (xhome + floor((gg - (gg * scrollspeed))))
     g = (x - xprevious)
 }
-if (view_yview(0) >= 0)
-    y = (yhome + floor((view_yview(0) - (view_yview(0) * scrollspeed))))
-if (view_yview(0) >= hh)
+if (view_yview_get(0) >= 0)
+    y = (yhome + floor((view_yview_get(0) - (view_yview_get(0) * scrollspeed))))
+if (view_yview_get(0) >= hh)
     y = (yhome + floor((hh - (hh * scrollspeed))))
 xhome += hhspeed
 yhome += vhspeed
