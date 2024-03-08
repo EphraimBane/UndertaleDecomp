@@ -6,12 +6,12 @@ function scr_monstersetup()
 	    myself = 2
 	    global.monster[2] = 1
 	}
-	if (global.monster[0] == true && myself != 2)
+	if (global.monster[0] == 1 && myself != 2)
 	{
 	    myself = 1
 	    global.monster[1] = 1
 	}
-	if (global.monster[0] == false)
+	if (global.monster[0] == 0)
 	{
 	    myself = 0
 	    global.monster[0] = 1
