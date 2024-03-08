@@ -12,10 +12,10 @@ if (hshake != 0)
 if (vshake != 0)
 {
     if (vshake > 0)
-        view_yview_set(myview, (__view_get(VIEW_PROP_CAM_Y, myview) + vshake))
+        view_yview_set(myview, (view_yview_get(myview) + vshake))
     if (vshake < 0)
     {
-        view_yview_set(myview, (__view_get(VIEW_PROP_CAM_Y, myview) + vshake))
+        view_yview_set(myview, (view_yview_get(myview) + vshake))
         vshake += 1
     }
     vshake = (-vshake)
