@@ -4,5 +4,5 @@
 /// @returns	{real}
 function view_wview_get(_view)
 {
-	return camera_get_view_width(view_camera[_view])
+	return camera_get_view_width(view_camera[_view]);
 }

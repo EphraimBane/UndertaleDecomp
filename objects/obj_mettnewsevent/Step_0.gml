@@ -501,7 +501,7 @@ if (con == 126 && instance_exists(OBJ_WRITER) == false)
 if (con == 127 && instance_exists(OBJ_WRITER) == false)
 {
     global.facing = Direction.Up
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    view_target_set(0, noone)
     if (view_yview_get(0) > 40)
     {
         obj_mettanchor.y -= 15
@@ -662,7 +662,7 @@ if (con == 131 && instance_exists(OBJ_WRITER) == false)
     newticker.voff = 40
     doomtimer = instance_create(0, 0, obj_doomtimer)
     obj_mainchara.cutscene = false
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    view_target_set(0, obj_mainchara)
     global.interact = 0
     global.currentsong = caster_load("music/news_battle.ogg")
     caster_loop(global.currentsong, 1, 1)
@@ -840,7 +840,7 @@ if (con == 171 && instance_exists(OBJ_WRITER) == false)
 {
     flowey = instance_create(40, 300, obj_stalkerflowey)
     obj_mainchara.cutscene = false
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    view_target_set(0, obj_mainchara)
     with (obj_mettnews_ticker)
         instance_destroy()
     with (obj_mettanchor)

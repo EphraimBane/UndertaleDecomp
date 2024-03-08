@@ -4,10 +4,10 @@ if instance_exists(obj_mainchara)
     {
         o = obj_mainchara
         if (obj_mainchara.x >= 450)
-            __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+            view_target_set(0, noone)
         if (obj_mainchara.x < 450)
         {
-            __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+            view_target_set(0, obj_mainchara)
             view_xview_set(0, round(((o.x - (view_wview_get(0) / 2)) + (o.sprite_width / 2))))
             view_yview_set(0, round(((o.y - (view_hview_get(0) / 2)) + (o.sprite_height / 2))))
         }

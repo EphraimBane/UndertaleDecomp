@@ -24,7 +24,7 @@ if (con == 5.1)
     rememberyview = view_yview_get(view_current)
     xdiff = 130
     ydiff = (192 - view_yview_get(view_current))
-    __view_set(VIEW_PROP_CAM_TARGET, view_current, noone)
+    view_target_set(view_current, noone)
     alarm[4] = 12
 }
 if (con == 4.2)
@@ -103,7 +103,7 @@ if (con == 6.4)
 }
 if (con == 7.4)
 {
-    __view_set(VIEW_PROP_CAM_TARGET, view_current, obj_mainchara)
+    view_target_set(view_current, obj_mainchara)
     con = 6.2
     alarm[4] = 25
 }
@@ -233,7 +233,7 @@ if (con == 12)
 if (con == 14)
 {
     obj_mainchara.cutscene = false
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    view_target_set(0, obj_mainchara)
     global.interact = 1
     if (global.interact == 0)
         global.interact = 1
@@ -353,7 +353,7 @@ if (con == 38)
     with (dummy)
         instance_destroy()
     obj_mainchara.cutscene = false
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    view_target_set(0, obj_mainchara)
     global.interact = 1
     if (global.interact == 0)
         global.interact = 1
