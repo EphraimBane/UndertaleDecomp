@@ -13,7 +13,7 @@ if (skip == 2)
 sidecon = 0
 gowhite = 0
 wht = 0
-tor = 437827483
+tor = 437827483 // Vultu: I have no idea what this is??
 und = 437827483
 sans = 437827483
 asg = 437827483
