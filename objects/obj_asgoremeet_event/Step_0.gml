@@ -23,7 +23,7 @@ if (con == 7)
 {
     remy = view_yview_get(0)
     obj_mainchara.cutscene = true
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    view_target_set(0, noone)
     con = 8
     alarm[4] = 90
 }
@@ -221,7 +221,7 @@ if (con == 48)
     {
         view_yview_set(0, remy)
         obj_mainchara.cutscene = false
-        __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+        view_target_set(0, obj_mainchara)
         global.interact = 0
         with (asg)
             instance_destroy()

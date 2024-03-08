@@ -431,7 +431,7 @@ if (con == 82)
         FL_UnknownBoolean17 = false
         global.interact = 1
         obj_mainchara.cutscene = true
-        __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+        view_target_set(0, noone)
         obj_mainchara.x = mcxp
         obj_mainchara.y = mcyp
         undyne.visible = false

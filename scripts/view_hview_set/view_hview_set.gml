@@ -5,5 +5,5 @@
 function view_hview_set(_view, _value)
 {
 	var cam = view_camera[_view];
-	camera_set_view_size(cam, camera_get_view_width(cam), _value)
+	camera_set_view_size(cam, camera_get_view_width(cam), _value);
 }

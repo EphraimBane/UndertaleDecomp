@@ -213,7 +213,7 @@ if (con == 32 && instance_exists(OBJ_WRITER) == false)
     mett.sprite_index = spr_mettaton_talk
     mett.image_speed = 0.25
     caster_loop(mettsong, 1, 1)
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    view_target_set(0, noone)
     global.typer = 27
     global.facechoice = 0
     global.msg[0] = scr_gettext("obj_cookshowevent_326")
@@ -264,7 +264,7 @@ if (con == 40)
     global.msg[0] = scr_gettext("obj_cookshowevent_376")
     mett.image_speed = 0.25
     instance_create(0, 0, obj_dialoguer)
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    view_target_set(0, obj_mainchara)
     obj_mainchara.cutscene = false
     con = 41
 }
@@ -279,7 +279,7 @@ if (con == 50)
 {
     global.interact = 1
     obj_mainchara.cutscene = true
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    view_target_set(0, noone)
     con = 51
 }
 if (con == 51)
@@ -373,7 +373,7 @@ if (con == 61.2)
     con = 62
 if (con == 62 && instance_exists(OBJ_WRITER) == false)
 {
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    view_target_set(0, noone)
     obj_mainchara.cutscene = true
     obj_mainchara.visible = false
     chara = instance_create(obj_mainchara.x, obj_mainchara.y, obj_npc_marker)
@@ -463,8 +463,8 @@ if (con == 73 && instance_exists(OBJ_WRITER) == false)
 {
     dn = 1
     con = 74
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
-    __view_set(VIEW_PROP_CAM_X_BORDER, 0, 140)
+    view_target_set(0, obj_mainchara)
+    view_hborder_set(0, 140)
 }
 if (con == 74)
 {

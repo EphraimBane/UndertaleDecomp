@@ -4,5 +4,5 @@
 /// @returns	{real}
 function view_hview_get(_view)
 {
-	return camera_get_view_height(view_camera[_view])
+	return camera_get_view_height(view_camera[_view]);
 }

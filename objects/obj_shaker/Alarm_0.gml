@@ -2,11 +2,11 @@ if (hshake != 0)
 {
     if (hshake < 0)
     {
-        view_xview_set(myview, (__view_get(VIEW_PROP_CAM_X, myview) + hshake))
+        view_xview_set(myview, (view_xview_get(myview) + hshake))
         hshake += 1
     }
     if (hshake > 0)
-        view_xview_set(myview, (__view_get(VIEW_PROP_CAM_X, myview) + hshake))
+        view_xview_set(myview, (view_xview_get(myview) + hshake))
     hshake = (-hshake)
 }
 if (vshake != 0)

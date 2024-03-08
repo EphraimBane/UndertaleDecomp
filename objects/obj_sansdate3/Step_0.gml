@@ -11,7 +11,7 @@ if (con == 20)
         view_yview_set(0, round(((y - (view_hview_get(0) / 2)) + 10)))
     }
     obj_mainchara.cutscene = true
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    view_target_set(0, noone)
     idealx = view_xview_get(0)
     view_xview_set(0, (view_xview_get(0) - 40))
     if (global.interact == 0)
@@ -283,7 +283,7 @@ if (con == 58)
 {
     view_xview_set(0, idealx)
     global.facing = Direction.Down
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    view_target_set(0, obj_mainchara)
     obj_mainchara.cutscene = false
     global.interact = 0
     con = 59

@@ -70,7 +70,7 @@ if (conversation == 6 && instance_exists(OBJ_WRITER) == false)
     papyrus.sprite_index = papyrus.lsprite
     sans.sprite_index = sans.lsprite
     obj_mainchara.cutscene = true
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    view_target_set(0, noone)
     alarm[3] = 30
     conversation = 7
 }
@@ -133,7 +133,7 @@ if (conversation == 12)
 if (conversation == 13 && instance_exists(OBJ_WRITER) == false)
 {
     obj_mainchara.cutscene = false
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    view_target_set(0, obj_mainchara)
     global.typer = 17
     global.facechoice = 3
     global.faceemotion = 0

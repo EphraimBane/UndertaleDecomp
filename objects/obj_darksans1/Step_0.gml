@@ -203,7 +203,7 @@ if (conversation == 16 && instance_exists(OBJ_WRITER) == false)
     alarm[6] = 10
     rememberxview = view_xview_get(view_current)
     rememberyview = view_yview_get(view_current)
-    __view_set(VIEW_PROP_CAM_TARGET, view_current, noone)
+    view_target_set(view_current, noone)
     obj_mainchara.cutscene = true
 }
 if (conversation == 17)
@@ -315,7 +315,7 @@ if (conversation == 28)
         global.facechoice = 3
         global.typer = 17
         global.msg[0] = scr_gettext("obj_darksans1_666")
-        __view_set(VIEW_PROP_CAM_TARGET, view_current, obj_mainchara)
+        view_target_set(view_current, obj_mainchara)
         obj_mainchara.cutscene = false
         instance_create(0, 0, obj_dialoguer)
         conversation = 29
@@ -420,7 +420,7 @@ if (conversation == 56)
         global.facechoice = 3
         global.typer = 17
         global.msg[0] = scr_gettext("obj_darksans1_780")
-        __view_set(VIEW_PROP_CAM_TARGET, view_current, obj_mainchara)
+        view_target_set(view_current, obj_mainchara)
         obj_mainchara.cutscene = false
         instance_create(0, 0, obj_dialoguer)
         conversation = 58

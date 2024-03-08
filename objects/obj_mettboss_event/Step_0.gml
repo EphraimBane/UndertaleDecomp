@@ -10,7 +10,7 @@ if (obj_mainchara.y < 840 && global.interact == 0 && con == 0)
 if (con == 2)
 {
     obj_mainchara.vspeed = 0
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    view_target_set(0, noone)
     obj_mainchara.cutscene = true
     con = 3
 }
@@ -327,7 +327,7 @@ if (con == 52)
     with (mett)
         visible = false
     obj_mainchara.cutscene = false
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    view_target_set(0, obj_mainchara)
     obj_mainchara.visible = true
     with (sixty)
         instance_destroy()
