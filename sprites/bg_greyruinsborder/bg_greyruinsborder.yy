@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"bg_greyruinsborder",
   "bboxMode":0,
-  "bbox_bottom":99,
+  "bbox_bottom":119,
   "bbox_left":0,
   "bbox_right":59,
   "bbox_top":0,
@@ -14,9 +14,9 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"9a35c30e-1801-4cbc-a29c-518c1af6fdf6","name":"9a35c30e-1801-4cbc-a29c-518c1af6fdf6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
-  "height":100,
+  "gridX":20,
+  "gridY":20,
+  "height":120,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"a66738d1-056d-44e1-931f-451a8fac02e4","blendMode":0,"displayName":"default","isLocked":false,"name":"a66738d1-056d-44e1-931f-451a8fac02e4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
