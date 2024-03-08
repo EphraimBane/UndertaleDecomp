@@ -14,8 +14,8 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"e39f11c2-cc42-4d46-9af3-599843885e7e","name":"e39f11c2-cc42-4d46-9af3-599843885e7e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
+  "gridX":20,
+  "gridY":20,
   "height":200,
   "HTile":false,
   "layers":[
@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"unsorted",
-    "path":"folders/Sprites/unsorted.yy",
+    "name":"True Lab",
+    "path":"folders/Sprites/Tilesets/True Lab.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
