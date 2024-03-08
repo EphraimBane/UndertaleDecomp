@@ -8,7 +8,7 @@ function __background_get_colour_element()
 	__result[1] = -1
 	var __colstring = "Compatibility_Colour"
 	var __layerlist = layer_get_all()
-	var __layerlistlength = array_length_1d(__layerlist)
+	var __layerlistlength = array_length(__layerlist)
 	var __layerid = -1
 	var __isforeground = 0
 	var __i = 0
@@ -29,7 +29,7 @@ function __background_get_colour_element()
 	if (__layerid != -1)
 	{
 	    var __els = layer_get_all_elements(__layerid)
-	    var __elslength = array_length_1d(__els)
+	    var __elslength = array_length(__els)
 	    for (__i = 0; __i < __elslength; __i++)
 	    {
 	        if (layer_get_element_type(__els[__i]) == 1)
