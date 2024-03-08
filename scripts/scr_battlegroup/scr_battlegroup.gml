@@ -211,8 +211,8 @@ function scr_battlegroup()
 	    
 		// Loox, Vegetoid (Unused)
 		case 14:
-	        global.monstertype[0] = 9
-	        global.monstertype[1] = 8
+	        global.monstertype[0] = MonsterType.Loox
+	        global.monstertype[1] = MonsterType.Vegetoid
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -227,9 +227,9 @@ function scr_battlegroup()
 	    
 		// Loox, Vegetoid, Migosp
 		case 15:
-	        global.monstertype[0] = 9
-	        global.monstertype[1] = 8
-	        global.monstertype[2] = 7
+	        global.monstertype[0] = MonsterType.Loox
+	        global.monstertype[1] = MonsterType.Vegetoid
+	        global.monstertype[2] = MonsterType.Migosp
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
 	        global.msc = 0
@@ -244,8 +244,8 @@ function scr_battlegroup()
 	    
 		// Double Vegetoid
 		case 16:
-	        global.monstertype[0] = 8
-	        global.monstertype[1] = 8
+	        global.monstertype[0] = MonsterType.Vegetoid
+	        global.monstertype[1] = MonsterType.Vegetoid
 	        global.monstertype[2] = MonsterType.NotSet
 	        global.batmusic = caster_load("music/battle1.ogg")
 	        caster_loop(global.batmusic, 0.5, 1)
@@ -1515,7 +1515,7 @@ function scr_battlegroup()
 	        global.actfirst = 0
 	        global.extraintro = 0
 	        global.msg[0] = ""
-	        global.monster[0] = true
+	        global.monster[0] = 1
 	        global.monsterinstance[0] = instance_create(116, 16, obj_asgore_finalintro)
 	        global.mnfight = -999
 	        break

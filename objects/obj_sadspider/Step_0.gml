@@ -92,7 +92,7 @@ if (con == 14)
 }
 if (con == 16)
 {
-    global.monster[0] = false
+    global.monster[0] = 0
     hspeed = 8
     image_speed = 0.5
     con = 17

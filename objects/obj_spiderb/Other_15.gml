@@ -7,5 +7,5 @@ with (mypart1)
 caster_stop(global.batmusic)
 FL_SparedSpecific = 1
 scr_monsterdefeat()
-global.monster[0] = false
+global.monster[0] = 0
 instance_destroy()

@@ -19,9 +19,9 @@ if (scr_murderlv() < 16)
     global.hurtanim[0] = 0
     global.hurtanim[1] = 0
     global.hurtanim[2] = 0
-    global.monstertype[0] = 2
-    global.monstertype[1] = 2
-    global.monstertype[2] = 2
+    global.monstertype[0] = MonsterType.Dummy
+    global.monstertype[1] = MonsterType.Dummy
+    global.monstertype[2] = MonsterType.Dummy
     if (FL_EarlyStoryProgressCounter == 0)
     {
         con = 5
