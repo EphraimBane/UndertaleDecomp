@@ -160,14 +160,14 @@ if (global.myfight == 2)
                     global.msg[1] = scr_gettext("obj_icecap_435")
                     m = 0
                     global.monster[myself] = false
-                    if (global.monster[1] == true && global.monster[0] == false)
+                    if (global.monster[1] == 1 && global.monster[0] == 0)
                         m = 1
-                    global.monster[1] = false
+                    global.monster[1] = 0
                     global.monstertype[myself] = 20
                     cube = 1
                     global.monsterinstance[myself] = instance_create(x, y, obj_icecube)
                     if (m == 1)
-                        global.monster[1] = true
+                        global.monster[1] = 1
                     instance_destroy()
                 }
                 obj_writer_set_halt(3)

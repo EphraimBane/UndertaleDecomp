@@ -1,10 +1,10 @@
 SCR_BORDERSETUP(0, 0, 0, 0, 0)
 currentplace = global.bmenuno
-if (global.monster[0] == false)
+if (global.monster[0] == 0)
 {
-    if (global.monster[1] == false)
+    if (global.monster[1] == 0)
     {
-        if (global.monster[2] == false)
+        if (global.monster[2] == 0)
         {
             if (won == false)
             {
@@ -121,16 +121,16 @@ if (global.mnfight == 0 && global.myfight == 0)
                             global.bmenucoord[1] += 1
                         if (global.monster[global.bmenucoord[1]] == false)
                             global.bmenucoord[1] += 1
-                        if (global.monster[0] == false && global.monster[2] == false)
+                        if (global.monster[0] == 0 && global.monster[2] == 0)
                             global.bmenucoord[1] = 1
                         if (global.bmenucoord[1] > 2)
                         {
                             global.bmenucoord[1] = 0
-                            if (global.monster[0] == false)
+                            if (global.monster[0] == 0)
                                 global.bmenucoord[1] = 1
-                            if (global.monster[1] == false)
+                            if (global.monster[1] == 0)
                                 global.bmenucoord[1] = 2
-                            if (global.monster[2] == false)
+                            if (global.monster[2] == 0)
                                 global.bmenucoord[1] = 0
                         }
                     }

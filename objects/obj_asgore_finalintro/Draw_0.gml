@@ -262,10 +262,10 @@ if (con == 40)
             global.mnfight = 3
             global.myfight = -1
             global.bmenuno = 0
-            global.monster[0] = false
-            global.monster[1] = false
-            global.monster[2] = false
-            global.monstertype[0] = 52
+            global.monster[0] = 0
+            global.monster[1] = 0
+            global.monster[2] = 0
+            global.monstertype[0] = MonsterType.Asgore
             global.monsterinstance[0] = instance_create(208, 8, obj_asgoreb)
             global.msc = 0
             global.msg[0] = scr_gettext("obj_asgore_finalintro_496")

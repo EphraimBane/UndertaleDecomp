@@ -115,12 +115,12 @@ if (con == 11)
 }
 if (con == 12 && instance_exists(OBJ_WRITER) == false)
 {
-    global.monster[0] = false
+    global.monster[0] = 0
     global.monster[1] = false
     global.monsterinstance[0] = 0
     with (obj_mettatonb_third)
         instance_destroy()
-    global.monstertype[0] = 51
+    global.monstertype[0] = MonsterType.MettatonEX
     global.msc = 0
     obj_mettb_body.depth = 10
     global.monsterinstance[0] = instance_create(210, 60, obj_mettatonex)

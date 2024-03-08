@@ -1,20 +1,20 @@
 function scr_monstersetup()
 {
 	myself = 0
-	if (global.monster[1] == true)
+	if (global.monster[1] == 1)
 	{
 	    myself = 2
-	    global.monster[2] = true
+	    global.monster[2] = 1
 	}
 	if (global.monster[0] == true && myself != 2)
 	{
 	    myself = 1
-	    global.monster[1] = true
+	    global.monster[1] = 1
 	}
 	if (global.monster[0] == false)
 	{
 	    myself = 0
-	    global.monster[0] = true
+	    global.monster[0] = 1
 	}
 	if (global.monstertype[myself] == MonsterType.TestFroggit)
 	{
