@@ -22,7 +22,7 @@ if (timer >= 300 && timer <= 700)
     offer += 1
     if (offer == 4)
     {
-        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 1))
+        view_yview_set(0, (view_yview_get(0) + 1))
         offer = 0
     }
 }

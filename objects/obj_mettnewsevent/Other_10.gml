@@ -1,5 +1,5 @@
-xx = __view_get(VIEW_PROP_CAM_X, 0)
-yy = __view_get(VIEW_PROP_CAM_Y, 0)
+xx = view_xview_get(0)
+yy = view_yview_get(0)
 part1 = instance_create(xx, (yy + 20), obj_mettnews_part)
 part1.sprite_index = spr_mettbg_part1
 part2 = instance_create((xx + 93), (yy + 20), obj_mettnews_part)

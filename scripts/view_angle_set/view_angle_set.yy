@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"GLOBALINIT",
+  "%Name":"view_angle_set",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"GLOBALINIT",
+  "name":"view_angle_set",
   "parent":{
-    "name":"Common",
-    "path":"folders/Scripts/Common.yy",
+    "name":"View",
+    "path":"folders/Scripts/Deprecated Wrapper/View.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

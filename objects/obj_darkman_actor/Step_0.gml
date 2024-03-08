@@ -15,6 +15,6 @@ if (mov == 1)
 }
 if (mov == 2)
 {
-    if (y < (__view_get(VIEW_PROP_CAM_Y, 0) - 50))
+    if (y < (view_yview_get(0) - 50))
         instance_destroy()
 }

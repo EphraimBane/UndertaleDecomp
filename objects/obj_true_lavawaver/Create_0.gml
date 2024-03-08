@@ -1,5 +1,5 @@
-x = (__view_get(VIEW_PROP_CAM_X, 0) - 40)
-y = (__view_get(VIEW_PROP_CAM_Y, 0) - 40)
+x = (view_xview_get(0) - 40)
+y = (view_yview_get(0) - 40)
 init_band = 0
 a = 0
 b = 0

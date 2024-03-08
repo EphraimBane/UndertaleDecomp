@@ -1,5 +1,5 @@
-xx = __view_get(VIEW_PROP_CAM_X, view_current)
-yy = (__view_get(VIEW_PROP_CAM_Y, view_current) + 10)
+xx = view_xview_get(view_current)
+yy = (view_yview_get(view_current) + 10)
 f = 188
 yf = 8
 draw_set_color(c_white)

@@ -2,9 +2,9 @@ draw_sprite_ext(sprite_index, image_index, x, y, 1, 1, image_angle, c_white, 1)
 if (active == true)
 {
     draw_set_color(c_white)
-    ossafe_fill_rectangle((__view_get(VIEW_PROP_CAM_X, view_current) + 16), (__view_get(VIEW_PROP_CAM_Y, view_current) + 180), (__view_get(VIEW_PROP_CAM_X, view_current) + 304), (__view_get(VIEW_PROP_CAM_Y, view_current) + 235))
+    ossafe_fill_rectangle((view_xview_get(view_current) + 16), (view_yview_get(view_current) + 180), (view_xview_get(view_current) + 304), (view_yview_get(view_current) + 235))
     draw_set_color(c_black)
-    ossafe_fill_rectangle((__view_get(VIEW_PROP_CAM_X, view_current) + 19), (__view_get(VIEW_PROP_CAM_Y, view_current) + 183), (__view_get(VIEW_PROP_CAM_X, view_current) + 301), (__view_get(VIEW_PROP_CAM_Y, view_current) + 232))
+    ossafe_fill_rectangle((view_xview_get(view_current) + 19), (view_yview_get(view_current) + 183), (view_xview_get(view_current) + 301), (view_yview_get(view_current) + 232))
     draw_set_color(c_white)
     scr_setfont(fnt_maintext)
     buffer = -1

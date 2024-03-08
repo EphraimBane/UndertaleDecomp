@@ -50,10 +50,10 @@ if (con == 7 && instance_exists(OBJ_WRITER) == false)
 {
     __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
     obj_mainchara.cutscene = true
-    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 5))
-    if (__view_get(VIEW_PROP_CAM_X, 0) >= 96)
+    view_xview_set(0, (view_xview_get(0) + 5))
+    if (view_xview_get(0) >= 96)
     {
-        __view_set(VIEW_PROP_CAM_X, 0, 100)
+        view_xview_set(0, 100)
         con = 8
         alarm[4] = 15
     }
@@ -84,10 +84,10 @@ if (con == 12)
 }
 if (con == 13 && instance_exists(OBJ_WRITER) == false)
 {
-    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 5))
-    if (__view_get(VIEW_PROP_CAM_X, 0) <= 4)
+    view_xview_set(0, (view_xview_get(0) - 5))
+    if (view_xview_get(0) <= 4)
     {
-        __view_set(VIEW_PROP_CAM_X, 0, 0)
+        view_xview_set(0, 0)
         con = 14
         alarm[4] = 20
     }
@@ -156,10 +156,10 @@ if (con == 30)
         with (obj_tileguy)
             instance_destroy()
     }
-    if (flame1.x < (__view_get(VIEW_PROP_CAM_X, 0) - 20))
-        flame1.x = (__view_get(VIEW_PROP_CAM_X, 0) - 20)
-    if (flame2.x > (__view_get(VIEW_PROP_CAM_X, 0) + __view_get(VIEW_PROP_CAM_WIDTH, 0)))
-        flame2.x = (__view_get(VIEW_PROP_CAM_X, 0) + __view_get(VIEW_PROP_CAM_WIDTH, 0))
+    if (flame1.x < (view_xview_get(0) - 20))
+        flame1.x = (view_xview_get(0) - 20)
+    if (flame2.x > (view_xview_get(0) + view_wview_get(0)))
+        flame2.x = (view_xview_get(0) + view_wview_get(0))
     con = 31
     alarm[4] = 60
 }

@@ -10,7 +10,7 @@ if instance_exists(obj_mainchara)
             with (obj_speartilegen)
                 instance_destroy()
         }
-        undyne = instance_create((__view_get(VIEW_PROP_CAM_X, obj_backgrounder_parent) - 420), 100, obj_undynea_actor)
+        undyne = instance_create((view_xview_get(0) - 420), 100, obj_undynea_actor)
         undyne.rsprite = spr_undynea_starkr
         undyne.direction = 0
         undyne.sprite_index = undyne.rsprite
@@ -23,7 +23,7 @@ if instance_exists(obj_mainchara)
         con = 1.5
         alarm[4] = 30
         global.interact = 1
-        curview = __view_get(VIEW_PROP_CAM_X, 0)
+        curview = view_xview_get(0)
         obj_mainchara.cutscene = true
     }
 }
@@ -31,8 +31,8 @@ if (con == 2.5)
     con = 3
 if (con == 3)
 {
-    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 1))
-    if (__view_get(VIEW_PROP_CAM_X, 0) < (curview - 50))
+    view_xview_set(0, (view_xview_get(0) - 1))
+    if (view_xview_get(0) < (curview - 50))
     {
         con = 3.1
         alarm[4] = 140
@@ -130,7 +130,7 @@ if (con == 14 || con == 15)
     obj_mainchara.x += 1
     obj_mainchara.y += (tspeed - 0.8)
     obj_mainchara.image_angle -= 0.5
-    __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 2))
+    view_yview_set(0, (view_yview_get(0) + 2))
     f = instance_create(0, 0, obj_whitefader)
     f.tspeed = 0.001
 }

@@ -8,10 +8,10 @@ if (myinteract == 1)
         con = 1
         drawthis = 1
         alarm[4] = 90
-        xx = __view_get(VIEW_PROP_CAM_X, 0)
-        yy = (__view_get(VIEW_PROP_CAM_Y, 0) - 10)
-        nowxx = __view_get(VIEW_PROP_CAM_X, 0)
-        nowyy = (__view_get(VIEW_PROP_CAM_Y, 0) - 10)
+        xx = view_xview_get(0)
+        yy = (view_yview_get(0) - 10)
+        nowxx = view_xview_get(0)
+        nowyy = (view_yview_get(0) - 10)
     }
 }
 if (drawthis == 1)
@@ -154,7 +154,7 @@ if (con == 18)
     global.msg[9] = scr_gettext("obj_savepoint_fake_275") //\\E6And I'VE got the human&SOULS!/%%
     global.typer = 9
     global.msg[10] = scr_gettext("obj_savepoint_fake_278")
-    mywriter = instance_create((__view_get(VIEW_PROP_CAM_X, 0) + 30), (__view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent) + 100), obj_flowey_writer)
+    mywriter = instance_create((view_xview_get(0) + 30), (view_yview_get(0) + 100), obj_flowey_writer)
     con = 19
 }
 if (con == 19)
@@ -204,7 +204,7 @@ if (con == 26)
     global.msg[13] = scr_gettext("obj_savepoint_fake_346") //\\E8I'll show them all the REAL&meaning of this world./%%
     global.msg[14] = scr_gettext("obj_savepoint_fake_347") //%%%
     global.typer = 9
-    mywriter = instance_create((__view_get(VIEW_PROP_CAM_X, 0) + 30), (__view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent) + 100), obj_flowey_writer)
+    mywriter = instance_create((view_xview_get(0) + 30), (view_yview_get(0) + 100), obj_flowey_writer)
     con = 27
 }
 if (con == 27)
@@ -279,7 +279,7 @@ if (con == 34)
     global.msg[6] = scr_gettext("obj_savepoint_fake_446") //\\E7So you can watch me tear&you to bloody pieces.../
     global.msg[7] = scr_gettext("obj_savepoint_fake_447") //\\E8Over^1, and over^1, and over.../%%
     global.typer = 9
-    mywriter = instance_create((__view_get(VIEW_PROP_CAM_X, 0) + 30), (__view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent) + 100), obj_flowey_writer)
+    mywriter = instance_create((view_xview_get(0) + 30), (view_yview_get(0) + 100), obj_flowey_writer)
     con = 35
 }
 if (con == 35)
@@ -307,7 +307,7 @@ if (con == 39)
     global.msg[1] = scr_gettext("obj_savepoint_fake_491") //Do you really think&you can stop ME?/
     global.msg[2] = scr_gettext("obj_savepoint_fake_492") //\\TfH\\E4ee hee hee.../%%
     global.typer = 16
-    mywriter = instance_create((__view_get(VIEW_PROP_CAM_X, 0) + 30), (__view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent) + 100), obj_flowey_writer)
+    mywriter = instance_create((view_xview_get(0) + 30), (view_yview_get(0) + 100), obj_flowey_writer)
     con = 40
 }
 if (con == 40)
@@ -318,7 +318,7 @@ if (con == 40)
         global.msg[0] = scr_gettext("obj_savepoint_fake_507") //\\E5You really ARE an idiot^4.%%
         caster_free(all)
         global.typer = 119
-        mywriter = instance_create((__view_get(VIEW_PROP_CAM_X, 0) + 30), (__view_get(VIEW_PROP_CAM_Y, obj_backgrounder_parent) + 100), obj_flowey_writer)
+        mywriter = instance_create((view_xview_get(0) + 30), (view_yview_get(0) + 100), obj_flowey_writer)
         con = 41
     }
 }

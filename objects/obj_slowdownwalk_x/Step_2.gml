@@ -41,4 +41,4 @@ if (sl == 1)
     }
 }
 obj_mainchara.cutscene = true
-__view_set(VIEW_PROP_CAM_X, 0, (obj_mainchara.x - 150))
+view_xview_set(0, (obj_mainchara.x - 150))

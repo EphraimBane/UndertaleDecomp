@@ -5,26 +5,26 @@ if (instance_exists(obj_shaker) == false)
 {
     if (on == 1)
     {
-        __view_set(VIEW_PROP_CAM_X, 0, round(((obj_mainchara.x - (__view_get(VIEW_PROP_CAM_WIDTH, 0) / 2)) + 10)))
-        __view_set(VIEW_PROP_CAM_Y, 0, round(((obj_mainchara.y - (__view_get(VIEW_PROP_CAM_HEIGHT, 0) / 2)) + 10)))
-        if (__view_get(VIEW_PROP_CAM_Y, 0) <= 0)
-            __view_set(VIEW_PROP_CAM_Y, 0, 0)
+        view_xview_set(0, round(((obj_mainchara.x - (view_wview_get(0) / 2)) + 10)))
+        view_yview_set(0, round(((obj_mainchara.y - (view_hview_get(0) / 2)) + 10)))
+        if (view_yview_get(0) <= 0)
+            view_yview_set(0, 0)
     }
 }
 if (on == 1)
 {
-    x = (__view_get(VIEW_PROP_CAM_X, 0) + stayx)
-    y = (__view_get(VIEW_PROP_CAM_Y, 0) + stayy)
+    x = (view_xview_get(0) + stayx)
+    y = (view_yview_get(0) + stayy)
 }
 if (on == 2)
 {
     adjust = 0
-    if (x > ((__view_get(VIEW_PROP_CAM_X, 0) + __view_get(VIEW_PROP_CAM_WIDTH, 0)) - 50))
+    if (x > ((view_xview_get(0) + view_wview_get(0)) - 50))
     {
         x -= 4
         adjust = 1
     }
-    if (y > ((__view_get(VIEW_PROP_CAM_Y, 0) + __view_get(VIEW_PROP_CAM_HEIGHT, 0)) - 80))
+    if (y > ((view_yview_get(0) + view_hview_get(0)) - 80))
     {
         y -= 4
         adjust = 1
@@ -36,5 +36,5 @@ if (on == 2)
         y += sin((siner / 6))
     }
 }
-if (__view_get(VIEW_PROP_CAM_Y, 0) <= 0)
-    __view_set(VIEW_PROP_CAM_Y, 0, 0)
+if (view_yview_get(0) <= 0)
+    view_yview_set(0, 0)

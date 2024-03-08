@@ -27,7 +27,7 @@ if (cutscene == false)
 {
     if (instance_exists(obj_vsflowey_shaker) == false)
     {
-        __view_set(VIEW_PROP_CAM_X, 0, round(((x - (__view_get(VIEW_PROP_CAM_WIDTH, 0) / 2)) + 10)))
-        __view_set(VIEW_PROP_CAM_Y, 0, round(((y - (__view_get(VIEW_PROP_CAM_HEIGHT, 0) / 2)) + 10)))
+        view_xview_set(0, round(((x - (view_wview_get(0) / 2)) + 10)))
+        view_yview_set(0, round(((y - (view_hview_get(0) / 2)) + 10)))
     }
 }

@@ -25,45 +25,45 @@ if (con == 2 && instance_exists(OBJ_WRITER) == false)
 {
     buffer -= 1
     draw_set_color(c_white)
-    ossafe_fill_rectangle((__view_get(VIEW_PROP_CAM_X, view_current) + 16), (__view_get(VIEW_PROP_CAM_Y, view_current) + 5), (__view_get(VIEW_PROP_CAM_X, view_current) + 304), (__view_get(VIEW_PROP_CAM_Y, view_current) + 80))
+    ossafe_fill_rectangle((view_xview_get(view_current) + 16), (view_yview_get(view_current) + 5), (view_xview_get(view_current) + 304), (view_yview_get(view_current) + 80))
     draw_set_color(c_black)
-    ossafe_fill_rectangle((__view_get(VIEW_PROP_CAM_X, view_current) + 19), (__view_get(VIEW_PROP_CAM_Y, view_current) + 8), (__view_get(VIEW_PROP_CAM_X, view_current) + 301), (__view_get(VIEW_PROP_CAM_Y, view_current) + 77))
+    ossafe_fill_rectangle((view_xview_get(view_current) + 19), (view_yview_get(view_current) + 8), (view_xview_get(view_current) + 301), (view_yview_get(view_current) + 77))
     draw_set_color(c_white)
     scr_setfont(fnt_maintext)
     if (FL_CurrentElevatorFloor != CurrentElevatorFloor.L1)
-        draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 50), (__view_get(VIEW_PROP_CAM_Y, 0) + 15), string_hash_to_newline(scr_gettext("elevator_l1f")))
+        draw_text((view_xview_get(0) + 50), (view_yview_get(0) + 15), string_hash_to_newline(scr_gettext("elevator_l1f")))
     else
-        draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 50), (__view_get(VIEW_PROP_CAM_Y, 0) + 15), string_hash_to_newline(scr_gettext("elevator_cancel")))
+        draw_text((view_xview_get(0) + 50), (view_yview_get(0) + 15), string_hash_to_newline(scr_gettext("elevator_cancel")))
     if (FL_CurrentElevatorFloor != CurrentElevatorFloor.R1)
-        draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 160), (__view_get(VIEW_PROP_CAM_Y, 0) + 15), string_hash_to_newline(scr_gettext("elevator_r1f")))
+        draw_text((view_xview_get(0) + 160), (view_yview_get(0) + 15), string_hash_to_newline(scr_gettext("elevator_r1f")))
     else
-        draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 160), (__view_get(VIEW_PROP_CAM_Y, 0) + 15), string_hash_to_newline(scr_gettext("elevator_cancel")))
+        draw_text((view_xview_get(0) + 160), (view_yview_get(0) + 15), string_hash_to_newline(scr_gettext("elevator_cancel")))
     if (FL_CurrentElevatorFloor != CurrentElevatorFloor.R2)
-        draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 160), (__view_get(VIEW_PROP_CAM_Y, 0) + 35), string_hash_to_newline(scr_gettext("elevator_r2f")))
+        draw_text((view_xview_get(0) + 160), (view_yview_get(0) + 35), string_hash_to_newline(scr_gettext("elevator_r2f")))
     else
-        draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 160), (__view_get(VIEW_PROP_CAM_Y, 0) + 35), string_hash_to_newline(scr_gettext("elevator_cancel")))
+        draw_text((view_xview_get(0) + 160), (view_yview_get(0) + 35), string_hash_to_newline(scr_gettext("elevator_cancel")))
     if (trigger > 0)
     {
         if (FL_CurrentElevatorFloor != CurrentElevatorFloor.L2)
-            draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 50), (__view_get(VIEW_PROP_CAM_Y, 0) + 35), string_hash_to_newline(scr_gettext("elevator_l2f")))
+            draw_text((view_xview_get(0) + 50), (view_yview_get(0) + 35), string_hash_to_newline(scr_gettext("elevator_l2f")))
         else
-            draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 50), (__view_get(VIEW_PROP_CAM_Y, 0) + 35), string_hash_to_newline(scr_gettext("elevator_cancel")))
+            draw_text((view_xview_get(0) + 50), (view_yview_get(0) + 35), string_hash_to_newline(scr_gettext("elevator_cancel")))
     }
     if (trigger > 0)
     {
         if (FL_CurrentElevatorFloor != CurrentElevatorFloor.L3)
-            draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 50), (__view_get(VIEW_PROP_CAM_Y, 0) + 55), string_hash_to_newline(scr_gettext("elevator_l3f")))
+            draw_text((view_xview_get(0) + 50), (view_yview_get(0) + 55), string_hash_to_newline(scr_gettext("elevator_l3f")))
         else
-            draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 50), (__view_get(VIEW_PROP_CAM_Y, 0) + 55), string_hash_to_newline(scr_gettext("elevator_cancel")))
+            draw_text((view_xview_get(0) + 50), (view_yview_get(0) + 55), string_hash_to_newline(scr_gettext("elevator_cancel")))
     }
     if (trigger > 1)
     {
         if (FL_CurrentElevatorFloor != CurrentElevatorFloor.R3)
-            draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 160), (__view_get(VIEW_PROP_CAM_Y, 0) + 55), string_hash_to_newline(scr_gettext("elevator_r3f")))
+            draw_text((view_xview_get(0) + 160), (view_yview_get(0) + 55), string_hash_to_newline(scr_gettext("elevator_r3f")))
         else
-            draw_text((__view_get(VIEW_PROP_CAM_X, 0) + 160), (__view_get(VIEW_PROP_CAM_Y, 0) + 55), string_hash_to_newline(scr_gettext("elevator_cancel")))
+            draw_text((view_xview_get(0) + 160), (view_yview_get(0) + 55), string_hash_to_newline(scr_gettext("elevator_cancel")))
     }
-    draw_sprite(spr_heartsmall, 0, ((__view_get(VIEW_PROP_CAM_X, 0) + 30) + (heartx * 110)), ((__view_get(VIEW_PROP_CAM_Y, 0) + 20) + (20 * hearty)))
+    draw_sprite(spr_heartsmall, 0, ((view_xview_get(0) + 30) + (heartx * 110)), ((view_yview_get(0) + 20) + (20 * hearty)))
     if (buffer < 0)
     {
         if keyboard_check_pressed(vk_up)
@@ -184,8 +184,8 @@ if (con == 9)
         elev = caster_load("music/elevator_last.ogg")
     if (FL_RodeLongElevator == 1)
         elev = caster_load("music/elevator.ogg")
-    xx = __view_get(VIEW_PROP_CAM_X, 0)
-    yy = __view_get(VIEW_PROP_CAM_Y, 0)
+    xx = view_xview_get(0)
+    yy = view_yview_get(0)
     siner = 0
     con = 10
     intense = 0.5
@@ -217,13 +217,13 @@ if (con == 12)
         intense += 0.01
     else if (intense > 0)
         intense -= 0.1
-    __view_set(VIEW_PROP_CAM_X, 0, (xx + (sin((siner / 1.3)) * intense)))
-    __view_set(VIEW_PROP_CAM_Y, 0, (yy + (sin((siner / 0.9)) * intense)))
+    view_xview_set(0, (xx + (sin((siner / 1.3)) * intense)))
+    view_yview_set(0, (yy + (sin((siner / 0.9)) * intense)))
 }
 if (con == 13)
 {
-    __view_set(VIEW_PROP_CAM_X, 0, xx)
-    __view_set(VIEW_PROP_CAM_Y, 0, yy)
+    view_xview_set(0, xx)
+    view_yview_set(0, yy)
     rect = 2
     con = 14
     snd_play(snd_bell)
@@ -263,8 +263,8 @@ if (rect == 2)
 if (con == 25)
 {
     caster_free(elev)
-    __view_set(VIEW_PROP_CAM_X, 0, xx)
-    __view_set(VIEW_PROP_CAM_Y, 0, yy)
+    view_xview_set(0, xx)
+    view_yview_set(0, yy)
     con = 26
     alarm[4] = 45
 }

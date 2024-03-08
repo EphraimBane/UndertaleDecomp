@@ -14,13 +14,13 @@ if (conversation == 1)
     papyrus.sprite_index = papyrus.ltsprite
     sans.sprite_index = sans.ltsprite
     obj_mainchara.cutscene = true
-    camera = __view_get(VIEW_PROP_CAM_X, 0)
+    camera = view_xview_get(0)
     conversation = 1.5
 }
 if (conversation == 1.5)
 {
-    if (__view_get(VIEW_PROP_CAM_X, 0) < (camera + 119))
-        __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 3))
+    if (view_xview_get(0) < (camera + 119))
+        view_xview_set(0, (view_xview_get(0) + 3))
     else
         conversation = 2
 }
@@ -229,8 +229,8 @@ if (conversation == 18 && instance_exists(OBJ_WRITER) == false)
 }
 if (conversation == 20)
 {
-    if (__view_get(VIEW_PROP_CAM_X, 0) > camera)
-        __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 3))
+    if (view_xview_get(0) > camera)
+        view_xview_set(0, (view_xview_get(0) - 3))
     else
         conversation = 21
 }

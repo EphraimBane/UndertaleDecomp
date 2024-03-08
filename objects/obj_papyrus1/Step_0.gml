@@ -76,10 +76,10 @@ if (conversation == 6 && instance_exists(OBJ_WRITER) == false)
 }
 if (conversation == 8)
 {
-    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 1))
-    if (__view_get(VIEW_PROP_CAM_X, 0) <= -40)
+    view_xview_set(0, (view_xview_get(0) - 1))
+    if (view_xview_get(0) <= -40)
     {
-        __view_set(VIEW_PROP_CAM_X, 0, -40)
+        view_xview_set(0, -40)
         conversation = 9
         alarm[3] = 30
     }
@@ -110,10 +110,10 @@ if (conversation == 10)
 }
 if (conversation == 11 && instance_exists(OBJ_WRITER) == false)
 {
-    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 4))
-    if (__view_get(VIEW_PROP_CAM_X, 0) >= 0)
+    view_xview_set(0, (view_xview_get(0) + 4))
+    if (view_xview_get(0) >= 0)
     {
-        __view_set(VIEW_PROP_CAM_X, 0, 0)
+        view_xview_set(0, 0)
         conversation = 12
     }
 }

@@ -1,6 +1,6 @@
 image_speed = 0
-xx = __view_get(VIEW_PROP_CAM_X, view_current)
-yy = __view_get(VIEW_PROP_CAM_Y, view_current)
+xx = view_xview_get(view_current)
+yy = view_yview_get(view_current)
 image_xscale = 0.5
 image_yscale = 0.5
 mode = 0

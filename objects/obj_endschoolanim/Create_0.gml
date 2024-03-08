@@ -12,7 +12,7 @@ hspeed = 6
 con = 0
 timer = 0
 x = -700
-__view_set(VIEW_PROP_CAM_X, 0, -180)
+view_xview_set(0, -180)
 td = 0
 var text_x = 15
 if (global.language == "ja")
