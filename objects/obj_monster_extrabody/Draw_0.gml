@@ -122,7 +122,7 @@ if (active == true)
     if (type == 22)
     {
         if (y < (view_yview_get(0) + 240))
-            obj_vulkinbody.face = 411
+            obj_vulkinbody.face = spr_vulkinface4
     }
     if (type == 27)
     {
