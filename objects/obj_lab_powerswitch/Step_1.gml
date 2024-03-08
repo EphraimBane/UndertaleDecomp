@@ -97,7 +97,7 @@ if (instance_exists(OBJ_WRITER) == false && con == 15)
 }
 if (con == 16)
 {
-    if (am[0].y > (camera_0_y + 300))
+    if (am[0].y > (camera_get_view_y(view_camera[0]) + 300))
     {
         con = 20
         i = 0

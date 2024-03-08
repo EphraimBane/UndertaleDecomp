@@ -30,8 +30,8 @@ with (obj_undynetrigger_boss)
     }
     if (con == 3)
     {
-        __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y - 4))
-        if (camera_0_y < 80)
+        __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) - 4))
+        if (camera_get_view_y(view_camera[0]) < 80)
             con = 4
     }
     if (con == 4)
@@ -139,12 +139,16 @@ with (obj_undynetrigger_boss)
         undyne.image_speed = 0
         fakedrawer = 0
         view_visible[1] = false
-		camera_set_view_size(view_camera[1], 240, 320)
-        camera_set_view_pos(view_camera[1], 0, 60)
+        __view_set(VIEW_PROP_CAM_HEIGHT, 1, 240)
+        __view_set(VIEW_PROP_CAM_WIDTH, 1, 320)
+        __view_set(VIEW_PROP_CAM_X, 1, 0)
+        __view_set(VIEW_PROP_CAM_Y, 1, 60)
         camera_set_view_target(view_camera[0], noone)
         FL_UndyneZoomCutscene = false
-        camera_set_view_pos(view_camera[0], 0, 60)
-		camera_set_view_size(view_camera[0], 240, 320)
+        camera_set_view_pos(view_camera[0], 0,  camera_get_view_y(view_camera[0]))
+        __view_set(VIEW_PROP_CAM_Y, 0, 60)
+        __view_set(VIEW_PROP_CAM_HEIGHT, 0, 240)
+        __view_set(VIEW_PROP_CAM_WIDTH, 0, 320)
         alarm[4] = 20
     }
     if (con == 18)
@@ -307,8 +311,8 @@ with (obj_undynetrigger_boss)
     {
         obj_mainchara.visible = true
         obj_mainchara.y = rememberyyy
-        __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y + 8))
-        if (camera_0_y >= yy)
+        __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) + 8))
+        if (camera_get_view_y(view_camera[0]) >= yy)
         {
             save = instance_create(220, 660, obj_savepoint)
             camera_set_view_target(view_camera[0], obj_mainchara)

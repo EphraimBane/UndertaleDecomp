@@ -1,6 +1,6 @@
 global.interact = 1
-xx = camera_current_x
-yy = camera_current_y
+xx = camera_get_view_x(view_camera[view_current])
+yy = camera_get_view_y(view_camera[view_current])
 c0y = 0
 c1y = 0
 column = 0

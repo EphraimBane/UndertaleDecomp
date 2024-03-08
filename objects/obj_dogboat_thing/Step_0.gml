@@ -133,7 +133,7 @@ if (con == 6)
 {
     obj_mainchara.cutscene = true
     camera_set_view_target(view_camera[0], noone)
-    camera_set_view_pos(view_camera[0], 0,  camera_0_y)
+    camera_set_view_pos(view_camera[0], 0,  camera_get_view_y(view_camera[0]))
     x = 340
     global.facing = Direction.Left
     global.interact = 1
@@ -151,7 +151,7 @@ if (con == 6)
 }
 if (con == 7)
 {
-    if (x < (camera_0_x + 120))
+    if (x < (camera_get_view_x(view_camera[0]) + 120))
     {
         con = 8
         hspeed = 0
@@ -322,7 +322,7 @@ if (con == 50)
 {
     obj_mainchara.cutscene = true
     camera_set_view_target(view_camera[0], noone)
-    camera_set_view_pos(view_camera[0], 0,  camera_0_y)
+    camera_set_view_pos(view_camera[0], 0,  camera_get_view_y(view_camera[0]))
     x = 340
     global.facing = Direction.Left
     global.interact = 1

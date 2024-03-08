@@ -32,4 +32,4 @@ if (dx >= 120 && global.inbattle == false && global.interact == 0)
     }
 }
 if (camera_get_view_y(view_camera[0]) <= 0)
-    camera_set_view_pos(view_camera[0], camera_0_x, 0)
+    camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0]), 0)

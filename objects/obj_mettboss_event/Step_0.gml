@@ -16,8 +16,8 @@ if (con == 2)
 }
 if (con == 3)
 {
-    __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y - 3))
-    if (camera_0_y <= 622)
+    __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) - 3))
+    if (camera_get_view_y(view_camera[0]) <= 622)
     {
         __view_set(VIEW_PROP_CAM_Y, 0, 620)
         con = 4
@@ -221,7 +221,7 @@ if (con == 21)
         con = 6
     with (mett)
         instance_destroy()
-    __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y - 60))
+    __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) - 60))
     instance_create(0, 0, obj_mettdestroyed_event)
     instance_destroy()
 }

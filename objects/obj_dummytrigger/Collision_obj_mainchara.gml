@@ -6,5 +6,5 @@ if (global.interact == 0 && con == 0)
     predummy = caster_load("music/predummy.ogg")
     dummy = obj_damndummy
     obj_mainchara.cutscene = true
-    curview = camera_0_y
+    curview = camera_get_view_y(view_camera[0])
 }

@@ -1,7 +1,7 @@
-y = (camera_0_y + 40)
-if (con == 0 && x >= camera_0_x)
+y = (camera_get_view_y(view_camera[0]) + 40)
+if (con == 0 && x >= camera_get_view_x(view_camera[0]))
 {
-    x = camera_0_x
+    x = camera_get_view_x(view_camera[0])
     hspeed = 0
     friction = 0
     con = 1

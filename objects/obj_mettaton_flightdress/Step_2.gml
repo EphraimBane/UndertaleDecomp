@@ -4,7 +4,7 @@ if instance_exists(obj_multitileevent)
 {
     if (middle == 1)
     {
-        xx = camera_0_x
+        xx = camera_get_view_x(view_camera[0])
         if (xx < 0)
             xx = 0
         if (x < (xx + 60))

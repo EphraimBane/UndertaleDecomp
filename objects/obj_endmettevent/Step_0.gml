@@ -32,10 +32,10 @@ if (main_timer == 180)
 shyren.y += sin((siner / 4))
 if (main_timer < 0)
 {
-    if (camera_0_y > 0)
-        __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y - 4))
+    if (camera_get_view_y(view_camera[0]) > 0)
+        __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) - 4))
     else
-        camera_set_view_pos(view_camera[0], camera_0_x, 0)
+        camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0]), 0)
 }
 if (main_timer == 90)
 {
@@ -60,8 +60,8 @@ if (main_timer == 430)
     t2.fader = 1
 if (main_timer > 450)
 {
-    __view_set(VIEW_PROP_CAM_Y, 0, (camera_0_y + 4))
-    if (camera_0_y > 240)
+    __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) + 4))
+    if (camera_get_view_y(view_camera[0]) > 240)
     {
         global.cast_type = 3
         room_goto(room_end_castroll)

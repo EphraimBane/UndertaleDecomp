@@ -1,5 +1,5 @@
-xx = camera_0_x
-yy = camera_0_y
+xx = camera_get_view_x(view_camera[0])
+yy = camera_get_view_y(view_camera[0])
 draw_sprite(sprite_index, image_index, x, y)
 timertime -= 1
 if (timertime < 300)

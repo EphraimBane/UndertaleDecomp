@@ -7,4 +7,5 @@ with (obj_sans_shaker)
     event_user(0)
 }
 self_d = 1
-camera_set_view_pos(view_camera[0], 0, 0)
+camera_set_view_pos(view_camera[0], 0,  camera_get_view_y(view_camera[0]))
+camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0]), 0)

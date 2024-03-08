@@ -1,5 +1,5 @@
-xx = camera_current_x
-yy = (camera_current_y + 10)
+xx = camera_get_view_x(view_camera[view_current])
+yy = (camera_get_view_y(view_camera[view_current]) + 10)
 f = 188
 yf = 8
 draw_set_color(c_white)

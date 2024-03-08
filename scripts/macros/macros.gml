@@ -442,16 +442,6 @@ enum OSFlavors
 #macro c_altblue 0xFDC00E
 #macro c_pink 0xD4BBFF
 
-#macro camera_current view_camera[view_current]
-#macro camera_current_x camera_get_view_x(view_camera[view_current])
-#macro camera_current_y camera_get_view_y(view_camera[view_current])
-#macro camera_current_width camera_get_view_width(view_camera[view_current])
-#macro camera_current_height camera_get_view_height(view_camera[view_current])
-
-#macro camera_0_x camera_get_view_x(view_camera[0])
-#macro camera_0_y camera_get_view_y(view_camera[0])
-#macro camera_0_width camera_get_view_width(view_camera[0])
-#macro camera_0_height camera_get_view_height(view_camera[0])
 #endregion
 
 #region Enums

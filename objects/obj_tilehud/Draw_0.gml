@@ -1,6 +1,6 @@
-if (con == 0 && y >= camera_0_y)
+if (con == 0 && y >= camera_get_view_y(view_camera[0]))
 {
-    y = camera_0_y
+    y = camera_get_view_y(view_camera[0])
     vspeed = 0
     friction = 0
     con = 1

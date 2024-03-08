@@ -2078,7 +2078,7 @@ function SCR_TEXT()
 	        if (global.choice == 0)
 	        {
 	            if (instance_exists(obj_starchecker) == false)
-	                instance_create(camera_0_x, camera_0_y, obj_starchecker)
+	                instance_create(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), obj_starchecker)
 	        }
 	        break
 	    case 551:
@@ -2105,7 +2105,7 @@ function SCR_TEXT()
 	        if (global.choice == 0)
 	        {
 	            if (instance_exists(obj_starchecker) == false)
-	                instance_create(camera_0_x, camera_0_y, obj_starchecker)
+	                instance_create(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), obj_starchecker)
 	            obj_mainchara.dsprite = spr_maincharad_pranked
 	            obj_mainchara.lsprite = spr_maincharal_pranked
 	        }

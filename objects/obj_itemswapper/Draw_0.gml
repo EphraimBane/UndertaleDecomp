@@ -5,8 +5,8 @@ if (buffer > 3)
     boxno = DimensionBoxAItemStart
     if (boxtype == 1)
         boxno = DimensionBoxBItemStart
-    xx = camera_current_x
-    yy = (camera_current_y + 6)
+    xx = camera_get_view_x(view_camera[view_current])
+    yy = (camera_get_view_y(view_camera[view_current]) + 6)
     var boxofs = 8
     var heartofs = 9
     var itemofs = 23

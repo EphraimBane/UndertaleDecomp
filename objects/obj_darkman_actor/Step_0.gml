@@ -15,6 +15,6 @@ if (mov == 1)
 }
 if (mov == 2)
 {
-    if (y < (camera_0_y - 50))
+    if (y < (camera_get_view_y(view_camera[0]) - 50))
         instance_destroy()
 }

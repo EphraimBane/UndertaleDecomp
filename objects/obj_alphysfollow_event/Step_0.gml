@@ -1,6 +1,6 @@
 if (con == 1 && global.interact == 0 && obj_mainchara.x > 400)
 {
-    al = instance_create((camera_0_x - 40), obj_mainchara.ystart, obj_alphys_npc)
+    al = instance_create((camera_get_view_x(view_camera[0]) - 40), obj_mainchara.ystart, obj_alphys_npc)
     al.mask_index = spr_alphys_megamask
     al.fun = true
     al.image_speed = 0.2

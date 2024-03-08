@@ -13,7 +13,7 @@ if (con == 1)
     alarm[4] = 50
 }
 if (con == 2)
-    __view_set(VIEW_PROP_CAM_X, 0, (camera_0_x + 2))
+    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) + 2))
 if (con == 3)
 {
     con = 4
@@ -261,7 +261,7 @@ if (con == 43)
 }
 if (con == 45)
 {
-    blk = instance_create((camera_0_x - 2), -2, obj_npc_marker)
+    blk = instance_create((camera_get_view_x(view_camera[0]) - 2), -2, obj_npc_marker)
     blk.depth = (wht.depth - 2)
     blk.image_alpha = 0
     blk.visible = true
@@ -325,7 +325,7 @@ if (con == 53)
     with (blk)
         instance_destroy()
     snd_play(snd_bell)
-    shadow = instance_create(camera_0_x, 0, obj_npc_marker)
+    shadow = instance_create(camera_get_view_x(view_camera[0]), 0, obj_npc_marker)
     shadow.image_speed = 0
     shadow.visible = true
     shadow.image_alpha = 1
@@ -348,14 +348,14 @@ if (con == 56 && instance_exists(OBJ_WRITER) == false)
     caster_play(cheer, 1, 1)
     caster_loop(gameshow, 1, 1)
     shadow.image_alpha = 0.95
-    dball = instance_create((camera_0_x + 60), -30, obj_discoball)
+    dball = instance_create((camera_get_view_x(view_camera[0]) + 60), -30, obj_discoball)
     obj_discoball.depth = 13
     con = 57
 }
 if (con == 57)
 {
     repeat (2)
-        instance_create((camera_0_x + random(320)), (camera_0_y - 10), obj_confetti)
+        instance_create((camera_get_view_x(view_camera[0]) + random(320)), (camera_get_view_y(view_camera[0]) - 10), obj_confetti)
     if (gamesign.y < (gamesign.ystart + 40))
         gamesign.y += 1
     shadow.image_alpha -= 0.005
@@ -379,7 +379,7 @@ if (con == 59 && instance_exists(OBJ_WRITER) == false)
 }
 if (con == 60)
 {
-    conf = instance_create((obj_mainchara.x + random(20)), (camera_0_y - 10), obj_confetti)
+    conf = instance_create((obj_mainchara.x + random(20)), (camera_get_view_y(view_camera[0]) - 10), obj_confetti)
     conf.hspeed = (-1 + random(2))
 }
 if (con == 61)
@@ -474,7 +474,7 @@ if (con == 72 && instance_exists(OBJ_WRITER) == false)
 }
 if (con == 73)
 {
-    __view_set(VIEW_PROP_CAM_X, 0, (camera_0_x - 2))
+    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) - 2))
     global.interact = 1
 }
 if (con == 74)

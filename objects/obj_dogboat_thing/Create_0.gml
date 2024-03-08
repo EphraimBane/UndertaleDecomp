@@ -1,4 +1,4 @@
-camera_set_view_pos(view_camera[0], camera_0_x, 0)
+camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0]), 0)
 reg = 1
 up = 0
 if ((room == room_tundra_dock) == 1)
@@ -40,7 +40,7 @@ if (room == room_riverman_transition && type == 0)
     depth = 900000
     obj_mainchara.cutscene = true
     camera_set_view_target(view_camera[0], noone)
-    camera_set_view_pos(view_camera[0], 0,  camera_0_y)
+    camera_set_view_pos(view_camera[0], 0,  camera_get_view_y(view_camera[0]))
     x = 340
     lapbg = 1
     con = 6
@@ -68,7 +68,7 @@ if (type == 0 && global.entrance == 24)
     depth = 900000
     obj_mainchara.cutscene = true
     camera_set_view_target(view_camera[0], noone)
-    camera_set_view_pos(view_camera[0], 0,  camera_0_y)
+    camera_set_view_pos(view_camera[0], 0,  camera_get_view_y(view_camera[0]))
     x = 340
     con = 50
     if (FL_TemBoatVersion == 0)
@@ -87,4 +87,4 @@ if (lapbg == 1)
 }
 if (up == 1)
     depth = 950000
-camera_set_view_pos(view_camera[0], camera_0_x, 0)
+camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0]), 0)

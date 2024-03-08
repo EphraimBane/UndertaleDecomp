@@ -6,7 +6,7 @@ function scr_drawtext_centered_scaled(_x, _y, _text, _xscale, _yscale)
 	var text = _text
 	var xscale = _xscale
 	var yscale = _yscale
-	var display_scale = (surface_get_width(application_surface) / camera_current_width)
+	var display_scale = (surface_get_width(application_surface) / camera_get_view_width(view_camera[view_current]))
 	var lineheight = round((string_height(string_hash_to_newline(" ")) * yscale))
 	var eol = string_pos("#", text)
 	yy = (round((yy * display_scale)) / display_scale)

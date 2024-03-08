@@ -1,6 +1,6 @@
 show_debug_message("Performing room layer check")
 var a = layer_get_all()
-for (var i = 0; i < (array_length(a) - 1); i++)
+for (var i = 0; i < (array_length_1d(a) - 1); i++)
 {
     var ainame = layer_get_name(a[i])
     var ainame2 = layer_get_name(a[(i + 1)])
