@@ -1,12 +1,12 @@
 xx += xxspeed
 yy += yyspeed
-if (xx > (camera_get_view_x(view_camera[0]) + 200))
+if (xx > (__view_get(VIEW_PROP_CAM_X, 0) + 200))
     xx -= sprite_width
-if (xx < (camera_get_view_x(view_camera[0]) - 200))
+if (xx < (__view_get(VIEW_PROP_CAM_X, 0) - 200))
     xx += sprite_width
-if (yy > (camera_get_view_y(view_camera[0]) + 200))
+if (yy > (__view_get(VIEW_PROP_CAM_Y, 0) + 200))
     yy -= sprite_height
-if (yy < (camera_get_view_y(view_camera[0]) - 200))
+if (yy < (__view_get(VIEW_PROP_CAM_Y, 0) - 200))
     yy += sprite_height
 draw_sprite_ext(sprite_index, 0, xx, yy, 1, 1, 0, c_white, image_alpha)
 draw_sprite_ext(sprite_index, 0, (xx - sprite_width), (yy - sprite_height), 1, 1, 0, c_white, image_alpha)

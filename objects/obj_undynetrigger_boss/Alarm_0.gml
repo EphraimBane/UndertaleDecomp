@@ -1,2 +1,2 @@
-xx = camera_get_view_x(view_camera[0])
-yy = camera_get_view_y(view_camera[0])
+xx = __view_get(VIEW_PROP_CAM_X, 0)
+yy = __view_get(VIEW_PROP_CAM_Y, 0)

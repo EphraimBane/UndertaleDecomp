@@ -12,7 +12,7 @@ else
 {
     __view_set(VIEW_PROP_CAM_Y, 0, 120)
     obj_mainchara.cutscene = true
-    camera_set_view_target(view_camera[0], noone)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
 }
 mainmove = 0
 frantic = 0

@@ -1,7 +1,7 @@
 if (active == true)
     timer += 1
-if (camera_get_view_x(view_camera[0]) >= 0 && timer < 20)
-    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) - 2))
+if (__view_get(VIEW_PROP_CAM_X, 0) >= 0 && timer < 20)
+    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 2))
 var textx = 168
 if (global.language == "ja")
     textx -= 16
@@ -130,8 +130,8 @@ if (timer >= 440)
 }
 if (timer >= 500)
 {
-    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) + 4))
-    if (camera_get_view_x(view_camera[0]) >= 160)
+    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 4))
+    if (__view_get(VIEW_PROP_CAM_X, 0) >= 160)
     {
         global.cast_type = 2
         room_goto(room_end_castroll)

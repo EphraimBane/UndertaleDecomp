@@ -43,22 +43,22 @@ if (con == 3 || con == 1 || con == 0.1 || con == 1.1)
     {
         if (donkeykongismyfavoritemarvelsuperhero == 0)
         {
-            wrx = (OBJ_WRITER.writingx - camera_get_view_x(view_camera[0]))
-            dgx = (obj_dialoguer.x - camera_get_view_x(view_camera[0]))
+            wrx = (OBJ_WRITER.writingx - __view_get(VIEW_PROP_CAM_X, 0))
+            dgx = (obj_dialoguer.x - __view_get(VIEW_PROP_CAM_X, 0))
             donkeykongismyfavoritemarvelsuperhero = 1
         }
         if (donkeykongismyfavoritemarvelsuperhero == 1)
         {
-            OBJ_WRITER.myx = (camera_get_view_x(view_camera[0]) + wrx)
-            OBJ_WRITER.writingx = (camera_get_view_x(view_camera[0]) + wrx)
+            OBJ_WRITER.myx = (__view_get(VIEW_PROP_CAM_X, 0) + wrx)
+            OBJ_WRITER.writingx = (__view_get(VIEW_PROP_CAM_X, 0) + wrx)
             if instance_exists(obj_face)
             {
-                obj_face.x = (camera_get_view_x(view_camera[0]) + 24)
-                OBJ_WRITER.myx = ((camera_get_view_x(view_camera[0]) + wrx) + 58)
-                OBJ_WRITER.writingx = ((camera_get_view_x(view_camera[0]) + wrx) + 58)
+                obj_face.x = (__view_get(VIEW_PROP_CAM_X, 0) + 24)
+                OBJ_WRITER.myx = ((__view_get(VIEW_PROP_CAM_X, 0) + wrx) + 58)
+                OBJ_WRITER.writingx = ((__view_get(VIEW_PROP_CAM_X, 0) + wrx) + 58)
             }
-            obj_dialoguer.xx = camera_get_view_x(view_camera[0])
-            obj_dialoguer.x = (camera_get_view_x(view_camera[0]) + dgx)
+            obj_dialoguer.xx = __view_get(VIEW_PROP_CAM_X, 0)
+            obj_dialoguer.x = (__view_get(VIEW_PROP_CAM_X, 0) + dgx)
         }
         if (con == 3 && OBJ_WRITER.stringno == 2)
         {

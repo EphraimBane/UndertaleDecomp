@@ -2,14 +2,14 @@ if (con == 1)
 {
     caster_pause(global.currentsong)
     con = 2
-    curview = camera_get_view_y(view_camera[0])
+    curview = __view_get(VIEW_PROP_CAM_Y, 0)
     alarm[4] = 30
 }
 if (con == 3)
 {
     global.facing = Direction.Down
-    __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) + 1))
-    if (camera_get_view_y(view_camera[0]) > (curview + 60))
+    __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + 1))
+    if (__view_get(VIEW_PROP_CAM_Y, 0) > (curview + 60))
         con = 4
 }
 if (con == 4)
@@ -20,30 +20,30 @@ if (con == 4)
 if (con == 5.1)
 {
     con = 4.2
-    rememberxview = camera_get_view_x(view_camera[view_current])
-    rememberyview = camera_get_view_y(view_camera[view_current])
+    rememberxview = __view_get(VIEW_PROP_CAM_X, view_current)
+    rememberyview = __view_get(VIEW_PROP_CAM_Y, view_current)
     xdiff = 130
-    ydiff = (192 - camera_get_view_y(view_camera[view_current]))
+    ydiff = (192 - __view_get(VIEW_PROP_CAM_Y, view_current))
     __view_set(VIEW_PROP_CAM_TARGET, view_current, noone)
     alarm[4] = 12
 }
 if (con == 4.2)
 {
-    if (camera_get_view_x(view_camera[0]) < 130)
-        __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) + (xdiff / 10)))
-    if (camera_get_view_x(view_camera[0]) > 130)
+    if (__view_get(VIEW_PROP_CAM_X, 0) < 130)
+        __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + (xdiff / 10)))
+    if (__view_get(VIEW_PROP_CAM_X, 0) > 130)
         __view_set(VIEW_PROP_CAM_X, 0, 130)
-    if (camera_get_view_y(view_camera[0]) < 192)
-        __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) + (ydiff / 10)))
-    if (camera_get_view_y(view_camera[0]) > 192)
+    if (__view_get(VIEW_PROP_CAM_Y, 0) < 192)
+        __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) + (ydiff / 10)))
+    if (__view_get(VIEW_PROP_CAM_Y, 0) > 192)
         __view_set(VIEW_PROP_CAM_Y, 0, 192)
-    if (camera_get_view_height(view_camera[0]) > 120)
-        __view_set(VIEW_PROP_CAM_HEIGHT, 0, (camera_get_view_height(view_camera[0]) - 12))
-    if (camera_get_view_height(view_camera[0]) < 120)
+    if (__view_get(VIEW_PROP_CAM_HEIGHT, 0) > 120)
+        __view_set(VIEW_PROP_CAM_HEIGHT, 0, (__view_get(VIEW_PROP_CAM_HEIGHT, 0) - 12))
+    if (__view_get(VIEW_PROP_CAM_HEIGHT, 0) < 120)
         __view_set(VIEW_PROP_CAM_HEIGHT, 0, 120)
-    if (camera_get_view_width(view_camera[0]) > 160)
-        __view_set(VIEW_PROP_CAM_WIDTH, 0, (camera_get_view_width(view_camera[0]) - 16))
-    if (camera_get_view_width(view_camera[0]) < 160)
+    if (__view_get(VIEW_PROP_CAM_WIDTH, 0) > 160)
+        __view_set(VIEW_PROP_CAM_WIDTH, 0, (__view_get(VIEW_PROP_CAM_WIDTH, 0) - 16))
+    if (__view_get(VIEW_PROP_CAM_WIDTH, 0) < 160)
         __view_set(VIEW_PROP_CAM_WIDTH, 0, 160)
 }
 if (con == 5.2)
@@ -84,21 +84,21 @@ if (con == 7.3)
 }
 if (con == 6.4)
 {
-    if (camera_get_view_x(view_camera[view_current]) > 0)
-        __view_set(VIEW_PROP_CAM_X, view_current, (camera_get_view_x(view_camera[view_current]) - (xdiff / 10)))
-    if (camera_get_view_x(view_camera[0]) < 0)
-        camera_set_view_pos(view_camera[0], 0,  camera_get_view_y(view_camera[0]))
-    if (camera_get_view_y(view_camera[view_current]) > rememberyview)
-        __view_set(VIEW_PROP_CAM_Y, view_current, (camera_get_view_y(view_camera[view_current]) - (ydiff / 10)))
-    if (camera_get_view_y(view_camera[0]) < rememberyview)
+    if (__view_get(VIEW_PROP_CAM_X, view_current) > 0)
+        __view_set(VIEW_PROP_CAM_X, view_current, (__view_get(VIEW_PROP_CAM_X, view_current) - (xdiff / 10)))
+    if (__view_get(VIEW_PROP_CAM_X, 0) < 0)
+        __view_set(VIEW_PROP_CAM_X, 0, 0)
+    if (__view_get(VIEW_PROP_CAM_Y, view_current) > rememberyview)
+        __view_set(VIEW_PROP_CAM_Y, view_current, (__view_get(VIEW_PROP_CAM_Y, view_current) - (ydiff / 10)))
+    if (__view_get(VIEW_PROP_CAM_Y, 0) < rememberyview)
         __view_set(VIEW_PROP_CAM_Y, 0, rememberyview)
-    if (camera_get_view_height(view_camera[view_current]) < 240)
-        __view_set(VIEW_PROP_CAM_HEIGHT, view_current, (camera_get_view_height(view_camera[view_current]) + 12))
-    if (camera_get_view_height(view_camera[0]) > 240)
+    if (__view_get(VIEW_PROP_CAM_HEIGHT, view_current) < 240)
+        __view_set(VIEW_PROP_CAM_HEIGHT, view_current, (__view_get(VIEW_PROP_CAM_HEIGHT, view_current) + 12))
+    if (__view_get(VIEW_PROP_CAM_HEIGHT, 0) > 240)
         __view_set(VIEW_PROP_CAM_HEIGHT, 0, 240)
-    if (camera_get_view_width(view_camera[view_current]) < 320)
-        __view_set(VIEW_PROP_CAM_WIDTH, view_current, (camera_get_view_width(view_camera[view_current]) + 16))
-    if (camera_get_view_width(view_camera[0]) > 320)
+    if (__view_get(VIEW_PROP_CAM_WIDTH, view_current) < 320)
+        __view_set(VIEW_PROP_CAM_WIDTH, view_current, (__view_get(VIEW_PROP_CAM_WIDTH, view_current) + 16))
+    if (__view_get(VIEW_PROP_CAM_WIDTH, 0) > 320)
         __view_set(VIEW_PROP_CAM_WIDTH, 0, 320)
 }
 if (con == 7.4)
@@ -109,8 +109,8 @@ if (con == 7.4)
 }
 if (con == 8)
 {
-    __view_set(VIEW_PROP_CAM_Y, 0, (camera_get_view_y(view_camera[0]) - 6))
-    if (camera_get_view_y(view_camera[0]) <= (curview - 20))
+    __view_set(VIEW_PROP_CAM_Y, 0, (__view_get(VIEW_PROP_CAM_Y, 0) - 6))
+    if (__view_get(VIEW_PROP_CAM_Y, 0) <= (curview - 20))
     {
         con = 7.5
         alarm[4] = 10
@@ -233,7 +233,7 @@ if (con == 12)
 if (con == 14)
 {
     obj_mainchara.cutscene = false
-    camera_set_view_target(view_camera[0], obj_mainchara)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
     global.interact = 1
     if (global.interact == 0)
         global.interact = 1
@@ -353,7 +353,7 @@ if (con == 38)
     with (dummy)
         instance_destroy()
     obj_mainchara.cutscene = false
-    camera_set_view_target(view_camera[0], obj_mainchara)
+    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
     global.interact = 1
     if (global.interact == 0)
         global.interact = 1

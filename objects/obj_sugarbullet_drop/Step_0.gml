@@ -1,3 +1,3 @@
-if (y > (camera_get_view_y(view_camera[0]) + 250))
+if (y > (__view_get(VIEW_PROP_CAM_Y, 0) + 250))
     instance_destroy()
 image_angle += ang

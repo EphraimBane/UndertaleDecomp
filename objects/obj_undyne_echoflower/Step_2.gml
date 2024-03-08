@@ -14,7 +14,7 @@ if (con == 1 && instance_exists(OBJ_WRITER) == false)
 if (con == 2)
 {
     global.interact = 1
-    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) - 5))
+    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) - 5))
 }
 if (con == 3)
 {
@@ -256,7 +256,7 @@ if (con == 47)
 }
 if (con == 48 && instance_exists(OBJ_WRITER) == false)
 {
-    if (undyne.x < (camera_get_view_x(view_camera[0]) - 100))
+    if (undyne.x < (__view_get(VIEW_PROP_CAM_X, 0) - 100))
     {
         with (undyne)
             instance_destroy()
@@ -269,7 +269,7 @@ if (con == 48 && instance_exists(OBJ_WRITER) == false)
     }
 }
 if (con == 49)
-    __view_set(VIEW_PROP_CAM_X, 0, (camera_get_view_x(view_camera[0]) + 1))
+    __view_set(VIEW_PROP_CAM_X, 0, (__view_get(VIEW_PROP_CAM_X, 0) + 1))
 if (con == 50)
 {
     with (obj_mainchara)

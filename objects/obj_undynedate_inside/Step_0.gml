@@ -431,7 +431,7 @@ if (con == 82)
         FL_UnknownBoolean17 = false
         global.interact = 1
         obj_mainchara.cutscene = true
-		camera_set_view_target(view_camera[0], noone)
+        __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
         obj_mainchara.x = mcxp
         obj_mainchara.y = mcyp
         undyne.visible = false
@@ -1103,7 +1103,7 @@ if (con == 250 && instance_exists(OBJ_WRITER) == false)
 }
 if (con == 252)
 {
-    blk = instance_create((camera_get_view_x(view_camera[0]) - 2), -2, obj_npc_marker)
+    blk = instance_create((__view_get(VIEW_PROP_CAM_X, obj_backgrounder_parent) - 2), -2, obj_npc_marker)
     blk.depth = (wht.depth - 2)
     blk.image_alpha = 0
     blk.visible = true
