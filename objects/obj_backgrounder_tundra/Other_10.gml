@@ -1,5 +1,5 @@
 if (view_xview_get(0) >= 0)
-    __background_set(3, 0, floor((view_xview_get(0) - (view_xview_get(0) * scrollspeed))))
+    __background_set(BG_PROP_X, 0, floor((view_xview_get(0) - (view_xview_get(0) * scrollspeed))))
 gg = (room_width - view_wview_get(0))
 if (view_xview_get(0) >= gg)
-    __background_set(3, 0, floor((gg - (gg * scrollspeed))))
+    __background_set(BG_PROP_X, 0, floor((gg - (gg * scrollspeed))))

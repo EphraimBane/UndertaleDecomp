@@ -30,6 +30,22 @@ enum OSFlavors
 #macro VIEW_PROP_H_PORT 14
 #macro VIEW_PROP_CAMERA 15
 #macro VIEW_PROP_SURFACE_ID 16
+
+#macro BG_PROP_VISIBLE 0
+#macro BG_PROP_FOREGROUND 1
+#macro BG_PROP_SPRITE 2
+#macro BG_PROP_X 3
+#macro BG_PROP_Y 4
+#macro BG_PROP_WIDTH 5
+#macro BG_PROP_HEIGHT 6
+#macro BG_PROP_HTILED 7
+#macro BG_PROP_VTILED 8
+#macro BG_PROP_XSCALE 9
+#macro BG_PROP_YSCALE 10
+#macro BG_PROP_HSPEED 11
+#macro BG_PROP_VSPEED 12
+#macro BG_PROP_BLEND 13
+#macro BG_PROP_ALPHA 14
 #endregion
 
 // Vultu: Taken from https://tomat.dev/undertale/flags

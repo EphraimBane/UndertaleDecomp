@@ -3,7 +3,7 @@ function scr_waver_height_bg()
 	b = argument0
 	c = argument1
 	a += 1
-	var bgSprite = __background_get(2, 0)
+	var bgSprite = __background_get(BG_PROP_SPRITE, 0)
 	var bgHeight = sprite_get_height(bgSprite)
 	var bgWidth = sprite_get_width(bgSprite)
 	for (i = bgHeight; i > 0; i -= 1)
