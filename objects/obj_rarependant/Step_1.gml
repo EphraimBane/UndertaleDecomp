@@ -7,7 +7,7 @@ if (FL_GotArtifact == 0)
         if (global.item[i] == Items.AnnoyingDog)
             hasdog = 1
     }
-    if (hasdog == true)
+    if (hasdog == false)
     {
         noroom = false
         scr_itemget(Items.AnnoyingDog)
