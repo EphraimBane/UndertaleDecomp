@@ -77,7 +77,7 @@ function __background_get_element()
 	    var __elslength = array_length(__els)
 	    for (__i = 0; __i < __elslength; __i++)
 	    {
-	        if (layer_get_element_type(__els[__i]) == 1)
+	        if (layer_get_element_type(__els[__i]) == layerelementtype_background)
 	        {
 	            __result[0] = __els[__i]
 	            __result[1] = __layerid

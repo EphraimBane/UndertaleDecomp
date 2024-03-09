@@ -1132,7 +1132,7 @@ if (con == 255)
     potb.depth = 300000
     with (pot)
         instance_destroy()
-    __background_set(BG_PROP_BLEND, 0, c_maroon)
+    background_blend_set(0, c_maroon)
     f = scr_marker(60, 140, spr_hearthflame)
     f.image_speed = 0.6
     f.depth = 400000

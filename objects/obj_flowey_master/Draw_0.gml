@@ -581,7 +581,7 @@ if (introcon > 0)
         ny = view_yview_get(0)
         hy = obj_vsflowey_heart.y
         obj_vsflowey_heart.y += 480
-        __background_set_colour(c_maroon)
+        background_color_set(c_maroon)
         obj_vsflowey_heart.move = 0
         obj_floweyx_tv.tvmode = 25
         obj_floweyx_tv.siner = 0
@@ -601,7 +601,7 @@ if (introcon > 0)
     if (bganimer == 1)
     {
         bgsiner += 1
-        __background_set_colour(make_color_rgb(abs(((sin((bgsiner / 8)) * 130) / dividefactor)), 0, 0))
+        background_color_set(make_color_rgb(abs(((sin((bgsiner / 8)) * 130) / dividefactor)), 0, 0))
     }
     if (introcon == 2)
     {
@@ -642,7 +642,7 @@ if (introcon > 0)
         obj_floweybodyparent.blend2 = ib
         if (fadevalue >= 10)
         {
-            __background_set_colour(c_black)
+            background_color_set(c_black)
             introcon = 7
             alarm[5] = 20
         }
