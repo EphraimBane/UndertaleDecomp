@@ -6,7 +6,7 @@ siner5 = 120
 sinerx = 0
 for (i = 0; i < 3; i += 1)
 {
-    tspr1[i] = choose(1752, 1753)
+    tspr1[i] = choose(spr_trash_paperball, spr_trash_dustorb)
     trash1[i] = instance_create(x, y, obj_npc_marker)
     if instance_exists(trash1[i])
     {
@@ -17,7 +17,7 @@ for (i = 0; i < 3; i += 1)
 }
 for (i = 0; i < 3; i += 1)
 {
-    tspr2[i] = choose(1752, 1753)
+    tspr2[i] = choose(spr_trash_paperball, spr_trash_dustorb)
     trash2[i] = instance_create(x, y, obj_npc_marker)
     if instance_exists(trash2[i])
     {
@@ -28,7 +28,7 @@ for (i = 0; i < 3; i += 1)
 }
 for (i = 0; i < 3; i += 1)
 {
-    tspr3[i] = choose(1752, 1753, 1752, 1401)
+    tspr3[i] = choose(spr_trash_paperball, spr_trash_dustorb, spr_trash_paperball, spr_notepaper)
     trash3[i] = instance_create(x, y, obj_npc_marker)
     if instance_exists(trash3[i])
     {
@@ -39,9 +39,9 @@ for (i = 0; i < 3; i += 1)
 }
 for (i = 0; i < 3; i += 1)
 {
-    tspr4[0] = choose(1752)
-    tspr4[1] = choose(1732)
-    tspr4[2] = choose(1399)
+    tspr4[0] = choose(spr_trash_paperball)
+    tspr4[1] = choose(spr_book)
+    tspr4[2] = choose(spr_spaghettialone)
     trash4[i] = instance_create(x, y, obj_npc_marker)
     if instance_exists(trash4[i])
     {
@@ -54,15 +54,15 @@ for (i = 0; i < 3; i += 1)
 {
     if (FL_GotSansRoomKey < 2)
     {
-        tspr5[0] = choose(1752)
-        tspr5[1] = choose(1732)
-        tspr5[2] = choose(1754)
+        tspr5[0] = choose(spr_trash_paperball)
+        tspr5[1] = choose(spr_book)
+        tspr5[2] = choose(spr_trash_takeout)
     }
     else
     {
-        tspr5[0] = choose(1752)
-        tspr5[2] = choose(1754)
-        tspr5[1] = choose(1732, 1752, 1732, 1635)
+        tspr5[0] = choose(spr_trash_paperball)
+        tspr5[2] = choose(spr_trash_takeout)
+        tspr5[1] = choose(spr_book, spr_trash_paperball, spr_book, spr_tobdog_sleep_trash)
     }
     trash5[i] = instance_create(x, y, obj_npc_marker)
     if instance_exists(trash5[i])
