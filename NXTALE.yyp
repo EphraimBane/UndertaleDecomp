@@ -202,7 +202,7 @@
     {"$GMFolder":"","%Name":"Menu","folderPath":"folders/Scripts/Decomp/Menu.yy","name":"Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Save","folderPath":"folders/Scripts/Decomp/Save.yy","name":"Save","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Deprecated Functions","folderPath":"folders/Scripts/Deprecated Functions.yy","name":"Deprecated Functions","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Action","folderPath":"folders/Scripts/Deprecated Functions/Action.yy","name":"Action","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Action","folderPath":"folders/Scripts/Deprecated Wrapper/Action.yy","name":"Action","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Background","folderPath":"folders/Scripts/Deprecated Functions/Background.yy","name":"Background","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Init","folderPath":"folders/Scripts/Deprecated Functions/Init.yy","name":"Init","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Deprecated Wrapper","folderPath":"folders/Scripts/Deprecated Wrapper.yy","name":"Deprecated Wrapper","resourceType":"GMFolder","resourceVersion":"2.0",},
