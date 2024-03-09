@@ -5,7 +5,7 @@ function trophy_handle_load_state()
 	    if ds_map_find_value(async_load, "succeeded")
 	    {
 	        var states = ds_map_find_value(async_load, "trophystates")
-	        var count = array_length(states)
+	        var count = array_length_1d(states)
 	        if (count > 1)
 	            ds_map_set(global.trophy_state, "item_1", states[1] == 1)
 	        if (count > 2)

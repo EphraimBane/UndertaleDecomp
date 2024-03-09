@@ -30,10 +30,10 @@ if (jump == 5)
 if (instance_exists(obj_dialoguer) == false)
 {
     jump = 6
-    background_visible_set(1, false)
-    background_visible_set(0, true)
+    __background_set(BG_PROP_VISIBLE, 1, c_black)
+    __background_set(BG_PROP_VISIBLE, 0, spr_introlast)
     if (global.plot < 20)
-        background_visible_set(2, true)
+        __background_set(BG_PROP_VISIBLE, 2, spr_introlast)
     global.facing = Direction.Left
     obj_mainchara.x = 200
     obj_mainchara.y = 104

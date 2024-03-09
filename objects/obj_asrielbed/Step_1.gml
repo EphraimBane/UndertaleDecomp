@@ -14,7 +14,7 @@ if (jump == 3)
         global.interact = 0
         myinteract = 0
         jump = 0
-        background_visible_set(2, false)
+        __background_set(BG_PROP_VISIBLE, 2, c_black)
         obj_solidsmall.solid = 1
         global.phasing = 0
     }

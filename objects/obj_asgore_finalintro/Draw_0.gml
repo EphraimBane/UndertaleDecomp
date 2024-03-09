@@ -140,7 +140,7 @@ if (con == 9)
 if (con == 10)
 {
     obj_battlecontroller.drawrect = 0
-    background_color_set(c_white)
+    __background_set_colour(c_white)
     image_blend = c_black
     obj_fightbt.image_blend = c_black
     obj_itembt.image_blend = c_black
@@ -247,7 +247,7 @@ if (con == 40)
             con = 50
             global.mnfight = 0
             global.myfight = 0
-            background_color_set(c_black)
+            __background_set_colour(c_black)
             obj_battlecontroller.drawrect = 1
             obj_fightbt.image_blend = c_white
             obj_itembt.image_blend = c_white

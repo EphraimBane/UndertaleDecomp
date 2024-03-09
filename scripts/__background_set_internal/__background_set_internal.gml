@@ -9,7 +9,7 @@ function __background_set_internal()
 	var __backid = __backinfo[0]
 	var __layerid = __backinfo[1]
 	var __isfore = __backinfo[2]
-	if (__prop == BG_PROP_FOREGROUND)
+	if (__prop == 1)
 	{
 	    if (round(__val) != round(__isfore))
 	    {
@@ -33,41 +33,41 @@ function __background_set_internal()
 	{
 	    switch __prop
 	    {
-	        case BG_PROP_VISIBLE:
+	        case 0:
 	            layer_background_visible(__backid, __val)
 	            layer_set_visible(__layerid, __val)
 	            break
-	        case BG_PROP_SPRITE:
+	        case 2:
 	            layer_background_change(__backid, __val)
 	            break
-	        case BG_PROP_X:
+	        case 3:
 	            layer_x(__layerid, __val)
 	            break
-	        case BG_PROP_Y:
+	        case 4:
 	            layer_y(__layerid, __val)
 	            break
-	        case BG_PROP_HTILED:
+	        case 7:
 	            layer_background_htiled(__backid, __val)
 	            break
-	        case BG_PROP_VTILED:
+	        case 8:
 	            layer_background_vtiled(__backid, __val)
 	            break
-	        case BG_PROP_XSCALE:
+	        case 9:
 	            layer_background_xscale(__backid, __val)
 	            break
-	        case BG_PROP_YSCALE:
+	        case 10:
 	            layer_background_yscale(__backid, __val)
 	            break
-	        case BG_PROP_HSPEED:
+	        case 11:
 	            layer_hspeed(__layerid, __val)
 	            break
-	        case BG_PROP_VSPEED:
+	        case 12:
 	            layer_vspeed(__layerid, __val)
 	            break
-	        case BG_PROP_BLEND:
+	        case 13:
 	            layer_background_blend(__backid, __val)
 	            break
-	        case BG_PROP_ALPHA:
+	        case 14:
 	            layer_background_alpha(__backid, __val)
 	            break
 	        default:
