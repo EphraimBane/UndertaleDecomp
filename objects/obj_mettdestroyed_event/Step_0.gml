@@ -114,7 +114,7 @@ if (con == 19)
 if (con == 20 && instance_exists(OBJ_WRITER) == false)
 {
     al.sprite_index = al.utsprite
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    view_target_set(0, obj_mainchara)
     obj_mainchara.cutscene = true
     con = 21
     alarm[4] = 30

@@ -18,7 +18,7 @@ with (obj_undynetrigger_boss)
     if (con == 1)
     {
         obj_mainchara.cutscene = true
-        __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+        view_target_set(0, noone)
         con = 2
         alarm[4] = 33
     }
@@ -138,12 +138,12 @@ with (obj_undynetrigger_boss)
         undyne.image_index = 0
         undyne.image_speed = 0
         fakedrawer = 0
-        __view_set(VIEW_PROP_VISIBLE, 1, false)
+		view_visible[1] = false
         view_hview_set(1, 240)
         view_wview_set(1, 320)
         view_xview_set(1, 0)
         view_yview_set(1, 60)
-        __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+        view_target_set(0, noone)
         FL_UndyneZoomCutscene = false
         view_xview_set(0, 0)
         view_yview_set(0, 60)
@@ -315,7 +315,7 @@ with (obj_undynetrigger_boss)
         if (view_yview_get(0) >= yy)
         {
             save = instance_create(220, 660, obj_savepoint)
-            __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+            view_target_set(0, obj_mainchara)
             obj_mainchara.cutscene = false
             global.interact = 0
             con = 26

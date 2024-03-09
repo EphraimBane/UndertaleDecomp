@@ -3,7 +3,7 @@ if (con == 1)
     mkid = instance_create((view_xview_get(0) - 40), obj_mainchara.y, obj_mkid_actor)
     mkid.image_speed = 0
     obj_mainchara.cutscene = true
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    view_target_set(0, noone)
     mkid.sprite_index = mkid.rsprite
     con = 0.1
     alarm[4] = 2
@@ -393,7 +393,7 @@ if (con == 74)
     {
         with (mkid)
             instance_destroy()
-        __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+        view_target_set(0, obj_mainchara)
         obj_mainchara.cutscene = false
         with (doora)
             instance_destroy()
@@ -613,7 +613,7 @@ if (con == 117)
     {
         with (mkid)
             instance_destroy()
-        __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+        view_target_set(0, obj_mainchara)
         obj_mainchara.cutscene = false
         with (doora)
             instance_destroy()
@@ -703,7 +703,7 @@ if (con == 159)
 if (con == 160)
 {
     obj_mainchara.cutscene = false
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    view_target_set(0, obj_mainchara)
     con = 160.1
     global.interact = 1
     alarm[4] = 30

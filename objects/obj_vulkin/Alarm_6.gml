@@ -39,18 +39,18 @@ if (encourage > 0)
 if (whatiheard == 1)
 {
     global.msg[0] = scr_gettext("obj_vulkin_307")
-    mypart1.face = 410
+    mypart1.face = spr_vulkinface3
 }
 if (whatiheard == 3)
 {
-    mypart1.face = 412
+    mypart1.face = spr_vulkinface2
     global.msg[0] = scr_gettext("obj_vulkin_314")
     if (criticize == 2)
         global.msg[0] = scr_gettext("obj_vulkin_317")
 }
 if (whatiheard == 4)
 {
-    mypart1.face = 411
+    mypart1.face = spr_vulkinface4
     global.msg[0] = scr_gettext("obj_vulkin_323")
     if (hug == 2)
         global.msg[0] = scr_gettext("obj_vulkin_325")

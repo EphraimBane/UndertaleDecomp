@@ -4,5 +4,5 @@
 /// @param	{real}	angle	The angle to set
 function view_angle_set(_view, _value)
 {
-	camera_set_view_angle(view_camera[_view], _value)
+	camera_set_view_angle(view_camera[_view], _value);
 }

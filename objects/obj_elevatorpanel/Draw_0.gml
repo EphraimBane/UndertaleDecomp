@@ -194,7 +194,7 @@ if (con == 11)
 if (con == 12)
 {
     obj_mainchara.cutscene = true
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    view_target_set(0, noone)
     siner += 1
     if (alarm[4] > 20)
         intense += 0.01

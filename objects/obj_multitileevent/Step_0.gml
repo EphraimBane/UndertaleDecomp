@@ -48,7 +48,7 @@ if (con == 6)
 }
 if (con == 7 && instance_exists(OBJ_WRITER) == false)
 {
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    view_target_set(0, noone)
     obj_mainchara.cutscene = true
     view_xview_set(0, (view_xview_get(0) + 5))
     if (view_xview_get(0) >= 96)
@@ -123,7 +123,7 @@ if (con == 18 && instance_exists(OBJ_WRITER) == false)
     flavor = 0
     global.phasing = 0
     obj_mainchara.cutscene = false
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    view_target_set(0, obj_mainchara)
     global.interact = 0
     con = 20
 }
@@ -370,7 +370,7 @@ if (con == 59)
             instance_destroy()
     }
     obj_mainchara.cutscene = false
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    view_target_set(0, obj_mainchara)
     global.interact = 1
     if (global.interact == 0)
         global.interact = 1

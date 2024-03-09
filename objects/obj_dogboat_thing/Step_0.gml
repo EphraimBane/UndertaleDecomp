@@ -132,7 +132,7 @@ if (con == 5.1)
 if (con == 6)
 {
     obj_mainchara.cutscene = true
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    view_target_set(0, noone)
     view_xview_set(0, 0)
     x = 340
     global.facing = Direction.Left
@@ -321,7 +321,7 @@ if (con == 18)
 if (con == 50)
 {
     obj_mainchara.cutscene = true
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    view_target_set(0, noone)
     view_xview_set(0, 0)
     x = 340
     global.facing = Direction.Left

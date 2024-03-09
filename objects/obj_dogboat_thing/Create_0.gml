@@ -39,7 +39,7 @@ if (room == room_riverman_transition && type == 0)
     type = 1
     depth = 900000
     obj_mainchara.cutscene = true
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    view_target_set(0, noone)
     view_xview_set(0, 0)
     x = 340
     lapbg = 1
@@ -67,7 +67,7 @@ if (type == 0 && global.entrance == 24)
     lapbg = 0
     depth = 900000
     obj_mainchara.cutscene = true
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    view_target_set(0, noone)
     view_xview_set(0, 0)
     x = 340
     con = 50

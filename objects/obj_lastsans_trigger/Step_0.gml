@@ -4,7 +4,7 @@ if (con == 1)
     m.fadespeed = 0.03
     remx = view_xview_get(0)
     obj_mainchara.cutscene = true
-    __view_set(VIEW_PROP_CAM_TARGET, 0, noone)
+    view_target_set(0, noone)
     obj_mainchara.x = 800
     con = 0.5
     ss = 0
@@ -205,7 +205,7 @@ if (con == 7 && instance_exists(OBJ_WRITER) == false)
 }
 if (con == 8)
 {
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    view_target_set(0, obj_mainchara)
     obj_mainchara.cutscene = false
     con = 9
     global.plot = 201
@@ -678,7 +678,7 @@ if (con == 113)
     global.interact = 0
     with (obj_mainchara)
         cutscene = false
-    __view_set(VIEW_PROP_CAM_TARGET, 0, obj_mainchara)
+    view_target_set(0, obj_mainchara)
     with (mc)
         instance_destroy()
     obj_mainchara.visible = true
