@@ -21,7 +21,7 @@ function __background_set_element()
 	var __depthinc = 100
 	__result[0] = -1
 	__result[1] = -1
-	var __fgstring = "Compatibility_Foreground_"
+	var __fgstring = "Foreground_"
 	var __bgstring = "Background_"
 	var __colstring = "Colour"
 	var __fglen = string_length(__fgstring)
