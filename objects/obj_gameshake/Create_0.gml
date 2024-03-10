@@ -11,12 +11,12 @@ if (global.osflavor == OSFlavors.PC)
     window_set_position((wx + gameshake), wy)
 }
 __background_set(BG_PROP_SPRITE, 3, bg_num9)
-__background_set(BG_PROP_FOREGROUND, 3, 1)
-__background_set(BG_PROP_HTILED, 3, 1)
-__background_set(BG_PROP_VTILED, 3, 1)
-__background_set(BG_PROP_VISIBLE, 3, 1)
-__background_set(BG_PROP_HSPEED, 3, c_black)
-__background_set(BG_PROP_VSPEED, 3, c_black)
+__background_set(BG_PROP_FOREGROUND, 3, true)
+__background_set(BG_PROP_HTILED, 3, true)
+__background_set(BG_PROP_VTILED, 3, true)
+__background_set(BG_PROP_VISIBLE, 3, true)
+__background_set(BG_PROP_HSPEED, 3, false)
+__background_set(BG_PROP_VSPEED, 3, false)
 in_silence = 0
 if (global.osflavor == OSFlavors.PC)
 {

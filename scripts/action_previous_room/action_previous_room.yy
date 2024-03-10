@@ -6,7 +6,7 @@
   "name":"action_previous_room",
   "parent":{
     "name":"Action",
-    "path":"folders/Scripts/Deprecated Functions/Action.yy",
+    "path":"folders/Scripts/Deprecated Wrapper/Action.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
