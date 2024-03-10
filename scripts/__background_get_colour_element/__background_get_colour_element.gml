@@ -6,7 +6,7 @@ function __background_get_colour_element()
 	var __depthinc = 100
 	__result[0] = -1
 	__result[1] = -1
-	var __colstring = "Compatibility_Colour"
+	var __colstring = "Colour"
 	var __layerlist = layer_get_all()
 	var __layerlistlength = array_length(__layerlist)
 	var __layerid = -1

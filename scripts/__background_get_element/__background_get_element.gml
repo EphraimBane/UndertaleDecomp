@@ -6,7 +6,7 @@ function __background_get_element()
 	__result[1] = -1
 	__result[2] = -1
 	var __fgstring = "Compatibility_Foreground_"
-	var __bgstring = "Compatibility_Background_"
+	var __bgstring = "Background_"
 	var __fglen = string_length(__fgstring)
 	var __bglen = string_length(__bgstring)
 	var __layerlist = layer_get_all()
