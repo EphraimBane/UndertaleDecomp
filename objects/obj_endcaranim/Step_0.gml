@@ -1,7 +1,7 @@
 siner += 1
 cary = sin((siner / 2))
-__background_set(3, 1, (__background_get(3, 1) - 0.25))
-__background_set(3, 0, (__background_get(3, 0) - 0.1))
+__background_set(BG_PROP_X, 1, (__background_get(BG_PROP_X, 1) - 0.25))
+__background_set(BG_PROP_X, 0, (__background_get(BG_PROP_X, 0) - 0.1))
 if (timer < 5)
 {
     if (view_yview_get(0) > 0)
