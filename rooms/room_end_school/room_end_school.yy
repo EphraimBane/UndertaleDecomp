@@ -10,9 +10,9 @@
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"Compatibility_Instances_Depth_-1","depth":-1,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+    {"$GMRInstanceLayer":"","%Name":"Instances_Depth_M1","depth":-1,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_9FBC938E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_9FBC938E","objectId":{"name":"obj_endschoolanim","path":"objects/obj_endschoolanim/obj_endschoolanim.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":24.0,"y":445.0,},
-      ],"layers":[],"name":"Compatibility_Instances_Depth_-1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},
+      ],"layers":[],"name":"Instances_Depth_M1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_Depth_900000","assets":[
         {"$GMRGraphic":"","%Name":"inst_1616514A","colour":4294967295,"frozen":false,"h":82,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"inst_1616514A","resourceType":"GMRGraphic","resourceVersion":"2.0","spriteId":{"name":"bg_papbush","path":"sprites/bg_papbush/bg_papbush.yy",},"u0":0,"u1":46,"v0":0,"v1":82,"w":46,"x":270.0,"y":340.0,},
         {"$GMRGraphic":"","%Name":"inst_9AC9DFC2","colour":4294967295,"frozen":false,"h":80,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"inst_9AC9DFC2","resourceType":"GMRGraphic","resourceVersion":"2.0","spriteId":{"name":"bg_endtileset","path":"sprites/bg_endtileset/bg_endtileset.yy",},"u0":80,"u1":140,"v0":140,"v1":220,"w":60,"x":240.0,"y":180.0,},
@@ -54,7 +54,7 @@
           48,-4,40,-7,-2147483648,9,34,40,40,47,48,40,34,40,40,-7,-2147483648,5,40,34,40,47,48,-4,40,-7,-2147483648,
           -3,40,6,47,48,40,40,34,40,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_endtileset","path":"tilesets/ts_endtileset/ts_endtileset.yy",},"userdefinedDepth":true,"visible":true,"x":0,"y":0,},
-    {"$GMRBackgroundLayer":"","%Name":"Compatibility_Colour","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":2147483600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Compatibility_Colour","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":true,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"Colour","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":2147483600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Colour","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":true,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"room_end_school",
   "parent":{
