@@ -2,7 +2,7 @@
 /// @desc	Gets phone name using ID
 function scr_phonename()
 {
-	for (i = 0; i < 8; i += 1)
+	for (i = 0; i < InventorySize; i += 1)
 	{
 	    itemid = global.phone[i]
 	    global.phonename[i] = scr_gettext(("phonename_" + string(itemid)))

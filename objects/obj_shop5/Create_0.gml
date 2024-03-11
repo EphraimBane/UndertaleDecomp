@@ -53,7 +53,7 @@ soldo = 0
 global.faceemotion = 0
 sellpos = 0
 sellpos2 = 0
-for (i = 0; i < 8; i += 1)
+for (i = 0; i < InventorySize; i += 1)
 {
     value[i] = 0
     sold[i] = 0

@@ -3,11 +3,11 @@ function SCR_GAMESTART()
 	randomize()
 	audio_channel_num(128)
 	global.awfultest = 0
-	global.steam_int = 0
+	global.steam_int = false
 	
 	/* if steam_initialised()
 	{
-	    global.steam_int = 1
+	    global.steam_int = true
 	    if steam_file_exists("system_information_962")
 	    {
 	        exd = file_text_open_write("system_information_962")
@@ -45,7 +45,7 @@ function SCR_GAMESTART()
 	global.lv = 1
 	global.area = 0
 	global.charname = "CHARA"
-	for (i = 0; i < 8; i += 1)
+	for (i = 0; i < InventorySize; i += 1)
 	{
 	    global.item[i] = Items.Null;
 	    global.spell[i] = 1

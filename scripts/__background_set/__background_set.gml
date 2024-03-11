@@ -1,3 +1,8 @@
+/// @func	__background_set(property, background_index, value)
+/// @param	{Constant.BG_Prop}	property
+/// @param	{real}				background_index
+/// @param	{any}				value
+/// @returns	{any}
 function __background_set(_property, _background_index, _value)
 {
 	var __prop = _property

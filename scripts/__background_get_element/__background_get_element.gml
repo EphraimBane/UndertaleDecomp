@@ -1,7 +1,10 @@
-function __background_get_element()
+/// @func	__background_get_element(background_index)
+/// @param	{real} background_index
+/// @returns	{Array<Real>}
+function __background_get_element(_background_index)
 {
 	var __result;
-	var __bind = argument0
+	var __bind = _background_index
 	__result[0] = -1
 	__result[1] = -1
 	__result[2] = -1
@@ -12,7 +15,7 @@ function __background_get_element()
 	var __layerlist = layer_get_all()
 	var __layerlistlength = array_length(__layerlist)
 	var __layerid = -1
-	var __isforeground = 0
+	var __isforeground = false
 	var __i = 0
 	while (__i < __layerlistlength)
 	{
@@ -31,7 +34,7 @@ function __background_get_element()
 	            if (__slot == __bind)
 	            {
 	                __layerid = __layerlist[__i]
-	                __isforeground = 1
+	                __isforeground = true
 	                break
 	            }
 	            else
@@ -55,7 +58,7 @@ function __background_get_element()
 	            if (__slot == __bind)
 	            {
 	                __layerid = __layerlist[__i]
-	                __isforeground = 0
+	                __isforeground = false
 	                break
 	            }
 	            else
@@ -77,7 +80,7 @@ function __background_get_element()
 	    var __elslength = array_length(__els)
 	    for (__i = 0; __i < __elslength; __i++)
 	    {
-	        if (layer_get_element_type(__els[__i]) == 1)
+	        if (layer_get_element_type(__els[__i]) == layerelementtype_background)
 	        {
 	            __result[0] = __els[__i]
 	            __result[1] = __layerid
@@ -87,10 +90,10 @@ function __background_get_element()
 	}
 	else
 	{
-	    var __newback = __background_set_element(__bind, false, 0, -1, 0, 0, 1, 1, 1, 1, 0, 0, 0, c_white, 1)
+	    var __newback = __background_set_element(__bind, false, false, -1, 0, 0, true, true, 1, 1, false, 0, 0, c_white, 1)
 	    __result[0] = __newback[0]
 	    __result[1] = __newback[1]
-	    __result[2] = 0
+	    __result[2] = false
 	}
 	return __result;
 }

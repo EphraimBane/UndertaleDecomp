@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"GLOBALINIT",
   "parent":{
-    "name":"Common",
-    "path":"folders/Scripts/Common.yy",
+    "name":"Global",
+    "path":"folders/Scripts/Deprecated Wrapper/Global.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -78,7 +78,7 @@ if (global.interact == 5)
             draw_text((42 + xx), (120 + yy), string_hash_to_newline(scr_gettext("field_menu_cell")))
         if (global.menuno == 1 || global.menuno == 5)
         {
-            for (i = 0; i < 8; i += 1)
+            for (i = 0; i < InventorySize; i += 1)
                 draw_text((116 + xx), ((30 + yy) + (i * 16)), string_hash_to_newline(global.itemname[i]))
             draw_text((116 + xx), (170 + yy), string_hash_to_newline(scr_gettext("item_menu_use")))
             draw_text(((116 + xx) + 48), (170 + yy), string_hash_to_newline(scr_gettext("item_menu_info")))
@@ -93,7 +93,7 @@ if (global.interact == 5)
     if (global.menuno == 6)
     {
         scr_itemname()
-        for (i = 0; i < 8; i += 1)
+        for (i = 0; i < InventorySize; i += 1)
             draw_text((116 + xx), ((30 + yy) + (i * 16)), string_hash_to_newline(global.itemname[i]))
     }
     if (global.menuno == 7)

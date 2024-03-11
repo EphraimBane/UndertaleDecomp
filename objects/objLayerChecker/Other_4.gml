@@ -1,3 +1,4 @@
+return; // Vultu: I don't think we need this.
 show_debug_message("Performing room layer check")
 var a = layer_get_all()
 for (var i = 0; i < (array_length(a) - 1); i++)
