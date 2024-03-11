@@ -303,8 +303,8 @@ if (d_con == 6 && instance_exists(OBJ_WRITER) == false)
 }
 if (p_con == 2)
 {
-    global.monstertype[1] = 81
-    global.monstertype[2] = 81
+    global.monstertype[1] = MonsterType.Doodlebog
+    global.monstertype[2] = MonsterType.Doodlebog
     global.monsterinstance[1] = instance_create(26, 88, obj_doodlebug)
     global.monsterinstance[2] = instance_create(526, 88, obj_doodlebug)
     with (global.monsterinstance[2])
