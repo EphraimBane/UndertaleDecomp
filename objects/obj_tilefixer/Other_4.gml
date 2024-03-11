@@ -11,8 +11,8 @@ if (!global.decomp_vars.VanillaMode)
 		break;
 		
 		case room_ruins5:
-			instance_create_layer(800, 120, "Compatibility_Instances_Depth_999999", obj_fakewaterl);
-			instance_create_layer(1140, 140, "Compatibility_Instances_Depth_999999", obj_fakewatershadowr);
+			instance_create_layer(800, 120, "Instances_Depth_999999", obj_fakewaterl);
+			instance_create_layer(1140, 140, "Instances_Depth_999999", obj_fakewatershadowr);
 		break;
 		
 		case room_ruins6:
