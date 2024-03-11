@@ -24,3 +24,4 @@ global.decomp_vars = {
 exception_unhandled_handler(crash_method);
 
 global.monitorPlotVariable = false;
+global.monitorFlags = []; // List of flags to monitor

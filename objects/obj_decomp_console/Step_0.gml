@@ -15,6 +15,13 @@ if (keyboard_check_pressed(vk_tab))
 		activate();
 }
 
+// Reapply trigger / solid show command if a room switch occurred
+if (previous_room != room)
+{
+	apply_trigger_show();
+	apply_solid_show();
+}
+previous_room = room;
 
 if (!active)
 	return;

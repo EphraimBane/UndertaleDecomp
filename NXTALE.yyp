@@ -6321,6 +6321,8 @@
     {"id":{"name":"sprite1135","path":"sprites/sprite1135/sprite1135.yy",},},
     {"id":{"name":"sprite65","path":"sprites/sprite65/sprite65.yy",},},
     {"id":{"name":"ts_ruinseasynam3","path":"tilesets/ts_ruinseasynam3/ts_ruinseasynam3.yy",},},
+    {"id":{"name":"cmd_trigger_show","path":"scripts/cmd_trigger_show/cmd_trigger_show.yy",},},
+    {"id":{"name":"cmd_monitor_flag","path":"scripts/cmd_monitor_flag/cmd_monitor_flag.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
