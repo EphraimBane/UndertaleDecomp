@@ -12,11 +12,9 @@ function apply_solid_show()
 	if (instance_exists(obj_solidparent))
 	{
 		obj_solidparent.visible = obj_decomp_console.show_collision;
-		obj_solidparent.image_alpha = 0.6;
 	}
 	if (instance_exists(obj_diagoparent))
 	{
 		obj_diagoparent.visible = obj_decomp_console.show_collision;
-		obj_diagoparent.image_alpha = 0.6;
 	}
 }

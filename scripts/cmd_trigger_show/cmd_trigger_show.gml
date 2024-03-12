@@ -30,7 +30,7 @@ global.decomp_triggers_to_show = [
 	obj_floweytrigger,
 	obj_floweytrigger2,
 	obj_forcedright,
-	obj_friendc_event,
+	// obj_friendc_event, // this one also breaks for some reason
 	obj_golfedge,
 	obj_holedown2,
 	obj_iceevent,
@@ -41,7 +41,7 @@ global.decomp_triggers_to_show = [
 	obj_killerboysnightout_event,
 	obj_killerlab_event,
 	obj_kitchenforcefield,
-	obj_labelevator_b,
+	// obj_labelevator_b, // this one breaks for some reason
 	obj_lastsans_trigger,
 	obj_lazyencounterer,
 	obj_lazyencounterer_core,
@@ -156,7 +156,6 @@ function apply_trigger_show()
 		if (instance_exists(global.decomp_triggers_to_show[i]))
 		{
 			global.decomp_triggers_to_show[i].visible = obj_decomp_console.show_triggers;
-			global.decomp_triggers_to_show[i].image_alpha = 0.6;
 		}
 	}
 }
