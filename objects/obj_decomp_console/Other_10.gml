@@ -21,6 +21,7 @@ command_register("game_restart", "Restarts the game");
 
 command_register("clear", "Clears the output");
 command_register("monitor_plot", "Toggles the plot monitor");
+command_register("monitor_flag", "Toggles monitoring for the given flag", [ "flagID" ]);
 command_register("cam_unlock", "Creates an unlocked camera");
 command_register("kill", "This will kill you");
 command_register("global_set", "Sets a global variable", [ "name", "value" ]);
@@ -30,6 +31,7 @@ command_register("game_speed", "Sets the game speed", [ "speed" ]);
 command_register("save", "Opens save menu"); // Vultu: Yay this is danielas first command !!
 command_register("battle_start", "Starts a Battle depending on the set battlegroup value", [ "value" ]);
 command_register("solid_show", "Toggles the solid overlay", [ ]);
+command_register("trigger_show", "Toggles the trigger overlay", [ ]);
 command_register("pos_show", "Toggles the position overlay", [ ]);
 command_register("pos_set", "Sets the position of the player", [ "x", "y" ]);
 

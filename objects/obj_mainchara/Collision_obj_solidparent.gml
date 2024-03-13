@@ -1,3 +1,6 @@
+// Original game checks for obj_solidnpcparent only
+// Decompile checks for all colliders because event
+// order might have changed, and this breaks the logic
 #macro colliders_to_check [obj_solidparent, obj_solidnpcparent, obj_sdl, obj_sdr, obj_sul, obj_sur]
 
 if (global.phasing == 0 && other.phase == 0)
