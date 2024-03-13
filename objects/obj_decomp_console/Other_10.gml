@@ -17,6 +17,7 @@ command_register("stfu", "Stops all Audio");
 command_register("create_fake_trophy", "Creates a fake trophy (for debug)", [ "icon_index", "text" ]);
 command_register("gold_set", "Sets your gold", [ "value" ]);
 command_register("game_crash", "Crashes the game");
+command_register("game_restart", "Restarts the game");
 
 command_register("clear", "Clears the output");
 command_register("monitor_plot", "Toggles the plot monitor");
