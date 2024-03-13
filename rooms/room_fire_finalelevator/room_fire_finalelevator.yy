@@ -82,8 +82,8 @@
   ],
   "name":"room_fire_finalelevator",
   "parent":{
-    "name":"Hotland",
-    "path":"folders/Rooms/Hotland.yy",
+    "name":"Core",
+    "path":"folders/Rooms/Hotland/Core.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
