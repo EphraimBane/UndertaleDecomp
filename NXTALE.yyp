@@ -449,6 +449,7 @@
     {"$GMFolder":"","%Name":"Unused","folderPath":"folders/Sprites/Overworld/Waterfall/Unused.yy","name":"Unused","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Sprites/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Overworld","folderPath":"folders/Sprites/Player/Overworld.yy","name":"Overworld","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Unused","folderPath":"folders/Sprites/Player/Overworld/Unused.yy","name":"Unused","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Shops","folderPath":"folders/Sprites/Shops.yy","name":"Shops","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Bratty and Catty","folderPath":"folders/Sprites/Shops/Bratty and Catty.yy","name":"Bratty and Catty","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Burgerpants","folderPath":"folders/Sprites/Shops/Burgerpants.yy","name":"Burgerpants","resourceType":"GMFolder","resourceVersion":"2.0",},
