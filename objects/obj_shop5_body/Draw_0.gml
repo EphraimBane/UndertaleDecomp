@@ -116,7 +116,7 @@ if (sellmenu == 1)
     value[8] = 0
     value[9] = 0
     value[10] = 0
-    for (i = 0; i < 8; i += 1)
+    for (i = 0; i < InventorySize; i += 1)
     {
         s_value[i] = ("    " + string(value[i]))
         if (value[i] >= 10 && value[i] < 100)

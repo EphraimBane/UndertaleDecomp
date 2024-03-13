@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__background_set",
   "parent":{
-    "name":"Background",
-    "path":"folders/Scripts/Deprecated Functions/Background.yy",
+    "name":"Internal",
+    "path":"folders/Scripts/Deprecated Wrapper/Background/Internal.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

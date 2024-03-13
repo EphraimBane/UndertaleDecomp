@@ -33,7 +33,7 @@ if (con == 5 && instance_exists(OBJ_WRITER) == false)
     gx = ossafe_file_text_open_write("system_information_963")
     ossafe_file_text_write_string(gx, "b")
     ossafe_file_text_close(gx)
-    if (global.steam_int == 1)
+    if (global.steam_int == true)
     {
         if steam_file_exists("system_information_962")
             steam_file_delete("system_information_962")

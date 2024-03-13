@@ -350,7 +350,7 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        grt.sound2 = snd_dogresidue
 	        scr_writetext(0, "x", 0, 0)
 	        scr_itemshift(argument0, 0)
-	        for (i = 0; i < 8; i += 1)
+	        for (i = 0; i < InventorySize; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
 	            if (global.item[i] == Items.Null)
@@ -369,7 +369,7 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        grt.sound2 = snd_dogresidue
 	        scr_writetext(0, "x", 0, 0)
 	        scr_itemshift(argument0, 0)
-	        for (i = 0; i < 8; i += 1)
+	        for (i = 0; i < InventorySize; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
 	            if (global.item[i] == Items.Null)
@@ -388,7 +388,7 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        grt.sound2 = snd_dogresidue
 	        scr_writetext(0, "x", 0, 0)
 	        scr_itemshift(argument0, 0)
-	        for (i = 0; i < 8; i += 1)
+	        for (i = 0; i < InventorySize; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
 	            if (global.item[i] == Items.Null)
@@ -407,7 +407,7 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        grt.sound2 = snd_dogresidue
 	        scr_writetext(0, "x", 0, 0)
 	        scr_itemshift(argument0, 0)
-	        for (i = 0; i < 8; i += 1)
+	        for (i = 0; i < InventorySize; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
 	            if (global.item[i] == Items.Null)
@@ -426,7 +426,7 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        grt.sound2 = snd_dogresidue
 	        scr_writetext(0, "x", 0, 0)
 	        scr_itemshift(argument0, 0)
-	        for (i = 0; i < 8; i += 1)
+	        for (i = 0; i < InventorySize; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
 	            if (global.item[i] == Items.Null)
@@ -445,7 +445,7 @@ function scr_itemuseb(_itemIndex, _itemToUse)
 	        grt.sound2 = snd_dogresidue
 	        scr_writetext(0, "x", 0, 0)
 	        scr_itemshift(argument0, 0)
-	        for (i = 0; i < 8; i += 1)
+	        for (i = 0; i < InventorySize; i += 1)
 	        {
 	            rr = (floor(random(7)) + 28)
 	            if (global.item[i] == Items.Null)

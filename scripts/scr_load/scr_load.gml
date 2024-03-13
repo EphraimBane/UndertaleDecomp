@@ -30,7 +30,7 @@ function scr_load()
 	ossafe_file_text_readln(myfileid)
 	global.kills = ossafe_file_text_read_real(myfileid)
 	ossafe_file_text_readln(myfileid)
-	for (i = 0; i < 8; i += 1)
+	for (i = 0; i < InventorySize; i += 1)
 	{
 	    global.item[i] = ossafe_file_text_read_real(myfileid)
 	    ossafe_file_text_readln(myfileid)

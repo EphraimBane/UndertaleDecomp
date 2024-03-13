@@ -32,7 +32,7 @@ if (active == true)
         mon = froggit
         scr_drawtext_centered_scaled(col1_x, (mon.y - 70), scr_gettext("castroll_name_froggit"), namescale, namescale)
         scr_drawtext_centered_scaled(col1_x, (mon.y - 30), scr_gettext("castroll_by_toby"), 1, 1)
-        if (FL_SparedFroggit == 0)
+        if (FL_SparedFroggit == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col1_x, ((mon.y + 110) + info_yofs), scr_gettext("castroll_white_froggit"), infoscale, infoscale)
@@ -45,7 +45,7 @@ if (active == true)
         draw_set_color(c_white)
         scr_drawtext_centered_scaled(col2_x, 530, scr_gettext("castroll_name_whimsun"), namescale, namescale)
         scr_drawtext_centered_scaled(col2_x, 570, scr_gettext("castroll_by_toby"), 1, 1)
-        if (FL_SparedWhimsun == 0)
+        if (FL_SparedWhimsun == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col2_x, (710 + info_yofs), scr_gettext("castroll_white_whimsun"), infoscale, infoscale)
@@ -59,7 +59,7 @@ if (active == true)
         mon = moldsmal
         scr_drawtext_centered_scaled(col1_x, (mon.y - 70), scr_gettext("castroll_name_moldsmal"), namescale, namescale)
         scr_drawtext_centered_scaled(col1_x, (mon.y - 30), scr_gettext("castroll_by_toby"), 1, 1)
-        if (FL_SparedMoldsmal == 0)
+        if (FL_SparedMoldsmal == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col1_x, ((mon.y + 110) + info_yofs), scr_gettext("castroll_white_moldsmal"), infoscale, infoscale)
@@ -73,7 +73,7 @@ if (active == true)
         mon = loox
         scr_drawtext_centered_scaled(col2_x, (mon.y - 70), scr_gettext("castroll_name_loox"), namescale, namescale)
         scr_drawtext_centered_scaled(col2_x, (mon.y - 30), scr_gettext("castroll_by_temmie"), 1, 1)
-        if (FL_SparedLoox == 0)
+        if (FL_SparedLoox == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col2_x, ((mon.y + 110) + info_yofs), scr_gettext("castroll_white_loox"), infoscale, infoscale)
@@ -87,7 +87,7 @@ if (active == true)
         mon = vegetoid
         scr_drawtext_centered_scaled(col1_x, (mon.y - 70), scr_gettext("castroll_name_vegetoid"), namescale, namescale)
         scr_drawtext_centered_scaled(col1_x, (mon.y - 30), scr_gettext("castroll_by_toby_and_temmie"), 1, 1)
-        if (FL_SparedVegetoid == 0)
+        if (FL_SparedVegetoid == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col1_x, ((mon.y + 110) + info_yofs), scr_gettext("castroll_white_vegetoid"), infoscale, infoscale)
@@ -101,7 +101,7 @@ if (active == true)
         mon = migosp
         scr_drawtext_centered_scaled(col2_x, (mon.y - 70), scr_gettext("castroll_name_migosp"), namescale, namescale)
         scr_drawtext_centered_scaled(col2_x, (mon.y - 30), scr_gettext("castroll_by_toby"), 1, 1)
-        if (FL_SparedMigosp == 0)
+        if (FL_SparedMigosp == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col2_x, ((mon.y + 110) + info_yofs), scr_gettext("castroll_white_migosp"), infoscale, infoscale)
@@ -148,7 +148,7 @@ if (active == true)
         mon = snowdrake
         scr_drawtext_centered_scaled(col1_x, (mon.y - 70), scr_gettext("castroll_name_snowdrake"), namescale, namescale)
         scr_drawtext_centered_scaled(col1_x, (mon.y - 30), scr_gettext("castroll_by_magnolia_porter"), 1, 1)
-        if (FL_SparedSnowdrake == 0)
+        if (FL_SparedSnowdrake == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col1_x, ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_snowdrake"), infoscale, infoscale)
@@ -162,7 +162,7 @@ if (active == true)
         mon = icecap
         scr_drawtext_centered_scaled(col2_x, (mon.y - 70), scr_gettext("castroll_name_icecap"), namescale, namescale)
         scr_drawtext_centered_scaled(col2_x, (mon.y - 30), scr_gettext("castroll_by_magnolia_porter"), 1, 1)
-        if (FL_SparedIcecap == 0)
+        if (FL_SparedIcecap == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col2_x, ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_icecap"), infoscale, infoscale)
@@ -176,7 +176,7 @@ if (active == true)
         mon = gyftrot
         scr_drawtext_centered_scaled(col1_x, (mon.y - 70), scr_gettext("castroll_name_gyftrot"), namescale, namescale)
         scr_drawtext_centered_scaled(col1_x, (mon.y - 30), scr_gettext("castroll_by_magnolia_porter_and_toby"), 1, 1)
-        if (FL_SparedGyftrot == 0)
+        if (FL_SparedGyftrot == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col1_x, ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_gyftrot"), infoscale, infoscale)
@@ -190,7 +190,7 @@ if (active == true)
         mon = doggo
         scr_drawtext_centered_scaled(col2_x, (mon.y - 70), scr_gettext("castroll_name_doggo"), namescale, namescale)
         scr_drawtext_centered_scaled(col2_x, (mon.y - 30), scr_gettext("castroll_by_toby"), 1, 1)
-        if (FL_SparedDoggo == 0)
+        if (FL_SparedDoggo == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col2_x, ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_doggo"), infoscale, infoscale)
@@ -204,7 +204,7 @@ if (active == true)
         mon = dogamy
         scr_drawtext_centered_scaled(320, (mon.y - 70), scr_gettext("castroll_name_dogamy"), namescale, namescale)
         scr_drawtext_centered_scaled(320, (mon.y - 30), scr_gettext("castroll_by_toby_2"), 1, 1)
-        if (FL_SparedDogCouple == 0)
+        if (FL_SparedDogCouple == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(320, ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_dogamy"), infoscale, infoscale)
@@ -218,7 +218,7 @@ if (active == true)
         mon = lesserdog
         scr_drawtext_centered_scaled((col1_x - 20), (mon.y - 70), scr_gettext("castroll_name_lesserdog"), namescale, namescale)
         scr_drawtext_centered_scaled((col1_x - 20), (mon.y - 30), scr_gettext("castroll_by_temmie_and_toby"), 1, 1)
-        if (FL_SparedLesserDog == 0)
+        if (FL_SparedLesserDog == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled((col1_x - 20), ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_lesserdog"), infoscale, infoscale)
@@ -232,7 +232,7 @@ if (active == true)
         mon = greaterdog
         scr_drawtext_centered_scaled((col2_x + 20), (mon.y - 70), scr_gettext("castroll_name_greaterdog"), namescale, namescale)
         scr_drawtext_centered_scaled((col2_x + 20), (mon.y - 30), scr_gettext("castroll_by_toby_and_temmie"), 1, 1)
-        if (FL_SparedGreaterDog == 0)
+        if (FL_SparedGreaterDog == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled((col2_x + 20), ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_greaterdog"), infoscale, infoscale)
@@ -267,7 +267,7 @@ if (active == true)
         mon = aaron
         scr_drawtext_centered_scaled(col1_x, (mon.y - 70), scr_gettext("castroll_name_aaron"), namescale, namescale)
         scr_drawtext_centered_scaled(col1_x, (mon.y - 30), scr_gettext("castroll_by_temmie_2"), 1, 1)
-        if (FL_AaronWoshuaEvent == 0)
+        if (FL_AaronWoshuaEvent == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col1_x, ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_aaron"), infoscale, infoscale)
@@ -281,7 +281,7 @@ if (active == true)
         mon = moldbygg
         scr_drawtext_centered_scaled(col2_x, (mon.y - 70), scr_gettext("castroll_name_moldbygg"), namescale, namescale)
         scr_drawtext_centered_scaled(col2_x, (mon.y - 30), scr_gettext("castroll_by_toby"), 1, 1)
-        if (FL_SparedMoldsmalx == 0)
+        if (FL_SparedMoldsmalx == false)
         {
             draw_set_color(c_white)
             var moldbygg_w_infoscale_x = 1.5
@@ -357,7 +357,7 @@ if (active == true)
         mon = shyren
         scr_drawtext_centered_scaled(col2_x, (mon.y - 70), scr_gettext("castroll_name_shyren"), namescale, namescale)
         scr_drawtext_centered_scaled(col2_x, (mon.y - 30), scr_gettext("castroll_by_toby"), 1, 1)
-        if (FL_ShyrenStatus != 2)
+        if (FL_ShyrenStatus != ShyrenStatus.Encouraged)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col2_x, ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_shyren"), infoscale, infoscale)
@@ -391,7 +391,7 @@ if (active == true)
         mon = vulkin
         scr_drawtext_centered_scaled(col1_x, ((mon.y - 70) - 100), scr_gettext("castroll_name_vulkin"), namescale, namescale)
         scr_drawtext_centered_scaled(col1_x, ((mon.y - 30) - 100), scr_gettext("castroll_by_magnolia_porter"), 1, 1)
-        if (FL_SparedVulkin == 0)
+        if (FL_SparedVulkin == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col1_x, (((mon.y + 210) - 100) + info_yofs), scr_gettext("castroll_white_vulkin"), infoscale, infoscale)
@@ -405,7 +405,7 @@ if (active == true)
         mon = tsunderplane
         scr_drawtext_centered_scaled(col2_x, (mon.y - 70), scr_gettext("castroll_name_tsunderplane"), namescale, namescale)
         scr_drawtext_centered_scaled(col2_x, (mon.y - 30), scr_gettext("castroll_by_toby"), 1, 1)
-        if (FL_SparedTsunderplane == 0)
+        if (FL_SparedTsunderplane == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col2_x, ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_tsunderplane"), infoscale, infoscale)
@@ -420,7 +420,7 @@ if (active == true)
         mon = pyrope
         scr_drawtext_centered_scaled(col1_x, (mon.y - 70), scr_gettext("castroll_name_pyrope"), namescale, namescale)
         scr_drawtext_centered_scaled(col1_x, (mon.y - 30), scr_gettext("castroll_by_toby"), 1, 1)
-        if (FL_SparedPyrope == 0)
+        if (FL_SparedPyrope == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col1_x, ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_pyrope"), infoscale, infoscale)
@@ -451,7 +451,7 @@ if (active == true)
             ff_namescale_x = 2
         scr_drawtext_centered_scaled(col1_x, (mon.y - 90), scr_gettext("castroll_name_finalfroggit"), ff_namescale_x, namescale)
         scr_drawtext_centered_scaled(col1_x, (mon.y - 50), scr_gettext("castroll_by_toby"), 1, 1)
-        if (FL_SparedFinalFroggit == 0)
+        if (FL_SparedFinalFroggit == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col1_x, ((mon.y + 110) + info_yofs), scr_gettext("castroll_white_finalfroggit"), infoscale, infoscale)
@@ -465,7 +465,7 @@ if (active == true)
         mon = whimsalot
         scr_drawtext_centered_scaled(col2_x, (mon.y - 90), scr_gettext("castroll_name_whimsalot"), namescale, namescale)
         scr_drawtext_centered_scaled(col2_x, (mon.y - 50), scr_gettext("castroll_by_toby"), 1, 1)
-        if (FL_SparedWhisalot == 0)
+        if (FL_SparedWhisalot == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col2_x, ((mon.y + 110) + info_yofs), scr_gettext("castroll_white_whimsalot"), infoscale, infoscale)
@@ -479,7 +479,7 @@ if (active == true)
         mon = astigmatism
         scr_drawtext_centered_scaled(320, (mon.y - 70), scr_gettext("castroll_name_astigmatism"), namescale, namescale)
         scr_drawtext_centered_scaled(320, (mon.y - 30), scr_gettext("castroll_by_toby"), 1, 1)
-        if (FL_SparedAstigmatism == 0)
+        if (FL_SparedAstigmatism == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(320, ((mon.y + 110) + info_yofs), scr_gettext("castroll_white_astigmatism"), infoscale, infoscale)
@@ -493,7 +493,7 @@ if (active == true)
         mon = madjick
         scr_drawtext_centered_scaled(col1_x, (mon.y - 70), scr_gettext("castroll_name_madjick"), namescale, namescale)
         scr_drawtext_centered_scaled(col1_x, (mon.y - 30), scr_gettext("castroll_by_toby"), 1, 1)
-        if (FL_SparedMadjick == 0)
+        if (FL_SparedMadjick == flse)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(col1_x, ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_madjick"), infoscale, infoscale)
@@ -507,7 +507,7 @@ if (active == true)
         mon = knightknight
         scr_drawtext_centered_scaled(460, (mon.y - 70), scr_gettext("castroll_name_knightknight"), namescale, namescale)
         scr_drawtext_centered_scaled(460, (mon.y - 30), scr_gettext("castroll_by_toby"), 1, 1)
-        if (FL_SparedFinalKnight == 0)
+        if (FL_SparedFinalKnight == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(460, ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_knightknight"), infoscale, infoscale)
@@ -521,7 +521,7 @@ if (active == true)
         mon = amalgamate1
         scr_drawtext_centered_scaled(320, (mon.y - 70), scr_gettext("castroll_name_amalgamates"), namescale, namescale)
         scr_drawtext_centered_scaled(320, (mon.y - 30), scr_gettext("castroll_extra_amalgamates"), 1, 1)
-        if (FL_SparedEndogenny == 0)
+        if (FL_SparedEndogenny == false)
         {
             draw_set_color(c_white)
             scr_drawtext_centered_scaled(320, ((mon.y + 210) + info_yofs), scr_gettext("castroll_white_amalgamates"), infoscale, infoscale)

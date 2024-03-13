@@ -1,8 +1,13 @@
-function __background_get_internal()
+/// @func	__background_get_internal(property, background_index, background_info)
+/// @param	{Constant.BG_Prop}	property
+/// @param	{real}				background_index
+/// @param	{array}				background_info
+/// @returns	{any}
+function __background_get_internal(_property, _background_index, _background_info)
 {
-	var __prop = argument0
-	var __bind = argument1
-	var __backinfo = argument2
+	var __prop = _property
+	var __bind = _background_index
+	var __backinfo = _background_info
 	if (__backinfo[0] == -1 || layer_background_exists(__backinfo[1], __backinfo[0]) == false)
 	{
 	    __backinfo = __background_get_element(__bind)
