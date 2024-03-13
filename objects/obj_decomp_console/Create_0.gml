@@ -25,6 +25,8 @@ mouse_click_y = 0;
 
 show_collision = false;
 show_position = false;
+show_triggers = false;
+previous_room = noone;
 
 random_encounters = true;
 

@@ -15,7 +15,7 @@ if (room == room_water_waterfall3)
 	
 // DECOMP CODE
 
-if (instance_exists(obj_decomp_console) && obj_decomp_console.show_collision)
+if (instance_exists(obj_decomp_console) && (obj_decomp_console.show_collision || obj_decomp_console.show_triggers))
 {
 	draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_red, c_red, c_red, c_red, false);
 }

@@ -23,6 +23,28 @@ if (global.monitorPlotVariable)
 }
 #endregion
 
+#region Plot Flags
+
+for (var i = 0; i < array_length(global.monitorFlags); i++)
+{
+	var plot_example = "Flag 123: 1";
+	var flag = global.monitorFlags[i];
+	var value = global.flag[flag];
+	
+	var plot_width = string_width(plot_example);
+	var plot_height = string_height(plot_example);
+	
+	var plot_x = (view_get_xport(0) + view_get_wport(0)) - plot_width;
+	var plot_y = (view_get_yport(0) + view_get_hport(0)) - (i + 2) * plot_height;
+	
+	draw_set_color(c_black);
+	ossafe_fill_rectangle(plot_x, plot_y, plot_x + plot_width, plot_y + plot_height);
+	draw_set_color(c_white);
+	draw_text(plot_x, plot_y, $"Flag {flag}:{value}");
+}
+
+#endregion
+
 #region Position
 
 if (show_position && instance_exists(obj_mainchara))

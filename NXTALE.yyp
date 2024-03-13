@@ -6392,6 +6392,8 @@
     {"id":{"name":"ts_watertiles_2","path":"tilesets/ts_watertiles_2/ts_watertiles_2.yy",},},
     {"id":{"name":"ts_watertiles_supplement","path":"tilesets/ts_watertiles_supplement/ts_watertiles_supplement.yy",},},
     {"id":{"name":"ts_watertiles","path":"tilesets/ts_watertiles/ts_watertiles.yy",},},
+    {"id":{"name":"cmd_trigger_show","path":"scripts/cmd_trigger_show/cmd_trigger_show.yy",},},
+    {"id":{"name":"cmd_monitor_flag","path":"scripts/cmd_monitor_flag/cmd_monitor_flag.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

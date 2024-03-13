@@ -15,6 +15,17 @@ if (keyboard_check_pressed(vk_tab))
 		activate();
 }
 
+// Reapply trigger show command if a room switch occurred
+// Otherwise some triggers stop showing
+if (previous_room != room)
+{
+	// Only touch the triggers if we actually want to show them
+	// Some triggers don't seem to work too well if you make them visible / invisible forcefully
+	// That way we don't break regular gameplay
+	if (instance_exists(obj_decomp_console) && obj_decomp_console.show_triggers)
+		apply_trigger_show();
+}
+previous_room = room;
 
 if (!active)
 	return;
