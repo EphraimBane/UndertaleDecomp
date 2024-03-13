@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2a3a35b1-3f3a-4d82-9f8c-c946004477c9","name":"2a3a35b1-3f3a-4d82-9f8c-c946004477c9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"944cfefd-aa89-4678-bd46-2acbc06abfbf","name":"944cfefd-aa89-4678-bd46-2acbc06abfbf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":544,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"ccaee1da-7b1f-4542-a79c-39e12d6986a2","blendMode":0,"displayName":"default","isLocked":false,"name":"ccaee1da-7b1f-4542-a79c-39e12d6986a2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"922891e4-65e3-4533-bf83-bc35c998b3c3","blendMode":0,"displayName":"default","isLocked":false,"name":"922891e4-65e3-4533-bf83-bc35c998b3c3","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"bg_border_tundra_544",
   "nineSlice":null,
@@ -59,7 +59,7 @@
     },
     "name":"bg_border_tundra_544",
     "playback":1,
-    "playbackSpeed":15.0,
+    "playbackSpeed":30.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2a3a35b1-3f3a-4d82-9f8c-c946004477c9","path":"sprites/bg_border_tundra_544/bg_border_tundra_544.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a6e1fb52-3c3f-4bb9-a264-7944156e2550","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"944cfefd-aa89-4678-bd46-2acbc06abfbf","path":"sprites/bg_border_tundra_544/bg_border_tundra_544.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1f73a425-62c5-4aba-a442-a39801d08384","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -79,7 +79,7 @@
     "yorigin":0,
   },
   "swatchColours":null,
-  "swfPrecision":2.525,
+  "swfPrecision":0.5,
   "textureGroupId":{
     "name":"Default",
     "path":"texturegroups/Default",
