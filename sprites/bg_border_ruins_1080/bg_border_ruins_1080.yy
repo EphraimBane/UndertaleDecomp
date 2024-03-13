@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Borders",
-    "path":"folders/Sprites/Borders.yy",
+    "name":"PS4 and Switch",
+    "path":"folders/Sprites/Borders/PS4 and Switch.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

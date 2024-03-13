@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Borders",
-    "path":"folders/Sprites/Borders.yy",
+    "name":"PS Vita",
+    "path":"folders/Sprites/Borders/PS Vita.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -362,6 +362,8 @@
     {"$GMFolder":"","%Name":"Speech","folderPath":"folders/Sprites/Battle/UI/Speech.yy","name":"Speech","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Text","folderPath":"folders/Sprites/Battle/UI/Text.yy","name":"Text","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Borders","folderPath":"folders/Sprites/Borders.yy","name":"Borders","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"PS Vita","folderPath":"folders/Sprites/Borders/PS Vita.yy","name":"PS Vita","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"PS4 and Switch","folderPath":"folders/Sprites/Borders/PS4 and Switch.yy","name":"PS4 and Switch","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Controller Buttons","folderPath":"folders/Sprites/Controller Buttons.yy","name":"Controller Buttons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"PS4","folderPath":"folders/Sprites/Controller Buttons/PS4.yy","name":"PS4","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Switch","folderPath":"folders/Sprites/Controller Buttons/Switch.yy","name":"Switch","resourceType":"GMFolder","resourceVersion":"2.0",},
