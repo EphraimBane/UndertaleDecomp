@@ -1,5 +1,5 @@
 if (!in_silence)
 {
-    __background_set(3, 3, (-10 + random(10)))
-    __background_set(4, 3, (-10 + random(10)))
+    background_x_set(3, (-10 + random(10)))
+    background_y_set(3, (-10 + random(10)))
 }

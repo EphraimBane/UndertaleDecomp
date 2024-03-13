@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"bg_spiderroom",
   "bboxMode":0,
-  "bbox_bottom":79,
+  "bbox_bottom":99,
   "bbox_left":0,
   "bbox_right":59,
   "bbox_top":0,
@@ -14,9 +14,9 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"bfd80f0b-05ee-4783-8c7a-5b2e34ff6c12","name":"bfd80f0b-05ee-4783-8c7a-5b2e34ff6c12","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
-  "height":80,
+  "gridX":20,
+  "gridY":20,
+  "height":100,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"2f9f04b9-f277-4238-81c5-eb111e0d633b","blendMode":0,"displayName":"default","isLocked":false,"name":"2f9f04b9-f277-4238-81c5-eb111e0d633b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"unsorted",
-    "path":"folders/Sprites/unsorted.yy",
+    "name":"Hotland",
+    "path":"folders/Sprites/Tilesets/Hotland.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

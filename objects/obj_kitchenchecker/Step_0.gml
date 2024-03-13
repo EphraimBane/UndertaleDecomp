@@ -7,14 +7,14 @@ if (level == 0 && bgalpha > c_black)
     bgalpha -= 0.2
     if (bgalpha < 0.11)
         bgalpha = c_black
-    __background_set(14, 2, bgalpha)
+    background_alpha_set(2, bgalpha)
 }
 if (level > 0 && bgalpha < 0x000001)
 {
     bgalpha += 0.2
     if (bgalpha > 0.9)
         bgalpha = 1
-    __background_set(14, 2, bgalpha)
+    background_alpha_set(2, bgalpha)
 }
 if (initcheck == 0)
 {

@@ -2,7 +2,7 @@
 
 function scr_itemvalue()
 {
-	for (i = 0; i < 8; i += 1)
+	for (i = 0; i < InventorySize; i += 1)
 	{
 	    itemid = global.item[i]
 	    value[i] = 0

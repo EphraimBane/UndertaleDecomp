@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"bg_brownground",
   "bboxMode":0,
-  "bbox_bottom":59,
+  "bbox_bottom":61,
   "bbox_left":0,
   "bbox_right":59,
   "bbox_top":0,
@@ -14,9 +14,9 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"58a901a2-9069-4419-9fb8-766a7b8bda80","name":"58a901a2-9069-4419-9fb8-766a7b8bda80","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
-  "height":60,
+  "gridX":20,
+  "gridY":20,
+  "height":80,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"8ccefdfd-f4a4-4f7b-8a90-4ead6a61a892","blendMode":0,"displayName":"default","isLocked":false,"name":"8ccefdfd-f4a4-4f7b-8a90-4ead6a61a892","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"unsorted",
-    "path":"folders/Sprites/unsorted.yy",
+    "name":"Hotland",
+    "path":"folders/Sprites/Tilesets/Hotland.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

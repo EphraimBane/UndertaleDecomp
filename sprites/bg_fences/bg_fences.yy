@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":118,
   "bbox_left":2,
-  "bbox_right":97,
+  "bbox_right":117,
   "bbox_top":3,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -14,8 +14,8 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"e41bdae4-59c5-4f86-a8ba-b4a5508a49eb","name":"e41bdae4-59c5-4f86-a8ba-b4a5508a49eb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
+  "gridX":20,
+  "gridY":20,
   "height":120,
   "HTile":false,
   "layers":[
@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"unsorted",
-    "path":"folders/Sprites/unsorted.yy",
+    "name":"Waterfall",
+    "path":"folders/Sprites/Tilesets/Waterfall.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":100,
+  "width":120,
 }

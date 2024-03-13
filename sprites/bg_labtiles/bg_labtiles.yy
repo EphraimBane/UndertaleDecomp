@@ -14,8 +14,8 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"ca19c2f5-1274-49d9-9644-77ec9c2c18e1","name":"ca19c2f5-1274-49d9-9644-77ec9c2c18e1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
+  "gridX":20,
+  "gridY":20,
   "height":240,
   "HTile":false,
   "layers":[
@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"unsorted",
-    "path":"folders/Sprites/unsorted.yy",
+    "name":"Hotland",
+    "path":"folders/Sprites/Tilesets/Hotland.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

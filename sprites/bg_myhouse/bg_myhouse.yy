@@ -14,8 +14,8 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"b00cdf02-c19c-4351-95df-eadb5bf00e2c","name":"b00cdf02-c19c-4351-95df-eadb5bf00e2c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
+  "gridX":20,
+  "gridY":20,
   "height":80,
   "HTile":false,
   "layers":[
@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Ending Stuff",
-    "path":"folders/Sprites/Overworld/Ending Stuff.yy",
+    "name":"Ending",
+    "path":"folders/Sprites/Tilesets/Ending.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

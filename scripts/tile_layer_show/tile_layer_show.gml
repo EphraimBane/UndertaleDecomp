@@ -10,7 +10,9 @@ function tile_layer_show()
 	    }
 	    else
 	    {
-	        var __els = layer_get_all_elements(__layers[__i])
+			layer_set_visible(__layers[__i], true);
+			return;
+			var __els = layer_get_all_elements(__layers[__i])
 	        var __numels = array_length(__els)
 	        for (var __j = 0; __j < __numels; __j++)
 	        {

@@ -510,7 +510,7 @@ if (menu == 5)
         heart_space = 13
         max_width = 84
     }
-    for (i = 0; i < 8; i += 1)
+    for (i = 0; i < InventorySize; i += 1)
     {
         s_value[i] = scr_gettext("shop5_sell_price", string(value[i]))
         if (value[i] == -1)

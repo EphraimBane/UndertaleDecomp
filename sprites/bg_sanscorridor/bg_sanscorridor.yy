@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"bg_sanscorridor",
   "bboxMode":0,
-  "bbox_bottom":399,
+  "bbox_bottom":419,
   "bbox_left":0,
   "bbox_right":59,
   "bbox_top":0,
@@ -14,9 +14,9 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"814fad0e-1965-4b77-ab61-658db50778ac","name":"814fad0e-1965-4b77-ab61-658db50778ac","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
-  "height":400,
+  "gridX":20,
+  "gridY":20,
+  "height":420,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"bd215f33-c113-4d44-8c59-17922b1d90d4","blendMode":0,"displayName":"default","isLocked":false,"name":"bd215f33-c113-4d44-8c59-17922b1d90d4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"unsorted",
-    "path":"folders/Sprites/unsorted.yy",
+    "name":"Castle",
+    "path":"folders/Sprites/Tilesets/Castle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

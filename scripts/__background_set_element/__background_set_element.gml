@@ -1,33 +1,50 @@
-function __background_set_element()
+/// @func	 __background_set_element(background_index, visible, foreground, sprite, x, y, htiled, vtiled, xscale, yscale, stretch, hspeed, vspeed, blend, alpha)
+/// @param	{real}				background_index
+/// @param	{bool}				visible
+/// @param	{bool}				foreground
+/// @param	{Asset.GMSprite}	sprite
+/// @param	{real}				x
+/// @param	{real}				y
+/// @param	{bool}				htiled
+/// @param	{bool}				vtiled
+/// @param	{real}				xstretch
+/// @param	{real}				ystretch
+/// @param	{bool}				stretch
+/// @param	{real}				hspeed
+/// @param	{real}				vspeed
+/// @param	{Constant.Color}	blend
+/// @param	{real}				alpha
+/// @retuns	{array}
+function __background_set_element(_background_index, _visible, _foreground, _sprite, _x, _y, _htiled, _vtiled, _xscale, _yscale, _stretch, _hspeed, _vspeed, _blend, _alpha)
 {
 	var __result, __slots, __isforeground;
-	var __bind = argument0
-	var __vis = argument1
-	var __fore = argument2
-	var __back = argument3
-	var __x = argument4
-	var __y = argument5
-	var __htiled = argument6
-	var __vtiled = argument7
-	var __xscale = argument8
-	var __yscale = argument9
-	var __stretch = argument10
-	var __hspeed = argument11
-	var __vspeed = argument12
-	var __blend = argument13
-	var __alpha = argument14
+	var __bind = _background_index
+	var __vis = _visible
+	var __fore = _foreground
+	var __back = _sprite
+	var __x = _x
+	var __y = _y
+	var __htiled = _htiled
+	var __vtiled = _vtiled
+	var __xscale = _xscale
+	var __yscale = _yscale
+	var __stretch = _stretch
+	var __hspeed = _hspeed
+	var __vspeed = _vspeed
+	var __blend = _blend
+	var __alpha = _alpha
 	var __nearestdepth = 1000000000
 	var __farthestdepth = -1000000000
 	var __depthinc = 100
 	__result[0] = -1
 	__result[1] = -1
-	var __fgstring = "Compatibility_Foreground_"
-	var __bgstring = "Compatibility_Background_"
-	var __colstring = "Compatibility_Colour"
+	var __fgstring = "Foreground_"
+	var __bgstring = "Background_"
+	var __colstring = "Colour"
 	var __fglen = string_length(__fgstring)
 	var __bglen = string_length(__bgstring)
 	var __layerlist = layer_get_all()
-	var __layerlistlength = array_length_1d(__layerlist)
+	var __layerlistlength = array_length(__layerlist)
 	var __collayer = -1
 	for (var __i = 0; __i < 8; __i++)
 	{

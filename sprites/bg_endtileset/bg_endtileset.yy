@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"unsorted",
-    "path":"folders/Sprites/unsorted.yy",
+    "name":"Ending",
+    "path":"folders/Sprites/Tilesets/Ending.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

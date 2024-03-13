@@ -14,8 +14,8 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"ebca5e16-6ecd-4152-a42d-6cce902f218a","name":"ebca5e16-6ecd-4152-a42d-6cce902f218a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
+  "gridX":20,
+  "gridY":20,
   "height":60,
   "HTile":false,
   "layers":[
@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"unsorted",
-    "path":"folders/Sprites/unsorted.yy",
+    "name":"Snowdin",
+    "path":"folders/Sprites/Tilesets/Snowdin.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

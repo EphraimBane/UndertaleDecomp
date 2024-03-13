@@ -227,14 +227,14 @@ if (dunk == 1 && instance_exists(OBJ_WRITER) == false)
 {
     with (blconx)
         instance_destroy()
-    global.monstertype[1] = 23
+    global.monstertype[1] = MonsterType.Aaron
     global.monsterinstance[1] = instance_create(420, 38, obj_aaron)
     obj_aaron.image_alpha = 0
     obj_aaron.alphaup = 1
     blconx = instance_create((obj_aaron.x + 95), (obj_aaron.y - 25), obj_blconsm)
     blconx.depth = 50
     global.msg[0] = scr_gettext("obj_tembattle_635")
-    if (FL_AaronWoshuaEvent == 1)
+    if (FL_AaronWoshuaEvent == true)
         global.msg[0] = scr_gettext("obj_tembattle_636")
     global.msg[1] = scr_gettext("obj_tembattle_637")
     global.typer = 2

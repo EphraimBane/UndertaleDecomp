@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_dogcheck_old",
   "parent":{
-    "name":"Unused",
-    "path":"folders/Scripts/Unused.yy",
+    "name":"Common",
+    "path":"folders/Scripts/Common.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

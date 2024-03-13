@@ -10,7 +10,7 @@ if (abs(gameshake) < 3)
     else
     {
         audio_stop_all()
-        __background_set(0, 3, c_black)
+        background_visible_set(3, false)
         in_silence = 1
         alarm[0] = -1
         alarm[11] = 750

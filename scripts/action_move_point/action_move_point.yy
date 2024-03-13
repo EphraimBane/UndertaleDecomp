@@ -6,7 +6,7 @@
   "name":"action_move_point",
   "parent":{
     "name":"Action",
-    "path":"folders/Scripts/Deprecated Functions/Action.yy",
+    "path":"folders/Scripts/Deprecated Wrapper/Action.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
